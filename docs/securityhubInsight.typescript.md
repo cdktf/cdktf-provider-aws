@@ -6984,7 +6984,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a></code> | *No description.* |
 
 ---
 
@@ -7055,10 +7055,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersAwsAccountId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersAwsAccountId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountId">SecurityhubInsightFiltersAwsAccountId</a>
 
 ---
 
@@ -7438,7 +7438,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a></code> | *No description.* |
 
 ---
 
@@ -7509,10 +7509,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersCompanyName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersCompanyName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCompanyName">SecurityhubInsightFiltersCompanyName</a>
 
 ---
 
@@ -7892,7 +7892,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a></code> | *No description.* |
 
 ---
 
@@ -7963,10 +7963,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatusOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersComplianceStatus | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersComplianceStatus;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersComplianceStatus">SecurityhubInsightFiltersComplianceStatus</a>
 
 ---
 
@@ -8369,7 +8369,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a></code> | *No description.* |
 
 ---
 
@@ -8460,10 +8460,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidenceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersConfidence | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersConfidence;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersConfidence">SecurityhubInsightFiltersConfidence</a>
 
 ---
 
@@ -9172,7 +9172,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -9263,10 +9263,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersCreatedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersCreatedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCreatedAt">SecurityhubInsightFiltersCreatedAt</a>
 
 ---
 
@@ -9669,7 +9669,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a></code> | *No description.* |
 
 ---
 
@@ -9760,10 +9760,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticalityOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersCriticality | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersCriticality;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersCriticality">SecurityhubInsightFiltersCriticality</a>
 
 ---
 
@@ -10143,7 +10143,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a></code> | *No description.* |
 
 ---
 
@@ -10214,10 +10214,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescriptionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersDescription | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersDescription;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersDescription">SecurityhubInsightFiltersDescription</a>
 
 ---
 
@@ -10620,7 +10620,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a></code> | *No description.* |
 
 ---
 
@@ -10711,10 +10711,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsConfidence | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsConfidence;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidence">SecurityhubInsightFiltersFindingProviderFieldsConfidence</a>
 
 ---
 
@@ -11117,7 +11117,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a></code> | *No description.* |
 
 ---
 
@@ -11208,10 +11208,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsCriticality | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsCriticality;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticality">SecurityhubInsightFiltersFindingProviderFieldsCriticality</a>
 
 ---
 
@@ -11591,7 +11591,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -11662,10 +11662,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsId</a>
 
 ---
 
@@ -12045,7 +12045,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -12116,10 +12116,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn">SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArn</a>
 
 ---
 
@@ -12499,7 +12499,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -12570,10 +12570,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel">SecurityhubInsightFiltersFindingProviderFieldsSeverityLabel</a>
 
 ---
 
@@ -12953,7 +12953,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a></code> | *No description.* |
 
 ---
 
@@ -13024,10 +13024,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal">SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginal</a>
 
 ---
 
@@ -13407,7 +13407,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a></code> | *No description.* |
 
 ---
 
@@ -13478,10 +13478,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFindingProviderFieldsTypes | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFindingProviderFieldsTypes;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypes">SecurityhubInsightFiltersFindingProviderFieldsTypes</a>
 
 ---
 
@@ -14190,7 +14190,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -14281,10 +14281,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersFirstObservedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersFirstObservedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFirstObservedAt">SecurityhubInsightFiltersFirstObservedAt</a>
 
 ---
 
@@ -14664,7 +14664,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a></code> | *No description.* |
 
 ---
 
@@ -14735,10 +14735,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersGeneratorId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersGeneratorId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersGeneratorId">SecurityhubInsightFiltersGeneratorId</a>
 
 ---
 
@@ -15118,7 +15118,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a></code> | *No description.* |
 
 ---
 
@@ -15189,10 +15189,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersId">SecurityhubInsightFiltersId</a>
 
 ---
 
@@ -15570,7 +15570,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a></code> | *No description.* |
 
 ---
 
@@ -15621,10 +15621,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeywordOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersKeyword | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersKeyword;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersKeyword">SecurityhubInsightFiltersKeyword</a>
 
 ---
 
@@ -16333,7 +16333,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -16424,10 +16424,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersLastObservedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersLastObservedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersLastObservedAt">SecurityhubInsightFiltersLastObservedAt</a>
 
 ---
 
@@ -16807,7 +16807,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a></code> | *No description.* |
 
 ---
 
@@ -16878,10 +16878,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersMalwareName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersMalwareName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareName">SecurityhubInsightFiltersMalwareName</a>
 
 ---
 
@@ -17261,7 +17261,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a></code> | *No description.* |
 
 ---
 
@@ -17332,10 +17332,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePathOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersMalwarePath | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersMalwarePath;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwarePath">SecurityhubInsightFiltersMalwarePath</a>
 
 ---
 
@@ -17715,7 +17715,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a></code> | *No description.* |
 
 ---
 
@@ -17786,10 +17786,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareStateOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersMalwareState | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersMalwareState;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareState">SecurityhubInsightFiltersMalwareState</a>
 
 ---
 
@@ -18169,7 +18169,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a></code> | *No description.* |
 
 ---
 
@@ -18240,10 +18240,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareTypeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersMalwareType | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersMalwareType;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersMalwareType">SecurityhubInsightFiltersMalwareType</a>
 
 ---
 
@@ -18623,7 +18623,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a></code> | *No description.* |
 
 ---
 
@@ -18694,10 +18694,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomainOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkDestinationDomain | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkDestinationDomain;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationDomain">SecurityhubInsightFiltersNetworkDestinationDomain</a>
 
 ---
 
@@ -19075,7 +19075,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a></code> | *No description.* |
 
 ---
 
@@ -19126,10 +19126,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4OutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkDestinationIpv4 | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkDestinationIpv4;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv4">SecurityhubInsightFiltersNetworkDestinationIpv4</a>
 
 ---
 
@@ -19507,7 +19507,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a></code> | *No description.* |
 
 ---
 
@@ -19558,10 +19558,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6OutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkDestinationIpv6 | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkDestinationIpv6;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationIpv6">SecurityhubInsightFiltersNetworkDestinationIpv6</a>
 
 ---
 
@@ -19964,7 +19964,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a></code> | *No description.* |
 
 ---
 
@@ -20055,10 +20055,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkDestinationPort | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkDestinationPort;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPort">SecurityhubInsightFiltersNetworkDestinationPort</a>
 
 ---
 
@@ -20438,7 +20438,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a></code> | *No description.* |
 
 ---
 
@@ -20509,10 +20509,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirectionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkDirection | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkDirection;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDirection">SecurityhubInsightFiltersNetworkDirection</a>
 
 ---
 
@@ -20892,7 +20892,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a></code> | *No description.* |
 
 ---
 
@@ -20963,10 +20963,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkProtocol | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkProtocol;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocol">SecurityhubInsightFiltersNetworkProtocol</a>
 
 ---
 
@@ -21346,7 +21346,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a></code> | *No description.* |
 
 ---
 
@@ -21417,10 +21417,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkSourceDomain | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkSourceDomain;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomain">SecurityhubInsightFiltersNetworkSourceDomain</a>
 
 ---
 
@@ -21798,7 +21798,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a></code> | *No description.* |
 
 ---
 
@@ -21849,10 +21849,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4OutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkSourceIpv4 | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkSourceIpv4;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv4">SecurityhubInsightFiltersNetworkSourceIpv4</a>
 
 ---
 
@@ -22230,7 +22230,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a></code> | *No description.* |
 
 ---
 
@@ -22281,10 +22281,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6OutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkSourceIpv6 | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkSourceIpv6;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceIpv6">SecurityhubInsightFiltersNetworkSourceIpv6</a>
 
 ---
 
@@ -22664,7 +22664,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a></code> | *No description.* |
 
 ---
 
@@ -22735,10 +22735,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkSourceMac | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkSourceMac;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMac">SecurityhubInsightFiltersNetworkSourceMac</a>
 
 ---
 
@@ -23141,7 +23141,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a></code> | *No description.* |
 
 ---
 
@@ -23232,10 +23232,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePortOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNetworkSourcePort | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNetworkSourcePort;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourcePort">SecurityhubInsightFiltersNetworkSourcePort</a>
 
 ---
 
@@ -23615,7 +23615,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a></code> | *No description.* |
 
 ---
 
@@ -23686,10 +23686,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteTextOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNoteText | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNoteText;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteText">SecurityhubInsightFiltersNoteText</a>
 
 ---
 
@@ -24398,7 +24398,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -24489,10 +24489,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNoteUpdatedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNoteUpdatedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAt">SecurityhubInsightFiltersNoteUpdatedAt</a>
 
 ---
 
@@ -24872,7 +24872,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a></code> | *No description.* |
 
 ---
 
@@ -24943,10 +24943,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedByOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersNoteUpdatedBy | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersNoteUpdatedBy;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedBy">SecurityhubInsightFiltersNoteUpdatedBy</a>
 
 ---
 
@@ -29600,7 +29600,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -29691,10 +29691,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessLaunchedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessLaunchedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAt">SecurityhubInsightFiltersProcessLaunchedAt</a>
 
 ---
 
@@ -30074,7 +30074,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a></code> | *No description.* |
 
 ---
 
@@ -30145,10 +30145,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessName">SecurityhubInsightFiltersProcessName</a>
 
 ---
 
@@ -30551,7 +30551,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a></code> | *No description.* |
 
 ---
 
@@ -30642,10 +30642,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPidOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessParentPid | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessParentPid;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessParentPid">SecurityhubInsightFiltersProcessParentPid</a>
 
 ---
 
@@ -31025,7 +31025,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a></code> | *No description.* |
 
 ---
 
@@ -31096,10 +31096,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPathOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessPath | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessPath;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPath">SecurityhubInsightFiltersProcessPath</a>
 
 ---
 
@@ -31502,7 +31502,7 @@ public resetLte(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.eq">eq</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.gte">gte</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.lte">lte</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a></code> | *No description.* |
 
 ---
 
@@ -31593,10 +31593,10 @@ public readonly lte: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPidOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessPid | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessPid;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessPid">SecurityhubInsightFiltersProcessPid</a>
 
 ---
 
@@ -32305,7 +32305,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a></code> | *No description.* |
 
 ---
 
@@ -32396,10 +32396,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProcessTerminatedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProcessTerminatedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAt">SecurityhubInsightFiltersProcessTerminatedAt</a>
 
 ---
 
@@ -32779,7 +32779,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a></code> | *No description.* |
 
 ---
 
@@ -32850,10 +32850,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProductArn | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProductArn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductArn">SecurityhubInsightFiltersProductArn</a>
 
 ---
 
@@ -33235,7 +33235,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a></code> | *No description.* |
 
 ---
 
@@ -33326,10 +33326,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFieldsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProductFields | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProductFields;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductFields">SecurityhubInsightFiltersProductFields</a>
 
 ---
 
@@ -33709,7 +33709,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a></code> | *No description.* |
 
 ---
 
@@ -33780,10 +33780,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersProductName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersProductName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProductName">SecurityhubInsightFiltersProductName</a>
 
 ---
 
@@ -34163,7 +34163,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a></code> | *No description.* |
 
 ---
 
@@ -34234,10 +34234,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersRecommendationText | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersRecommendationText;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationText">SecurityhubInsightFiltersRecommendationText</a>
 
 ---
 
@@ -34617,7 +34617,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a></code> | *No description.* |
 
 ---
 
@@ -34688,10 +34688,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersRecordState | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersRecordState;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordState">SecurityhubInsightFiltersRecordState</a>
 
 ---
 
@@ -35071,7 +35071,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a></code> | *No description.* |
 
 ---
 
@@ -35142,10 +35142,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersRelatedFindingsId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersRelatedFindingsId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsId">SecurityhubInsightFiltersRelatedFindingsId</a>
 
 ---
 
@@ -35525,7 +35525,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a></code> | *No description.* |
 
 ---
 
@@ -35596,10 +35596,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersRelatedFindingsProductArn | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersRelatedFindingsProductArn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArn">SecurityhubInsightFiltersRelatedFindingsProductArn</a>
 
 ---
 
@@ -35979,7 +35979,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a></code> | *No description.* |
 
 ---
 
@@ -36050,10 +36050,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn">SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArn</a>
 
 ---
 
@@ -36433,7 +36433,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a></code> | *No description.* |
 
 ---
 
@@ -36504,10 +36504,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceImageId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceImageId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceImageId">SecurityhubInsightFiltersResourceAwsEc2InstanceImageId</a>
 
 ---
 
@@ -36885,7 +36885,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a></code> | *No description.* |
 
 ---
 
@@ -36936,10 +36936,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4AddressesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv4Addresses</a>
 
 ---
 
@@ -37317,7 +37317,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidrInput">cidrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.cidr">cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a></code> | *No description.* |
 
 ---
 
@@ -37368,10 +37368,10 @@ public readonly cidr: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6AddressesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses">SecurityhubInsightFiltersResourceAwsEc2InstanceIpv6Addresses</a>
 
 ---
 
@@ -37751,7 +37751,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a></code> | *No description.* |
 
 ---
 
@@ -37822,10 +37822,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName">SecurityhubInsightFiltersResourceAwsEc2InstanceKeyName</a>
 
 ---
 
@@ -38534,7 +38534,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -38625,10 +38625,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt">SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt</a>
 
 ---
 
@@ -39008,7 +39008,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a></code> | *No description.* |
 
 ---
 
@@ -39079,10 +39079,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId">SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId</a>
 
 ---
 
@@ -39462,7 +39462,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a></code> | *No description.* |
 
 ---
 
@@ -39533,10 +39533,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceTypeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceType | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceType;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceType">SecurityhubInsightFiltersResourceAwsEc2InstanceType</a>
 
 ---
 
@@ -39916,7 +39916,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a></code> | *No description.* |
 
 ---
 
@@ -39987,10 +39987,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId">SecurityhubInsightFiltersResourceAwsEc2InstanceVpcId</a>
 
 ---
 
@@ -40699,7 +40699,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a></code> | *No description.* |
 
 ---
 
@@ -40790,10 +40790,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt">SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAt</a>
 
 ---
 
@@ -41173,7 +41173,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a></code> | *No description.* |
 
 ---
 
@@ -41244,10 +41244,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus">SecurityhubInsightFiltersResourceAwsIamAccessKeyStatus</a>
 
 ---
 
@@ -41627,7 +41627,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a></code> | *No description.* |
 
 ---
 
@@ -41698,10 +41698,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName">SecurityhubInsightFiltersResourceAwsIamAccessKeyUserName</a>
 
 ---
 
@@ -42081,7 +42081,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a></code> | *No description.* |
 
 ---
 
@@ -42152,10 +42152,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsS3BucketOwnerId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsS3BucketOwnerId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerId">SecurityhubInsightFiltersResourceAwsS3BucketOwnerId</a>
 
 ---
 
@@ -42535,7 +42535,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a></code> | *No description.* |
 
 ---
 
@@ -42606,10 +42606,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceAwsS3BucketOwnerName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceAwsS3BucketOwnerName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerName">SecurityhubInsightFiltersResourceAwsS3BucketOwnerName</a>
 
 ---
 
@@ -42989,7 +42989,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a></code> | *No description.* |
 
 ---
 
@@ -43060,10 +43060,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceContainerImageId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceContainerImageId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageId">SecurityhubInsightFiltersResourceContainerImageId</a>
 
 ---
 
@@ -43443,7 +43443,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a></code> | *No description.* |
 
 ---
 
@@ -43514,10 +43514,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceContainerImageName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceContainerImageName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageName">SecurityhubInsightFiltersResourceContainerImageName</a>
 
 ---
 
@@ -44226,7 +44226,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a></code> | *No description.* |
 
 ---
 
@@ -44317,10 +44317,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceContainerLaunchedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceContainerLaunchedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerLaunchedAt">SecurityhubInsightFiltersResourceContainerLaunchedAt</a>
 
 ---
 
@@ -44700,7 +44700,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a></code> | *No description.* |
 
 ---
 
@@ -44771,10 +44771,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerNameOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceContainerName | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceContainerName;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerName">SecurityhubInsightFiltersResourceContainerName</a>
 
 ---
 
@@ -45156,7 +45156,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a></code> | *No description.* |
 
 ---
 
@@ -45247,10 +45247,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOtherOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceDetailsOther | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceDetailsOther;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceDetailsOther">SecurityhubInsightFiltersResourceDetailsOther</a>
 
 ---
 
@@ -45630,7 +45630,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a></code> | *No description.* |
 
 ---
 
@@ -45701,10 +45701,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceIdOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceId | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceId;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceId">SecurityhubInsightFiltersResourceId</a>
 
 ---
 
@@ -46084,7 +46084,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a></code> | *No description.* |
 
 ---
 
@@ -46155,10 +46155,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourcePartition | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourcePartition;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartition">SecurityhubInsightFiltersResourcePartition</a>
 
 ---
 
@@ -46538,7 +46538,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a></code> | *No description.* |
 
 ---
 
@@ -46609,10 +46609,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceRegion | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceRegion;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceRegion">SecurityhubInsightFiltersResourceRegion</a>
 
 ---
 
@@ -46994,7 +46994,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -47085,10 +47085,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceTags | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTags">SecurityhubInsightFiltersResourceTags</a>
 
 ---
 
@@ -47468,7 +47468,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a></code> | *No description.* |
 
 ---
 
@@ -47539,10 +47539,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceTypeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersResourceType | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersResourceType;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceType">SecurityhubInsightFiltersResourceType</a>
 
 ---
 
@@ -47922,7 +47922,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a></code> | *No description.* |
 
 ---
 
@@ -47993,10 +47993,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersSeverityLabel | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersSeverityLabel;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabel">SecurityhubInsightFiltersSeverityLabel</a>
 
 ---
 
@@ -48376,7 +48376,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -48447,10 +48447,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrlOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersSourceUrl | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersSourceUrl;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSourceUrl">SecurityhubInsightFiltersSourceUrl</a>
 
 ---
 
@@ -48830,7 +48830,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a></code> | *No description.* |
 
 ---
 
@@ -48901,10 +48901,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorCategory | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorCategory;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorCategory">SecurityhubInsightFiltersThreatIntelIndicatorCategory</a>
 
 ---
 
@@ -49613,7 +49613,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a></code> | *No description.* |
 
 ---
 
@@ -49704,10 +49704,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt">SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAt</a>
 
 ---
 
@@ -50087,7 +50087,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a></code> | *No description.* |
 
 ---
 
@@ -50158,10 +50158,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorSource | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorSource;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSource">SecurityhubInsightFiltersThreatIntelIndicatorSource</a>
 
 ---
 
@@ -50541,7 +50541,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a></code> | *No description.* |
 
 ---
 
@@ -50612,10 +50612,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl">SecurityhubInsightFiltersThreatIntelIndicatorSourceUrl</a>
 
 ---
 
@@ -50995,7 +50995,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a></code> | *No description.* |
 
 ---
 
@@ -51066,10 +51066,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorTypeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorType | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorType;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorType">SecurityhubInsightFiltersThreatIntelIndicatorType</a>
 
 ---
 
@@ -51449,7 +51449,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a></code> | *No description.* |
 
 ---
 
@@ -51520,10 +51520,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValueOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersThreatIntelIndicatorValue | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersThreatIntelIndicatorValue;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorValue">SecurityhubInsightFiltersThreatIntelIndicatorValue</a>
 
 ---
 
@@ -51903,7 +51903,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a></code> | *No description.* |
 
 ---
 
@@ -51974,10 +51974,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersTitle | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersTitle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTitle">SecurityhubInsightFiltersTitle</a>
 
 ---
 
@@ -52357,7 +52357,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a></code> | *No description.* |
 
 ---
 
@@ -52428,10 +52428,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersTypeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersType | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersType;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersType">SecurityhubInsightFiltersType</a>
 
 ---
 
@@ -53140,7 +53140,7 @@ public resetStart(): void
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a></code> | *No description.* |
 
 ---
 
@@ -53231,10 +53231,10 @@ public readonly start: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAtOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersUpdatedAt | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersUpdatedAt;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUpdatedAt">SecurityhubInsightFiltersUpdatedAt</a>
 
 ---
 
@@ -53616,7 +53616,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a></code> | *No description.* |
 
 ---
 
@@ -53707,10 +53707,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValuesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersUserDefinedValues | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersUserDefinedValues;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersUserDefinedValues">SecurityhubInsightFiltersUserDefinedValues</a>
 
 ---
 
@@ -54090,7 +54090,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a></code> | *No description.* |
 
 ---
 
@@ -54161,10 +54161,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationStateOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersVerificationState | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersVerificationState;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersVerificationState">SecurityhubInsightFiltersVerificationState</a>
 
 ---
 
@@ -54544,7 +54544,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.comparison">comparison</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a></code> | *No description.* |
 
 ---
 
@@ -54615,10 +54615,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatusOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SecurityhubInsightFiltersWorkflowStatus | IResolvable;
+public readonly internalValue: IResolvable | SecurityhubInsightFiltersWorkflowStatus;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersWorkflowStatus">SecurityhubInsightFiltersWorkflowStatus</a>
 
 ---
 

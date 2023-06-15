@@ -524,7 +524,7 @@ dynamodbContributorInsights.DynamodbContributorInsights.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.indexNameInput">index_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.indexName">index_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
@@ -716,10 +716,10 @@ table_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DynamodbContributorInsightsTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DynamodbContributorInsightsTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>]
 
 ---
 
@@ -1237,7 +1237,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1308,10 +1308,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DynamodbContributorInsightsTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DynamodbContributorInsightsTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>]
 
 ---
 

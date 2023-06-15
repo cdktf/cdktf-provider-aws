@@ -1541,7 +1541,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.regexStringInput">regex_string_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.regexString">regex_string</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression">Wafv2RegexPatternSetRegularExpression</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression">Wafv2RegexPatternSetRegularExpression</a>]</code> | *No description.* |
 
 ---
 
@@ -1592,10 +1592,10 @@ regex_string: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpressionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[Wafv2RegexPatternSetRegularExpression, IResolvable]
+internal_value: typing.Union[IResolvable, Wafv2RegexPatternSetRegularExpression]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression">Wafv2RegexPatternSetRegularExpression</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSetRegularExpression">Wafv2RegexPatternSetRegularExpression</a>]
 
 ---
 

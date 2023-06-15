@@ -17373,7 +17373,7 @@ def reset_connector_profile_name() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.apiVersion">api_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorProfileName">connector_profile_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorType">connector_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -17484,10 +17484,10 @@ connector_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppflowFlowDestinationFlowConfig, IResolvable]
+internal_value: typing.Union[IResolvable, AppflowFlowDestinationFlowConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>]
 
 ---
 
@@ -25361,7 +25361,7 @@ def reset_zendesk() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.trendmicro">trendmicro</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.veeva">veeva</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.zendesk">zendesk</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]</code> | *No description.* |
 
 ---
 
@@ -25712,10 +25712,10 @@ zendesk: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppflowFlowTaskConnectorOperator, IResolvable]
+internal_value: typing.Union[IResolvable, AppflowFlowTaskConnectorOperator]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>]
 
 ---
 
@@ -26172,7 +26172,7 @@ def reset_task_properties() -> None
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFields">source_fields</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskProperties">task_properties</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskType">task_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]</code> | *No description.* |
 
 ---
 
@@ -26303,10 +26303,10 @@ task_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppflowFlowTask, IResolvable]
+internal_value: typing.Union[IResolvable, AppflowFlowTask]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>]
 
 ---
 

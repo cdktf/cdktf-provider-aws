@@ -2441,7 +2441,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a>]</code> | *No description.* |
 
 ---
 
@@ -2512,10 +2512,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SsmAssociationTargets, IResolvable]
+internal_value: typing.Union[IResolvable, SsmAssociationTargets]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a>]
 
 ---
 

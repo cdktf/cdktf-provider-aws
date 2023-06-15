@@ -507,7 +507,7 @@ wafv2WebAclAssociation.Wafv2WebAclAssociation.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference">Wafv2WebAclAssociationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.resourceArnInput">resource_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.webAclArnInput">web_acl_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.resourceArn">resource_arn</a></code> | <code>str</code> | *No description.* |
@@ -690,10 +690,10 @@ resource_arn_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[Wafv2WebAclAssociationTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, Wafv2WebAclAssociationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>]
 
 ---
 
@@ -1198,7 +1198,7 @@ def reset_create() -> None
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1249,10 +1249,10 @@ create: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[Wafv2WebAclAssociationTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, Wafv2WebAclAssociationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts">Wafv2WebAclAssociationTimeouts</a>]
 
 ---
 

@@ -653,7 +653,7 @@ albListener.AlbListener.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.sslPolicyInput">ssl_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.alpnPolicy">alpn_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.certificateArn">certificate_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListener.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -941,10 +941,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.albListener.AlbListener.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[AlbListenerTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, AlbListenerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>]
 
 ---
 
@@ -4599,7 +4599,7 @@ def reset_weight() -> None
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.weightInput">weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -4670,10 +4670,10 @@ weight: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerDefaultActionForwardTargetGroup, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerDefaultActionForwardTargetGroup]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup">AlbListenerDefaultActionForwardTargetGroup</a>]
 
 ---
 
@@ -5463,7 +5463,7 @@ def reset_target_group_arn() -> None
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.order">order</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>]</code> | *No description.* |
 
 ---
 
@@ -5654,10 +5654,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerDefaultAction, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerDefaultAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerDefaultAction">AlbListenerDefaultAction</a>]
 
 ---
 
@@ -6347,7 +6347,7 @@ def reset_read() -> None
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -6398,10 +6398,10 @@ read: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbListenerTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, AlbListenerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.albListener.AlbListenerTimeouts">AlbListenerTimeouts</a>]
 
 ---
 

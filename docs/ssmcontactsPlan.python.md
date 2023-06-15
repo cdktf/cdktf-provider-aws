@@ -1489,7 +1489,7 @@ def reset_target() -> None
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.durationInMinutesInput">duration_in_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.targetInput">target_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.durationInMinutes">duration_in_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a>]</code> | *No description.* |
 
 ---
 
@@ -1560,10 +1560,10 @@ duration_in_minutes: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SsmcontactsPlanStage, IResolvable]
+internal_value: typing.Union[IResolvable, SsmcontactsPlanStage]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a>]
 
 ---
 
@@ -2694,7 +2694,7 @@ def reset_contact_target_info() -> None
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.contactTargetInfo">contact_target_info</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfoOutputReference">SsmcontactsPlanStageTargetContactTargetInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.channelTargetInfoInput">channel_target_info_input</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo">SsmcontactsPlanStageTargetChannelTargetInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.contactTargetInfoInput">contact_target_info_input</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo">SsmcontactsPlanStageTargetContactTargetInfo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>]</code> | *No description.* |
 
 ---
 
@@ -2765,10 +2765,10 @@ contact_target_info_input: SsmcontactsPlanStageTargetContactTargetInfo
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SsmcontactsPlanStageTarget, IResolvable]
+internal_value: typing.Union[IResolvable, SsmcontactsPlanStageTarget]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>]
 
 ---
 

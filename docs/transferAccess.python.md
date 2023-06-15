@@ -1740,7 +1740,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.entry">entry</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a>]</code> | *No description.* |
 
 ---
 
@@ -1811,10 +1811,10 @@ target: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[TransferAccessHomeDirectoryMappings, IResolvable]
+internal_value: typing.Union[IResolvable, TransferAccessHomeDirectoryMappings]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a>]
 
 ---
 

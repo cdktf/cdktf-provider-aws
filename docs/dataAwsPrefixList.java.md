@@ -523,7 +523,7 @@ DataAwsPrefixList.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.prefixListIdInput">prefixListIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList.property.prefixListId">prefixListId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -728,7 +728,7 @@ public java.lang.String getPrefixListIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a>
 
 ---
 
@@ -1421,7 +1421,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter">DataAwsPrefixListFilter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter">DataAwsPrefixListFilter</a></code> | *No description.* |
 
 ---
 
@@ -1495,7 +1495,7 @@ public java.util.List<java.lang.String> getValues();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter">DataAwsPrefixListFilter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter">DataAwsPrefixListFilter</a>
 
 ---
 
@@ -1719,7 +1719,7 @@ public void resetRead()
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1773,7 +1773,7 @@ public java.lang.String getRead();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts">DataAwsPrefixListTimeouts</a>
 
 ---
 

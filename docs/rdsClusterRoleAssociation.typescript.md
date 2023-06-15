@@ -377,7 +377,7 @@ rdsClusterRoleAssociation.RdsClusterRoleAssociation.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.featureNameInput">featureNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.dbClusterIdentifier">dbClusterIdentifier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.featureName">featureName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -580,10 +580,10 @@ public readonly roleArnInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: RdsClusterRoleAssociationTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | RdsClusterRoleAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a>
 
 ---
 
@@ -1084,7 +1084,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1155,10 +1155,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RdsClusterRoleAssociationTimeouts | IResolvable;
+public readonly internalValue: IResolvable | RdsClusterRoleAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.rdsClusterRoleAssociation.RdsClusterRoleAssociationTimeouts">RdsClusterRoleAssociationTimeouts</a>
 
 ---
 

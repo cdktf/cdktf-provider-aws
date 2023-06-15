@@ -386,7 +386,7 @@ accountAlternateContact.AccountAlternateContact.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.phoneNumberInput">phoneNumberInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.alternateContactType">alternateContactType</a></code> | <code>string</code> | *No description.* |
@@ -613,10 +613,10 @@ public readonly phoneNumberInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: AccountAlternateContactTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | AccountAlternateContactTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>
 
 ---
 
@@ -1218,7 +1218,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1309,10 +1309,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AccountAlternateContactTimeouts | IResolvable;
+public readonly internalValue: IResolvable | AccountAlternateContactTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeouts">AccountAlternateContactTimeouts</a>
 
 ---
 

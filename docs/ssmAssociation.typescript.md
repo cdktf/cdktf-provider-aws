@@ -2087,7 +2087,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a></code> | *No description.* |
 
 ---
 
@@ -2158,10 +2158,10 @@ public readonly values: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SsmAssociationTargets | IResolvable;
+public readonly internalValue: IResolvable | SsmAssociationTargets;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets">SsmAssociationTargets</a>
 
 ---
 

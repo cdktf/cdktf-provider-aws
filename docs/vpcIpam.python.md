@@ -611,7 +611,7 @@ vpcIpam.VpcIpam.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.operatingRegionsInput">operating_regions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.cascade">cascade</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpam.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -905,10 +905,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.vpcIpam.VpcIpam.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[VpcIpamTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, VpcIpamTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>]
 
 ---
 
@@ -1691,7 +1691,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.regionNameInput">region_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.regionName">region_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>]</code> | *No description.* |
 
 ---
 
@@ -1742,10 +1742,10 @@ region_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VpcIpamOperatingRegions, IResolvable]
+internal_value: typing.Union[IResolvable, VpcIpamOperatingRegions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegions">VpcIpamOperatingRegions</a>]
 
 ---
 
@@ -2012,7 +2012,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2103,10 +2103,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.vpcIpam.VpcIpamTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VpcIpamTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, VpcIpamTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpcIpam.VpcIpamTimeouts">VpcIpamTimeouts</a>]
 
 ---
 

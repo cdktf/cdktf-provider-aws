@@ -520,7 +520,7 @@ IvsPlaybackKeyPair.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.publicKeyInput">publicKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.tagsAllInput">tagsAllInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -757,7 +757,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a>
 
 ---
 
@@ -1302,7 +1302,7 @@ public void resetDelete()
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getDelete();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts">IvsPlaybackKeyPairTimeouts</a>
 
 ---
 

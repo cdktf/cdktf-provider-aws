@@ -545,7 +545,7 @@ mskCluster.MskCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.storageModeInput">storageModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.clusterName">clusterName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.enhancedMonitoring">enhancedMonitoring</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -1022,10 +1022,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.mskCluster.MskCluster.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: MskClusterTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | MskClusterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a>
 
 ---
 
@@ -9221,7 +9221,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9312,10 +9312,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.mskCluster.MskClusterTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MskClusterTimeouts | IResolvable;
+public readonly internalValue: IResolvable | MskClusterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.mskCluster.MskClusterTimeouts">MskClusterTimeouts</a>
 
 ---
 

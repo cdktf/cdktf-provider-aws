@@ -15318,7 +15318,7 @@ public resetConnectorProfileName(): void
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.apiVersion">apiVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorProfileName">connectorProfileName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.connectorType">connectorType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a></code> | *No description.* |
 
 ---
 
@@ -15429,10 +15429,10 @@ public readonly connectorType: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppflowFlowDestinationFlowConfig | IResolvable;
+public readonly internalValue: IResolvable | AppflowFlowDestinationFlowConfig;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig">AppflowFlowDestinationFlowConfig</a>
 
 ---
 
@@ -22445,7 +22445,7 @@ public resetZendesk(): void
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.trendmicro">trendmicro</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.veeva">veeva</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.zendesk">zendesk</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a></code> | *No description.* |
 
 ---
 
@@ -22796,10 +22796,10 @@ public readonly zendesk: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppflowFlowTaskConnectorOperator | IResolvable;
+public readonly internalValue: IResolvable | AppflowFlowTaskConnectorOperator;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator">AppflowFlowTaskConnectorOperator</a>
 
 ---
 
@@ -23219,7 +23219,7 @@ public resetTaskProperties(): void
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.sourceFields">sourceFields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskProperties">taskProperties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.taskType">taskType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a></code> | *No description.* |
 
 ---
 
@@ -23350,10 +23350,10 @@ public readonly taskType: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AppflowFlowTask | IResolvable;
+public readonly internalValue: IResolvable | AppflowFlowTask;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.appflowFlow.AppflowFlowTask">AppflowFlowTask</a>
 
 ---
 

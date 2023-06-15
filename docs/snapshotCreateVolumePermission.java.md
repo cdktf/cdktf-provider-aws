@@ -475,7 +475,7 @@ SnapshotCreateVolumePermission.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.accountIdInput">accountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.snapshotIdInput">snapshotIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.snapshotId">snapshotId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -670,7 +670,7 @@ public java.lang.String getSnapshotIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>
 
 ---
 
@@ -1167,7 +1167,7 @@ public void resetDelete()
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.String getDelete();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>
 
 ---
 

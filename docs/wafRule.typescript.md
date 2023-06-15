@@ -1306,7 +1306,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.dataId">dataId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.negated">negated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicates">WafRulePredicates</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafRule.WafRulePredicates">WafRulePredicates</a></code> | *No description.* |
 
 ---
 
@@ -1397,10 +1397,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: WafRulePredicates | IResolvable;
+public readonly internalValue: IResolvable | WafRulePredicates;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.wafRule.WafRulePredicates">WafRulePredicates</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.wafRule.WafRulePredicates">WafRulePredicates</a>
 
 ---
 

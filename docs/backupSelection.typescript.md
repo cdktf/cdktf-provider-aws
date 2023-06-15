@@ -1718,7 +1718,7 @@ public resetStringNotLike(): void
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.stringLikeInput">stringLikeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike">BackupSelectionConditionStringLike</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.stringNotEqualsInput">stringNotEqualsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals">BackupSelectionConditionStringNotEquals</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.stringNotLikeInput">stringNotLikeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike">BackupSelectionConditionStringNotLike</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionCondition">BackupSelectionCondition</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionCondition">BackupSelectionCondition</a></code> | *No description.* |
 
 ---
 
@@ -1829,10 +1829,10 @@ public readonly stringNotLikeInput: IResolvable | BackupSelectionConditionString
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionCondition | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionCondition;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionCondition">BackupSelectionCondition</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionCondition">BackupSelectionCondition</a>
 
 ---
 
@@ -2212,7 +2212,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals">BackupSelectionConditionStringEquals</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals">BackupSelectionConditionStringEquals</a></code> | *No description.* |
 
 ---
 
@@ -2283,10 +2283,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionConditionStringEquals | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionConditionStringEquals;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals">BackupSelectionConditionStringEquals</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals">BackupSelectionConditionStringEquals</a>
 
 ---
 
@@ -2666,7 +2666,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike">BackupSelectionConditionStringLike</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike">BackupSelectionConditionStringLike</a></code> | *No description.* |
 
 ---
 
@@ -2737,10 +2737,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionConditionStringLike | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionConditionStringLike;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike">BackupSelectionConditionStringLike</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike">BackupSelectionConditionStringLike</a>
 
 ---
 
@@ -3120,7 +3120,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals">BackupSelectionConditionStringNotEquals</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals">BackupSelectionConditionStringNotEquals</a></code> | *No description.* |
 
 ---
 
@@ -3191,10 +3191,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionConditionStringNotEquals | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionConditionStringNotEquals;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals">BackupSelectionConditionStringNotEquals</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals">BackupSelectionConditionStringNotEquals</a>
 
 ---
 
@@ -3574,7 +3574,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike">BackupSelectionConditionStringNotLike</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike">BackupSelectionConditionStringNotLike</a></code> | *No description.* |
 
 ---
 
@@ -3645,10 +3645,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionConditionStringNotLike | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionConditionStringNotLike;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike">BackupSelectionConditionStringNotLike</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike">BackupSelectionConditionStringNotLike</a>
 
 ---
 
@@ -4030,7 +4030,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag">BackupSelectionSelectionTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag">BackupSelectionSelectionTag</a></code> | *No description.* |
 
 ---
 
@@ -4121,10 +4121,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BackupSelectionSelectionTag | IResolvable;
+public readonly internalValue: IResolvable | BackupSelectionSelectionTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag">BackupSelectionSelectionTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag">BackupSelectionSelectionTag</a>
 
 ---
 

@@ -1723,7 +1723,7 @@ def reset_description() -> None
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.uri">uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction">AppconfigExtensionActionPointAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction">AppconfigExtensionActionPointAction</a>]</code> | *No description.* |
 
 ---
 
@@ -1834,10 +1834,10 @@ uri: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppconfigExtensionActionPointAction, IResolvable]
+internal_value: typing.Union[IResolvable, AppconfigExtensionActionPointAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction">AppconfigExtensionActionPointAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction">AppconfigExtensionActionPointAction</a>]
 
 ---
 
@@ -2267,7 +2267,7 @@ def put_action(
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.actionInput">action_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointAction">AppconfigExtensionActionPointAction</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.pointInput">point_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.point">point</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint">AppconfigExtensionActionPoint</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint">AppconfigExtensionActionPoint</a>]</code> | *No description.* |
 
 ---
 
@@ -2338,10 +2338,10 @@ point: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppconfigExtensionActionPoint, IResolvable]
+internal_value: typing.Union[IResolvable, AppconfigExtensionActionPoint]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint">AppconfigExtensionActionPoint</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPoint">AppconfigExtensionActionPoint</a>]
 
 ---
 
@@ -2772,7 +2772,7 @@ def reset_required() -> None
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.required">required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter">AppconfigExtensionParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter">AppconfigExtensionParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -2863,10 +2863,10 @@ required: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppconfigExtensionParameter, IResolvable]
+internal_value: typing.Union[IResolvable, AppconfigExtensionParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter">AppconfigExtensionParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameter">AppconfigExtensionParameter</a>]
 
 ---
 

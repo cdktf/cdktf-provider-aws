@@ -2393,7 +2393,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.deviceIndex">device_index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.instance">instance</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]</code> | *No description.* |
 
 ---
 
@@ -2474,10 +2474,10 @@ instance: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NetworkInterfaceAttachment, IResolvable]
+internal_value: typing.Union[IResolvable, NetworkInterfaceAttachment]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>]
 
 ---
 

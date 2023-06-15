@@ -1306,7 +1306,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.dataId">dataId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.negated">negated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a></code> | *No description.* |
 
 ---
 
@@ -1397,10 +1397,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: WafregionalRulePredicate | IResolvable;
+public readonly internalValue: IResolvable | WafregionalRulePredicate;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate">WafregionalRulePredicate</a>
 
 ---
 

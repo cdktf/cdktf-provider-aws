@@ -1242,7 +1242,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.scopeNameInput">scopeNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.scopeDescription">scopeDescription</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.scopeName">scopeName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a></code> | *No description.* |
 
 ---
 
@@ -1313,10 +1313,10 @@ public readonly scopeName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: CognitoResourceServerScope | IResolvable;
+public readonly internalValue: IResolvable | CognitoResourceServerScope;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScope">CognitoResourceServerScope</a>
 
 ---
 

@@ -1337,7 +1337,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter">DataAwsImagebuilderComponentsFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter">DataAwsImagebuilderComponentsFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -1408,10 +1408,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DataAwsImagebuilderComponentsFilter, IResolvable]
+internal_value: typing.Union[IResolvable, DataAwsImagebuilderComponentsFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter">DataAwsImagebuilderComponentsFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter">DataAwsImagebuilderComponentsFilter</a>]
 
 ---
 

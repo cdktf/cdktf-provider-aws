@@ -514,7 +514,7 @@ resourceexplorer2Index.Resourceexplorer2Index.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.tagsAll">tags_all</a></code> | <code>cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference">Resourceexplorer2IndexTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.type">type</a></code> | <code>str</code> | *No description.* |
@@ -716,10 +716,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[Resourceexplorer2IndexTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, Resourceexplorer2IndexTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>]
 
 ---
 
@@ -1243,7 +1243,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1334,10 +1334,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[Resourceexplorer2IndexTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, Resourceexplorer2IndexTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a>]
 
 ---
 

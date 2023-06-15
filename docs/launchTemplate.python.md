@@ -6769,7 +6769,7 @@ def reset_virtual_name() -> None
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.noDevice">no_device</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.virtualName">virtual_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings">LaunchTemplateBlockDeviceMappings</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings">LaunchTemplateBlockDeviceMappings</a>]</code> | *No description.* |
 
 ---
 
@@ -6880,10 +6880,10 @@ virtual_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LaunchTemplateBlockDeviceMappings, IResolvable]
+internal_value: typing.Union[IResolvable, LaunchTemplateBlockDeviceMappings]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings">LaunchTemplateBlockDeviceMappings</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings">LaunchTemplateBlockDeviceMappings</a>]
 
 ---
 
@@ -8650,7 +8650,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications">LaunchTemplateElasticGpuSpecifications</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications">LaunchTemplateElasticGpuSpecifications</a>]</code> | *No description.* |
 
 ---
 
@@ -8701,10 +8701,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LaunchTemplateElasticGpuSpecifications, IResolvable]
+internal_value: typing.Union[IResolvable, LaunchTemplateElasticGpuSpecifications]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications">LaunchTemplateElasticGpuSpecifications</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications">LaunchTemplateElasticGpuSpecifications</a>]
 
 ---
 
@@ -15283,7 +15283,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.licenseConfigurationArnInput">license_configuration_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.licenseConfigurationArn">license_configuration_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification">LaunchTemplateLicenseSpecification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification">LaunchTemplateLicenseSpecification</a>]</code> | *No description.* |
 
 ---
 
@@ -15334,10 +15334,10 @@ license_configuration_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LaunchTemplateLicenseSpecification, IResolvable]
+internal_value: typing.Union[IResolvable, LaunchTemplateLicenseSpecification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification">LaunchTemplateLicenseSpecification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification">LaunchTemplateLicenseSpecification</a>]
 
 ---
 
@@ -16944,7 +16944,7 @@ def reset_subnet_id() -> None
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.privateIpAddress">private_ip_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.securityGroups">security_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.subnetId">subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces">LaunchTemplateNetworkInterfaces</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces">LaunchTemplateNetworkInterfaces</a>]</code> | *No description.* |
 
 ---
 
@@ -17355,10 +17355,10 @@ subnet_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LaunchTemplateNetworkInterfaces, IResolvable]
+internal_value: typing.Union[IResolvable, LaunchTemplateNetworkInterfaces]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces">LaunchTemplateNetworkInterfaces</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces">LaunchTemplateNetworkInterfaces</a>]
 
 ---
 
@@ -18654,7 +18654,7 @@ def reset_tags() -> None
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications">LaunchTemplateTagSpecifications</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications">LaunchTemplateTagSpecifications</a>]</code> | *No description.* |
 
 ---
 
@@ -18725,10 +18725,10 @@ tags: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[LaunchTemplateTagSpecifications, IResolvable]
+internal_value: typing.Union[IResolvable, LaunchTemplateTagSpecifications]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications">LaunchTemplateTagSpecifications</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications">LaunchTemplateTagSpecifications</a>]
 
 ---
 

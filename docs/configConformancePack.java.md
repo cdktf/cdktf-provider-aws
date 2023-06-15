@@ -1493,7 +1493,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterValueInput">parameterValueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterName">parameterName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterValue">parameterValue</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a></code> | *No description.* |
 
 ---
 
@@ -1567,7 +1567,7 @@ public java.lang.String getParameterValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a>
 
 ---
 

@@ -1612,7 +1612,7 @@ public void resetEncryptionContextSubset()
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference.property.encryptionContextSubsetInput">encryptionContextSubsetInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference.property.encryptionContextEquals">encryptionContextEquals</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference.property.encryptionContextSubset">encryptionContextSubset</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints">KmsGrantConstraints</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints">KmsGrantConstraints</a></code> | *No description.* |
 
 ---
 
@@ -1686,7 +1686,7 @@ public java.util.Map<java.lang.String, java.lang.String> getEncryptionContextSub
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints">KmsGrantConstraints</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.kmsGrant.KmsGrantConstraints">KmsGrantConstraints</a>
 
 ---
 

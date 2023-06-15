@@ -400,7 +400,7 @@ codestarconnectionsHost.CodestarconnectionsHost.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.providerEndpointInput">providerEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.providerTypeInput">providerTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.vpcConfigurationInput">vpcConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration">CodestarconnectionsHostVpcConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -634,10 +634,10 @@ public readonly providerTypeInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: CodestarconnectionsHostTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | CodestarconnectionsHostTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a>
 
 ---
 
@@ -1254,7 +1254,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1345,10 +1345,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: CodestarconnectionsHostTimeouts | IResolvable;
+public readonly internalValue: IResolvable | CodestarconnectionsHostTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts">CodestarconnectionsHostTimeouts</a>
 
 ---
 

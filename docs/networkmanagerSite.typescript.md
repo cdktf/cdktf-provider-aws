@@ -422,7 +422,7 @@ networkmanagerSite.NetworkmanagerSite.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.locationInput">locationInput</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteLocation">NetworkmanagerSiteLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.globalNetworkId">globalNetworkId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -666,10 +666,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: NetworkmanagerSiteTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | NetworkmanagerSiteTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a>
 
 ---
 
@@ -1622,7 +1622,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1713,10 +1713,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NetworkmanagerSiteTimeouts | IResolvable;
+public readonly internalValue: IResolvable | NetworkmanagerSiteTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSiteTimeouts">NetworkmanagerSiteTimeouts</a>
 
 ---
 

@@ -3137,7 +3137,7 @@ public void resetSslCertificateId()
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPort">lbPort</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol">lbProtocol</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId">sslCertificateId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a></code> | *No description.* |
 
 ---
 
@@ -3271,7 +3271,7 @@ public java.lang.String getSslCertificateId();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a>
 
 ---
 

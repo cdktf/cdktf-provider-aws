@@ -3164,7 +3164,7 @@ public void resetTimeZone()
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.logGroupName">logGroupName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.multilineStartPattern">multilineStartPattern</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a></code> | *No description.* |
 
 ---
 
@@ -3418,7 +3418,7 @@ public java.lang.String getTimeZone();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a>
 
 ---
 
@@ -4156,7 +4156,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.raidLevel">raidLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a></code> | *No description.* |
 
 ---
 
@@ -4330,7 +4330,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a>
 
 ---
 

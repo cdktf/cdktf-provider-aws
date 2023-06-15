@@ -1404,7 +1404,7 @@ public resetApplyMethod(): void
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.applyMethod">applyMethod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter">DbParameterGroupParameter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter">DbParameterGroupParameter</a></code> | *No description.* |
 
 ---
 
@@ -1495,10 +1495,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DbParameterGroupParameter | IResolvable;
+public readonly internalValue: IResolvable | DbParameterGroupParameter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter">DbParameterGroupParameter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter">DbParameterGroupParameter</a>
 
 ---
 

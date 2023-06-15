@@ -482,7 +482,7 @@ DynamodbContributorInsights.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.indexNameInput">indexNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.tableNameInput">tableNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.indexName">indexName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsights.property.tableName">tableName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -677,7 +677,7 @@ public java.lang.String getTableNameInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>
 
 ---
 
@@ -1174,7 +1174,7 @@ public void resetDelete()
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1248,7 +1248,7 @@ public java.lang.String getDelete();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeouts">DynamodbContributorInsightsTimeouts</a>
 
 ---
 

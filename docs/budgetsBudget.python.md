@@ -3278,7 +3278,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -3349,10 +3349,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BudgetsBudgetCostFilter, IResolvable]
+internal_value: typing.Union[IResolvable, BudgetsBudgetCostFilter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter">BudgetsBudgetCostFilter</a>]
 
 ---
 
@@ -4382,7 +4382,7 @@ def reset_subscriber_sns_topic_arns() -> None
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.subscriberSnsTopicArns">subscriber_sns_topic_arns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.threshold">threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.thresholdType">threshold_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>]</code> | *No description.* |
 
 ---
 
@@ -4533,10 +4533,10 @@ threshold_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BudgetsBudgetNotification, IResolvable]
+internal_value: typing.Union[IResolvable, BudgetsBudgetNotification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification">BudgetsBudgetNotification</a>]
 
 ---
 
@@ -4953,7 +4953,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.amount">amount</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.startTime">start_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.unit">unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>]</code> | *No description.* |
 
 ---
 
@@ -5044,10 +5044,10 @@ unit: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BudgetsBudgetPlannedLimit, IResolvable]
+internal_value: typing.Union[IResolvable, BudgetsBudgetPlannedLimit]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit">BudgetsBudgetPlannedLimit</a>]
 
 ---
 

@@ -1451,7 +1451,7 @@ public resetVideoSettings(): void
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.videoSettingsInput">videoSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.preferredChannelPipeline">preferredChannelPipeline</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.programNumber">programNumber</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings">MedialiveMultiplexProgramMultiplexProgramSettings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings">MedialiveMultiplexProgramMultiplexProgramSettings</a></code> | *No description.* |
 
 ---
 
@@ -1562,10 +1562,10 @@ public readonly programNumber: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MedialiveMultiplexProgramMultiplexProgramSettings | IResolvable;
+public readonly internalValue: IResolvable | MedialiveMultiplexProgramMultiplexProgramSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings">MedialiveMultiplexProgramMultiplexProgramSettings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings">MedialiveMultiplexProgramMultiplexProgramSettings</a>
 
 ---
 
@@ -1945,7 +1945,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.serviceNameInput">serviceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.providerName">providerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.serviceName">serviceName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor">MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor">MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor</a></code> | *No description.* |
 
 ---
 
@@ -2016,10 +2016,10 @@ public readonly serviceName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor | IResolvable;
+public readonly internalValue: IResolvable | MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor">MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor">MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor</a>
 
 ---
 
@@ -2448,7 +2448,7 @@ public resetStatmuxSettings(): void
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.statemuxSettingsInput">statemuxSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.statmuxSettingsInput">statmuxSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.constantBitrate">constantBitrate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings</a></code> | *No description.* |
 
 ---
 
@@ -2539,10 +2539,10 @@ public readonly constantBitrate: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings | IResolvable;
+public readonly internalValue: IResolvable | MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings</a>
 
 ---
 
@@ -2945,7 +2945,7 @@ public resetPriority(): void
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.maximumBitrate">maximumBitrate</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.minimumBitrate">minimumBitrate</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings</a></code> | *No description.* |
 
 ---
 
@@ -3036,10 +3036,10 @@ public readonly priority: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings | IResolvable;
+public readonly internalValue: IResolvable | MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings</a>
 
 ---
 
@@ -3442,7 +3442,7 @@ public resetPriority(): void
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.maximumBitrate">maximumBitrate</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.minimumBitrate">minimumBitrate</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings</a></code> | *No description.* |
 
 ---
 
@@ -3533,10 +3533,10 @@ public readonly priority: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings | IResolvable;
+public readonly internalValue: IResolvable | MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings">MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings</a>
 
 ---
 

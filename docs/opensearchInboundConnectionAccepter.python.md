@@ -507,7 +507,7 @@ opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.is_terra
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference">OpensearchInboundConnectionAccepterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.connectionIdInput">connection_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.connectionId">connection_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -698,10 +698,10 @@ id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[OpensearchInboundConnectionAccepterTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, OpensearchInboundConnectionAccepterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>]
 
 ---
 
@@ -1195,7 +1195,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1266,10 +1266,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OpensearchInboundConnectionAccepterTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, OpensearchInboundConnectionAccepterTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>]
 
 ---
 

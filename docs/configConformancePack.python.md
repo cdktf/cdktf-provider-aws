@@ -1553,7 +1553,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterValueInput">parameter_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterName">parameter_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.parameterValue">parameter_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -1624,10 +1624,10 @@ parameter_value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ConfigConformancePackInputParameter, IResolvable]
+internal_value: typing.Union[IResolvable, ConfigConformancePackInputParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter">ConfigConformancePackInputParameter</a>]
 
 ---
 

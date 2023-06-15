@@ -3311,7 +3311,7 @@ def reset_ssl_certificate_id() -> None
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPort">lb_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol">lb_protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId">ssl_certificate_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a>]</code> | *No description.* |
 
 ---
 
@@ -3442,10 +3442,10 @@ ssl_certificate_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ElbListener, IResolvable]
+internal_value: typing.Union[IResolvable, ElbListener]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elb.ElbListener">ElbListener</a>]
 
 ---
 

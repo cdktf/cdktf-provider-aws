@@ -405,7 +405,7 @@ dataAwsSecurityGroups.DataAwsSecurityGroups.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.filterInput">filterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter">DataAwsSecurityGroupsFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -616,10 +616,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAwsSecurityGroupsTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAwsSecurityGroupsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a>
 
 ---
 
@@ -1266,7 +1266,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter">DataAwsSecurityGroupsFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter">DataAwsSecurityGroupsFilter</a></code> | *No description.* |
 
 ---
 
@@ -1337,10 +1337,10 @@ public readonly values: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsSecurityGroupsFilter | IResolvable;
+public readonly internalValue: IResolvable | DataAwsSecurityGroupsFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter">DataAwsSecurityGroupsFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilter">DataAwsSecurityGroupsFilter</a>
 
 ---
 
@@ -1564,7 +1564,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1615,10 +1615,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsSecurityGroupsTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAwsSecurityGroupsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsTimeouts">DataAwsSecurityGroupsTimeouts</a>
 
 ---
 

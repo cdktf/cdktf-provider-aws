@@ -378,7 +378,7 @@ oamSinkPolicy.OamSinkPolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.sinkIdentifierInput">sinkIdentifierInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.policy">policy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.sinkIdentifier">sinkIdentifier</a></code> | <code>string</code> | *No description.* |
@@ -590,10 +590,10 @@ public readonly sinkIdentifierInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicy.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: OamSinkPolicyTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | OamSinkPolicyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a>
 
 ---
 
@@ -1093,7 +1093,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1184,10 +1184,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: OamSinkPolicyTimeouts | IResolvable;
+public readonly internalValue: IResolvable | OamSinkPolicyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.oamSinkPolicy.OamSinkPolicyTimeouts">OamSinkPolicyTimeouts</a>
 
 ---
 

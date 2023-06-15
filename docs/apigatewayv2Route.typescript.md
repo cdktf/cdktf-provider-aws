@@ -1574,7 +1574,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.requestParameterKey">requestParameterKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter">Apigatewayv2RouteRequestParameter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter">Apigatewayv2RouteRequestParameter</a></code> | *No description.* |
 
 ---
 
@@ -1645,10 +1645,10 @@ public readonly required: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: Apigatewayv2RouteRequestParameter | IResolvable;
+public readonly internalValue: IResolvable | Apigatewayv2RouteRequestParameter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter">Apigatewayv2RouteRequestParameter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameter">Apigatewayv2RouteRequestParameter</a>
 
 ---
 

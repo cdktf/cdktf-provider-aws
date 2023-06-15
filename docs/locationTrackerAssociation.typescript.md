@@ -375,7 +375,7 @@ locationTrackerAssociation.LocationTrackerAssociation.isTerraformResource(x: any
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference">LocationTrackerAssociationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.consumerArnInput">consumerArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.trackerNameInput">trackerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.consumerArn">consumerArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -558,10 +558,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: LocationTrackerAssociationTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | LocationTrackerAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a>
 
 ---
 
@@ -1049,7 +1049,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1120,10 +1120,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LocationTrackerAssociationTimeouts | IResolvable;
+public readonly internalValue: IResolvable | LocationTrackerAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeouts">LocationTrackerAssociationTimeouts</a>
 
 ---
 

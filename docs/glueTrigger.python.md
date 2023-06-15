@@ -757,7 +757,7 @@ glueTrigger.GlueTrigger.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.startOnCreationInput">start_on_creation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.workflowNameInput">workflow_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTrigger.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -1088,10 +1088,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.glueTrigger.GlueTrigger.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GlueTriggerTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GlueTriggerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>]
 
 ---
 
@@ -2690,7 +2690,7 @@ def reset_timeout() -> None
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.jobName">job_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.securityConfiguration">security_configuration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions">GlueTriggerActions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions">GlueTriggerActions</a>]</code> | *No description.* |
 
 ---
 
@@ -2841,10 +2841,10 @@ timeout: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueTrigger.GlueTriggerActionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GlueTriggerActions, IResolvable]
+internal_value: typing.Union[IResolvable, GlueTriggerActions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions">GlueTriggerActions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerActions">GlueTriggerActions</a>]
 
 ---
 
@@ -3266,7 +3266,7 @@ def reset_batch_window() -> None
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.batchWindowInput">batch_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.batchSize">batch_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.batchWindow">batch_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition">GlueTriggerEventBatchingCondition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition">GlueTriggerEventBatchingCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -3337,10 +3337,10 @@ batch_window: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GlueTriggerEventBatchingCondition, IResolvable]
+internal_value: typing.Union[IResolvable, GlueTriggerEventBatchingCondition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition">GlueTriggerEventBatchingCondition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerEventBatchingCondition">GlueTriggerEventBatchingCondition</a>]
 
 ---
 
@@ -3796,7 +3796,7 @@ def reset_state() -> None
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.jobName">job_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.logicalOperator">logical_operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions">GlueTriggerPredicateConditions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions">GlueTriggerPredicateConditions</a>]</code> | *No description.* |
 
 ---
 
@@ -3927,10 +3927,10 @@ state: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GlueTriggerPredicateConditions, IResolvable]
+internal_value: typing.Union[IResolvable, GlueTriggerPredicateConditions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions">GlueTriggerPredicateConditions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateConditions">GlueTriggerPredicateConditions</a>]
 
 ---
 
@@ -4528,7 +4528,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4599,10 +4599,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueTrigger.GlueTriggerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GlueTriggerTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GlueTriggerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.glueTrigger.GlueTriggerTimeouts">GlueTriggerTimeouts</a>]
 
 ---
 

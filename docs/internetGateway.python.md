@@ -559,7 +559,7 @@ internetGateway.InternetGateway.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGateway.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -773,10 +773,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.internetGateway.InternetGateway.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[InternetGatewayTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, InternetGatewayTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>]
 
 ---
 
@@ -1351,7 +1351,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1442,10 +1442,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[InternetGatewayTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, InternetGatewayTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.internetGateway.InternetGatewayTimeouts">InternetGatewayTimeouts</a>]
 
 ---
 

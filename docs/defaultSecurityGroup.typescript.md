@@ -1704,7 +1704,7 @@ public resetToPort(): void
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.securityGroups">securityGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.selfAttribute">selfAttribute</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.toPort">toPort</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress">DefaultSecurityGroupEgress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress">DefaultSecurityGroupEgress</a></code> | *No description.* |
 
 ---
 
@@ -1915,10 +1915,10 @@ public readonly toPort: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DefaultSecurityGroupEgress | IResolvable;
+public readonly internalValue: IResolvable | DefaultSecurityGroupEgress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress">DefaultSecurityGroupEgress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress">DefaultSecurityGroupEgress</a>
 
 ---
 
@@ -2375,7 +2375,7 @@ public resetToPort(): void
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.securityGroups">securityGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.selfAttribute">selfAttribute</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.toPort">toPort</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress">DefaultSecurityGroupIngress</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress">DefaultSecurityGroupIngress</a></code> | *No description.* |
 
 ---
 
@@ -2586,10 +2586,10 @@ public readonly toPort: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DefaultSecurityGroupIngress | IResolvable;
+public readonly internalValue: IResolvable | DefaultSecurityGroupIngress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress">DefaultSecurityGroupIngress</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress">DefaultSecurityGroupIngress</a>
 
 ---
 

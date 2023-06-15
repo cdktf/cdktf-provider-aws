@@ -1768,7 +1768,7 @@ def reset_target_string() -> None
 | <code><a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.positionalConstraint">positional_constraint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.targetString">target_string</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.textTransformation">text_transformation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples">WafregionalByteMatchSetByteMatchTuples</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples">WafregionalByteMatchSetByteMatchTuples</a>]</code> | *No description.* |
 
 ---
 
@@ -1879,10 +1879,10 @@ text_transformation: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[WafregionalByteMatchSetByteMatchTuples, IResolvable]
+internal_value: typing.Union[IResolvable, WafregionalByteMatchSetByteMatchTuples]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples">WafregionalByteMatchSetByteMatchTuples</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples">WafregionalByteMatchSetByteMatchTuples</a>]
 
 ---
 

@@ -4650,7 +4650,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>]</code> | *No description.* |
 
 ---
 
@@ -4721,10 +4721,10 @@ priority: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CognitoUserPoolAccountRecoverySettingRecoveryMechanism, IResolvable]
+internal_value: typing.Union[IResolvable, CognitoUserPoolAccountRecoverySettingRecoveryMechanism]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism">CognitoUserPoolAccountRecoverySettingRecoveryMechanism</a>]
 
 ---
 
@@ -8834,7 +8834,7 @@ def reset_string_attribute_constraints() -> None
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.mutable">mutable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.required">required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema">CognitoUserPoolSchema</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema">CognitoUserPoolSchema</a>]</code> | *No description.* |
 
 ---
 
@@ -9005,10 +9005,10 @@ required: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CognitoUserPoolSchema, IResolvable]
+internal_value: typing.Union[IResolvable, CognitoUserPoolSchema]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema">CognitoUserPoolSchema</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema">CognitoUserPoolSchema</a>]
 
 ---
 

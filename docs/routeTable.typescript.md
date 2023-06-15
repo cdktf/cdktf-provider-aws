@@ -422,7 +422,7 @@ routeTable.RouteTable.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.routeInput">routeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.routeTable.RouteTableRoute">RouteTableRoute</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTable.property.propagatingVgws">propagatingVgws</a></code> | <code>string[]</code> | *No description.* |
@@ -667,10 +667,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.routeTable.RouteTable.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: RouteTableTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | RouteTableTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a>
 
 ---
 
@@ -1698,7 +1698,7 @@ public resetVpcPeeringConnectionId(): void
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.transitGatewayId">transitGatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcEndpointId">vpcEndpointId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.vpcPeeringConnectionId">vpcPeeringConnectionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRoute">RouteTableRoute</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.routeTable.RouteTableRoute">RouteTableRoute</a></code> | *No description.* |
 
 ---
 
@@ -2009,10 +2009,10 @@ public readonly vpcPeeringConnectionId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RouteTableRoute | IResolvable;
+public readonly internalValue: IResolvable | RouteTableRoute;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.routeTable.RouteTableRoute">RouteTableRoute</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.routeTable.RouteTableRoute">RouteTableRoute</a>
 
 ---
 
@@ -2254,7 +2254,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2345,10 +2345,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RouteTableTimeouts | IResolvable;
+public readonly internalValue: IResolvable | RouteTableTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.routeTable.RouteTableTimeouts">RouteTableTimeouts</a>
 
 ---
 

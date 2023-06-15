@@ -3401,7 +3401,7 @@ def reset_time_zone() -> None
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.multilineStartPattern">multiline_start_pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.timeZone">time_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams">OpsworksGangliaLayerCloudwatchConfigurationLogStreams</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams">OpsworksGangliaLayerCloudwatchConfigurationLogStreams</a>]</code> | *No description.* |
 
 ---
 
@@ -3652,10 +3652,10 @@ time_zone: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OpsworksGangliaLayerCloudwatchConfigurationLogStreams, IResolvable]
+internal_value: typing.Union[IResolvable, OpsworksGangliaLayerCloudwatchConfigurationLogStreams]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams">OpsworksGangliaLayerCloudwatchConfigurationLogStreams</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams">OpsworksGangliaLayerCloudwatchConfigurationLogStreams</a>]
 
 ---
 
@@ -4455,7 +4455,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.raidLevel">raid_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume">OpsworksGangliaLayerEbsVolume</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume">OpsworksGangliaLayerEbsVolume</a>]</code> | *No description.* |
 
 ---
 
@@ -4626,10 +4626,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OpsworksGangliaLayerEbsVolume, IResolvable]
+internal_value: typing.Union[IResolvable, OpsworksGangliaLayerEbsVolume]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume">OpsworksGangliaLayerEbsVolume</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume">OpsworksGangliaLayerEbsVolume</a>]
 
 ---
 

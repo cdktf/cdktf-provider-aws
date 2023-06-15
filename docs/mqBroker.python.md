@@ -1086,7 +1086,7 @@ mqBroker.MqBroker.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.subnetIdsInput">subnet_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.userInput">user_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.applyImmediately">apply_immediately</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBroker.property.authenticationStrategy">authentication_strategy</a></code> | <code>str</code> | *No description.* |
@@ -1541,10 +1541,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.mqBroker.MqBroker.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[MqBrokerTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, MqBrokerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>]
 
 ---
 
@@ -5333,7 +5333,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -5424,10 +5424,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MqBrokerTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, MqBrokerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerTimeouts">MqBrokerTimeouts</a>]
 
 ---
 
@@ -5860,7 +5860,7 @@ def reset_groups() -> None
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.groups">groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>]</code> | *No description.* |
 
 ---
 
@@ -5971,10 +5971,10 @@ username: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MqBrokerUser, IResolvable]
+internal_value: typing.Union[IResolvable, MqBrokerUser]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.mqBroker.MqBrokerUser">MqBrokerUser</a>]
 
 ---
 

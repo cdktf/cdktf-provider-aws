@@ -1477,7 +1477,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.entry">entry</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a></code> | *No description.* |
 
 ---
 
@@ -1548,10 +1548,10 @@ public readonly target: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TransferAccessHomeDirectoryMappings | IResolvable;
+public readonly internalValue: IResolvable | TransferAccessHomeDirectoryMappings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappings">TransferAccessHomeDirectoryMappings</a>
 
 ---
 

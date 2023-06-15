@@ -1396,7 +1396,7 @@ def reset_custom_data() -> None
 | <code><a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.destinationArn">destination_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.events">events</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger">CodecommitTriggerTrigger</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger">CodecommitTriggerTrigger</a>]</code> | *No description.* |
 
 ---
 
@@ -1527,10 +1527,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[CodecommitTriggerTrigger, IResolvable]
+internal_value: typing.Union[IResolvable, CodecommitTriggerTrigger]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger">CodecommitTriggerTrigger</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTrigger">CodecommitTriggerTrigger</a>]
 
 ---
 

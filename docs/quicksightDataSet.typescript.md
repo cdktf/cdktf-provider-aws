@@ -4130,7 +4130,7 @@ public resetGeoSpatialColumnGroup(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.geoSpatialColumnGroup">geoSpatialColumnGroup</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference">QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.geoSpatialColumnGroupInput">geoSpatialColumnGroupInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup">QuicksightDataSetColumnGroupsGeoSpatialColumnGroup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroups">QuicksightDataSetColumnGroups</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroups">QuicksightDataSetColumnGroups</a></code> | *No description.* |
 
 ---
 
@@ -4181,10 +4181,10 @@ public readonly geoSpatialColumnGroupInput: QuicksightDataSetColumnGroupsGeoSpat
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetColumnGroups | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetColumnGroups;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroups">QuicksightDataSetColumnGroups</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroups">QuicksightDataSetColumnGroups</a>
 
 ---
 
@@ -4578,7 +4578,7 @@ public resetPrincipals(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.principalsInput">principalsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.columnNames">columnNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.principals">principals</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules">QuicksightDataSetColumnLevelPermissionRules</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules">QuicksightDataSetColumnLevelPermissionRules</a></code> | *No description.* |
 
 ---
 
@@ -4649,10 +4649,10 @@ public readonly principals: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetColumnLevelPermissionRules | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetColumnLevelPermissionRules;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules">QuicksightDataSetColumnLevelPermissionRules</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules">QuicksightDataSetColumnLevelPermissionRules</a>
 
 ---
 
@@ -5355,7 +5355,7 @@ public resetDescription(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.columns">columns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.fieldFoldersId">fieldFoldersId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders">QuicksightDataSetFieldFolders</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders">QuicksightDataSetFieldFolders</a></code> | *No description.* |
 
 ---
 
@@ -5446,10 +5446,10 @@ public readonly fieldFoldersId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetFieldFolders | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetFieldFolders;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders">QuicksightDataSetFieldFolders</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders">QuicksightDataSetFieldFolders</a>
 
 ---
 
@@ -6153,7 +6153,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.columnId">columnId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.columnName">columnName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.expression">expression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns">QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns">QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns</a></code> | *No description.* |
 
 ---
 
@@ -6244,10 +6244,10 @@ public readonly expression: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns">QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns">QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns</a>
 
 ---
 
@@ -7332,7 +7332,7 @@ public resetUntagColumnOperation(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.renameColumnOperationInput">renameColumnOperationInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation">QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.tagColumnOperationInput">tagColumnOperationInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.untagColumnOperationInput">untagColumnOperationInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation">QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransforms">QuicksightDataSetLogicalTableMapDataTransforms</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransforms">QuicksightDataSetLogicalTableMapDataTransforms</a></code> | *No description.* |
 
 ---
 
@@ -7503,10 +7503,10 @@ public readonly untagColumnOperationInput: QuicksightDataSetLogicalTableMapDataT
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetLogicalTableMapDataTransforms | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetLogicalTableMapDataTransforms;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransforms">QuicksightDataSetLogicalTableMapDataTransforms</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransforms">QuicksightDataSetLogicalTableMapDataTransforms</a>
 
 ---
 
@@ -9061,7 +9061,7 @@ public resetColumnGeographicRole(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.columnDescriptionInput">columnDescriptionInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.columnGeographicRoleInput">columnGeographicRoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.columnGeographicRole">columnGeographicRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags</a></code> | *No description.* |
 
 ---
 
@@ -9132,10 +9132,10 @@ public readonly columnGeographicRole: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags</a>
 
 ---
 
@@ -9845,7 +9845,7 @@ public resetDataTransforms(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.sourceInput">sourceInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource">QuicksightDataSetLogicalTableMapSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.alias">alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.logicalTableMapId">logicalTableMapId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap">QuicksightDataSetLogicalTableMap</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap">QuicksightDataSetLogicalTableMap</a></code> | *No description.* |
 
 ---
 
@@ -9956,10 +9956,10 @@ public readonly logicalTableMapId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetLogicalTableMap | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetLogicalTableMap;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap">QuicksightDataSetLogicalTableMap</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap">QuicksightDataSetLogicalTableMap</a>
 
 ---
 
@@ -12097,7 +12097,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.principalInput">principalInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.actions">actions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.principal">principal</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions">QuicksightDataSetPermissions</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions">QuicksightDataSetPermissions</a></code> | *No description.* |
 
 ---
 
@@ -12168,10 +12168,10 @@ public readonly principal: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetPermissions | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetPermissions;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions">QuicksightDataSetPermissions</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions">QuicksightDataSetPermissions</a>
 
 ---
 
@@ -12551,7 +12551,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns">QuicksightDataSetPhysicalTableMapCustomSqlColumns</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns">QuicksightDataSetPhysicalTableMapCustomSqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -12622,10 +12622,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetPhysicalTableMapCustomSqlColumns | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetPhysicalTableMapCustomSqlColumns;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns">QuicksightDataSetPhysicalTableMapCustomSqlColumns</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns">QuicksightDataSetPhysicalTableMapCustomSqlColumns</a>
 
 ---
 
@@ -13426,7 +13426,7 @@ public resetS3Source(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.relationalTableInput">relationalTableInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable">QuicksightDataSetPhysicalTableMapRelationalTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.s3SourceInput">s3SourceInput</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source">QuicksightDataSetPhysicalTableMapS3Source</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.physicalTableMapId">physicalTableMapId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap">QuicksightDataSetPhysicalTableMap</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap">QuicksightDataSetPhysicalTableMap</a></code> | *No description.* |
 
 ---
 
@@ -13537,10 +13537,10 @@ public readonly physicalTableMapId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetPhysicalTableMap | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetPhysicalTableMap;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap">QuicksightDataSetPhysicalTableMap</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap">QuicksightDataSetPhysicalTableMap</a>
 
 ---
 
@@ -13920,7 +13920,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns">QuicksightDataSetPhysicalTableMapRelationalTableInputColumns</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns">QuicksightDataSetPhysicalTableMapRelationalTableInputColumns</a></code> | *No description.* |
 
 ---
 
@@ -13991,10 +13991,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetPhysicalTableMapRelationalTableInputColumns | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetPhysicalTableMapRelationalTableInputColumns;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns">QuicksightDataSetPhysicalTableMapRelationalTableInputColumns</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns">QuicksightDataSetPhysicalTableMapRelationalTableInputColumns</a>
 
 ---
 
@@ -14760,7 +14760,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns">QuicksightDataSetPhysicalTableMapS3SourceInputColumns</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns">QuicksightDataSetPhysicalTableMapS3SourceInputColumns</a></code> | *No description.* |
 
 ---
 
@@ -14831,10 +14831,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetPhysicalTableMapS3SourceInputColumns | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetPhysicalTableMapS3SourceInputColumns;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns">QuicksightDataSetPhysicalTableMapS3SourceInputColumns</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns">QuicksightDataSetPhysicalTableMapS3SourceInputColumns</a>
 
 ---
 
@@ -17827,7 +17827,7 @@ public resetTagMultiValueDelimiter(): void
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.matchAllValue">matchAllValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.tagKey">tagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.tagMultiValueDelimiter">tagMultiValueDelimiter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules">QuicksightDataSetRowLevelPermissionTagConfigurationTagRules</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules">QuicksightDataSetRowLevelPermissionTagConfigurationTagRules</a></code> | *No description.* |
 
 ---
 
@@ -17938,10 +17938,10 @@ public readonly tagMultiValueDelimiter: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuicksightDataSetRowLevelPermissionTagConfigurationTagRules | IResolvable;
+public readonly internalValue: IResolvable | QuicksightDataSetRowLevelPermissionTagConfigurationTagRules;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules">QuicksightDataSetRowLevelPermissionTagConfigurationTagRules</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules">QuicksightDataSetRowLevelPermissionTagConfigurationTagRules</a>
 
 ---
 

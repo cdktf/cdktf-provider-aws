@@ -455,7 +455,7 @@ rbinRule.RbinRule.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.retentionPeriodInput">retentionPeriodInput</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleRetentionPeriod">RbinRuleRetentionPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRule.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -768,10 +768,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.rbinRule.RbinRule.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: RbinRuleTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | RbinRuleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a>
 
 ---
 
@@ -2219,7 +2219,7 @@ public resetResourceTagValue(): void
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.resourceTagValueInput">resourceTagValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.resourceTagKey">resourceTagKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.resourceTagValue">resourceTagValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a></code> | *No description.* |
 
 ---
 
@@ -2290,10 +2290,10 @@ public readonly resourceTagValue: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RbinRuleResourceTags | IResolvable;
+public readonly internalValue: IResolvable | RbinRuleResourceTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.rbinRule.RbinRuleResourceTags">RbinRuleResourceTags</a>
 
 ---
 
@@ -2828,7 +2828,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2919,10 +2919,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RbinRuleTimeouts | IResolvable;
+public readonly internalValue: IResolvable | RbinRuleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a>
 
 ---
 

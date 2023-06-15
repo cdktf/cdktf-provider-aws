@@ -5424,7 +5424,7 @@ def reset_args() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.args">args</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction">EmrClusterBootstrapAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction">EmrClusterBootstrapAction</a>]</code> | *No description.* |
 
 ---
 
@@ -5515,10 +5515,10 @@ path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterBootstrapAction, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterBootstrapAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction">EmrClusterBootstrapAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterBootstrapAction">EmrClusterBootstrapAction</a>]
 
 ---
 
@@ -5947,7 +5947,7 @@ def reset_properties() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.propertiesInput">properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations</a>]</code> | *No description.* |
 
 ---
 
@@ -6018,10 +6018,10 @@ properties: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations</a>]
 
 ---
 
@@ -6454,7 +6454,7 @@ def reset_volumes_per_instance() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.volumesPerInstance">volumes_per_instance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -6565,10 +6565,10 @@ volumes_per_instance: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig</a>]
 
 ---
 
@@ -7056,7 +7056,7 @@ def reset_weighted_capacity() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.bidPriceAsPercentageOfOnDemandPrice">bid_price_as_percentage_of_on_demand_price</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.instanceType">instance_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.weightedCapacity">weighted_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs">EmrClusterCoreInstanceFleetInstanceTypeConfigs</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs">EmrClusterCoreInstanceFleetInstanceTypeConfigs</a>]</code> | *No description.* |
 
 ---
 
@@ -7207,10 +7207,10 @@ weighted_capacity: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceFleetInstanceTypeConfigs, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceFleetInstanceTypeConfigs]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs">EmrClusterCoreInstanceFleetInstanceTypeConfigs</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigs">EmrClusterCoreInstanceFleetInstanceTypeConfigs</a>]
 
 ---
 
@@ -7623,7 +7623,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.allocationStrategyInput">allocation_strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.allocationStrategy">allocation_strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification</a>]</code> | *No description.* |
 
 ---
 
@@ -7674,10 +7674,10 @@ allocation_strategy: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification</a>]
 
 ---
 
@@ -8465,7 +8465,7 @@ def reset_block_duration_minutes() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.blockDurationMinutes">block_duration_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.timeoutAction">timeout_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.timeoutDurationMinutes">timeout_duration_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification</a>]</code> | *No description.* |
 
 ---
 
@@ -8576,10 +8576,10 @@ timeout_duration_minutes: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification</a>]
 
 ---
 
@@ -9518,7 +9518,7 @@ def reset_volumes_per_instance() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.volumesPerInstance">volumes_per_instance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig">EmrClusterCoreInstanceGroupEbsConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig">EmrClusterCoreInstanceGroupEbsConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -9649,10 +9649,10 @@ volumes_per_instance: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterCoreInstanceGroupEbsConfig, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterCoreInstanceGroupEbsConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig">EmrClusterCoreInstanceGroupEbsConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfig">EmrClusterCoreInstanceGroupEbsConfig</a>]
 
 ---
 
@@ -11481,7 +11481,7 @@ def reset_properties() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.propertiesInput">properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations</a>]</code> | *No description.* |
 
 ---
 
@@ -11552,10 +11552,10 @@ properties: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations">EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations</a>]
 
 ---
 
@@ -11988,7 +11988,7 @@ def reset_volumes_per_instance() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.volumesPerInstance">volumes_per_instance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -12099,10 +12099,10 @@ volumes_per_instance: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig">EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig</a>]
 
 ---
 
@@ -12590,7 +12590,7 @@ def reset_weighted_capacity() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.bidPriceAsPercentageOfOnDemandPrice">bid_price_as_percentage_of_on_demand_price</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.instanceType">instance_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.weightedCapacity">weighted_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs">EmrClusterMasterInstanceFleetInstanceTypeConfigs</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs">EmrClusterMasterInstanceFleetInstanceTypeConfigs</a>]</code> | *No description.* |
 
 ---
 
@@ -12741,10 +12741,10 @@ weighted_capacity: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceFleetInstanceTypeConfigs, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceFleetInstanceTypeConfigs]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs">EmrClusterMasterInstanceFleetInstanceTypeConfigs</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetInstanceTypeConfigs">EmrClusterMasterInstanceFleetInstanceTypeConfigs</a>]
 
 ---
 
@@ -13157,7 +13157,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.allocationStrategyInput">allocation_strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.allocationStrategy">allocation_strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification</a>]</code> | *No description.* |
 
 ---
 
@@ -13208,10 +13208,10 @@ allocation_strategy: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification</a>]
 
 ---
 
@@ -13999,7 +13999,7 @@ def reset_block_duration_minutes() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.blockDurationMinutes">block_duration_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.timeoutAction">timeout_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.timeoutDurationMinutes">timeout_duration_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification</a>]</code> | *No description.* |
 
 ---
 
@@ -14110,10 +14110,10 @@ timeout_duration_minutes: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification">EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification</a>]
 
 ---
 
@@ -15052,7 +15052,7 @@ def reset_volumes_per_instance() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.volumesPerInstance">volumes_per_instance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig">EmrClusterMasterInstanceGroupEbsConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig">EmrClusterMasterInstanceGroupEbsConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -15183,10 +15183,10 @@ volumes_per_instance: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterMasterInstanceGroupEbsConfig, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterMasterInstanceGroupEbsConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig">EmrClusterMasterInstanceGroupEbsConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfig">EmrClusterMasterInstanceGroupEbsConfig</a>]
 
 ---
 
@@ -16053,7 +16053,7 @@ def reset_placement_strategy() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.placementStrategyInput">placement_strategy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.instanceRole">instance_role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.placementStrategy">placement_strategy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig">EmrClusterPlacementGroupConfig</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig">EmrClusterPlacementGroupConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -16124,10 +16124,10 @@ placement_strategy: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfigOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterPlacementGroupConfig, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterPlacementGroupConfig]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig">EmrClusterPlacementGroupConfig</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterPlacementGroupConfig">EmrClusterPlacementGroupConfig</a>]
 
 ---
 
@@ -16574,7 +16574,7 @@ def reset_properties() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.jar">jar</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.mainClass">main_class</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep">EmrClusterStepHadoopJarStep</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep">EmrClusterStepHadoopJarStep</a>]</code> | *No description.* |
 
 ---
 
@@ -16685,10 +16685,10 @@ properties: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterStepHadoopJarStep, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterStepHadoopJarStep]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep">EmrClusterStepHadoopJarStep</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStep">EmrClusterStepHadoopJarStep</a>]
 
 ---
 
@@ -17141,7 +17141,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.actionOnFailure">action_on_failure</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep">EmrClusterStep</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep">EmrClusterStep</a>]</code> | *No description.* |
 
 ---
 
@@ -17232,10 +17232,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[EmrClusterStep, IResolvable]
+internal_value: typing.Union[IResolvable, EmrClusterStep]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep">EmrClusterStep</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.emrCluster.EmrClusterStep">EmrClusterStep</a>]
 
 ---
 

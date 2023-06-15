@@ -701,7 +701,7 @@ transferUser.TransferUser.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.serverIdInput">server_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.userNameInput">user_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.homeDirectory">home_directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUser.property.homeDirectoryType">home_directory_type</a></code> | <code>str</code> | *No description.* |
@@ -1000,10 +1000,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.transferUser.TransferUser.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[TransferUserTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, TransferUserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>]
 
 ---
 
@@ -1956,7 +1956,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.entry">entry</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a>]</code> | *No description.* |
 
 ---
 
@@ -2027,10 +2027,10 @@ target: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[TransferUserHomeDirectoryMappings, IResolvable]
+internal_value: typing.Union[IResolvable, TransferUserHomeDirectoryMappings]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappings">TransferUserHomeDirectoryMappings</a>]
 
 ---
 
@@ -2626,7 +2626,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2677,10 +2677,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.transferUser.TransferUserTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[TransferUserTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, TransferUserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a>]
 
 ---
 

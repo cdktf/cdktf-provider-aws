@@ -517,7 +517,7 @@ snapshotCreateVolumePermission.SnapshotCreateVolumePermission.is_terraform_resou
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.snapshotId">snapshot_id</a></code> | <code>str</code> | *No description.* |
@@ -709,10 +709,10 @@ snapshot_id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermission.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[SnapshotCreateVolumePermissionTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, SnapshotCreateVolumePermissionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>]
 
 ---
 
@@ -1230,7 +1230,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1301,10 +1301,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SnapshotCreateVolumePermissionTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, SnapshotCreateVolumePermissionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.snapshotCreateVolumePermission.SnapshotCreateVolumePermissionTimeouts">SnapshotCreateVolumePermissionTimeouts</a>]
 
 ---
 

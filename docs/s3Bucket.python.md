@@ -1103,7 +1103,7 @@ s3Bucket.S3Bucket.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.serverSideEncryptionConfigurationInput">server_side_encryption_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketServerSideEncryptionConfiguration">S3BucketServerSideEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.versioningInput">versioning_input</a></code> | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketVersioning">S3BucketVersioning</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.websiteInput">website_input</a></code> | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketWebsite">S3BucketWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3Bucket.property.accelerationStatus">acceleration_status</a></code> | <code>str</code> | *No description.* |
@@ -1615,10 +1615,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.s3Bucket.S3Bucket.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[S3BucketTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, S3BucketTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]
 
 ---
 
@@ -4203,7 +4203,7 @@ def reset_max_age_seconds() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRule">S3BucketCorsRule</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRule">S3BucketCorsRule</a>]</code> | *No description.* |
 
 ---
 
@@ -4334,10 +4334,10 @@ max_age_seconds: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketCorsRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketCorsRule, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketCorsRule]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRule">S3BucketCorsRule</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketCorsRule">S3BucketCorsRule</a>]
 
 ---
 
@@ -4770,7 +4770,7 @@ def reset_uri() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.uri">uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrant">S3BucketGrant</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrant">S3BucketGrant</a>]</code> | *No description.* |
 
 ---
 
@@ -4881,10 +4881,10 @@ uri: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketGrant, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketGrant]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrant">S3BucketGrant</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketGrant">S3BucketGrant</a>]
 
 ---
 
@@ -6121,7 +6121,7 @@ def reset_days() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.days">days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition">S3BucketLifecycleRuleNoncurrentVersionTransition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition">S3BucketLifecycleRuleNoncurrentVersionTransition</a>]</code> | *No description.* |
 
 ---
 
@@ -6192,10 +6192,10 @@ storage_class: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketLifecycleRuleNoncurrentVersionTransition, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketLifecycleRuleNoncurrentVersionTransition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition">S3BucketLifecycleRuleNoncurrentVersionTransition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleNoncurrentVersionTransition">S3BucketLifecycleRuleNoncurrentVersionTransition</a>]
 
 ---
 
@@ -6611,7 +6611,7 @@ def reset_transition() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRule">S3BucketLifecycleRule</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRule">S3BucketLifecycleRule</a>]</code> | *No description.* |
 
 ---
 
@@ -6822,10 +6822,10 @@ tags: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketLifecycleRule, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketLifecycleRule]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRule">S3BucketLifecycleRule</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRule">S3BucketLifecycleRule</a>]
 
 ---
 
@@ -7256,7 +7256,7 @@ def reset_days() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.date">date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.days">days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition">S3BucketLifecycleRuleTransition</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition">S3BucketLifecycleRuleTransition</a>]</code> | *No description.* |
 
 ---
 
@@ -7347,10 +7347,10 @@ storage_class: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransitionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketLifecycleRuleTransition, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketLifecycleRuleTransition]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition">S3BucketLifecycleRuleTransition</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleTransition">S3BucketLifecycleRuleTransition</a>]
 
 ---
 
@@ -11466,7 +11466,7 @@ def reset_source_selection_criteria() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules">S3BucketReplicationConfigurationRules</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules">S3BucketReplicationConfigurationRules</a>]</code> | *No description.* |
 
 ---
 
@@ -11657,10 +11657,10 @@ status: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketReplicationConfigurationRules, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketReplicationConfigurationRules]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules">S3BucketReplicationConfigurationRules</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRules">S3BucketReplicationConfigurationRules</a>]
 
 ---
 
@@ -13552,7 +13552,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -13663,10 +13663,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3Bucket.S3BucketTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]
 
 ---
 

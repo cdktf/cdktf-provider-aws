@@ -1601,7 +1601,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.dataId">data_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.negated">negated</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates">WafRateBasedRulePredicates</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates">WafRateBasedRulePredicates</a>]</code> | *No description.* |
 
 ---
 
@@ -1692,10 +1692,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[WafRateBasedRulePredicates, IResolvable]
+internal_value: typing.Union[IResolvable, WafRateBasedRulePredicates]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates">WafRateBasedRulePredicates</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicates">WafRateBasedRulePredicates</a>]
 
 ---
 

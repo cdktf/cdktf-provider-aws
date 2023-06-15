@@ -12621,7 +12621,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.principalInput">principal_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.actions">actions</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.principal">principal</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission">QuicksightDataSourcePermission</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission">QuicksightDataSourcePermission</a>]</code> | *No description.* |
 
 ---
 
@@ -12692,10 +12692,10 @@ principal: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[QuicksightDataSourcePermission, IResolvable]
+internal_value: typing.Union[IResolvable, QuicksightDataSourcePermission]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission">QuicksightDataSourcePermission</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermission">QuicksightDataSourcePermission</a>]
 
 ---
 

@@ -464,7 +464,7 @@ pipesPipe.PipesPipe.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.targetParametersInput">targetParametersInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTargetParameters">PipesPipeTargetParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.desiredState">desiredState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipe.property.enrichment">enrichment</a></code> | <code>string</code> | *No description.* |
@@ -794,10 +794,10 @@ public readonly targetParametersInput: PipesPipeTargetParameters;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.pipesPipe.PipesPipe.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: PipesPipeTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | PipesPipeTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 
@@ -1771,7 +1771,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.patternInput">patternInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.pattern">pattern</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a></code> | *No description.* |
 
 ---
 
@@ -1822,10 +1822,10 @@ public readonly pattern: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: PipesPipeSourceParametersFilterCriteriaFilter | IResolvable;
+public readonly internalValue: IResolvable | PipesPipeSourceParametersFilterCriteriaFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeSourceParametersFilterCriteriaFilter">PipesPipeSourceParametersFilterCriteriaFilter</a>
 
 ---
 
@@ -2927,7 +2927,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3018,10 +3018,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.pipesPipe.PipesPipeTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: PipesPipeTimeouts | IResolvable;
+public readonly internalValue: IResolvable | PipesPipeTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.pipesPipe.PipesPipeTimeouts">PipesPipeTimeouts</a>
 
 ---
 

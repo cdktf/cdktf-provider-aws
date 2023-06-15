@@ -978,7 +978,7 @@ alb.Alb.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.subnetsInput">subnets_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.Alb.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.Alb.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.xffHeaderProcessingModeInput">xff_header_processing_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.Alb.property.desyncMitigationMode">desync_mitigation_mode</a></code> | <code>str</code> | *No description.* |
@@ -1460,10 +1460,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.alb.Alb.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[AlbTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, AlbTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>]
 
 ---
 
@@ -3164,7 +3164,7 @@ def reset_private_ipv4_address() -> None
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.ipv6Address">ipv6_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.privateIpv4Address">private_ipv4_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.subnetId">subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -3285,10 +3285,10 @@ subnet_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.alb.AlbSubnetMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbSubnetMapping, IResolvable]
+internal_value: typing.Union[IResolvable, AlbSubnetMapping]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbSubnetMapping">AlbSubnetMapping</a>]
 
 ---
 
@@ -3555,7 +3555,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -3646,10 +3646,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.alb.AlbTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AlbTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, AlbTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.alb.AlbTimeouts">AlbTimeouts</a>]
 
 ---
 

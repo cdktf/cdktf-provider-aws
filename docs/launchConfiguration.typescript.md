@@ -2334,7 +2334,7 @@ public resetVolumeType(): void
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.throughput">throughput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.volumeSize">volumeSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.volumeType">volumeType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice">LaunchConfigurationEbsBlockDevice</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice">LaunchConfigurationEbsBlockDevice</a></code> | *No description.* |
 
 ---
 
@@ -2545,10 +2545,10 @@ public readonly volumeType: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LaunchConfigurationEbsBlockDevice | IResolvable;
+public readonly internalValue: IResolvable | LaunchConfigurationEbsBlockDevice;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice">LaunchConfigurationEbsBlockDevice</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice">LaunchConfigurationEbsBlockDevice</a>
 
 ---
 
@@ -2944,7 +2944,7 @@ public resetVirtualName(): void
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.deviceName">deviceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.noDevice">noDevice</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.virtualName">virtualName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice">LaunchConfigurationEphemeralBlockDevice</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice">LaunchConfigurationEphemeralBlockDevice</a></code> | *No description.* |
 
 ---
 
@@ -3035,10 +3035,10 @@ public readonly virtualName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LaunchConfigurationEphemeralBlockDevice | IResolvable;
+public readonly internalValue: IResolvable | LaunchConfigurationEphemeralBlockDevice;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice">LaunchConfigurationEphemeralBlockDevice</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice">LaunchConfigurationEphemeralBlockDevice</a>
 
 ---
 

@@ -544,7 +544,7 @@ vpclatticeAuthPolicy.VpclatticeAuthPolicy.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifierInput">resource_identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policy">policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifier">resource_identifier</a></code> | <code>str</code> | *No description.* |
@@ -747,10 +747,10 @@ state_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[VpclatticeAuthPolicyTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, VpclatticeAuthPolicyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>]
 
 ---
 
@@ -1315,7 +1315,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1406,10 +1406,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VpclatticeAuthPolicyTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, VpclatticeAuthPolicyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>]
 
 ---
 

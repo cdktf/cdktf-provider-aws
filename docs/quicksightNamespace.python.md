@@ -544,7 +544,7 @@ quicksightNamespace.QuicksightNamespace.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.identityStoreInput">identity_store_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.awsAccountId">aws_account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.identityStore">identity_store</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
@@ -797,10 +797,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.quicksightNamespace.QuicksightNamespace.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[QuicksightNamespaceTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, QuicksightNamespaceTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>]
 
 ---
 
@@ -1339,7 +1339,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1410,10 +1410,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[QuicksightNamespaceTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, QuicksightNamespaceTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.quicksightNamespace.QuicksightNamespaceTimeouts">QuicksightNamespaceTimeouts</a>]
 
 ---
 

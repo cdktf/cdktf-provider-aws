@@ -866,7 +866,7 @@ ami.Ami.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.sriovNetSupportInput">sriov_net_support_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ami.Ami.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.tpmSupportInput">tpm_support_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.virtualizationTypeInput">virtualization_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.Ami.property.architecture">architecture</a></code> | <code>str</code> | *No description.* |
@@ -1344,10 +1344,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.ami.Ami.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[AmiTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, AmiTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>]
 
 ---
 
@@ -2684,7 +2684,7 @@ def reset_volume_type() -> None
 | <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSize">volume_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeType">volume_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | *No description.* |
 
 ---
 
@@ -2895,10 +2895,10 @@ volume_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AmiEbsBlockDevice, IResolvable]
+internal_value: typing.Union[IResolvable, AmiEbsBlockDevice]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ---
 
@@ -3313,7 +3313,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualNameInput">virtual_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualName">virtual_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | *No description.* |
 
 ---
 
@@ -3384,10 +3384,10 @@ virtual_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AmiEphemeralBlockDevice, IResolvable]
+internal_value: typing.Union[IResolvable, AmiEphemeralBlockDevice]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ---
 
@@ -3654,7 +3654,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -3745,10 +3745,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AmiTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, AmiTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>]
 
 ---
 

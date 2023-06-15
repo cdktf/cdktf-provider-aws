@@ -435,7 +435,7 @@ budgetsBudgetAction.BudgetsBudgetAction.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.notificationTypeInput">notificationTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.subscriberInput">subscriberInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.actionType">actionType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.approvalModel">approvalModel</a></code> | <code>string</code> | *No description.* |
@@ -761,10 +761,10 @@ public readonly subscriberInput: IResolvable | BudgetsBudgetActionSubscriber[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: BudgetsBudgetActionTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | BudgetsBudgetActionTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>
 
 ---
 
@@ -3476,7 +3476,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.subscriptionTypeInput">subscriptionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.subscriptionType">subscriptionType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a></code> | *No description.* |
 
 ---
 
@@ -3547,10 +3547,10 @@ public readonly subscriptionType: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BudgetsBudgetActionSubscriber | IResolvable;
+public readonly internalValue: IResolvable | BudgetsBudgetActionSubscriber;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>
 
 ---
 
@@ -3783,7 +3783,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3854,10 +3854,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: BudgetsBudgetActionTimeouts | IResolvable;
+public readonly internalValue: IResolvable | BudgetsBudgetActionTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>
 
 ---
 

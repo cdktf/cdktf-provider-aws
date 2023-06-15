@@ -1879,7 +1879,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.ruleId">rule_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule">WafRuleGroupActivatedRule</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule">WafRuleGroupActivatedRule</a>]</code> | *No description.* |
 
 ---
 
@@ -1990,10 +1990,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[WafRuleGroupActivatedRule, IResolvable]
+internal_value: typing.Union[IResolvable, WafRuleGroupActivatedRule]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule">WafRuleGroupActivatedRule</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.wafRuleGroup.WafRuleGroupActivatedRule">WafRuleGroupActivatedRule</a>]
 
 ---
 

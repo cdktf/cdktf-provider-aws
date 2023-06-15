@@ -3353,7 +3353,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.validationDomainInput">validation_domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.domainName">domain_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.validationDomain">validation_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption">AcmCertificateValidationOption</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption">AcmCertificateValidationOption</a>]</code> | *No description.* |
 
 ---
 
@@ -3424,10 +3424,10 @@ validation_domain: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AcmCertificateValidationOption, IResolvable]
+internal_value: typing.Union[IResolvable, AcmCertificateValidationOption]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption">AcmCertificateValidationOption</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption">AcmCertificateValidationOption</a>]
 
 ---
 

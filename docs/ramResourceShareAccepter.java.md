@@ -471,7 +471,7 @@ RamResourceShareAccepter.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference">RamResourceShareAccepterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArnInput">shareArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepter.property.shareArn">shareArn</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -725,7 +725,7 @@ public java.lang.String getShareArnInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a>
 
 ---
 
@@ -1198,7 +1198,7 @@ public void resetDelete()
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.String getDelete();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.ramResourceShareAccepter.RamResourceShareAccepterTimeouts">RamResourceShareAccepterTimeouts</a>
 
 ---
 

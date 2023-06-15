@@ -2836,7 +2836,7 @@ public resetUri(): void
 | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissions">permissions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uri">uri</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a></code> | *No description.* |
 
 ---
 
@@ -2967,10 +2967,10 @@ public readonly uri: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: S3ObjectCopyGrant | IResolvable;
+public readonly internalValue: IResolvable | S3ObjectCopyGrant;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>
 
 ---
 

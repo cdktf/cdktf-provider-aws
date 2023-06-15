@@ -409,7 +409,7 @@ dataAwsLbListener.DataAwsLbListener.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.loadBalancerArnInput">loadBalancerArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.loadBalancerArn">loadBalancerArn</a></code> | <code>string</code> | *No description.* |
@@ -653,10 +653,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAwsLbListenerTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAwsLbListenerTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a>
 
 ---
 
@@ -4900,7 +4900,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4951,10 +4951,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsLbListenerTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAwsLbListenerTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a>
 
 ---
 

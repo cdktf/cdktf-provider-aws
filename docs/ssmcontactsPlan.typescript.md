@@ -1309,7 +1309,7 @@ public resetTarget(): void
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.durationInMinutesInput">durationInMinutesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.targetInput">targetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.durationInMinutes">durationInMinutes</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a></code> | *No description.* |
 
 ---
 
@@ -1380,10 +1380,10 @@ public readonly durationInMinutes: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SsmcontactsPlanStage | IResolvable;
+public readonly internalValue: IResolvable | SsmcontactsPlanStage;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage">SsmcontactsPlanStage</a>
 
 ---
 
@@ -2403,7 +2403,7 @@ public resetContactTargetInfo(): void
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.contactTargetInfo">contactTargetInfo</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfoOutputReference">SsmcontactsPlanStageTargetContactTargetInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.channelTargetInfoInput">channelTargetInfoInput</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo">SsmcontactsPlanStageTargetChannelTargetInfo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.contactTargetInfoInput">contactTargetInfoInput</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo">SsmcontactsPlanStageTargetContactTargetInfo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a></code> | *No description.* |
 
 ---
 
@@ -2474,10 +2474,10 @@ public readonly contactTargetInfoInput: SsmcontactsPlanStageTargetContactTargetI
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SsmcontactsPlanStageTarget | IResolvable;
+public readonly internalValue: IResolvable | SsmcontactsPlanStageTarget;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget">SsmcontactsPlanStageTarget</a>
 
 ---
 

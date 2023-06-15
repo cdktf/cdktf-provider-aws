@@ -634,7 +634,7 @@ kendraThesaurus.KendraThesaurus.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.sourceS3PathInput">source_s3_path_input</a></code> | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusSourceS3Path">KendraThesaurusSourceS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.indexId">index_id</a></code> | <code>str</code> | *No description.* |
@@ -920,10 +920,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurus.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[KendraThesaurusTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, KendraThesaurusTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>]
 
 ---
 
@@ -1940,7 +1940,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2031,10 +2031,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[KendraThesaurusTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, KendraThesaurusTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeouts">KendraThesaurusTimeouts</a>]
 
 ---
 

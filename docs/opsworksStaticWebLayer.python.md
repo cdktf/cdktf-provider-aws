@@ -3249,7 +3249,7 @@ def reset_time_zone() -> None
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.logGroupName">log_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.multilineStartPattern">multiline_start_pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.timeZone">time_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a>]</code> | *No description.* |
 
 ---
 
@@ -3500,10 +3500,10 @@ time_zone: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OpsworksStaticWebLayerCloudwatchConfigurationLogStreams, IResolvable]
+internal_value: typing.Union[IResolvable, OpsworksStaticWebLayerCloudwatchConfigurationLogStreams]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams">OpsworksStaticWebLayerCloudwatchConfigurationLogStreams</a>]
 
 ---
 
@@ -4303,7 +4303,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.raidLevel">raid_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a>]</code> | *No description.* |
 
 ---
 
@@ -4474,10 +4474,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[OpsworksStaticWebLayerEbsVolume, IResolvable]
+internal_value: typing.Union[IResolvable, OpsworksStaticWebLayerEbsVolume]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume">OpsworksStaticWebLayerEbsVolume</a>]
 
 ---
 

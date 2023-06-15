@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.NewSimpledbDomain(scope Construct, id *string, config SimpledbDomainConfig) SimpledbDomain
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 &simpledbdomain.SimpledbDomainConfig {
 	Connection: interface{},

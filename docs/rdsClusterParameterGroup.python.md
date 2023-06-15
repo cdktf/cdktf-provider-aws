@@ -1629,7 +1629,7 @@ def reset_apply_method() -> None
 | <code><a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.applyMethod">apply_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter">RdsClusterParameterGroupParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter">RdsClusterParameterGroupParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -1720,10 +1720,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RdsClusterParameterGroupParameter, IResolvable]
+internal_value: typing.Union[IResolvable, RdsClusterParameterGroupParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter">RdsClusterParameterGroupParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter">RdsClusterParameterGroupParameter</a>]
 
 ---
 

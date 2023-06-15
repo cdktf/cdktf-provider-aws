@@ -1894,7 +1894,7 @@ def reset_to_port() -> None
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.ruleNo">rule_no</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.toPort">to_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a>]</code> | *No description.* |
 
 ---
 
@@ -2105,10 +2105,10 @@ to_port: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NetworkAclEgress, IResolvable]
+internal_value: typing.Union[IResolvable, NetworkAclEgress]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkAcl.NetworkAclEgress">NetworkAclEgress</a>]
 
 ---
 
@@ -2600,7 +2600,7 @@ def reset_to_port() -> None
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.ruleNo">rule_no</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.toPort">to_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a>]</code> | *No description.* |
 
 ---
 
@@ -2811,10 +2811,10 @@ to_port: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[NetworkAclIngress, IResolvable]
+internal_value: typing.Union[IResolvable, NetworkAclIngress]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.networkAcl.NetworkAclIngress">NetworkAclIngress</a>]
 
 ---
 

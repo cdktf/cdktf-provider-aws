@@ -462,7 +462,7 @@ eip.Eip.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicIpv4PoolInput">publicIpv4PoolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.vpcInput">vpcInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIp">associateWithPrivateIp</a></code> | <code>string</code> | *No description.* |
@@ -823,10 +823,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.eip.Eip.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: EipTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | EipTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>
 
 ---
 
@@ -1520,7 +1520,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1611,10 +1611,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EipTimeouts | IResolvable;
+public readonly internalValue: IResolvable | EipTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>
 
 ---
 

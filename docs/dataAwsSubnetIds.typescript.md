@@ -403,7 +403,7 @@ dataAwsSubnetIds.DataAwsSubnetIds.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.filterInput">filterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter">DataAwsSubnetIdsFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -596,10 +596,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIds.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAwsSubnetIdsTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAwsSubnetIdsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a>
 
 ---
 
@@ -1279,7 +1279,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter">DataAwsSubnetIdsFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter">DataAwsSubnetIdsFilter</a></code> | *No description.* |
 
 ---
 
@@ -1350,10 +1350,10 @@ public readonly values: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsSubnetIdsFilter | IResolvable;
+public readonly internalValue: IResolvable | DataAwsSubnetIdsFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter">DataAwsSubnetIdsFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsFilter">DataAwsSubnetIdsFilter</a>
 
 ---
 
@@ -1577,7 +1577,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1628,10 +1628,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsSubnetIdsTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAwsSubnetIdsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsSubnetIds.DataAwsSubnetIdsTimeouts">DataAwsSubnetIdsTimeouts</a>
 
 ---
 

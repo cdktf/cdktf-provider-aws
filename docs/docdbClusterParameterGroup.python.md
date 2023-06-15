@@ -1629,7 +1629,7 @@ def reset_apply_method() -> None
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.applyMethod">apply_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter">DocdbClusterParameterGroupParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter">DocdbClusterParameterGroupParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -1720,10 +1720,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DocdbClusterParameterGroupParameter, IResolvable]
+internal_value: typing.Union[IResolvable, DocdbClusterParameterGroupParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter">DocdbClusterParameterGroupParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter">DocdbClusterParameterGroupParameter</a>]
 
 ---
 

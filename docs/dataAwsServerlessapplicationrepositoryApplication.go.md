@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication.DataAwsServerlessapplicationrepositoryApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsserverlessapplicationrepositoryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserverlessapplicationrepositoryapplication"
 
 dataawsserverlessapplicationrepositoryapplication.NewDataAwsServerlessapplicationrepositoryApplication(scope Construct, id *string, config DataAwsServerlessapplicationrepositoryApplicationConfig) DataAwsServerlessapplicationrepositoryApplication
 ```
@@ -284,7 +284,7 @@ func ResetSemanticVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication.DataAwsServerlessapplicationrepositoryApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsserverlessapplicationrepositoryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserverlessapplicationrepositoryapplication"
 
 dataawsserverlessapplicationrepositoryapplication.DataAwsServerlessapplicationrepositoryApplication_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication.DataAwsServerlessapplicationrepositoryApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsserverlessapplicationrepositoryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserverlessapplicationrepositoryapplication"
 
 dataawsserverlessapplicationrepositoryapplication.DataAwsServerlessapplicationrepositoryApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsserverlessapplicationrepositoryapplication.DataAwsServerlessapplicationre
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication.DataAwsServerlessapplicationrepositoryApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsserverlessapplicationrepositoryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserverlessapplicationrepositoryapplication"
 
 dataawsserverlessapplicationrepositoryapplication.DataAwsServerlessapplicationrepositoryApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsServerlessapplicationrepositoryApplication.DataAwsServerlessapplicationrepositoryApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsserverlessapplicationrepositoryapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsserverlessapplicationrepositoryapplication"
 
 &dataawsserverlessapplicationrepositoryapplication.DataAwsServerlessapplicationrepositoryApplicationConfig {
 	Connection: interface{},

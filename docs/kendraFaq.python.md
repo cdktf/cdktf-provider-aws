@@ -664,7 +664,7 @@ kendraFaq.KendraFaq.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.s3PathInput">s3_path_input</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.fileFormat">file_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1002,10 +1002,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[KendraFaqTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, KendraFaqTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>]
 
 ---
 
@@ -2047,7 +2047,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2118,10 +2118,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[KendraFaqTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, KendraFaqTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>]
 
 ---
 

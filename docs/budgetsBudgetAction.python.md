@@ -695,7 +695,7 @@ budgetsBudgetAction.BudgetsBudgetAction.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.notificationTypeInput">notification_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.subscriberInput">subscriber_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.actionType">action_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.approvalModel">approval_model</a></code> | <code>str</code> | *No description.* |
@@ -1021,10 +1021,10 @@ subscriber_input: typing.Union[IResolvable, typing.List[BudgetsBudgetActionSubsc
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[BudgetsBudgetActionTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, BudgetsBudgetActionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>]
 
 ---
 
@@ -4006,7 +4006,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.subscriptionTypeInput">subscription_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.subscriptionType">subscription_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>]</code> | *No description.* |
 
 ---
 
@@ -4077,10 +4077,10 @@ subscription_type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BudgetsBudgetActionSubscriber, IResolvable]
+internal_value: typing.Union[IResolvable, BudgetsBudgetActionSubscriber]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber">BudgetsBudgetActionSubscriber</a>]
 
 ---
 
@@ -4338,7 +4338,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4409,10 +4409,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[BudgetsBudgetActionTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, BudgetsBudgetActionTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionTimeouts">BudgetsBudgetActionTimeouts</a>]
 
 ---
 

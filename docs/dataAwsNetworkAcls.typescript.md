@@ -410,7 +410,7 @@ dataAwsNetworkAcls.DataAwsNetworkAcls.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.filterInput">filterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -603,10 +603,10 @@ public readonly tagsInput: {[ key: string ]: string};
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataAwsNetworkAclsTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataAwsNetworkAclsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a>
 
 ---
 
@@ -1286,7 +1286,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a></code> | *No description.* |
 
 ---
 
@@ -1357,10 +1357,10 @@ public readonly values: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsNetworkAclsFilter | IResolvable;
+public readonly internalValue: IResolvable | DataAwsNetworkAclsFilter;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter">DataAwsNetworkAclsFilter</a>
 
 ---
 
@@ -1584,7 +1584,7 @@ public resetRead(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1635,10 +1635,10 @@ public readonly read: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataAwsNetworkAclsTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataAwsNetworkAclsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a>
 
 ---
 

@@ -2544,7 +2544,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.headerName">header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.headerValue">header_value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction">SesReceiptRuleAddHeaderAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction">SesReceiptRuleAddHeaderAction</a>]</code> | *No description.* |
 
 ---
 
@@ -2635,10 +2635,10 @@ position: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleAddHeaderAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleAddHeaderAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction">SesReceiptRuleAddHeaderAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleAddHeaderAction">SesReceiptRuleAddHeaderAction</a>]
 
 ---
 
@@ -3075,7 +3075,7 @@ def reset_topic_arn() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.smtpReplyCode">smtp_reply_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.statusCode">status_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction">SesReceiptRuleBounceAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction">SesReceiptRuleBounceAction</a>]</code> | *No description.* |
 
 ---
 
@@ -3226,10 +3226,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleBounceAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleBounceAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction">SesReceiptRuleBounceAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceAction">SesReceiptRuleBounceAction</a>]
 
 ---
 
@@ -3662,7 +3662,7 @@ def reset_topic_arn() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.invocationType">invocation_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction">SesReceiptRuleLambdaAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction">SesReceiptRuleLambdaAction</a>]</code> | *No description.* |
 
 ---
 
@@ -3773,10 +3773,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleLambdaAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleLambdaAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction">SesReceiptRuleLambdaAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaAction">SesReceiptRuleLambdaAction</a>]
 
 ---
 
@@ -4218,7 +4218,7 @@ def reset_topic_arn() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.objectKeyPrefix">object_key_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action">SesReceiptRuleS3Action</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action">SesReceiptRuleS3Action</a>]</code> | *No description.* |
 
 ---
 
@@ -4349,10 +4349,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3ActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleS3Action, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleS3Action]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action">SesReceiptRuleS3Action</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleS3Action">SesReceiptRuleS3Action</a>]
 
 ---
 
@@ -4776,7 +4776,7 @@ def reset_encoding() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.encoding">encoding</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction">SesReceiptRuleSnsAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction">SesReceiptRuleSnsAction</a>]</code> | *No description.* |
 
 ---
 
@@ -4867,10 +4867,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleSnsAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleSnsAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction">SesReceiptRuleSnsAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleSnsAction">SesReceiptRuleSnsAction</a>]
 
 ---
 
@@ -5294,7 +5294,7 @@ def reset_topic_arn() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction">SesReceiptRuleStopAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction">SesReceiptRuleStopAction</a>]</code> | *No description.* |
 
 ---
 
@@ -5385,10 +5385,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleStopAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleStopAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction">SesReceiptRuleStopAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleStopAction">SesReceiptRuleStopAction</a>]
 
 ---
 
@@ -5812,7 +5812,7 @@ def reset_topic_arn() -> None
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.organizationArn">organization_arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction">SesReceiptRuleWorkmailAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction">SesReceiptRuleWorkmailAction</a>]</code> | *No description.* |
 
 ---
 
@@ -5903,10 +5903,10 @@ topic_arn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SesReceiptRuleWorkmailAction, IResolvable]
+internal_value: typing.Union[IResolvable, SesReceiptRuleWorkmailAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction">SesReceiptRuleWorkmailAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailAction">SesReceiptRuleWorkmailAction</a>]
 
 ---
 

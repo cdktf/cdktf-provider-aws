@@ -2215,7 +2215,7 @@ def reset_vpce_id() -> None
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.vpceIdInput">vpce_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.endpointType">endpoint_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.vpceId">vpce_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints">AppstreamStackAccessEndpoints</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints">AppstreamStackAccessEndpoints</a>]</code> | *No description.* |
 
 ---
 
@@ -2286,10 +2286,10 @@ vpce_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppstreamStackAccessEndpoints, IResolvable]
+internal_value: typing.Union[IResolvable, AppstreamStackAccessEndpoints]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints">AppstreamStackAccessEndpoints</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpoints">AppstreamStackAccessEndpoints</a>]
 
 ---
 
@@ -3045,7 +3045,7 @@ def reset_resource_identifier() -> None
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.connectorType">connector_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.domains">domains</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.resourceIdentifier">resource_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors">AppstreamStackStorageConnectors</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors">AppstreamStackStorageConnectors</a>]</code> | *No description.* |
 
 ---
 
@@ -3136,10 +3136,10 @@ resource_identifier: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppstreamStackStorageConnectors, IResolvable]
+internal_value: typing.Union[IResolvable, AppstreamStackStorageConnectors]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors">AppstreamStackStorageConnectors</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectors">AppstreamStackStorageConnectors</a>]
 
 ---
 
@@ -3857,7 +3857,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.permissionInput">permission_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.action">action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.permission">permission</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings">AppstreamStackUserSettings</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings">AppstreamStackUserSettings</a>]</code> | *No description.* |
 
 ---
 
@@ -3928,10 +3928,10 @@ permission: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AppstreamStackUserSettings, IResolvable]
+internal_value: typing.Union[IResolvable, AppstreamStackUserSettings]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings">AppstreamStackUserSettings</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettings">AppstreamStackUserSettings</a>]
 
 ---
 

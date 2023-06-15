@@ -517,7 +517,7 @@ elasticsearchDomainPolicy.ElasticsearchDomainPolicy.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.accessPoliciesInput">access_policies_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.domainNameInput">domain_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.accessPolicies">access_policies</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.domainName">domain_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -709,10 +709,10 @@ id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ElasticsearchDomainPolicyTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ElasticsearchDomainPolicyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>]
 
 ---
 
@@ -1230,7 +1230,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1301,10 +1301,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ElasticsearchDomainPolicyTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ElasticsearchDomainPolicyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a>]
 
 ---
 

@@ -2077,7 +2077,7 @@ def reset_grantee() -> None
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.granteeInput">grantee_input</a></code> | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee">S3BucketAclAccessControlPolicyGrantGrantee</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.permissionInput">permission_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.permission">permission</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant">S3BucketAclAccessControlPolicyGrant</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant">S3BucketAclAccessControlPolicyGrant</a>]</code> | *No description.* |
 
 ---
 
@@ -2148,10 +2148,10 @@ permission: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[S3BucketAclAccessControlPolicyGrant, IResolvable]
+internal_value: typing.Union[IResolvable, S3BucketAclAccessControlPolicyGrant]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant">S3BucketAclAccessControlPolicyGrant</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant">S3BucketAclAccessControlPolicyGrant</a>]
 
 ---
 

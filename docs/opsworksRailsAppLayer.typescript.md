@@ -3005,7 +3005,7 @@ public resetTimeZone(): void
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.logGroupName">logGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.multilineStartPattern">multilineStartPattern</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.timeZone">timeZone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams">OpsworksRailsAppLayerCloudwatchConfigurationLogStreams</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams">OpsworksRailsAppLayerCloudwatchConfigurationLogStreams</a></code> | *No description.* |
 
 ---
 
@@ -3256,10 +3256,10 @@ public readonly timeZone: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: OpsworksRailsAppLayerCloudwatchConfigurationLogStreams | IResolvable;
+public readonly internalValue: IResolvable | OpsworksRailsAppLayerCloudwatchConfigurationLogStreams;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams">OpsworksRailsAppLayerCloudwatchConfigurationLogStreams</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreams">OpsworksRailsAppLayerCloudwatchConfigurationLogStreams</a>
 
 ---
 
@@ -3997,7 +3997,7 @@ public resetType(): void
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.raidLevel">raidLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolume">OpsworksRailsAppLayerEbsVolume</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolume">OpsworksRailsAppLayerEbsVolume</a></code> | *No description.* |
 
 ---
 
@@ -4168,10 +4168,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: OpsworksRailsAppLayerEbsVolume | IResolvable;
+public readonly internalValue: IResolvable | OpsworksRailsAppLayerEbsVolume;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolume">OpsworksRailsAppLayerEbsVolume</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolume">OpsworksRailsAppLayerEbsVolume</a>
 
 ---
 

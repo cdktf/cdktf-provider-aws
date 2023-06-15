@@ -4483,7 +4483,7 @@ public void resetWeight()
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.weightInput">weightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.arn">arn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.weight">weight</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a></code> | *No description.* |
 
 ---
 
@@ -4557,7 +4557,7 @@ public java.lang.Number getWeight();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroup">AlbListenerRuleActionForwardTargetGroup</a>
 
 ---
 
@@ -5063,7 +5063,7 @@ public void resetTargetGroupArn()
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.order">order</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.targetGroupArn">targetGroupArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a></code> | *No description.* |
 
 ---
 
@@ -5257,7 +5257,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleAction">AlbListenerRuleAction</a>
 
 ---
 
@@ -7016,7 +7016,7 @@ public void resetSourceIp()
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.pathPatternInput">pathPatternInput</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionPathPattern">AlbListenerRuleConditionPathPattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.queryStringInput">queryStringInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.sourceIpInput">sourceIpInput</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIp">AlbListenerRuleConditionSourceIp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -7170,7 +7170,7 @@ public AlbListenerRuleConditionSourceIp getSourceIpInput();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleCondition">AlbListenerRuleCondition</a>
 
 ---
 
@@ -7828,7 +7828,7 @@ public void resetKey()
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryStringOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a></code> | *No description.* |
 
 ---
 
@@ -7902,7 +7902,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionQueryString">AlbListenerRuleConditionQueryString</a>
 
 ---
 

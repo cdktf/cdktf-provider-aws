@@ -376,7 +376,7 @@ opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.isTerraf
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference">OpensearchInboundConnectionAccepterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.connectionIdInput">connectionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.connectionId">connectionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -567,10 +567,10 @@ public readonly idInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: OpensearchInboundConnectionAccepterTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | OpensearchInboundConnectionAccepterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>
 
 ---
 
@@ -1025,7 +1025,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1096,10 +1096,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: OpensearchInboundConnectionAccepterTimeouts | IResolvable;
+public readonly internalValue: IResolvable | OpensearchInboundConnectionAccepterTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepterTimeouts">OpensearchInboundConnectionAccepterTimeouts</a>
 
 ---
 
