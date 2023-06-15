@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.NewStoragegatewayFileSystemAssociation(scope Construct, id *string, config StoragegatewayFileSystemAssociationConfig) StoragegatewayFileSystemAssociation
 ```
@@ -318,7 +318,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 &storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociationCacheAttributes {
 	CacheStaleTimeoutInSeconds: *f64,
@@ -804,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 &storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociationConfig {
 	Connection: interface{},
@@ -819,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassoc
 	Password: *string,
 	Username: *string,
 	AuditDestinationArn: *string,
-	CacheAttributes: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes,
+	CacheAttributes: github.com/cdktf/cdktf-provider-aws-go/aws/v15.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.NewStoragegatewayFileSystemAssociationCacheAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayFileSystemAssociationCacheAttributesOutputReference
 ```

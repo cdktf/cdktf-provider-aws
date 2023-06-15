@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdefaultpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.NewSsmDefaultPatchBaseline(scope Construct, id *string, config SsmDefaultPatchBaselineConfig) SsmDefaultPatchBaseline
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdefaultpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdefaultpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaseline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdefaultpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmdefaultpatchbaseline"
 
 ssmdefaultpatchbaseline.SsmDefaultPatchBaseline_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDefaultPatchBaseline.SsmDefaultPatchBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdefaultpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmdefaultpatchbaseline"
 
 &ssmdefaultpatchbaseline.SsmDefaultPatchBaselineConfig {
 	Connection: interface{},
