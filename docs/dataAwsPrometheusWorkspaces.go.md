@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.NewDataAwsPrometheusWorkspaces(scope Construct, id *string, config DataAwsPrometheusWorkspacesConfig) DataAwsPrometheusWorkspaces
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsprometheusworkspaces"
 
 &dataawsprometheusworkspaces.DataAwsPrometheusWorkspacesConfig {
 	Connection: interface{},
