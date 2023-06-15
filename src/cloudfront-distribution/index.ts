@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,106 +13,106 @@ import * as cdktf from 'cdktf';
 
 export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#aliases CloudfrontDistribution#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#aliases CloudfrontDistribution#aliases}
   */
   readonly aliases?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#comment CloudfrontDistribution#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#comment CloudfrontDistribution#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#default_root_object CloudfrontDistribution#default_root_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#default_root_object CloudfrontDistribution#default_root_object}
   */
   readonly defaultRootObject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#http_version CloudfrontDistribution#http_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#http_version CloudfrontDistribution#http_version}
   */
   readonly httpVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#id CloudfrontDistribution#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#id CloudfrontDistribution#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#is_ipv6_enabled CloudfrontDistribution#is_ipv6_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#is_ipv6_enabled CloudfrontDistribution#is_ipv6_enabled}
   */
   readonly isIpv6Enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#price_class CloudfrontDistribution#price_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#price_class CloudfrontDistribution#price_class}
   */
   readonly priceClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#retain_on_delete CloudfrontDistribution#retain_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#retain_on_delete CloudfrontDistribution#retain_on_delete}
   */
   readonly retainOnDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#tags CloudfrontDistribution#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#tags CloudfrontDistribution#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#tags_all CloudfrontDistribution#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#tags_all CloudfrontDistribution#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#wait_for_deployment CloudfrontDistribution#wait_for_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#wait_for_deployment CloudfrontDistribution#wait_for_deployment}
   */
   readonly waitForDeployment?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#web_acl_id CloudfrontDistribution#web_acl_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#web_acl_id CloudfrontDistribution#web_acl_id}
   */
   readonly webAclId?: string;
   /**
   * custom_error_response block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#custom_error_response CloudfrontDistribution#custom_error_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#custom_error_response CloudfrontDistribution#custom_error_response}
   */
   readonly customErrorResponse?: CloudfrontDistributionCustomErrorResponse[] | cdktf.IResolvable;
   /**
   * default_cache_behavior block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#default_cache_behavior CloudfrontDistribution#default_cache_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#default_cache_behavior CloudfrontDistribution#default_cache_behavior}
   */
   readonly defaultCacheBehavior: CloudfrontDistributionDefaultCacheBehavior;
   /**
   * logging_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#logging_config CloudfrontDistribution#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#logging_config CloudfrontDistribution#logging_config}
   */
   readonly loggingConfig?: CloudfrontDistributionLoggingConfig;
   /**
   * ordered_cache_behavior block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#ordered_cache_behavior CloudfrontDistribution#ordered_cache_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#ordered_cache_behavior CloudfrontDistribution#ordered_cache_behavior}
   */
   readonly orderedCacheBehavior?: CloudfrontDistributionOrderedCacheBehavior[] | cdktf.IResolvable;
   /**
   * origin block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin CloudfrontDistribution#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin CloudfrontDistribution#origin}
   */
   readonly origin: CloudfrontDistributionOrigin[] | cdktf.IResolvable;
   /**
   * origin_group block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_group CloudfrontDistribution#origin_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_group CloudfrontDistribution#origin_group}
   */
   readonly originGroup?: CloudfrontDistributionOriginGroup[] | cdktf.IResolvable;
   /**
   * restrictions block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#restrictions CloudfrontDistribution#restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#restrictions CloudfrontDistribution#restrictions}
   */
   readonly restrictions: CloudfrontDistributionRestrictions;
   /**
   * viewer_certificate block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#viewer_certificate CloudfrontDistribution#viewer_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#viewer_certificate CloudfrontDistribution#viewer_certificate}
   */
   readonly viewerCertificate: CloudfrontDistributionViewerCertificate;
 }
@@ -396,19 +396,19 @@ export class CloudfrontDistributionTrustedSignersList extends cdktf.ComplexList 
 }
 export interface CloudfrontDistributionCustomErrorResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#error_caching_min_ttl CloudfrontDistribution#error_caching_min_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#error_caching_min_ttl CloudfrontDistribution#error_caching_min_ttl}
   */
   readonly errorCachingMinTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#error_code CloudfrontDistribution#error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#error_code CloudfrontDistribution#error_code}
   */
   readonly errorCode: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#response_code CloudfrontDistribution#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#response_code CloudfrontDistribution#response_code}
   */
   readonly responseCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#response_page_path CloudfrontDistribution#response_page_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#response_page_path CloudfrontDistribution#response_page_path}
   */
   readonly responsePagePath?: string;
 }
@@ -571,11 +571,11 @@ export class CloudfrontDistributionCustomErrorResponseList extends cdktf.Complex
 }
 export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#forward CloudfrontDistribution#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#forward CloudfrontDistribution#forward}
   */
   readonly forward: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#whitelisted_names CloudfrontDistribution#whitelisted_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#whitelisted_names CloudfrontDistribution#whitelisted_names}
   */
   readonly whitelistedNames?: string[];
 }
@@ -660,21 +660,21 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOut
 }
 export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#headers CloudfrontDistribution#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#headers CloudfrontDistribution#headers}
   */
   readonly headers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#query_string CloudfrontDistribution#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#query_string CloudfrontDistribution#query_string}
   */
   readonly queryString: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
   */
   readonly queryStringCacheKeys?: string[];
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cookies CloudfrontDistribution#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cookies CloudfrontDistribution#cookies}
   */
   readonly cookies: CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies;
 }
@@ -802,11 +802,11 @@ export class CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputRefe
 }
 export interface CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#function_arn CloudfrontDistribution#function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#function_arn CloudfrontDistribution#function_arn}
   */
   readonly functionArn: string;
 }
@@ -920,15 +920,15 @@ export class CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList e
 }
 export interface CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#include_body CloudfrontDistribution#include_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#include_body CloudfrontDistribution#include_body}
   */
   readonly includeBody?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#lambda_arn CloudfrontDistribution#lambda_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#lambda_arn CloudfrontDistribution#lambda_arn}
   */
   readonly lambdaArn: string;
 }
@@ -1065,85 +1065,85 @@ export class CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation
 }
 export interface CloudfrontDistributionDefaultCacheBehavior {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#allowed_methods CloudfrontDistribution#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#allowed_methods CloudfrontDistribution#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cache_policy_id CloudfrontDistribution#cache_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cache_policy_id CloudfrontDistribution#cache_policy_id}
   */
   readonly cachePolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cached_methods CloudfrontDistribution#cached_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cached_methods CloudfrontDistribution#cached_methods}
   */
   readonly cachedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#compress CloudfrontDistribution#compress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#compress CloudfrontDistribution#compress}
   */
   readonly compress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#default_ttl CloudfrontDistribution#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#default_ttl CloudfrontDistribution#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#field_level_encryption_id CloudfrontDistribution#field_level_encryption_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#field_level_encryption_id CloudfrontDistribution#field_level_encryption_id}
   */
   readonly fieldLevelEncryptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#max_ttl CloudfrontDistribution#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#max_ttl CloudfrontDistribution#max_ttl}
   */
   readonly maxTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#min_ttl CloudfrontDistribution#min_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#min_ttl CloudfrontDistribution#min_ttl}
   */
   readonly minTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_request_policy_id CloudfrontDistribution#origin_request_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_request_policy_id CloudfrontDistribution#origin_request_policy_id}
   */
   readonly originRequestPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#realtime_log_config_arn CloudfrontDistribution#realtime_log_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#realtime_log_config_arn CloudfrontDistribution#realtime_log_config_arn}
   */
   readonly realtimeLogConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
   */
   readonly responseHeadersPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#smooth_streaming CloudfrontDistribution#smooth_streaming}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#smooth_streaming CloudfrontDistribution#smooth_streaming}
   */
   readonly smoothStreaming?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#target_origin_id CloudfrontDistribution#target_origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#target_origin_id CloudfrontDistribution#target_origin_id}
   */
   readonly targetOriginId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#trusted_key_groups CloudfrontDistribution#trusted_key_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#trusted_key_groups CloudfrontDistribution#trusted_key_groups}
   */
   readonly trustedKeyGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#trusted_signers CloudfrontDistribution#trusted_signers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#trusted_signers CloudfrontDistribution#trusted_signers}
   */
   readonly trustedSigners?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#viewer_protocol_policy CloudfrontDistribution#viewer_protocol_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#viewer_protocol_policy CloudfrontDistribution#viewer_protocol_policy}
   */
   readonly viewerProtocolPolicy: string;
   /**
   * forwarded_values block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#forwarded_values CloudfrontDistribution#forwarded_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#forwarded_values CloudfrontDistribution#forwarded_values}
   */
   readonly forwardedValues?: CloudfrontDistributionDefaultCacheBehaviorForwardedValues;
   /**
   * function_association block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#function_association CloudfrontDistribution#function_association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#function_association CloudfrontDistribution#function_association}
   */
   readonly functionAssociation?: CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation[] | cdktf.IResolvable;
   /**
   * lambda_function_association block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#lambda_function_association CloudfrontDistribution#lambda_function_association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#lambda_function_association CloudfrontDistribution#lambda_function_association}
   */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation[] | cdktf.IResolvable;
 }
@@ -1610,15 +1610,15 @@ export class CloudfrontDistributionDefaultCacheBehaviorOutputReference extends c
 }
 export interface CloudfrontDistributionLoggingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#bucket CloudfrontDistribution#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#bucket CloudfrontDistribution#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#include_cookies CloudfrontDistribution#include_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#include_cookies CloudfrontDistribution#include_cookies}
   */
   readonly includeCookies?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#prefix CloudfrontDistribution#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#prefix CloudfrontDistribution#prefix}
   */
   readonly prefix?: string;
 }
@@ -1726,11 +1726,11 @@ export class CloudfrontDistributionLoggingConfigOutputReference extends cdktf.Co
 }
 export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#forward CloudfrontDistribution#forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#forward CloudfrontDistribution#forward}
   */
   readonly forward: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#whitelisted_names CloudfrontDistribution#whitelisted_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#whitelisted_names CloudfrontDistribution#whitelisted_names}
   */
   readonly whitelistedNames?: string[];
 }
@@ -1815,21 +1815,21 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOut
 }
 export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#headers CloudfrontDistribution#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#headers CloudfrontDistribution#headers}
   */
   readonly headers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#query_string CloudfrontDistribution#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#query_string CloudfrontDistribution#query_string}
   */
   readonly queryString: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
   */
   readonly queryStringCacheKeys?: string[];
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cookies CloudfrontDistribution#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cookies CloudfrontDistribution#cookies}
   */
   readonly cookies: CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies;
 }
@@ -1957,11 +1957,11 @@ export class CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputRefe
 }
 export interface CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#function_arn CloudfrontDistribution#function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#function_arn CloudfrontDistribution#function_arn}
   */
   readonly functionArn: string;
 }
@@ -2075,15 +2075,15 @@ export class CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationList e
 }
 export interface CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#event_type CloudfrontDistribution#event_type}
   */
   readonly eventType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#include_body CloudfrontDistribution#include_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#include_body CloudfrontDistribution#include_body}
   */
   readonly includeBody?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#lambda_arn CloudfrontDistribution#lambda_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#lambda_arn CloudfrontDistribution#lambda_arn}
   */
   readonly lambdaArn: string;
 }
@@ -2220,89 +2220,89 @@ export class CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation
 }
 export interface CloudfrontDistributionOrderedCacheBehavior {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#allowed_methods CloudfrontDistribution#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#allowed_methods CloudfrontDistribution#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cache_policy_id CloudfrontDistribution#cache_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cache_policy_id CloudfrontDistribution#cache_policy_id}
   */
   readonly cachePolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cached_methods CloudfrontDistribution#cached_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cached_methods CloudfrontDistribution#cached_methods}
   */
   readonly cachedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#compress CloudfrontDistribution#compress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#compress CloudfrontDistribution#compress}
   */
   readonly compress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#default_ttl CloudfrontDistribution#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#default_ttl CloudfrontDistribution#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#field_level_encryption_id CloudfrontDistribution#field_level_encryption_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#field_level_encryption_id CloudfrontDistribution#field_level_encryption_id}
   */
   readonly fieldLevelEncryptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#max_ttl CloudfrontDistribution#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#max_ttl CloudfrontDistribution#max_ttl}
   */
   readonly maxTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#min_ttl CloudfrontDistribution#min_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#min_ttl CloudfrontDistribution#min_ttl}
   */
   readonly minTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_request_policy_id CloudfrontDistribution#origin_request_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_request_policy_id CloudfrontDistribution#origin_request_policy_id}
   */
   readonly originRequestPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#path_pattern CloudfrontDistribution#path_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#path_pattern CloudfrontDistribution#path_pattern}
   */
   readonly pathPattern: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#realtime_log_config_arn CloudfrontDistribution#realtime_log_config_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#realtime_log_config_arn CloudfrontDistribution#realtime_log_config_arn}
   */
   readonly realtimeLogConfigArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
   */
   readonly responseHeadersPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#smooth_streaming CloudfrontDistribution#smooth_streaming}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#smooth_streaming CloudfrontDistribution#smooth_streaming}
   */
   readonly smoothStreaming?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#target_origin_id CloudfrontDistribution#target_origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#target_origin_id CloudfrontDistribution#target_origin_id}
   */
   readonly targetOriginId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#trusted_key_groups CloudfrontDistribution#trusted_key_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#trusted_key_groups CloudfrontDistribution#trusted_key_groups}
   */
   readonly trustedKeyGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#trusted_signers CloudfrontDistribution#trusted_signers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#trusted_signers CloudfrontDistribution#trusted_signers}
   */
   readonly trustedSigners?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#viewer_protocol_policy CloudfrontDistribution#viewer_protocol_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#viewer_protocol_policy CloudfrontDistribution#viewer_protocol_policy}
   */
   readonly viewerProtocolPolicy: string;
   /**
   * forwarded_values block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#forwarded_values CloudfrontDistribution#forwarded_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#forwarded_values CloudfrontDistribution#forwarded_values}
   */
   readonly forwardedValues?: CloudfrontDistributionOrderedCacheBehaviorForwardedValues;
   /**
   * function_association block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#function_association CloudfrontDistribution#function_association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#function_association CloudfrontDistribution#function_association}
   */
   readonly functionAssociation?: CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation[] | cdktf.IResolvable;
   /**
   * lambda_function_association block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#lambda_function_association CloudfrontDistribution#lambda_function_association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#lambda_function_association CloudfrontDistribution#lambda_function_association}
   */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation[] | cdktf.IResolvable;
 }
@@ -2821,11 +2821,11 @@ export class CloudfrontDistributionOrderedCacheBehaviorList extends cdktf.Comple
 }
 export interface CloudfrontDistributionOriginCustomHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#name CloudfrontDistribution#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#name CloudfrontDistribution#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#value CloudfrontDistribution#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#value CloudfrontDistribution#value}
   */
   readonly value: string;
 }
@@ -2939,27 +2939,27 @@ export class CloudfrontDistributionOriginCustomHeaderList extends cdktf.ComplexL
 }
 export interface CloudfrontDistributionOriginCustomOriginConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#http_port CloudfrontDistribution#http_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#http_port CloudfrontDistribution#http_port}
   */
   readonly httpPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#https_port CloudfrontDistribution#https_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#https_port CloudfrontDistribution#https_port}
   */
   readonly httpsPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_keepalive_timeout CloudfrontDistribution#origin_keepalive_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_keepalive_timeout CloudfrontDistribution#origin_keepalive_timeout}
   */
   readonly originKeepaliveTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_protocol_policy CloudfrontDistribution#origin_protocol_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_protocol_policy CloudfrontDistribution#origin_protocol_policy}
   */
   readonly originProtocolPolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_read_timeout CloudfrontDistribution#origin_read_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_read_timeout CloudfrontDistribution#origin_read_timeout}
   */
   readonly originReadTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_ssl_protocols CloudfrontDistribution#origin_ssl_protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_ssl_protocols CloudfrontDistribution#origin_ssl_protocols}
   */
   readonly originSslProtocols: string[];
 }
@@ -3127,11 +3127,11 @@ export class CloudfrontDistributionOriginCustomOriginConfigOutputReference exten
 }
 export interface CloudfrontDistributionOriginOriginShield {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#enabled CloudfrontDistribution#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_shield_region CloudfrontDistribution#origin_shield_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_shield_region CloudfrontDistribution#origin_shield_region}
   */
   readonly originShieldRegion: string;
 }
@@ -3213,7 +3213,7 @@ export class CloudfrontDistributionOriginOriginShieldOutputReference extends cdk
 }
 export interface CloudfrontDistributionOriginS3OriginConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_access_identity CloudfrontDistribution#origin_access_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_access_identity CloudfrontDistribution#origin_access_identity}
   */
   readonly originAccessIdentity: string;
 }
@@ -3275,51 +3275,51 @@ export class CloudfrontDistributionOriginS3OriginConfigOutputReference extends c
 }
 export interface CloudfrontDistributionOrigin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#connection_attempts CloudfrontDistribution#connection_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#connection_attempts CloudfrontDistribution#connection_attempts}
   */
   readonly connectionAttempts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#connection_timeout CloudfrontDistribution#connection_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#connection_timeout CloudfrontDistribution#connection_timeout}
   */
   readonly connectionTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#domain_name CloudfrontDistribution#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#domain_name CloudfrontDistribution#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_access_control_id CloudfrontDistribution#origin_access_control_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_access_control_id CloudfrontDistribution#origin_access_control_id}
   */
   readonly originAccessControlId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
   */
   readonly originId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_path CloudfrontDistribution#origin_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_path CloudfrontDistribution#origin_path}
   */
   readonly originPath?: string;
   /**
   * custom_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#custom_header CloudfrontDistribution#custom_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#custom_header CloudfrontDistribution#custom_header}
   */
   readonly customHeader?: CloudfrontDistributionOriginCustomHeader[] | cdktf.IResolvable;
   /**
   * custom_origin_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#custom_origin_config CloudfrontDistribution#custom_origin_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#custom_origin_config CloudfrontDistribution#custom_origin_config}
   */
   readonly customOriginConfig?: CloudfrontDistributionOriginCustomOriginConfig;
   /**
   * origin_shield block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_shield CloudfrontDistribution#origin_shield}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_shield CloudfrontDistribution#origin_shield}
   */
   readonly originShield?: CloudfrontDistributionOriginOriginShield;
   /**
   * s3_origin_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#s3_origin_config CloudfrontDistribution#s3_origin_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#s3_origin_config CloudfrontDistribution#s3_origin_config}
   */
   readonly s3OriginConfig?: CloudfrontDistributionOriginS3OriginConfig;
 }
@@ -3617,7 +3617,7 @@ export class CloudfrontDistributionOriginList extends cdktf.ComplexList {
 }
 export interface CloudfrontDistributionOriginGroupFailoverCriteria {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#status_codes CloudfrontDistribution#status_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#status_codes CloudfrontDistribution#status_codes}
   */
   readonly statusCodes: number[];
 }
@@ -3679,7 +3679,7 @@ export class CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference ex
 }
 export interface CloudfrontDistributionOriginGroupMember {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
   */
   readonly originId: string;
 }
@@ -3773,19 +3773,19 @@ export class CloudfrontDistributionOriginGroupMemberList extends cdktf.ComplexLi
 }
 export interface CloudfrontDistributionOriginGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#origin_id CloudfrontDistribution#origin_id}
   */
   readonly originId: string;
   /**
   * failover_criteria block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#failover_criteria CloudfrontDistribution#failover_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#failover_criteria CloudfrontDistribution#failover_criteria}
   */
   readonly failoverCriteria: CloudfrontDistributionOriginGroupFailoverCriteria;
   /**
   * member block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#member CloudfrontDistribution#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#member CloudfrontDistribution#member}
   */
   readonly member: CloudfrontDistributionOriginGroupMember[] | cdktf.IResolvable;
 }
@@ -3919,11 +3919,11 @@ export class CloudfrontDistributionOriginGroupList extends cdktf.ComplexList {
 }
 export interface CloudfrontDistributionRestrictionsGeoRestriction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#locations CloudfrontDistribution#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#locations CloudfrontDistribution#locations}
   */
   readonly locations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#restriction_type CloudfrontDistribution#restriction_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#restriction_type CloudfrontDistribution#restriction_type}
   */
   readonly restrictionType: string;
 }
@@ -4010,7 +4010,7 @@ export interface CloudfrontDistributionRestrictions {
   /**
   * geo_restriction block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#geo_restriction CloudfrontDistribution#geo_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#geo_restriction CloudfrontDistribution#geo_restriction}
   */
   readonly geoRestriction: CloudfrontDistributionRestrictionsGeoRestriction;
 }
@@ -4072,23 +4072,23 @@ export class CloudfrontDistributionRestrictionsOutputReference extends cdktf.Com
 }
 export interface CloudfrontDistributionViewerCertificate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#acm_certificate_arn CloudfrontDistribution#acm_certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#acm_certificate_arn CloudfrontDistribution#acm_certificate_arn}
   */
   readonly acmCertificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#cloudfront_default_certificate CloudfrontDistribution#cloudfront_default_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#cloudfront_default_certificate CloudfrontDistribution#cloudfront_default_certificate}
   */
   readonly cloudfrontDefaultCertificate?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#iam_certificate_id CloudfrontDistribution#iam_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#iam_certificate_id CloudfrontDistribution#iam_certificate_id}
   */
   readonly iamCertificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#minimum_protocol_version CloudfrontDistribution#minimum_protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#minimum_protocol_version CloudfrontDistribution#minimum_protocol_version}
   */
   readonly minimumProtocolVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution#ssl_support_method CloudfrontDistribution#ssl_support_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution#ssl_support_method CloudfrontDistribution#ssl_support_method}
   */
   readonly sslSupportMethod?: string;
 }
@@ -4245,7 +4245,7 @@ export class CloudfrontDistributionViewerCertificateOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution aws_cloudfront_distribution}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}
 */
 export class CloudfrontDistribution extends cdktf.TerraformResource {
 
@@ -4259,7 +4259,7 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4270,7 +4270,7 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudfront_distribution',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

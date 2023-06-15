@@ -1,6 +1,6 @@
 # `aws_appsync_function`
 
-Refer to the Terraform Registory for docs: [`aws_appsync_function`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function).
+Refer to the Terraform Registory for docs: [`aws_appsync_function`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function).
 
 # `appsyncFunction` Submodule <a name="`appsyncFunction` Submodule" id="@cdktf/provider-aws.appsyncFunction"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_appsync_function`](https://regi
 
 ### AppsyncFunction <a name="AppsyncFunction" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function aws_appsync_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function aws_appsync_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunction(scope Construct, id *string, config AppsyncFunctionConfig) AppsyncFunction
 ```
@@ -359,7 +359,7 @@ func ResetSyncConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ appsyncfunction.AppsyncFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionConfig {
 	Connection: interface{},
@@ -910,8 +910,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
 	MaxBatchSize: *f64,
 	RequestMappingTemplate: *string,
 	ResponseMappingTemplate: *string,
-	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v14.appsyncFunction.AppsyncFunctionRuntime,
-	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.appsyncFunction.AppsyncFunctionSyncConfig,
+	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v15.appsyncFunction.AppsyncFunctionRuntime,
+	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v15.appsyncFunction.AppsyncFunctionSyncConfig,
 }
 ```
 
@@ -926,16 +926,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#api_id AppsyncFunction#api_id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#data_source AppsyncFunction#data_source}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#name AppsyncFunction#name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#code AppsyncFunction#code}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#description AppsyncFunction#description}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.functionVersion">FunctionVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#function_version AppsyncFunction#function_version}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#id AppsyncFunction#id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.maxBatchSize">MaxBatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#max_batch_size AppsyncFunction#max_batch_size}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.requestMappingTemplate">RequestMappingTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#request_mapping_template AppsyncFunction#request_mapping_template}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.responseMappingTemplate">ResponseMappingTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#response_mapping_template AppsyncFunction#response_mapping_template}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#api_id AppsyncFunction#api_id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#data_source AppsyncFunction#data_source}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#name AppsyncFunction#name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.code">Code</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#code AppsyncFunction#code}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#description AppsyncFunction#description}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.functionVersion">FunctionVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#function_version AppsyncFunction#function_version}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#id AppsyncFunction#id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.maxBatchSize">MaxBatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#max_batch_size AppsyncFunction#max_batch_size}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.requestMappingTemplate">RequestMappingTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#request_mapping_template AppsyncFunction#request_mapping_template}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.responseMappingTemplate">ResponseMappingTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#response_mapping_template AppsyncFunction#response_mapping_template}. |
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.runtime">Runtime</a></code> | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime">AppsyncFunctionRuntime</a></code> | runtime block. |
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.property.syncConfig">SyncConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig">AppsyncFunctionSyncConfig</a></code> | sync_config block. |
 
@@ -1019,7 +1019,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#api_id AppsyncFunction#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#api_id AppsyncFunction#api_id}.
 
 ---
 
@@ -1031,7 +1031,7 @@ DataSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#data_source AppsyncFunction#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#data_source AppsyncFunction#data_source}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#name AppsyncFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#name AppsyncFunction#name}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Code *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#code AppsyncFunction#code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#code AppsyncFunction#code}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#description AppsyncFunction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#description AppsyncFunction#description}.
 
 ---
 
@@ -1079,7 +1079,7 @@ FunctionVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#function_version AppsyncFunction#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#function_version AppsyncFunction#function_version}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#id AppsyncFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#id AppsyncFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1106,7 +1106,7 @@ MaxBatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#max_batch_size AppsyncFunction#max_batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#max_batch_size AppsyncFunction#max_batch_size}.
 
 ---
 
@@ -1118,7 +1118,7 @@ RequestMappingTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#request_mapping_template AppsyncFunction#request_mapping_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#request_mapping_template AppsyncFunction#request_mapping_template}.
 
 ---
 
@@ -1130,7 +1130,7 @@ ResponseMappingTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#response_mapping_template AppsyncFunction#response_mapping_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#response_mapping_template AppsyncFunction#response_mapping_template}.
 
 ---
 
@@ -1144,7 +1144,7 @@ Runtime AppsyncFunctionRuntime
 
 runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#runtime AppsyncFunction#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#runtime AppsyncFunction#runtime}
 
 ---
 
@@ -1158,7 +1158,7 @@ SyncConfig AppsyncFunctionSyncConfig
 
 sync_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#sync_config AppsyncFunction#sync_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#sync_config AppsyncFunction#sync_config}
 
 ---
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionRuntime {
 	Name: *string,
@@ -1179,8 +1179,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#name AppsyncFunction#name}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#runtime_version AppsyncFunction#runtime_version}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#name AppsyncFunction#name}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#runtime_version AppsyncFunction#runtime_version}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#name AppsyncFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#name AppsyncFunction#name}.
 
 ---
 
@@ -1204,7 +1204,7 @@ RuntimeVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#runtime_version AppsyncFunction#runtime_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#runtime_version AppsyncFunction#runtime_version}.
 
 ---
 
@@ -1213,12 +1213,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionSyncConfig {
 	ConflictDetection: *string,
 	ConflictHandler: *string,
-	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v14.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig,
+	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v15.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig,
 }
 ```
 
@@ -1226,8 +1226,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.property.conflictDetection">ConflictDetection</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#conflict_detection AppsyncFunction#conflict_detection}. |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.property.conflictHandler">ConflictHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#conflict_handler AppsyncFunction#conflict_handler}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.property.conflictDetection">ConflictDetection</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#conflict_detection AppsyncFunction#conflict_detection}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.property.conflictHandler">ConflictHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#conflict_handler AppsyncFunction#conflict_handler}. |
 | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.property.lambdaConflictHandlerConfig">LambdaConflictHandlerConfig</a></code> | <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig">AppsyncFunctionSyncConfigLambdaConflictHandlerConfig</a></code> | lambda_conflict_handler_config block. |
 
 ---
@@ -1240,7 +1240,7 @@ ConflictDetection *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#conflict_detection AppsyncFunction#conflict_detection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#conflict_detection AppsyncFunction#conflict_detection}.
 
 ---
 
@@ -1252,7 +1252,7 @@ ConflictHandler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#conflict_handler AppsyncFunction#conflict_handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#conflict_handler AppsyncFunction#conflict_handler}.
 
 ---
 
@@ -1266,7 +1266,7 @@ LambdaConflictHandlerConfig AppsyncFunctionSyncConfigLambdaConflictHandlerConfig
 
 lambda_conflict_handler_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#lambda_conflict_handler_config AppsyncFunction#lambda_conflict_handler_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#lambda_conflict_handler_config AppsyncFunction#lambda_conflict_handler_config}
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig {
 	LambdaConflictHandlerArn: *string,
@@ -1286,7 +1286,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig.property.lambdaConflictHandlerArn">LambdaConflictHandlerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#lambda_conflict_handler_arn AppsyncFunction#lambda_conflict_handler_arn}. |
+| <code><a href="#@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig.property.lambdaConflictHandlerArn">LambdaConflictHandlerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#lambda_conflict_handler_arn AppsyncFunction#lambda_conflict_handler_arn}. |
 
 ---
 
@@ -1298,7 +1298,7 @@ LambdaConflictHandlerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_function#lambda_conflict_handler_arn AppsyncFunction#lambda_conflict_handler_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_function#lambda_conflict_handler_arn AppsyncFunction#lambda_conflict_handler_arn}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionRuntimeOutputReference
 ```
@@ -1602,7 +1602,7 @@ func InternalValue() AppsyncFunctionRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference
 ```
@@ -1880,7 +1880,7 @@ func InternalValue() AppsyncFunctionSyncConfigLambdaConflictHandlerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionSyncConfigOutputReference
 ```

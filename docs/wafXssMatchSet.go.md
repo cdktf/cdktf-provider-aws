@@ -1,6 +1,6 @@
 # `aws_waf_xss_match_set`
 
-Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set).
+Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set).
 
 # `wafXssMatchSet` Submodule <a name="`wafXssMatchSet` Submodule" id="@cdktf/provider-aws.wafXssMatchSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://reg
 
 ### WafXssMatchSet <a name="WafXssMatchSet" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.NewWafXssMatchSet(scope Construct, id *string, config WafXssMatchSetConfig) WafXssMatchSet
 ```
@@ -297,7 +297,7 @@ func ResetXssMatchTuples()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.WafXssMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.WafXssMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ wafxssmatchset.WafXssMatchSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.WafXssMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 &wafxssmatchset.WafXssMatchSetConfig {
 	Connection: interface{},
@@ -646,8 +646,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.xssMatchTuples">XssMatchTuples</a></code> | <code>interface{}</code> | xss_match_tuples block. |
 
 ---
@@ -730,7 +730,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}.
 
 ---
 
@@ -742,7 +742,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -759,7 +759,7 @@ XssMatchTuples interface{}
 
 xss_match_tuples block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
 
 ---
 
@@ -768,10 +768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 &wafxssmatchset.WafXssMatchSetXssMatchTuples {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v14.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v15.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch,
 	TextTransformation: *string,
 }
 ```
@@ -781,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.fieldToMatch">FieldToMatch</a></code> | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch">WafXssMatchSetXssMatchTuplesFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}. |
 
 ---
 
@@ -795,7 +795,7 @@ FieldToMatch WafXssMatchSetXssMatchTuplesFieldToMatch
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
 
 ---
 
@@ -807,7 +807,7 @@ TextTransformation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}.
 
 ---
 
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 &wafxssmatchset.WafXssMatchSetXssMatchTuplesFieldToMatch {
 	Type: *string,
@@ -828,8 +828,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}. |
 
 ---
 
@@ -841,7 +841,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}.
 
 ---
 
@@ -853,7 +853,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}.
 
 ---
 
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.NewWafXssMatchSetXssMatchTuplesFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference
 ```
@@ -1164,7 +1164,7 @@ func InternalValue() WafXssMatchSetXssMatchTuplesFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.NewWafXssMatchSetXssMatchTuplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafXssMatchSetXssMatchTuplesList
 ```
@@ -1307,7 +1307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafxssmatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafxssmatchset"
 
 wafxssmatchset.NewWafXssMatchSetXssMatchTuplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafXssMatchSetXssMatchTuplesOutputReference
 ```

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEksAddonVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}
   */
   readonly addonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}
   */
   readonly kubernetesVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version aws_eks_addon_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version aws_eks_addon_version}
 */
 export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
 
@@ -48,7 +48,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class DataAwsEksAddonVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_eks_addon_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

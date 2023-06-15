@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_user_hierarchy_structure
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_user_hierarchy_structure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsConnectUserHierarchyStructureConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}
   */
   readonly instanceId: string;
 }
@@ -485,7 +485,7 @@ export class DataAwsConnectUserHierarchyStructureHierarchyStructureList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}
 */
 export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSource {
 
@@ -499,7 +499,7 @@ export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -510,7 +510,7 @@ export class DataAwsConnectUserHierarchyStructure extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_connect_user_hierarchy_structure',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

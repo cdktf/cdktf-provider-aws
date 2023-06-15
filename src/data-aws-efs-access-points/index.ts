@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/efs_access_points
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/efs_access_points
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEfsAccessPointsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataAwsEfsAccessPointsConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/efs_access_points aws_efs_access_points}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/efs_access_points aws_efs_access_points}
 */
 export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/efs_access_points aws_efs_access_points} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/efs_access_points aws_efs_access_points} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_efs_access_points',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

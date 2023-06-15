@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsMskBrokerNodesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}
   */
   readonly clusterArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
 }
-export interface DataAwsMskBrokerNodesNodeInfoList {
+export interface DataAwsMskBrokerNodesNodeInfoListStruct {
 }
 
-export function dataAwsMskBrokerNodesNodeInfoListToTerraform(struct?: DataAwsMskBrokerNodesNodeInfoList): any {
+export function dataAwsMskBrokerNodesNodeInfoListStructToTerraform(struct?: DataAwsMskBrokerNodesNodeInfoListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -36,7 +36,7 @@ export function dataAwsMskBrokerNodesNodeInfoListToTerraform(struct?: DataAwsMsk
   }
 }
 
-export class DataAwsMskBrokerNodesNodeInfoListOutputReference extends cdktf.ComplexObject {
+export class DataAwsMskBrokerNodesNodeInfoListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -49,13 +49,13 @@ export class DataAwsMskBrokerNodesNodeInfoListOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAwsMskBrokerNodesNodeInfoList | undefined {
+  public get internalValue(): DataAwsMskBrokerNodesNodeInfoListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAwsMskBrokerNodesNodeInfoList | undefined) {
+  public set internalValue(value: DataAwsMskBrokerNodesNodeInfoListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -95,7 +95,7 @@ export class DataAwsMskBrokerNodesNodeInfoListOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAwsMskBrokerNodesNodeInfoListList extends cdktf.ComplexList {
+export class DataAwsMskBrokerNodesNodeInfoListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -109,13 +109,13 @@ export class DataAwsMskBrokerNodesNodeInfoListList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAwsMskBrokerNodesNodeInfoListOutputReference {
-    return new DataAwsMskBrokerNodesNodeInfoListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAwsMskBrokerNodesNodeInfoListStructOutputReference {
+    return new DataAwsMskBrokerNodesNodeInfoListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}
 */
 export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
 
@@ -129,7 +129,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +140,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_msk_broker_nodes',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -189,7 +189,7 @@ export class DataAwsMskBrokerNodes extends cdktf.TerraformDataSource {
   }
 
   // node_info_list - computed: true, optional: false, required: false
-  private _nodeInfoList = new DataAwsMskBrokerNodesNodeInfoListList(this, "node_info_list", false);
+  private _nodeInfoList = new DataAwsMskBrokerNodesNodeInfoListStructList(this, "node_info_list", false);
   public get nodeInfoList() {
     return this._nodeInfoList;
   }

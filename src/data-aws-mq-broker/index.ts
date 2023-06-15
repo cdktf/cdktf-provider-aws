@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker
+// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker#broker_id DataAwsMqBroker#broker_id}
   */
   readonly brokerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker#broker_name DataAwsMqBroker#broker_name}
   */
   readonly brokerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker#id DataAwsMqBroker#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker#id DataAwsMqBroker#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker#tags DataAwsMqBroker#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -577,7 +577,7 @@ export class DataAwsMqBrokerUserList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker aws_mq_broker}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker aws_mq_broker}
 */
 export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
@@ -591,7 +591,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/mq_broker aws_mq_broker} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mq_broker aws_mq_broker} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -602,7 +602,7 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_mq_broker',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.66.1',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

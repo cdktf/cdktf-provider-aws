@@ -1,6 +1,6 @@
 # `aws_ami_from_instance`
 
-Refer to the Terraform Registory for docs: [`aws_ami_from_instance`](https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance).
+Refer to the Terraform Registory for docs: [`aws_ami_from_instance`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance).
 
 # `amiFromInstance` Submodule <a name="`amiFromInstance` Submodule" id="@cdktf/provider-aws.amiFromInstance"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ami_from_instance`](https://reg
 
 ### AmiFromInstance <a name="AmiFromInstance" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance aws_ami_from_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance aws_ami_from_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstance(scope Construct, id *string, config AmiFromInstanceConfig) AmiFromInstance
 ```
@@ -372,7 +372,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ amifrominstance.AmiFromInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.AmiFromInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -1101,7 +1101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 &amifrominstance.AmiFromInstanceConfig {
 	Connection: interface{},
@@ -1121,7 +1121,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
 	SnapshotWithoutReboot: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v14.amiFromInstance.AmiFromInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v15.amiFromInstance.AmiFromInstanceTimeouts,
 }
 ```
 
@@ -1136,16 +1136,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#name AmiFromInstance#name}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.sourceInstanceId">SourceInstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#source_instance_id AmiFromInstance#source_instance_id}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.deprecationTime">DeprecationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#description AmiFromInstance#description}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#name AmiFromInstance#name}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.sourceInstanceId">SourceInstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#source_instance_id AmiFromInstance#source_instance_id}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.deprecationTime">DeprecationTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#description AmiFromInstance#description}. |
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.ebsBlockDevice">EbsBlockDevice</a></code> | <code>interface{}</code> | ebs_block_device block. |
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.ephemeralBlockDevice">EphemeralBlockDevice</a></code> | <code>interface{}</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#id AmiFromInstance#id}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.snapshotWithoutReboot">SnapshotWithoutReboot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#snapshot_without_reboot AmiFromInstance#snapshot_without_reboot}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#tags AmiFromInstance#tags}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#tags_all AmiFromInstance#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#id AmiFromInstance#id}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.snapshotWithoutReboot">SnapshotWithoutReboot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#snapshot_without_reboot AmiFromInstance#snapshot_without_reboot}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#tags AmiFromInstance#tags}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#tags_all AmiFromInstance#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts">AmiFromInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1228,7 +1228,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#name AmiFromInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#name AmiFromInstance#name}.
 
 ---
 
@@ -1240,7 +1240,7 @@ SourceInstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#source_instance_id AmiFromInstance#source_instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#source_instance_id AmiFromInstance#source_instance_id}.
 
 ---
 
@@ -1252,7 +1252,7 @@ DeprecationTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#deprecation_time AmiFromInstance#deprecation_time}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#description AmiFromInstance#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#description AmiFromInstance#description}.
 
 ---
 
@@ -1278,7 +1278,7 @@ EbsBlockDevice interface{}
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#ebs_block_device AmiFromInstance#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#ebs_block_device AmiFromInstance#ebs_block_device}
 
 ---
 
@@ -1292,7 +1292,7 @@ EphemeralBlockDevice interface{}
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#ephemeral_block_device AmiFromInstance#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#ephemeral_block_device AmiFromInstance#ephemeral_block_device}
 
 ---
 
@@ -1304,7 +1304,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#id AmiFromInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#id AmiFromInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1319,7 +1319,7 @@ SnapshotWithoutReboot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#snapshot_without_reboot AmiFromInstance#snapshot_without_reboot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#snapshot_without_reboot AmiFromInstance#snapshot_without_reboot}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#tags AmiFromInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#tags AmiFromInstance#tags}.
 
 ---
 
@@ -1343,7 +1343,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#tags_all AmiFromInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#tags_all AmiFromInstance#tags_all}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Timeouts AmiFromInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#timeouts AmiFromInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#timeouts AmiFromInstance#timeouts}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 &amifrominstance.AmiFromInstanceEbsBlockDevice {
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 &amifrominstance.AmiFromInstanceEphemeralBlockDevice {
 
@@ -1392,7 +1392,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 &amifrominstance.AmiFromInstanceTimeouts {
 	Create: *string,
@@ -1405,9 +1405,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#create AmiFromInstance#create}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#delete AmiFromInstance#delete}. |
-| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#update AmiFromInstance#update}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#create AmiFromInstance#create}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#delete AmiFromInstance#delete}. |
+| <code><a href="#@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#update AmiFromInstance#update}. |
 
 ---
 
@@ -1419,7 +1419,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#create AmiFromInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#create AmiFromInstance#create}.
 
 ---
 
@@ -1431,7 +1431,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#delete AmiFromInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#delete AmiFromInstance#delete}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_from_instance#update AmiFromInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_from_instance#update AmiFromInstance#update}.
 
 ---
 
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiFromInstanceEbsBlockDeviceList
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiFromInstanceEbsBlockDeviceOutputReference
 ```
@@ -1963,7 +1963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AmiFromInstanceEphemeralBlockDeviceList
 ```
@@ -2106,7 +2106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AmiFromInstanceEphemeralBlockDeviceOutputReference
 ```
@@ -2395,7 +2395,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v14/amifrominstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v15/amifrominstance"
 
 amifrominstance.NewAmiFromInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AmiFromInstanceTimeoutsOutputReference
 ```
