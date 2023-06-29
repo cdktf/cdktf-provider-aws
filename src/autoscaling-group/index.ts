@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,206 +13,208 @@ import * as cdktf from 'cdktf';
 
 export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#availability_zones AutoscalingGroup#availability_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#availability_zones AutoscalingGroup#availability_zones}
   */
   readonly availabilityZones?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#capacity_rebalance AutoscalingGroup#capacity_rebalance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#capacity_rebalance AutoscalingGroup#capacity_rebalance}
   */
   readonly capacityRebalance?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#context AutoscalingGroup#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#context AutoscalingGroup#context}
   */
   readonly context?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#default_cooldown AutoscalingGroup#default_cooldown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#default_cooldown AutoscalingGroup#default_cooldown}
   */
   readonly defaultCooldown?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#default_instance_warmup AutoscalingGroup#default_instance_warmup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#default_instance_warmup AutoscalingGroup#default_instance_warmup}
   */
   readonly defaultInstanceWarmup?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#desired_capacity AutoscalingGroup#desired_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#desired_capacity AutoscalingGroup#desired_capacity}
   */
   readonly desiredCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#desired_capacity_type AutoscalingGroup#desired_capacity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#desired_capacity_type AutoscalingGroup#desired_capacity_type}
   */
   readonly desiredCapacityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#enabled_metrics AutoscalingGroup#enabled_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#enabled_metrics AutoscalingGroup#enabled_metrics}
   */
   readonly enabledMetrics?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#force_delete AutoscalingGroup#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#force_delete AutoscalingGroup#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#force_delete_warm_pool AutoscalingGroup#force_delete_warm_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#force_delete_warm_pool AutoscalingGroup#force_delete_warm_pool}
   */
   readonly forceDeleteWarmPool?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#health_check_grace_period AutoscalingGroup#health_check_grace_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#health_check_grace_period AutoscalingGroup#health_check_grace_period}
   */
   readonly healthCheckGracePeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#health_check_type AutoscalingGroup#health_check_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#health_check_type AutoscalingGroup#health_check_type}
   */
   readonly healthCheckType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#id AutoscalingGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#id AutoscalingGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_configuration AutoscalingGroup#launch_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_configuration AutoscalingGroup#launch_configuration}
   */
   readonly launchConfiguration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#load_balancers AutoscalingGroup#load_balancers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#load_balancers AutoscalingGroup#load_balancers}
   */
   readonly loadBalancers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max_instance_lifetime AutoscalingGroup#max_instance_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max_instance_lifetime AutoscalingGroup#max_instance_lifetime}
   */
   readonly maxInstanceLifetime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max_size AutoscalingGroup#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max_size AutoscalingGroup#max_size}
   */
   readonly maxSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#metrics_granularity AutoscalingGroup#metrics_granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#metrics_granularity AutoscalingGroup#metrics_granularity}
   */
   readonly metricsGranularity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min_elb_capacity AutoscalingGroup#min_elb_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min_elb_capacity AutoscalingGroup#min_elb_capacity}
   */
   readonly minElbCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min_size AutoscalingGroup#min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min_size AutoscalingGroup#min_size}
   */
   readonly minSize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#name_prefix AutoscalingGroup#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#name_prefix AutoscalingGroup#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#placement_group AutoscalingGroup#placement_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#placement_group AutoscalingGroup#placement_group}
   */
   readonly placementGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#protect_from_scale_in AutoscalingGroup#protect_from_scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#protect_from_scale_in AutoscalingGroup#protect_from_scale_in}
   */
   readonly protectFromScaleIn?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#service_linked_role_arn AutoscalingGroup#service_linked_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#service_linked_role_arn AutoscalingGroup#service_linked_role_arn}
   */
   readonly serviceLinkedRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#suspended_processes AutoscalingGroup#suspended_processes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#suspended_processes AutoscalingGroup#suspended_processes}
   */
   readonly suspendedProcesses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#tags AutoscalingGroup#tags}
-  */
-  readonly tags?: { [key: string]: string }[] | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#target_group_arns AutoscalingGroup#target_group_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#target_group_arns AutoscalingGroup#target_group_arns}
   */
   readonly targetGroupArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#termination_policies AutoscalingGroup#termination_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#termination_policies AutoscalingGroup#termination_policies}
   */
   readonly terminationPolicies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#vpc_zone_identifier AutoscalingGroup#vpc_zone_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#vpc_zone_identifier AutoscalingGroup#vpc_zone_identifier}
   */
   readonly vpcZoneIdentifier?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#wait_for_capacity_timeout AutoscalingGroup#wait_for_capacity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#wait_for_capacity_timeout AutoscalingGroup#wait_for_capacity_timeout}
   */
   readonly waitForCapacityTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#wait_for_elb_capacity AutoscalingGroup#wait_for_elb_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#wait_for_elb_capacity AutoscalingGroup#wait_for_elb_capacity}
   */
   readonly waitForElbCapacity?: number;
   /**
   * initial_lifecycle_hook block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#initial_lifecycle_hook AutoscalingGroup#initial_lifecycle_hook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#initial_lifecycle_hook AutoscalingGroup#initial_lifecycle_hook}
   */
   readonly initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable;
   /**
   * instance_refresh block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_refresh AutoscalingGroup#instance_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_refresh AutoscalingGroup#instance_refresh}
   */
   readonly instanceRefresh?: AutoscalingGroupInstanceRefresh;
   /**
   * launch_template block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
   */
   readonly launchTemplate?: AutoscalingGroupLaunchTemplate;
   /**
   * mixed_instances_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#mixed_instances_policy AutoscalingGroup#mixed_instances_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#mixed_instances_policy AutoscalingGroup#mixed_instances_policy}
   */
   readonly mixedInstancesPolicy?: AutoscalingGroupMixedInstancesPolicy;
   /**
   * tag block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#tag AutoscalingGroup#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#tag AutoscalingGroup#tag}
   */
   readonly tag?: AutoscalingGroupTag[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
   */
   readonly timeouts?: AutoscalingGroupTimeouts;
   /**
+  * traffic_source block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#traffic_source AutoscalingGroup#traffic_source}
+  */
+  readonly trafficSource?: AutoscalingGroupTrafficSource[] | cdktf.IResolvable;
+  /**
   * warm_pool block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#warm_pool AutoscalingGroup#warm_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#warm_pool AutoscalingGroup#warm_pool}
   */
   readonly warmPool?: AutoscalingGroupWarmPool;
 }
 export interface AutoscalingGroupInitialLifecycleHook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#default_result AutoscalingGroup#default_result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#default_result AutoscalingGroup#default_result}
   */
   readonly defaultResult?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#heartbeat_timeout AutoscalingGroup#heartbeat_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#heartbeat_timeout AutoscalingGroup#heartbeat_timeout}
   */
   readonly heartbeatTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#lifecycle_transition AutoscalingGroup#lifecycle_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#lifecycle_transition AutoscalingGroup#lifecycle_transition}
   */
   readonly lifecycleTransition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#notification_metadata AutoscalingGroup#notification_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#notification_metadata AutoscalingGroup#notification_metadata}
   */
   readonly notificationMetadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#notification_target_arn AutoscalingGroup#notification_target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#notification_target_arn AutoscalingGroup#notification_target_arn}
   */
   readonly notificationTargetArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#role_arn AutoscalingGroup#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#role_arn AutoscalingGroup#role_arn}
   */
   readonly roleArn?: string;
 }
@@ -441,27 +443,27 @@ export class AutoscalingGroupInitialLifecycleHookList extends cdktf.ComplexList 
 }
 export interface AutoscalingGroupInstanceRefreshPreferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#auto_rollback AutoscalingGroup#auto_rollback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#auto_rollback AutoscalingGroup#auto_rollback}
   */
   readonly autoRollback?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}
   */
   readonly checkpointDelay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#checkpoint_percentages AutoscalingGroup#checkpoint_percentages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#checkpoint_percentages AutoscalingGroup#checkpoint_percentages}
   */
   readonly checkpointPercentages?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_warmup AutoscalingGroup#instance_warmup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_warmup AutoscalingGroup#instance_warmup}
   */
   readonly instanceWarmup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min_healthy_percentage AutoscalingGroup#min_healthy_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min_healthy_percentage AutoscalingGroup#min_healthy_percentage}
   */
   readonly minHealthyPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#skip_matching AutoscalingGroup#skip_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#skip_matching AutoscalingGroup#skip_matching}
   */
   readonly skipMatching?: boolean | cdktf.IResolvable;
 }
@@ -641,17 +643,17 @@ export class AutoscalingGroupInstanceRefreshPreferencesOutputReference extends c
 }
 export interface AutoscalingGroupInstanceRefresh {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#strategy AutoscalingGroup#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#strategy AutoscalingGroup#strategy}
   */
   readonly strategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#triggers AutoscalingGroup#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#triggers AutoscalingGroup#triggers}
   */
   readonly triggers?: string[];
   /**
   * preferences block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#preferences AutoscalingGroup#preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#preferences AutoscalingGroup#preferences}
   */
   readonly preferences?: AutoscalingGroupInstanceRefreshPreferences;
 }
@@ -759,18 +761,18 @@ export class AutoscalingGroupInstanceRefreshOutputReference extends cdktf.Comple
 }
 export interface AutoscalingGroupLaunchTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#id AutoscalingGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#id AutoscalingGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#name AutoscalingGroup#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
   */
   readonly version?: string;
 }
@@ -881,27 +883,27 @@ export class AutoscalingGroupLaunchTemplateOutputReference extends cdktf.Complex
 }
 export interface AutoscalingGroupMixedInstancesPolicyInstancesDistribution {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#on_demand_allocation_strategy AutoscalingGroup#on_demand_allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#on_demand_allocation_strategy AutoscalingGroup#on_demand_allocation_strategy}
   */
   readonly onDemandAllocationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#on_demand_base_capacity AutoscalingGroup#on_demand_base_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#on_demand_base_capacity AutoscalingGroup#on_demand_base_capacity}
   */
   readonly onDemandBaseCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#on_demand_percentage_above_base_capacity AutoscalingGroup#on_demand_percentage_above_base_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#on_demand_percentage_above_base_capacity AutoscalingGroup#on_demand_percentage_above_base_capacity}
   */
   readonly onDemandPercentageAboveBaseCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#spot_allocation_strategy AutoscalingGroup#spot_allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#spot_allocation_strategy AutoscalingGroup#spot_allocation_strategy}
   */
   readonly spotAllocationStrategy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#spot_instance_pools AutoscalingGroup#spot_instance_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#spot_instance_pools AutoscalingGroup#spot_instance_pools}
   */
   readonly spotInstancePools?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#spot_max_price AutoscalingGroup#spot_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#spot_max_price AutoscalingGroup#spot_max_price}
   */
   readonly spotMaxPrice?: string;
 }
@@ -1081,15 +1083,15 @@ export class AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputRefe
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}
   */
   readonly launchTemplateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}
   */
   readonly launchTemplateName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
   */
   readonly version?: string;
 }
@@ -1200,11 +1202,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpe
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1292,11 +1294,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1384,11 +1386,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1476,11 +1478,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1568,11 +1570,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1660,11 +1662,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1752,11 +1754,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1844,11 +1846,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -1936,11 +1938,11 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max AutoscalingGroup#max}
   */
   readonly max?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min AutoscalingGroup#min}
   */
   readonly min?: number;
 }
@@ -2028,113 +2030,113 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#accelerator_manufacturers AutoscalingGroup#accelerator_manufacturers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#accelerator_manufacturers AutoscalingGroup#accelerator_manufacturers}
   */
   readonly acceleratorManufacturers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#accelerator_names AutoscalingGroup#accelerator_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#accelerator_names AutoscalingGroup#accelerator_names}
   */
   readonly acceleratorNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#accelerator_types AutoscalingGroup#accelerator_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#accelerator_types AutoscalingGroup#accelerator_types}
   */
   readonly acceleratorTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#allowed_instance_types AutoscalingGroup#allowed_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#allowed_instance_types AutoscalingGroup#allowed_instance_types}
   */
   readonly allowedInstanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#bare_metal AutoscalingGroup#bare_metal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#bare_metal AutoscalingGroup#bare_metal}
   */
   readonly bareMetal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#burstable_performance AutoscalingGroup#burstable_performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#burstable_performance AutoscalingGroup#burstable_performance}
   */
   readonly burstablePerformance?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#cpu_manufacturers AutoscalingGroup#cpu_manufacturers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#cpu_manufacturers AutoscalingGroup#cpu_manufacturers}
   */
   readonly cpuManufacturers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#excluded_instance_types AutoscalingGroup#excluded_instance_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#excluded_instance_types AutoscalingGroup#excluded_instance_types}
   */
   readonly excludedInstanceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_generations AutoscalingGroup#instance_generations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_generations AutoscalingGroup#instance_generations}
   */
   readonly instanceGenerations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#local_storage AutoscalingGroup#local_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#local_storage AutoscalingGroup#local_storage}
   */
   readonly localStorage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#local_storage_types AutoscalingGroup#local_storage_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#local_storage_types AutoscalingGroup#local_storage_types}
   */
   readonly localStorageTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#on_demand_max_price_percentage_over_lowest_price AutoscalingGroup#on_demand_max_price_percentage_over_lowest_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#on_demand_max_price_percentage_over_lowest_price AutoscalingGroup#on_demand_max_price_percentage_over_lowest_price}
   */
   readonly onDemandMaxPricePercentageOverLowestPrice?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#require_hibernate_support AutoscalingGroup#require_hibernate_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#require_hibernate_support AutoscalingGroup#require_hibernate_support}
   */
   readonly requireHibernateSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#spot_max_price_percentage_over_lowest_price AutoscalingGroup#spot_max_price_percentage_over_lowest_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#spot_max_price_percentage_over_lowest_price AutoscalingGroup#spot_max_price_percentage_over_lowest_price}
   */
   readonly spotMaxPricePercentageOverLowestPrice?: number;
   /**
   * accelerator_count block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#accelerator_count AutoscalingGroup#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#accelerator_count AutoscalingGroup#accelerator_count}
   */
   readonly acceleratorCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount;
   /**
   * accelerator_total_memory_mib block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#accelerator_total_memory_mib AutoscalingGroup#accelerator_total_memory_mib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#accelerator_total_memory_mib AutoscalingGroup#accelerator_total_memory_mib}
   */
   readonly acceleratorTotalMemoryMib?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib;
   /**
   * baseline_ebs_bandwidth_mbps block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#baseline_ebs_bandwidth_mbps AutoscalingGroup#baseline_ebs_bandwidth_mbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#baseline_ebs_bandwidth_mbps AutoscalingGroup#baseline_ebs_bandwidth_mbps}
   */
   readonly baselineEbsBandwidthMbps?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps;
   /**
   * memory_gib_per_vcpu block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#memory_gib_per_vcpu AutoscalingGroup#memory_gib_per_vcpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#memory_gib_per_vcpu AutoscalingGroup#memory_gib_per_vcpu}
   */
   readonly memoryGibPerVcpu?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu;
   /**
   * memory_mib block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#memory_mib AutoscalingGroup#memory_mib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#memory_mib AutoscalingGroup#memory_mib}
   */
   readonly memoryMib?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib;
   /**
   * network_bandwidth_gbps block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#network_bandwidth_gbps AutoscalingGroup#network_bandwidth_gbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#network_bandwidth_gbps AutoscalingGroup#network_bandwidth_gbps}
   */
   readonly networkBandwidthGbps?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps;
   /**
   * network_interface_count block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#network_interface_count AutoscalingGroup#network_interface_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#network_interface_count AutoscalingGroup#network_interface_count}
   */
   readonly networkInterfaceCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount;
   /**
   * total_local_storage_gb block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#total_local_storage_gb AutoscalingGroup#total_local_storage_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#total_local_storage_gb AutoscalingGroup#total_local_storage_gb}
   */
   readonly totalLocalStorageGb?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb;
   /**
   * vcpu_count block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#vcpu_count AutoscalingGroup#vcpu_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#vcpu_count AutoscalingGroup#vcpu_count}
   */
   readonly vcpuCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount;
 }
@@ -2705,15 +2707,15 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceR
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}
   */
   readonly launchTemplateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}
   */
   readonly launchTemplateName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}
   */
   readonly version?: string;
 }
@@ -2824,23 +2826,23 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTem
 }
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_type AutoscalingGroup#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_type AutoscalingGroup#instance_type}
   */
   readonly instanceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#weighted_capacity AutoscalingGroup#weighted_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#weighted_capacity AutoscalingGroup#weighted_capacity}
   */
   readonly weightedCapacity?: string;
   /**
   * instance_requirements block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_requirements AutoscalingGroup#instance_requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_requirements AutoscalingGroup#instance_requirements}
   */
   readonly instanceRequirements?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements;
   /**
   * launch_template_specification block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
   */
   readonly launchTemplateSpecification?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification;
 }
@@ -3008,13 +3010,13 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplate {
   /**
   * launch_template_specification block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
   */
   readonly launchTemplateSpecification: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification;
   /**
   * override block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#override AutoscalingGroup#override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#override AutoscalingGroup#override}
   */
   readonly override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable;
 }
@@ -3101,13 +3103,13 @@ export interface AutoscalingGroupMixedInstancesPolicy {
   /**
   * instances_distribution block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instances_distribution AutoscalingGroup#instances_distribution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instances_distribution AutoscalingGroup#instances_distribution}
   */
   readonly instancesDistribution?: AutoscalingGroupMixedInstancesPolicyInstancesDistribution;
   /**
   * launch_template block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
   */
   readonly launchTemplate: AutoscalingGroupMixedInstancesPolicyLaunchTemplate;
 }
@@ -3192,15 +3194,15 @@ export class AutoscalingGroupMixedInstancesPolicyOutputReference extends cdktf.C
 }
 export interface AutoscalingGroupTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#key AutoscalingGroup#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#key AutoscalingGroup#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#propagate_at_launch AutoscalingGroup#propagate_at_launch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#propagate_at_launch AutoscalingGroup#propagate_at_launch}
   */
   readonly propagateAtLaunch: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#value AutoscalingGroup#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#value AutoscalingGroup#value}
   */
   readonly value: string;
 }
@@ -3334,11 +3336,11 @@ export class AutoscalingGroupTagList extends cdktf.ComplexList {
 }
 export interface AutoscalingGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#update AutoscalingGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#update AutoscalingGroup#update}
   */
   readonly update?: string;
 }
@@ -3434,9 +3436,130 @@ export class AutoscalingGroupTimeoutsOutputReference extends cdktf.ComplexObject
     return this._update;
   }
 }
+export interface AutoscalingGroupTrafficSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#identifier AutoscalingGroup#identifier}
+  */
+  readonly identifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#type AutoscalingGroup#type}
+  */
+  readonly type?: string;
+}
+
+export function autoscalingGroupTrafficSourceToTerraform(struct?: AutoscalingGroupTrafficSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    identifier: cdktf.stringToTerraform(struct!.identifier),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class AutoscalingGroupTrafficSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AutoscalingGroupTrafficSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifier = this._identifier;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AutoscalingGroupTrafficSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identifier = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identifier = value.identifier;
+      this._type = value.type;
+    }
+  }
+
+  // identifier - computed: false, optional: false, required: true
+  private _identifier?: string; 
+  public get identifier() {
+    return this.getStringAttribute('identifier');
+  }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class AutoscalingGroupTrafficSourceList extends cdktf.ComplexList {
+  public internalValue? : AutoscalingGroupTrafficSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AutoscalingGroupTrafficSourceOutputReference {
+    return new AutoscalingGroupTrafficSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AutoscalingGroupWarmPoolInstanceReusePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#reuse_on_scale_in AutoscalingGroup#reuse_on_scale_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#reuse_on_scale_in AutoscalingGroup#reuse_on_scale_in}
   */
   readonly reuseOnScaleIn?: boolean | cdktf.IResolvable;
 }
@@ -3501,21 +3624,21 @@ export class AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference extends 
 }
 export interface AutoscalingGroupWarmPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#max_group_prepared_capacity AutoscalingGroup#max_group_prepared_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#max_group_prepared_capacity AutoscalingGroup#max_group_prepared_capacity}
   */
   readonly maxGroupPreparedCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#min_size AutoscalingGroup#min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#min_size AutoscalingGroup#min_size}
   */
   readonly minSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#pool_state AutoscalingGroup#pool_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#pool_state AutoscalingGroup#pool_state}
   */
   readonly poolState?: string;
   /**
   * instance_reuse_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#instance_reuse_policy AutoscalingGroup#instance_reuse_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group#instance_reuse_policy AutoscalingGroup#instance_reuse_policy}
   */
   readonly instanceReusePolicy?: AutoscalingGroupWarmPoolInstanceReusePolicy;
 }
@@ -3649,7 +3772,7 @@ export class AutoscalingGroupWarmPoolOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group aws_autoscaling_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group aws_autoscaling_group}
 */
 export class AutoscalingGroup extends cdktf.TerraformResource {
 
@@ -3663,7 +3786,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3674,8 +3797,8 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -3711,7 +3834,6 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._protectFromScaleIn = config.protectFromScaleIn;
     this._serviceLinkedRoleArn = config.serviceLinkedRoleArn;
     this._suspendedProcesses = config.suspendedProcesses;
-    this._tags = config.tags;
     this._targetGroupArns = config.targetGroupArns;
     this._terminationPolicies = config.terminationPolicies;
     this._vpcZoneIdentifier = config.vpcZoneIdentifier;
@@ -3723,6 +3845,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._mixedInstancesPolicy.internalValue = config.mixedInstancesPolicy;
     this._tag.internalValue = config.tag;
     this._timeouts.internalValue = config.timeouts;
+    this._trafficSource.internalValue = config.trafficSource;
     this._warmPool.internalValue = config.warmPool;
   }
 
@@ -3959,7 +4082,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._launchConfiguration;
   }
 
-  // load_balancers - computed: false, optional: true, required: false
+  // load_balancers - computed: true, optional: true, required: false
   private _loadBalancers?: string[]; 
   public get loadBalancers() {
     return cdktf.Fn.tolist(this.getListAttribute('load_balancers'));
@@ -4150,23 +4273,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._suspendedProcesses;
   }
 
-  // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string }[] | cdktf.IResolvable; 
-  public get tags() {
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tags')));
-  }
-  public set tags(value: { [key: string]: string }[] | cdktf.IResolvable) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags;
-  }
-
-  // target_group_arns - computed: false, optional: true, required: false
+  // target_group_arns - computed: true, optional: true, required: false
   private _targetGroupArns?: string[]; 
   public get targetGroupArns() {
     return cdktf.Fn.tolist(this.getListAttribute('target_group_arns'));
@@ -4347,6 +4454,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // traffic_source - computed: false, optional: true, required: false
+  private _trafficSource = new AutoscalingGroupTrafficSourceList(this, "traffic_source", true);
+  public get trafficSource() {
+    return this._trafficSource;
+  }
+  public putTrafficSource(value: AutoscalingGroupTrafficSource[] | cdktf.IResolvable) {
+    this._trafficSource.internalValue = value;
+  }
+  public resetTrafficSource() {
+    this._trafficSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficSourceInput() {
+    return this._trafficSource.internalValue;
+  }
+
   // warm_pool - computed: false, optional: true, required: false
   private _warmPool = new AutoscalingGroupWarmPoolOutputReference(this, "warm_pool");
   public get warmPool() {
@@ -4395,7 +4518,6 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       protect_from_scale_in: cdktf.booleanToTerraform(this._protectFromScaleIn),
       service_linked_role_arn: cdktf.stringToTerraform(this._serviceLinkedRoleArn),
       suspended_processes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._suspendedProcesses),
-      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._tags),
       target_group_arns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupArns),
       termination_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._terminationPolicies),
       vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vpcZoneIdentifier),
@@ -4407,6 +4529,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       mixed_instances_policy: autoscalingGroupMixedInstancesPolicyToTerraform(this._mixedInstancesPolicy.internalValue),
       tag: cdktf.listMapper(autoscalingGroupTagToTerraform, true)(this._tag.internalValue),
       timeouts: autoscalingGroupTimeoutsToTerraform(this._timeouts.internalValue),
+      traffic_source: cdktf.listMapper(autoscalingGroupTrafficSourceToTerraform, true)(this._trafficSource.internalValue),
       warm_pool: autoscalingGroupWarmPoolToTerraform(this._warmPool.internalValue),
     };
   }

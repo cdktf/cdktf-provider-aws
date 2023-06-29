@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,76 @@ import * as cdktf from 'cdktf';
 
 export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}
   */
-  readonly junctionPath: string;
+  readonly junctionPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#ontap_volume_type FsxOntapVolume#ontap_volume_type}
+  */
+  readonly ontapVolumeType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}
   */
   readonly securityStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}
   */
   readonly sizeInMegabytes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}
   */
-  readonly storageEfficiencyEnabled: boolean | cdktf.IResolvable;
+  readonly skipFinalBackup?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}
+  */
+  readonly storageEfficiencyEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}
   */
   readonly storageVirtualMachineId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}
   */
   readonly volumeType?: string;
   /**
   * tiering_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#tiering_policy FsxOntapVolume#tiering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#tiering_policy FsxOntapVolume#tiering_policy}
   */
   readonly tieringPolicy?: FsxOntapVolumeTieringPolicy;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#timeouts FsxOntapVolume#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#timeouts FsxOntapVolume#timeouts}
   */
   readonly timeouts?: FsxOntapVolumeTimeouts;
 }
 export interface FsxOntapVolumeTieringPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}
   */
   readonly coolingPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}
   */
   readonly name?: string;
 }
@@ -162,15 +170,15 @@ export class FsxOntapVolumeTieringPolicyOutputReference extends cdktf.ComplexObj
 }
 export interface FsxOntapVolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}
   */
   readonly update?: string;
 }
@@ -291,7 +299,7 @@ export class FsxOntapVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}
 */
 export class FsxOntapVolume extends cdktf.TerraformResource {
 
@@ -305,7 +313,7 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -316,8 +324,8 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_ontap_volume',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -330,8 +338,10 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
     this._id = config.id;
     this._junctionPath = config.junctionPath;
     this._name = config.name;
+    this._ontapVolumeType = config.ontapVolumeType;
     this._securityStyle = config.securityStyle;
     this._sizeInMegabytes = config.sizeInMegabytes;
+    this._skipFinalBackup = config.skipFinalBackup;
     this._storageEfficiencyEnabled = config.storageEfficiencyEnabled;
     this._storageVirtualMachineId = config.storageVirtualMachineId;
     this._tags = config.tags;
@@ -376,13 +386,16 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // junction_path - computed: false, optional: false, required: true
+  // junction_path - computed: false, optional: true, required: false
   private _junctionPath?: string; 
   public get junctionPath() {
     return this.getStringAttribute('junction_path');
   }
   public set junctionPath(value: string) {
     this._junctionPath = value;
+  }
+  public resetJunctionPath() {
+    this._junctionPath = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get junctionPathInput() {
@@ -402,12 +415,23 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // ontap_volume_type - computed: true, optional: false, required: false
+  // ontap_volume_type - computed: true, optional: true, required: false
+  private _ontapVolumeType?: string; 
   public get ontapVolumeType() {
     return this.getStringAttribute('ontap_volume_type');
   }
+  public set ontapVolumeType(value: string) {
+    this._ontapVolumeType = value;
+  }
+  public resetOntapVolumeType() {
+    this._ontapVolumeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ontapVolumeTypeInput() {
+    return this._ontapVolumeType;
+  }
 
-  // security_style - computed: false, optional: true, required: false
+  // security_style - computed: true, optional: true, required: false
   private _securityStyle?: string; 
   public get securityStyle() {
     return this.getStringAttribute('security_style');
@@ -436,13 +460,32 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
     return this._sizeInMegabytes;
   }
 
-  // storage_efficiency_enabled - computed: false, optional: false, required: true
+  // skip_final_backup - computed: false, optional: true, required: false
+  private _skipFinalBackup?: boolean | cdktf.IResolvable; 
+  public get skipFinalBackup() {
+    return this.getBooleanAttribute('skip_final_backup');
+  }
+  public set skipFinalBackup(value: boolean | cdktf.IResolvable) {
+    this._skipFinalBackup = value;
+  }
+  public resetSkipFinalBackup() {
+    this._skipFinalBackup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipFinalBackupInput() {
+    return this._skipFinalBackup;
+  }
+
+  // storage_efficiency_enabled - computed: false, optional: true, required: false
   private _storageEfficiencyEnabled?: boolean | cdktf.IResolvable; 
   public get storageEfficiencyEnabled() {
     return this.getBooleanAttribute('storage_efficiency_enabled');
   }
   public set storageEfficiencyEnabled(value: boolean | cdktf.IResolvable) {
     this._storageEfficiencyEnabled = value;
+  }
+  public resetStorageEfficiencyEnabled() {
+    this._storageEfficiencyEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageEfficiencyEnabledInput() {
@@ -556,8 +599,10 @@ export class FsxOntapVolume extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       junction_path: cdktf.stringToTerraform(this._junctionPath),
       name: cdktf.stringToTerraform(this._name),
+      ontap_volume_type: cdktf.stringToTerraform(this._ontapVolumeType),
       security_style: cdktf.stringToTerraform(this._securityStyle),
       size_in_megabytes: cdktf.numberToTerraform(this._sizeInMegabytes),
+      skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
       storage_efficiency_enabled: cdktf.booleanToTerraform(this._storageEfficiencyEnabled),
       storage_virtual_machine_id: cdktf.stringToTerraform(this._storageVirtualMachineId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

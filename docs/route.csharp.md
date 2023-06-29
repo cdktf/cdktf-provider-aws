@@ -1,6 +1,6 @@
 # `aws_route`
 
-Refer to the Terraform Registory for docs: [`aws_route`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route).
+Refer to the Terraform Registory for docs: [`aws_route`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route).
 
 # `route` Submodule <a name="`route` Submodule" id="@cdktf/provider-aws.route"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_route`](https://registry.terraf
 
 ### Route <a name="Route" id="@cdktf/provider-aws.route.Route"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route aws_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route.Route.Initializer"></a>
 
@@ -79,7 +79,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.route.Route.resetEgressOnlyGatewayId">ResetEgressOnlyGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.resetGatewayId">ResetGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route.Route.resetInstanceId">ResetInstanceId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.resetLocalGatewayId">ResetLocalGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.resetNatGatewayId">ResetNatGatewayId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.resetNetworkInterfaceId">ResetNetworkInterfaceId</a></code> | *No description.* |
@@ -334,12 +333,6 @@ private void ResetGatewayId()
 private void ResetId()
 ```
 
-##### `ResetInstanceId` <a name="ResetInstanceId" id="@cdktf/provider-aws.route.Route.resetInstanceId"></a>
-
-```csharp
-private void ResetInstanceId()
-```
-
 ##### `ResetLocalGatewayId` <a name="ResetLocalGatewayId" id="@cdktf/provider-aws.route.Route.resetLocalGatewayId"></a>
 
 ```csharp
@@ -470,6 +463,7 @@ Route.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.route.Route.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.route.Route.property.instanceId">InstanceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.instanceOwnerId">InstanceOwnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.origin">Origin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.state">State</a></code> | <code>string</code> | *No description.* |
@@ -482,7 +476,6 @@ Route.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.route.Route.property.egressOnlyGatewayIdInput">EgressOnlyGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.gatewayIdInput">GatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route.Route.property.instanceIdInput">InstanceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.localGatewayIdInput">LocalGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.natGatewayIdInput">NatGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.networkInterfaceIdInput">NetworkInterfaceIdInput</a></code> | <code>string</code> | *No description.* |
@@ -499,7 +492,6 @@ Route.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.route.Route.property.egressOnlyGatewayId">EgressOnlyGatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.gatewayId">GatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route.Route.property.instanceId">InstanceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.localGatewayId">LocalGatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.natGatewayId">NatGatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.Route.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | *No description.* |
@@ -652,6 +644,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `InstanceId`<sup>Required</sup> <a name="InstanceId" id="@cdktf/provider-aws.route.Route.property.instanceId"></a>
+
+```csharp
+public string InstanceId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `InstanceOwnerId`<sup>Required</sup> <a name="InstanceOwnerId" id="@cdktf/provider-aws.route.Route.property.instanceOwnerId"></a>
 
 ```csharp
@@ -766,16 +768,6 @@ public string GatewayIdInput { get; }
 
 ```csharp
 public string IdInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `InstanceIdInput`<sup>Optional</sup> <a name="InstanceIdInput" id="@cdktf/provider-aws.route.Route.property.instanceIdInput"></a>
-
-```csharp
-public string InstanceIdInput { get; }
 ```
 
 - *Type:* string
@@ -942,16 +934,6 @@ public string Id { get; }
 
 ---
 
-##### `InstanceId`<sup>Required</sup> <a name="InstanceId" id="@cdktf/provider-aws.route.Route.property.instanceId"></a>
-
-```csharp
-public string InstanceId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `LocalGatewayId`<sup>Required</sup> <a name="LocalGatewayId" id="@cdktf/provider-aws.route.Route.property.localGatewayId"></a>
 
 ```csharp
@@ -1066,7 +1048,6 @@ new RouteConfig {
     string EgressOnlyGatewayId = null,
     string GatewayId = null,
     string Id = null,
-    string InstanceId = null,
     string LocalGatewayId = null,
     string NatGatewayId = null,
     string NetworkInterfaceId = null,
@@ -1088,23 +1069,22 @@ new RouteConfig {
 | <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.routeTableId">RouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#route_table_id Route#route_table_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.carrierGatewayId">CarrierGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#core_network_arn Route#core_network_arn}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationCidrBlock">DestinationCidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationIpv6CidrBlock">DestinationIpv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationPrefixListId">DestinationPrefixListId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.egressOnlyGatewayId">EgressOnlyGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#gateway_id Route#gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#id Route#id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#instance_id Route#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.localGatewayId">LocalGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#local_gateway_id Route#local_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.natGatewayId">NatGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#network_interface_id Route#network_interface_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.routeTableId">RouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#route_table_id Route#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.carrierGatewayId">CarrierGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#core_network_arn Route#core_network_arn}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationCidrBlock">DestinationCidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationIpv6CidrBlock">DestinationIpv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.destinationPrefixListId">DestinationPrefixListId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.egressOnlyGatewayId">EgressOnlyGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#gateway_id Route#gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#id Route#id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.localGatewayId">LocalGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#local_gateway_id Route#local_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.natGatewayId">NatGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#network_interface_id Route#network_interface_id}. |
 | <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route.RouteTimeouts">RouteTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.vpcEndpointId">VpcEndpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.vpcPeeringConnectionId">VpcPeeringConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.vpcEndpointId">VpcEndpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteConfig.property.vpcPeeringConnectionId">VpcPeeringConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}. |
 
 ---
 
@@ -1186,7 +1166,7 @@ public string RouteTableId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#route_table_id Route#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#route_table_id Route#route_table_id}.
 
 ---
 
@@ -1198,7 +1178,7 @@ public string CarrierGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}.
 
 ---
 
@@ -1210,7 +1190,7 @@ public string CoreNetworkArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#core_network_arn Route#core_network_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#core_network_arn Route#core_network_arn}.
 
 ---
 
@@ -1222,7 +1202,7 @@ public string DestinationCidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}.
 
 ---
 
@@ -1234,7 +1214,7 @@ public string DestinationIpv6CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}.
 
 ---
 
@@ -1246,7 +1226,7 @@ public string DestinationPrefixListId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}.
 
 ---
 
@@ -1258,7 +1238,7 @@ public string EgressOnlyGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}.
 
 ---
 
@@ -1270,7 +1250,7 @@ public string GatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#gateway_id Route#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#gateway_id Route#gateway_id}.
 
 ---
 
@@ -1282,22 +1262,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#id Route#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#id Route#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `InstanceId`<sup>Optional</sup> <a name="InstanceId" id="@cdktf/provider-aws.route.RouteConfig.property.instanceId"></a>
-
-```csharp
-public string InstanceId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#instance_id Route#instance_id}.
 
 ---
 
@@ -1309,7 +1277,7 @@ public string LocalGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#local_gateway_id Route#local_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#local_gateway_id Route#local_gateway_id}.
 
 ---
 
@@ -1321,7 +1289,7 @@ public string NatGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}.
 
 ---
 
@@ -1333,7 +1301,7 @@ public string NetworkInterfaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#network_interface_id Route#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#network_interface_id Route#network_interface_id}.
 
 ---
 
@@ -1347,7 +1315,7 @@ public RouteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#timeouts Route#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#timeouts Route#timeouts}
 
 ---
 
@@ -1359,7 +1327,7 @@ public string TransitGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}.
 
 ---
 
@@ -1371,7 +1339,7 @@ public string VpcEndpointId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}.
 
 ---
 
@@ -1383,7 +1351,7 @@ public string VpcPeeringConnectionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}.
 
 ---
 
@@ -1405,9 +1373,9 @@ new RouteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#create Route#create}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#delete Route#delete}. |
-| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#update Route#update}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#create Route#create}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#delete Route#delete}. |
+| <code><a href="#@cdktf/provider-aws.route.RouteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#update Route#update}. |
 
 ---
 
@@ -1419,7 +1387,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#create Route#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#create Route#create}.
 
 ---
 
@@ -1431,7 +1399,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#delete Route#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#delete Route#delete}.
 
 ---
 
@@ -1443,7 +1411,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#update Route#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#update Route#update}.
 
 ---
 

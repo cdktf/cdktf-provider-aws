@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster#cluster_id DataAwsElasticacheCluster#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster#cluster_id DataAwsElasticacheCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster#id DataAwsElasticacheCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster#id DataAwsElasticacheCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster#tags DataAwsElasticacheCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster#tags DataAwsElasticacheCluster#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -193,7 +193,7 @@ export class DataAwsElasticacheClusterLogDeliveryConfigurationList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster}
 */
 export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
 
@@ -207,7 +207,7 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,8 +218,8 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_elasticache_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -362,11 +362,6 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
     return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
-  }
-
-  // security_group_names - computed: true, optional: false, required: false
-  public get securityGroupNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_names'));
   }
 
   // snapshot_retention_limit - computed: true, optional: false, required: false

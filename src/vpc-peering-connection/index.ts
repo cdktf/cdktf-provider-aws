@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface VpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#auto_accept VpcPeeringConnection#auto_accept}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#auto_accept VpcPeeringConnection#auto_accept}
   */
   readonly autoAccept?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#id VpcPeeringConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#id VpcPeeringConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#peer_owner_id VpcPeeringConnection#peer_owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#peer_owner_id VpcPeeringConnection#peer_owner_id}
   */
   readonly peerOwnerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#peer_region VpcPeeringConnection#peer_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#peer_region VpcPeeringConnection#peer_region}
   */
   readonly peerRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#peer_vpc_id VpcPeeringConnection#peer_vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#peer_vpc_id VpcPeeringConnection#peer_vpc_id}
   */
   readonly peerVpcId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#tags VpcPeeringConnection#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#tags VpcPeeringConnection#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#tags_all VpcPeeringConnection#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#tags_all VpcPeeringConnection#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#vpc_id VpcPeeringConnection#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#vpc_id VpcPeeringConnection#vpc_id}
   */
   readonly vpcId: string;
   /**
   * accepter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#accepter VpcPeeringConnection#accepter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#accepter VpcPeeringConnection#accepter}
   */
   readonly accepter?: VpcPeeringConnectionAccepter;
   /**
   * requester block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#requester VpcPeeringConnection#requester}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#requester VpcPeeringConnection#requester}
   */
   readonly requester?: VpcPeeringConnectionRequester;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#timeouts VpcPeeringConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#timeouts VpcPeeringConnection#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionTimeouts;
 }
 export interface VpcPeeringConnectionAccepter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_classic_link_to_remote_vpc VpcPeeringConnection#allow_classic_link_to_remote_vpc}
-  */
-  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_remote_vpc_dns_resolution VpcPeeringConnection#allow_remote_vpc_dns_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#allow_remote_vpc_dns_resolution VpcPeeringConnection#allow_remote_vpc_dns_resolution}
   */
   readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_vpc_to_remote_classic_link VpcPeeringConnection#allow_vpc_to_remote_classic_link}
-  */
-  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 export function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConnectionAccepterOutputReference | VpcPeeringConnectionAccepter): any {
@@ -87,9 +79,7 @@ export function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConne
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
     allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
-    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
   }
 }
 
@@ -107,17 +97,9 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   public get internalValue(): VpcPeeringConnectionAccepter | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowClassicLinkToRemoteVpc !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowClassicLinkToRemoteVpc = this._allowClassicLinkToRemoteVpc;
-    }
     if (this._allowRemoteVpcDnsResolution !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowRemoteVpcDnsResolution = this._allowRemoteVpcDnsResolution;
-    }
-    if (this._allowVpcToRemoteClassicLink !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowVpcToRemoteClassicLink = this._allowVpcToRemoteClassicLink;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -125,32 +107,12 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   public set internalValue(value: VpcPeeringConnectionAccepter | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
-      this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
-      this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;
     }
-  }
-
-  // allow_classic_link_to_remote_vpc - computed: false, optional: true, required: false
-  private _allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable; 
-  public get allowClassicLinkToRemoteVpc() {
-    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc');
-  }
-  public set allowClassicLinkToRemoteVpc(value: boolean | cdktf.IResolvable) {
-    this._allowClassicLinkToRemoteVpc = value;
-  }
-  public resetAllowClassicLinkToRemoteVpc() {
-    this._allowClassicLinkToRemoteVpc = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowClassicLinkToRemoteVpcInput() {
-    return this._allowClassicLinkToRemoteVpc;
   }
 
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
@@ -168,36 +130,12 @@ export class VpcPeeringConnectionAccepterOutputReference extends cdktf.ComplexOb
   public get allowRemoteVpcDnsResolutionInput() {
     return this._allowRemoteVpcDnsResolution;
   }
-
-  // allow_vpc_to_remote_classic_link - computed: false, optional: true, required: false
-  private _allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable; 
-  public get allowVpcToRemoteClassicLink() {
-    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link');
-  }
-  public set allowVpcToRemoteClassicLink(value: boolean | cdktf.IResolvable) {
-    this._allowVpcToRemoteClassicLink = value;
-  }
-  public resetAllowVpcToRemoteClassicLink() {
-    this._allowVpcToRemoteClassicLink = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowVpcToRemoteClassicLinkInput() {
-    return this._allowVpcToRemoteClassicLink;
-  }
 }
 export interface VpcPeeringConnectionRequester {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_classic_link_to_remote_vpc VpcPeeringConnection#allow_classic_link_to_remote_vpc}
-  */
-  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_remote_vpc_dns_resolution VpcPeeringConnection#allow_remote_vpc_dns_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#allow_remote_vpc_dns_resolution VpcPeeringConnection#allow_remote_vpc_dns_resolution}
   */
   readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#allow_vpc_to_remote_classic_link VpcPeeringConnection#allow_vpc_to_remote_classic_link}
-  */
-  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 export function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConnectionRequesterOutputReference | VpcPeeringConnectionRequester): any {
@@ -206,9 +144,7 @@ export function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConn
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
     allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
-    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
   }
 }
 
@@ -226,17 +162,9 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   public get internalValue(): VpcPeeringConnectionRequester | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowClassicLinkToRemoteVpc !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowClassicLinkToRemoteVpc = this._allowClassicLinkToRemoteVpc;
-    }
     if (this._allowRemoteVpcDnsResolution !== undefined) {
       hasAnyValues = true;
       internalValueResult.allowRemoteVpcDnsResolution = this._allowRemoteVpcDnsResolution;
-    }
-    if (this._allowVpcToRemoteClassicLink !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowVpcToRemoteClassicLink = this._allowVpcToRemoteClassicLink;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -244,32 +172,12 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   public set internalValue(value: VpcPeeringConnectionRequester | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._allowClassicLinkToRemoteVpc = undefined;
       this._allowRemoteVpcDnsResolution = undefined;
-      this._allowVpcToRemoteClassicLink = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._allowClassicLinkToRemoteVpc = value.allowClassicLinkToRemoteVpc;
       this._allowRemoteVpcDnsResolution = value.allowRemoteVpcDnsResolution;
-      this._allowVpcToRemoteClassicLink = value.allowVpcToRemoteClassicLink;
     }
-  }
-
-  // allow_classic_link_to_remote_vpc - computed: false, optional: true, required: false
-  private _allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable; 
-  public get allowClassicLinkToRemoteVpc() {
-    return this.getBooleanAttribute('allow_classic_link_to_remote_vpc');
-  }
-  public set allowClassicLinkToRemoteVpc(value: boolean | cdktf.IResolvable) {
-    this._allowClassicLinkToRemoteVpc = value;
-  }
-  public resetAllowClassicLinkToRemoteVpc() {
-    this._allowClassicLinkToRemoteVpc = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowClassicLinkToRemoteVpcInput() {
-    return this._allowClassicLinkToRemoteVpc;
   }
 
   // allow_remote_vpc_dns_resolution - computed: false, optional: true, required: false
@@ -287,34 +195,18 @@ export class VpcPeeringConnectionRequesterOutputReference extends cdktf.ComplexO
   public get allowRemoteVpcDnsResolutionInput() {
     return this._allowRemoteVpcDnsResolution;
   }
-
-  // allow_vpc_to_remote_classic_link - computed: false, optional: true, required: false
-  private _allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable; 
-  public get allowVpcToRemoteClassicLink() {
-    return this.getBooleanAttribute('allow_vpc_to_remote_classic_link');
-  }
-  public set allowVpcToRemoteClassicLink(value: boolean | cdktf.IResolvable) {
-    this._allowVpcToRemoteClassicLink = value;
-  }
-  public resetAllowVpcToRemoteClassicLink() {
-    this._allowVpcToRemoteClassicLink = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowVpcToRemoteClassicLinkInput() {
-    return this._allowVpcToRemoteClassicLink;
-  }
 }
 export interface VpcPeeringConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#create VpcPeeringConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#create VpcPeeringConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#delete VpcPeeringConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#delete VpcPeeringConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection#update VpcPeeringConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection#update VpcPeeringConnection#update}
   */
   readonly update?: string;
 }
@@ -435,7 +327,7 @@ export class VpcPeeringConnectionTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection}
 */
 export class VpcPeeringConnection extends cdktf.TerraformResource {
 
@@ -449,7 +341,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -460,8 +352,8 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_peering_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

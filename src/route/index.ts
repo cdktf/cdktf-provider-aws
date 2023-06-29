@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,86 @@ import * as cdktf from 'cdktf';
 
 export interface RouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#carrier_gateway_id Route#carrier_gateway_id}
   */
   readonly carrierGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#core_network_arn Route#core_network_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#core_network_arn Route#core_network_arn}
   */
   readonly coreNetworkArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_cidr_block Route#destination_cidr_block}
   */
   readonly destinationCidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}
   */
   readonly destinationIpv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#destination_prefix_list_id Route#destination_prefix_list_id}
   */
   readonly destinationPrefixListId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#egress_only_gateway_id Route#egress_only_gateway_id}
   */
   readonly egressOnlyGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#gateway_id Route#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#gateway_id Route#gateway_id}
   */
   readonly gatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#id Route#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#id Route#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#instance_id Route#instance_id}
-  */
-  readonly instanceId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#local_gateway_id Route#local_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#local_gateway_id Route#local_gateway_id}
   */
   readonly localGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#nat_gateway_id Route#nat_gateway_id}
   */
   readonly natGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#network_interface_id Route#network_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#network_interface_id Route#network_interface_id}
   */
   readonly networkInterfaceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#route_table_id Route#route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#route_table_id Route#route_table_id}
   */
   readonly routeTableId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#transit_gateway_id Route#transit_gateway_id}
   */
   readonly transitGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_endpoint_id Route#vpc_endpoint_id}
   */
   readonly vpcEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#vpc_peering_connection_id Route#vpc_peering_connection_id}
   */
   readonly vpcPeeringConnectionId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#timeouts Route#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#timeouts Route#timeouts}
   */
   readonly timeouts?: RouteTimeouts;
 }
 export interface RouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#create Route#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#create Route#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#delete Route#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#delete Route#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route#update Route#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route#update Route#update}
   */
   readonly update?: string;
 }
@@ -217,7 +213,7 @@ export class RouteTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route aws_route}
 */
 export class Route extends cdktf.TerraformResource {
 
@@ -231,7 +227,7 @@ export class Route extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route aws_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,8 +238,8 @@ export class Route extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -261,7 +257,6 @@ export class Route extends cdktf.TerraformResource {
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._id = config.id;
-    this._instanceId = config.instanceId;
     this._localGatewayId = config.localGatewayId;
     this._natGatewayId = config.natGatewayId;
     this._networkInterfaceId = config.networkInterfaceId;
@@ -404,20 +399,9 @@ export class Route extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // instance_id - computed: true, optional: true, required: false
-  private _instanceId?: string; 
+  // instance_id - computed: true, optional: false, required: false
   public get instanceId() {
     return this.getStringAttribute('instance_id');
-  }
-  public set instanceId(value: string) {
-    this._instanceId = value;
-  }
-  public resetInstanceId() {
-    this._instanceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceIdInput() {
-    return this._instanceId;
   }
 
   // instance_owner_id - computed: true, optional: false, required: false
@@ -574,7 +558,6 @@ export class Route extends cdktf.TerraformResource {
       egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
       local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
       nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),

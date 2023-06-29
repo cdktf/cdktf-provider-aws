@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#assign_generated_ipv6_cidr_block DefaultVpc#assign_generated_ipv6_cidr_block}
   */
   readonly assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#enable_classiclink DefaultVpc#enable_classiclink}
-  */
-  readonly enableClassiclink?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#enable_classiclink_dns_support DefaultVpc#enable_classiclink_dns_support}
-  */
-  readonly enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#enable_dns_hostnames DefaultVpc#enable_dns_hostnames}
   */
   readonly enableDnsHostnames?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#enable_dns_support DefaultVpc#enable_dns_support}
   */
   readonly enableDnsSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#enable_network_address_usage_metrics DefaultVpc#enable_network_address_usage_metrics}
   */
   readonly enableNetworkAddressUsageMetrics?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#force_destroy DefaultVpc#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#id DefaultVpc#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#id DefaultVpc#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#ipv6_cidr_block_network_border_group DefaultVpc#ipv6_cidr_block_network_border_group}
   */
   readonly ipv6CidrBlockNetworkBorderGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}
   */
   readonly ipv6IpamPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}
   */
   readonly ipv6NetmaskLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#tags DefaultVpc#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#tags DefaultVpc#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc#tags_all DefaultVpc#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc aws_default_vpc}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc aws_default_vpc}
 */
 export class DefaultVpc extends cdktf.TerraformResource {
 
@@ -88,7 +80,7 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/default_vpc aws_default_vpc} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/default_vpc aws_default_vpc} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,8 +91,8 @@ export class DefaultVpc extends cdktf.TerraformResource {
       terraformResourceType: 'aws_default_vpc',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -111,8 +103,6 @@ export class DefaultVpc extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._assignGeneratedIpv6CidrBlock = config.assignGeneratedIpv6CidrBlock;
-    this._enableClassiclink = config.enableClassiclink;
-    this._enableClassiclinkDnsSupport = config.enableClassiclinkDnsSupport;
     this._enableDnsHostnames = config.enableDnsHostnames;
     this._enableDnsSupport = config.enableDnsSupport;
     this._enableNetworkAddressUsageMetrics = config.enableNetworkAddressUsageMetrics;
@@ -174,38 +164,6 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // dhcp_options_id - computed: true, optional: false, required: false
   public get dhcpOptionsId() {
     return this.getStringAttribute('dhcp_options_id');
-  }
-
-  // enable_classiclink - computed: true, optional: true, required: false
-  private _enableClassiclink?: boolean | cdktf.IResolvable; 
-  public get enableClassiclink() {
-    return this.getBooleanAttribute('enable_classiclink');
-  }
-  public set enableClassiclink(value: boolean | cdktf.IResolvable) {
-    this._enableClassiclink = value;
-  }
-  public resetEnableClassiclink() {
-    this._enableClassiclink = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableClassiclinkInput() {
-    return this._enableClassiclink;
-  }
-
-  // enable_classiclink_dns_support - computed: true, optional: true, required: false
-  private _enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable; 
-  public get enableClassiclinkDnsSupport() {
-    return this.getBooleanAttribute('enable_classiclink_dns_support');
-  }
-  public set enableClassiclinkDnsSupport(value: boolean | cdktf.IResolvable) {
-    this._enableClassiclinkDnsSupport = value;
-  }
-  public resetEnableClassiclinkDnsSupport() {
-    this._enableClassiclinkDnsSupport = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableClassiclinkDnsSupportInput() {
-    return this._enableClassiclinkDnsSupport;
   }
 
   // enable_dns_hostnames - computed: false, optional: true, required: false
@@ -416,8 +374,6 @@ export class DefaultVpc extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assign_generated_ipv6_cidr_block: cdktf.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
-      enable_classiclink: cdktf.booleanToTerraform(this._enableClassiclink),
-      enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
       enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
       enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
       enable_network_address_usage_metrics: cdktf.booleanToTerraform(this._enableNetworkAddressUsageMetrics),

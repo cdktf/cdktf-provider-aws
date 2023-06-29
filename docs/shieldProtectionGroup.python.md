@@ -1,6 +1,6 @@
 # `aws_shield_protection_group`
 
-Refer to the Terraform Registory for docs: [`aws_shield_protection_group`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group).
+Refer to the Terraform Registory for docs: [`aws_shield_protection_group`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group).
 
 # `shieldProtectionGroup` Submodule <a name="`shieldProtectionGroup` Submodule" id="@cdktf/provider-aws.shieldProtectionGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_shield_protection_group`](https
 
 ### ShieldProtectionGroup <a name="ShieldProtectionGroup" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group aws_shield_protection_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group aws_shield_protection_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer"></a>
 
@@ -47,14 +47,14 @@ shieldProtectionGroup.ShieldProtectionGroup(
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.protectionGroupId">protection_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.protectionGroupId">protection_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}.
 
 ---
 
@@ -935,14 +935,14 @@ shieldProtectionGroup.ShieldProtectionGroupConfig(
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.protectionGroupId">protection_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.aggregation">aggregation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.pattern">pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.protectionGroupId">protection_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroupConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}. |
 
 ---
 
@@ -1024,7 +1024,7 @@ aggregation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#aggregation ShieldProtectionGroup#aggregation}.
 
 ---
 
@@ -1036,7 +1036,7 @@ pattern: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#pattern ShieldProtectionGroup#pattern}.
 
 ---
 
@@ -1048,7 +1048,7 @@ protection_group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#protection_group_id ShieldProtectionGroup#protection_group_id}.
 
 ---
 
@@ -1060,7 +1060,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#id ShieldProtectionGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1075,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#members ShieldProtectionGroup#members}.
 
 ---
 
@@ -1087,7 +1087,7 @@ resource_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#resource_type ShieldProtectionGroup#resource_type}.
 
 ---
 
@@ -1099,7 +1099,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags ShieldProtectionGroup#tags}.
 
 ---
 
@@ -1111,7 +1111,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/shield_protection_group#tags_all ShieldProtectionGroup#tags_all}.
 
 ---
 

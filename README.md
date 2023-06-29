@@ -1,5 +1,5 @@
 
-# Terraform CDK aws Provider ~> 4.0
+# Terraform CDK aws Provider ~> 5.0
 
 This repo builds and publishes the Terraform aws Provider bindings for [CDK for Terraform](https://cdk.tf).
 
@@ -56,12 +56,12 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform aws Provider version 1:1. In fact, it always tracks `latest` of `~> 4.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform aws Provider version 1:1. In fact, it always tracks `latest` of `~> 5.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform aws Provider](https://registry.terraform.io/providers/hashicorp/aws/4.0.0)
+- [Terraform aws Provider](https://registry.terraform.io/providers/hashicorp/aws/5.0.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-aws/releases)
 - [Terraform Engine](https://terraform.io)
 
