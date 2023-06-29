@@ -1,6 +1,6 @@
 # `data_aws_memorydb_user`
 
-Refer to the Terraform Registory for docs: [`data_aws_memorydb_user`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user).
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_user`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user).
 
 # `dataAwsMemorydbUser` Submodule <a name="`dataAwsMemorydbUser` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_memorydb_user`](https://re
 
 ### DataAwsMemorydbUser <a name="DataAwsMemorydbUser" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user aws_memorydb_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user aws_memorydb_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUser(scope Construct, id *string, config DataAwsMemorydbUserConfig) DataAwsMemorydbUser
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.DataAwsMemorydbUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 &dataawsmemorydbuser.DataAwsMemorydbUserAuthenticationMode {
 
@@ -630,7 +630,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 &dataawsmemorydbuser.DataAwsMemorydbUserConfig {
 	Connection: interface{},
@@ -657,9 +657,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#user_name DataAwsMemorydbUser#user_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#id DataAwsMemorydbUser#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#tags DataAwsMemorydbUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#user_name DataAwsMemorydbUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#id DataAwsMemorydbUser#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#tags DataAwsMemorydbUser#tags}. |
 
 ---
 
@@ -741,7 +741,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#user_name DataAwsMemorydbUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#user_name DataAwsMemorydbUser#user_name}.
 
 ---
 
@@ -753,7 +753,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#id DataAwsMemorydbUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#id DataAwsMemorydbUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,7 +768,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_user#tags DataAwsMemorydbUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/memorydb_user#tags DataAwsMemorydbUser#tags}.
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUserAuthenticationModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbUserAuthenticationModeList
 ```
@@ -911,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbuser"
 
 dataawsmemorydbuser.NewDataAwsMemorydbUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbUserAuthenticationModeOutputReference
 ```

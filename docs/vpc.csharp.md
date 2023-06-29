@@ -1,6 +1,6 @@
 # `aws_vpc`
 
-Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc).
+Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc).
 
 # `vpc` Submodule <a name="`vpc` Submodule" id="@cdktf/provider-aws.vpc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_vpc`](https://registry.terrafor
 
 ### Vpc <a name="Vpc" id="@cdktf/provider-aws.vpc.Vpc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc aws_vpc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc aws_vpc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpc.Vpc.Initializer"></a>
 
@@ -72,8 +72,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetAssignGeneratedIpv6CidrBlock">ResetAssignGeneratedIpv6CidrBlock</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetCidrBlock">ResetCidrBlock</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetEnableClassiclink">ResetEnableClassiclink</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetEnableClassiclinkDnsSupport">ResetEnableClassiclinkDnsSupport</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetEnableDnsHostnames">ResetEnableDnsHostnames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetEnableDnsSupport">ResetEnableDnsSupport</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.resetEnableNetworkAddressUsageMetrics">ResetEnableNetworkAddressUsageMetrics</a></code> | *No description.* |
@@ -286,18 +284,6 @@ private void ResetAssignGeneratedIpv6CidrBlock()
 private void ResetCidrBlock()
 ```
 
-##### `ResetEnableClassiclink` <a name="ResetEnableClassiclink" id="@cdktf/provider-aws.vpc.Vpc.resetEnableClassiclink"></a>
-
-```csharp
-private void ResetEnableClassiclink()
-```
-
-##### `ResetEnableClassiclinkDnsSupport` <a name="ResetEnableClassiclinkDnsSupport" id="@cdktf/provider-aws.vpc.Vpc.resetEnableClassiclinkDnsSupport"></a>
-
-```csharp
-private void ResetEnableClassiclinkDnsSupport()
-```
-
 ##### `ResetEnableDnsHostnames` <a name="ResetEnableDnsHostnames" id="@cdktf/provider-aws.vpc.Vpc.resetEnableDnsHostnames"></a>
 
 ```csharp
@@ -474,8 +460,6 @@ Vpc.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.ownerId">OwnerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.assignGeneratedIpv6CidrBlockInput">AssignGeneratedIpv6CidrBlockInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.cidrBlockInput">CidrBlockInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkDnsSupportInput">EnableClassiclinkDnsSupportInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkInput">EnableClassiclinkInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableDnsHostnamesInput">EnableDnsHostnamesInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableDnsSupportInput">EnableDnsSupportInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableNetworkAddressUsageMetricsInput">EnableNetworkAddressUsageMetricsInput</a></code> | <code>object</code> | *No description.* |
@@ -491,8 +475,6 @@ Vpc.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.assignGeneratedIpv6CidrBlock">AssignGeneratedIpv6CidrBlock</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableClassiclink">EnableClassiclink</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkDnsSupport">EnableClassiclinkDnsSupport</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableDnsHostnames">EnableDnsHostnames</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableDnsSupport">EnableDnsSupport</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.Vpc.property.enableNetworkAddressUsageMetrics">EnableNetworkAddressUsageMetrics</a></code> | <code>object</code> | *No description.* |
@@ -751,26 +733,6 @@ public string CidrBlockInput { get; }
 
 ---
 
-##### `EnableClassiclinkDnsSupportInput`<sup>Optional</sup> <a name="EnableClassiclinkDnsSupportInput" id="@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkDnsSupportInput"></a>
-
-```csharp
-public object EnableClassiclinkDnsSupportInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `EnableClassiclinkInput`<sup>Optional</sup> <a name="EnableClassiclinkInput" id="@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkInput"></a>
-
-```csharp
-public object EnableClassiclinkInput { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `EnableDnsHostnamesInput`<sup>Optional</sup> <a name="EnableDnsHostnamesInput" id="@cdktf/provider-aws.vpc.Vpc.property.enableDnsHostnamesInput"></a>
 
 ```csharp
@@ -918,26 +880,6 @@ public string CidrBlock { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `EnableClassiclink`<sup>Required</sup> <a name="EnableClassiclink" id="@cdktf/provider-aws.vpc.Vpc.property.enableClassiclink"></a>
-
-```csharp
-public object EnableClassiclink { get; }
-```
-
-- *Type:* object
-
----
-
-##### `EnableClassiclinkDnsSupport`<sup>Required</sup> <a name="EnableClassiclinkDnsSupport" id="@cdktf/provider-aws.vpc.Vpc.property.enableClassiclinkDnsSupport"></a>
-
-```csharp
-public object EnableClassiclinkDnsSupport { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -1108,8 +1050,6 @@ new VpcConfig {
     object[] Provisioners = null,
     object AssignGeneratedIpv6CidrBlock = null,
     string CidrBlock = null,
-    object EnableClassiclink = null,
-    object EnableClassiclinkDnsSupport = null,
     object EnableDnsHostnames = null,
     object EnableDnsSupport = null,
     object EnableNetworkAddressUsageMetrics = null,
@@ -1137,23 +1077,21 @@ new VpcConfig {
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.assignGeneratedIpv6CidrBlock">AssignGeneratedIpv6CidrBlock</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#cidr_block Vpc#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableClassiclink">EnableClassiclink</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_classiclink Vpc#enable_classiclink}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableClassiclinkDnsSupport">EnableClassiclinkDnsSupport</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_classiclink_dns_support Vpc#enable_classiclink_dns_support}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsHostnames">EnableDnsHostnames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsSupport">EnableDnsSupport</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableNetworkAddressUsageMetrics">EnableNetworkAddressUsageMetrics</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#id Vpc#id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.instanceTenancy">InstanceTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4IpamPoolId">Ipv4IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4NetmaskLength">Ipv4NetmaskLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlockNetworkBorderGroup">Ipv6CidrBlockNetworkBorderGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6IpamPoolId">Ipv6IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6NetmaskLength">Ipv6NetmaskLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#tags Vpc#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#tags_all Vpc#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.assignGeneratedIpv6CidrBlock">AssignGeneratedIpv6CidrBlock</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.cidrBlock">CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#cidr_block Vpc#cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsHostnames">EnableDnsHostnames</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableDnsSupport">EnableDnsSupport</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.enableNetworkAddressUsageMetrics">EnableNetworkAddressUsageMetrics</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#id Vpc#id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.instanceTenancy">InstanceTenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4IpamPoolId">Ipv4IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv4NetmaskLength">Ipv4NetmaskLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6CidrBlockNetworkBorderGroup">Ipv6CidrBlockNetworkBorderGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6IpamPoolId">Ipv6IpamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.ipv6NetmaskLength">Ipv6NetmaskLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#tags Vpc#tags}. |
+| <code><a href="#@cdktf/provider-aws.vpc.VpcConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#tags_all Vpc#tags_all}. |
 
 ---
 
@@ -1235,7 +1173,7 @@ public object AssignGeneratedIpv6CidrBlock { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}.
 
 ---
 
@@ -1247,31 +1185,7 @@ public string CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#cidr_block Vpc#cidr_block}.
-
----
-
-##### `EnableClassiclink`<sup>Optional</sup> <a name="EnableClassiclink" id="@cdktf/provider-aws.vpc.VpcConfig.property.enableClassiclink"></a>
-
-```csharp
-public object EnableClassiclink { get; set; }
-```
-
-- *Type:* object
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_classiclink Vpc#enable_classiclink}.
-
----
-
-##### `EnableClassiclinkDnsSupport`<sup>Optional</sup> <a name="EnableClassiclinkDnsSupport" id="@cdktf/provider-aws.vpc.VpcConfig.property.enableClassiclinkDnsSupport"></a>
-
-```csharp
-public object EnableClassiclinkDnsSupport { get; set; }
-```
-
-- *Type:* object
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_classiclink_dns_support Vpc#enable_classiclink_dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#cidr_block Vpc#cidr_block}.
 
 ---
 
@@ -1283,7 +1197,7 @@ public object EnableDnsHostnames { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_dns_hostnames Vpc#enable_dns_hostnames}.
 
 ---
 
@@ -1295,7 +1209,7 @@ public object EnableDnsSupport { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_dns_support Vpc#enable_dns_support}.
 
 ---
 
@@ -1307,7 +1221,7 @@ public object EnableNetworkAddressUsageMetrics { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#enable_network_address_usage_metrics Vpc#enable_network_address_usage_metrics}.
 
 ---
 
@@ -1319,7 +1233,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#id Vpc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#id Vpc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1334,7 +1248,7 @@ public string InstanceTenancy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#instance_tenancy Vpc#instance_tenancy}.
 
 ---
 
@@ -1346,7 +1260,7 @@ public string Ipv4IpamPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}.
 
 ---
 
@@ -1358,7 +1272,7 @@ public double Ipv4NetmaskLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv4_netmask_length Vpc#ipv4_netmask_length}.
 
 ---
 
@@ -1370,7 +1284,7 @@ public string Ipv6CidrBlock { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_cidr_block Vpc#ipv6_cidr_block}.
 
 ---
 
@@ -1382,7 +1296,7 @@ public string Ipv6CidrBlockNetworkBorderGroup { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_cidr_block_network_border_group Vpc#ipv6_cidr_block_network_border_group}.
 
 ---
 
@@ -1394,7 +1308,7 @@ public string Ipv6IpamPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}.
 
 ---
 
@@ -1406,7 +1320,7 @@ public double Ipv6NetmaskLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#ipv6_netmask_length Vpc#ipv6_netmask_length}.
 
 ---
 
@@ -1418,7 +1332,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#tags Vpc#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#tags Vpc#tags}.
 
 ---
 
@@ -1430,7 +1344,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc#tags_all Vpc#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpc#tags_all Vpc#tags_all}.
 
 ---
 

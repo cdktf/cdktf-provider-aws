@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +8,60 @@ import * as cdktf from 'cdktf';
 
 export interface DatasyncLocationObjectStorageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#access_key DatasyncLocationObjectStorage#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#access_key DatasyncLocationObjectStorage#access_key}
   */
   readonly accessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#agent_arns DatasyncLocationObjectStorage#agent_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#agent_arns DatasyncLocationObjectStorage#agent_arns}
   */
   readonly agentArns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#bucket_name DatasyncLocationObjectStorage#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#bucket_name DatasyncLocationObjectStorage#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#id DatasyncLocationObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#id DatasyncLocationObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#secret_key DatasyncLocationObjectStorage#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#secret_key DatasyncLocationObjectStorage#secret_key}
   */
   readonly secretKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#server_certificate DatasyncLocationObjectStorage#server_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#server_certificate DatasyncLocationObjectStorage#server_certificate}
   */
   readonly serverCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#server_hostname DatasyncLocationObjectStorage#server_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#server_hostname DatasyncLocationObjectStorage#server_hostname}
   */
   readonly serverHostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#server_port DatasyncLocationObjectStorage#server_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#server_port DatasyncLocationObjectStorage#server_port}
   */
   readonly serverPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#server_protocol DatasyncLocationObjectStorage#server_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#server_protocol DatasyncLocationObjectStorage#server_protocol}
   */
   readonly serverProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#subdirectory DatasyncLocationObjectStorage#subdirectory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#subdirectory DatasyncLocationObjectStorage#subdirectory}
   */
   readonly subdirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#tags DatasyncLocationObjectStorage#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#tags DatasyncLocationObjectStorage#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage#tags_all DatasyncLocationObjectStorage#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage#tags_all DatasyncLocationObjectStorage#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage aws_datasync_location_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage aws_datasync_location_object_storage}
 */
 export class DatasyncLocationObjectStorage extends cdktf.TerraformResource {
 
@@ -80,7 +75,7 @@ export class DatasyncLocationObjectStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_object_storage aws_datasync_location_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/datasync_location_object_storage aws_datasync_location_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,8 +86,8 @@ export class DatasyncLocationObjectStorage extends cdktf.TerraformResource {
       terraformResourceType: 'aws_datasync_location_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

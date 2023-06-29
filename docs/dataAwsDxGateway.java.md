@@ -1,6 +1,6 @@
 # `data_aws_dx_gateway`
 
-Refer to the Terraform Registory for docs: [`data_aws_dx_gateway`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway).
+Refer to the Terraform Registory for docs: [`data_aws_dx_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway).
 
 # `dataAwsDxGateway` Submodule <a name="`dataAwsDxGateway` Submodule" id="@cdktf/provider-aws.dataAwsDxGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_dx_gateway`](https://regis
 
 ### DataAwsDxGateway <a name="DataAwsDxGateway" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway aws_dx_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway aws_dx_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataAwsDxGateway.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -673,8 +673,8 @@ DataAwsDxGatewayConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}. |
 
 ---
 
@@ -756,7 +756,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#name DataAwsDxGateway#name}.
 
 ---
 
@@ -768,7 +768,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/dx_gateway#id DataAwsDxGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

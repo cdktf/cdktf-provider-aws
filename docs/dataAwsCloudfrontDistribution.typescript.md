@@ -1,6 +1,6 @@
 # `data_aws_cloudfront_distribution`
 
-Refer to the Terraform Registory for docs: [`data_aws_cloudfront_distribution`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution).
+Refer to the Terraform Registory for docs: [`data_aws_cloudfront_distribution`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution).
 
 # `dataAwsCloudfrontDistribution` Submodule <a name="`dataAwsCloudfrontDistribution` Submodule" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_cloudfront_distribution`](
 
 ### DataAwsCloudfrontDistribution <a name="DataAwsCloudfrontDistribution" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution aws_cloudfront_distribution}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistribution.Initializer"></a>
 
@@ -659,8 +659,8 @@ const dataAwsCloudfrontDistributionConfig: dataAwsCloudfrontDistribution.DataAws
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution#id DataAwsCloudfrontDistribution#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution#tags DataAwsCloudfrontDistribution#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution#id DataAwsCloudfrontDistribution#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontDistribution.DataAwsCloudfrontDistributionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution#tags DataAwsCloudfrontDistribution#tags}. |
 
 ---
 
@@ -742,7 +742,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution#id DataAwsCloudfrontDistribution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution#id DataAwsCloudfrontDistribution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -757,7 +757,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cloudfront_distribution#tags DataAwsCloudfrontDistribution#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/cloudfront_distribution#tags DataAwsCloudfrontDistribution#tags}.
 
 ---
 

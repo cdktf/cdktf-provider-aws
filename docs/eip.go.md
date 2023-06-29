@@ -1,6 +1,6 @@
 # `aws_eip`
 
-Refer to the Terraform Registory for docs: [`aws_eip`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip).
+Refer to the Terraform Registory for docs: [`aws_eip`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip).
 
 # `eip` Submodule <a name="`eip` Submodule" id="@cdktf/provider-aws.eip"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_eip`](https://registry.terrafor
 
 ### Eip <a name="Eip" id="@cdktf/provider-aws.eip.Eip"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip aws_eip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eip.Eip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 eip.NewEip(scope Construct, id *string, config EipConfig) Eip
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetAddress">ResetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetAssociateWithPrivateIp">ResetAssociateWithPrivateIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetCustomerOwnedIpv4Pool">ResetCustomerOwnedIpv4Pool</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.Eip.resetDomain">ResetDomain</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetInstance">ResetInstance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.resetNetworkBorderGroup">ResetNetworkBorderGroup</a></code> | *No description.* |
@@ -300,6 +301,12 @@ func ResetAssociateWithPrivateIp()
 func ResetCustomerOwnedIpv4Pool()
 ```
 
+##### `ResetDomain` <a name="ResetDomain" id="@cdktf/provider-aws.eip.Eip.resetDomain"></a>
+
+```go
+func ResetDomain()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.eip.Eip.resetId"></a>
 
 ```go
@@ -367,7 +374,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eip.Eip.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 eip.Eip_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eip.Eip.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 eip.Eip_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +420,7 @@ eip.Eip_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eip.Eip.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 eip.Eip_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +453,6 @@ eip.Eip_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.associationId">AssociationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.carrierIp">CarrierIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIp">CustomerOwnedIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.privateDns">PrivateDns</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.privateIp">PrivateIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicDns">PublicDns</a></code> | <code>*string</code> | *No description.* |
@@ -455,6 +461,7 @@ eip.Eip_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.addressInput">AddressInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIpInput">AssociateWithPrivateIpInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4PoolInput">CustomerOwnedIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.Eip.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkBorderGroupInput">NetworkBorderGroupInput</a></code> | <code>*string</code> | *No description.* |
@@ -467,6 +474,7 @@ eip.Eip_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.address">Address</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.eip.Eip.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | *No description.* |
@@ -660,16 +668,6 @@ func CustomerOwnedIp() *string
 
 ---
 
-##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktf/provider-aws.eip.Eip.property.domain"></a>
-
-```go
-func Domain() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `PrivateDns`<sup>Required</sup> <a name="PrivateDns" id="@cdktf/provider-aws.eip.Eip.property.privateDns"></a>
 
 ```go
@@ -744,6 +742,16 @@ func AssociateWithPrivateIpInput() *string
 
 ```go
 func CustomerOwnedIpv4PoolInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktf/provider-aws.eip.Eip.property.domainInput"></a>
+
+```go
+func DomainInput() *string
 ```
 
 - *Type:* *string
@@ -870,6 +878,16 @@ func CustomerOwnedIpv4Pool() *string
 
 ---
 
+##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktf/provider-aws.eip.Eip.property.domain"></a>
+
+```go
+func Domain() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.eip.Eip.property.id"></a>
 
 ```go
@@ -975,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eip.EipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 &eip.EipConfig {
 	Connection: interface{},
@@ -988,6 +1006,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
 	Address: *string,
 	AssociateWithPrivateIp: *string,
 	CustomerOwnedIpv4Pool: *string,
+	Domain: *string,
 	Id: *string,
 	Instance: *string,
 	NetworkBorderGroup: *string,
@@ -995,7 +1014,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
 	PublicIpv4Pool: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.eip.EipTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.eip.EipTimeouts,
 	Vpc: interface{},
 }
 ```
@@ -1011,18 +1030,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
 | <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#address Eip#address}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#id Eip#id}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#instance Eip#instance}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#network_border_group Eip#network_border_group}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#network_interface Eip#network_interface}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#tags Eip#tags}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#tags_all Eip#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#address Eip#address}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#domain Eip#domain}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#id Eip#id}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#instance Eip#instance}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#network_border_group Eip#network_border_group}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#network_interface Eip#network_interface}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#tags Eip#tags}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#tags_all Eip#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.vpc">Vpc</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#vpc Eip#vpc}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.vpc">Vpc</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#vpc Eip#vpc}. |
 
 ---
 
@@ -1104,7 +1124,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#address Eip#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#address Eip#address}.
 
 ---
 
@@ -1116,7 +1136,7 @@ AssociateWithPrivateIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}.
 
 ---
 
@@ -1128,7 +1148,19 @@ CustomerOwnedIpv4Pool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}.
+
+---
+
+##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktf/provider-aws.eip.EipConfig.property.domain"></a>
+
+```go
+Domain *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#domain Eip#domain}.
 
 ---
 
@@ -1140,7 +1172,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#id Eip#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#id Eip#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1187,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#instance Eip#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#instance Eip#instance}.
 
 ---
 
@@ -1167,7 +1199,7 @@ NetworkBorderGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#network_border_group Eip#network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#network_border_group Eip#network_border_group}.
 
 ---
 
@@ -1179,7 +1211,7 @@ NetworkInterface *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#network_interface Eip#network_interface}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#network_interface Eip#network_interface}.
 
 ---
 
@@ -1191,7 +1223,7 @@ PublicIpv4Pool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}.
 
 ---
 
@@ -1203,7 +1235,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#tags Eip#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#tags Eip#tags}.
 
 ---
 
@@ -1215,7 +1247,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#tags_all Eip#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#tags_all Eip#tags_all}.
 
 ---
 
@@ -1229,7 +1261,7 @@ Timeouts EipTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#timeouts Eip#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#timeouts Eip#timeouts}
 
 ---
 
@@ -1241,7 +1273,7 @@ Vpc interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#vpc Eip#vpc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#vpc Eip#vpc}.
 
 ---
 
@@ -1250,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.eip.EipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 &eip.EipTimeouts {
 	Delete: *string,
@@ -1263,9 +1295,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#delete Eip#delete}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#read Eip#read}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#update Eip#update}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#delete Eip#delete}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#read Eip#read}. |
+| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#update Eip#update}. |
 
 ---
 
@@ -1277,7 +1309,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#delete Eip#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#delete Eip#delete}.
 
 ---
 
@@ -1289,7 +1321,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#read Eip#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#read Eip#read}.
 
 ---
 
@@ -1301,7 +1333,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip#update Eip#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/eip#update Eip#update}.
 
 ---
 
@@ -1312,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/eip"
 
 eip.NewEipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EipTimeoutsOutputReference
 ```

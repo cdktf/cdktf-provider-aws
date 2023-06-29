@@ -1,6 +1,6 @@
 # `aws_elb`
 
-Refer to the Terraform Registory for docs: [`aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb).
+Refer to the Terraform Registory for docs: [`aws_elb`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb).
 
 # `elb` Submodule <a name="`elb` Submodule" id="@cdktf/provider-aws.elb"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_elb`](https://registry.terrafor
 
 ### Elb <a name="Elb" id="@cdktf/provider-aws.elb.Elb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb aws_elb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb aws_elb}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.Elb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.NewElb(scope Construct, id *string, config ElbConfig) Elb
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.elb.Elb.putAccessLogs">PutAccessLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.putHealthCheck">PutHealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.putListener">PutListener</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.Elb.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetAccessLogs">ResetAccessLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetAvailabilityZones">ResetAvailabilityZones</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetConnectionDraining">ResetConnectionDraining</a></code> | *No description.* |
@@ -91,6 +92,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetSubnets">ResetSubnets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.Elb.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -314,6 +316,18 @@ func PutListener(value interface{})
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.elb.Elb.putTimeouts"></a>
+
+```go
+func PutTimeouts(value ElbTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
+
+---
+
 ##### `ResetAccessLogs` <a name="ResetAccessLogs" id="@cdktf/provider-aws.elb.Elb.resetAccessLogs"></a>
 
 ```go
@@ -422,6 +436,12 @@ func ResetTags()
 func ResetTagsAll()
 ```
 
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.elb.Elb.resetTimeouts"></a>
+
+```go
+func ResetTimeouts()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -435,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elb.Elb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.Elb_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elb.Elb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.Elb_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +501,7 @@ elb.Elb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elb.Elb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.Elb_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,6 +536,7 @@ elb.Elb_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference">ElbHealthCheckOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.listener">Listener</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbListenerList">ElbListenerList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroupId">SourceSecurityGroupId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.Elb.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.accessLogsInput">AccessLogsInput</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.availabilityZonesInput">AvailabilityZonesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -536,6 +557,7 @@ elb.Elb_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.subnetsInput">SubnetsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.Elb.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | *No description.* |
@@ -757,6 +779,16 @@ func SourceSecurityGroupId() *string
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.elb.Elb.property.timeouts"></a>
+
+```go
+func Timeouts() ElbTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a>
+
+---
+
 ##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-aws.elb.Elb.property.zoneId"></a>
 
 ```go
@@ -957,6 +989,16 @@ func TagsInput() *map[string]*string
 
 ---
 
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.elb.Elb.property.timeoutsInput"></a>
+
+```go
+func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="@cdktf/provider-aws.elb.Elb.property.availabilityZones"></a>
 
 ```go
@@ -1142,7 +1184,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 &elb.ElbAccessLogs {
 	Bucket: *string,
@@ -1156,10 +1198,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#bucket Elb#bucket}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#enabled Elb#enabled}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#interval Elb#interval}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#bucket Elb#bucket}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#enabled Elb#enabled}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#interval Elb#interval}. |
 
 ---
 
@@ -1171,7 +1213,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#bucket Elb#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#bucket Elb#bucket}.
 
 ---
 
@@ -1183,7 +1225,7 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}.
 
 ---
 
@@ -1195,7 +1237,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#enabled Elb#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#enabled Elb#enabled}.
 
 ---
 
@@ -1207,7 +1249,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#interval Elb#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#interval Elb#interval}.
 
 ---
 
@@ -1216,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 &elb.ElbConfig {
 	Connection: interface{},
@@ -1227,13 +1269,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Listener: interface{},
-	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elb.ElbAccessLogs,
+	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbAccessLogs,
 	AvailabilityZones: *[]*string,
 	ConnectionDraining: interface{},
 	ConnectionDrainingTimeout: *f64,
 	CrossZoneLoadBalancing: interface{},
 	DesyncMitigationMode: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elb.ElbHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbHealthCheck,
 	Id: *string,
 	IdleTimeout: *f64,
 	Instances: *[]*string,
@@ -1245,6 +1287,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 	Subnets: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elb.ElbTimeouts,
 }
 ```
 
@@ -1261,23 +1304,24 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 | <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.listener">Listener</a></code> | <code>interface{}</code> | listener block. |
 | <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | access_logs block. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#availability_zones Elb#availability_zones}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#connection_draining Elb#connection_draining}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#availability_zones Elb#availability_zones}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#connection_draining Elb#connection_draining}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}. |
 | <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | health_check block. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#id Elb#id}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#idle_timeout Elb#idle_timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instances Elb#instances}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.internal">Internal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#internal Elb#internal}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#name Elb#name}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#name_prefix Elb#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#security_groups Elb#security_groups}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#source_security_group Elb#source_security_group}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#subnets Elb#subnets}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#tags Elb#tags}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#tags_all Elb#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#id Elb#id}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#idle_timeout Elb#idle_timeout}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instances Elb#instances}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.internal">Internal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#internal Elb#internal}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#name Elb#name}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#name_prefix Elb#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#security_groups Elb#security_groups}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#source_security_group Elb#source_security_group}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#subnets Elb#subnets}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#tags Elb#tags}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#tags_all Elb#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1361,7 +1405,7 @@ Listener interface{}
 
 listener block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#listener Elb#listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#listener Elb#listener}
 
 ---
 
@@ -1375,7 +1419,7 @@ AccessLogs ElbAccessLogs
 
 access_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#access_logs Elb#access_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#access_logs Elb#access_logs}
 
 ---
 
@@ -1387,7 +1431,7 @@ AvailabilityZones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#availability_zones Elb#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#availability_zones Elb#availability_zones}.
 
 ---
 
@@ -1399,7 +1443,7 @@ ConnectionDraining interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#connection_draining Elb#connection_draining}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#connection_draining Elb#connection_draining}.
 
 ---
 
@@ -1411,7 +1455,7 @@ ConnectionDrainingTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}.
 
 ---
 
@@ -1423,7 +1467,7 @@ CrossZoneLoadBalancing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}.
 
 ---
 
@@ -1435,7 +1479,7 @@ DesyncMitigationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}.
 
 ---
 
@@ -1449,7 +1493,7 @@ HealthCheck ElbHealthCheck
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#health_check Elb#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#health_check Elb#health_check}
 
 ---
 
@@ -1461,7 +1505,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#id Elb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#id Elb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1476,7 +1520,7 @@ IdleTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#idle_timeout Elb#idle_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#idle_timeout Elb#idle_timeout}.
 
 ---
 
@@ -1488,7 +1532,7 @@ Instances *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instances Elb#instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instances Elb#instances}.
 
 ---
 
@@ -1500,7 +1544,7 @@ Internal interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#internal Elb#internal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#internal Elb#internal}.
 
 ---
 
@@ -1512,7 +1556,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#name Elb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#name Elb#name}.
 
 ---
 
@@ -1524,7 +1568,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#name_prefix Elb#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#name_prefix Elb#name_prefix}.
 
 ---
 
@@ -1536,7 +1580,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#security_groups Elb#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#security_groups Elb#security_groups}.
 
 ---
 
@@ -1548,7 +1592,7 @@ SourceSecurityGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#source_security_group Elb#source_security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#source_security_group Elb#source_security_group}.
 
 ---
 
@@ -1560,7 +1604,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#subnets Elb#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#subnets Elb#subnets}.
 
 ---
 
@@ -1572,7 +1616,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#tags Elb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#tags Elb#tags}.
 
 ---
 
@@ -1584,7 +1628,21 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#tags_all Elb#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#tags_all Elb#tags_all}.
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.elb.ElbConfig.property.timeouts"></a>
+
+```go
+Timeouts ElbTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#timeouts Elb#timeouts}
 
 ---
 
@@ -1593,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 &elb.ElbHealthCheck {
 	HealthyThreshold: *f64,
@@ -1608,11 +1666,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#interval Elb#interval}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#target Elb#target}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#timeout Elb#timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#interval Elb#interval}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#target Elb#target}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#timeout Elb#timeout}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}. |
 
 ---
 
@@ -1624,7 +1682,7 @@ HealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}.
 
 ---
 
@@ -1636,7 +1694,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#interval Elb#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#interval Elb#interval}.
 
 ---
 
@@ -1648,7 +1706,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#target Elb#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#target Elb#target}.
 
 ---
 
@@ -1660,7 +1718,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#timeout Elb#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#timeout Elb#timeout}.
 
 ---
 
@@ -1672,7 +1730,7 @@ UnhealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}.
 
 ---
 
@@ -1681,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 &elb.ElbListener {
 	InstancePort: *f64,
@@ -1696,11 +1754,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instance_port Elb#instance_port}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instance_protocol Elb#instance_protocol}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#lb_port Elb#lb_port}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#lb_protocol Elb#lb_protocol}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instance_port Elb#instance_port}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instance_protocol Elb#instance_protocol}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#lb_port Elb#lb_port}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#lb_protocol Elb#lb_protocol}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}. |
 
 ---
 
@@ -1712,7 +1770,7 @@ InstancePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instance_port Elb#instance_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instance_port Elb#instance_port}.
 
 ---
 
@@ -1724,7 +1782,7 @@ InstanceProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#instance_protocol Elb#instance_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#instance_protocol Elb#instance_protocol}.
 
 ---
 
@@ -1736,7 +1794,7 @@ LbPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#lb_port Elb#lb_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#lb_port Elb#lb_port}.
 
 ---
 
@@ -1748,7 +1806,7 @@ LbProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#lb_protocol Elb#lb_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#lb_protocol Elb#lb_protocol}.
 
 ---
 
@@ -1760,7 +1818,53 @@ SslCertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}.
+
+---
+
+### ElbTimeouts <a name="ElbTimeouts" id="@cdktf/provider-aws.elb.ElbTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbTimeouts.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+
+&elb.ElbTimeouts {
+	Create: *string,
+	Update: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#create Elb#create}. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#update Elb#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-aws.elb.ElbTimeouts.property.create"></a>
+
+```go
+Create *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#create Elb#create}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-aws.elb.ElbTimeouts.property.update"></a>
+
+```go
+Update *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/elb#update Elb#update}.
 
 ---
 
@@ -1771,7 +1875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.NewElbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbAccessLogsOutputReference
 ```
@@ -2129,7 +2233,7 @@ func InternalValue() ElbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.NewElbHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbHealthCheckOutputReference
 ```
@@ -2488,7 +2592,7 @@ func InternalValue() ElbHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.NewElbListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElbListenerList
 ```
@@ -2631,7 +2735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
 
 elb.NewElbListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElbListenerOutputReference
 ```
@@ -3000,6 +3104,313 @@ func SslCertificateId() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ElbTimeoutsOutputReference <a name="ElbTimeoutsOutputReference" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elb"
+
+elb.NewElbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbTimeoutsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate"></a>
+
+```go
+func ResetCreate()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate"></a>
+
+```go
+func ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput"></a>
+
+```go
+func CreateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput"></a>
+
+```go
+func UpdateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.create"></a>
+
+```go
+func Create() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.update"></a>
+
+```go
+func Update() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

@@ -1,6 +1,6 @@
 # `aws_appsync_api_key`
 
-Refer to the Terraform Registory for docs: [`aws_appsync_api_key`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key).
+Refer to the Terraform Registory for docs: [`aws_appsync_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key).
 
 # `appsyncApiKey` Submodule <a name="`appsyncApiKey` Submodule" id="@cdktf/provider-aws.appsyncApiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_appsync_api_key`](https://regis
 
 ### AppsyncApiKey <a name="AppsyncApiKey" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key aws_appsync_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key aws_appsync_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer"></a>
 
@@ -43,10 +43,10 @@ appsyncApiKey.AppsyncApiKey(
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.expires">expires</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.expires">expires</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -789,10 +789,10 @@ appsyncApiKey.AppsyncApiKeyConfig(
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.expires">expires</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}. |
-| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.expires">expires</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}. |
+| <code><a href="#@cdktf/provider-aws.appsyncApiKey.AppsyncApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}. |
 
 ---
 
@@ -874,7 +874,7 @@ api_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#api_id AppsyncApiKey#api_id}.
 
 ---
 
@@ -886,7 +886,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#description AppsyncApiKey#description}.
 
 ---
 
@@ -898,7 +898,7 @@ expires: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#expires AppsyncApiKey#expires}.
 
 ---
 
@@ -910,7 +910,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appsync_api_key#id AppsyncApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

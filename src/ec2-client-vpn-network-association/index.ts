@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2ClientVpnNetworkAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#client_vpn_endpoint_id Ec2ClientVpnNetworkAssociation#client_vpn_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#client_vpn_endpoint_id Ec2ClientVpnNetworkAssociation#client_vpn_endpoint_id}
   */
   readonly clientVpnEndpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#id Ec2ClientVpnNetworkAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#id Ec2ClientVpnNetworkAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#security_groups Ec2ClientVpnNetworkAssociation#security_groups}
-  */
-  readonly securityGroups?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#subnet_id Ec2ClientVpnNetworkAssociation#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#subnet_id Ec2ClientVpnNetworkAssociation#subnet_id}
   */
   readonly subnetId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#timeouts Ec2ClientVpnNetworkAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#timeouts Ec2ClientVpnNetworkAssociation#timeouts}
   */
   readonly timeouts?: Ec2ClientVpnNetworkAssociationTimeouts;
 }
 export interface Ec2ClientVpnNetworkAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#create Ec2ClientVpnNetworkAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#create Ec2ClientVpnNetworkAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association#delete Ec2ClientVpnNetworkAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association#delete Ec2ClientVpnNetworkAssociation#delete}
   */
   readonly delete?: string;
 }
@@ -142,7 +133,7 @@ export class Ec2ClientVpnNetworkAssociationTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association}
 */
 export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
 
@@ -156,7 +147,7 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,8 +158,8 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_client_vpn_network_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -180,7 +171,6 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
     });
     this._clientVpnEndpointId = config.clientVpnEndpointId;
     this._id = config.id;
-    this._securityGroups = config.securityGroups;
     this._subnetId = config.subnetId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -221,27 +211,6 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // security_groups - computed: true, optional: true, required: false
-  private _securityGroups?: string[]; 
-  public get securityGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
-  }
-  public set securityGroups(value: string[]) {
-    this._securityGroups = value;
-  }
-  public resetSecurityGroups() {
-    this._securityGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupsInput() {
-    return this._securityGroups;
-  }
-
-  // status - computed: true, optional: false, required: false
-  public get status() {
-    return this.getStringAttribute('status');
   }
 
   // subnet_id - computed: false, optional: false, required: true
@@ -286,7 +255,6 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
     return {
       client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
       id: cdktf.stringToTerraform(this._id),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       timeouts: ec2ClientVpnNetworkAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };

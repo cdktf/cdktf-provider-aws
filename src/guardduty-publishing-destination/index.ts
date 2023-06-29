@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination#destination_arn GuarddutyPublishingDestination#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination#destination_arn GuarddutyPublishingDestination#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination#destination_type GuarddutyPublishingDestination#destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination#destination_type GuarddutyPublishingDestination#destination_type}
   */
   readonly destinationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination#detector_id GuarddutyPublishingDestination#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination#detector_id GuarddutyPublishingDestination#detector_id}
   */
   readonly detectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination#id GuarddutyPublishingDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination#id GuarddutyPublishingDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
   */
   readonly kmsKeyArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}
 */
 export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,8 +58,8 @@ export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_guardduty_publishing_destination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

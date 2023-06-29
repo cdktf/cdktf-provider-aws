@@ -1,6 +1,6 @@
 # `aws_licensemanager_grant`
 
-Refer to the Terraform Registory for docs: [`aws_licensemanager_grant`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant).
+Refer to the Terraform Registory for docs: [`aws_licensemanager_grant`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant).
 
 # `licensemanagerGrant` Submodule <a name="`licensemanagerGrant` Submodule" id="@cdktf/provider-aws.licensemanagerGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_licensemanager_grant`](https://
 
 ### LicensemanagerGrant <a name="LicensemanagerGrant" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant aws_licensemanager_grant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant aws_licensemanager_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrant"
 
 licensemanagergrant.NewLicensemanagerGrant(scope Construct, id *string, config LicensemanagerGrantConfig) LicensemanagerGrant
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrant"
 
 licensemanagergrant.LicensemanagerGrant_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrant"
 
 licensemanagergrant.LicensemanagerGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ licensemanagergrant.LicensemanagerGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrant"
 
 licensemanagergrant.LicensemanagerGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrant"
 
 &licensemanagergrant.LicensemanagerGrantConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/licensemanagergrant"
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.licenseArn">LicenseArn</a></code> | <code>*string</code> | License ARN. |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.name">Name</a></code> | <code>*string</code> | Name of the grant. |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.principal">Principal</a></code> | <code>*string</code> | The grantee principal ARN. |
-| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}. |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrant.LicensemanagerGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}. |
 
 ---
 
@@ -804,7 +804,7 @@ AllowedOperations *[]*string
 
 Allowed operations for the grant. This is a subset of the allowed operations on the license.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#allowed_operations LicensemanagerGrant#allowed_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#allowed_operations LicensemanagerGrant#allowed_operations}
 
 ---
 
@@ -818,7 +818,7 @@ LicenseArn *string
 
 License ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#license_arn LicensemanagerGrant#license_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#license_arn LicensemanagerGrant#license_arn}
 
 ---
 
@@ -832,7 +832,7 @@ Name *string
 
 Name of the grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#name LicensemanagerGrant#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#name LicensemanagerGrant#name}
 
 ---
 
@@ -848,7 +848,7 @@ The grantee principal ARN.
 
 The target account for the grant in the form of the ARN for an account principal of the root user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#principal LicensemanagerGrant#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#principal LicensemanagerGrant#principal}
 
 ---
 
@@ -860,7 +860,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/licensemanager_grant#id LicensemanagerGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

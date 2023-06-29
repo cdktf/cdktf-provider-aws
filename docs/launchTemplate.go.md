@@ -1,6 +1,6 @@
 # `aws_launch_template`
 
-Refer to the Terraform Registory for docs: [`aws_launch_template`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template).
+Refer to the Terraform Registory for docs: [`aws_launch_template`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template).
 
 # `launchTemplate` Submodule <a name="`launchTemplate` Submodule" id="@cdktf/provider-aws.launchTemplate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_launch_template`](https://regis
 
 ### LaunchTemplate <a name="LaunchTemplate" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template aws_launch_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template aws_launch_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplate(scope Construct, id *string, config LaunchTemplateConfig) LaunchTemplate
 ```
@@ -790,7 +790,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -822,7 +822,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -836,7 +836,7 @@ launchtemplate.LaunchTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -1915,11 +1915,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateBlockDeviceMappings {
 	DeviceName: *string,
-	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs,
+	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs,
 	NoDevice: *string,
 	VirtualName: *string,
 }
@@ -1929,10 +1929,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#device_name LaunchTemplate#device_name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.deviceName">DeviceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#device_name LaunchTemplate#device_name}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.ebs">Ebs</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs">LaunchTemplateBlockDeviceMappingsEbs</a></code> | ebs block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.noDevice">NoDevice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#no_device LaunchTemplate#no_device}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.virtualName">VirtualName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#virtual_name LaunchTemplate#virtual_name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.noDevice">NoDevice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#no_device LaunchTemplate#no_device}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.property.virtualName">VirtualName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#virtual_name LaunchTemplate#virtual_name}. |
 
 ---
 
@@ -1944,7 +1944,7 @@ DeviceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#device_name LaunchTemplate#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#device_name LaunchTemplate#device_name}.
 
 ---
 
@@ -1958,7 +1958,7 @@ Ebs LaunchTemplateBlockDeviceMappingsEbs
 
 ebs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ebs LaunchTemplate#ebs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ebs LaunchTemplate#ebs}
 
 ---
 
@@ -1970,7 +1970,7 @@ NoDevice *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#no_device LaunchTemplate#no_device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#no_device LaunchTemplate#no_device}.
 
 ---
 
@@ -1982,7 +1982,7 @@ VirtualName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#virtual_name LaunchTemplate#virtual_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#virtual_name LaunchTemplate#virtual_name}.
 
 ---
 
@@ -1991,7 +1991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateBlockDeviceMappingsEbs {
 	DeleteOnTermination: *string,
@@ -2009,14 +2009,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.encrypted">Encrypted</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#encrypted LaunchTemplate#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#iops LaunchTemplate#iops}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#kms_key_id LaunchTemplate#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#snapshot_id LaunchTemplate#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#throughput LaunchTemplate#throughput}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.volumeSize">VolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#volume_size LaunchTemplate#volume_size}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#volume_type LaunchTemplate#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.encrypted">Encrypted</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#encrypted LaunchTemplate#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#iops LaunchTemplate#iops}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#kms_key_id LaunchTemplate#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#snapshot_id LaunchTemplate#snapshot_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.throughput">Throughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#throughput LaunchTemplate#throughput}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.volumeSize">VolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#volume_size LaunchTemplate#volume_size}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#volume_type LaunchTemplate#volume_type}. |
 
 ---
 
@@ -2028,7 +2028,7 @@ DeleteOnTermination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}.
 
 ---
 
@@ -2040,7 +2040,7 @@ Encrypted *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#encrypted LaunchTemplate#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#encrypted LaunchTemplate#encrypted}.
 
 ---
 
@@ -2052,7 +2052,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#iops LaunchTemplate#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#iops LaunchTemplate#iops}.
 
 ---
 
@@ -2064,7 +2064,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#kms_key_id LaunchTemplate#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#kms_key_id LaunchTemplate#kms_key_id}.
 
 ---
 
@@ -2076,7 +2076,7 @@ SnapshotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#snapshot_id LaunchTemplate#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#snapshot_id LaunchTemplate#snapshot_id}.
 
 ---
 
@@ -2088,7 +2088,7 @@ Throughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#throughput LaunchTemplate#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#throughput LaunchTemplate#throughput}.
 
 ---
 
@@ -2100,7 +2100,7 @@ VolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#volume_size LaunchTemplate#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#volume_size LaunchTemplate#volume_size}.
 
 ---
 
@@ -2112,7 +2112,7 @@ VolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#volume_type LaunchTemplate#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#volume_type LaunchTemplate#volume_type}.
 
 ---
 
@@ -2121,11 +2121,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCapacityReservationSpecification {
 	CapacityReservationPreference: *string,
-	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget,
+	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget,
 }
 ```
 
@@ -2133,7 +2133,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification.property.capacityReservationPreference">CapacityReservationPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification.property.capacityReservationPreference">CapacityReservationPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification.property.capacityReservationTarget">CapacityReservationTarget</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget">LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget</a></code> | capacity_reservation_target block. |
 
 ---
@@ -2146,7 +2146,7 @@ CapacityReservationPreference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_preference LaunchTemplate#capacity_reservation_preference}.
 
 ---
 
@@ -2160,7 +2160,7 @@ CapacityReservationTarget LaunchTemplateCapacityReservationSpecificationCapacity
 
 capacity_reservation_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_target LaunchTemplate#capacity_reservation_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_target LaunchTemplate#capacity_reservation_target}
 
 ---
 
@@ -2169,7 +2169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
 	CapacityReservationId: *string,
@@ -2181,8 +2181,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationId">CapacityReservationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationResourceGroupArn">CapacityReservationResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_resource_group_arn LaunchTemplate#capacity_reservation_resource_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationId">CapacityReservationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.property.capacityReservationResourceGroupArn">CapacityReservationResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_resource_group_arn LaunchTemplate#capacity_reservation_resource_group_arn}. |
 
 ---
 
@@ -2194,7 +2194,7 @@ CapacityReservationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_id LaunchTemplate#capacity_reservation_id}.
 
 ---
 
@@ -2206,7 +2206,7 @@ CapacityReservationResourceGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_resource_group_arn LaunchTemplate#capacity_reservation_resource_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_resource_group_arn LaunchTemplate#capacity_reservation_resource_group_arn}.
 
 ---
 
@@ -2215,7 +2215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateConfig {
 	Connection: interface{},
@@ -2226,36 +2226,36 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BlockDeviceMappings: interface{},
-	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateCapacityReservationSpecification,
-	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateCpuOptions,
-	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateCreditSpecification,
+	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCapacityReservationSpecification,
+	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCpuOptions,
+	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCreditSpecification,
 	DefaultVersion: *f64,
 	Description: *string,
 	DisableApiStop: interface{},
 	DisableApiTermination: interface{},
 	EbsOptimized: *string,
 	ElasticGpuSpecifications: interface{},
-	ElasticInferenceAccelerator: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateElasticInferenceAccelerator,
-	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateEnclaveOptions,
-	HibernationOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateHibernationOptions,
-	IamInstanceProfile: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateIamInstanceProfile,
+	ElasticInferenceAccelerator: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator,
+	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateEnclaveOptions,
+	HibernationOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateHibernationOptions,
+	IamInstanceProfile: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateIamInstanceProfile,
 	Id: *string,
 	ImageId: *string,
 	InstanceInitiatedShutdownBehavior: *string,
-	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceMarketOptions,
-	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirements,
+	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceMarketOptions,
+	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirements,
 	InstanceType: *string,
 	KernelId: *string,
 	KeyName: *string,
 	LicenseSpecification: interface{},
-	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateMaintenanceOptions,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateMetadataOptions,
-	Monitoring: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateMonitoring,
+	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMaintenanceOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMetadataOptions,
+	Monitoring: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMonitoring,
 	Name: *string,
 	NamePrefix: *string,
 	NetworkInterfaces: interface{},
-	Placement: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplatePlacement,
-	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplatePrivateDnsNameOptions,
+	Placement: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplatePlacement,
+	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions,
 	RamDiskId: *string,
 	SecurityGroupNames: *[]*string,
 	Tags: *map[string]*string,
@@ -2282,41 +2282,41 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.capacityReservationSpecification">CapacityReservationSpecification</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification">LaunchTemplateCapacityReservationSpecification</a></code> | capacity_reservation_specification block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.cpuOptions">CpuOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions">LaunchTemplateCpuOptions</a></code> | cpu_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.creditSpecification">CreditSpecification</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification">LaunchTemplateCreditSpecification</a></code> | credit_specification block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.defaultVersion">DefaultVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#default_version LaunchTemplate#default_version}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#description LaunchTemplate#description}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.disableApiStop">DisableApiStop</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.disableApiTermination">DisableApiTermination</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.defaultVersion">DefaultVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#default_version LaunchTemplate#default_version}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#description LaunchTemplate#description}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.disableApiStop">DisableApiStop</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.disableApiTermination">DisableApiTermination</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.ebsOptimized">EbsOptimized</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.elasticGpuSpecifications">ElasticGpuSpecifications</a></code> | <code>interface{}</code> | elastic_gpu_specifications block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.elasticInferenceAccelerator">ElasticInferenceAccelerator</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator">LaunchTemplateElasticInferenceAccelerator</a></code> | elastic_inference_accelerator block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.enclaveOptions">EnclaveOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions">LaunchTemplateEnclaveOptions</a></code> | enclave_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.hibernationOptions">HibernationOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions">LaunchTemplateHibernationOptions</a></code> | hibernation_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.iamInstanceProfile">IamInstanceProfile</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile">LaunchTemplateIamInstanceProfile</a></code> | iam_instance_profile block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#id LaunchTemplate#id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#image_id LaunchTemplate#image_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceInitiatedShutdownBehavior">InstanceInitiatedShutdownBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#id LaunchTemplate#id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#image_id LaunchTemplate#image_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceInitiatedShutdownBehavior">InstanceInitiatedShutdownBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceMarketOptions">InstanceMarketOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions">LaunchTemplateInstanceMarketOptions</a></code> | instance_market_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceRequirements">InstanceRequirements</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements">LaunchTemplateInstanceRequirements</a></code> | instance_requirements block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_type LaunchTemplate#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.kernelId">KernelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#kernel_id LaunchTemplate#kernel_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#key_name LaunchTemplate#key_name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_type LaunchTemplate#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.kernelId">KernelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#kernel_id LaunchTemplate#kernel_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#key_name LaunchTemplate#key_name}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.licenseSpecification">LicenseSpecification</a></code> | <code>interface{}</code> | license_specification block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.maintenanceOptions">MaintenanceOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions">LaunchTemplateMaintenanceOptions</a></code> | maintenance_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.metadataOptions">MetadataOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions">LaunchTemplateMetadataOptions</a></code> | metadata_options block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.monitoring">Monitoring</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring">LaunchTemplateMonitoring</a></code> | monitoring block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name LaunchTemplate#name}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name_prefix LaunchTemplate#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name LaunchTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name_prefix LaunchTemplate#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.networkInterfaces">NetworkInterfaces</a></code> | <code>interface{}</code> | network_interfaces block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.placement">Placement</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement">LaunchTemplatePlacement</a></code> | placement block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.privateDnsNameOptions">PrivateDnsNameOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions">LaunchTemplatePrivateDnsNameOptions</a></code> | private_dns_name_options block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.ramDiskId">RamDiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ram_disk_id LaunchTemplate#ram_disk_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.securityGroupNames">SecurityGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#security_group_names LaunchTemplate#security_group_names}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags LaunchTemplate#tags}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags_all LaunchTemplate#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.ramDiskId">RamDiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ram_disk_id LaunchTemplate#ram_disk_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.securityGroupNames">SecurityGroupNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#security_group_names LaunchTemplate#security_group_names}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags LaunchTemplate#tags}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags_all LaunchTemplate#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.tagSpecifications">TagSpecifications</a></code> | <code>interface{}</code> | tag_specifications block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.updateDefaultVersion">UpdateDefaultVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#update_default_version LaunchTemplate#update_default_version}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#user_data LaunchTemplate#user_data}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.updateDefaultVersion">UpdateDefaultVersion</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#update_default_version LaunchTemplate#update_default_version}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#user_data LaunchTemplate#user_data}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}. |
 
 ---
 
@@ -2400,7 +2400,7 @@ BlockDeviceMappings interface{}
 
 block_device_mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#block_device_mappings LaunchTemplate#block_device_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#block_device_mappings LaunchTemplate#block_device_mappings}
 
 ---
 
@@ -2414,7 +2414,7 @@ CapacityReservationSpecification LaunchTemplateCapacityReservationSpecification
 
 capacity_reservation_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
 
 ---
 
@@ -2428,7 +2428,7 @@ CpuOptions LaunchTemplateCpuOptions
 
 cpu_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#cpu_options LaunchTemplate#cpu_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#cpu_options LaunchTemplate#cpu_options}
 
 ---
 
@@ -2442,7 +2442,7 @@ CreditSpecification LaunchTemplateCreditSpecification
 
 credit_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#credit_specification LaunchTemplate#credit_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#credit_specification LaunchTemplate#credit_specification}
 
 ---
 
@@ -2454,7 +2454,7 @@ DefaultVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#default_version LaunchTemplate#default_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#default_version LaunchTemplate#default_version}.
 
 ---
 
@@ -2466,7 +2466,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#description LaunchTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#description LaunchTemplate#description}.
 
 ---
 
@@ -2478,7 +2478,7 @@ DisableApiStop interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#disable_api_stop LaunchTemplate#disable_api_stop}.
 
 ---
 
@@ -2490,7 +2490,7 @@ DisableApiTermination interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#disable_api_termination LaunchTemplate#disable_api_termination}.
 
 ---
 
@@ -2502,7 +2502,7 @@ EbsOptimized *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ebs_optimized LaunchTemplate#ebs_optimized}.
 
 ---
 
@@ -2516,7 +2516,7 @@ ElasticGpuSpecifications interface{}
 
 elastic_gpu_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
 
 ---
 
@@ -2530,7 +2530,7 @@ ElasticInferenceAccelerator LaunchTemplateElasticInferenceAccelerator
 
 elastic_inference_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
 
 ---
 
@@ -2544,7 +2544,7 @@ EnclaveOptions LaunchTemplateEnclaveOptions
 
 enclave_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enclave_options LaunchTemplate#enclave_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enclave_options LaunchTemplate#enclave_options}
 
 ---
 
@@ -2558,7 +2558,7 @@ HibernationOptions LaunchTemplateHibernationOptions
 
 hibernation_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#hibernation_options LaunchTemplate#hibernation_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#hibernation_options LaunchTemplate#hibernation_options}
 
 ---
 
@@ -2572,7 +2572,7 @@ IamInstanceProfile LaunchTemplateIamInstanceProfile
 
 iam_instance_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#iam_instance_profile LaunchTemplate#iam_instance_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#iam_instance_profile LaunchTemplate#iam_instance_profile}
 
 ---
 
@@ -2584,7 +2584,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#id LaunchTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#id LaunchTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2599,7 +2599,7 @@ ImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#image_id LaunchTemplate#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#image_id LaunchTemplate#image_id}.
 
 ---
 
@@ -2611,7 +2611,7 @@ InstanceInitiatedShutdownBehavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_initiated_shutdown_behavior LaunchTemplate#instance_initiated_shutdown_behavior}.
 
 ---
 
@@ -2625,7 +2625,7 @@ InstanceMarketOptions LaunchTemplateInstanceMarketOptions
 
 instance_market_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_market_options LaunchTemplate#instance_market_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_market_options LaunchTemplate#instance_market_options}
 
 ---
 
@@ -2639,7 +2639,7 @@ InstanceRequirements LaunchTemplateInstanceRequirements
 
 instance_requirements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_requirements LaunchTemplate#instance_requirements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_requirements LaunchTemplate#instance_requirements}
 
 ---
 
@@ -2651,7 +2651,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_type LaunchTemplate#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_type LaunchTemplate#instance_type}.
 
 ---
 
@@ -2663,7 +2663,7 @@ KernelId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#kernel_id LaunchTemplate#kernel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#kernel_id LaunchTemplate#kernel_id}.
 
 ---
 
@@ -2675,7 +2675,7 @@ KeyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#key_name LaunchTemplate#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#key_name LaunchTemplate#key_name}.
 
 ---
 
@@ -2689,7 +2689,7 @@ LicenseSpecification interface{}
 
 license_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#license_specification LaunchTemplate#license_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#license_specification LaunchTemplate#license_specification}
 
 ---
 
@@ -2703,7 +2703,7 @@ MaintenanceOptions LaunchTemplateMaintenanceOptions
 
 maintenance_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#maintenance_options LaunchTemplate#maintenance_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#maintenance_options LaunchTemplate#maintenance_options}
 
 ---
 
@@ -2717,7 +2717,7 @@ MetadataOptions LaunchTemplateMetadataOptions
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#metadata_options LaunchTemplate#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#metadata_options LaunchTemplate#metadata_options}
 
 ---
 
@@ -2731,7 +2731,7 @@ Monitoring LaunchTemplateMonitoring
 
 monitoring block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#monitoring LaunchTemplate#monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#monitoring LaunchTemplate#monitoring}
 
 ---
 
@@ -2743,7 +2743,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name LaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name LaunchTemplate#name}.
 
 ---
 
@@ -2755,7 +2755,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name_prefix LaunchTemplate#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name_prefix LaunchTemplate#name_prefix}.
 
 ---
 
@@ -2769,7 +2769,7 @@ NetworkInterfaces interface{}
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_interfaces LaunchTemplate#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_interfaces LaunchTemplate#network_interfaces}
 
 ---
 
@@ -2783,7 +2783,7 @@ Placement LaunchTemplatePlacement
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#placement LaunchTemplate#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#placement LaunchTemplate#placement}
 
 ---
 
@@ -2797,7 +2797,7 @@ PrivateDnsNameOptions LaunchTemplatePrivateDnsNameOptions
 
 private_dns_name_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#private_dns_name_options LaunchTemplate#private_dns_name_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#private_dns_name_options LaunchTemplate#private_dns_name_options}
 
 ---
 
@@ -2809,7 +2809,7 @@ RamDiskId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ram_disk_id LaunchTemplate#ram_disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ram_disk_id LaunchTemplate#ram_disk_id}.
 
 ---
 
@@ -2821,7 +2821,7 @@ SecurityGroupNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#security_group_names LaunchTemplate#security_group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#security_group_names LaunchTemplate#security_group_names}.
 
 ---
 
@@ -2833,7 +2833,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags LaunchTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags LaunchTemplate#tags}.
 
 ---
 
@@ -2845,7 +2845,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags_all LaunchTemplate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags_all LaunchTemplate#tags_all}.
 
 ---
 
@@ -2859,7 +2859,7 @@ TagSpecifications interface{}
 
 tag_specifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tag_specifications LaunchTemplate#tag_specifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tag_specifications LaunchTemplate#tag_specifications}
 
 ---
 
@@ -2871,7 +2871,7 @@ UpdateDefaultVersion interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#update_default_version LaunchTemplate#update_default_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#update_default_version LaunchTemplate#update_default_version}.
 
 ---
 
@@ -2883,7 +2883,7 @@ UserData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#user_data LaunchTemplate#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#user_data LaunchTemplate#user_data}.
 
 ---
 
@@ -2895,7 +2895,7 @@ VpcSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#vpc_security_group_ids LaunchTemplate#vpc_security_group_ids}.
 
 ---
 
@@ -2904,7 +2904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCpuOptions {
 	AmdSevSnp: *string,
@@ -2917,9 +2917,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.amdSevSnp">AmdSevSnp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#amd_sev_snp LaunchTemplate#amd_sev_snp}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.coreCount">CoreCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#core_count LaunchTemplate#core_count}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.threadsPerCore">ThreadsPerCore</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#threads_per_core LaunchTemplate#threads_per_core}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.amdSevSnp">AmdSevSnp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#amd_sev_snp LaunchTemplate#amd_sev_snp}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.coreCount">CoreCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#core_count LaunchTemplate#core_count}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.property.threadsPerCore">ThreadsPerCore</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#threads_per_core LaunchTemplate#threads_per_core}. |
 
 ---
 
@@ -2931,7 +2931,7 @@ AmdSevSnp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#amd_sev_snp LaunchTemplate#amd_sev_snp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#amd_sev_snp LaunchTemplate#amd_sev_snp}.
 
 ---
 
@@ -2943,7 +2943,7 @@ CoreCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#core_count LaunchTemplate#core_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#core_count LaunchTemplate#core_count}.
 
 ---
 
@@ -2955,7 +2955,7 @@ ThreadsPerCore *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#threads_per_core LaunchTemplate#threads_per_core}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#threads_per_core LaunchTemplate#threads_per_core}.
 
 ---
 
@@ -2964,7 +2964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCreditSpecification {
 	CpuCredits: *string,
@@ -2975,7 +2975,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification.property.cpuCredits">CpuCredits</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#cpu_credits LaunchTemplate#cpu_credits}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification.property.cpuCredits">CpuCredits</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#cpu_credits LaunchTemplate#cpu_credits}. |
 
 ---
 
@@ -2987,7 +2987,7 @@ CpuCredits *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#cpu_credits LaunchTemplate#cpu_credits}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#cpu_credits LaunchTemplate#cpu_credits}.
 
 ---
 
@@ -2996,7 +2996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateElasticGpuSpecifications {
 	Type: *string,
@@ -3007,7 +3007,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#type LaunchTemplate#type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#type LaunchTemplate#type}. |
 
 ---
 
@@ -3019,7 +3019,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#type LaunchTemplate#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#type LaunchTemplate#type}.
 
 ---
 
@@ -3028,7 +3028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateElasticInferenceAccelerator {
 	Type: *string,
@@ -3039,7 +3039,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#type LaunchTemplate#type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#type LaunchTemplate#type}. |
 
 ---
 
@@ -3051,7 +3051,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#type LaunchTemplate#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#type LaunchTemplate#type}.
 
 ---
 
@@ -3060,7 +3060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateEnclaveOptions {
 	Enabled: interface{},
@@ -3071,7 +3071,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}. |
 
 ---
 
@@ -3083,7 +3083,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
 
 ---
 
@@ -3092,7 +3092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateHibernationOptions {
 	Configured: interface{},
@@ -3103,7 +3103,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions.property.configured">Configured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#configured LaunchTemplate#configured}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions.property.configured">Configured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#configured LaunchTemplate#configured}. |
 
 ---
 
@@ -3115,7 +3115,7 @@ Configured interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#configured LaunchTemplate#configured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#configured LaunchTemplate#configured}.
 
 ---
 
@@ -3124,7 +3124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateIamInstanceProfile {
 	Arn: *string,
@@ -3136,8 +3136,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#arn LaunchTemplate#arn}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name LaunchTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#arn LaunchTemplate#arn}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name LaunchTemplate#name}. |
 
 ---
 
@@ -3149,7 +3149,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#arn LaunchTemplate#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#arn LaunchTemplate#arn}.
 
 ---
 
@@ -3161,7 +3161,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#name LaunchTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#name LaunchTemplate#name}.
 
 ---
 
@@ -3170,11 +3170,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceMarketOptions {
 	MarketType: *string,
-	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions,
+	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions,
 }
 ```
 
@@ -3182,7 +3182,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions.property.marketType">MarketType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#market_type LaunchTemplate#market_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions.property.marketType">MarketType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#market_type LaunchTemplate#market_type}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions.property.spotOptions">SpotOptions</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions">LaunchTemplateInstanceMarketOptionsSpotOptions</a></code> | spot_options block. |
 
 ---
@@ -3195,7 +3195,7 @@ MarketType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#market_type LaunchTemplate#market_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#market_type LaunchTemplate#market_type}.
 
 ---
 
@@ -3209,7 +3209,7 @@ SpotOptions LaunchTemplateInstanceMarketOptionsSpotOptions
 
 spot_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spot_options LaunchTemplate#spot_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spot_options LaunchTemplate#spot_options}
 
 ---
 
@@ -3218,7 +3218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceMarketOptionsSpotOptions {
 	BlockDurationMinutes: *f64,
@@ -3233,11 +3233,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#block_duration_minutes LaunchTemplate#block_duration_minutes}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.instanceInterruptionBehavior">InstanceInterruptionBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.maxPrice">MaxPrice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max_price LaunchTemplate#max_price}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.spotInstanceType">SpotInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spot_instance_type LaunchTemplate#spot_instance_type}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.validUntil">ValidUntil</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#valid_until LaunchTemplate#valid_until}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.blockDurationMinutes">BlockDurationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#block_duration_minutes LaunchTemplate#block_duration_minutes}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.instanceInterruptionBehavior">InstanceInterruptionBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.maxPrice">MaxPrice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max_price LaunchTemplate#max_price}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.spotInstanceType">SpotInstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spot_instance_type LaunchTemplate#spot_instance_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.property.validUntil">ValidUntil</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#valid_until LaunchTemplate#valid_until}. |
 
 ---
 
@@ -3249,7 +3249,7 @@ BlockDurationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#block_duration_minutes LaunchTemplate#block_duration_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#block_duration_minutes LaunchTemplate#block_duration_minutes}.
 
 ---
 
@@ -3261,7 +3261,7 @@ InstanceInterruptionBehavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_interruption_behavior LaunchTemplate#instance_interruption_behavior}.
 
 ---
 
@@ -3273,7 +3273,7 @@ MaxPrice *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max_price LaunchTemplate#max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max_price LaunchTemplate#max_price}.
 
 ---
 
@@ -3285,7 +3285,7 @@ SpotInstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spot_instance_type LaunchTemplate#spot_instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spot_instance_type LaunchTemplate#spot_instance_type}.
 
 ---
 
@@ -3297,7 +3297,7 @@ ValidUntil *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#valid_until LaunchTemplate#valid_until}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#valid_until LaunchTemplate#valid_until}.
 
 ---
 
@@ -3306,32 +3306,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirements {
-	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib,
-	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount,
-	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount,
+	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib,
+	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount,
+	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount,
 	AcceleratorManufacturers: *[]*string,
 	AcceleratorNames: *[]*string,
-	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
+	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
 	AcceleratorTypes: *[]*string,
 	AllowedInstanceTypes: *[]*string,
 	BareMetal: *string,
-	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
+	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
 	BurstablePerformance: *string,
 	CpuManufacturers: *[]*string,
 	ExcludedInstanceTypes: *[]*string,
 	InstanceGenerations: *[]*string,
 	LocalStorage: *string,
 	LocalStorageTypes: *[]*string,
-	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
-	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
-	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount,
+	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
+	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
+	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount,
 	OnDemandMaxPricePercentageOverLowestPrice: *f64,
 	RequireHibernateSupport: interface{},
 	SpotMaxPricePercentageOverLowestPrice: *f64,
-	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws/v16.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb,
+	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb,
 }
 ```
 
@@ -3342,25 +3342,25 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.memoryMib">MemoryMib</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib">LaunchTemplateInstanceRequirementsMemoryMib</a></code> | memory_mib block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.vcpuCount">VcpuCount</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount">LaunchTemplateInstanceRequirementsVcpuCount</a></code> | vcpu_count block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorCount">AcceleratorCount</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount">LaunchTemplateInstanceRequirementsAcceleratorCount</a></code> | accelerator_count block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorManufacturers">AcceleratorManufacturers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_manufacturers LaunchTemplate#accelerator_manufacturers}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorNames">AcceleratorNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_names LaunchTemplate#accelerator_names}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorManufacturers">AcceleratorManufacturers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_manufacturers LaunchTemplate#accelerator_manufacturers}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorNames">AcceleratorNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_names LaunchTemplate#accelerator_names}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorTotalMemoryMib">AcceleratorTotalMemoryMib</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib">LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib</a></code> | accelerator_total_memory_mib block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorTypes">AcceleratorTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_types LaunchTemplate#accelerator_types}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.allowedInstanceTypes">AllowedInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#allowed_instance_types LaunchTemplate#allowed_instance_types}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.bareMetal">BareMetal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#bare_metal LaunchTemplate#bare_metal}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.acceleratorTypes">AcceleratorTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_types LaunchTemplate#accelerator_types}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.allowedInstanceTypes">AllowedInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#allowed_instance_types LaunchTemplate#allowed_instance_types}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.bareMetal">BareMetal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#bare_metal LaunchTemplate#bare_metal}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.baselineEbsBandwidthMbps">BaselineEbsBandwidthMbps</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps">LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps</a></code> | baseline_ebs_bandwidth_mbps block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.burstablePerformance">BurstablePerformance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#burstable_performance LaunchTemplate#burstable_performance}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.cpuManufacturers">CpuManufacturers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#cpu_manufacturers LaunchTemplate#cpu_manufacturers}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.excludedInstanceTypes">ExcludedInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#excluded_instance_types LaunchTemplate#excluded_instance_types}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.instanceGenerations">InstanceGenerations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_generations LaunchTemplate#instance_generations}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.localStorage">LocalStorage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#local_storage LaunchTemplate#local_storage}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.localStorageTypes">LocalStorageTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#local_storage_types LaunchTemplate#local_storage_types}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.burstablePerformance">BurstablePerformance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#burstable_performance LaunchTemplate#burstable_performance}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.cpuManufacturers">CpuManufacturers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#cpu_manufacturers LaunchTemplate#cpu_manufacturers}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.excludedInstanceTypes">ExcludedInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#excluded_instance_types LaunchTemplate#excluded_instance_types}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.instanceGenerations">InstanceGenerations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_generations LaunchTemplate#instance_generations}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.localStorage">LocalStorage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#local_storage LaunchTemplate#local_storage}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.localStorageTypes">LocalStorageTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#local_storage_types LaunchTemplate#local_storage_types}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.memoryGibPerVcpu">MemoryGibPerVcpu</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu">LaunchTemplateInstanceRequirementsMemoryGibPerVcpu</a></code> | memory_gib_per_vcpu block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.networkBandwidthGbps">NetworkBandwidthGbps</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps">LaunchTemplateInstanceRequirementsNetworkBandwidthGbps</a></code> | network_bandwidth_gbps block. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.networkInterfaceCount">NetworkInterfaceCount</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount">LaunchTemplateInstanceRequirementsNetworkInterfaceCount</a></code> | network_interface_count block. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.onDemandMaxPricePercentageOverLowestPrice">OnDemandMaxPricePercentageOverLowestPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.requireHibernateSupport">RequireHibernateSupport</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.spotMaxPricePercentageOverLowestPrice">SpotMaxPricePercentageOverLowestPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.onDemandMaxPricePercentageOverLowestPrice">OnDemandMaxPricePercentageOverLowestPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.requireHibernateSupport">RequireHibernateSupport</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.spotMaxPricePercentageOverLowestPrice">SpotMaxPricePercentageOverLowestPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.property.totalLocalStorageGb">TotalLocalStorageGb</a></code> | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb">LaunchTemplateInstanceRequirementsTotalLocalStorageGb</a></code> | total_local_storage_gb block. |
 
 ---
@@ -3375,7 +3375,7 @@ MemoryMib LaunchTemplateInstanceRequirementsMemoryMib
 
 memory_mib block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#memory_mib LaunchTemplate#memory_mib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#memory_mib LaunchTemplate#memory_mib}
 
 ---
 
@@ -3389,7 +3389,7 @@ VcpuCount LaunchTemplateInstanceRequirementsVcpuCount
 
 vcpu_count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#vcpu_count LaunchTemplate#vcpu_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#vcpu_count LaunchTemplate#vcpu_count}
 
 ---
 
@@ -3403,7 +3403,7 @@ AcceleratorCount LaunchTemplateInstanceRequirementsAcceleratorCount
 
 accelerator_count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_count LaunchTemplate#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_count LaunchTemplate#accelerator_count}
 
 ---
 
@@ -3415,7 +3415,7 @@ AcceleratorManufacturers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_manufacturers LaunchTemplate#accelerator_manufacturers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_manufacturers LaunchTemplate#accelerator_manufacturers}.
 
 ---
 
@@ -3427,7 +3427,7 @@ AcceleratorNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_names LaunchTemplate#accelerator_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_names LaunchTemplate#accelerator_names}.
 
 ---
 
@@ -3441,7 +3441,7 @@ AcceleratorTotalMemoryMib LaunchTemplateInstanceRequirementsAcceleratorTotalMemo
 
 accelerator_total_memory_mib block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_total_memory_mib LaunchTemplate#accelerator_total_memory_mib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_total_memory_mib LaunchTemplate#accelerator_total_memory_mib}
 
 ---
 
@@ -3453,7 +3453,7 @@ AcceleratorTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#accelerator_types LaunchTemplate#accelerator_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#accelerator_types LaunchTemplate#accelerator_types}.
 
 ---
 
@@ -3465,7 +3465,7 @@ AllowedInstanceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#allowed_instance_types LaunchTemplate#allowed_instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#allowed_instance_types LaunchTemplate#allowed_instance_types}.
 
 ---
 
@@ -3477,7 +3477,7 @@ BareMetal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#bare_metal LaunchTemplate#bare_metal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#bare_metal LaunchTemplate#bare_metal}.
 
 ---
 
@@ -3491,7 +3491,7 @@ BaselineEbsBandwidthMbps LaunchTemplateInstanceRequirementsBaselineEbsBandwidthM
 
 baseline_ebs_bandwidth_mbps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#baseline_ebs_bandwidth_mbps LaunchTemplate#baseline_ebs_bandwidth_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#baseline_ebs_bandwidth_mbps LaunchTemplate#baseline_ebs_bandwidth_mbps}
 
 ---
 
@@ -3503,7 +3503,7 @@ BurstablePerformance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#burstable_performance LaunchTemplate#burstable_performance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#burstable_performance LaunchTemplate#burstable_performance}.
 
 ---
 
@@ -3515,7 +3515,7 @@ CpuManufacturers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#cpu_manufacturers LaunchTemplate#cpu_manufacturers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#cpu_manufacturers LaunchTemplate#cpu_manufacturers}.
 
 ---
 
@@ -3527,7 +3527,7 @@ ExcludedInstanceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#excluded_instance_types LaunchTemplate#excluded_instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#excluded_instance_types LaunchTemplate#excluded_instance_types}.
 
 ---
 
@@ -3539,7 +3539,7 @@ InstanceGenerations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_generations LaunchTemplate#instance_generations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_generations LaunchTemplate#instance_generations}.
 
 ---
 
@@ -3551,7 +3551,7 @@ LocalStorage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#local_storage LaunchTemplate#local_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#local_storage LaunchTemplate#local_storage}.
 
 ---
 
@@ -3563,7 +3563,7 @@ LocalStorageTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#local_storage_types LaunchTemplate#local_storage_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#local_storage_types LaunchTemplate#local_storage_types}.
 
 ---
 
@@ -3577,7 +3577,7 @@ MemoryGibPerVcpu LaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 
 memory_gib_per_vcpu block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#memory_gib_per_vcpu LaunchTemplate#memory_gib_per_vcpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#memory_gib_per_vcpu LaunchTemplate#memory_gib_per_vcpu}
 
 ---
 
@@ -3591,7 +3591,7 @@ NetworkBandwidthGbps LaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 
 network_bandwidth_gbps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_bandwidth_gbps LaunchTemplate#network_bandwidth_gbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_bandwidth_gbps LaunchTemplate#network_bandwidth_gbps}
 
 ---
 
@@ -3605,7 +3605,7 @@ NetworkInterfaceCount LaunchTemplateInstanceRequirementsNetworkInterfaceCount
 
 network_interface_count block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_interface_count LaunchTemplate#network_interface_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_interface_count LaunchTemplate#network_interface_count}
 
 ---
 
@@ -3617,7 +3617,7 @@ OnDemandMaxPricePercentageOverLowestPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#on_demand_max_price_percentage_over_lowest_price LaunchTemplate#on_demand_max_price_percentage_over_lowest_price}.
 
 ---
 
@@ -3629,7 +3629,7 @@ RequireHibernateSupport interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#require_hibernate_support LaunchTemplate#require_hibernate_support}.
 
 ---
 
@@ -3641,7 +3641,7 @@ SpotMaxPricePercentageOverLowestPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spot_max_price_percentage_over_lowest_price LaunchTemplate#spot_max_price_percentage_over_lowest_price}.
 
 ---
 
@@ -3655,7 +3655,7 @@ TotalLocalStorageGb LaunchTemplateInstanceRequirementsTotalLocalStorageGb
 
 total_local_storage_gb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#total_local_storage_gb LaunchTemplate#total_local_storage_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#total_local_storage_gb LaunchTemplate#total_local_storage_gb}
 
 ---
 
@@ -3664,7 +3664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsAcceleratorCount {
 	Max: *f64,
@@ -3676,8 +3676,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3689,7 +3689,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3701,7 +3701,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3710,7 +3710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib {
 	Max: *f64,
@@ -3722,8 +3722,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3735,7 +3735,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3747,7 +3747,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3756,7 +3756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps {
 	Max: *f64,
@@ -3768,8 +3768,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3781,7 +3781,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3793,7 +3793,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3802,7 +3802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu {
 	Max: *f64,
@@ -3814,8 +3814,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3827,7 +3827,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3839,7 +3839,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3848,7 +3848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsMemoryMib {
 	Min: *f64,
@@ -3860,8 +3860,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
 
 ---
 
@@ -3873,7 +3873,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3885,7 +3885,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3894,7 +3894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
 	Max: *f64,
@@ -3906,8 +3906,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3919,7 +3919,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3931,7 +3931,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3940,7 +3940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount {
 	Max: *f64,
@@ -3952,8 +3952,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -3965,7 +3965,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -3977,7 +3977,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -3986,7 +3986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb {
 	Max: *f64,
@@ -3998,8 +3998,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
 
 ---
 
@@ -4011,7 +4011,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -4023,7 +4023,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -4032,7 +4032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsVcpuCount {
 	Min: *f64,
@@ -4044,8 +4044,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.property.min">Min</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.property.max">Max</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}. |
 
 ---
 
@@ -4057,7 +4057,7 @@ Min *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#min LaunchTemplate#min}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#min LaunchTemplate#min}.
 
 ---
 
@@ -4069,7 +4069,7 @@ Max *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#max LaunchTemplate#max}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#max LaunchTemplate#max}.
 
 ---
 
@@ -4078,7 +4078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateLicenseSpecification {
 	LicenseConfigurationArn: *string,
@@ -4089,7 +4089,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification.property.licenseConfigurationArn">LicenseConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification.property.licenseConfigurationArn">LicenseConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}. |
 
 ---
 
@@ -4101,7 +4101,7 @@ LicenseConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#license_configuration_arn LaunchTemplate#license_configuration_arn}.
 
 ---
 
@@ -4110,7 +4110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMaintenanceOptions {
 	AutoRecovery: *string,
@@ -4121,7 +4121,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions.property.autoRecovery">AutoRecovery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#auto_recovery LaunchTemplate#auto_recovery}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions.property.autoRecovery">AutoRecovery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#auto_recovery LaunchTemplate#auto_recovery}. |
 
 ---
 
@@ -4133,7 +4133,7 @@ AutoRecovery *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#auto_recovery LaunchTemplate#auto_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#auto_recovery LaunchTemplate#auto_recovery}.
 
 ---
 
@@ -4142,7 +4142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMetadataOptions {
 	HttpEndpoint: *string,
@@ -4157,11 +4157,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_endpoint LaunchTemplate#http_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpProtocolIpv6">HttpProtocolIpv6</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_tokens LaunchTemplate#http_tokens}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_metadata_tags LaunchTemplate#instance_metadata_tags}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpEndpoint">HttpEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_endpoint LaunchTemplate#http_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpProtocolIpv6">HttpProtocolIpv6</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpPutResponseHopLimit">HttpPutResponseHopLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.httpTokens">HttpTokens</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_tokens LaunchTemplate#http_tokens}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.property.instanceMetadataTags">InstanceMetadataTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_metadata_tags LaunchTemplate#instance_metadata_tags}. |
 
 ---
 
@@ -4173,7 +4173,7 @@ HttpEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_endpoint LaunchTemplate#http_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_endpoint LaunchTemplate#http_endpoint}.
 
 ---
 
@@ -4185,7 +4185,7 @@ HttpProtocolIpv6 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}.
 
 ---
 
@@ -4197,7 +4197,7 @@ HttpPutResponseHopLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}.
 
 ---
 
@@ -4209,7 +4209,7 @@ HttpTokens *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#http_tokens LaunchTemplate#http_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#http_tokens LaunchTemplate#http_tokens}.
 
 ---
 
@@ -4221,7 +4221,7 @@ InstanceMetadataTags *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#instance_metadata_tags LaunchTemplate#instance_metadata_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#instance_metadata_tags LaunchTemplate#instance_metadata_tags}.
 
 ---
 
@@ -4230,7 +4230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMonitoring {
 	Enabled: interface{},
@@ -4241,7 +4241,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}. |
 
 ---
 
@@ -4253,7 +4253,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enabled LaunchTemplate#enabled}.
 
 ---
 
@@ -4262,7 +4262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateNetworkInterfaces {
 	AssociateCarrierIpAddress: *string,
@@ -4291,25 +4291,25 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.associateCarrierIpAddress">AssociateCarrierIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#description LaunchTemplate#description}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#device_index LaunchTemplate#device_index}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.interfaceType">InterfaceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#interface_type LaunchTemplate#interface_type}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4AddressCount">Ipv4AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_address_count LaunchTemplate#ipv4_address_count}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4Addresses">Ipv4Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_addresses LaunchTemplate#ipv4_addresses}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4PrefixCount">Ipv4PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_prefix_count LaunchTemplate#ipv4_prefix_count}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4Prefixes">Ipv4Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_prefixes LaunchTemplate#ipv4_prefixes}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6PrefixCount">Ipv6PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_prefix_count LaunchTemplate#ipv6_prefix_count}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6Prefixes">Ipv6Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_prefixes LaunchTemplate#ipv6_prefixes}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.networkCardIndex">NetworkCardIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_card_index LaunchTemplate#network_card_index}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_interface_id LaunchTemplate#network_interface_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#private_ip_address LaunchTemplate#private_ip_address}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#security_groups LaunchTemplate#security_groups}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#subnet_id LaunchTemplate#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.associateCarrierIpAddress">AssociateCarrierIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.associatePublicIpAddress">AssociatePublicIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.deleteOnTermination">DeleteOnTermination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#description LaunchTemplate#description}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.deviceIndex">DeviceIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#device_index LaunchTemplate#device_index}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.interfaceType">InterfaceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#interface_type LaunchTemplate#interface_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4AddressCount">Ipv4AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_address_count LaunchTemplate#ipv4_address_count}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4Addresses">Ipv4Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_addresses LaunchTemplate#ipv4_addresses}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4PrefixCount">Ipv4PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_prefix_count LaunchTemplate#ipv4_prefix_count}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv4Prefixes">Ipv4Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_prefixes LaunchTemplate#ipv4_prefixes}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6AddressCount">Ipv6AddressCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6Addresses">Ipv6Addresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6PrefixCount">Ipv6PrefixCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_prefix_count LaunchTemplate#ipv6_prefix_count}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.ipv6Prefixes">Ipv6Prefixes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_prefixes LaunchTemplate#ipv6_prefixes}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.networkCardIndex">NetworkCardIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_card_index LaunchTemplate#network_card_index}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_interface_id LaunchTemplate#network_interface_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#private_ip_address LaunchTemplate#private_ip_address}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#security_groups LaunchTemplate#security_groups}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#subnet_id LaunchTemplate#subnet_id}. |
 
 ---
 
@@ -4321,7 +4321,7 @@ AssociateCarrierIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#associate_carrier_ip_address LaunchTemplate#associate_carrier_ip_address}.
 
 ---
 
@@ -4333,7 +4333,7 @@ AssociatePublicIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#associate_public_ip_address LaunchTemplate#associate_public_ip_address}.
 
 ---
 
@@ -4345,7 +4345,7 @@ DeleteOnTermination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#delete_on_termination LaunchTemplate#delete_on_termination}.
 
 ---
 
@@ -4357,7 +4357,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#description LaunchTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#description LaunchTemplate#description}.
 
 ---
 
@@ -4369,7 +4369,7 @@ DeviceIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#device_index LaunchTemplate#device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#device_index LaunchTemplate#device_index}.
 
 ---
 
@@ -4381,7 +4381,7 @@ InterfaceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#interface_type LaunchTemplate#interface_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#interface_type LaunchTemplate#interface_type}.
 
 ---
 
@@ -4393,7 +4393,7 @@ Ipv4AddressCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_address_count LaunchTemplate#ipv4_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_address_count LaunchTemplate#ipv4_address_count}.
 
 ---
 
@@ -4405,7 +4405,7 @@ Ipv4Addresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_addresses LaunchTemplate#ipv4_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_addresses LaunchTemplate#ipv4_addresses}.
 
 ---
 
@@ -4417,7 +4417,7 @@ Ipv4PrefixCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_prefix_count LaunchTemplate#ipv4_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_prefix_count LaunchTemplate#ipv4_prefix_count}.
 
 ---
 
@@ -4429,7 +4429,7 @@ Ipv4Prefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv4_prefixes LaunchTemplate#ipv4_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv4_prefixes LaunchTemplate#ipv4_prefixes}.
 
 ---
 
@@ -4441,7 +4441,7 @@ Ipv6AddressCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_address_count LaunchTemplate#ipv6_address_count}.
 
 ---
 
@@ -4453,7 +4453,7 @@ Ipv6Addresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_addresses LaunchTemplate#ipv6_addresses}.
 
 ---
 
@@ -4465,7 +4465,7 @@ Ipv6PrefixCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_prefix_count LaunchTemplate#ipv6_prefix_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_prefix_count LaunchTemplate#ipv6_prefix_count}.
 
 ---
 
@@ -4477,7 +4477,7 @@ Ipv6Prefixes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#ipv6_prefixes LaunchTemplate#ipv6_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#ipv6_prefixes LaunchTemplate#ipv6_prefixes}.
 
 ---
 
@@ -4489,7 +4489,7 @@ NetworkCardIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_card_index LaunchTemplate#network_card_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_card_index LaunchTemplate#network_card_index}.
 
 ---
 
@@ -4501,7 +4501,7 @@ NetworkInterfaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#network_interface_id LaunchTemplate#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#network_interface_id LaunchTemplate#network_interface_id}.
 
 ---
 
@@ -4513,7 +4513,7 @@ PrivateIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#private_ip_address LaunchTemplate#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#private_ip_address LaunchTemplate#private_ip_address}.
 
 ---
 
@@ -4525,7 +4525,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#security_groups LaunchTemplate#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#security_groups LaunchTemplate#security_groups}.
 
 ---
 
@@ -4537,7 +4537,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#subnet_id LaunchTemplate#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#subnet_id LaunchTemplate#subnet_id}.
 
 ---
 
@@ -4546,7 +4546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplatePlacement {
 	Affinity: *string,
@@ -4564,14 +4564,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.affinity">Affinity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#affinity LaunchTemplate#affinity}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#availability_zone LaunchTemplate#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#group_name LaunchTemplate#group_name}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.hostId">HostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#host_id LaunchTemplate#host_id}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.hostResourceGroupArn">HostResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#host_resource_group_arn LaunchTemplate#host_resource_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.partitionNumber">PartitionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#partition_number LaunchTemplate#partition_number}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.spreadDomain">SpreadDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spread_domain LaunchTemplate#spread_domain}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.tenancy">Tenancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tenancy LaunchTemplate#tenancy}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.affinity">Affinity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#affinity LaunchTemplate#affinity}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#availability_zone LaunchTemplate#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#group_name LaunchTemplate#group_name}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.hostId">HostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#host_id LaunchTemplate#host_id}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.hostResourceGroupArn">HostResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#host_resource_group_arn LaunchTemplate#host_resource_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.partitionNumber">PartitionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#partition_number LaunchTemplate#partition_number}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.spreadDomain">SpreadDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spread_domain LaunchTemplate#spread_domain}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.property.tenancy">Tenancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tenancy LaunchTemplate#tenancy}. |
 
 ---
 
@@ -4583,7 +4583,7 @@ Affinity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#affinity LaunchTemplate#affinity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#affinity LaunchTemplate#affinity}.
 
 ---
 
@@ -4595,7 +4595,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#availability_zone LaunchTemplate#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#availability_zone LaunchTemplate#availability_zone}.
 
 ---
 
@@ -4607,7 +4607,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#group_name LaunchTemplate#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#group_name LaunchTemplate#group_name}.
 
 ---
 
@@ -4619,7 +4619,7 @@ HostId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#host_id LaunchTemplate#host_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#host_id LaunchTemplate#host_id}.
 
 ---
 
@@ -4631,7 +4631,7 @@ HostResourceGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#host_resource_group_arn LaunchTemplate#host_resource_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#host_resource_group_arn LaunchTemplate#host_resource_group_arn}.
 
 ---
 
@@ -4643,7 +4643,7 @@ PartitionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#partition_number LaunchTemplate#partition_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#partition_number LaunchTemplate#partition_number}.
 
 ---
 
@@ -4655,7 +4655,7 @@ SpreadDomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#spread_domain LaunchTemplate#spread_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#spread_domain LaunchTemplate#spread_domain}.
 
 ---
 
@@ -4667,7 +4667,7 @@ Tenancy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tenancy LaunchTemplate#tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tenancy LaunchTemplate#tenancy}.
 
 ---
 
@@ -4676,7 +4676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplatePrivateDnsNameOptions {
 	EnableResourceNameDnsAaaaRecord: interface{},
@@ -4689,9 +4689,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.enableResourceNameDnsAaaaRecord">EnableResourceNameDnsAaaaRecord</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enable_resource_name_dns_aaaa_record LaunchTemplate#enable_resource_name_dns_aaaa_record}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.enableResourceNameDnsARecord">EnableResourceNameDnsARecord</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enable_resource_name_dns_a_record LaunchTemplate#enable_resource_name_dns_a_record}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.hostnameType">HostnameType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#hostname_type LaunchTemplate#hostname_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.enableResourceNameDnsAaaaRecord">EnableResourceNameDnsAaaaRecord</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enable_resource_name_dns_aaaa_record LaunchTemplate#enable_resource_name_dns_aaaa_record}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.enableResourceNameDnsARecord">EnableResourceNameDnsARecord</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enable_resource_name_dns_a_record LaunchTemplate#enable_resource_name_dns_a_record}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.property.hostnameType">HostnameType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#hostname_type LaunchTemplate#hostname_type}. |
 
 ---
 
@@ -4703,7 +4703,7 @@ EnableResourceNameDnsAaaaRecord interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enable_resource_name_dns_aaaa_record LaunchTemplate#enable_resource_name_dns_aaaa_record}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enable_resource_name_dns_aaaa_record LaunchTemplate#enable_resource_name_dns_aaaa_record}.
 
 ---
 
@@ -4715,7 +4715,7 @@ EnableResourceNameDnsARecord interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#enable_resource_name_dns_a_record LaunchTemplate#enable_resource_name_dns_a_record}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#enable_resource_name_dns_a_record LaunchTemplate#enable_resource_name_dns_a_record}.
 
 ---
 
@@ -4727,7 +4727,7 @@ HostnameType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#hostname_type LaunchTemplate#hostname_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#hostname_type LaunchTemplate#hostname_type}.
 
 ---
 
@@ -4736,7 +4736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateTagSpecifications {
 	ResourceType: *string,
@@ -4748,8 +4748,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#resource_type LaunchTemplate#resource_type}. |
-| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags LaunchTemplate#tags}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#resource_type LaunchTemplate#resource_type}. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags LaunchTemplate#tags}. |
 
 ---
 
@@ -4761,7 +4761,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#resource_type LaunchTemplate#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#resource_type LaunchTemplate#resource_type}.
 
 ---
 
@@ -4773,7 +4773,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_template#tags LaunchTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/launch_template#tags LaunchTemplate#tags}.
 
 ---
 
@@ -4784,7 +4784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateBlockDeviceMappingsEbsOutputReference
 ```
@@ -5265,7 +5265,7 @@ func InternalValue() LaunchTemplateBlockDeviceMappingsEbs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateBlockDeviceMappingsList
 ```
@@ -5408,7 +5408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateBlockDeviceMappingsOutputReference
 ```
@@ -5804,7 +5804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference
 ```
@@ -6111,7 +6111,7 @@ func InternalValue() LaunchTemplateCapacityReservationSpecificationCapacityReser
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCapacityReservationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCapacityReservationSpecificationOutputReference
 ```
@@ -6431,7 +6431,7 @@ func InternalValue() LaunchTemplateCapacityReservationSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCpuOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCpuOptionsOutputReference
 ```
@@ -6767,7 +6767,7 @@ func InternalValue() LaunchTemplateCpuOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCreditSpecificationOutputReference
 ```
@@ -7045,7 +7045,7 @@ func InternalValue() LaunchTemplateCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticGpuSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateElasticGpuSpecificationsList
 ```
@@ -7188,7 +7188,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticGpuSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateElasticGpuSpecificationsOutputReference
 ```
@@ -7477,7 +7477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticInferenceAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateElasticInferenceAcceleratorOutputReference
 ```
@@ -7748,7 +7748,7 @@ func InternalValue() LaunchTemplateElasticInferenceAccelerator
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateEnclaveOptionsOutputReference
 ```
@@ -8026,7 +8026,7 @@ func InternalValue() LaunchTemplateEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateHibernationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateHibernationOptionsOutputReference
 ```
@@ -8297,7 +8297,7 @@ func InternalValue() LaunchTemplateHibernationOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateIamInstanceProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateIamInstanceProfileOutputReference
 ```
@@ -8604,7 +8604,7 @@ func InternalValue() LaunchTemplateIamInstanceProfile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceMarketOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceMarketOptionsOutputReference
 ```
@@ -8924,7 +8924,7 @@ func InternalValue() LaunchTemplateInstanceMarketOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 ```
@@ -9318,7 +9318,7 @@ func InternalValue() LaunchTemplateInstanceMarketOptionsSpotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -9625,7 +9625,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsAcceleratorCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -9932,7 +9932,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -10239,7 +10239,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -10546,7 +10546,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsMemoryMibOutputReference
 ```
@@ -10846,7 +10846,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsMemoryMib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -11153,7 +11153,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -11460,7 +11460,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsNetworkInterfaceCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsOutputReference
 ```
@@ -12479,7 +12479,7 @@ func InternalValue() LaunchTemplateInstanceRequirements
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -12786,7 +12786,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsTotalLocalStorageGb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsVcpuCountOutputReference
 ```
@@ -13086,7 +13086,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsVcpuCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateLicenseSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateLicenseSpecificationList
 ```
@@ -13229,7 +13229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateLicenseSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateLicenseSpecificationOutputReference
 ```
@@ -13518,7 +13518,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMaintenanceOptionsOutputReference
 ```
@@ -13796,7 +13796,7 @@ func InternalValue() LaunchTemplateMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMetadataOptionsOutputReference
 ```
@@ -14190,7 +14190,7 @@ func InternalValue() LaunchTemplateMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMonitoringOutputReference
 ```
@@ -14468,7 +14468,7 @@ func InternalValue() LaunchTemplateMonitoring
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateNetworkInterfacesList
 ```
@@ -14611,7 +14611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateNetworkInterfacesOutputReference
 ```
@@ -15429,7 +15429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplatePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplatePlacementOutputReference
 ```
@@ -15910,7 +15910,7 @@ func InternalValue() LaunchTemplatePlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplatePrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplatePrivateDnsNameOptionsOutputReference
 ```
@@ -16246,7 +16246,7 @@ func InternalValue() LaunchTemplatePrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateTagSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateTagSpecificationsList
 ```
@@ -16389,7 +16389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateTagSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateTagSpecificationsOutputReference
 ```

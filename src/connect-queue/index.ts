@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectQueueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#description ConnectQueue#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#description ConnectQueue#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}
   */
   readonly hoursOfOperationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#id ConnectQueue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#id ConnectQueue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}
   */
   readonly maxContacts?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#name ConnectQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#name ConnectQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}
   */
   readonly quickConnectIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#status ConnectQueue#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#status ConnectQueue#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#tags ConnectQueue#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#tags ConnectQueue#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * outbound_caller_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#outbound_caller_config ConnectQueue#outbound_caller_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#outbound_caller_config ConnectQueue#outbound_caller_config}
   */
   readonly outboundCallerConfig?: ConnectQueueOutboundCallerConfig;
 }
 export interface ConnectQueueOutboundCallerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}
   */
   readonly outboundCallerIdName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}
   */
   readonly outboundCallerIdNumberId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}
   */
   readonly outboundFlowId?: string;
 }
@@ -183,7 +178,7 @@ export class ConnectQueueOutboundCallerConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue aws_connect_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue aws_connect_queue}
 */
 export class ConnectQueue extends cdktf.TerraformResource {
 
@@ -197,7 +192,7 @@ export class ConnectQueue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_queue aws_connect_queue} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_queue aws_connect_queue} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -208,8 +203,8 @@ export class ConnectQueue extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_queue',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -347,11 +342,6 @@ export class ConnectQueue extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get quickConnectIdsInput() {
     return this._quickConnectIds;
-  }
-
-  // quick_connect_ids_associated - computed: true, optional: false, required: false
-  public get quickConnectIdsAssociated() {
-    return cdktf.Fn.tolist(this.getListAttribute('quick_connect_ids_associated'));
   }
 
   // status - computed: true, optional: true, required: false

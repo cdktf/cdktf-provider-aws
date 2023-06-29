@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface AppconfigEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#application_id AppconfigEnvironment#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#application_id AppconfigEnvironment#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#description AppconfigEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#description AppconfigEnvironment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#id AppconfigEnvironment#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#name AppconfigEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#name AppconfigEnvironment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#tags AppconfigEnvironment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#tags AppconfigEnvironment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#tags_all AppconfigEnvironment#tags_all}
-  */
-  readonly tagsAll?: { [key: string]: string };
-  /**
   * monitor block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#monitor AppconfigEnvironment#monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#monitor AppconfigEnvironment#monitor}
   */
   readonly monitor?: AppconfigEnvironmentMonitor[] | cdktf.IResolvable;
 }
 export interface AppconfigEnvironmentMonitor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#alarm_arn AppconfigEnvironment#alarm_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#alarm_arn AppconfigEnvironment#alarm_arn}
   */
   readonly alarmArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment#alarm_role_arn AppconfigEnvironment#alarm_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment#alarm_role_arn AppconfigEnvironment#alarm_role_arn}
   */
   readonly alarmRoleArn?: string;
 }
@@ -169,7 +153,7 @@ export class AppconfigEnvironmentMonitorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment aws_appconfig_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment aws_appconfig_environment}
 */
 export class AppconfigEnvironment extends cdktf.TerraformResource {
 
@@ -183,7 +167,7 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment aws_appconfig_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/appconfig_environment aws_appconfig_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,8 +178,8 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_appconfig_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -207,10 +191,8 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     });
     this._applicationId = config.applicationId;
     this._description = config.description;
-    this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
-    this._tagsAll = config.tagsAll;
     this._monitor.internalValue = config.monitor;
   }
 
@@ -236,7 +218,7 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -257,20 +239,9 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     return this.getStringAttribute('environment_id');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -307,19 +278,9 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     return this._tags;
   }
 
-  // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }; 
+  // tags_all - computed: true, optional: false, required: false
+  private _tagsAll = new cdktf.StringMap(this, "tags_all");
   public get tagsAll() {
-    return this.getStringMapAttribute('tags_all');
-  }
-  public set tagsAll(value: { [key: string]: string }) {
-    this._tagsAll = value;
-  }
-  public resetTagsAll() {
-    this._tagsAll = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsAllInput() {
     return this._tagsAll;
   }
 
@@ -347,10 +308,8 @@ export class AppconfigEnvironment extends cdktf.TerraformResource {
     return {
       application_id: cdktf.stringToTerraform(this._applicationId),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       monitor: cdktf.listMapper(appconfigEnvironmentMonitorToTerraform, true)(this._monitor.internalValue),
     };
   }

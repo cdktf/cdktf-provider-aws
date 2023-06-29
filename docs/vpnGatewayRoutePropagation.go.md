@@ -1,6 +1,6 @@
 # `aws_vpn_gateway_route_propagation`
 
-Refer to the Terraform Registory for docs: [`aws_vpn_gateway_route_propagation`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation).
+Refer to the Terraform Registory for docs: [`aws_vpn_gateway_route_propagation`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation).
 
 # `vpnGatewayRoutePropagation` Submodule <a name="`vpnGatewayRoutePropagation` Submodule" id="@cdktf/provider-aws.vpnGatewayRoutePropagation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_vpn_gateway_route_propagation`]
 
 ### VpnGatewayRoutePropagation <a name="VpnGatewayRoutePropagation" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation aws_vpn_gateway_route_propagation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 vpngatewayroutepropagation.NewVpnGatewayRoutePropagation(scope Construct, id *string, config VpnGatewayRoutePropagationConfig) VpnGatewayRoutePropagation
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 vpngatewayroutepropagation.VpnGatewayRoutePropagation_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 vpngatewayroutepropagation.VpnGatewayRoutePropagation_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ vpngatewayroutepropagation.VpnGatewayRoutePropagation_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 vpngatewayroutepropagation.VpnGatewayRoutePropagation_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 &vpngatewayroutepropagation.VpnGatewayRoutePropagationConfig {
 	Connection: interface{},
@@ -643,7 +643,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagatio
 	RouteTableId: *string,
 	VpnGatewayId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts,
 }
 ```
 
@@ -658,9 +658,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagatio
 | <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}. |
 | <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts">VpnGatewayRoutePropagationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -743,7 +743,7 @@ RouteTableId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#route_table_id VpnGatewayRoutePropagation#route_table_id}.
 
 ---
 
@@ -755,7 +755,7 @@ VpnGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}.
 
 ---
 
@@ -767,7 +767,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#id VpnGatewayRoutePropagation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -784,7 +784,7 @@ Timeouts VpnGatewayRoutePropagationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#timeouts VpnGatewayRoutePropagation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#timeouts VpnGatewayRoutePropagation#timeouts}
 
 ---
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 &vpngatewayroutepropagation.VpnGatewayRoutePropagationTimeouts {
 	Create: *string,
@@ -805,8 +805,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}. |
-| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}. |
+| <code><a href="#@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}. |
 
 ---
 
@@ -818,7 +818,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#create VpnGatewayRoutePropagation#create}.
 
 ---
 
@@ -830,7 +830,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/vpn_gateway_route_propagation#delete VpnGatewayRoutePropagation#delete}.
 
 ---
 
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayroutepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpngatewayroutepropagation"
 
 vpngatewayroutepropagation.NewVpnGatewayRoutePropagationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayRoutePropagationTimeoutsOutputReference
 ```

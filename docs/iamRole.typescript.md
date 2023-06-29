@@ -1,6 +1,6 @@
 # `aws_iam_role`
 
-Refer to the Terraform Registory for docs: [`aws_iam_role`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role).
+Refer to the Terraform Registory for docs: [`aws_iam_role`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role).
 
 # `iamRole` Submodule <a name="`iamRole` Submodule" id="@cdktf/provider-aws.iamRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iam_role`](https://registry.ter
 
 ### IamRole <a name="IamRole" id="@cdktf/provider-aws.iamRole.IamRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role aws_iam_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role aws_iam_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRole.Initializer"></a>
 
@@ -445,7 +445,6 @@ iamRole.IamRole.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.createDate">createDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.inlinePolicy">inlinePolicy</a></code> | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.roleLastUsed">roleLastUsed</a></code> | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList">IamRoleRoleLastUsedList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.uniqueId">uniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.assumeRolePolicyInput">assumeRolePolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
@@ -644,16 +643,6 @@ public readonly inlinePolicy: IamRoleInlinePolicyList;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a>
-
----
-
-##### `roleLastUsed`<sup>Required</sup> <a name="roleLastUsed" id="@cdktf/provider-aws.iamRole.IamRole.property.roleLastUsed"></a>
-
-```typescript
-public readonly roleLastUsed: IamRoleRoleLastUsedList;
-```
-
-- *Type:* <a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList">IamRoleRoleLastUsedList</a>
 
 ---
 
@@ -958,19 +947,19 @@ const iamRoleConfig: iamRole.IamRoleConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy">assumeRolePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#description IamRole#description}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies">forceDetachPolicies</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#id IamRole#id}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy">assumeRolePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#description IamRole#description}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies">forceDetachPolicies</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#id IamRole#id}. |
 | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.inlinePolicy">inlinePolicy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>[]</code> | inline_policy block. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns">managedPolicyArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration">maxSessionDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name IamRole#name}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#path IamRole#path}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary">permissionsBoundary</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#tags IamRole#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns">managedPolicyArns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration">maxSessionDuration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name IamRole#name}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#path IamRole#path}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary">permissionsBoundary</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#tags IamRole#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
 
 ---
 
@@ -1052,7 +1041,7 @@ public readonly assumeRolePolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
 
 ---
 
@@ -1064,7 +1053,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#description IamRole#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#description IamRole#description}.
 
 ---
 
@@ -1076,7 +1065,7 @@ public readonly forceDetachPolicies: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
 
 ---
 
@@ -1088,7 +1077,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#id IamRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#id IamRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1105,7 +1094,7 @@ public readonly inlinePolicy: IResolvable | IamRoleInlinePolicy[];
 
 inline_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
 
 ---
 
@@ -1117,7 +1106,7 @@ public readonly managedPolicyArns: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
 
 ---
 
@@ -1129,7 +1118,7 @@ public readonly maxSessionDuration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
 
 ---
 
@@ -1141,7 +1130,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name IamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name IamRole#name}.
 
 ---
 
@@ -1153,7 +1142,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
 
 ---
 
@@ -1165,7 +1154,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#path IamRole#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#path IamRole#path}.
 
 ---
 
@@ -1177,7 +1166,7 @@ public readonly permissionsBoundary: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
 
 ---
 
@@ -1189,7 +1178,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#tags IamRole#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#tags IamRole#tags}.
 
 ---
 
@@ -1201,7 +1190,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
 
 ---
 
@@ -1219,8 +1208,8 @@ const iamRoleInlinePolicy: iamRole.IamRoleInlinePolicy = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name IamRole#name}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#policy IamRole#policy}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name IamRole#name}. |
+| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#policy IamRole#policy}. |
 
 ---
 
@@ -1232,7 +1221,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#name IamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#name IamRole#name}.
 
 ---
 
@@ -1244,20 +1233,9 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role#policy IamRole#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/iam_role#policy IamRole#policy}.
 
 ---
-
-### IamRoleRoleLastUsed <a name="IamRoleRoleLastUsed" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsed"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsed.Initializer"></a>
-
-```typescript
-import { iamRole } from '@cdktf/provider-aws'
-
-const iamRoleRoleLastUsed: iamRole.IamRoleRoleLastUsed = { ... }
-```
-
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1725,427 +1703,6 @@ public readonly internalValue: IResolvable | IamRoleInlinePolicy;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>
-
----
-
-
-### IamRoleRoleLastUsedList <a name="IamRoleRoleLastUsedList" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer"></a>
-
-```typescript
-import { iamRole } from '@cdktf/provider-aws'
-
-new iamRole.IamRoleRoleLastUsedList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.get">get</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.get"></a>
-
-```typescript
-public get(index: number): IamRoleRoleLastUsedOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.get.parameter.index"></a>
-
-- *Type:* number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedList.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-
-### IamRoleRoleLastUsedOutputReference <a name="IamRoleRoleLastUsedOutputReference" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer"></a>
-
-```typescript
-import { iamRole } from '@cdktf/provider-aws'
-
-new iamRole.IamRoleRoleLastUsedOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getAnyMapAttribute"></a>
-
-```typescript
-public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanAttribute"></a>
-
-```typescript
-public getBooleanAttribute(terraformAttribute: string): IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanMapAttribute"></a>
-
-```typescript
-public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getListAttribute"></a>
-
-```typescript
-public getListAttribute(terraformAttribute: string): string[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberAttribute"></a>
-
-```typescript
-public getNumberAttribute(terraformAttribute: string): number
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberListAttribute"></a>
-
-```typescript
-public getNumberListAttribute(terraformAttribute: string): number[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberMapAttribute"></a>
-
-```typescript
-public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringAttribute"></a>
-
-```typescript
-public getStringAttribute(terraformAttribute: string): string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringMapAttribute"></a>
-
-```typescript
-public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.interpolationForAttribute"></a>
-
-```typescript
-public interpolationForAttribute(property: string): IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.lastUsedDate">lastUsedDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsed">IamRoleRoleLastUsed</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `lastUsedDate`<sup>Required</sup> <a name="lastUsedDate" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.lastUsedDate"></a>
-
-```typescript
-public readonly lastUsedDate: string;
-```
-
-- *Type:* string
-
----
-
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.region"></a>
-
-```typescript
-public readonly region: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.iamRole.IamRoleRoleLastUsedOutputReference.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IamRoleRoleLastUsed;
-```
-
-- *Type:* <a href="#@cdktf/provider-aws.iamRole.IamRoleRoleLastUsed">IamRoleRoleLastUsed</a>
 
 ---
 

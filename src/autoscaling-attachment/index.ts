@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment#alb_target_group_arn AutoscalingAttachment#alb_target_group_arn}
-  */
-  readonly albTargetGroupArn?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment#autoscaling_group_name AutoscalingAttachment#autoscaling_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment#autoscaling_group_name AutoscalingAttachment#autoscaling_group_name}
   */
   readonly autoscalingGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment#elb AutoscalingAttachment#elb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment#elb AutoscalingAttachment#elb}
   */
   readonly elb?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment#id AutoscalingAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment#id AutoscalingAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment#lb_target_group_arn AutoscalingAttachment#lb_target_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment#lb_target_group_arn AutoscalingAttachment#lb_target_group_arn}
   */
   readonly lbTargetGroupArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}
 */
 export class AutoscalingAttachment extends cdktf.TerraformResource {
 
@@ -52,7 +43,7 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,8 +54,8 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_autoscaling_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -74,7 +65,6 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._albTargetGroupArn = config.albTargetGroupArn;
     this._autoscalingGroupName = config.autoscalingGroupName;
     this._elb = config.elb;
     this._id = config.id;
@@ -84,22 +74,6 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // alb_target_group_arn - computed: false, optional: true, required: false
-  private _albTargetGroupArn?: string; 
-  public get albTargetGroupArn() {
-    return this.getStringAttribute('alb_target_group_arn');
-  }
-  public set albTargetGroupArn(value: string) {
-    this._albTargetGroupArn = value;
-  }
-  public resetAlbTargetGroupArn() {
-    this._albTargetGroupArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get albTargetGroupArnInput() {
-    return this._albTargetGroupArn;
-  }
 
   // autoscaling_group_name - computed: false, optional: false, required: true
   private _autoscalingGroupName?: string; 
@@ -168,7 +142,6 @@ export class AutoscalingAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alb_target_group_arn: cdktf.stringToTerraform(this._albTargetGroupArn),
       autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
       elb: cdktf.stringToTerraform(this._elb),
       id: cdktf.stringToTerraform(this._id),

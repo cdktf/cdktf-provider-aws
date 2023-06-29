@@ -1,6 +1,6 @@
 # `data_aws_mskconnect_connector`
 
-Refer to the Terraform Registory for docs: [`data_aws_mskconnect_connector`](https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector).
+Refer to the Terraform Registory for docs: [`data_aws_mskconnect_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector).
 
 # `dataAwsMskconnectConnector` Submodule <a name="`dataAwsMskconnectConnector` Submodule" id="@cdktf/provider-aws.dataAwsMskconnectConnector"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_mskconnect_connector`](htt
 
 ### DataAwsMskconnectConnector <a name="DataAwsMskconnectConnector" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataAwsMskconnectConnector.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -684,8 +684,8 @@ DataAwsMskconnectConnectorConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}. |
 
 ---
 
@@ -767,7 +767,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#name DataAwsMskconnectConnector#name}.
 
 ---
 
@@ -779,7 +779,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/mskconnect_connector#id DataAwsMskconnectConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

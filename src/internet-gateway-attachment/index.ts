@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface InternetGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#id InternetGatewayAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#internet_gateway_id InternetGatewayAttachment#internet_gateway_id}
   */
   readonly internetGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#vpc_id InternetGatewayAttachment#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#timeouts InternetGatewayAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#timeouts InternetGatewayAttachment#timeouts}
   */
   readonly timeouts?: InternetGatewayAttachmentTimeouts;
 }
 export interface InternetGatewayAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#create InternetGatewayAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment#delete InternetGatewayAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -138,7 +133,7 @@ export class InternetGatewayAttachmentTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment}
 */
 export class InternetGatewayAttachment extends cdktf.TerraformResource {
 
@@ -152,7 +147,7 @@ export class InternetGatewayAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/internet_gateway_attachment aws_internet_gateway_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,8 +158,8 @@ export class InternetGatewayAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_internet_gateway_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

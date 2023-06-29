@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLbListenerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}
   */
   readonly loadBalancerArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
   */
   readonly timeouts?: DataAwsLbListenerTimeouts;
 }
@@ -735,7 +730,7 @@ export class DataAwsLbListenerDefaultActionList extends cdktf.ComplexList {
 }
 export interface DataAwsLbListenerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}
   */
   readonly read?: string;
 }
@@ -810,7 +805,7 @@ export class DataAwsLbListenerTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener aws_lb_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener aws_lb_listener}
 */
 export class DataAwsLbListener extends cdktf.TerraformDataSource {
 
@@ -824,7 +819,7 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lb_listener aws_lb_listener} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/lb_listener aws_lb_listener} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -835,8 +830,8 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lb_listener',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission
+// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#action LambdaLayerVersionPermission#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#action LambdaLayerVersionPermission#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#id LambdaLayerVersionPermission#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#id LambdaLayerVersionPermission#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#layer_name LambdaLayerVersionPermission#layer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#layer_name LambdaLayerVersionPermission#layer_name}
   */
   readonly layerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#organization_id LambdaLayerVersionPermission#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#organization_id LambdaLayerVersionPermission#organization_id}
   */
   readonly organizationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#principal LambdaLayerVersionPermission#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#principal LambdaLayerVersionPermission#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#statement_id LambdaLayerVersionPermission#statement_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#skip_destroy LambdaLayerVersionPermission#skip_destroy}
+  */
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#statement_id LambdaLayerVersionPermission#statement_id}
   */
   readonly statementId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission#version_number LambdaLayerVersionPermission#version_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission#version_number LambdaLayerVersionPermission#version_number}
   */
   readonly versionNumber: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission}
 */
 export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
 
@@ -60,7 +59,7 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/lambda_layer_version_permission aws_lambda_layer_version_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,8 +70,8 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_layer_version_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '4.67.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.5.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -87,6 +86,7 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
     this._layerName = config.layerName;
     this._organizationId = config.organizationId;
     this._principal = config.principal;
+    this._skipDestroy = config.skipDestroy;
     this._statementId = config.statementId;
     this._versionNumber = config.versionNumber;
   }
@@ -176,6 +176,22 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
     return this.getStringAttribute('revision_id');
   }
 
+  // skip_destroy - computed: false, optional: true, required: false
+  private _skipDestroy?: boolean | cdktf.IResolvable; 
+  public get skipDestroy() {
+    return this.getBooleanAttribute('skip_destroy');
+  }
+  public set skipDestroy(value: boolean | cdktf.IResolvable) {
+    this._skipDestroy = value;
+  }
+  public resetSkipDestroy() {
+    this._skipDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipDestroyInput() {
+    return this._skipDestroy;
+  }
+
   // statement_id - computed: false, optional: false, required: true
   private _statementId?: string; 
   public get statementId() {
@@ -213,6 +229,7 @@ export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
       layer_name: cdktf.stringToTerraform(this._layerName),
       organization_id: cdktf.stringToTerraform(this._organizationId),
       principal: cdktf.stringToTerraform(this._principal),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
       statement_id: cdktf.stringToTerraform(this._statementId),
       version_number: cdktf.numberToTerraform(this._versionNumber),
     };
