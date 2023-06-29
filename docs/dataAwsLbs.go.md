@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslbs"
 
 dataawslbs.NewDataAwsLbs(scope Construct, id *string, config DataAwsLbsConfig) DataAwsLbs
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawslbs.DataAwsLbs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslbs"
 
 dataawslbs.DataAwsLbs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLbs.DataAwsLbsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslbs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslbs"
 
 &dataawslbs.DataAwsLbsConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrdsdbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksrdsdbinstance"
 
 opsworksrdsdbinstance.NewOpsworksRdsDbInstance(scope Construct, id *string, config OpsworksRdsDbInstanceConfig) OpsworksRdsDbInstance
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrdsdbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksrdsdbinstance"
 
 opsworksrdsdbinstance.OpsworksRdsDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrdsdbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksrdsdbinstance"
 
 opsworksrdsdbinstance.OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ opsworksrdsdbinstance.OpsworksRdsDbInstance_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrdsdbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksrdsdbinstance"
 
 opsworksrdsdbinstance.OpsworksRdsDbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksRdsDbInstance.OpsworksRdsDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksrdsdbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksrdsdbinstance"
 
 &opsworksrdsdbinstance.OpsworksRdsDbInstanceConfig {
 	Connection: interface{},

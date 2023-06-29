@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunction(scope Construct, id *string, config AppsyncFunctionConfig) AppsyncFunction
 ```
@@ -359,7 +359,7 @@ func ResetSyncConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ appsyncfunction.AppsyncFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.AppsyncFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionConfig {
 	Connection: interface{},
@@ -910,8 +910,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
 	MaxBatchSize: *f64,
 	RequestMappingTemplate: *string,
 	ResponseMappingTemplate: *string,
-	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncFunction.AppsyncFunctionRuntime,
-	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncFunction.AppsyncFunctionSyncConfig,
+	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v16.appsyncFunction.AppsyncFunctionRuntime,
+	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.appsyncFunction.AppsyncFunctionSyncConfig,
 }
 ```
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionRuntime {
 	Name: *string,
@@ -1213,12 +1213,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionSyncConfig {
 	ConflictDetection: *string,
 	ConflictHandler: *string,
-	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig,
+	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig,
 }
 ```
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 &appsyncfunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfig {
 	LambdaConflictHandlerArn: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionRuntimeOutputReference
 ```
@@ -1602,7 +1602,7 @@ func InternalValue() AppsyncFunctionRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionSyncConfigLambdaConflictHandlerConfigOutputReference
 ```
@@ -1880,7 +1880,7 @@ func InternalValue() AppsyncFunctionSyncConfigLambdaConflictHandlerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncFunction.AppsyncFunctionSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncfunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncfunction"
 
 appsyncfunction.NewAppsyncFunctionSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncFunctionSyncConfigOutputReference
 ```

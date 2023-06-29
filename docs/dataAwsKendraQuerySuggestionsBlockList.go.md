@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.NewDataAwsKendraQuerySuggestionsBlockList(scope Construct, id *string, config DataAwsKendraQuerySuggestionsBlockListConfig) DataAwsKendraQuerySuggestionsBlockList
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockList_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 &dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockListConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 &dataawskendraquerysuggestionsblocklist.DataAwsKendraQuerySuggestionsBlockListSourceS3Path {
 
@@ -892,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraQuerySuggestionsBlockListSourceS3PathList
 ```
@@ -1024,7 +1024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendraquerysuggestionsblocklist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskendraquerysuggestionsblocklist"
 
 dataawskendraquerysuggestionsblocklist.NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference
 ```
