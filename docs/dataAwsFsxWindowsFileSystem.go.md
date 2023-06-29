@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.NewDataAwsFsxWindowsFileSystem(scope Construct, id *string, config DataAwsFsxWindowsFileSystemConfig) DataAwsFsxWindowsFileSystem
 ```
@@ -277,7 +277,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystem_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystemAuditLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 &dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystemAuditLogConfiguration {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesyst
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 &dataawsfsxwindowsfilesystem.DataAwsFsxWindowsFileSystemConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystemAuditLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.NewDataAwsFsxWindowsFileSystemAuditLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxWindowsFileSystemAuditLogConfigurationList
 ```
@@ -1077,7 +1077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxWindowsFileSystem.DataAwsFsxWindowsFileSystemAuditLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsfsxwindowsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxwindowsfilesystem"
 
 dataawsfsxwindowsfilesystem.NewDataAwsFsxWindowsFileSystemAuditLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxWindowsFileSystemAuditLogConfigurationOutputReference
 ```

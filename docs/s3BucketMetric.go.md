@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 s3bucketmetric.NewS3BucketMetric(scope Construct, id *string, config S3BucketMetricConfig) S3BucketMetric
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 s3bucketmetric.S3BucketMetric_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 s3bucketmetric.S3BucketMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ s3bucketmetric.S3BucketMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 s3bucketmetric.S3BucketMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 &s3bucketmetric.S3BucketMetricConfig {
 	Connection: interface{},
@@ -642,7 +642,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
 	Provisioners: *[]interface{},
 	Bucket: *string,
 	Name: *string,
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v16.s3BucketMetric.S3BucketMetricFilter,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketMetric.S3BucketMetricFilter,
 	Id: *string,
 }
 ```
@@ -793,7 +793,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 &s3bucketmetric.S3BucketMetricFilter {
 	Prefix: *string,
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketmetric"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketmetric"
 
 s3bucketmetric.NewS3BucketMetricFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketMetricFilterOutputReference
 ```

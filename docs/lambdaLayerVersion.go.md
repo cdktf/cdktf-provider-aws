@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversion"
 
 lambdalayerversion.NewLambdaLayerVersion(scope Construct, id *string, config LambdaLayerVersionConfig) LambdaLayerVersion
 ```
@@ -347,7 +347,7 @@ func ResetSourceCodeHash()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ lambdalayerversion.LambdaLayerVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdalayerversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdalayerversion"
 
 &lambdalayerversion.LambdaLayerVersionConfig {
 	Connection: interface{},

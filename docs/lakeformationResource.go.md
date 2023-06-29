@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresource"
 
 lakeformationresource.NewLakeformationResource(scope Construct, id *string, config LakeformationResourceConfig) LakeformationResource
 ```
@@ -284,7 +284,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresource"
 
 lakeformationresource.LakeformationResource_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresource"
 
 lakeformationresource.LakeformationResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ lakeformationresource.LakeformationResource_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationResource.LakeformationResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresource"
 
 lakeformationresource.LakeformationResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResource.LakeformationResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresource"
 
 &lakeformationresource.LakeformationResourceConfig {
 	Connection: interface{},

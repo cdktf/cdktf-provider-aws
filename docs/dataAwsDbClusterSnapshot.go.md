@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdbclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbclustersnapshot"
 
 dataawsdbclustersnapshot.NewDataAwsDbClusterSnapshot(scope Construct, id *string, config DataAwsDbClusterSnapshotConfig) DataAwsDbClusterSnapshot
 ```
@@ -326,7 +326,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdbclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbclustersnapshot"
 
 dataawsdbclustersnapshot.DataAwsDbClusterSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdbclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbclustersnapshot"
 
 dataawsdbclustersnapshot.DataAwsDbClusterSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ dataawsdbclustersnapshot.DataAwsDbClusterSnapshot_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdbclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbclustersnapshot"
 
 dataawsdbclustersnapshot.DataAwsDbClusterSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdbclustersnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbclustersnapshot"
 
 &dataawsdbclustersnapshot.DataAwsDbClusterSnapshotConfig {
 	Connection: interface{},

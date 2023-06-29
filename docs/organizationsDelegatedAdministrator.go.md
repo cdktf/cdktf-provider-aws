@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.NewOrganizationsDelegatedAdministrator(scope Construct, id *string, config OrganizationsDelegatedAdministratorConfig) OrganizationsDelegatedAdministrator
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 &organizationsdelegatedadministrator.OrganizationsDelegatedAdministratorConfig {
 	Connection: interface{},

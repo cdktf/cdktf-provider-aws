@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxmacseckeyassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxmacseckeyassociation"
 
 dxmacseckeyassociation.NewDxMacsecKeyAssociation(scope Construct, id *string, config DxMacsecKeyAssociationConfig) DxMacsecKeyAssociation
 ```
@@ -298,7 +298,7 @@ func ResetSecretArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxmacseckeyassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxmacseckeyassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxmacseckeyassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxmacseckeyassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dxmacseckeyassociation"
 
 &dxmacseckeyassociation.DxMacsecKeyAssociationConfig {
 	Connection: interface{},

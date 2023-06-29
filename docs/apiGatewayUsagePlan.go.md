@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlan(scope Construct, id *string, config ApiGatewayUsagePlanConfig) ApiGatewayUsagePlan
 ```
@@ -365,7 +365,7 @@ func ResetThrottleSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -819,7 +819,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanApiStages {
 	ApiId: *string,
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanApiStagesThrottle {
 	Path: *string,
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanConfig {
 	Connection: interface{},
@@ -956,10 +956,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
 	Description: *string,
 	Id: *string,
 	ProductCode: *string,
-	QuotaSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v16.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings,
+	QuotaSettings: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ThrottleSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v16.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings,
+	ThrottleSettings: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings,
 }
 ```
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanQuotaSettings {
 	Limit: *f64,
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanThrottleSettings {
 	BurstLimit: *f64,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayUsagePlanApiStagesList
 ```
@@ -1429,7 +1429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesOutputReference
 ```
@@ -1782,7 +1782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesThrottleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayUsagePlanApiStagesThrottleList
 ```
@@ -1925,7 +1925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesThrottleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesThrottleOutputReference
 ```
@@ -2272,7 +2272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanQuotaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayUsagePlanQuotaSettingsOutputReference
 ```
@@ -2594,7 +2594,7 @@ func InternalValue() ApiGatewayUsagePlanQuotaSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanThrottleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayUsagePlanThrottleSettingsOutputReference
 ```

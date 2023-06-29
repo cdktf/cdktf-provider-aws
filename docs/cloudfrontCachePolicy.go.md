@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicy(scope Construct, id *string, config CloudfrontCachePolicyConfig) CloudfrontCachePolicy
 ```
@@ -318,7 +318,7 @@ func ResetMinTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.CloudfrontCachePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.CloudfrontCachePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ cloudfrontcachepolicy.CloudfrontCachePolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.CloudfrontCachePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ParametersInCacheKeyAndForwardedToOrigin: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin,
+	ParametersInCacheKeyAndForwardedToOrigin: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin,
 	Comment: *string,
 	DefaultTtl: *f64,
 	Id: *string,
@@ -933,12 +933,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin {
-	CookiesConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig,
-	HeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig,
-	QueryStringsConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig,
+	CookiesConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig,
+	HeadersConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig,
+	QueryStringsConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig,
 	EnableAcceptEncodingBrotli: interface{},
 	EnableAcceptEncodingGzip: interface{},
 }
@@ -1027,11 +1027,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig {
 	CookieBehavior: *string,
-	Cookies: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies,
+	Cookies: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies {
 	Items: *[]*string,
@@ -1107,11 +1107,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig {
 	HeaderBehavior: *string,
-	Headers: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders,
+	Headers: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders,
 }
 ```
 
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders {
 	Items: *[]*string,
@@ -1187,11 +1187,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig {
 	QueryStringBehavior: *string,
-	QueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings,
+	QueryStrings: github.com/cdktf/cdktf-provider-aws-go/aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings,
 }
 ```
 
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 &cloudfrontcachepolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings {
 	Items: *[]*string,
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesOutputReference
 ```
@@ -1547,7 +1547,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersOutputReference
 ```
@@ -2138,7 +2138,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigOutputReference
 ```
@@ -2458,7 +2458,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutputReference
 ```
@@ -2870,7 +2870,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigOutputReference
 ```
@@ -3183,7 +3183,7 @@ func InternalValue() CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudfrontcachepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontcachepolicy"
 
 cloudfrontcachepolicy.NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference
 ```
