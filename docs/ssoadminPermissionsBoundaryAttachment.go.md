@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.NewSsoadminPermissionsBoundaryAttachment(scope Construct, id *string, config SsoadminPermissionsBoundaryAttachmentConfig) SsoadminPermissionsBoundaryAttachment
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachment_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 &ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachmentConfig {
 	Connection: interface{},
@@ -634,7 +634,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	InstanceArn: *string,
-	PermissionsBoundary: github.com/cdktf/cdktf-provider-aws-go/aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary,
+	PermissionsBoundary: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary,
 	PermissionSetArn: *string,
 	Id: *string,
 }
@@ -786,10 +786,10 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 &ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary {
-	CustomerManagedPolicyReference: github.com/cdktf/cdktf-provider-aws-go/aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference,
+	CustomerManagedPolicyReference: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference,
 	ManagedPolicyArn: *string,
 }
 ```
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 &ssoadminpermissionsboundaryattachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference {
 	Name: *string,
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.NewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference
 ```
@@ -1182,7 +1182,7 @@ func InternalValue() SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminpermissionsboundaryattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssoadminpermissionsboundaryattachment"
 
 ssoadminpermissionsboundaryattachment.NewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference
 ```

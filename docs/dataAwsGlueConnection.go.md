@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnection(scope Construct, id *string, config DataAwsGlueConnectionConfig) DataAwsGlueConnection
 ```
@@ -277,7 +277,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsglueconnection.DataAwsGlueConnection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.DataAwsGlueConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 &dataawsglueconnection.DataAwsGlueConnectionConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 &dataawsglueconnection.DataAwsGlueConnectionPhysicalConnectionRequirements {
 
@@ -780,7 +780,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnectionPhysicalConnectionRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueConnectionPhysicalConnectionRequirementsList
 ```
@@ -912,7 +912,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsglueconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsglueconnection"
 
 dataawsglueconnection.NewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference
 ```

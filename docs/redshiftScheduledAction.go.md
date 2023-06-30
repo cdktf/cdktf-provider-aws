@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledAction(scope Construct, id *string, config RedshiftScheduledActionConfig) RedshiftScheduledAction
 ```
@@ -318,7 +318,7 @@ func ResetStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ redshiftscheduledaction.RedshiftScheduledAction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
 	IamRole: *string,
 	Name: *string,
 	Schedule: *string,
-	TargetAction: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftScheduledAction.RedshiftScheduledActionTargetAction,
+	TargetAction: github.com/cdktf/cdktf-provider-aws-go/aws/v16.redshiftScheduledAction.RedshiftScheduledActionTargetAction,
 	Description: *string,
 	Enable: interface{},
 	EndTime: *string,
@@ -994,12 +994,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetAction {
-	PauseCluster: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster,
-	ResizeCluster: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster,
-	ResumeCluster: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster,
+	PauseCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v16.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster,
+	ResizeCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v16.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster,
+	ResumeCluster: github.com/cdktf/cdktf-provider-aws-go/aws/v16.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster,
 }
 ```
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionPauseCluster {
 	ClusterIdentifier: *string,
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionResizeCluster {
 	ClusterIdentifier: *string,
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionResumeCluster {
 	ClusterIdentifier: *string,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionOutputReference
 ```
@@ -1589,7 +1589,7 @@ func InternalValue() RedshiftScheduledActionTargetAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionPauseClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionPauseClusterOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() RedshiftScheduledActionTargetActionPauseCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionResizeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionResizeClusterOutputReference
 ```
@@ -2247,7 +2247,7 @@ func InternalValue() RedshiftScheduledActionTargetActionResizeCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftscheduledaction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionResumeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionResumeClusterOutputReference
 ```
