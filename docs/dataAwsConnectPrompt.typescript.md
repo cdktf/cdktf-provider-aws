@@ -1,6 +1,6 @@
 # `data_aws_connect_prompt`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt).
+Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt).
 
 # `dataAwsConnectPrompt` Submodule <a name="`dataAwsConnectPrompt` Submodule" id="@cdktf/provider-aws.dataAwsConnectPrompt"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://r
 
 ### DataAwsConnectPrompt <a name="DataAwsConnectPrompt" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt aws_connect_prompt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt aws_connect_prompt}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPrompt.Initializer"></a>
 
@@ -604,9 +604,9 @@ const dataAwsConnectPromptConfig: dataAwsConnectPrompt.DataAwsConnectPromptConfi
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectPrompt.DataAwsConnectPromptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#instance_id DataAwsConnectPrompt#instance_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#name DataAwsConnectPrompt#name}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_prompt#id DataAwsConnectPrompt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
