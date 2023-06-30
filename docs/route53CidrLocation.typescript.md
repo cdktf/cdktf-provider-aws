@@ -1,6 +1,6 @@
 # `aws_route53_cidr_location`
 
-Refer to the Terraform Registory for docs: [`aws_route53_cidr_location`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location).
+Refer to the Terraform Registory for docs: [`aws_route53_cidr_location`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location).
 
 # `route53CidrLocation` Submodule <a name="`route53CidrLocation` Submodule" id="@cdktf/provider-aws.route53CidrLocation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_route53_cidr_location`](https:/
 
 ### Route53CidrLocation <a name="Route53CidrLocation" id="@cdktf/provider-aws.route53CidrLocation.Route53CidrLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location aws_route53_cidr_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location aws_route53_cidr_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53CidrLocation.Route53CidrLocation.Initializer"></a>
 
@@ -608,9 +608,9 @@ const route53CidrLocationConfig: route53CidrLocation.Route53CidrLocationConfig =
 | <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}. |
-| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrCollectionId">cidrCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}. |
-| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}. |
+| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}. |
+| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.cidrCollectionId">cidrCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}. |
+| <code><a href="#@cdktf/provider-aws.route53CidrLocation.Route53CidrLocationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#name Route53CidrLocation#name}. |
 
 ---
 
@@ -692,7 +692,7 @@ public readonly cidrBlocks: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#cidr_blocks Route53CidrLocation#cidr_blocks}.
 
 ---
 
@@ -704,7 +704,7 @@ public readonly cidrCollectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#cidr_collection_id Route53CidrLocation#cidr_collection_id}.
 
 ---
 
@@ -716,7 +716,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/route53_cidr_location#name Route53CidrLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_cidr_location#name Route53CidrLocation#name}.
 
 ---
 

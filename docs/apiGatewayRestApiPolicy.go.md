@@ -1,6 +1,6 @@
 # `aws_api_gateway_rest_api_policy`
 
-Refer to the Terraform Registory for docs: [`aws_api_gateway_rest_api_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy).
+Refer to the Terraform Registory for docs: [`aws_api_gateway_rest_api_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy).
 
 # `apiGatewayRestApiPolicy` Submodule <a name="`apiGatewayRestApiPolicy` Submodule" id="@cdktf/provider-aws.apiGatewayRestApiPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_api_gateway_rest_api_policy`](h
 
 ### ApiGatewayRestApiPolicy <a name="ApiGatewayRestApiPolicy" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.NewApiGatewayRestApiPolicy(scope Construct, id *string, config ApiGatewayRestApiPolicyConfig) ApiGatewayRestApiPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 apigatewayrestapipolicy.ApiGatewayRestApiPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrestapipolicy"
 
 &apigatewayrestapipolicy.ApiGatewayRestApiPolicyConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayrestapipolicy"
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#policy ApiGatewayRestApiPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#rest_api_id ApiGatewayRestApiPolicy#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#id ApiGatewayRestApiPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#policy ApiGatewayRestApiPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#rest_api_id ApiGatewayRestApiPolicy#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#id ApiGatewayRestApiPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#policy ApiGatewayRestApiPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#policy ApiGatewayRestApiPolicy#policy}.
 
 ---
 
@@ -711,7 +711,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#rest_api_id ApiGatewayRestApiPolicy#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#rest_api_id ApiGatewayRestApiPolicy#rest_api_id}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/api_gateway_rest_api_policy#id ApiGatewayRestApiPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/api_gateway_rest_api_policy#id ApiGatewayRestApiPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

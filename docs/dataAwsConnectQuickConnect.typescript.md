@@ -1,6 +1,6 @@
 # `data_aws_connect_quick_connect`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect).
+Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect).
 
 # `dataAwsConnectQuickConnect` Submodule <a name="`dataAwsConnectQuickConnect` Submodule" id="@cdktf/provider-aws.dataAwsConnectQuickConnect"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](ht
 
 ### DataAwsConnectQuickConnect <a name="DataAwsConnectQuickConnect" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.Initializer"></a>
 
@@ -680,11 +680,11 @@ const dataAwsConnectQuickConnectConfig: dataAwsConnectQuickConnect.DataAwsConnec
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.quickConnectId">quickConnectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.quickConnectId">quickConnectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}. |
 
 ---
 
@@ -766,7 +766,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}.
 
 ---
 
@@ -778,7 +778,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,7 +793,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}.
 
 ---
 
@@ -805,7 +805,7 @@ public readonly quickConnectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}.
 
 ---
 
@@ -817,7 +817,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}.
 
 ---
 

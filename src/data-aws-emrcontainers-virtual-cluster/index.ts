@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEmrcontainersVirtualClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster#id DataAwsEmrcontainersVirtualCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster#tags DataAwsEmrcontainersVirtualCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster#virtual_cluster_id DataAwsEmrcontainersVirtualCluster#virtual_cluster_id}
   */
   readonly virtualClusterId: string;
 }
@@ -234,7 +229,7 @@ export class DataAwsEmrcontainersVirtualClusterContainerProviderList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}
 */
 export class DataAwsEmrcontainersVirtualCluster extends cdktf.TerraformDataSource {
 
@@ -248,7 +243,7 @@ export class DataAwsEmrcontainersVirtualCluster extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +254,7 @@ export class DataAwsEmrcontainersVirtualCluster extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_emrcontainers_virtual_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

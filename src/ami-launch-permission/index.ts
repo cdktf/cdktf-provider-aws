@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#account_id AmiLaunchPermission#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#account_id AmiLaunchPermission#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#group AmiLaunchPermission#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#group AmiLaunchPermission#group}
   */
   readonly group?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#id AmiLaunchPermission#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#id AmiLaunchPermission#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#image_id AmiLaunchPermission#image_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#image_id AmiLaunchPermission#image_id}
   */
   readonly imageId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#organization_arn AmiLaunchPermission#organization_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#organization_arn AmiLaunchPermission#organization_arn}
   */
   readonly organizationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission#organizational_unit_arn AmiLaunchPermission#organizational_unit_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission#organizational_unit_arn AmiLaunchPermission#organizational_unit_arn}
   */
   readonly organizationalUnitArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission aws_ami_launch_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission aws_ami_launch_permission}
 */
 export class AmiLaunchPermission extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ami_launch_permission aws_ami_launch_permission} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ami_launch_permission aws_ami_launch_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ami_launch_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_schemas_discoverer`
 
-Refer to the Terraform Registory for docs: [`aws_schemas_discoverer`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer).
+Refer to the Terraform Registory for docs: [`aws_schemas_discoverer`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer).
 
 # `schemasDiscoverer` Submodule <a name="`schemasDiscoverer` Submodule" id="@cdktf/provider-aws.schemasDiscoverer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_schemas_discoverer`](https://re
 
 ### SchemasDiscoverer <a name="SchemasDiscoverer" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer aws_schemas_discoverer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer aws_schemas_discoverer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasdiscoverer"
 
 schemasdiscoverer.NewSchemasDiscoverer(scope Construct, id *string, config SchemasDiscovererConfig) SchemasDiscoverer
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasdiscoverer"
 
 schemasdiscoverer.SchemasDiscoverer_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasdiscoverer"
 
 schemasdiscoverer.SchemasDiscoverer_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ schemasdiscoverer.SchemasDiscoverer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasdiscoverer"
 
 schemasdiscoverer.SchemasDiscoverer_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasdiscoverer"
 
 &schemasdiscoverer.SchemasDiscovererConfig {
 	Connection: interface{},
@@ -693,11 +693,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schemasdiscoverer"
 | <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#source_arn SchemasDiscoverer#source_arn}. |
-| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#description SchemasDiscoverer#description}. |
-| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#id SchemasDiscoverer#id}. |
-| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#tags SchemasDiscoverer#tags}. |
-| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#tags_all SchemasDiscoverer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#source_arn SchemasDiscoverer#source_arn}. |
+| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#description SchemasDiscoverer#description}. |
+| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#id SchemasDiscoverer#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#tags SchemasDiscoverer#tags}. |
+| <code><a href="#@cdktf/provider-aws.schemasDiscoverer.SchemasDiscovererConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#tags_all SchemasDiscoverer#tags_all}. |
 
 ---
 
@@ -779,7 +779,7 @@ SourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#source_arn SchemasDiscoverer#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#source_arn SchemasDiscoverer#source_arn}.
 
 ---
 
@@ -791,7 +791,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#description SchemasDiscoverer#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#description SchemasDiscoverer#description}.
 
 ---
 
@@ -803,7 +803,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#id SchemasDiscoverer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#id SchemasDiscoverer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -818,7 +818,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#tags SchemasDiscoverer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#tags SchemasDiscoverer#tags}.
 
 ---
 
@@ -830,7 +830,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/schemas_discoverer#tags_all SchemasDiscoverer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/schemas_discoverer#tags_all SchemasDiscoverer#tags_all}.
 
 ---
 

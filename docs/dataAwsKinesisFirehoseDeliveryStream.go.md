@@ -1,6 +1,6 @@
 # `data_aws_kinesis_firehose_delivery_stream`
 
-Refer to the Terraform Registory for docs: [`data_aws_kinesis_firehose_delivery_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream).
+Refer to the Terraform Registory for docs: [`data_aws_kinesis_firehose_delivery_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream).
 
 # `dataAwsKinesisFirehoseDeliveryStream` Submodule <a name="`dataAwsKinesisFirehoseDeliveryStream` Submodule" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_kinesis_firehose_delivery_
 
 ### DataAwsKinesisFirehoseDeliveryStream <a name="DataAwsKinesisFirehoseDeliveryStream" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.NewDataAwsKinesisFirehoseDeliveryStream(scope Construct, id *string, config DataAwsKinesisFirehoseDeliveryStreamConfig) DataAwsKinesisFirehoseDeliveryStream
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
 
 &dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStreamConfig {
 	Connection: interface{},
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskinesisfirehosedel
 | <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream#name DataAwsKinesisFirehoseDeliveryStream#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream#id DataAwsKinesisFirehoseDeliveryStream#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream#name DataAwsKinesisFirehoseDeliveryStream#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream#id DataAwsKinesisFirehoseDeliveryStream#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream#name DataAwsKinesisFirehoseDeliveryStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream#name DataAwsKinesisFirehoseDeliveryStream#name}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/kinesis_firehose_delivery_stream#id DataAwsKinesisFirehoseDeliveryStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kinesis_firehose_delivery_stream#id DataAwsKinesisFirehoseDeliveryStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

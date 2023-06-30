@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#description NetworkmanagerDevice#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#global_network_id NetworkmanagerDevice#global_network_id}
   */
   readonly globalNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#id NetworkmanagerDevice#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#model NetworkmanagerDevice#model}
   */
   readonly model?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#serial_number NetworkmanagerDevice#serial_number}
   */
   readonly serialNumber?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#site_id NetworkmanagerDevice#site_id}
   */
   readonly siteId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#tags NetworkmanagerDevice#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#tags_all NetworkmanagerDevice#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#type NetworkmanagerDevice#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#vendor NetworkmanagerDevice#vendor}
   */
   readonly vendor?: string;
   /**
   * aws_location block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
   */
   readonly awsLocation?: NetworkmanagerDeviceAwsLocation;
   /**
   * location block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
   */
   readonly location?: NetworkmanagerDeviceLocation;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
   */
   readonly timeouts?: NetworkmanagerDeviceTimeouts;
 }
 export interface NetworkmanagerDeviceAwsLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#subnet_arn NetworkmanagerDevice#subnet_arn}
   */
   readonly subnetArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#zone NetworkmanagerDevice#zone}
   */
   readonly zone?: string;
 }
@@ -168,15 +163,15 @@ export class NetworkmanagerDeviceAwsLocationOutputReference extends cdktf.Comple
 }
 export interface NetworkmanagerDeviceLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#address NetworkmanagerDevice#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#latitude NetworkmanagerDevice#latitude}
   */
   readonly latitude?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#longitude NetworkmanagerDevice#longitude}
   */
   readonly longitude?: string;
 }
@@ -287,15 +282,15 @@ export class NetworkmanagerDeviceLocationOutputReference extends cdktf.ComplexOb
 }
 export interface NetworkmanagerDeviceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#create NetworkmanagerDevice#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#delete NetworkmanagerDevice#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device#update NetworkmanagerDevice#update}
   */
   readonly update?: string;
 }
@@ -416,7 +411,7 @@ export class NetworkmanagerDeviceTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device aws_networkmanager_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device aws_networkmanager_device}
 */
 export class NetworkmanagerDevice extends cdktf.TerraformResource {
 
@@ -430,7 +425,7 @@ export class NetworkmanagerDevice extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/networkmanager_device aws_networkmanager_device} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_device aws_networkmanager_device} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -441,7 +436,7 @@ export class NetworkmanagerDevice extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_device',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

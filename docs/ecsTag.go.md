@@ -1,6 +1,6 @@
 # `aws_ecs_tag`
 
-Refer to the Terraform Registory for docs: [`aws_ecs_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag).
+Refer to the Terraform Registory for docs: [`aws_ecs_tag`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag).
 
 # `ecsTag` Submodule <a name="`ecsTag` Submodule" id="@cdktf/provider-aws.ecsTag"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ecs_tag`](https://registry.terr
 
 ### EcsTag <a name="EcsTag" id="@cdktf/provider-aws.ecsTag.EcsTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag aws_ecs_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag aws_ecs_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsTag.EcsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstag"
 
 ecstag.NewEcsTag(scope Construct, id *string, config EcsTagConfig) EcsTag
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsTag.EcsTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstag"
 
 ecstag.EcsTag_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsTag.EcsTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstag"
 
 ecstag.EcsTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ ecstag.EcsTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsTag.EcsTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstag"
 
 ecstag.EcsTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsTag.EcsTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecstag"
 
 &ecstag.EcsTagConfig {
 	Connection: interface{},
@@ -638,10 +638,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecstag"
 | <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#key EcsTag#key}. |
-| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#resource_arn EcsTag#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#value EcsTag#value}. |
-| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#id EcsTag#id}. |
+| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#key EcsTag#key}. |
+| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#resource_arn EcsTag#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#value EcsTag#value}. |
+| <code><a href="#@cdktf/provider-aws.ecsTag.EcsTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#id EcsTag#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#key EcsTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#key EcsTag#key}.
 
 ---
 
@@ -735,7 +735,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#resource_arn EcsTag#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#resource_arn EcsTag#resource_arn}.
 
 ---
 
@@ -747,7 +747,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#value EcsTag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#value EcsTag#value}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/ecs_tag#id EcsTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_tag#id EcsTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

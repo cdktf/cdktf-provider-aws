@@ -1,6 +1,6 @@
 # `data_aws_key_pair`
 
-Refer to the Terraform Registory for docs: [`data_aws_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair).
+Refer to the Terraform Registory for docs: [`data_aws_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair).
 
 # `dataAwsKeyPair` Submodule <a name="`dataAwsKeyPair` Submodule" id="@cdktf/provider-aws.dataAwsKeyPair"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_key_pair`](https://registr
 
 ### DataAwsKeyPair <a name="DataAwsKeyPair" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair aws_key_pair}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair aws_key_pair}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer"></a>
 
@@ -51,11 +51,11 @@ DataAwsKeyPair.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter">DataAwsKeyPairFilter</a>></code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.includePublicKey">includePublicKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.keyName">keyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.keyPairId">keyPairId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#id DataAwsKeyPair#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.includePublicKey">includePublicKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.keyName">keyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.keyPairId">keyPairId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts">DataAwsKeyPairTimeouts</a></code> | timeouts block. |
 
 ---
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#id DataAwsKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
 
 ---
 
@@ -948,11 +948,11 @@ DataAwsKeyPairConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.filter">filter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter">DataAwsKeyPairFilter</a>></code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.includePublicKey">includePublicKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.keyName">keyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.keyPairId">keyPairId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#id DataAwsKeyPair#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.includePublicKey">includePublicKey</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.keyName">keyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.keyPairId">keyPairId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts">DataAwsKeyPairTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1037,7 +1037,7 @@ public java.lang.Object getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#id DataAwsKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#id DataAwsKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1064,7 +1064,7 @@ public java.lang.Object getIncludePublicKey();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#include_public_key DataAwsKeyPair#include_public_key}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public java.lang.String getKeyName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_name DataAwsKeyPair#key_name}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public java.lang.String getKeyPairId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#key_pair_id DataAwsKeyPair#key_pair_id}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#tags DataAwsKeyPair#tags}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public DataAwsKeyPairTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
 
 ---
 
@@ -1135,8 +1135,8 @@ DataAwsKeyPairFilter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#name DataAwsKeyPair#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#values DataAwsKeyPair#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#name DataAwsKeyPair#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#values DataAwsKeyPair#values}. |
 
 ---
 
@@ -1148,7 +1148,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#name DataAwsKeyPair#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#name DataAwsKeyPair#name}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#values DataAwsKeyPair#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#values DataAwsKeyPair#values}.
 
 ---
 
@@ -1180,7 +1180,7 @@ DataAwsKeyPairTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#read DataAwsKeyPair#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#read DataAwsKeyPair#read}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/key_pair#read DataAwsKeyPair#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/key_pair#read DataAwsKeyPair#read}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_auditmanager_assessment_report`
 
-Refer to the Terraform Registory for docs: [`aws_auditmanager_assessment_report`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report).
+Refer to the Terraform Registory for docs: [`aws_auditmanager_assessment_report`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report).
 
 # `auditmanagerAssessmentReport` Submodule <a name="`auditmanagerAssessmentReport` Submodule" id="@cdktf/provider-aws.auditmanagerAssessmentReport"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_auditmanager_assessment_report`
 
 ### AuditmanagerAssessmentReport <a name="AuditmanagerAssessmentReport" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report aws_auditmanager_assessment_report}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report aws_auditmanager_assessment_report}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentreport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.NewAuditmanagerAssessmentReport(scope Construct, id *string, config AuditmanagerAssessmentReportConfig) AuditmanagerAssessmentReport
 ```
@@ -277,7 +277,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentreport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentreport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentreport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentreport"
 
 auditmanagerassessmentreport.AuditmanagerAssessmentReport_IsTerraformResource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentreport"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/auditmanagerassessmentreport"
 
 &auditmanagerassessmentreport.AuditmanagerAssessmentReportConfig {
 	Connection: interface{},
@@ -648,9 +648,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/auditmanagerassessmentrep
 | <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.assessmentId">AssessmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#assessment_id AuditmanagerAssessmentReport#assessment_id}. |
-| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#name AuditmanagerAssessmentReport#name}. |
-| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#description AuditmanagerAssessmentReport#description}. |
+| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.assessmentId">AssessmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#assessment_id AuditmanagerAssessmentReport#assessment_id}. |
+| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#name AuditmanagerAssessmentReport#name}. |
+| <code><a href="#@cdktf/provider-aws.auditmanagerAssessmentReport.AuditmanagerAssessmentReportConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#description AuditmanagerAssessmentReport#description}. |
 
 ---
 
@@ -732,7 +732,7 @@ AssessmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#assessment_id AuditmanagerAssessmentReport#assessment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#assessment_id AuditmanagerAssessmentReport#assessment_id}.
 
 ---
 
@@ -744,7 +744,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#name AuditmanagerAssessmentReport#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#name AuditmanagerAssessmentReport#name}.
 
 ---
 
@@ -756,7 +756,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/auditmanager_assessment_report#description AuditmanagerAssessmentReport#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_report#description AuditmanagerAssessmentReport#description}.
 
 ---
 

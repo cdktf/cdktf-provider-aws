@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectPhoneNumberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#country_code ConnectPhoneNumber#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#country_code ConnectPhoneNumber#country_code}
   */
   readonly countryCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#description ConnectPhoneNumber#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#description ConnectPhoneNumber#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#id ConnectPhoneNumber#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#id ConnectPhoneNumber#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#prefix ConnectPhoneNumber#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#prefix ConnectPhoneNumber#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#tags ConnectPhoneNumber#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#tags ConnectPhoneNumber#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#tags_all ConnectPhoneNumber#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#tags_all ConnectPhoneNumber#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#target_arn ConnectPhoneNumber#target_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#target_arn ConnectPhoneNumber#target_arn}
   */
   readonly targetArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#type ConnectPhoneNumber#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#type ConnectPhoneNumber#type}
   */
   readonly type: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#timeouts ConnectPhoneNumber#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#timeouts ConnectPhoneNumber#timeouts}
   */
   readonly timeouts?: ConnectPhoneNumberTimeouts;
 }
@@ -125,15 +120,15 @@ export class ConnectPhoneNumberStatusList extends cdktf.ComplexList {
 }
 export interface ConnectPhoneNumberTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#create ConnectPhoneNumber#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#create ConnectPhoneNumber#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#delete ConnectPhoneNumber#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#delete ConnectPhoneNumber#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number#update ConnectPhoneNumber#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number#update ConnectPhoneNumber#update}
   */
   readonly update?: string;
 }
@@ -254,7 +249,7 @@ export class ConnectPhoneNumberTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number aws_connect_phone_number}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number aws_connect_phone_number}
 */
 export class ConnectPhoneNumber extends cdktf.TerraformResource {
 
@@ -268,7 +263,7 @@ export class ConnectPhoneNumber extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_phone_number aws_connect_phone_number} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -279,7 +274,7 @@ export class ConnectPhoneNumber extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_phone_number',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

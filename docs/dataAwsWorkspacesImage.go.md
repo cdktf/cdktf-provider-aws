@@ -1,6 +1,6 @@
 # `data_aws_workspaces_image`
 
-Refer to the Terraform Registory for docs: [`data_aws_workspaces_image`](https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image).
+Refer to the Terraform Registory for docs: [`data_aws_workspaces_image`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image).
 
 # `dataAwsWorkspacesImage` Submodule <a name="`dataAwsWorkspacesImage` Submodule" id="@cdktf/provider-aws.dataAwsWorkspacesImage"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_workspaces_image`](https:/
 
 ### DataAwsWorkspacesImage <a name="DataAwsWorkspacesImage" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image aws_workspaces_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image aws_workspaces_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.NewDataAwsWorkspacesImage(scope Construct, id *string, config DataAwsWorkspacesImageConfig) DataAwsWorkspacesImage
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 dataawsworkspacesimage.DataAwsWorkspacesImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsworkspacesimage"
 
 &dataawsworkspacesimage.DataAwsWorkspacesImageConfig {
 	Connection: interface{},
@@ -625,8 +625,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsworkspacesimage"
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image#image_id DataAwsWorkspacesImage#image_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image#id DataAwsWorkspacesImage#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image#image_id DataAwsWorkspacesImage#image_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image#id DataAwsWorkspacesImage#id}. |
 
 ---
 
@@ -708,7 +708,7 @@ ImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image#image_id DataAwsWorkspacesImage#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image#image_id DataAwsWorkspacesImage#image_id}.
 
 ---
 
@@ -720,7 +720,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.5.0/docs/data-sources/workspaces_image#id DataAwsWorkspacesImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/workspaces_image#id DataAwsWorkspacesImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
