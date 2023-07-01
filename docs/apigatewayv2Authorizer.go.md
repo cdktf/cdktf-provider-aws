@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 apigatewayv2authorizer.NewApigatewayv2Authorizer(scope Construct, id *string, config Apigatewayv2AuthorizerConfig) Apigatewayv2Authorizer
 ```
@@ -339,7 +339,7 @@ func ResetJwtConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 apigatewayv2authorizer.Apigatewayv2Authorizer_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 apigatewayv2authorizer.Apigatewayv2Authorizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ apigatewayv2authorizer.Apigatewayv2Authorizer_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 apigatewayv2authorizer.Apigatewayv2Authorizer_IsTerraformResource(x interface{}) *bool
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 &apigatewayv2authorizer.Apigatewayv2AuthorizerConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
 	EnableSimpleResponses: interface{},
 	Id: *string,
 	IdentitySources: *[]*string,
-	JwtConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfiguration,
+	JwtConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v16.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfiguration,
 }
 ```
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 &apigatewayv2authorizer.Apigatewayv2AuthorizerJwtConfiguration {
 	Audience: *[]*string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2authorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2authorizer"
 
 apigatewayv2authorizer.NewApigatewayv2AuthorizerJwtConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Apigatewayv2AuthorizerJwtConfigurationOutputReference
 ```

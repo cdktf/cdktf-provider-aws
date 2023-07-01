@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation.Ec2TransitGatewayRouteTablePropagation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetablepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayroutetablepropagation"
 
 ec2transitgatewayroutetablepropagation.NewEc2TransitGatewayRouteTablePropagation(scope Construct, id *string, config Ec2TransitGatewayRouteTablePropagationConfig) Ec2TransitGatewayRouteTablePropagation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation.Ec2TransitGatewayRouteTablePropagation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetablepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayroutetablepropagation"
 
 ec2transitgatewayroutetablepropagation.Ec2TransitGatewayRouteTablePropagation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation.Ec2TransitGatewayRouteTablePropagation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetablepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayroutetablepropagation"
 
 ec2transitgatewayroutetablepropagation.Ec2TransitGatewayRouteTablePropagation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ ec2transitgatewayroutetablepropagation.Ec2TransitGatewayRouteTablePropagation_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation.Ec2TransitGatewayRouteTablePropagation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetablepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayroutetablepropagation"
 
 ec2transitgatewayroutetablepropagation.Ec2TransitGatewayRouteTablePropagation_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayRouteTablePropagation.Ec2TransitGatewayRouteTablePropagationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetablepropagation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayroutetablepropagation"
 
 &ec2transitgatewayroutetablepropagation.Ec2TransitGatewayRouteTablePropagationConfig {
 	Connection: interface{},
