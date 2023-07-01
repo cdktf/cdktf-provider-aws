@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface AmplifyBackendEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment#app_id AmplifyBackendEnvironment#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment#app_id AmplifyBackendEnvironment#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment#deployment_artifacts AmplifyBackendEnvironment#deployment_artifacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment#deployment_artifacts AmplifyBackendEnvironment#deployment_artifacts}
   */
   readonly deploymentArtifacts?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment#environment_name AmplifyBackendEnvironment#environment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment#environment_name AmplifyBackendEnvironment#environment_name}
   */
   readonly environmentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment#id AmplifyBackendEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment#id AmplifyBackendEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment#stack_name AmplifyBackendEnvironment#stack_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment#stack_name AmplifyBackendEnvironment#stack_name}
   */
   readonly stackName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment aws_amplify_backend_environment}
 */
 export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_amplify_backend_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.1',
+        providerVersion: '5.6.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

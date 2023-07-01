@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchLogStreamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}
   */
   readonly logGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}
 */
 export class CloudwatchLogStream extends cdktf.TerraformResource {
 
@@ -44,7 +39,7 @@ export class CloudwatchLogStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class CloudwatchLogStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.1',
+        providerVersion: '5.6.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

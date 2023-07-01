@@ -1,6 +1,6 @@
 # `data_aws_waf_web_acl`
 
-Refer to the Terraform Registory for docs: [`data_aws_waf_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl).
+Refer to the Terraform Registory for docs: [`data_aws_waf_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl).
 
 # `dataAwsWafWebAcl` Submodule <a name="`dataAwsWafWebAcl` Submodule" id="@cdktf/provider-aws.dataAwsWafWebAcl"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_waf_web_acl`](https://regi
 
 ### DataAwsWafWebAcl <a name="DataAwsWafWebAcl" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl aws_waf_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl aws_waf_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
 
 dataawswafwebacl.NewDataAwsWafWebAcl(scope Construct, id *string, config DataAwsWafWebAclConfig) DataAwsWafWebAcl
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafwebacl.DataAwsWafWebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
 
 &dataawswafwebacl.DataAwsWafWebAclConfig {
 	Connection: interface{},
@@ -570,8 +570,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawswafwebacl"
 | <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl#name DataAwsWafWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl#id DataAwsWafWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl#name DataAwsWafWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl#id DataAwsWafWebAcl#id}. |
 
 ---
 
@@ -653,7 +653,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl#name DataAwsWafWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl#name DataAwsWafWebAcl#name}.
 
 ---
 
@@ -665,7 +665,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/waf_web_acl#id DataAwsWafWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_web_acl#id DataAwsWafWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

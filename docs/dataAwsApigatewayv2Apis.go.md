@@ -1,6 +1,6 @@
 # `data_aws_apigatewayv2_apis`
 
-Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_apis`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis).
+Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_apis`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis).
 
 # `dataAwsApigatewayv2Apis` Submodule <a name="`dataAwsApigatewayv2Apis` Submodule" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_apigatewayv2_apis`](https:
 
 ### DataAwsApigatewayv2Apis <a name="DataAwsApigatewayv2Apis" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis aws_apigatewayv2_apis}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis aws_apigatewayv2_apis}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.NewDataAwsApigatewayv2Apis(scope Construct, id *string, config DataAwsApigatewayv2ApisConfig) DataAwsApigatewayv2Apis
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 dataawsapigatewayv2apis.DataAwsApigatewayv2Apis_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayv2apis"
 
 &dataawsapigatewayv2apis.DataAwsApigatewayv2ApisConfig {
 	Connection: interface{},
@@ -648,10 +648,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2apis"
 | <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#id DataAwsApigatewayv2Apis#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#name DataAwsApigatewayv2Apis#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.protocolType">ProtocolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#protocol_type DataAwsApigatewayv2Apis#protocol_type}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#tags DataAwsApigatewayv2Apis#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#id DataAwsApigatewayv2Apis#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#name DataAwsApigatewayv2Apis#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.protocolType">ProtocolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#protocol_type DataAwsApigatewayv2Apis#protocol_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2ApisConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#tags DataAwsApigatewayv2Apis#tags}. |
 
 ---
 
@@ -733,7 +733,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#id DataAwsApigatewayv2Apis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#id DataAwsApigatewayv2Apis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#name DataAwsApigatewayv2Apis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#name DataAwsApigatewayv2Apis#name}.
 
 ---
 
@@ -760,7 +760,7 @@ ProtocolType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#protocol_type DataAwsApigatewayv2Apis#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#protocol_type DataAwsApigatewayv2Apis#protocol_type}.
 
 ---
 
@@ -772,7 +772,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_apis#tags DataAwsApigatewayv2Apis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/apigatewayv2_apis#tags DataAwsApigatewayv2Apis#tags}.
 
 ---
 

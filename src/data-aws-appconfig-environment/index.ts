@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAppconfigEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}
   */
   readonly environmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -103,7 +98,7 @@ export class DataAwsAppconfigEnvironmentMonitorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment aws_appconfig_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment aws_appconfig_environment}
 */
 export class DataAwsAppconfigEnvironment extends cdktf.TerraformDataSource {
 
@@ -117,7 +112,7 @@ export class DataAwsAppconfigEnvironment extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -128,7 +123,7 @@ export class DataAwsAppconfigEnvironment extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appconfig_environment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.1',
+        providerVersion: '5.6.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_waf_byte_match_set`
 
-Refer to the Terraform Registory for docs: [`aws_waf_byte_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set).
+Refer to the Terraform Registory for docs: [`aws_waf_byte_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set).
 
 # `wafByteMatchSet` Submodule <a name="`wafByteMatchSet` Submodule" id="@cdktf/provider-aws.wafByteMatchSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_waf_byte_match_set`](https://re
 
 ### WafByteMatchSet <a name="WafByteMatchSet" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set aws_waf_byte_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set aws_waf_byte_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSet(scope Construct, id *string, config WafByteMatchSetConfig) WafByteMatchSet
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ wafbytematchset.WafByteMatchSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.WafByteMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -608,10 +608,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetByteMatchTuples {
-	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v16.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch,
+	FieldToMatch: github.com/cdktf/cdktf-provider-aws-go/aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch,
 	PositionalConstraint: *string,
 	TextTransformation: *string,
 	TargetString: *string,
@@ -623,9 +623,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.fieldToMatch">FieldToMatch</a></code> | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch">WafByteMatchSetByteMatchTuplesFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.positionalConstraint">PositionalConstraint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#positional_constraint WafByteMatchSet#positional_constraint}. |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#text_transformation WafByteMatchSet#text_transformation}. |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.targetString">TargetString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#target_string WafByteMatchSet#target_string}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.positionalConstraint">PositionalConstraint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#positional_constraint WafByteMatchSet#positional_constraint}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#text_transformation WafByteMatchSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuples.property.targetString">TargetString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#target_string WafByteMatchSet#target_string}. |
 
 ---
 
@@ -639,7 +639,7 @@ FieldToMatch WafByteMatchSetByteMatchTuplesFieldToMatch
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#field_to_match WafByteMatchSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#field_to_match WafByteMatchSet#field_to_match}
 
 ---
 
@@ -651,7 +651,7 @@ PositionalConstraint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#positional_constraint WafByteMatchSet#positional_constraint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#positional_constraint WafByteMatchSet#positional_constraint}.
 
 ---
 
@@ -663,7 +663,7 @@ TextTransformation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#text_transformation WafByteMatchSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#text_transformation WafByteMatchSet#text_transformation}.
 
 ---
 
@@ -675,7 +675,7 @@ TargetString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#target_string WafByteMatchSet#target_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#target_string WafByteMatchSet#target_string}.
 
 ---
 
@@ -684,7 +684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetByteMatchTuplesFieldToMatch {
 	Type: *string,
@@ -696,8 +696,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#type WafByteMatchSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#data WafByteMatchSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#type WafByteMatchSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#data WafByteMatchSet#data}. |
 
 ---
 
@@ -709,7 +709,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#type WafByteMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#type WafByteMatchSet#type}.
 
 ---
 
@@ -721,7 +721,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#data WafByteMatchSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#data WafByteMatchSet#data}.
 
 ---
 
@@ -730,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 &wafbytematchset.WafByteMatchSetConfig {
 	Connection: interface{},
@@ -757,9 +757,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
 | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#name WafByteMatchSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#name WafByteMatchSet#name}. |
 | <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.byteMatchTuples">ByteMatchTuples</a></code> | <code>interface{}</code> | byte_match_tuples block. |
-| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#id WafByteMatchSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#id WafByteMatchSet#id}. |
 
 ---
 
@@ -841,7 +841,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#name WafByteMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#name WafByteMatchSet#name}.
 
 ---
 
@@ -855,7 +855,7 @@ ByteMatchTuples interface{}
 
 byte_match_tuples block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#byte_match_tuples WafByteMatchSet#byte_match_tuples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#byte_match_tuples WafByteMatchSet#byte_match_tuples}
 
 ---
 
@@ -867,7 +867,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/waf_byte_match_set#id WafByteMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/waf_byte_match_set#id WafByteMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafByteMatchSetByteMatchTuplesFieldToMatchOutputReference
 ```
@@ -1181,7 +1181,7 @@ func InternalValue() WafByteMatchSetByteMatchTuplesFieldToMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafByteMatchSetByteMatchTuplesList
 ```
@@ -1324,7 +1324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafbytematchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafbytematchset"
 
 wafbytematchset.NewWafByteMatchSetByteMatchTuplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafByteMatchSetByteMatchTuplesOutputReference
 ```
