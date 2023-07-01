@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktf from 'cdktf';
 
 export interface AuditmanagerAssessmentDelegationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation#assessment_id AuditmanagerAssessmentDelegation#assessment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation#assessment_id AuditmanagerAssessmentDelegation#assessment_id}
   */
   readonly assessmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation#comment AuditmanagerAssessmentDelegation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation#comment AuditmanagerAssessmentDelegation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation#control_set_id AuditmanagerAssessmentDelegation#control_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation#control_set_id AuditmanagerAssessmentDelegation#control_set_id}
   */
   readonly controlSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation#role_arn AuditmanagerAssessmentDelegation#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation#role_arn AuditmanagerAssessmentDelegation#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation#role_type AuditmanagerAssessmentDelegation#role_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation#role_type AuditmanagerAssessmentDelegation#role_type}
   */
   readonly roleType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation}
 */
 export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/auditmanager_assessment_delegation aws_auditmanager_assessment_delegation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class AuditmanagerAssessmentDelegation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_auditmanager_assessment_delegation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.1',
+        providerVersion: '5.6.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_cloudwatch_dashboard`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_dashboard`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_dashboard`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard).
 
 # `cloudwatchDashboard` Submodule <a name="`cloudwatchDashboard` Submodule" id="@cdktf/provider-aws.cloudwatchDashboard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_dashboard`](https://
 
 ### CloudwatchDashboard <a name="CloudwatchDashboard" id="@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard aws_cloudwatch_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard aws_cloudwatch_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboard.Initializer"></a>
 
@@ -626,9 +626,9 @@ new CloudwatchDashboardConfig {
 | <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.dashboardBody">DashboardBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#dashboard_body CloudwatchDashboard#dashboard_body}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.dashboardName">DashboardName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#dashboard_name CloudwatchDashboard#dashboard_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#id CloudwatchDashboard#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.dashboardBody">DashboardBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#dashboard_body CloudwatchDashboard#dashboard_body}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.dashboardName">DashboardName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#dashboard_name CloudwatchDashboard#dashboard_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchDashboard.CloudwatchDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#id CloudwatchDashboard#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ public string DashboardBody { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#dashboard_body CloudwatchDashboard#dashboard_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#dashboard_body CloudwatchDashboard#dashboard_body}.
 
 ---
 
@@ -722,7 +722,7 @@ public string DashboardName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#dashboard_name CloudwatchDashboard#dashboard_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#dashboard_name CloudwatchDashboard#dashboard_name}.
 
 ---
 
@@ -734,7 +734,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudwatch_dashboard#id CloudwatchDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudwatch_dashboard#id CloudwatchDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

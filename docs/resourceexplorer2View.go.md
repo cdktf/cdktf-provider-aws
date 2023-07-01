@@ -1,6 +1,6 @@
 # `aws_resourceexplorer2_view`
 
-Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_view`](https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view).
+Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_view`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view).
 
 # `resourceexplorer2View` Submodule <a name="`resourceexplorer2View` Submodule" id="@cdktf/provider-aws.resourceexplorer2View"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_view`](https:
 
 ### Resourceexplorer2View <a name="Resourceexplorer2View" id="@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View.Initializer"></a>
 
@@ -741,11 +741,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2view"
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}. |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.defaultView">DefaultView</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.defaultView">DefaultView</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}. |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.filters">Filters</a></code> | <code>interface{}</code> | filters block. |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.includedProperty">IncludedProperty</a></code> | <code>interface{}</code> | included_property block. |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}. |
 
 ---
 
@@ -827,7 +827,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}.
 
 ---
 
@@ -839,7 +839,7 @@ DefaultView interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#default_view Resourceexplorer2View#default_view}.
 
 ---
 
@@ -853,7 +853,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
 
 ---
 
@@ -867,7 +867,7 @@ IncludedProperty interface{}
 
 included_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
 
 ---
 
@@ -879,7 +879,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#tags Resourceexplorer2View#tags}.
 
 ---
 
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2view"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFilters.property.filterString">FilterString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFilters.property.filterString">FilterString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}. |
 
 ---
 
@@ -911,7 +911,7 @@ FilterString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#filter_string Resourceexplorer2View#filter_string}.
 
 ---
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2view"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}. |
 
 ---
 
@@ -943,7 +943,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_view#name Resourceexplorer2View#name}.
 
 ---
 

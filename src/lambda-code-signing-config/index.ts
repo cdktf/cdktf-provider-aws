@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config
+// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaCodeSigningConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#description LambdaCodeSigningConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#description LambdaCodeSigningConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#id LambdaCodeSigningConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#id LambdaCodeSigningConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +26,19 @@ export interface LambdaCodeSigningConfigConfig extends cdktf.TerraformMetaArgume
   /**
   * allowed_publishers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#allowed_publishers LambdaCodeSigningConfig#allowed_publishers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#allowed_publishers LambdaCodeSigningConfig#allowed_publishers}
   */
   readonly allowedPublishers: LambdaCodeSigningConfigAllowedPublishers;
   /**
   * policies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#policies LambdaCodeSigningConfig#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#policies LambdaCodeSigningConfig#policies}
   */
   readonly policies?: LambdaCodeSigningConfigPolicies;
 }
 export interface LambdaCodeSigningConfigAllowedPublishers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#signing_profile_version_arns LambdaCodeSigningConfig#signing_profile_version_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#signing_profile_version_arns LambdaCodeSigningConfig#signing_profile_version_arns}
   */
   readonly signingProfileVersionArns: string[];
 }
@@ -100,7 +100,7 @@ export class LambdaCodeSigningConfigAllowedPublishersOutputReference extends cdk
 }
 export interface LambdaCodeSigningConfigPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config#untrusted_artifact_on_deployment LambdaCodeSigningConfig#untrusted_artifact_on_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config#untrusted_artifact_on_deployment LambdaCodeSigningConfig#untrusted_artifact_on_deployment}
   */
   readonly untrustedArtifactOnDeployment: string;
 }
@@ -162,7 +162,7 @@ export class LambdaCodeSigningConfigPoliciesOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}
 */
 export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
 
@@ -176,7 +176,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -187,7 +187,7 @@ export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lambda_code_signing_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.1',
+        providerVersion: '5.6.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
