@@ -591,14 +591,13 @@
   resolved "https://registry.yarnpkg.com/@sigstore/protobuf-specs/-/protobuf-specs-0.1.0.tgz#957cb64ea2f5ce527cc9cf02a096baeb0d2b99b4"
   integrity sha512-a31EnjuIDSX8IXBUib3cYLDRlPMU36AWX4xS8ysLaNu4ZzUesDiPt83pgrW2X1YLMe5L2HbDyaKK5BrL4cNKaQ==
 
-"@sigstore/tuf@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@sigstore/tuf/-/tuf-1.0.0.tgz#13b69323e7bf8de458cd6c952c57acd1169772a5"
-  integrity sha512-bLzi9GeZgMCvjJeLUIfs8LJYCxrPRA8IXQkzUtaFKKVPTz0mucRyqFcV2U20yg9K+kYAD0YSitzGfRZCFLjdHQ==
+"@sigstore/tuf@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sigstore/tuf/-/tuf-1.0.2.tgz#acbb2c8399fb03aca0c90fa1dc1934bda4160623"
+  integrity sha512-vjwcYePJzM01Ha6oWWZ9gNcdIgnzyFxfqfWzph483DPJTH8Tb7f7bQRRll3CYVkyH56j0AgcPAcl6Vg95DPF+Q==
   dependencies:
     "@sigstore/protobuf-specs" "^0.1.0"
-    make-fetch-happen "^11.0.1"
-    tuf-js "^1.1.3"
+    tuf-js "^1.1.7"
 
 "@sindresorhus/is@^5.2.0":
   version "5.4.1"
@@ -654,9 +653,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "20.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.2.tgz#fa6a90f2600e052a03c18b8cb3fd83dd4e599898"
-  integrity sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==
+  version "20.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.3.tgz#329842940042d2b280897150e023e604d11657d6"
+  integrity sha512-wheIYdr4NYML61AjC8MKj/2jrR/kDQri/CIpVoZwldwhnIrD/j9jIU5bJ8yBKuB2VhpFV7Ab6G2XkBjv9r9Zzw==
 
 "@types/node@16.18.23":
   version "16.18.23"
@@ -664,9 +663,9 @@
   integrity sha512-XAMpaw1s1+6zM+jn2tmw8MyaRDIJfXxqmIQIS0HfoGYPuf7dUWeiUKopwq13KFX9lEp1+THGtlaaYx39Nxr58g==
 
 "@types/node@^16":
-  version "16.18.37"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.37.tgz#a1f8728e4dc30163deb41e9b7aba65d0c2d4eda1"
-  integrity sha512-ql+4dw4PlPFBP495k8JzUX/oMNRI2Ei4PrMHgj8oT4VhGlYUzF4EYr0qk2fW+XBVGIrq8Zzk13m4cvyXZuv4pA==
+  version "16.18.38"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.38.tgz#1dcdb6c54d02b323f621213745f2e44af30c73e6"
+  integrity sha512-6sfo1qTulpVbkxECP+AVrHV9OoJqhzCsfTNp5NIG+enM4HyM3HvZCO798WShIXBN0+QtDIcutJCjsVYnQP5rIQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1440,9 +1439,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.2.64"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.64.tgz#a47e217d7b45e1c3a4444e31abe697c0337a9159"
-  integrity sha512-qailkROYUkrVmfVku0yTLx/xQ1QMilmZ0+MSSdKHOM4WYYHPw69uLFPlr7/7rG4QfAxJepX8gTQlmFScqO3EtQ==
+  version "10.2.65"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.65.tgz#fc64fbc52f809a53e785e7a3923ce2aa5e0b8b86"
+  integrity sha512-KV2cjo8l12F6aX5o89wLKmTtvlCwNRPeXyyQyiPjvjIZaA7N6P0CO+VHAIdrKJ8o0dlbbPE9AJtWzCvbpLhYvA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1993,9 +1992,9 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
 fast-glob@^3.2.12, fast-glob@^3.2.9:
-  version "3.2.12"
-  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
-  integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.3.0.tgz#7c40cb491e1e2ed5664749e87bfb516dbe8727c0"
+  integrity sha512-ChDuvbOypPuNjO8yIDf36x7BlZX1smcUMTTcyoIjycexOxd6DFsKsg21qVBzEmr3G7fUKIRy2/psii+CIUt7FA==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -3010,9 +3009,9 @@ jsii-diff@^1.84.0:
     yargs "^16.2.0"
 
 jsii-docgen@~9.0.0:
-  version "9.0.13"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-9.0.13.tgz#153fe6f1b5381b87f1f3961789dfae432ba3cbba"
-  integrity sha512-trj029qiRGcB0hXqIdQjtXlwIsSD9McRvdf9UcLBnbk0oB/AqS2NIbJGLb6LSaP724Z9FZQF046sA9U9PXbroA==
+  version "9.0.14"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-9.0.14.tgz#e7601d9fb1acc643606fac15d699beba00f4bb8a"
+  integrity sha512-xiNUccxH3ZV/lji/I2LZ9f+533CfPOPIy3PDjACp3BQ8t9BOR7dBqHH1YM/nNXev9WFSge2761Nyz5S9k9SVPg==
   dependencies:
     "@jsii/spec" "^1.84.0"
     case "^1.6.3"
@@ -3092,9 +3091,9 @@ jsii-rosetta@^5.0.1, jsii-rosetta@~5.1.2:
     yargs "^17.7.2"
 
 jsii-srcmak@^0.1.867:
-  version "0.1.944"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.944.tgz#0c9de261d0c0a927b1766ded517a31ab0cb16637"
-  integrity sha512-FJ2M1QkrFFOeY9GWrzZqCdSMePxa3wpvbOURrCW7ipgP9yxpNUGWPObXM5z0BhGqKyJrhaclkDySHlPdZpJXlA==
+  version "0.1.945"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.945.tgz#86ab2234760d828ebae065a3da8a6adaae13569b"
+  integrity sha512-wRr3faoNBrGb4sw5Smgj4vcU2SJBRFSETud56m0nExL7h0CxjZIosjpZjR5/X4pBT5GuGPPTJ1PBjlPlVdwdEg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.1.3"
@@ -4210,10 +4209,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.71.117:
-  version "0.71.117"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.117.tgz#ce65cb60f8c8a6160930d9ebbde96a9dbe074d35"
-  integrity sha512-N5ifWw0KByMNJhLl/GI7i2irNZn2BiYWbPwBovGOTrHPVVpXEX4zdEVhq3uuWqd+nFSineEdm4i31rVN0diQfQ==
+projen@^0.71.118:
+  version "0.71.118"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.71.118.tgz#00fd1960259e792473fd4980e7244bce4e297a1c"
+  integrity sha512-j7FFgNpuo8KB4PUzx48GzQzdWH3XUYNjra6cDmOIEHHP1W4A8hF0Dg6UqWSE8gSM4JZyh9/ZtvdVU5XtthpxMA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4692,14 +4691,13 @@ signal-exit@^4.0.1:
   integrity sha512-MY2/qGx4enyjprQnFaZsHib3Yadh3IXyV2C321GY0pjGfVBu4un0uDJkwgdxqO+Rdx8JMT8IfJIRwbYVz3Ob3Q==
 
 sigstore@^1.0.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/sigstore/-/sigstore-1.6.0.tgz#887a4007c6ee83f3ef3fd844be1a0840e849c301"
-  integrity sha512-QODKff/qW/TXOZI6V/Clqu74xnInAS6it05mufj4/fSewexLtfEntgLZZcBtUK44CDQyUE5TUXYy1ARYzlfG9g==
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/sigstore/-/sigstore-1.7.0.tgz#9186e6c8ce1ab0cba5d97b414212d40f0a01564e"
+  integrity sha512-KP7QULhWdlu3hlp+jw2EvgWKlOGOY9McLj/jrchLjHNlNPK0KWIwF919cbmOp6QiKXLmPijR2qH/5KYWlbtG9Q==
   dependencies:
     "@sigstore/protobuf-specs" "^0.1.0"
-    "@sigstore/tuf" "^1.0.0"
+    "@sigstore/tuf" "^1.0.1"
     make-fetch-happen "^11.0.1"
-    tuf-js "^1.1.3"
 
 simple-concat@^1.0.0:
   version "1.0.1"
@@ -5114,7 +5112,7 @@ tslib@^2.0.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.0.tgz#b295854684dbda164e181d259a22cd779dcd7bc3"
   integrity sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==
 
-tuf-js@^1.1.3:
+tuf-js@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/tuf-js/-/tuf-js-1.1.7.tgz#21b7ae92a9373015be77dfe0cb282a80ec3bbe43"
   integrity sha512-i3P9Kgw3ytjELUfpuKVDNBJvk4u5bXL6gskv572mcevPbSKCV3zt3djhmlEQ65yERjIbOSncy7U4cQJaB1CBCg==
@@ -5188,9 +5186,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.2.0-dev.20230629"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230629.tgz#451ff3cfaa2331f51a3b020440675d6e9978059b"
-  integrity sha512-/8eGjHX3BI9Cpb2ghyC3qeWD4PTXx7npbvZuKsphLdvFJkbOrKbvmnYGW+3QKs5rREjTq5/0A4IIlp9yCIit0g==
+  version "5.2.0-dev.20230630"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230630.tgz#e0d213087fbb62d815bc8b32df12fb915a46af9d"
+  integrity sha512-PpI4tXtyv86eAhapMWrJF5roAxswu022vmSjDRU7NzPqT5+DlBktIlDePOrBo7OUBWNVEiUfsWuoDNbq5Sjj6Q==
 
 typescript@~5.1.3:
   version "5.1.6"
