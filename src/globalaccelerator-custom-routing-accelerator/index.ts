@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/globalaccelerator_custom_routing_accelerator
 // generated from terraform resource schema
 
