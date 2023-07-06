@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.NewDataAwsBillingServiceAccount(scope Construct, id *string, config DataAwsBillingServiceAccountConfig) DataAwsBillingServiceAccount
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsbillingserviceaccount"
 
 &dataawsbillingserviceaccount.DataAwsBillingServiceAccountConfig {
 	Connection: interface{},
