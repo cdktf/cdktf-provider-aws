@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.NewApiGatewayApiKey(scope Construct, id *string, config ApiGatewayApiKeyConfig) ApiGatewayApiKey
 ```
@@ -312,7 +312,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 &apigatewayapikey.ApiGatewayApiKeyConfig {
 	Connection: interface{},

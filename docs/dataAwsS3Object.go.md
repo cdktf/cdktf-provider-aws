@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3Object.DataAwsS3Object.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3object"
 
 dataawss3object.NewDataAwsS3Object(scope Construct, id *string, config DataAwsS3ObjectConfig) DataAwsS3Object
 ```
@@ -298,7 +298,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsS3Object.DataAwsS3Object.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3object"
 
 dataawss3object.DataAwsS3Object_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsS3Object.DataAwsS3Object.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3object"
 
 dataawss3object.DataAwsS3Object_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawss3object.DataAwsS3Object_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsS3Object.DataAwsS3Object.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3object"
 
 dataawss3object.DataAwsS3Object_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3object"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawss3object"
 
 &dataawss3object.DataAwsS3ObjectConfig {
 	Connection: interface{},

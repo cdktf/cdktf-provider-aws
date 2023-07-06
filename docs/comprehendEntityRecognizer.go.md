@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizer(scope Construct, id *string, config ComprehendEntityRecognizerConfig) ComprehendEntityRecognizer
 ```
@@ -372,7 +372,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.ComprehendEntityRecognizer_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.ComprehendEntityRecognizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ comprehendentityrecognizer.ComprehendEntityRecognizer_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.ComprehendEntityRecognizer_IsTerraformResource(x interface{}) *bool
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerConfig {
 	Connection: interface{},
@@ -925,18 +925,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognize
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DataAccessRoleArn: *string,
-	InputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig,
+	InputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig,
 	LanguageCode: *string,
 	Name: *string,
 	Id: *string,
 	ModelKmsKeyId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts,
 	VersionName: *string,
 	VersionNamePrefix: *string,
 	VolumeKmsKeyId: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig,
 }
 ```
 
@@ -1207,15 +1207,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfig {
 	EntityTypes: interface{},
-	Annotations: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations,
+	Annotations: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations,
 	AugmentedManifests: interface{},
 	DataFormat: *string,
-	Documents: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments,
-	EntityList: github.com/cdktf/cdktf-provider-aws-go/aws/v16.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct,
+	Documents: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments,
+	EntityList: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations {
 	S3Uri: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifests {
 	AttributeNames: *[]*string,
@@ -1467,7 +1467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfigDocuments {
 	S3Uri: *string,
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct {
 	S3Uri: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypes {
 	Type: *string,
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerTimeouts {
 	Create: *string,
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 &comprehendentityrecognizer.ComprehendEntityRecognizerVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1699,7 +1699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() ComprehendEntityRecognizerInputDataConfigAnnotations
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigAugmentedManifestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList
 ```
@@ -2142,7 +2142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference
 ```
@@ -2569,7 +2569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference
 ```
@@ -2898,7 +2898,7 @@ func InternalValue() ComprehendEntityRecognizerInputDataConfigDocuments
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference
 ```
@@ -3169,7 +3169,7 @@ func InternalValue() ComprehendEntityRecognizerInputDataConfigEntityListStruct
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigEntityTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComprehendEntityRecognizerInputDataConfigEntityTypesList
 ```
@@ -3312,7 +3312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference
 ```
@@ -3601,7 +3601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerInputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigOutputReference
 ```
@@ -4082,7 +4082,7 @@ func InternalValue() ComprehendEntityRecognizerInputDataConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerTimeoutsOutputReference
 ```
@@ -4418,7 +4418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehendentityrecognizer"
 
 comprehendentityrecognizer.NewComprehendEntityRecognizerVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerVpcConfigOutputReference
 ```

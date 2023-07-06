@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.NewDataAwsCloudformationStack(scope Construct, id *string, config DataAwsCloudformationStackConfig) DataAwsCloudformationStack
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStack.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 dataawscloudformationstack.DataAwsCloudformationStack_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudformationStack.DataAwsCloudformationStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawscloudformationstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudformationstack"
 
 &dataawscloudformationstack.DataAwsCloudformationStackConfig {
 	Connection: interface{},
