@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.NewSesConfigurationSet(scope Construct, id *string, config SesConfigurationSetConfig) SesConfigurationSet
 ```
@@ -331,7 +331,7 @@ func ResetTrackingOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.SesConfigurationSet_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.SesConfigurationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ sesconfigurationset.SesConfigurationSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.SesConfigurationSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 &sesconfigurationset.SesConfigurationSetConfig {
 	Connection: interface{},
@@ -741,11 +741,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	DeliveryOptions: github.com/cdktf/cdktf-provider-aws-go/aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions,
+	DeliveryOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.sesConfigurationSet.SesConfigurationSetDeliveryOptions,
 	Id: *string,
 	ReputationMetricsEnabled: interface{},
 	SendingEnabled: interface{},
-	TrackingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.sesConfigurationSet.SesConfigurationSetTrackingOptions,
+	TrackingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.sesConfigurationSet.SesConfigurationSetTrackingOptions,
 }
 ```
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 &sesconfigurationset.SesConfigurationSetDeliveryOptions {
 	TlsPolicy: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 &sesconfigurationset.SesConfigurationSetTrackingOptions {
 	CustomRedirectDomain: *string,
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.NewSesConfigurationSetDeliveryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SesConfigurationSetDeliveryOptionsOutputReference
 ```
@@ -1267,7 +1267,7 @@ func InternalValue() SesConfigurationSetDeliveryOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesconfigurationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesconfigurationset"
 
 sesconfigurationset.NewSesConfigurationSetTrackingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SesConfigurationSetTrackingOptionsOutputReference
 ```
