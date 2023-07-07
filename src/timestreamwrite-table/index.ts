@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table
+// https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface TimestreamwriteTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * magnetic_store_write_properties block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
   */
   readonly magneticStoreWriteProperties?: TimestreamwriteTableMagneticStoreWriteProperties;
   /**
   * retention_properties block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
   */
   readonly retentionProperties?: TimestreamwriteTableRetentionProperties;
+  /**
+  * schema block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#schema TimestreamwriteTable#schema}
+  */
+  readonly schema?: TimestreamwriteTableSchema;
 }
 export interface TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}
   */
   readonly encryptionOption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}
   */
   readonly objectKeyPrefix?: string;
 }
@@ -198,7 +199,7 @@ export interface TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRe
   /**
   * s3_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
   */
   readonly s3Configuration?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration;
 }
@@ -263,13 +264,13 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
 }
 export interface TimestreamwriteTableMagneticStoreWriteProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}
   */
   readonly enableMagneticStoreWrites?: boolean | cdktf.IResolvable;
   /**
   * magnetic_store_rejected_data_location block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
   */
   readonly magneticStoreRejectedDataLocation?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation;
 }
@@ -357,11 +358,11 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesOutputReference ext
 }
 export interface TimestreamwriteTableRetentionProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}
   */
   readonly magneticStoreRetentionPeriodInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}
   */
   readonly memoryStoreRetentionPeriodInHours: number;
 }
@@ -441,9 +442,192 @@ export class TimestreamwriteTableRetentionPropertiesOutputReference extends cdkt
     return this._memoryStoreRetentionPeriodInHours;
   }
 }
+export interface TimestreamwriteTableSchemaCompositePartitionKey {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enforcement_in_record TimestreamwriteTable#enforcement_in_record}
+  */
+  readonly enforcementInRecord?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#name TimestreamwriteTable#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#type TimestreamwriteTable#type}
+  */
+  readonly type: string;
+}
+
+export function timestreamwriteTableSchemaCompositePartitionKeyToTerraform(struct?: TimestreamwriteTableSchemaCompositePartitionKeyOutputReference | TimestreamwriteTableSchemaCompositePartitionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enforcement_in_record: cdktf.stringToTerraform(struct!.enforcementInRecord),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class TimestreamwriteTableSchemaCompositePartitionKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TimestreamwriteTableSchemaCompositePartitionKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enforcementInRecord !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforcementInRecord = this._enforcementInRecord;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TimestreamwriteTableSchemaCompositePartitionKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enforcementInRecord = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enforcementInRecord = value.enforcementInRecord;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // enforcement_in_record - computed: false, optional: true, required: false
+  private _enforcementInRecord?: string; 
+  public get enforcementInRecord() {
+    return this.getStringAttribute('enforcement_in_record');
+  }
+  public set enforcementInRecord(value: string) {
+    this._enforcementInRecord = value;
+  }
+  public resetEnforcementInRecord() {
+    this._enforcementInRecord = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforcementInRecordInput() {
+    return this._enforcementInRecord;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+export interface TimestreamwriteTableSchema {
+  /**
+  * composite_partition_key block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#composite_partition_key TimestreamwriteTable#composite_partition_key}
+  */
+  readonly compositePartitionKey?: TimestreamwriteTableSchemaCompositePartitionKey;
+}
+
+export function timestreamwriteTableSchemaToTerraform(struct?: TimestreamwriteTableSchemaOutputReference | TimestreamwriteTableSchema): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    composite_partition_key: timestreamwriteTableSchemaCompositePartitionKeyToTerraform(struct!.compositePartitionKey),
+  }
+}
+
+export class TimestreamwriteTableSchemaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TimestreamwriteTableSchema | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._compositePartitionKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compositePartitionKey = this._compositePartitionKey?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TimestreamwriteTableSchema | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._compositePartitionKey.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._compositePartitionKey.internalValue = value.compositePartitionKey;
+    }
+  }
+
+  // composite_partition_key - computed: false, optional: true, required: false
+  private _compositePartitionKey = new TimestreamwriteTableSchemaCompositePartitionKeyOutputReference(this, "composite_partition_key");
+  public get compositePartitionKey() {
+    return this._compositePartitionKey;
+  }
+  public putCompositePartitionKey(value: TimestreamwriteTableSchemaCompositePartitionKey) {
+    this._compositePartitionKey.internalValue = value;
+  }
+  public resetCompositePartitionKey() {
+    this._compositePartitionKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compositePartitionKeyInput() {
+    return this._compositePartitionKey.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table}
 */
 export class TimestreamwriteTable extends cdktf.TerraformResource {
 
@@ -457,7 +641,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -468,7 +652,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_timestreamwrite_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -486,6 +670,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._magneticStoreWriteProperties.internalValue = config.magneticStoreWriteProperties;
     this._retentionProperties.internalValue = config.retentionProperties;
+    this._schema.internalValue = config.schema;
   }
 
   // ==========
@@ -603,6 +788,22 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
     return this._retentionProperties.internalValue;
   }
 
+  // schema - computed: false, optional: true, required: false
+  private _schema = new TimestreamwriteTableSchemaOutputReference(this, "schema");
+  public get schema() {
+    return this._schema;
+  }
+  public putSchema(value: TimestreamwriteTableSchema) {
+    this._schema.internalValue = value;
+  }
+  public resetSchema() {
+    this._schema.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -616,6 +817,7 @@ export class TimestreamwriteTable extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       magnetic_store_write_properties: timestreamwriteTableMagneticStoreWritePropertiesToTerraform(this._magneticStoreWriteProperties.internalValue),
       retention_properties: timestreamwriteTableRetentionPropertiesToTerraform(this._retentionProperties.internalValue),
+      schema: timestreamwriteTableSchemaToTerraform(this._schema.internalValue),
     };
   }
 }

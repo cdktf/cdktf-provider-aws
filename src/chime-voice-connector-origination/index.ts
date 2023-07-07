@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination
+// https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface ChimeVoiceConnectorOriginationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#disabled ChimeVoiceConnectorOrigination#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#disabled ChimeVoiceConnectorOrigination#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#id ChimeVoiceConnectorOrigination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#id ChimeVoiceConnectorOrigination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#voice_connector_id ChimeVoiceConnectorOrigination#voice_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#voice_connector_id ChimeVoiceConnectorOrigination#voice_connector_id}
   */
   readonly voiceConnectorId: string;
   /**
   * route block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#route ChimeVoiceConnectorOrigination#route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#route ChimeVoiceConnectorOrigination#route}
   */
   readonly route: ChimeVoiceConnectorOriginationRoute[] | cdktf.IResolvable;
 }
 export interface ChimeVoiceConnectorOriginationRoute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#host ChimeVoiceConnectorOrigination#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#host ChimeVoiceConnectorOrigination#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#port ChimeVoiceConnectorOrigination#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#port ChimeVoiceConnectorOrigination#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#priority ChimeVoiceConnectorOrigination#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#priority ChimeVoiceConnectorOrigination#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#protocol ChimeVoiceConnectorOrigination#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#protocol ChimeVoiceConnectorOrigination#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination#weight ChimeVoiceConnectorOrigination#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination#weight ChimeVoiceConnectorOrigination#weight}
   */
   readonly weight: number;
 }
@@ -229,7 +224,7 @@ export class ChimeVoiceConnectorOriginationRouteList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination}
 */
 export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
 
@@ -243,7 +238,7 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -254,7 +249,7 @@ export class ChimeVoiceConnectorOrigination extends cdktf.TerraformResource {
       terraformResourceType: 'aws_chime_voice_connector_origination',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
