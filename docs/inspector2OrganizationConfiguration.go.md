@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfiguration(scope Construct, id *string, config Inspector2OrganizationConfigurationConfig) Inspector2OrganizationConfiguration
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.Inspector2OrganizationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationAutoEnable {
 	Ec2: interface{},
@@ -692,7 +692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationConfig {
 	Connection: interface{},
@@ -702,9 +702,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfigu
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AutoEnable: github.com/cdktf/cdktf-provider-aws-go/aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
+	AutoEnable: github.com/cdktf/cdktf-provider-aws-go/aws/v16.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts,
 }
 ```
 
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 &inspector2organizationconfiguration.Inspector2OrganizationConfigurationTimeouts {
 	Create: *string,
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationAutoEnableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationAutoEnableOutputReference
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() Inspector2OrganizationConfigurationAutoEnable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/inspector2organizationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2organizationconfiguration"
 
 inspector2organizationconfiguration.NewInspector2OrganizationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Inspector2OrganizationConfigurationTimeoutsOutputReference
 ```

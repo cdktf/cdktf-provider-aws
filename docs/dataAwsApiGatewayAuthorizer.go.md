@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizer.DataAwsApiGatewayAuthorizer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayauthorizer"
 
 dataawsapigatewayauthorizer.NewDataAwsApiGatewayAuthorizer(scope Construct, id *string, config DataAwsApiGatewayAuthorizerConfig) DataAwsApiGatewayAuthorizer
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizer.DataAwsApiGatewayAuthorizer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayauthorizer"
 
 dataawsapigatewayauthorizer.DataAwsApiGatewayAuthorizer_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizer.DataAwsApiGatewayAuthorizer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayauthorizer"
 
 dataawsapigatewayauthorizer.DataAwsApiGatewayAuthorizer_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsapigatewayauthorizer.DataAwsApiGatewayAuthorizer_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizer.DataAwsApiGatewayAuthorizer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayauthorizer"
 
 dataawsapigatewayauthorizer.DataAwsApiGatewayAuthorizer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizer.DataAwsApiGatewayAuthorizerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayauthorizer"
 
 &dataawsapigatewayauthorizer.DataAwsApiGatewayAuthorizerConfig {
 	Connection: interface{},
