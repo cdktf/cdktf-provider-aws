@@ -1,6 +1,6 @@
 # `data_aws_vpclattice_service_network`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network).
+Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network).
 
 # `dataAwsVpclatticeServiceNetwork` Submodule <a name="`dataAwsVpclatticeServiceNetwork` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network
 
 ### DataAwsVpclatticeServiceNetwork <a name="DataAwsVpclatticeServiceNetwork" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.NewDataAwsVpclatticeServiceNetwork(scope Construct, id *string, config DataAwsVpclatticeServiceNetworkConfig) DataAwsVpclatticeServiceNetwork
 ```
@@ -277,7 +277,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservicenetwork"
 
 &dataawsvpclatticeservicenetwork.DataAwsVpclatticeServiceNetworkConfig {
 	Connection: interface{},
@@ -658,8 +658,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservicen
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">ServiceNetworkIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">ServiceNetworkIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
 
 ---
 
@@ -741,7 +741,7 @@ ServiceNetworkIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
 
 ---
 
@@ -753,7 +753,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
 
 ---
 

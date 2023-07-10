@@ -1,6 +1,6 @@
 # `data_aws_location_route_calculator`
 
-Refer to the Terraform Registory for docs: [`data_aws_location_route_calculator`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator).
+Refer to the Terraform Registory for docs: [`data_aws_location_route_calculator`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator).
 
 # `dataAwsLocationRouteCalculator` Submodule <a name="`dataAwsLocationRouteCalculator` Submodule" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_location_route_calculator`
 
 ### DataAwsLocationRouteCalculator <a name="DataAwsLocationRouteCalculator" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator aws_location_route_calculator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.Initializer"></a>
 
@@ -644,9 +644,9 @@ const dataAwsLocationRouteCalculatorConfig: dataAwsLocationRouteCalculator.DataA
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.calculatorName">calculatorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.calculatorName">calculatorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}. |
 
 ---
 
@@ -728,7 +728,7 @@ public readonly calculatorName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}.
 
 ---
 
@@ -740,7 +740,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}.
 
 ---
 

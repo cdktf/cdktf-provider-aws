@@ -1,6 +1,6 @@
 # `data_aws_iam_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_group`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group).
+Refer to the Terraform Registory for docs: [`data_aws_iam_group`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group).
 
 # `dataAwsIamGroup` Submodule <a name="`dataAwsIamGroup` Submodule" id="@cdktf/provider-aws.dataAwsIamGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_group`](https://regist
 
 ### DataAwsIamGroup <a name="DataAwsIamGroup" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group aws_iam_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group aws_iam_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup.Initializer"></a>
 
@@ -614,8 +614,8 @@ new DataAwsIamGroupConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group#id DataAwsIamGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string GroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group#group_name DataAwsIamGroup#group_name}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_group#id DataAwsIamGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/iam_group#id DataAwsIamGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

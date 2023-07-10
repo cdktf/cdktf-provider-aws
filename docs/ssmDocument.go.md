@@ -1,6 +1,6 @@
 # `aws_ssm_document`
 
-Refer to the Terraform Registory for docs: [`aws_ssm_document`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document).
+Refer to the Terraform Registory for docs: [`aws_ssm_document`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document).
 
 # `ssmDocument` Submodule <a name="`ssmDocument` Submodule" id="@cdktf/provider-aws.ssmDocument"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ssm_document`](https://registry
 
 ### SsmDocument <a name="SsmDocument" id="@cdktf/provider-aws.ssmDocument.SsmDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document aws_ssm_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document aws_ssm_document}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.NewSsmDocument(scope Construct, id *string, config SsmDocumentConfig) SsmDocument
 ```
@@ -339,7 +339,7 @@ func ResetVersionName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.SsmDocument_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.SsmDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ ssmdocument.SsmDocument_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.SsmDocument_IsTerraformResource(x interface{}) *bool
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 &ssmdocument.SsmDocumentAttachmentsSource {
 	Key: *string,
@@ -982,9 +982,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#key SsmDocument#key}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#values SsmDocument#values}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#name SsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#key SsmDocument#key}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#values SsmDocument#values}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#name SsmDocument#name}. |
 
 ---
 
@@ -996,7 +996,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#key SsmDocument#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#key SsmDocument#key}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#values SsmDocument#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#values SsmDocument#values}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#name SsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#name SsmDocument#name}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 &ssmdocument.SsmDocumentConfig {
 	Connection: interface{},
@@ -1064,17 +1064,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
 | <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#content SsmDocument#content}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.documentType">DocumentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#name SsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#content SsmDocument#content}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.documentType">DocumentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#document_type SsmDocument#document_type}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#name SsmDocument#name}. |
 | <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.attachmentsSource">AttachmentsSource</a></code> | <code>interface{}</code> | attachments_source block. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.documentFormat">DocumentFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#id SsmDocument#id}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.permissions">Permissions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#tags SsmDocument#tags}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.targetType">TargetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
-| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.versionName">VersionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.documentFormat">DocumentFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#document_format SsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#id SsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.permissions">Permissions</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#permissions SsmDocument#permissions}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#tags SsmDocument#tags}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.targetType">TargetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#target_type SsmDocument#target_type}. |
+| <code><a href="#@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.property.versionName">VersionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#version_name SsmDocument#version_name}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#content SsmDocument#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#content SsmDocument#content}.
 
 ---
 
@@ -1168,7 +1168,7 @@ DocumentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#document_type SsmDocument#document_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#document_type SsmDocument#document_type}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#name SsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#name SsmDocument#name}.
 
 ---
 
@@ -1194,7 +1194,7 @@ AttachmentsSource interface{}
 
 attachments_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
 
 ---
 
@@ -1206,7 +1206,7 @@ DocumentFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#document_format SsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#document_format SsmDocument#document_format}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#id SsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#id SsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1233,7 @@ Permissions *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#permissions SsmDocument#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#permissions SsmDocument#permissions}.
 
 ---
 
@@ -1245,7 +1245,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#tags SsmDocument#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#tags SsmDocument#tags}.
 
 ---
 
@@ -1257,7 +1257,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#tags_all SsmDocument#tags_all}.
 
 ---
 
@@ -1269,7 +1269,7 @@ TargetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#target_type SsmDocument#target_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#target_type SsmDocument#target_type}.
 
 ---
 
@@ -1281,7 +1281,7 @@ VersionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_document#version_name SsmDocument#version_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ssm_document#version_name SsmDocument#version_name}.
 
 ---
 
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 &ssmdocument.SsmDocumentParameter {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.NewSsmDocumentAttachmentsSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmDocumentAttachmentsSourceList
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.NewSsmDocumentAttachmentsSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmDocumentAttachmentsSourceOutputReference
 ```
@@ -1788,7 +1788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.NewSsmDocumentParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmDocumentParameterList
 ```
@@ -1920,7 +1920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 
 ssmdocument.NewSsmDocumentParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmDocumentParameterOutputReference
 ```

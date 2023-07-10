@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments {
 }
@@ -44,7 +39,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -147,17 +142,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -300,17 +295,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -450,17 +445,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -571,17 +566,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern;
 }
@@ -753,13 +748,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -847,21 +842,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -1065,7 +1060,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -1127,7 +1122,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -1229,61 +1224,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatchUriPath;
 }
@@ -1555,11 +1550,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -1673,23 +1668,23 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#positional_constraint Wafv2WebAcl#positional_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#positional_constraint Wafv2WebAcl#positional_constraint}
   */
   readonly positionalConstraint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#search_string Wafv2WebAcl#search_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#search_string Wafv2WebAcl#search_string}
   */
   readonly searchString: string;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -1814,11 +1809,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
   */
   readonly fallbackBehavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
   */
   readonly headerName: string;
 }
@@ -1900,13 +1895,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementGeoMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#country_codes Wafv2WebAcl#country_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#country_codes Wafv2WebAcl#country_codes}
   */
   readonly countryCodes: string[];
   /**
   * forwarded_ip_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#forwarded_ip_config Wafv2WebAcl#forwarded_ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#forwarded_ip_config Wafv2WebAcl#forwarded_ip_config}
   */
   readonly forwardedIpConfig?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementGeoMatchStatementForwardedIpConfig;
 }
@@ -1991,15 +1986,15 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
   */
   readonly fallbackBehavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
   */
   readonly headerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#position Wafv2WebAcl#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#position Wafv2WebAcl#position}
   */
   readonly position: string;
 }
@@ -2101,13 +2096,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
   */
   readonly arn: string;
   /**
   * ip_set_forwarded_ip_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#ip_set_forwarded_ip_config Wafv2WebAcl#ip_set_forwarded_ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#ip_set_forwarded_ip_config Wafv2WebAcl#ip_set_forwarded_ip_config}
   */
   readonly ipSetForwardedIpConfig?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig;
 }
@@ -2192,11 +2187,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementLabelMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
   */
   readonly scope: string;
 }
@@ -2316,7 +2311,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -2419,17 +2414,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -2572,17 +2567,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -2722,17 +2717,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -2843,17 +2838,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchHeadersMatchPattern;
 }
@@ -3025,13 +3020,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -3119,21 +3114,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -3337,7 +3332,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -3399,7 +3394,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -3501,61 +3496,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatchUriPath;
 }
@@ -3827,11 +3822,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -3945,23 +3940,23 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#positional_constraint Wafv2WebAcl#positional_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#positional_constraint Wafv2WebAcl#positional_constraint}
   */
   readonly positionalConstraint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#search_string Wafv2WebAcl#search_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#search_string Wafv2WebAcl#search_string}
   */
   readonly searchString: string;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementByteMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -4086,11 +4081,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
   */
   readonly fallbackBehavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
   */
   readonly headerName: string;
 }
@@ -4172,13 +4167,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementGeoMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#country_codes Wafv2WebAcl#country_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#country_codes Wafv2WebAcl#country_codes}
   */
   readonly countryCodes: string[];
   /**
   * forwarded_ip_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#forwarded_ip_config Wafv2WebAcl#forwarded_ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#forwarded_ip_config Wafv2WebAcl#forwarded_ip_config}
   */
   readonly forwardedIpConfig?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig;
 }
@@ -4263,15 +4258,15 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#fallback_behavior Wafv2WebAcl#fallback_behavior}
   */
   readonly fallbackBehavior: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#header_name Wafv2WebAcl#header_name}
   */
   readonly headerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#position Wafv2WebAcl#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#position Wafv2WebAcl#position}
   */
   readonly position: string;
 }
@@ -4373,13 +4368,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementIpSetReferenceStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
   */
   readonly arn: string;
   /**
   * ip_set_forwarded_ip_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#ip_set_forwarded_ip_config Wafv2WebAcl#ip_set_forwarded_ip_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#ip_set_forwarded_ip_config Wafv2WebAcl#ip_set_forwarded_ip_config}
   */
   readonly ipSetForwardedIpConfig?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig;
 }
@@ -4464,11 +4459,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementLabelMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#key Wafv2WebAcl#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#scope Wafv2WebAcl#scope}
   */
   readonly scope: string;
 }
@@ -4588,7 +4583,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -4691,17 +4686,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -4844,17 +4839,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -4994,17 +4989,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -5115,17 +5110,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPattern;
 }
@@ -5297,13 +5292,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -5391,21 +5386,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -5609,7 +5604,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -5671,7 +5666,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -5773,61 +5768,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchUriPath;
 }
@@ -6099,11 +6094,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -6217,19 +6212,19 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#regex_string Wafv2WebAcl#regex_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#regex_string Wafv2WebAcl#regex_string}
   */
   readonly regexString: string;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -6372,7 +6367,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -6475,17 +6470,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -6628,17 +6623,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -6778,17 +6773,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -6899,17 +6894,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern;
 }
@@ -7081,13 +7076,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -7175,21 +7170,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -7393,7 +7388,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -7455,7 +7450,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -7557,61 +7552,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatchUriPath;
 }
@@ -7883,11 +7878,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -8001,19 +7996,19 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#arn Wafv2WebAcl#arn}
   */
   readonly arn: string;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementRegexPatternSetReferenceStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -8156,7 +8151,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -8259,17 +8254,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -8412,17 +8407,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -8562,17 +8557,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -8683,17 +8678,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern;
 }
@@ -8865,13 +8860,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -8959,21 +8954,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -9177,7 +9172,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -9239,7 +9234,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -9341,61 +9336,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath;
 }
@@ -9667,11 +9662,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -9785,23 +9780,23 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#comparison_operator Wafv2WebAcl#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#comparison_operator Wafv2WebAcl#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#size Wafv2WebAcl#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#size Wafv2WebAcl#size}
   */
   readonly size: number;
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSizeConstraintStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -9964,7 +9959,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
@@ -10067,17 +10062,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_cookies Wafv2WebAcl#excluded_cookies}
   */
   readonly excludedCookies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_cookies Wafv2WebAcl#included_cookies}
   */
   readonly includedCookies?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPatternAll;
 }
@@ -10220,17 +10215,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchCookiesMatchPattern[] | cdktf.IResolvable;
 }
@@ -10370,17 +10365,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#excluded_headers Wafv2WebAcl#excluded_headers}
   */
   readonly excludedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_headers Wafv2WebAcl#included_headers}
   */
   readonly includedHeaders?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAll;
 }
@@ -10491,17 +10486,17 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersMatchPattern;
 }
@@ -10673,13 +10668,13 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#included_paths Wafv2WebAcl#included_paths}
   */
   readonly includedPaths?: string[];
   /**
   * all block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all Wafv2WebAcl#all}
   */
   readonly all?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPatternAll;
 }
@@ -10767,21 +10762,21 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#invalid_fallback_behavior Wafv2WebAcl#invalid_fallback_behavior}
   */
   readonly invalidFallbackBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_scope Wafv2WebAcl#match_scope}
   */
   readonly matchScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
   /**
   * match_pattern block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#match_pattern Wafv2WebAcl#match_pattern}
   */
   readonly matchPattern: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern;
 }
@@ -10985,7 +10980,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -11047,7 +11042,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}
   */
   readonly name: string;
 }
@@ -11149,61 +11144,61 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * all_query_arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#all_query_arguments Wafv2WebAcl#all_query_arguments}
   */
   readonly allQueryArguments?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments;
   /**
   * body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#body Wafv2WebAcl#body}
   */
   readonly body?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchBody;
   /**
   * cookies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#cookies Wafv2WebAcl#cookies}
   */
   readonly cookies?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchCookies;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#headers Wafv2WebAcl#headers}
   */
   readonly headers?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchHeaders[] | cdktf.IResolvable;
   /**
   * json_body block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#json_body Wafv2WebAcl#json_body}
   */
   readonly jsonBody?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBody;
   /**
   * method block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#method Wafv2WebAcl#method}
   */
   readonly method?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod;
   /**
   * query_string block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#query_string Wafv2WebAcl#query_string}
   */
   readonly queryString?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString;
   /**
   * single_header block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_header Wafv2WebAcl#single_header}
   */
   readonly singleHeader?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleHeader;
   /**
   * single_query_argument block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#single_query_argument Wafv2WebAcl#single_query_argument}
   */
   readonly singleQueryArgument?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchSingleQueryArgument;
   /**
   * uri_path block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#uri_path Wafv2WebAcl#uri_path}
   */
   readonly uriPath?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatchUriPath;
 }
@@ -11475,11 +11470,11 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementTextTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#type Wafv2WebAcl#type}
   */
   readonly type: string;
 }
@@ -11595,13 +11590,13 @@ export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAnd
   /**
   * field_to_match block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#field_to_match Wafv2WebAcl#field_to_match}
   */
   readonly fieldToMatch?: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch;
   /**
   * text_transformation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
   */
   readonly textTransformation: Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementSqliMatchStatementTextTransformation[] | cdktf.IResolvable;
 }
@@ -11724,7 +11719,7 @@ export class Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStat
 }
 export interface Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatementStatementXssMatchStatementFieldToMatchBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/wafv2_web_acl#oversize_handling Wafv2WebAcl#oversize_handling}
   */
   readonly oversizeHandling?: string;
 }
