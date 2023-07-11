@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/datasync_location_fsx_openzfs_file_system
 // generated from terraform resource schema
 
