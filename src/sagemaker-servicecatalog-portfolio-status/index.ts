@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sagemaker_servicecatalog_portfolio_status
+// https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/sagemaker_servicecatalog_portfolio_status
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerServicecatalogPortfolioStatusConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/sagemaker_servicecatalog_portfolio_status#id SagemakerServicecatalogPortfolioStatus#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/sagemaker_servicecatalog_portfolio_status#status SagemakerServicecatalogPortfolioStatus#status}
   */
   readonly status: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status}
 */
 export class SagemakerServicecatalogPortfolioStatus extends cdktf.TerraformResource {
 
@@ -40,7 +35,7 @@ export class SagemakerServicecatalogPortfolioStatus extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/sagemaker_servicecatalog_portfolio_status aws_sagemaker_servicecatalog_portfolio_status} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class SagemakerServicecatalogPortfolioStatus extends cdktf.TerraformResou
       terraformResourceType: 'aws_sagemaker_servicecatalog_portfolio_status',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_lex_slot_type`
 
-Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type).
+Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type).
 
 # `dataAwsLexSlotType` Submodule <a name="`dataAwsLexSlotType` Submodule" id="@cdktf/provider-aws.dataAwsLexSlotType"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://re
 
 ### DataAwsLexSlotType <a name="DataAwsLexSlotType" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type aws_lex_slot_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type aws_lex_slot_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotType(scope Construct, id *string, config DataAwsLexSlotTypeConfig) DataAwsLexSlotType
 ```
@@ -284,7 +284,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawslexslottype.DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 &dataawslexslottype.DataAwsLexSlotTypeConfig {
 	Connection: interface{},
@@ -666,9 +666,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
 
 ---
 
@@ -750,7 +750,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -777,7 +777,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
 
 ---
 
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 &dataawslexslottype.DataAwsLexSlotTypeEnumerationValue {
 
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotTypeEnumerationValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLexSlotTypeEnumerationValueList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslexslottype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotTypeEnumerationValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLexSlotTypeEnumerationValueOutputReference
 ```
