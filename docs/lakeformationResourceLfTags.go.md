@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTags(scope Construct, id *string, config LakeformationResourceLfTagsConfig) LakeformationResourceLfTags
 ```
@@ -377,7 +377,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.LakeformationResourceLfTags_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.LakeformationResourceLfTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ lakeformationresourcelftags.LakeformationResourceLfTags_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.LakeformationResourceLfTags_IsTerraformResource(x interface{}) *bool
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsConfig {
 	Connection: interface{},
@@ -788,11 +788,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
 	Provisioners: *[]interface{},
 	LfTag: interface{},
 	CatalogId: *string,
-	Database: github.com/cdktf/cdktf-provider-aws-go/aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase,
+	Database: github.com/cdktf/cdktf-provider-aws-go/aws/v16.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase,
 	Id: *string,
-	Table: github.com/cdktf/cdktf-provider-aws-go/aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable,
-	TableWithColumns: github.com/cdktf/cdktf-provider-aws-go/aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts,
+	Table: github.com/cdktf/cdktf-provider-aws-go/aws/v16.lakeformationResourceLfTags.LakeformationResourceLfTagsTable,
+	TableWithColumns: github.com/cdktf/cdktf-provider-aws-go/aws/v16.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts,
 }
 ```
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsDatabase {
 	Name: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsLfTag {
 	Key: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsTable {
 	DatabaseName: *string,
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsTableWithColumns {
 	DatabaseName: *string,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 &lakeformationresourcelftags.LakeformationResourceLfTagsTimeouts {
 	Create: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsDatabaseOutputReference
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() LakeformationResourceLfTagsDatabase
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsLfTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LakeformationResourceLfTagsLfTagList
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsLfTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LakeformationResourceLfTagsLfTagOutputReference
 ```
@@ -2102,7 +2102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTableOutputReference
 ```
@@ -2460,7 +2460,7 @@ func InternalValue() LakeformationResourceLfTagsTable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsTableWithColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTableWithColumnsOutputReference
 ```
@@ -2869,7 +2869,7 @@ func InternalValue() LakeformationResourceLfTagsTableWithColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lakeformationresourcelftags"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/lakeformationresourcelftags"
 
 lakeformationresourcelftags.NewLakeformationResourceLfTagsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LakeformationResourceLfTagsTimeoutsOutputReference
 ```
