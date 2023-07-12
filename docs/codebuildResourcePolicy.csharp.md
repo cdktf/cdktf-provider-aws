@@ -1,6 +1,6 @@
 # `aws_codebuild_resource_policy`
 
-Refer to the Terraform Registory for docs: [`aws_codebuild_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy).
+Refer to the Terraform Registory for docs: [`aws_codebuild_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy).
 
 # `codebuildResourcePolicy` Submodule <a name="`codebuildResourcePolicy` Submodule" id="@cdktf/provider-aws.codebuildResourcePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_codebuild_resource_policy`](htt
 
 ### CodebuildResourcePolicy <a name="CodebuildResourcePolicy" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ new CodebuildResourcePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#policy CodebuildResourcePolicy#policy}.
 
 ---
 
@@ -711,7 +711,7 @@ public string ResourceArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#resource_arn CodebuildResourcePolicy#resource_arn}.
 
 ---
 
@@ -723,7 +723,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codebuild_resource_policy#id CodebuildResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

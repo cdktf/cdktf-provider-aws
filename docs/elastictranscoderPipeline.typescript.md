@@ -1,6 +1,6 @@
 # `aws_elastictranscoder_pipeline`
 
-Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline).
+Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline).
 
 # `elastictranscoderPipeline` Submodule <a name="`elastictranscoderPipeline` Submodule" id="@cdktf/provider-aws.elastictranscoderPipeline"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](ht
 
 ### ElastictranscoderPipeline <a name="ElastictranscoderPipeline" id="@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline.Initializer"></a>
 
@@ -912,15 +912,15 @@ const elastictranscoderPipelineConfig: elastictranscoderPipeline.Elastictranscod
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.inputBucket">inputBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#input_bucket ElastictranscoderPipeline#input_bucket}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#role ElastictranscoderPipeline#role}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.awsKmsKeyArn">awsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#aws_kms_key_arn ElastictranscoderPipeline#aws_kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.inputBucket">inputBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#input_bucket ElastictranscoderPipeline#input_bucket}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#role ElastictranscoderPipeline#role}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.awsKmsKeyArn">awsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#aws_kms_key_arn ElastictranscoderPipeline#aws_kms_key_arn}. |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.contentConfig">contentConfig</a></code> | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig">ElastictranscoderPipelineContentConfig</a></code> | content_config block. |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.contentConfigPermissions">contentConfigPermissions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions">ElastictranscoderPipelineContentConfigPermissions</a>[]</code> | content_config_permissions block. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#id ElastictranscoderPipeline#id}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#name ElastictranscoderPipeline#name}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#id ElastictranscoderPipeline#id}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#name ElastictranscoderPipeline#name}. |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.notifications">notifications</a></code> | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications">ElastictranscoderPipelineNotifications</a></code> | notifications block. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.outputBucket">outputBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#output_bucket ElastictranscoderPipeline#output_bucket}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.outputBucket">outputBucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#output_bucket ElastictranscoderPipeline#output_bucket}. |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.thumbnailConfig">thumbnailConfig</a></code> | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig">ElastictranscoderPipelineThumbnailConfig</a></code> | thumbnail_config block. |
 | <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineConfig.property.thumbnailConfigPermissions">thumbnailConfigPermissions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions">ElastictranscoderPipelineThumbnailConfigPermissions</a>[]</code> | thumbnail_config_permissions block. |
 
@@ -1004,7 +1004,7 @@ public readonly inputBucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#input_bucket ElastictranscoderPipeline#input_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#input_bucket ElastictranscoderPipeline#input_bucket}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#role ElastictranscoderPipeline#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#role ElastictranscoderPipeline#role}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly awsKmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#aws_kms_key_arn ElastictranscoderPipeline#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#aws_kms_key_arn ElastictranscoderPipeline#aws_kms_key_arn}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly contentConfig: ElastictranscoderPipelineContentConfig;
 
 content_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#content_config ElastictranscoderPipeline#content_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#content_config ElastictranscoderPipeline#content_config}
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly contentConfigPermissions: IResolvable | ElastictranscoderPipelin
 
 content_config_permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#id ElastictranscoderPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#id ElastictranscoderPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1083,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#name ElastictranscoderPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#name ElastictranscoderPipeline#name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly notifications: ElastictranscoderPipelineNotifications;
 
 notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#notifications ElastictranscoderPipeline#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#notifications ElastictranscoderPipeline#notifications}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly outputBucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#output_bucket ElastictranscoderPipeline#output_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#output_bucket ElastictranscoderPipeline#output_bucket}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly thumbnailConfig: ElastictranscoderPipelineThumbnailConfig;
 
 thumbnail_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#thumbnail_config ElastictranscoderPipeline#thumbnail_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#thumbnail_config ElastictranscoderPipeline#thumbnail_config}
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly thumbnailConfigPermissions: IResolvable | ElastictranscoderPipel
 
 thumbnail_config_permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
 
 ---
 
@@ -1155,8 +1155,8 @@ const elastictranscoderPipelineContentConfig: elastictranscoderPipeline.Elastict
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}. |
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}.
 
 ---
 
@@ -1198,9 +1198,9 @@ const elastictranscoderPipelineContentConfigPermissions: elastictranscoderPipeli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.access">access</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.grantee">grantee</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.granteeType">granteeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.access">access</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.grantee">grantee</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissions.property.granteeType">granteeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}. |
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly access: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly grantee: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}.
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly granteeType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}.
 
 ---
 
@@ -1254,10 +1254,10 @@ const elastictranscoderPipelineNotifications: elastictranscoderPipeline.Elastict
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.completed">completed</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#completed ElastictranscoderPipeline#completed}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.error">error</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#error ElastictranscoderPipeline#error}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.progressing">progressing</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#progressing ElastictranscoderPipeline#progressing}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.warning">warning</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#warning ElastictranscoderPipeline#warning}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.completed">completed</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#completed ElastictranscoderPipeline#completed}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.error">error</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#error ElastictranscoderPipeline#error}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.progressing">progressing</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#progressing ElastictranscoderPipeline#progressing}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineNotifications.property.warning">warning</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#warning ElastictranscoderPipeline#warning}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly completed: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#completed ElastictranscoderPipeline#completed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#completed ElastictranscoderPipeline#completed}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly error: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#error ElastictranscoderPipeline#error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#error ElastictranscoderPipeline#error}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly progressing: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#progressing ElastictranscoderPipeline#progressing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#progressing ElastictranscoderPipeline#progressing}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly warning: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#warning ElastictranscoderPipeline#warning}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#warning ElastictranscoderPipeline#warning}.
 
 ---
 
@@ -1323,8 +1323,8 @@ const elastictranscoderPipelineThumbnailConfig: elastictranscoderPipeline.Elasti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}. |
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#bucket ElastictranscoderPipeline#bucket}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#storage_class ElastictranscoderPipeline#storage_class}.
 
 ---
 
@@ -1366,9 +1366,9 @@ const elastictranscoderPipelineThumbnailConfigPermissions: elastictranscoderPipe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.access">access</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.grantee">grantee</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}. |
-| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.granteeType">granteeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.access">access</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.grantee">grantee</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}. |
+| <code><a href="#@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissions.property.granteeType">granteeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}. |
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly access: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#access ElastictranscoderPipeline#access}.
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly grantee: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee ElastictranscoderPipeline#grantee}.
 
 ---
 
@@ -1404,7 +1404,7 @@ public readonly granteeType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/elastictranscoder_pipeline#grantee_type ElastictranscoderPipeline#grantee_type}.
 
 ---
 

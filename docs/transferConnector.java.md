@@ -1,6 +1,6 @@
 # `aws_transfer_connector`
 
-Refer to the Terraform Registory for docs: [`aws_transfer_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector).
+Refer to the Terraform Registory for docs: [`aws_transfer_connector`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector).
 
 # `transferConnector` Submodule <a name="`transferConnector` Submodule" id="@cdktf/provider-aws.transferConnector"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_transfer_connector`](https://re
 
 ### TransferConnector <a name="TransferConnector" id="@cdktf/provider-aws.transferConnector.TransferConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector aws_transfer_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector aws_transfer_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferConnector.TransferConnector.Initializer"></a>
 
@@ -48,13 +48,13 @@ TransferConnector.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.accessRole">accessRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#access_role TransferConnector#access_role}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.accessRole">accessRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}. |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.as2Config">as2Config</a></code> | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config">TransferConnectorAs2Config</a></code> | as2_config block. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#url TransferConnector#url}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#id TransferConnector#id}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.loggingRole">loggingRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags TransferConnector#tags}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#url TransferConnector#url}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#id TransferConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.loggingRole">loggingRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags TransferConnector#tags}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnector.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#access_role TransferConnector#access_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 as2_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#url TransferConnector#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#url TransferConnector#url}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#id TransferConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#id TransferConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags TransferConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags TransferConnector#tags}.
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}.
 
 ---
 
@@ -868,14 +868,14 @@ TransferConnectorAs2Config.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.compression">compression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#compression TransferConnector#compression}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.encryptionAlgorithm">encryptionAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.localProfileId">localProfileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.mdnResponse">mdnResponse</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.partnerProfileId">partnerProfileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.signingAlgorithm">signingAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.mdnSigningAlgorithm">mdnSigningAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.messageSubject">messageSubject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.compression">compression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#compression TransferConnector#compression}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.encryptionAlgorithm">encryptionAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.localProfileId">localProfileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.mdnResponse">mdnResponse</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.partnerProfileId">partnerProfileId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.signingAlgorithm">signingAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.mdnSigningAlgorithm">mdnSigningAlgorithm</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config.property.messageSubject">messageSubject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}. |
 
 ---
 
@@ -887,7 +887,7 @@ public java.lang.String getCompression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#compression TransferConnector#compression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#compression TransferConnector#compression}.
 
 ---
 
@@ -899,7 +899,7 @@ public java.lang.String getEncryptionAlgorithm();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}.
 
 ---
 
@@ -911,7 +911,7 @@ public java.lang.String getLocalProfileId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}.
 
 ---
 
@@ -923,7 +923,7 @@ public java.lang.String getMdnResponse();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}.
 
 ---
 
@@ -935,7 +935,7 @@ public java.lang.String getPartnerProfileId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}.
 
 ---
 
@@ -947,7 +947,7 @@ public java.lang.String getSigningAlgorithm();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}.
 
 ---
 
@@ -959,7 +959,7 @@ public java.lang.String getMdnSigningAlgorithm();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}.
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getMessageSubject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}.
 
 ---
 
@@ -1015,13 +1015,13 @@ TransferConnectorConfig.builder()
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.accessRole">accessRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#access_role TransferConnector#access_role}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.accessRole">accessRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}. |
 | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.as2Config">as2Config</a></code> | <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorAs2Config">TransferConnectorAs2Config</a></code> | as2_config block. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#url TransferConnector#url}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#id TransferConnector#id}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.loggingRole">loggingRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags TransferConnector#tags}. |
-| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#url TransferConnector#url}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#id TransferConnector#id}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.loggingRole">loggingRole</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags TransferConnector#tags}. |
+| <code><a href="#@cdktf/provider-aws.transferConnector.TransferConnectorConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getAccessRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#access_role TransferConnector#access_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}.
 
 ---
 
@@ -1117,7 +1117,7 @@ public TransferConnectorAs2Config getAs2Config();
 
 as2_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#url TransferConnector#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#url TransferConnector#url}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#id TransferConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#id TransferConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ public java.lang.String getLoggingRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags TransferConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags TransferConnector#tags}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_outposts_site`
 
-Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site).
+Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site).
 
 # `dataAwsOutpostsSite` Submodule <a name="`dataAwsOutpostsSite` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsSite"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://re
 
 ### DataAwsOutpostsSite <a name="DataAwsOutpostsSite" id="@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site aws_outposts_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site aws_outposts_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer"></a>
 
@@ -589,8 +589,8 @@ const dataAwsOutpostsSiteConfig: dataAwsOutpostsSite.DataAwsOutpostsSiteConfig =
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
 
 ---
 
@@ -672,7 +672,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -687,7 +687,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
 
 ---
 

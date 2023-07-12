@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * off_peak_window_options block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
   */
   readonly offPeakWindowOptions?: DataAwsOpensearchDomainOffPeakWindowOptions;
 }
@@ -1269,7 +1264,7 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain aws_opensearch_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
 */
 export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
 
@@ -1283,7 +1278,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1294,7 +1289,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

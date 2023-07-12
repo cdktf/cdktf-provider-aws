@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index
+// https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface Resourceexplorer2IndexConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}
   */
   readonly type: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
   */
   readonly timeouts?: Resourceexplorer2IndexTimeouts;
 }
@@ -31,19 +26,19 @@ export interface Resourceexplorer2IndexTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#create Resourceexplorer2Index#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#create Resourceexplorer2Index#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#delete Resourceexplorer2Index#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#delete Resourceexplorer2Index#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index#update Resourceexplorer2Index#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index#update Resourceexplorer2Index#update}
   */
   readonly update?: string;
 }
@@ -164,7 +159,7 @@ export class Resourceexplorer2IndexTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index}
 */
 export class Resourceexplorer2Index extends cdktf.TerraformResource {
 
@@ -178,7 +173,7 @@ export class Resourceexplorer2Index extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +184,7 @@ export class Resourceexplorer2Index extends cdktf.TerraformResource {
       terraformResourceType: 'aws_resourceexplorer2_index',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_timestreamwrite_table`
 
-Refer to the Terraform Registory for docs: [`aws_timestreamwrite_table`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table).
+Refer to the Terraform Registory for docs: [`aws_timestreamwrite_table`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table).
 
 # `timestreamwriteTable` Submodule <a name="`timestreamwriteTable` Submodule" id="@cdktf/provider-aws.timestreamwriteTable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_timestreamwrite_table`](https:/
 
 ### TimestreamwriteTable <a name="TimestreamwriteTable" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.Initializer"></a>
 
@@ -72,9 +72,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putMagneticStoreWriteProperties">putMagneticStoreWriteProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putRetentionProperties">putRetentionProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putSchema">putSchema</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetMagneticStoreWriteProperties">resetMagneticStoreWriteProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetRetentionProperties">resetRetentionProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetSchema">resetSchema</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
@@ -288,6 +290,18 @@ public putRetentionProperties(value: TimestreamwriteTableRetentionProperties): v
 
 ---
 
+##### `putSchema` <a name="putSchema" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putSchema"></a>
+
+```typescript
+public putSchema(value: TimestreamwriteTableSchema): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putSchema.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a>
+
+---
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetId"></a>
 
 ```typescript
@@ -304,6 +318,12 @@ public resetMagneticStoreWriteProperties(): void
 
 ```typescript
 public resetRetentionProperties(): void
+```
+
+##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetSchema"></a>
+
+```typescript
+public resetSchema(): void
 ```
 
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetTags"></a>
@@ -409,10 +429,12 @@ timestreamwriteTable.TimestreamwriteTable.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.arn">arn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.magneticStoreWriteProperties">magneticStoreWriteProperties</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference">TimestreamwriteTableMagneticStoreWritePropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.retentionProperties">retentionProperties</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference">TimestreamwriteTableRetentionPropertiesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.schema">schema</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference">TimestreamwriteTableSchemaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.magneticStoreWritePropertiesInput">magneticStoreWritePropertiesInput</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties">TimestreamwriteTableMagneticStoreWriteProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.retentionPropertiesInput">retentionPropertiesInput</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties">TimestreamwriteTableRetentionProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.schemaInput">schemaInput</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.tableNameInput">tableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -596,6 +618,16 @@ public readonly retentionProperties: TimestreamwriteTableRetentionPropertiesOutp
 
 ---
 
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.schema"></a>
+
+```typescript
+public readonly schema: TimestreamwriteTableSchemaOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference">TimestreamwriteTableSchemaOutputReference</a>
+
+---
+
 ##### `databaseNameInput`<sup>Optional</sup> <a name="databaseNameInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.databaseNameInput"></a>
 
 ```typescript
@@ -633,6 +665,16 @@ public readonly retentionPropertiesInput: TimestreamwriteTableRetentionPropertie
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties">TimestreamwriteTableRetentionProperties</a>
+
+---
+
+##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.property.schemaInput"></a>
+
+```typescript
+public readonly schemaInput: TimestreamwriteTableSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a>
 
 ---
 
@@ -757,13 +799,14 @@ const timestreamwriteTableConfig: timestreamwriteTable.TimestreamwriteTableConfi
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tableName">tableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.magneticStoreWriteProperties">magneticStoreWriteProperties</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties">TimestreamwriteTableMagneticStoreWriteProperties</a></code> | magnetic_store_write_properties block. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.retentionProperties">retentionProperties</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties">TimestreamwriteTableRetentionProperties</a></code> | retention_properties block. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.schema">schema</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a></code> | schema block. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}. |
 
 ---
 
@@ -845,7 +888,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#database_name TimestreamwriteTable#database_name}.
 
 ---
 
@@ -857,7 +900,7 @@ public readonly tableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#table_name TimestreamwriteTable#table_name}.
 
 ---
 
@@ -869,7 +912,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#id TimestreamwriteTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -886,7 +929,7 @@ public readonly magneticStoreWriteProperties: TimestreamwriteTableMagneticStoreW
 
 magnetic_store_write_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
 
 ---
 
@@ -900,7 +943,21 @@ public readonly retentionProperties: TimestreamwriteTableRetentionProperties;
 
 retention_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.property.schema"></a>
+
+```typescript
+public readonly schema: TimestreamwriteTableSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a>
+
+schema block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#schema TimestreamwriteTable#schema}
 
 ---
 
@@ -912,7 +969,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags TimestreamwriteTable#tags}.
 
 ---
 
@@ -924,7 +981,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#tags_all TimestreamwriteTable#tags_all}.
 
 ---
 
@@ -942,7 +999,7 @@ const timestreamwriteTableMagneticStoreWriteProperties: timestreamwriteTable.Tim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties.property.enableMagneticStoreWrites">enableMagneticStoreWrites</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties.property.enableMagneticStoreWrites">enableMagneticStoreWrites</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties.property.magneticStoreRejectedDataLocation">magneticStoreRejectedDataLocation</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation">TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation</a></code> | magnetic_store_rejected_data_location block. |
 
 ---
@@ -955,7 +1012,7 @@ public readonly enableMagneticStoreWrites: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enable_magnetic_store_writes TimestreamwriteTable#enable_magnetic_store_writes}.
 
 ---
 
@@ -969,7 +1026,7 @@ public readonly magneticStoreRejectedDataLocation: TimestreamwriteTableMagneticS
 
 magnetic_store_rejected_data_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
 
 ---
 
@@ -1001,7 +1058,7 @@ public readonly s3Configuration: TimestreamwriteTableMagneticStoreWritePropertie
 
 s3_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
 
 ---
 
@@ -1019,10 +1076,10 @@ const timestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.encryptionOption">encryptionOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.objectKeyPrefix">objectKeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.encryptionOption">encryptionOption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.property.objectKeyPrefix">objectKeyPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}. |
 
 ---
 
@@ -1034,7 +1091,7 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#bucket_name TimestreamwriteTable#bucket_name}.
 
 ---
 
@@ -1046,7 +1103,7 @@ public readonly encryptionOption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#encryption_option TimestreamwriteTable#encryption_option}.
 
 ---
 
@@ -1058,7 +1115,7 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#kms_key_id TimestreamwriteTable#kms_key_id}.
 
 ---
 
@@ -1070,7 +1127,7 @@ public readonly objectKeyPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#object_key_prefix TimestreamwriteTable#object_key_prefix}.
 
 ---
 
@@ -1088,8 +1145,8 @@ const timestreamwriteTableRetentionProperties: timestreamwriteTable.Timestreamwr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties.property.magneticStoreRetentionPeriodInDays">magneticStoreRetentionPeriodInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties.property.memoryStoreRetentionPeriodInHours">memoryStoreRetentionPeriodInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties.property.magneticStoreRetentionPeriodInDays">magneticStoreRetentionPeriodInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties.property.memoryStoreRetentionPeriodInHours">memoryStoreRetentionPeriodInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}. |
 
 ---
 
@@ -1101,7 +1158,7 @@ public readonly magneticStoreRetentionPeriodInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#magnetic_store_retention_period_in_days TimestreamwriteTable#magnetic_store_retention_period_in_days}.
 
 ---
 
@@ -1113,7 +1170,95 @@ public readonly memoryStoreRetentionPeriodInHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#memory_store_retention_period_in_hours TimestreamwriteTable#memory_store_retention_period_in_hours}.
+
+---
+
+### TimestreamwriteTableSchema <a name="TimestreamwriteTableSchema" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema.Initializer"></a>
+
+```typescript
+import { timestreamwriteTable } from '@cdktf/provider-aws'
+
+const timestreamwriteTableSchema: timestreamwriteTable.TimestreamwriteTableSchema = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema.property.compositePartitionKey">compositePartitionKey</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a></code> | composite_partition_key block. |
+
+---
+
+##### `compositePartitionKey`<sup>Optional</sup> <a name="compositePartitionKey" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema.property.compositePartitionKey"></a>
+
+```typescript
+public readonly compositePartitionKey: TimestreamwriteTableSchemaCompositePartitionKey;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a>
+
+composite_partition_key block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#composite_partition_key TimestreamwriteTable#composite_partition_key}
+
+---
+
+### TimestreamwriteTableSchemaCompositePartitionKey <a name="TimestreamwriteTableSchemaCompositePartitionKey" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.Initializer"></a>
+
+```typescript
+import { timestreamwriteTable } from '@cdktf/provider-aws'
+
+const timestreamwriteTableSchemaCompositePartitionKey: timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#type TimestreamwriteTable#type}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.enforcementInRecord">enforcementInRecord</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enforcement_in_record TimestreamwriteTable#enforcement_in_record}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#name TimestreamwriteTable#name}. |
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#type TimestreamwriteTable#type}.
+
+---
+
+##### `enforcementInRecord`<sup>Optional</sup> <a name="enforcementInRecord" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.enforcementInRecord"></a>
+
+```typescript
+public readonly enforcementInRecord: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#enforcement_in_record TimestreamwriteTable#enforcement_in_record}.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/timestreamwrite_table#name TimestreamwriteTable#name}.
 
 ---
 
@@ -2384,6 +2529,626 @@ public readonly internalValue: TimestreamwriteTableRetentionProperties;
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties">TimestreamwriteTableRetentionProperties</a>
+
+---
+
+
+### TimestreamwriteTableSchemaCompositePartitionKeyOutputReference <a name="TimestreamwriteTableSchemaCompositePartitionKeyOutputReference" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer"></a>
+
+```typescript
+import { timestreamwriteTable } from '@cdktf/provider-aws'
+
+new timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resetEnforcementInRecord">resetEnforcementInRecord</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnforcementInRecord` <a name="resetEnforcementInRecord" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resetEnforcementInRecord"></a>
+
+```typescript
+public resetEnforcementInRecord(): void
+```
+
+##### `resetName` <a name="resetName" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.enforcementInRecordInput">enforcementInRecordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.enforcementInRecord">enforcementInRecord</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enforcementInRecordInput`<sup>Optional</sup> <a name="enforcementInRecordInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.enforcementInRecordInput"></a>
+
+```typescript
+public readonly enforcementInRecordInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enforcementInRecord`<sup>Required</sup> <a name="enforcementInRecord" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.enforcementInRecord"></a>
+
+```typescript
+public readonly enforcementInRecord: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: TimestreamwriteTableSchemaCompositePartitionKey;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a>
+
+---
+
+
+### TimestreamwriteTableSchemaOutputReference <a name="TimestreamwriteTableSchemaOutputReference" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer"></a>
+
+```typescript
+import { timestreamwriteTable } from '@cdktf/provider-aws'
+
+new timestreamwriteTable.TimestreamwriteTableSchemaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.putCompositePartitionKey">putCompositePartitionKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.resetCompositePartitionKey">resetCompositePartitionKey</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCompositePartitionKey` <a name="putCompositePartitionKey" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.putCompositePartitionKey"></a>
+
+```typescript
+public putCompositePartitionKey(value: TimestreamwriteTableSchemaCompositePartitionKey): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.putCompositePartitionKey.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a>
+
+---
+
+##### `resetCompositePartitionKey` <a name="resetCompositePartitionKey" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.resetCompositePartitionKey"></a>
+
+```typescript
+public resetCompositePartitionKey(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.compositePartitionKey">compositePartitionKey</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference">TimestreamwriteTableSchemaCompositePartitionKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.compositePartitionKeyInput">compositePartitionKeyInput</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `compositePartitionKey`<sup>Required</sup> <a name="compositePartitionKey" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.compositePartitionKey"></a>
+
+```typescript
+public readonly compositePartitionKey: TimestreamwriteTableSchemaCompositePartitionKeyOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference">TimestreamwriteTableSchemaCompositePartitionKeyOutputReference</a>
+
+---
+
+##### `compositePartitionKeyInput`<sup>Optional</sup> <a name="compositePartitionKeyInput" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.compositePartitionKeyInput"></a>
+
+```typescript
+public readonly compositePartitionKeyInput: TimestreamwriteTableSchemaCompositePartitionKey;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey">TimestreamwriteTableSchemaCompositePartitionKey</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: TimestreamwriteTableSchema;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema">TimestreamwriteTableSchema</a>
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_organizations_organizational_unit`
 
-Refer to the Terraform Registory for docs: [`aws_organizations_organizational_unit`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit).
+Refer to the Terraform Registory for docs: [`aws_organizations_organizational_unit`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit).
 
 # `organizationsOrganizationalUnit` Submodule <a name="`organizationsOrganizationalUnit` Submodule" id="@cdktf/provider-aws.organizationsOrganizationalUnit"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_organizations_organizational_un
 
 ### OrganizationsOrganizationalUnit <a name="OrganizationsOrganizationalUnit" id="@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer"></a>
 
@@ -44,11 +44,11 @@ organizationsOrganizationalUnit.OrganizationsOrganizationalUnit(
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.parentId">parent_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.parentId">parent_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnit.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}.
 
 ---
 
@@ -844,11 +844,11 @@ organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig(
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.parentId">parent_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}. |
-| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.parentId">parent_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}. |
+| <code><a href="#@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}. |
 
 ---
 
@@ -930,7 +930,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}.
 
 ---
 
@@ -942,7 +942,7 @@ parent_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}.
 
 ---
 
@@ -954,7 +954,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}.
 
 ---
 
@@ -981,7 +981,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}.
 
 ---
 

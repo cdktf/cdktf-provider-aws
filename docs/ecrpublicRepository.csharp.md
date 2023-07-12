@@ -1,6 +1,6 @@
 # `aws_ecrpublic_repository`
 
-Refer to the Terraform Registory for docs: [`aws_ecrpublic_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository).
+Refer to the Terraform Registory for docs: [`aws_ecrpublic_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository).
 
 # `ecrpublicRepository` Submodule <a name="`ecrpublicRepository` Submodule" id="@cdktf/provider-aws.ecrpublicRepository"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ecrpublic_repository`](https://
 
 ### EcrpublicRepository <a name="EcrpublicRepository" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository aws_ecrpublic_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository aws_ecrpublic_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepository.Initializer"></a>
 
@@ -786,12 +786,12 @@ new EcrpublicRepositoryCatalogData {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.aboutText">AboutText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.architectures">Architectures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.logoImageBlob">LogoImageBlob</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.operatingSystems">OperatingSystems</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.usageText">UsageText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.aboutText">AboutText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.architectures">Architectures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.logoImageBlob">LogoImageBlob</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.operatingSystems">OperatingSystems</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData.property.usageText">UsageText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}. |
 
 ---
 
@@ -803,7 +803,7 @@ public string AboutText { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#about_text EcrpublicRepository#about_text}.
 
 ---
 
@@ -815,7 +815,7 @@ public string[] Architectures { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#architectures EcrpublicRepository#architectures}.
 
 ---
 
@@ -827,7 +827,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#description EcrpublicRepository#description}.
 
 ---
 
@@ -839,7 +839,7 @@ public string LogoImageBlob { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#logo_image_blob EcrpublicRepository#logo_image_blob}.
 
 ---
 
@@ -851,7 +851,7 @@ public string[] OperatingSystems { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#operating_systems EcrpublicRepository#operating_systems}.
 
 ---
 
@@ -863,7 +863,7 @@ public string UsageText { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#usage_text EcrpublicRepository#usage_text}.
 
 ---
 
@@ -903,12 +903,12 @@ new EcrpublicRepositoryConfig {
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}. |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.catalogData">CatalogData</a></code> | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogData">EcrpublicRepositoryCatalogData</a></code> | catalog_data block. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}. |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts">EcrpublicRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -991,7 +991,7 @@ public string RepositoryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public EcrpublicRepositoryCatalogData CatalogData { get; set; }
 
 catalog_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
 
 ---
 
@@ -1017,7 +1017,7 @@ public object ForceDestroy { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1044,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public EcrpublicRepositoryTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
 
 ---
 
@@ -1090,7 +1090,7 @@ new EcrpublicRepositoryTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}. |
+| <code><a href="#@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/ecrpublic_repository#delete EcrpublicRepository#delete}.
 
 ---
 
