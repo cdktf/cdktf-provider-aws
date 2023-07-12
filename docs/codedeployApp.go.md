@@ -1,6 +1,6 @@
 # `aws_codedeploy_app`
 
-Refer to the Terraform Registory for docs: [`aws_codedeploy_app`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app).
+Refer to the Terraform Registory for docs: [`aws_codedeploy_app`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app).
 
 # `codedeployApp` Submodule <a name="`codedeployApp` Submodule" id="@cdktf/provider-aws.codedeployApp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_codedeploy_app`](https://regist
 
 ### CodedeployApp <a name="CodedeployApp" id="@cdktf/provider-aws.codedeployApp.CodedeployApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app aws_codedeploy_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app aws_codedeploy_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
 
 codedeployapp.NewCodedeployApp(scope Construct, id *string, config CodedeployAppConfig) CodedeployApp
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
 
 codedeployapp.CodedeployApp_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
 
 codedeployapp.CodedeployApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ codedeployapp.CodedeployApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
 
 codedeployapp.CodedeployApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
 
 &codedeployapp.CodedeployAppConfig {
 	Connection: interface{},
@@ -726,11 +726,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp"
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#name CodedeployApp#name}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.computePlatform">ComputePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#id CodedeployApp#id}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#tags CodedeployApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#name CodedeployApp#name}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.computePlatform">ComputePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#id CodedeployApp#id}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}. |
+| <code><a href="#@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}. |
 
 ---
 
@@ -812,7 +812,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#name CodedeployApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#name CodedeployApp#name}.
 
 ---
 
@@ -824,7 +824,7 @@ ComputePlatform *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#compute_platform CodedeployApp#compute_platform}.
 
 ---
 
@@ -836,7 +836,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#id CodedeployApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#id CodedeployApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#tags CodedeployApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#tags CodedeployApp#tags}.
 
 ---
 
@@ -863,7 +863,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/codedeploy_app#tags_all CodedeployApp#tags_all}.
 
 ---
 

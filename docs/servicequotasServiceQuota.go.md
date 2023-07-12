@@ -1,6 +1,6 @@
 # `aws_servicequotas_service_quota`
 
-Refer to the Terraform Registory for docs: [`aws_servicequotas_service_quota`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota).
+Refer to the Terraform Registory for docs: [`aws_servicequotas_service_quota`](https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota).
 
 # `servicequotasServiceQuota` Submodule <a name="`servicequotasServiceQuota` Submodule" id="@cdktf/provider-aws.servicequotasServiceQuota"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_servicequotas_service_quota`](h
 
 ### ServicequotasServiceQuota <a name="ServicequotasServiceQuota" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota aws_servicequotas_service_quota}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota aws_servicequotas_service_quota}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuota(scope Construct, id *string, config ServicequotasServiceQuotaConfig) ServicequotasServiceQuota
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ servicequotasservicequota.ServicequotasServiceQuota_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaConfig {
 	Connection: interface{},
@@ -726,10 +726,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota
 | <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.quotaCode">QuotaCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#quota_code ServicequotasServiceQuota#quota_code}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.serviceCode">ServiceCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#service_code ServicequotasServiceQuota#service_code}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#value ServicequotasServiceQuota#value}. |
-| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#id ServicequotasServiceQuota#id}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.quotaCode">QuotaCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#quota_code ServicequotasServiceQuota#quota_code}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.serviceCode">ServiceCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#service_code ServicequotasServiceQuota#service_code}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#value ServicequotasServiceQuota#value}. |
+| <code><a href="#@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#id ServicequotasServiceQuota#id}. |
 
 ---
 
@@ -811,7 +811,7 @@ QuotaCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#quota_code ServicequotasServiceQuota#quota_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#quota_code ServicequotasServiceQuota#quota_code}.
 
 ---
 
@@ -823,7 +823,7 @@ ServiceCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#service_code ServicequotasServiceQuota#service_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#service_code ServicequotasServiceQuota#service_code}.
 
 ---
 
@@ -835,7 +835,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#value ServicequotasServiceQuota#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#value ServicequotasServiceQuota#value}.
 
 ---
 
@@ -847,7 +847,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicequotas_service_quota#id ServicequotasServiceQuota#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.7.0/docs/resources/servicequotas_service_quota#id ServicequotasServiceQuota#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -859,7 +859,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaUsageMetric {
 
@@ -872,7 +872,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 &servicequotasservicequota.ServicequotasServiceQuotaUsageMetricMetricDimensions {
 
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicequotasServiceQuotaUsageMetricList
 ```
@@ -1019,7 +1019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicequotasServiceQuotaUsageMetricMetricDimensionsList
 ```
@@ -1151,7 +1151,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicequotasServiceQuotaUsageMetricMetricDimensionsOutputReference
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() ServicequotasServiceQuotaUsageMetricMetricDimensions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuotaUsageMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicequotasservicequota"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotasservicequota"
 
 servicequotasservicequota.NewServicequotasServiceQuotaUsageMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicequotasServiceQuotaUsageMetricOutputReference
 ```
