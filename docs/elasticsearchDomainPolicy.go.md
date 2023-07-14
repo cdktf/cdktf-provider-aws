@@ -1,6 +1,6 @@
 # `aws_elasticsearch_domain_policy`
 
-Refer to the Terraform Registory for docs: [`aws_elasticsearch_domain_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy).
+Refer to the Terraform Registory for docs: [`aws_elasticsearch_domain_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy).
 
 # `elasticsearchDomainPolicy` Submodule <a name="`elasticsearchDomainPolicy` Submodule" id="@cdktf/provider-aws.elasticsearchDomainPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_elasticsearch_domain_policy`](h
 
 ### ElasticsearchDomainPolicy <a name="ElasticsearchDomainPolicy" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.NewElasticsearchDomainPolicy(scope Construct, id *string, config ElasticsearchDomainPolicyConfig) ElasticsearchDomainPolicy
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.ElasticsearchDomainPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 &elasticsearchdomainpolicy.ElasticsearchDomainPolicyConfig {
 	Connection: interface{},
@@ -643,7 +643,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy
 	AccessPolicies: *string,
 	DomainName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts,
 }
 ```
 
@@ -658,9 +658,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}. |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}. |
 | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts">ElasticsearchDomainPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -743,7 +743,7 @@ AccessPolicies *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}.
 
 ---
 
@@ -755,7 +755,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}.
 
 ---
 
@@ -767,7 +767,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -784,7 +784,7 @@ Timeouts ElasticsearchDomainPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
 
 ---
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 &elasticsearchdomainpolicy.ElasticsearchDomainPolicyTimeouts {
 	Delete: *string,
@@ -805,8 +805,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}. |
-| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}. |
+| <code><a href="#@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}. |
 
 ---
 
@@ -818,7 +818,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}.
 
 ---
 
@@ -830,7 +830,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}.
 
 ---
 
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainpolicy"
 
 elasticsearchdomainpolicy.NewElasticsearchDomainPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainPolicyTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `aws_sqs_queue_policy`
 
-Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy).
+Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy).
 
 # `sqsQueuePolicy` Submodule <a name="`sqsQueuePolicy` Submodule" id="@cdktf/provider-aws.sqsQueuePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_sqs_queue_policy`](https://regi
 
 ### SqsQueuePolicy <a name="SqsQueuePolicy" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy aws_sqs_queue_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy aws_sqs_queue_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ new SqsQueuePolicyConfig {
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}. |
-| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.policy">Policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.queueUrl">QueueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}. |
+| <code><a href="#@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public string Policy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#policy SqsQueuePolicy#policy}.
 
 ---
 
@@ -711,7 +711,7 @@ public string QueueUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#queue_url SqsQueuePolicy#queue_url}.
 
 ---
 
@@ -723,7 +723,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/sqs_queue_policy#id SqsQueuePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
