@@ -1,6 +1,6 @@
 # `aws_ssmcontacts_plan`
 
-Refer to the Terraform Registory for docs: [`aws_ssmcontacts_plan`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan).
+Refer to the Terraform Registory for docs: [`aws_ssmcontacts_plan`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan).
 
 # `ssmcontactsPlan` Submodule <a name="`ssmcontactsPlan` Submodule" id="@cdktf/provider-aws.ssmcontactsPlan"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ssmcontacts_plan`](https://regi
 
 ### SsmcontactsPlan <a name="SsmcontactsPlan" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan aws_ssmcontacts_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlan(scope Construct, id *string, config SsmcontactsPlanConfig) SsmcontactsPlan
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ ssmcontactsplan.SsmcontactsPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.SsmcontactsPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanConfig {
 	Connection: interface{},
@@ -628,9 +628,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.contactId">ContactId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.contactId">ContactId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}. |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.stage">Stage</a></code> | <code>interface{}</code> | stage block. |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}. |
 
 ---
 
@@ -712,7 +712,7 @@ ContactId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}.
 
 ---
 
@@ -726,7 +726,7 @@ Stage interface{}
 
 stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
 
 ---
 
@@ -738,7 +738,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#id SsmcontactsPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -750,7 +750,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStage {
 	DurationInMinutes: *f64,
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage.property.durationInMinutes">DurationInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage.property.durationInMinutes">DurationInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}. |
 | <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStage.property.target">Target</a></code> | <code>interface{}</code> | target block. |
 
 ---
@@ -775,7 +775,7 @@ DurationInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#duration_in_minutes SsmcontactsPlan#duration_in_minutes}.
 
 ---
 
@@ -789,7 +789,7 @@ Target interface{}
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
 
 ---
 
@@ -798,11 +798,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTarget {
-	ChannelTargetInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo,
-	ContactTargetInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo,
+	ChannelTargetInfo: github.com/cdktf/cdktf-provider-aws-go/aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo,
+	ContactTargetInfo: github.com/cdktf/cdktf-provider-aws-go/aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo,
 }
 ```
 
@@ -825,7 +825,7 @@ ChannelTargetInfo SsmcontactsPlanStageTargetChannelTargetInfo
 
 channel_target_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#channel_target_info SsmcontactsPlan#channel_target_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#channel_target_info SsmcontactsPlan#channel_target_info}
 
 ---
 
@@ -839,7 +839,7 @@ ContactTargetInfo SsmcontactsPlanStageTargetContactTargetInfo
 
 contact_target_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_target_info SsmcontactsPlan#contact_target_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_target_info SsmcontactsPlan#contact_target_info}
 
 ---
 
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTargetChannelTargetInfo {
 	ContactChannelId: *string,
@@ -860,8 +860,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.property.contactChannelId">ContactChannelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}. |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.property.retryIntervalInMinutes">RetryIntervalInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.property.contactChannelId">ContactChannelId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfo.property.retryIntervalInMinutes">RetryIntervalInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}. |
 
 ---
 
@@ -873,7 +873,7 @@ ContactChannelId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_channel_id SsmcontactsPlan#contact_channel_id}.
 
 ---
 
@@ -885,7 +885,7 @@ RetryIntervalInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#retry_interval_in_minutes SsmcontactsPlan#retry_interval_in_minutes}.
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 &ssmcontactsplan.SsmcontactsPlanStageTargetContactTargetInfo {
 	IsEssential: interface{},
@@ -906,8 +906,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.property.isEssential">IsEssential</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}. |
-| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.property.contactId">ContactId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.property.isEssential">IsEssential</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}. |
+| <code><a href="#@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfo.property.contactId">ContactId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}. |
 
 ---
 
@@ -919,7 +919,7 @@ IsEssential interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#is_essential SsmcontactsPlan#is_essential}.
 
 ---
 
@@ -931,7 +931,7 @@ ContactId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ssmcontacts_plan#contact_id SsmcontactsPlan#contact_id}.
 
 ---
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmcontactsPlanStageList
 ```
@@ -1085,7 +1085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmcontactsPlanStageOutputReference
 ```
@@ -1416,7 +1416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetChannelTargetInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetChannelTargetInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmcontactsPlanStageTargetChannelTargetInfoOutputReference
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() SsmcontactsPlanStageTargetChannelTargetInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetContactTargetInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetContactTargetInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmcontactsPlanStageTargetContactTargetInfoOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() SsmcontactsPlanStageTargetContactTargetInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmcontactsPlanStageTargetList
 ```
@@ -2159,7 +2159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmcontactsPlan.SsmcontactsPlanStageTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ssmcontactsplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmcontactsplan"
 
 ssmcontactsplan.NewSsmcontactsPlanStageTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmcontactsPlanStageTargetOutputReference
 ```

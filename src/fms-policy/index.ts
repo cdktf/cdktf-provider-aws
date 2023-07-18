@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +8,82 @@ import * as cdktf from 'cdktf';
 
 export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}
   */
   readonly deleteAllPolicyResources?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#delete_unused_fm_managed_resources FmsPolicy#delete_unused_fm_managed_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#delete_unused_fm_managed_resources FmsPolicy#delete_unused_fm_managed_resources}
   */
   readonly deleteUnusedFmManagedResources?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#description FmsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#description FmsPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#exclude_resource_tags FmsPolicy#exclude_resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#exclude_resource_tags FmsPolicy#exclude_resource_tags}
   */
   readonly excludeResourceTags: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#id FmsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#id FmsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#name FmsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#name FmsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#remediation_enabled FmsPolicy#remediation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#remediation_enabled FmsPolicy#remediation_enabled}
   */
   readonly remediationEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#resource_tags FmsPolicy#resource_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#resource_tags FmsPolicy#resource_tags}
   */
   readonly resourceTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#resource_type FmsPolicy#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#resource_type FmsPolicy#resource_type}
   */
   readonly resourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#resource_type_list FmsPolicy#resource_type_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#resource_type_list FmsPolicy#resource_type_list}
   */
   readonly resourceTypeList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#tags FmsPolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#tags FmsPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#tags_all FmsPolicy#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#tags_all FmsPolicy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * exclude_map block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#exclude_map FmsPolicy#exclude_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#exclude_map FmsPolicy#exclude_map}
   */
   readonly excludeMap?: FmsPolicyExcludeMap;
   /**
   * include_map block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#include_map FmsPolicy#include_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#include_map FmsPolicy#include_map}
   */
   readonly includeMap?: FmsPolicyIncludeMap;
   /**
   * security_service_policy_data block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#security_service_policy_data FmsPolicy#security_service_policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#security_service_policy_data FmsPolicy#security_service_policy_data}
   */
   readonly securityServicePolicyData: FmsPolicySecurityServicePolicyData;
 }
 export interface FmsPolicyExcludeMap {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#account FmsPolicy#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#account FmsPolicy#account}
   */
   readonly account?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#orgunit FmsPolicy#orgunit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#orgunit FmsPolicy#orgunit}
   */
   readonly orgunit?: string[];
 }
@@ -176,11 +171,11 @@ export class FmsPolicyExcludeMapOutputReference extends cdktf.ComplexObject {
 }
 export interface FmsPolicyIncludeMap {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#account FmsPolicy#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#account FmsPolicy#account}
   */
   readonly account?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#orgunit FmsPolicy#orgunit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#orgunit FmsPolicy#orgunit}
   */
   readonly orgunit?: string[];
 }
@@ -266,15 +261,247 @@ export class FmsPolicyIncludeMapOutputReference extends cdktf.ComplexObject {
     return this._orgunit;
   }
 }
+export interface FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#firewall_deployment_model FmsPolicy#firewall_deployment_model}
+  */
+  readonly firewallDeploymentModel?: string;
+}
+
+export function fmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    firewall_deployment_model: cdktf.stringToTerraform(struct!.firewallDeploymentModel),
+  }
+}
+
+export class FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._firewallDeploymentModel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firewallDeploymentModel = this._firewallDeploymentModel;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._firewallDeploymentModel = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._firewallDeploymentModel = value.firewallDeploymentModel;
+    }
+  }
+
+  // firewall_deployment_model - computed: false, optional: true, required: false
+  private _firewallDeploymentModel?: string; 
+  public get firewallDeploymentModel() {
+    return this.getStringAttribute('firewall_deployment_model');
+  }
+  public set firewallDeploymentModel(value: string) {
+    this._firewallDeploymentModel = value;
+  }
+  public resetFirewallDeploymentModel() {
+    this._firewallDeploymentModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firewallDeploymentModelInput() {
+    return this._firewallDeploymentModel;
+  }
+}
+export interface FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#firewall_deployment_model FmsPolicy#firewall_deployment_model}
+  */
+  readonly firewallDeploymentModel?: string;
+}
+
+export function fmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference | FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    firewall_deployment_model: cdktf.stringToTerraform(struct!.firewallDeploymentModel),
+  }
+}
+
+export class FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._firewallDeploymentModel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firewallDeploymentModel = this._firewallDeploymentModel;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._firewallDeploymentModel = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._firewallDeploymentModel = value.firewallDeploymentModel;
+    }
+  }
+
+  // firewall_deployment_model - computed: false, optional: true, required: false
+  private _firewallDeploymentModel?: string; 
+  public get firewallDeploymentModel() {
+    return this.getStringAttribute('firewall_deployment_model');
+  }
+  public set firewallDeploymentModel(value: string) {
+    this._firewallDeploymentModel = value;
+  }
+  public resetFirewallDeploymentModel() {
+    this._firewallDeploymentModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firewallDeploymentModelInput() {
+    return this._firewallDeploymentModel;
+  }
+}
+export interface FmsPolicySecurityServicePolicyDataPolicyOption {
+  /**
+  * network_firewall_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#network_firewall_policy FmsPolicy#network_firewall_policy}
+  */
+  readonly networkFirewallPolicy?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy;
+  /**
+  * third_party_firewall_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#third_party_firewall_policy FmsPolicy#third_party_firewall_policy}
+  */
+  readonly thirdPartyFirewallPolicy?: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy;
+}
+
+export function fmsPolicySecurityServicePolicyDataPolicyOptionToTerraform(struct?: FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference | FmsPolicySecurityServicePolicyDataPolicyOption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_firewall_policy: fmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyToTerraform(struct!.networkFirewallPolicy),
+    third_party_firewall_policy: fmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyToTerraform(struct!.thirdPartyFirewallPolicy),
+  }
+}
+
+export class FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FmsPolicySecurityServicePolicyDataPolicyOption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkFirewallPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkFirewallPolicy = this._networkFirewallPolicy?.internalValue;
+    }
+    if (this._thirdPartyFirewallPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thirdPartyFirewallPolicy = this._thirdPartyFirewallPolicy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FmsPolicySecurityServicePolicyDataPolicyOption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._networkFirewallPolicy.internalValue = undefined;
+      this._thirdPartyFirewallPolicy.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._networkFirewallPolicy.internalValue = value.networkFirewallPolicy;
+      this._thirdPartyFirewallPolicy.internalValue = value.thirdPartyFirewallPolicy;
+    }
+  }
+
+  // network_firewall_policy - computed: false, optional: true, required: false
+  private _networkFirewallPolicy = new FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicyOutputReference(this, "network_firewall_policy");
+  public get networkFirewallPolicy() {
+    return this._networkFirewallPolicy;
+  }
+  public putNetworkFirewallPolicy(value: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy) {
+    this._networkFirewallPolicy.internalValue = value;
+  }
+  public resetNetworkFirewallPolicy() {
+    this._networkFirewallPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkFirewallPolicyInput() {
+    return this._networkFirewallPolicy.internalValue;
+  }
+
+  // third_party_firewall_policy - computed: false, optional: true, required: false
+  private _thirdPartyFirewallPolicy = new FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicyOutputReference(this, "third_party_firewall_policy");
+  public get thirdPartyFirewallPolicy() {
+    return this._thirdPartyFirewallPolicy;
+  }
+  public putThirdPartyFirewallPolicy(value: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy) {
+    this._thirdPartyFirewallPolicy.internalValue = value;
+  }
+  public resetThirdPartyFirewallPolicy() {
+    this._thirdPartyFirewallPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thirdPartyFirewallPolicyInput() {
+    return this._thirdPartyFirewallPolicy.internalValue;
+  }
+}
 export interface FmsPolicySecurityServicePolicyData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#managed_service_data FmsPolicy#managed_service_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#managed_service_data FmsPolicy#managed_service_data}
   */
   readonly managedServiceData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy#type FmsPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#type FmsPolicy#type}
   */
   readonly type: string;
+  /**
+  * policy_option block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy#policy_option FmsPolicy#policy_option}
+  */
+  readonly policyOption?: FmsPolicySecurityServicePolicyDataPolicyOption;
 }
 
 export function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurityServicePolicyDataOutputReference | FmsPolicySecurityServicePolicyData): any {
@@ -285,6 +512,7 @@ export function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicy
   return {
     managed_service_data: cdktf.stringToTerraform(struct!.managedServiceData),
     type: cdktf.stringToTerraform(struct!.type),
+    policy_option: fmsPolicySecurityServicePolicyDataPolicyOptionToTerraform(struct!.policyOption),
   }
 }
 
@@ -310,6 +538,10 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
+    if (this._policyOption?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyOption = this._policyOption?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -318,11 +550,13 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
       this.isEmptyObject = false;
       this._managedServiceData = undefined;
       this._type = undefined;
+      this._policyOption.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._managedServiceData = value.managedServiceData;
       this._type = value.type;
+      this._policyOption.internalValue = value.policyOption;
     }
   }
 
@@ -354,10 +588,26 @@ export class FmsPolicySecurityServicePolicyDataOutputReference extends cdktf.Com
   public get typeInput() {
     return this._type;
   }
+
+  // policy_option - computed: false, optional: true, required: false
+  private _policyOption = new FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference(this, "policy_option");
+  public get policyOption() {
+    return this._policyOption;
+  }
+  public putPolicyOption(value: FmsPolicySecurityServicePolicyDataPolicyOption) {
+    this._policyOption.internalValue = value;
+  }
+  public resetPolicyOption() {
+    this._policyOption.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyOptionInput() {
+    return this._policyOption.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy aws_fms_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy aws_fms_policy}
 */
 export class FmsPolicy extends cdktf.TerraformResource {
 
@@ -371,7 +621,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fms_policy aws_fms_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fms_policy aws_fms_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -382,7 +632,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fms_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_lex_slot_type`
 
-Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type).
+Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type).
 
 # `dataAwsLexSlotType` Submodule <a name="`dataAwsLexSlotType` Submodule" id="@cdktf/provider-aws.dataAwsLexSlotType"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_lex_slot_type`](https://re
 
 ### DataAwsLexSlotType <a name="DataAwsLexSlotType" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type aws_lex_slot_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type aws_lex_slot_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer"></a>
 
@@ -42,9 +42,9 @@ dataAwsLexSlotType.DataAwsLexSlotType(
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
 
 ---
 
@@ -782,9 +782,9 @@ dataAwsLexSlotType.DataAwsLexSlotTypeConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}. |
 
 ---
 
@@ -866,7 +866,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#name DataAwsLexSlotType#name}.
 
 ---
 
@@ -878,7 +878,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#id DataAwsLexSlotType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/lex_slot_type#version DataAwsLexSlotType#version}.
 
 ---
 

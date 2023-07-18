@@ -1,6 +1,6 @@
 # `data_aws_ecs_container_definition`
 
-Refer to the Terraform Registory for docs: [`data_aws_ecs_container_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition).
+Refer to the Terraform Registory for docs: [`data_aws_ecs_container_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition).
 
 # `dataAwsEcsContainerDefinition` Submodule <a name="`dataAwsEcsContainerDefinition` Submodule" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_ecs_container_definition`]
 
 ### DataAwsEcsContainerDefinition <a name="DataAwsEcsContainerDefinition" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.NewDataAwsEcsContainerDefinition(scope Construct, id *string, config DataAwsEcsContainerDefinitionConfig) DataAwsEcsContainerDefinition
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecscontainerdefinition"
 
 &dataawsecscontainerdefinition.DataAwsEcsContainerDefinitionConfig {
 	Connection: interface{},
@@ -681,9 +681,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecscontainerdefini
 | <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}. |
 
 ---
 
@@ -765,7 +765,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}.
 
 ---
 
@@ -777,7 +777,7 @@ TaskDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}.
 
 ---
 
@@ -789,7 +789,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

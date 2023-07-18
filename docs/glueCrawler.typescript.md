@@ -1,6 +1,6 @@
 # `aws_glue_crawler`
 
-Refer to the Terraform Registory for docs: [`aws_glue_crawler`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler).
+Refer to the Terraform Registory for docs: [`aws_glue_crawler`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler).
 
 # `glueCrawler` Submodule <a name="`glueCrawler` Submodule" id="@cdktf/provider-aws.glueCrawler"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_glue_crawler`](https://registry
 
 ### GlueCrawler <a name="GlueCrawler" id="@cdktf/provider-aws.glueCrawler.GlueCrawler"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler aws_glue_crawler}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler aws_glue_crawler}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putCatalogTarget">putCatalogTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putDeltaTarget">putDeltaTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putDynamodbTarget">putDynamodbTarget</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putIcebergTarget">putIcebergTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putJdbcTarget">putJdbcTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putLakeFormationConfiguration">putLakeFormationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.putLineageConfiguration">putLineageConfiguration</a></code> | *No description.* |
@@ -86,6 +87,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetDeltaTarget">resetDeltaTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetDynamodbTarget">resetDynamodbTarget</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetIcebergTarget">resetIcebergTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetJdbcTarget">resetJdbcTarget</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.resetLakeFormationConfiguration">resetLakeFormationConfiguration</a></code> | *No description.* |
@@ -322,6 +324,18 @@ public putDynamodbTarget(value: IResolvable | GlueCrawlerDynamodbTarget[]): void
 
 ---
 
+##### `putIcebergTarget` <a name="putIcebergTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.putIcebergTarget"></a>
+
+```typescript
+public putIcebergTarget(value: IResolvable | GlueCrawlerIcebergTarget[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.putIcebergTarget.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]
+
+---
+
 ##### `putJdbcTarget` <a name="putJdbcTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.putJdbcTarget"></a>
 
 ```typescript
@@ -440,6 +454,12 @@ public resetDescription(): void
 
 ```typescript
 public resetDynamodbTarget(): void
+```
+
+##### `resetIcebergTarget` <a name="resetIcebergTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.resetIcebergTarget"></a>
+
+```typescript
+public resetIcebergTarget(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.resetId"></a>
@@ -612,6 +632,7 @@ glueCrawler.GlueCrawler.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.catalogTarget">catalogTarget</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTargetList">GlueCrawlerCatalogTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.deltaTarget">deltaTarget</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTargetList">GlueCrawlerDeltaTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.dynamodbTarget">dynamodbTarget</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTargetList">GlueCrawlerDynamodbTargetList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.icebergTarget">icebergTarget</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList">GlueCrawlerIcebergTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.jdbcTarget">jdbcTarget</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTargetList">GlueCrawlerJdbcTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.lakeFormationConfiguration">lakeFormationConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfigurationOutputReference">GlueCrawlerLakeFormationConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.lineageConfiguration">lineageConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference">GlueCrawlerLineageConfigurationOutputReference</a></code> | *No description.* |
@@ -626,6 +647,7 @@ glueCrawler.GlueCrawler.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.deltaTargetInput">deltaTargetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget">GlueCrawlerDeltaTarget</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.dynamodbTargetInput">dynamodbTargetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.icebergTargetInput">icebergTargetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.jdbcTargetInput">jdbcTargetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget">GlueCrawlerJdbcTarget</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawler.property.lakeFormationConfigurationInput">lakeFormationConfigurationInput</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration">GlueCrawlerLakeFormationConfiguration</a></code> | *No description.* |
@@ -838,6 +860,16 @@ public readonly dynamodbTarget: GlueCrawlerDynamodbTargetList;
 
 ---
 
+##### `icebergTarget`<sup>Required</sup> <a name="icebergTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.property.icebergTarget"></a>
+
+```typescript
+public readonly icebergTarget: GlueCrawlerIcebergTargetList;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList">GlueCrawlerIcebergTargetList</a>
+
+---
+
 ##### `jdbcTarget`<sup>Required</sup> <a name="jdbcTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.property.jdbcTarget"></a>
 
 ```typescript
@@ -975,6 +1007,16 @@ public readonly dynamodbTargetInput: IResolvable | GlueCrawlerDynamodbTarget[];
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>[]
+
+---
+
+##### `icebergTargetInput`<sup>Optional</sup> <a name="icebergTargetInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawler.property.icebergTargetInput"></a>
+
+```typescript
+public readonly icebergTargetInput: IResolvable | GlueCrawlerIcebergTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]
 
 ---
 
@@ -1282,11 +1324,11 @@ const glueCrawlerCatalogTarget: glueCrawler.GlueCrawlerCatalogTarget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.tables">tables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tables GlueCrawler#tables}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.eventQueueArn">eventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.tables">tables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tables GlueCrawler#tables}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget.property.eventQueueArn">eventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
 
 ---
 
@@ -1298,7 +1340,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 
 ---
 
@@ -1310,7 +1352,7 @@ public readonly tables: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tables GlueCrawler#tables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tables GlueCrawler#tables}.
 
 ---
 
@@ -1322,7 +1364,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -1334,7 +1376,7 @@ public readonly dlqEventQueueArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
 
 ---
 
@@ -1346,7 +1388,7 @@ public readonly eventQueueArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
 
 ---
 
@@ -1371,28 +1413,29 @@ const glueCrawlerConfig: glueCrawler.GlueCrawlerConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#name GlueCrawler#name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#role GlueCrawler#role}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.databaseName">databaseName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#name GlueCrawler#name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#role GlueCrawler#role}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.catalogTarget">catalogTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerCatalogTarget">GlueCrawlerCatalogTarget</a>[]</code> | catalog_target block. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.classifiers">classifiers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.configuration">configuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.classifiers">classifiers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.configuration">configuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.deltaTarget">deltaTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget">GlueCrawlerDeltaTarget</a>[]</code> | delta_target block. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#description GlueCrawler#description}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#description GlueCrawler#description}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.dynamodbTarget">dynamodbTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>[]</code> | dynamodb_target block. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#id GlueCrawler#id}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.icebergTarget">icebergTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]</code> | iceberg_target block. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#id GlueCrawler#id}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.jdbcTarget">jdbcTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget">GlueCrawlerJdbcTarget</a>[]</code> | jdbc_target block. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.lakeFormationConfiguration">lakeFormationConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration">GlueCrawlerLakeFormationConfiguration</a></code> | lake_formation_configuration block. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.lineageConfiguration">lineageConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration">GlueCrawlerLineageConfiguration</a></code> | lineage_configuration block. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.mongodbTarget">mongodbTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget">GlueCrawlerMongodbTarget</a>[]</code> | mongodb_target block. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.recrawlPolicy">recrawlPolicy</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy">GlueCrawlerRecrawlPolicy</a></code> | recrawl_policy block. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.s3Target">s3Target</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target">GlueCrawlerS3Target</a>[]</code> | s3_target block. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}. |
 | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.schemaChangePolicy">schemaChangePolicy</a></code> | <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy">GlueCrawlerSchemaChangePolicy</a></code> | schema_change_policy block. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.securityConfiguration">securityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tablePrefix">tablePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.securityConfiguration">securityConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tablePrefix">tablePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tags GlueCrawler#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}. |
 
 ---
 
@@ -1474,7 +1517,7 @@ public readonly databaseName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#database_name GlueCrawler#database_name}.
 
 ---
 
@@ -1486,7 +1529,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#name GlueCrawler#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#name GlueCrawler#name}.
 
 ---
 
@@ -1498,7 +1541,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#role GlueCrawler#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#role GlueCrawler#role}.
 
 ---
 
@@ -1512,7 +1555,7 @@ public readonly catalogTarget: IResolvable | GlueCrawlerCatalogTarget[];
 
 catalog_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#catalog_target GlueCrawler#catalog_target}
 
 ---
 
@@ -1524,7 +1567,7 @@ public readonly classifiers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#classifiers GlueCrawler#classifiers}.
 
 ---
 
@@ -1536,7 +1579,7 @@ public readonly configuration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#configuration GlueCrawler#configuration}.
 
 ---
 
@@ -1550,7 +1593,7 @@ public readonly deltaTarget: IResolvable | GlueCrawlerDeltaTarget[];
 
 delta_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#delta_target GlueCrawler#delta_target}
 
 ---
 
@@ -1562,7 +1605,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#description GlueCrawler#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#description GlueCrawler#description}.
 
 ---
 
@@ -1576,7 +1619,21 @@ public readonly dynamodbTarget: IResolvable | GlueCrawlerDynamodbTarget[];
 
 dynamodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#dynamodb_target GlueCrawler#dynamodb_target}
+
+---
+
+##### `icebergTarget`<sup>Optional</sup> <a name="icebergTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerConfig.property.icebergTarget"></a>
+
+```typescript
+public readonly icebergTarget: IResolvable | GlueCrawlerIcebergTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]
+
+iceberg_target block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#iceberg_target GlueCrawler#iceberg_target}
 
 ---
 
@@ -1588,7 +1645,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#id GlueCrawler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#id GlueCrawler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1605,7 +1662,7 @@ public readonly jdbcTarget: IResolvable | GlueCrawlerJdbcTarget[];
 
 jdbc_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
 
 ---
 
@@ -1619,7 +1676,7 @@ public readonly lakeFormationConfiguration: GlueCrawlerLakeFormationConfiguratio
 
 lake_formation_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
 
 ---
 
@@ -1633,7 +1690,7 @@ public readonly lineageConfiguration: GlueCrawlerLineageConfiguration;
 
 lineage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}
 
 ---
 
@@ -1647,7 +1704,7 @@ public readonly mongodbTarget: IResolvable | GlueCrawlerMongodbTarget[];
 
 mongodb_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#mongodb_target GlueCrawler#mongodb_target}
 
 ---
 
@@ -1661,7 +1718,7 @@ public readonly recrawlPolicy: GlueCrawlerRecrawlPolicy;
 
 recrawl_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#recrawl_policy GlueCrawler#recrawl_policy}
 
 ---
 
@@ -1675,7 +1732,7 @@ public readonly s3Target: IResolvable | GlueCrawlerS3Target[];
 
 s3_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#s3_target GlueCrawler#s3_target}
 
 ---
 
@@ -1687,7 +1744,7 @@ public readonly schedule: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#schedule GlueCrawler#schedule}.
 
 ---
 
@@ -1701,7 +1758,7 @@ public readonly schemaChangePolicy: GlueCrawlerSchemaChangePolicy;
 
 schema_change_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#schema_change_policy GlueCrawler#schema_change_policy}
 
 ---
 
@@ -1713,7 +1770,7 @@ public readonly securityConfiguration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#security_configuration GlueCrawler#security_configuration}.
 
 ---
 
@@ -1725,7 +1782,7 @@ public readonly tablePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#table_prefix GlueCrawler#table_prefix}.
 
 ---
 
@@ -1737,7 +1794,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tags GlueCrawler#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tags GlueCrawler#tags}.
 
 ---
 
@@ -1749,7 +1806,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#tags_all GlueCrawler#tags_all}.
 
 ---
 
@@ -1767,10 +1824,10 @@ const glueCrawlerDeltaTarget: glueCrawler.GlueCrawlerDeltaTarget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.deltaTables">deltaTables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.writeManifest">writeManifest</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable">createNativeDeltaTable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.deltaTables">deltaTables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.writeManifest">writeManifest</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDeltaTarget.property.createNativeDeltaTable">createNativeDeltaTable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}. |
 
 ---
 
@@ -1782,7 +1839,7 @@ public readonly deltaTables: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#delta_tables GlueCrawler#delta_tables}.
 
 ---
 
@@ -1794,7 +1851,7 @@ public readonly writeManifest: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#write_manifest GlueCrawler#write_manifest}.
 
 ---
 
@@ -1806,7 +1863,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -1818,7 +1875,7 @@ public readonly createNativeDeltaTable: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
 
 ---
 
@@ -1836,9 +1893,9 @@ const glueCrawlerDynamodbTarget: glueCrawler.GlueCrawlerDynamodbTarget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanAll">scanAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanRate">scanRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanAll">scanAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget.property.scanRate">scanRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}. |
 
 ---
 
@@ -1850,7 +1907,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -1862,7 +1919,7 @@ public readonly scanAll: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
 
 ---
 
@@ -1874,7 +1931,76 @@ public readonly scanRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_rate GlueCrawler#scan_rate}.
+
+---
+
+### GlueCrawlerIcebergTarget <a name="GlueCrawlerIcebergTarget" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.Initializer"></a>
+
+```typescript
+import { glueCrawler } from '@cdktf/provider-aws'
+
+const glueCrawlerIcebergTarget: glueCrawler.GlueCrawlerIcebergTarget = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.paths">paths</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#paths GlueCrawler#paths}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+
+---
+
+##### `maximumTraversalDepth`<sup>Required</sup> <a name="maximumTraversalDepth" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.maximumTraversalDepth"></a>
+
+```typescript
+public readonly maximumTraversalDepth: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#maximum_traversal_depth GlueCrawler#maximum_traversal_depth}.
+
+---
+
+##### `paths`<sup>Required</sup> <a name="paths" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.paths"></a>
+
+```typescript
+public readonly paths: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#paths GlueCrawler#paths}.
+
+---
+
+##### `connectionName`<sup>Optional</sup> <a name="connectionName" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.connectionName"></a>
+
+```typescript
+public readonly connectionName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+
+---
+
+##### `exclusions`<sup>Optional</sup> <a name="exclusions" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget.property.exclusions"></a>
+
+```typescript
+public readonly exclusions: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -1892,10 +2018,10 @@ const glueCrawlerJdbcTarget: glueCrawler.GlueCrawlerJdbcTarget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.enableAdditionalMetadata">enableAdditionalMetadata</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.enableAdditionalMetadata">enableAdditionalMetadata</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerJdbcTarget.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
 
 ---
 
@@ -1907,7 +2033,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -1919,7 +2045,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -1931,7 +2057,7 @@ public readonly enableAdditionalMetadata: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}.
 
 ---
 
@@ -1943,7 +2069,7 @@ public readonly exclusions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -1961,8 +2087,8 @@ const glueCrawlerLakeFormationConfiguration: glueCrawler.GlueCrawlerLakeFormatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#account_id GlueCrawler#account_id}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.useLakeFormationCredentials">useLakeFormationCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#account_id GlueCrawler#account_id}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLakeFormationConfiguration.property.useLakeFormationCredentials">useLakeFormationCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}. |
 
 ---
 
@@ -1974,7 +2100,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#account_id GlueCrawler#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#account_id GlueCrawler#account_id}.
 
 ---
 
@@ -1986,7 +2112,7 @@ public readonly useLakeFormationCredentials: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#use_lake_formation_credentials GlueCrawler#use_lake_formation_credentials}.
 
 ---
 
@@ -2004,7 +2130,7 @@ const glueCrawlerLineageConfiguration: glueCrawler.GlueCrawlerLineageConfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration.property.crawlerLineageSettings">crawlerLineageSettings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfiguration.property.crawlerLineageSettings">crawlerLineageSettings</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}. |
 
 ---
 
@@ -2016,7 +2142,7 @@ public readonly crawlerLineageSettings: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}.
 
 ---
 
@@ -2034,9 +2160,9 @@ const glueCrawlerMongodbTarget: glueCrawler.GlueCrawlerMongodbTarget = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.scanAll">scanAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTarget.property.scanAll">scanAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}. |
 
 ---
 
@@ -2048,7 +2174,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2060,7 +2186,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -2072,7 +2198,7 @@ public readonly scanAll: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#scan_all GlueCrawler#scan_all}.
 
 ---
 
@@ -2090,7 +2216,7 @@ const glueCrawlerRecrawlPolicy: glueCrawler.GlueCrawlerRecrawlPolicy = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy.property.recrawlBehavior">recrawlBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicy.property.recrawlBehavior">recrawlBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}. |
 
 ---
 
@@ -2102,7 +2228,7 @@ public readonly recrawlBehavior: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#recrawl_behavior GlueCrawler#recrawl_behavior}.
 
 ---
 
@@ -2120,12 +2246,12 @@ const glueCrawlerS3Target: glueCrawler.GlueCrawlerS3Target = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.eventQueueArn">eventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.sampleSize">sampleSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.dlqEventQueueArn">dlqEventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.eventQueueArn">eventQueueArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.exclusions">exclusions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerS3Target.property.sampleSize">sampleSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}. |
 
 ---
 
@@ -2137,7 +2263,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#path GlueCrawler#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#path GlueCrawler#path}.
 
 ---
 
@@ -2149,7 +2275,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#connection_name GlueCrawler#connection_name}.
 
 ---
 
@@ -2161,7 +2287,7 @@ public readonly dlqEventQueueArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}.
 
 ---
 
@@ -2173,7 +2299,7 @@ public readonly eventQueueArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#event_queue_arn GlueCrawler#event_queue_arn}.
 
 ---
 
@@ -2185,7 +2311,7 @@ public readonly exclusions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#exclusions GlueCrawler#exclusions}.
 
 ---
 
@@ -2197,7 +2323,7 @@ public readonly sampleSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#sample_size GlueCrawler#sample_size}.
 
 ---
 
@@ -2215,8 +2341,8 @@ const glueCrawlerSchemaChangePolicy: glueCrawler.GlueCrawlerSchemaChangePolicy =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.deleteBehavior">deleteBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}. |
-| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.updateBehavior">updateBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.deleteBehavior">deleteBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerSchemaChangePolicy.property.updateBehavior">updateBehavior</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}. |
 
 ---
 
@@ -2228,7 +2354,7 @@ public readonly deleteBehavior: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#delete_behavior GlueCrawler#delete_behavior}.
 
 ---
 
@@ -2240,7 +2366,7 @@ public readonly updateBehavior: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_crawler#update_behavior GlueCrawler#update_behavior}.
 
 ---
 
@@ -3785,6 +3911,518 @@ public readonly internalValue: IResolvable | GlueCrawlerDynamodbTarget;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerDynamodbTarget">GlueCrawlerDynamodbTarget</a>
+
+---
+
+
+### GlueCrawlerIcebergTargetList <a name="GlueCrawlerIcebergTargetList" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer"></a>
+
+```typescript
+import { glueCrawler } from '@cdktf/provider-aws'
+
+new glueCrawler.GlueCrawlerIcebergTargetList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.get"></a>
+
+```typescript
+public get(index: number): GlueCrawlerIcebergTargetOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GlueCrawlerIcebergTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>[]
+
+---
+
+
+### GlueCrawlerIcebergTargetOutputReference <a name="GlueCrawlerIcebergTargetOutputReference" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer"></a>
+
+```typescript
+import { glueCrawler } from '@cdktf/provider-aws'
+
+new glueCrawler.GlueCrawlerIcebergTargetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resetConnectionName">resetConnectionName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resetExclusions">resetExclusions</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetConnectionName` <a name="resetConnectionName" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resetConnectionName"></a>
+
+```typescript
+public resetConnectionName(): void
+```
+
+##### `resetExclusions` <a name="resetExclusions" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.resetExclusions"></a>
+
+```typescript
+public resetExclusions(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.connectionNameInput">connectionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.exclusionsInput">exclusionsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.maximumTraversalDepthInput">maximumTraversalDepthInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.pathsInput">pathsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.connectionName">connectionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.exclusions">exclusions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.maximumTraversalDepth">maximumTraversalDepth</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.paths">paths</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `connectionNameInput`<sup>Optional</sup> <a name="connectionNameInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.connectionNameInput"></a>
+
+```typescript
+public readonly connectionNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `exclusionsInput`<sup>Optional</sup> <a name="exclusionsInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.exclusionsInput"></a>
+
+```typescript
+public readonly exclusionsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `maximumTraversalDepthInput`<sup>Optional</sup> <a name="maximumTraversalDepthInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.maximumTraversalDepthInput"></a>
+
+```typescript
+public readonly maximumTraversalDepthInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `pathsInput`<sup>Optional</sup> <a name="pathsInput" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.pathsInput"></a>
+
+```typescript
+public readonly pathsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `connectionName`<sup>Required</sup> <a name="connectionName" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.connectionName"></a>
+
+```typescript
+public readonly connectionName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `exclusions`<sup>Required</sup> <a name="exclusions" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.exclusions"></a>
+
+```typescript
+public readonly exclusions: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `maximumTraversalDepth`<sup>Required</sup> <a name="maximumTraversalDepth" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.maximumTraversalDepth"></a>
+
+```typescript
+public readonly maximumTraversalDepth: number;
+```
+
+- *Type:* number
+
+---
+
+##### `paths`<sup>Required</sup> <a name="paths" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.paths"></a>
+
+```typescript
+public readonly paths: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTargetOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GlueCrawlerIcebergTarget;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.glueCrawler.GlueCrawlerIcebergTarget">GlueCrawlerIcebergTarget</a>
 
 ---
 
