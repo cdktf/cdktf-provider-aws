@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface FisExperimentTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#id FisExperimentTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#id FisExperimentTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#role_arn FisExperimentTemplate#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#role_arn FisExperimentTemplate#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#tags FisExperimentTemplate#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#tags FisExperimentTemplate#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#tags_all FisExperimentTemplate#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#tags_all FisExperimentTemplate#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#action FisExperimentTemplate#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#action FisExperimentTemplate#action}
   */
   readonly action: FisExperimentTemplateAction[] | cdktf.IResolvable;
   /**
   * log_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#log_configuration FisExperimentTemplate#log_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#log_configuration FisExperimentTemplate#log_configuration}
   */
   readonly logConfiguration?: FisExperimentTemplateLogConfiguration;
   /**
   * stop_condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#stop_condition FisExperimentTemplate#stop_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#stop_condition FisExperimentTemplate#stop_condition}
   */
   readonly stopCondition: FisExperimentTemplateStopCondition[] | cdktf.IResolvable;
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
   */
   readonly target?: FisExperimentTemplateTarget[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#timeouts FisExperimentTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#timeouts FisExperimentTemplate#timeouts}
   */
   readonly timeouts?: FisExperimentTemplateTimeouts;
 }
 export interface FisExperimentTemplateActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -186,11 +181,11 @@ export class FisExperimentTemplateActionParameterList extends cdktf.ComplexList 
 }
 export interface FisExperimentTemplateActionTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -272,31 +267,31 @@ export class FisExperimentTemplateActionTargetOutputReference extends cdktf.Comp
 }
 export interface FisExperimentTemplateAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#action_id FisExperimentTemplate#action_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#action_id FisExperimentTemplate#action_id}
   */
   readonly actionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#description FisExperimentTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#start_after FisExperimentTemplate#start_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#start_after FisExperimentTemplate#start_after}
   */
   readonly startAfter?: string[];
   /**
   * parameter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#parameter FisExperimentTemplate#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#parameter FisExperimentTemplate#parameter}
   */
   readonly parameter?: FisExperimentTemplateActionParameter[] | cdktf.IResolvable;
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#target FisExperimentTemplate#target}
   */
   readonly target?: FisExperimentTemplateActionTarget;
 }
@@ -502,7 +497,7 @@ export class FisExperimentTemplateActionList extends cdktf.ComplexList {
 }
 export interface FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#log_group_arn FisExperimentTemplate#log_group_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#log_group_arn FisExperimentTemplate#log_group_arn}
   */
   readonly logGroupArn: string;
 }
@@ -564,11 +559,11 @@ export class FisExperimentTemplateLogConfigurationCloudwatchLogsConfigurationOut
 }
 export interface FisExperimentTemplateLogConfigurationS3Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#bucket_name FisExperimentTemplate#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#prefix FisExperimentTemplate#prefix}
   */
   readonly prefix?: string;
 }
@@ -653,19 +648,19 @@ export class FisExperimentTemplateLogConfigurationS3ConfigurationOutputReference
 }
 export interface FisExperimentTemplateLogConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#log_schema_version FisExperimentTemplate#log_schema_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#log_schema_version FisExperimentTemplate#log_schema_version}
   */
   readonly logSchemaVersion: number;
   /**
   * cloudwatch_logs_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#cloudwatch_logs_configuration FisExperimentTemplate#cloudwatch_logs_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#cloudwatch_logs_configuration FisExperimentTemplate#cloudwatch_logs_configuration}
   */
   readonly cloudwatchLogsConfiguration?: FisExperimentTemplateLogConfigurationCloudwatchLogsConfiguration;
   /**
   * s3_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#s3_configuration FisExperimentTemplate#s3_configuration}
   */
   readonly s3Configuration?: FisExperimentTemplateLogConfigurationS3Configuration;
 }
@@ -773,11 +768,11 @@ export class FisExperimentTemplateLogConfigurationOutputReference extends cdktf.
 }
 export interface FisExperimentTemplateStopCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#source FisExperimentTemplate#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#source FisExperimentTemplate#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value?: string;
 }
@@ -894,11 +889,11 @@ export class FisExperimentTemplateStopConditionList extends cdktf.ComplexList {
 }
 export interface FisExperimentTemplateTargetFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#path FisExperimentTemplate#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#path FisExperimentTemplate#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#values FisExperimentTemplate#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#values FisExperimentTemplate#values}
   */
   readonly values: string[];
 }
@@ -1012,11 +1007,11 @@ export class FisExperimentTemplateTargetFilterList extends cdktf.ComplexList {
 }
 export interface FisExperimentTemplateTargetResourceTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#key FisExperimentTemplate#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#value FisExperimentTemplate#value}
   */
   readonly value: string;
 }
@@ -1130,35 +1125,35 @@ export class FisExperimentTemplateTargetResourceTagList extends cdktf.ComplexLis
 }
 export interface FisExperimentTemplateTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#name FisExperimentTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#parameters FisExperimentTemplate#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#parameters FisExperimentTemplate#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#resource_arns FisExperimentTemplate#resource_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#resource_arns FisExperimentTemplate#resource_arns}
   */
   readonly resourceArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#resource_type FisExperimentTemplate#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#resource_type FisExperimentTemplate#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#selection_mode FisExperimentTemplate#selection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#selection_mode FisExperimentTemplate#selection_mode}
   */
   readonly selectionMode: string;
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#filter FisExperimentTemplate#filter}
   */
   readonly filter?: FisExperimentTemplateTargetFilter[] | cdktf.IResolvable;
   /**
   * resource_tag block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#resource_tag FisExperimentTemplate#resource_tag}
   */
   readonly resourceTag?: FisExperimentTemplateTargetResourceTag[] | cdktf.IResolvable;
 }
@@ -1384,15 +1379,15 @@ export class FisExperimentTemplateTargetList extends cdktf.ComplexList {
 }
 export interface FisExperimentTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#create FisExperimentTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#create FisExperimentTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#delete FisExperimentTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#delete FisExperimentTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template#update FisExperimentTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template#update FisExperimentTemplate#update}
   */
   readonly update?: string;
 }
@@ -1513,7 +1508,7 @@ export class FisExperimentTemplateTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template aws_fis_experiment_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template aws_fis_experiment_template}
 */
 export class FisExperimentTemplate extends cdktf.TerraformResource {
 
@@ -1527,7 +1522,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1538,7 +1533,7 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fis_experiment_template',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_iot_certificate`
 
-Refer to the Terraform Registory for docs: [`aws_iot_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate).
+Refer to the Terraform Registory for docs: [`aws_iot_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate).
 
 # `iotCertificate` Submodule <a name="`iotCertificate` Submodule" id="@cdktf/provider-aws.iotCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iot_certificate`](https://regis
 
 ### IotCertificate <a name="IotCertificate" id="@cdktf/provider-aws.iotCertificate.IotCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate aws_iot_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate aws_iot_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer"></a>
 
@@ -44,11 +44,11 @@ iotCertificate.IotCertificate(
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#active IotCertificate#active}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.caPem">ca_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.certificatePem">certificate_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.csr">csr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#csr IotCertificate#csr}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#active IotCertificate#active}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.caPem">ca_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.certificatePem">certificate_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.csr">csr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#id IotCertificate#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#active IotCertificate#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#active IotCertificate#active}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#csr IotCertificate#csr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#id IotCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#id IotCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,11 +851,11 @@ iotCertificate.IotCertificateConfig(
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#active IotCertificate#active}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.caPem">ca_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.certificatePem">certificate_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.csr">csr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#csr IotCertificate#csr}. |
-| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#id IotCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#active IotCertificate#active}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.caPem">ca_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.certificatePem">certificate_pem</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.csr">csr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#csr IotCertificate#csr}. |
+| <code><a href="#@cdktf/provider-aws.iotCertificate.IotCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#id IotCertificate#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ active: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#active IotCertificate#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#active IotCertificate#active}.
 
 ---
 
@@ -949,7 +949,7 @@ ca_pem: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#ca_pem IotCertificate#ca_pem}.
 
 ---
 
@@ -961,7 +961,7 @@ certificate_pem: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#certificate_pem IotCertificate#certificate_pem}.
 
 ---
 
@@ -973,7 +973,7 @@ csr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#csr IotCertificate#csr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#csr IotCertificate#csr}.
 
 ---
 
@@ -985,7 +985,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iot_certificate#id IotCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iot_certificate#id IotCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
