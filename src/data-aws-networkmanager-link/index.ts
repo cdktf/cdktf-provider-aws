@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkmanagerLinkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}
   */
   readonly globalNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}
   */
   readonly linkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -103,7 +103,7 @@ export class DataAwsNetworkmanagerLinkBandwidthList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link aws_networkmanager_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link aws_networkmanager_link}
 */
 export class DataAwsNetworkmanagerLink extends cdktf.TerraformDataSource {
 
@@ -117,7 +117,7 @@ export class DataAwsNetworkmanagerLink extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/networkmanager_link aws_networkmanager_link} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/networkmanager_link aws_networkmanager_link} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -128,7 +128,7 @@ export class DataAwsNetworkmanagerLink extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_networkmanager_link',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

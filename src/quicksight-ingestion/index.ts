@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface QuicksightIngestionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}
   */
   readonly dataSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}
   */
   readonly ingestionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}
   */
   readonly ingestionType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion aws_quicksight_ingestion}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}
 */
 export class QuicksightIngestion extends cdktf.TerraformResource {
 
@@ -45,7 +45,7 @@ export class QuicksightIngestion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +56,7 @@ export class QuicksightIngestion extends cdktf.TerraformResource {
       terraformResourceType: 'aws_quicksight_ingestion',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

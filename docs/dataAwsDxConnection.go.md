@@ -1,6 +1,6 @@
 # `data_aws_dx_connection`
 
-Refer to the Terraform Registory for docs: [`data_aws_dx_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection).
+Refer to the Terraform Registory for docs: [`data_aws_dx_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection).
 
 # `dataAwsDxConnection` Submodule <a name="`dataAwsDxConnection` Submodule" id="@cdktf/provider-aws.dataAwsDxConnection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_dx_connection`](https://re
 
 ### DataAwsDxConnection <a name="DataAwsDxConnection" id="@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection aws_dx_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection aws_dx_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnection.Initializer"></a>
 
@@ -688,9 +688,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdxconnection"
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxConnection.DataAwsDxConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}. |
 
 ---
 
@@ -772,7 +772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#name DataAwsDxConnection#name}.
 
 ---
 
@@ -784,7 +784,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#id DataAwsDxConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/dx_connection#tags DataAwsDxConnection#tags}.
 
 ---
 

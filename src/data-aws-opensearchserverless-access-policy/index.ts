@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearchserverless_access_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/opensearchserverless_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOpensearchserverlessAccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearchserverless_access_policy#name DataAwsOpensearchserverlessAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/opensearchserverless_access_policy#name DataAwsOpensearchserverlessAccessPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearchserverless_access_policy#type DataAwsOpensearchserverlessAccessPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/opensearchserverless_access_policy#type DataAwsOpensearchserverlessAccessPolicy#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}
 */
 export class DataAwsOpensearchserverlessAccessPolicy extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataAwsOpensearchserverlessAccessPolicy extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/opensearchserverless_access_policy aws_opensearchserverless_access_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataAwsOpensearchserverlessAccessPolicy extends cdktf.TerraformData
       terraformResourceType: 'aws_opensearchserverless_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

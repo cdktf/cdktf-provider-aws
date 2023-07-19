@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification
+// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#bucket S3BucketNotification#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#bucket S3BucketNotification#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#eventbridge S3BucketNotification#eventbridge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#eventbridge S3BucketNotification#eventbridge}
   */
   readonly eventbridge?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,44 +30,44 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   /**
   * lambda_function block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
   */
   readonly lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable;
   /**
   * queue block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#queue S3BucketNotification#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#queue S3BucketNotification#queue}
   */
   readonly queue?: S3BucketNotificationQueue[] | cdktf.IResolvable;
   /**
   * topic block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#topic S3BucketNotification#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#topic S3BucketNotification#topic}
   */
   readonly topic?: S3BucketNotificationTopic[] | cdktf.IResolvable;
 }
 export interface S3BucketNotificationLambdaFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
   */
   readonly filterPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
   */
   readonly filterSuffix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#lambda_function_arn S3BucketNotification#lambda_function_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#lambda_function_arn S3BucketNotification#lambda_function_arn}
   */
   readonly lambdaFunctionArn?: string;
 }
@@ -253,26 +253,26 @@ export class S3BucketNotificationLambdaFunctionList extends cdktf.ComplexList {
 }
 export interface S3BucketNotificationQueue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
   */
   readonly filterPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
   */
   readonly filterSuffix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#queue_arn S3BucketNotification#queue_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#queue_arn S3BucketNotification#queue_arn}
   */
   readonly queueArn: string;
 }
@@ -455,26 +455,26 @@ export class S3BucketNotificationQueueList extends cdktf.ComplexList {
 }
 export interface S3BucketNotificationTopic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#events S3BucketNotification#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_prefix S3BucketNotification#filter_prefix}
   */
   readonly filterPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#filter_suffix S3BucketNotification#filter_suffix}
   */
   readonly filterSuffix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#id S3BucketNotification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification#topic_arn S3BucketNotification#topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification#topic_arn S3BucketNotification#topic_arn}
   */
   readonly topicArn: string;
 }
@@ -657,7 +657,7 @@ export class S3BucketNotificationTopicList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification aws_s3_bucket_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}
 */
 export class S3BucketNotification extends cdktf.TerraformResource {
 
@@ -671,7 +671,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -682,7 +682,7 @@ export class S3BucketNotification extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_notification',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.6.2',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
