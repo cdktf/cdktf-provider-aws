@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequest(scope Construct, id *string, config SpotInstanceRequestConfig) SpotInstanceRequest
 ```
@@ -831,7 +831,7 @@ func ResetWaitForFulfillment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.SpotInstanceRequest_IsConstruct(x interface{}) *bool
 ```
@@ -863,7 +863,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.SpotInstanceRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -877,7 +877,7 @@ spotinstancerequest.SpotInstanceRequest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.SpotInstanceRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -2429,11 +2429,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestCapacityReservationSpecification {
 	CapacityReservationPreference: *string,
-	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget,
+	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget,
 }
 ```
 
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget {
 	CapacityReservationId: *string,
@@ -2523,7 +2523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestConfig {
 	Connection: interface{},
@@ -2537,16 +2537,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
 	AssociatePublicIpAddress: interface{},
 	AvailabilityZone: *string,
 	BlockDurationMinutes: *f64,
-	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecification,
+	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecification,
 	CpuCoreCount: *f64,
-	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestCpuOptions,
+	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestCpuOptions,
 	CpuThreadsPerCore: *f64,
-	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestCreditSpecification,
+	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestCreditSpecification,
 	DisableApiStop: interface{},
 	DisableApiTermination: interface{},
 	EbsBlockDevice: interface{},
 	EbsOptimized: interface{},
-	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptions,
+	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestEnclaveOptions,
 	EphemeralBlockDevice: interface{},
 	FetchPasswordData: interface{},
 	Hibernation: interface{},
@@ -2561,16 +2561,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
 	Ipv6Addresses: *[]*string,
 	KeyName: *string,
 	LaunchGroup: *string,
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplate,
-	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptions,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestMetadataOptions,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestLaunchTemplate,
+	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestMaintenanceOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestMetadataOptions,
 	Monitoring: interface{},
 	NetworkInterface: interface{},
 	PlacementGroup: *string,
 	PlacementPartitionNumber: *f64,
-	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptions,
+	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptions,
 	PrivateIp: *string,
-	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestRootBlockDevice,
+	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestRootBlockDevice,
 	SecondaryPrivateIps: *[]*string,
 	SecurityGroups: *[]*string,
 	SourceDestCheck: interface{},
@@ -2580,7 +2580,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Tenancy: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.spotInstanceRequest.SpotInstanceRequestTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.spotInstanceRequest.SpotInstanceRequestTimeouts,
 	UserData: *string,
 	UserDataBase64: *string,
 	UserDataReplaceOnChange: interface{},
@@ -3438,7 +3438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCpuOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestCpuOptions {
 	AmdSevSnp: *string,
@@ -3498,7 +3498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestCreditSpecification {
 	CpuCredits: *string,
@@ -3530,7 +3530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestEbsBlockDevice {
 	DeviceName: *string,
@@ -3688,7 +3688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestEnclaveOptions {
 	Enabled: interface{},
@@ -3720,7 +3720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestEphemeralBlockDevice {
 	DeviceName: *string,
@@ -3780,7 +3780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestLaunchTemplate {
 	Id: *string,
@@ -3843,7 +3843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestMaintenanceOptions {
 	AutoRecovery: *string,
@@ -3875,7 +3875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestMetadataOptions {
 	HttpEndpoint: *string,
@@ -3949,7 +3949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestNetworkInterface {
 	DeviceIndex: *f64,
@@ -4023,7 +4023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestPrivateDnsNameOptions {
 	EnableResourceNameDnsAaaaRecord: interface{},
@@ -4083,7 +4083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -4213,7 +4213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 &spotinstancerequest.SpotInstanceRequestTimeouts {
 	Create: *string,
@@ -4261,7 +4261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetOutputReference
 ```
@@ -4568,7 +4568,7 @@ func InternalValue() SpotInstanceRequestCapacityReservationSpecificationCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCapacityReservationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestCapacityReservationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestCapacityReservationSpecificationOutputReference
 ```
@@ -4888,7 +4888,7 @@ func InternalValue() SpotInstanceRequestCapacityReservationSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCpuOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestCpuOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestCpuOptionsOutputReference
 ```
@@ -5224,7 +5224,7 @@ func InternalValue() SpotInstanceRequestCpuOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestCreditSpecificationOutputReference
 ```
@@ -5502,7 +5502,7 @@ func InternalValue() SpotInstanceRequestCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotInstanceRequestEbsBlockDeviceList
 ```
@@ -5645,7 +5645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotInstanceRequestEbsBlockDeviceOutputReference
 ```
@@ -6206,7 +6206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestEnclaveOptionsOutputReference
 ```
@@ -6484,7 +6484,7 @@ func InternalValue() SpotInstanceRequestEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotInstanceRequestEphemeralBlockDeviceList
 ```
@@ -6627,7 +6627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotInstanceRequestEphemeralBlockDeviceOutputReference
 ```
@@ -6974,7 +6974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestLaunchTemplateOutputReference
 ```
@@ -7310,7 +7310,7 @@ func InternalValue() SpotInstanceRequestLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestMaintenanceOptionsOutputReference
 ```
@@ -7588,7 +7588,7 @@ func InternalValue() SpotInstanceRequestMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestMetadataOptionsOutputReference
 ```
@@ -7953,7 +7953,7 @@ func InternalValue() SpotInstanceRequestMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpotInstanceRequestNetworkInterfaceList
 ```
@@ -8096,7 +8096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpotInstanceRequestNetworkInterfaceOutputReference
 ```
@@ -8465,7 +8465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestPrivateDnsNameOptionsOutputReference
 ```
@@ -8801,7 +8801,7 @@ func InternalValue() SpotInstanceRequestPrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestRootBlockDeviceOutputReference
 ```
@@ -9304,7 +9304,7 @@ func InternalValue() SpotInstanceRequestRootBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/spotinstancerequest"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/spotinstancerequest"
 
 spotinstancerequest.NewSpotInstanceRequestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpotInstanceRequestTimeoutsOutputReference
 ```

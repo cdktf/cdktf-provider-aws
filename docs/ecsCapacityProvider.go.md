@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProvider(scope Construct, id *string, config EcsCapacityProviderConfig) EcsCapacityProvider
 ```
@@ -304,7 +304,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ ecscapacityprovider.EcsCapacityProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.EcsCapacityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -670,11 +670,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderAutoScalingGroupProvider {
 	AutoScalingGroupArn: *string,
-	ManagedScaling: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling,
+	ManagedScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling,
 	ManagedTerminationProtection: *string,
 }
 ```
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
 	InstanceWarmupPeriod: *f64,
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 &ecscapacityprovider.EcsCapacityProviderConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AutoScalingGroupProvider: github.com/cdktf/cdktf-provider-aws-go/aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider,
+	AutoScalingGroupProvider: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider,
 	Name: *string,
 	Id: *string,
 	Tags: *map[string]*string,
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference
 ```
@@ -1393,7 +1393,7 @@ func InternalValue() EcsCapacityProviderAutoScalingGroupProviderManagedScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ecscapacityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscapacityprovider"
 
 ecscapacityprovider.NewEcsCapacityProviderAutoScalingGroupProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsCapacityProviderAutoScalingGroupProviderOutputReference
 ```
