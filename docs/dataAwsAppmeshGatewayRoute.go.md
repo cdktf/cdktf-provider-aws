@@ -1,6 +1,6 @@
 # `data_aws_appmesh_gateway_route`
 
-Refer to the Terraform Registory for docs: [`data_aws_appmesh_gateway_route`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route).
+Refer to the Terraform Registory for docs: [`data_aws_appmesh_gateway_route`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route).
 
 # `dataAwsAppmeshGatewayRoute` Submodule <a name="`dataAwsAppmeshGatewayRoute` Submodule" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_appmesh_gateway_route`](ht
 
 ### DataAwsAppmeshGatewayRoute <a name="DataAwsAppmeshGatewayRoute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRoute(scope Construct, id *string, config DataAwsAppmeshGatewayRouteConfig) DataAwsAppmeshGatewayRoute
 ```
@@ -291,7 +291,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRoute_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRoute_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRoute.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRoute_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteConfig {
 	Connection: interface{},
@@ -731,12 +731,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.virtualGatewayName">VirtualGatewayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.meshName">MeshName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.virtualGatewayName">VirtualGatewayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.meshOwner">MeshOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}. |
 
 ---
 
@@ -818,7 +818,7 @@ MeshName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}.
 
 ---
 
@@ -830,7 +830,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}.
 
 ---
 
@@ -842,7 +842,7 @@ VirtualGatewayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}.
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -869,7 +869,7 @@ MeshOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}.
 
 ---
 
@@ -881,7 +881,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}.
 
 ---
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpec {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecGrpcRoute {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecGrpcRouteAction {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTarget {
 
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService {
 
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecGrpcRouteMatch {
 
@@ -968,7 +968,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2Route {
 
@@ -981,7 +981,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteAction {
 
@@ -994,7 +994,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite {
 
@@ -1007,9 +1007,22 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname {
+
+}
+```
+
+
+### DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath <a name="DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+&dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath {
 
 }
 ```
@@ -1020,7 +1033,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix {
 
@@ -1033,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTarget {
 
@@ -1046,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService {
 
@@ -1059,7 +1072,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatch {
 
@@ -1072,7 +1085,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeader {
 
@@ -1085,7 +1098,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch {
 
@@ -1098,7 +1111,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange {
 
@@ -1111,7 +1124,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostname {
 
@@ -1124,7 +1137,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPath {
 
@@ -1137,7 +1150,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter {
 
@@ -1150,7 +1163,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch {
 
@@ -1163,7 +1176,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRoute {
 
@@ -1176,7 +1189,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteAction {
 
@@ -1189,7 +1202,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewrite {
 
@@ -1202,9 +1215,22 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostname {
+
+}
+```
+
+
+### DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath <a name="DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+&dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath {
 
 }
 ```
@@ -1215,7 +1241,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefix {
 
@@ -1228,7 +1254,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTarget {
 
@@ -1241,7 +1267,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService {
 
@@ -1254,7 +1280,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatch {
 
@@ -1267,7 +1293,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeader {
 
@@ -1280,7 +1306,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch {
 
@@ -1293,7 +1319,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange {
 
@@ -1306,7 +1332,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostname {
 
@@ -1319,7 +1345,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPath {
 
@@ -1332,7 +1358,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameter {
 
@@ -1345,7 +1371,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 &dataawsappmeshgatewayroute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch {
 
@@ -1360,7 +1386,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayrout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionList
 ```
@@ -1492,7 +1518,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionOutputReference
 ```
@@ -1770,7 +1796,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecGrpcRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetList
 ```
@@ -1902,7 +1928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference
 ```
@@ -2191,7 +2217,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceList
 ```
@@ -2323,7 +2349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference
 ```
@@ -2601,7 +2627,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteList
 ```
@@ -2733,7 +2759,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteMatchList
 ```
@@ -2865,7 +2891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteMatchOutputReference
 ```
@@ -3154,7 +3180,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecGrpcRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecGrpcRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecGrpcRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecGrpcRouteOutputReference
 ```
@@ -3443,7 +3469,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecGrpcRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionList
 ```
@@ -3575,7 +3601,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionOutputReference
 ```
@@ -3864,7 +3890,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList
 ```
@@ -3996,7 +4022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference
 ```
@@ -4274,7 +4300,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostna
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteList
 ```
@@ -4406,7 +4432,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference
 ```
@@ -4630,6 +4656,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.hostname">Hostname</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.path">Path</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.prefix">Prefix</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite</a></code> | *No description.* |
 
@@ -4669,6 +4696,16 @@ func Hostname() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameLis
 
 ---
 
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.path"></a>
+
+```go
+func Path() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList</a>
+
+---
+
 ##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.property.prefix"></a>
 
 ```go
@@ -4690,12 +4727,422 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite
 ---
 
 
+### DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList <a name="DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.get"></a>
+
+```go
+func Get(index *f64) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference <a name="DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.exact">Exact</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Exact`<sup>Required</sup> <a name="Exact" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.exact"></a>
+
+```go
+func Exact() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath">DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath</a>
+
+---
+
+
 ### DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList <a name="DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList
 ```
@@ -4827,7 +5274,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference
 ```
@@ -5116,7 +5563,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetList
 ```
@@ -5248,7 +5695,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference
 ```
@@ -5537,7 +5984,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceList
 ```
@@ -5669,7 +6116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference
 ```
@@ -5947,7 +6394,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtual
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteList
 ```
@@ -6079,7 +6526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderList
 ```
@@ -6211,7 +6658,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchList
 ```
@@ -6343,7 +6790,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference
 ```
@@ -6665,7 +7112,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeList
 ```
@@ -6797,7 +7244,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference
 ```
@@ -7086,7 +7533,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRan
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference
 ```
@@ -7386,7 +7833,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHeader
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameList
 ```
@@ -7518,7 +7965,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference
 ```
@@ -7807,7 +8254,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchList
 ```
@@ -7939,7 +8386,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchOutputReference
 ```
@@ -8272,7 +8719,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathList
 ```
@@ -8404,7 +8851,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference
 ```
@@ -8693,7 +9140,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList
 ```
@@ -8825,7 +9272,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchList
 ```
@@ -8957,7 +9404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference
 ```
@@ -9235,7 +9682,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference
 ```
@@ -9524,7 +9971,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttp2RouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttp2RouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttp2RouteOutputReference
 ```
@@ -9813,7 +10260,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttp2Route
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionList
 ```
@@ -9945,7 +10392,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionOutputReference
 ```
@@ -10234,7 +10681,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList
 ```
@@ -10366,7 +10813,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference
 ```
@@ -10644,7 +11091,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnam
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteList
 ```
@@ -10776,7 +11223,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference
 ```
@@ -11000,6 +11447,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.hostname">Hostname</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.path">Path</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.prefix">Prefix</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewrite">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewrite</a></code> | *No description.* |
 
@@ -11039,6 +11487,16 @@ func Hostname() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList
 
 ---
 
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.path"></a>
+
+```go
+func Path() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList</a>
+
+---
+
 ##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.property.prefix"></a>
 
 ```go
@@ -11060,12 +11518,422 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewrite
 ---
 
 
+### DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList <a name="DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.get"></a>
+
+```go
+func Get(index *f64) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference <a name="DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
+
+dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.exact">Exact</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Exact`<sup>Required</sup> <a name="Exact" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.exact"></a>
+
+```go
+func Exact() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath">DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath</a>
+
+---
+
+
 ### DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList <a name="DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixList
 ```
@@ -11197,7 +12065,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference
 ```
@@ -11486,7 +12354,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefix
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetList
 ```
@@ -11618,7 +12486,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference
 ```
@@ -11907,7 +12775,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceList
 ```
@@ -12039,7 +12907,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference
 ```
@@ -12317,7 +13185,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteList
 ```
@@ -12449,7 +13317,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderList
 ```
@@ -12581,7 +13449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchList
 ```
@@ -12713,7 +13581,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference
 ```
@@ -13035,7 +13903,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeList
 ```
@@ -13167,7 +14035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference
 ```
@@ -13456,7 +14324,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRang
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference
 ```
@@ -13756,7 +14624,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHeader
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameList
 ```
@@ -13888,7 +14756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference
 ```
@@ -14177,7 +15045,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchList
 ```
@@ -14309,7 +15177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchOutputReference
 ```
@@ -14642,7 +15510,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathList
 ```
@@ -14774,7 +15642,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference
 ```
@@ -15063,7 +15931,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList
 ```
@@ -15195,7 +16063,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList
 ```
@@ -15327,7 +16195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference
 ```
@@ -15605,7 +16473,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterM
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference
 ```
@@ -15894,7 +16762,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecHttpRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecHttpRouteOutputReference
 ```
@@ -16183,7 +17051,7 @@ func InternalValue() DataAwsAppmeshGatewayRouteSpecHttpRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshGatewayRouteSpecList
 ```
@@ -16315,7 +17183,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshGatewayRoute.DataAwsAppmeshGatewayRouteSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshgatewayroute"
 
 dataawsappmeshgatewayroute.NewDataAwsAppmeshGatewayRouteSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshGatewayRouteSpecOutputReference
 ```

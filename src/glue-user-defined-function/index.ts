@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function
+// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GlueUserDefinedFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#catalog_id GlueUserDefinedFunction#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#catalog_id GlueUserDefinedFunction#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#class_name GlueUserDefinedFunction#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#class_name GlueUserDefinedFunction#class_name}
   */
   readonly className: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#database_name GlueUserDefinedFunction#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#database_name GlueUserDefinedFunction#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#id GlueUserDefinedFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#id GlueUserDefinedFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#name GlueUserDefinedFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#name GlueUserDefinedFunction#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#owner_name GlueUserDefinedFunction#owner_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#owner_name GlueUserDefinedFunction#owner_name}
   */
   readonly ownerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#owner_type GlueUserDefinedFunction#owner_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#owner_type GlueUserDefinedFunction#owner_type}
   */
   readonly ownerType: string;
   /**
   * resource_uris block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#resource_uris GlueUserDefinedFunction#resource_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#resource_uris GlueUserDefinedFunction#resource_uris}
   */
   readonly resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable;
 }
 export interface GlueUserDefinedFunctionResourceUris {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#resource_type GlueUserDefinedFunction#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#resource_type GlueUserDefinedFunction#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function#uri GlueUserDefinedFunction#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#uri GlueUserDefinedFunction#uri}
   */
   readonly uri: string;
 }
@@ -170,7 +165,7 @@ export class GlueUserDefinedFunctionResourceUrisList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function}
 */
 export class GlueUserDefinedFunction extends cdktf.TerraformResource {
 
@@ -184,7 +179,7 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function aws_glue_user_defined_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +190,7 @@ export class GlueUserDefinedFunction extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_user_defined_function',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

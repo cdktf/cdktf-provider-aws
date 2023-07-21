@@ -1741,6 +1741,7 @@ The following submodules are available:
 - [wafv2WebAclLoggingConfiguration](./wafv2WebAclLoggingConfiguration.typescript.md)
 - [worklinkFleet](./worklinkFleet.typescript.md)
 - [worklinkWebsiteCertificateAuthorityAssociation](./worklinkWebsiteCertificateAuthorityAssociation.typescript.md)
+- [workspacesConnectionAlias](./workspacesConnectionAlias.typescript.md)
 - [workspacesDirectory](./workspacesDirectory.typescript.md)
 - [workspacesIpGroup](./workspacesIpGroup.typescript.md)
 - [workspacesWorkspace](./workspacesWorkspace.typescript.md)

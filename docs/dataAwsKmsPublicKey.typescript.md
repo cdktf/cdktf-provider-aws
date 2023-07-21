@@ -1,6 +1,6 @@
 # `data_aws_kms_public_key`
 
-Refer to the Terraform Registory for docs: [`data_aws_kms_public_key`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key).
+Refer to the Terraform Registory for docs: [`data_aws_kms_public_key`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key).
 
 # `dataAwsKmsPublicKey` Submodule <a name="`dataAwsKmsPublicKey` Submodule" id="@cdktf/provider-aws.dataAwsKmsPublicKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_kms_public_key`](https://r
 
 ### DataAwsKmsPublicKey <a name="DataAwsKmsPublicKey" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key aws_kms_public_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key aws_kms_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKey.Initializer"></a>
 
@@ -666,9 +666,9 @@ const dataAwsKmsPublicKeyConfig: dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig =
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.keyId">keyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#key_id DataAwsKmsPublicKey#key_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.grantTokens">grantTokens</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#grant_tokens DataAwsKmsPublicKey#grant_tokens}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#id DataAwsKmsPublicKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.keyId">keyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#key_id DataAwsKmsPublicKey#key_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.grantTokens">grantTokens</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#grant_tokens DataAwsKmsPublicKey#grant_tokens}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsPublicKey.DataAwsKmsPublicKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#id DataAwsKmsPublicKey#id}. |
 
 ---
 
@@ -750,7 +750,7 @@ public readonly keyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#key_id DataAwsKmsPublicKey#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#key_id DataAwsKmsPublicKey#key_id}.
 
 ---
 
@@ -762,7 +762,7 @@ public readonly grantTokens: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#grant_tokens DataAwsKmsPublicKey#grant_tokens}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#grant_tokens DataAwsKmsPublicKey#grant_tokens}.
 
 ---
 
@@ -774,7 +774,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/kms_public_key#id DataAwsKmsPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_public_key#id DataAwsKmsPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

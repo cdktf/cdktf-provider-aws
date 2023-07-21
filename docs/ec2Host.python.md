@@ -1,6 +1,6 @@
 # `aws_ec2_host`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_host`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host).
+Refer to the Terraform Registory for docs: [`aws_ec2_host`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host).
 
 # `ec2Host` Submodule <a name="`ec2Host` Submodule" id="@cdktf/provider-aws.ec2Host"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ec2_host`](https://registry.ter
 
 ### Ec2Host <a name="Ec2Host" id="@cdktf/provider-aws.ec2Host.Ec2Host"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host aws_ec2_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2Host.Ec2Host.Initializer"></a>
 
@@ -26,6 +26,7 @@ ec2Host.Ec2Host(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   availability_zone: str,
+  asset_id: str = None,
   auto_placement: str = None,
   host_recovery: str = None,
   id: str = None,
@@ -48,15 +49,16 @@ ec2Host.Ec2Host(
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.autoPlacement">auto_placement</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.hostRecovery">host_recovery</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#id Ec2Host#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.instanceFamily">instance_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags Ec2Host#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.assetId">asset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#asset_id Ec2Host#asset_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.autoPlacement">auto_placement</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.hostRecovery">host_recovery</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#id Ec2Host#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.instanceFamily">instance_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags Ec2Host#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}. |
 
 ---
 
@@ -124,7 +126,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}.
+
+---
+
+##### `asset_id`<sup>Optional</sup> <a name="asset_id" id="@cdktf/provider-aws.ec2Host.Ec2Host.Initializer.parameter.assetId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#asset_id Ec2Host#asset_id}.
 
 ---
 
@@ -132,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}.
 
 ---
 
@@ -140,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}.
 
 ---
 
@@ -148,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#id Ec2Host#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#id Ec2Host#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}.
 
 ---
 
@@ -167,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}.
 
 ---
 
@@ -175,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}.
 
 ---
 
@@ -183,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags Ec2Host#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags Ec2Host#tags}.
 
 ---
 
@@ -191,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}.
 
 ---
 
@@ -215,6 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.resetAssetId">reset_asset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.resetAutoPlacement">reset_auto_placement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.resetHostRecovery">reset_host_recovery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.resetId">reset_id</a></code> | *No description.* |
@@ -435,6 +446,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_asset_id` <a name="reset_asset_id" id="@cdktf/provider-aws.ec2Host.Ec2Host.resetAssetId"></a>
+
+```python
+def reset_asset_id() -> None
+```
+
 ##### `reset_auto_placement` <a name="reset_auto_placement" id="@cdktf/provider-aws.ec2Host.Ec2Host.resetAutoPlacement"></a>
 
 ```python
@@ -579,6 +596,7 @@ ec2Host.Ec2Host.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.assetIdInput">asset_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.autoPlacementInput">auto_placement_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.availabilityZoneInput">availability_zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.hostRecoveryInput">host_recovery_input</a></code> | <code>str</code> | *No description.* |
@@ -588,6 +606,7 @@ ec2Host.Ec2Host.is_terraform_resource(
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.assetId">asset_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.autoPlacement">auto_placement</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2Host.property.hostRecovery">host_recovery</a></code> | <code>str</code> | *No description.* |
@@ -762,6 +781,16 @@ owner_id: str
 
 ---
 
+##### `asset_id_input`<sup>Optional</sup> <a name="asset_id_input" id="@cdktf/provider-aws.ec2Host.Ec2Host.property.assetIdInput"></a>
+
+```python
+asset_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `auto_placement_input`<sup>Optional</sup> <a name="auto_placement_input" id="@cdktf/provider-aws.ec2Host.Ec2Host.property.autoPlacementInput"></a>
 
 ```python
@@ -849,6 +878,16 @@ tags_input: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `asset_id`<sup>Required</sup> <a name="asset_id" id="@cdktf/provider-aws.ec2Host.Ec2Host.property.assetId"></a>
+
+```python
+asset_id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -978,6 +1017,7 @@ ec2Host.Ec2HostConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   availability_zone: str,
+  asset_id: str = None,
   auto_placement: str = None,
   host_recovery: str = None,
   id: str = None,
@@ -1000,15 +1040,16 @@ ec2Host.Ec2HostConfig(
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.autoPlacement">auto_placement</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.hostRecovery">host_recovery</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#id Ec2Host#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.instanceFamily">instance_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags Ec2Host#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.assetId">asset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#asset_id Ec2Host#asset_id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.autoPlacement">auto_placement</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.hostRecovery">host_recovery</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#id Ec2Host#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.instanceFamily">instance_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.instanceType">instance_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags Ec2Host#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}. |
 
 ---
 
@@ -1090,7 +1131,19 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#availability_zone Ec2Host#availability_zone}.
+
+---
+
+##### `asset_id`<sup>Optional</sup> <a name="asset_id" id="@cdktf/provider-aws.ec2Host.Ec2HostConfig.property.assetId"></a>
+
+```python
+asset_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#asset_id Ec2Host#asset_id}.
 
 ---
 
@@ -1102,7 +1155,7 @@ auto_placement: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#auto_placement Ec2Host#auto_placement}.
 
 ---
 
@@ -1114,7 +1167,7 @@ host_recovery: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#host_recovery Ec2Host#host_recovery}.
 
 ---
 
@@ -1126,7 +1179,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#id Ec2Host#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#id Ec2Host#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1194,7 @@ instance_family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_family Ec2Host#instance_family}.
 
 ---
 
@@ -1153,7 +1206,7 @@ instance_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#instance_type Ec2Host#instance_type}.
 
 ---
 
@@ -1165,7 +1218,7 @@ outpost_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#outpost_arn Ec2Host#outpost_arn}.
 
 ---
 
@@ -1177,7 +1230,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags Ec2Host#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags Ec2Host#tags}.
 
 ---
 
@@ -1189,7 +1242,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host#tags_all Ec2Host#tags_all}.
 
 ---
 

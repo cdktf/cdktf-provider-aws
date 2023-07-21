@@ -1,6 +1,6 @@
 # `aws_route53_traffic_policy`
 
-Refer to the Terraform Registory for docs: [`aws_route53_traffic_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy).
+Refer to the Terraform Registory for docs: [`aws_route53_traffic_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy).
 
 # `route53TrafficPolicy` Submodule <a name="`route53TrafficPolicy` Submodule" id="@cdktf/provider-aws.route53TrafficPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_route53_traffic_policy`](https:
 
 ### Route53TrafficPolicy <a name="Route53TrafficPolicy" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy aws_route53_traffic_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy aws_route53_traffic_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer"></a>
 
@@ -45,10 +45,10 @@ Route53TrafficPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.document">document</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.document">document</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,10 +768,10 @@ Route53TrafficPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.document">document</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
-| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.document">document</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}. |
+| <code><a href="#@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ public java.lang.String getDocument();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#document Route53TrafficPolicy#document}.
 
 ---
 
@@ -865,7 +865,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#name Route53TrafficPolicy#name}.
 
 ---
 
@@ -877,7 +877,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#comment Route53TrafficPolicy#comment}.
 
 ---
 
@@ -889,7 +889,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_traffic_policy#id Route53TrafficPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

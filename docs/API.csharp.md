@@ -1741,6 +1741,7 @@ The following submodules are available:
 - [wafv2WebAclLoggingConfiguration](./wafv2WebAclLoggingConfiguration.csharp.md)
 - [worklinkFleet](./worklinkFleet.csharp.md)
 - [worklinkWebsiteCertificateAuthorityAssociation](./worklinkWebsiteCertificateAuthorityAssociation.csharp.md)
+- [workspacesConnectionAlias](./workspacesConnectionAlias.csharp.md)
 - [workspacesDirectory](./workspacesDirectory.csharp.md)
 - [workspacesIpGroup](./workspacesIpGroup.csharp.md)
 - [workspacesWorkspace](./workspacesWorkspace.csharp.md)

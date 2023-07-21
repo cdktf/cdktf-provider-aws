@@ -1,6 +1,6 @@
 # `aws_lightsail_key_pair`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair).
+Refer to the Terraform Registory for docs: [`aws_lightsail_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair).
 
 # `lightsailKeyPair` Submodule <a name="`lightsailKeyPair` Submodule" id="@cdktf/provider-aws.lightsailKeyPair"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_key_pair`](https://re
 
 ### LightsailKeyPair <a name="LightsailKeyPair" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetNamePrefix">resetNamePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetPgpKey">resetPgpKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetPublicKey">resetPublicKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
@@ -292,6 +294,18 @@ public resetPgpKey(): void
 public resetPublicKey(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.resetTagsAll"></a>
+
+```typescript
+public resetTagsAll(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -390,11 +404,15 @@ lightsailKeyPair.LightsailKeyPair.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.namePrefixInput">namePrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.pgpKeyInput">pgpKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.publicKeyInput">publicKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.namePrefix">namePrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.pgpKey">pgpKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.publicKey">publicKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -640,6 +658,26 @@ public readonly publicKeyInput: string;
 
 ---
 
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsAllInput"></a>
+
+```typescript
+public readonly tagsAllInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.id"></a>
 
 ```typescript
@@ -690,6 +728,26 @@ public readonly publicKey: string;
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair.property.tagsAll"></a>
+
+```typescript
+public readonly tagsAll: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -731,11 +789,13 @@ const lightsailKeyPairConfig: lightsailKeyPair.LightsailKeyPairConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.pgpKey">pgpKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
-| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.publicKey">publicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.pgpKey">pgpKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.publicKey">publicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}. |
 
 ---
 
@@ -817,7 +877,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#id LightsailKeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -832,7 +892,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#name LightsailKeyPair#name}.
 
 ---
 
@@ -844,7 +904,7 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#name_prefix LightsailKeyPair#name_prefix}.
 
 ---
 
@@ -856,7 +916,7 @@ public readonly pgpKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#pgp_key LightsailKeyPair#pgp_key}.
 
 ---
 
@@ -868,7 +928,31 @@ public readonly publicKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#public_key LightsailKeyPair#public_key}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#tags LightsailKeyPair#tags}.
+
+---
+
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPairConfig.property.tagsAll"></a>
+
+```typescript
+public readonly tagsAll: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair#tags_all LightsailKeyPair#tags_all}.
 
 ---
 

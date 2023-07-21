@@ -1,6 +1,6 @@
 # `aws_ivs_channel`
 
-Refer to the Terraform Registory for docs: [`aws_ivs_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel).
+Refer to the Terraform Registory for docs: [`aws_ivs_channel`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel).
 
 # `ivsChannel` Submodule <a name="`ivsChannel` Submodule" id="@cdktf/provider-aws.ivsChannel"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ivs_channel`](https://registry.
 
 ### IvsChannel <a name="IvsChannel" id="@cdktf/provider-aws.ivsChannel.IvsChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel aws_ivs_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel aws_ivs_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsChannel.IvsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.NewIvsChannel(scope Construct, id *string, config IvsChannelConfig) IvsChannel
 ```
@@ -346,7 +346,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ ivschannel.IvsChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ivsChannel.IvsChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.IvsChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsChannel.IvsChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 &ivschannel.IvsChannelConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
 	RecordingConfigurationArn: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.ivsChannel.IvsChannelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ivsChannel.IvsChannelTimeouts,
 	Type: *string,
 }
 ```
@@ -855,15 +855,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
 | <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.authorized">Authorized</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#authorized IvsChannel#authorized}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#id IvsChannel#id}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.latencyMode">LatencyMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#latency_mode IvsChannel#latency_mode}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#name IvsChannel#name}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.recordingConfigurationArn">RecordingConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#recording_configuration_arn IvsChannel#recording_configuration_arn}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#tags IvsChannel#tags}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#tags_all IvsChannel#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.authorized">Authorized</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#authorized IvsChannel#authorized}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#id IvsChannel#id}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.latencyMode">LatencyMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#latency_mode IvsChannel#latency_mode}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#name IvsChannel#name}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.recordingConfigurationArn">RecordingConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#recording_configuration_arn IvsChannel#recording_configuration_arn}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#tags IvsChannel#tags}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#tags_all IvsChannel#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts">IvsChannelTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#type IvsChannel#type}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#type IvsChannel#type}. |
 
 ---
 
@@ -945,7 +945,7 @@ Authorized interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#authorized IvsChannel#authorized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#authorized IvsChannel#authorized}.
 
 ---
 
@@ -957,7 +957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#id IvsChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#id IvsChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +972,7 @@ LatencyMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#latency_mode IvsChannel#latency_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#latency_mode IvsChannel#latency_mode}.
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#name IvsChannel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#name IvsChannel#name}.
 
 ---
 
@@ -996,7 +996,7 @@ RecordingConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#recording_configuration_arn IvsChannel#recording_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#recording_configuration_arn IvsChannel#recording_configuration_arn}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#tags IvsChannel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#tags IvsChannel#tags}.
 
 ---
 
@@ -1020,7 +1020,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#tags_all IvsChannel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#tags_all IvsChannel#tags_all}.
 
 ---
 
@@ -1034,7 +1034,7 @@ Timeouts IvsChannelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#timeouts IvsChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#timeouts IvsChannel#timeouts}
 
 ---
 
@@ -1046,7 +1046,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#type IvsChannel#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#type IvsChannel#type}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 &ivschannel.IvsChannelTimeouts {
 	Create: *string,
@@ -1068,9 +1068,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#create IvsChannel#create}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#delete IvsChannel#delete}. |
-| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#update IvsChannel#update}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#create IvsChannel#create}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#delete IvsChannel#delete}. |
+| <code><a href="#@cdktf/provider-aws.ivsChannel.IvsChannelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#update IvsChannel#update}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#create IvsChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#create IvsChannel#create}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#delete IvsChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#delete IvsChannel#delete}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ivs_channel#update IvsChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#update IvsChannel#update}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/ivschannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ivschannel"
 
 ivschannel.NewIvsChannelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IvsChannelTimeoutsOutputReference
 ```

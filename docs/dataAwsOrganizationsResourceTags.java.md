@@ -1,6 +1,6 @@
 # `data_aws_organizations_resource_tags`
 
-Refer to the Terraform Registory for docs: [`data_aws_organizations_resource_tags`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags).
+Refer to the Terraform Registory for docs: [`data_aws_organizations_resource_tags`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags).
 
 # `dataAwsOrganizationsResourceTags` Submodule <a name="`dataAwsOrganizationsResourceTags` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_organizations_resource_tag
 
 ### DataAwsOrganizationsResourceTags <a name="DataAwsOrganizationsResourceTags" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags aws_organizations_resource_tags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags aws_organizations_resource_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer"></a>
 
@@ -44,9 +44,9 @@ DataAwsOrganizationsResourceTags.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}.
 
 ---
 
@@ -691,9 +691,9 @@ DataAwsOrganizationsResourceTagsConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTagsConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}. |
 
 ---
 
@@ -775,7 +775,7 @@ public java.lang.String getResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#resource_id DataAwsOrganizationsResourceTags#resource_id}.
 
 ---
 
@@ -787,7 +787,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#id DataAwsOrganizationsResourceTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/organizations_resource_tags#tags DataAwsOrganizationsResourceTags#tags}.
 
 ---
 

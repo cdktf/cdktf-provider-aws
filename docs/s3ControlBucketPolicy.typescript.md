@@ -1,6 +1,6 @@
 # `aws_s3control_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`aws_s3control_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy).
+Refer to the Terraform Registory for docs: [`aws_s3control_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy).
 
 # `s3ControlBucketPolicy` Submodule <a name="`s3ControlBucketPolicy` Submodule" id="@cdktf/provider-aws.s3ControlBucketPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_s3control_bucket_policy`](https
 
 ### S3ControlBucketPolicy <a name="S3ControlBucketPolicy" id="@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicy.Initializer"></a>
 
@@ -604,9 +604,9 @@ const s3ControlBucketPolicyConfig: s3ControlBucketPolicy.S3ControlBucketPolicyCo
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#bucket S3ControlBucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#policy S3ControlBucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#id S3ControlBucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#bucket S3ControlBucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#policy S3ControlBucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3ControlBucketPolicy.S3ControlBucketPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#id S3ControlBucketPolicy#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#bucket S3ControlBucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#bucket S3ControlBucketPolicy#bucket}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#policy S3ControlBucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#policy S3ControlBucketPolicy#policy}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/s3control_bucket_policy#id S3ControlBucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_policy#id S3ControlBucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

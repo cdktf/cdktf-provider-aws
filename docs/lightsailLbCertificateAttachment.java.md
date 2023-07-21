@@ -1,6 +1,6 @@
 # `aws_lightsail_lb_certificate_attachment`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_lb_certificate_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment).
+Refer to the Terraform Registory for docs: [`aws_lightsail_lb_certificate_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment).
 
 # `lightsailLbCertificateAttachment` Submodule <a name="`lightsailLbCertificateAttachment` Submodule" id="@cdktf/provider-aws.lightsailLbCertificateAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_lb_certificate_attach
 
 ### LightsailLbCertificateAttachment <a name="LightsailLbCertificateAttachment" id="@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment aws_lightsail_lb_certificate_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment aws_lightsail_lb_certificate_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer"></a>
 
@@ -44,9 +44,9 @@ LightsailLbCertificateAttachment.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.certificateName">certificateName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.lbName">lbName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.certificateName">certificateName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.lbName">lbName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -706,9 +706,9 @@ LightsailLbCertificateAttachmentConfig.builder()
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.certificateName">certificateName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.lbName">lbName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.certificateName">certificateName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.lbName">lbName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public java.lang.String getCertificateName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#certificate_name LightsailLbCertificateAttachment#certificate_name}.
 
 ---
 
@@ -802,7 +802,7 @@ public java.lang.String getLbName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#lb_name LightsailLbCertificateAttachment#lb_name}.
 
 ---
 
@@ -814,7 +814,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_lb_certificate_attachment#id LightsailLbCertificateAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

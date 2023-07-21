@@ -1,6 +1,6 @@
 # `aws_emr_studio`
 
-Refer to the Terraform Registory for docs: [`aws_emr_studio`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio).
+Refer to the Terraform Registory for docs: [`aws_emr_studio`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio).
 
 # `emrStudio` Submodule <a name="`emrStudio` Submodule" id="@cdktf/provider-aws.emrStudio"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_emr_studio`](https://registry.t
 
 ### EmrStudio <a name="EmrStudio" id="@cdktf/provider-aws.emrStudio.EmrStudio"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio aws_emr_studio}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio aws_emr_studio}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer"></a>
 
@@ -955,21 +955,21 @@ new EmrStudioConfig {
 | <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.authMode">AuthMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location">DefaultS3Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId">EngineSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#name EmrStudio#name}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole">ServiceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#service_role EmrStudio#service_role}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId">WorkspaceSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#description EmrStudio#description}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#id EmrStudio#id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl">IdpAuthUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName">IdpRelayStateParameterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#tags EmrStudio#tags}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.userRole">UserRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#user_role EmrStudio#user_role}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.authMode">AuthMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location">DefaultS3Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId">EngineSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#name EmrStudio#name}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole">ServiceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#service_role EmrStudio#service_role}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId">WorkspaceSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#description EmrStudio#description}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#id EmrStudio#id}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl">IdpAuthUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName">IdpRelayStateParameterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#tags EmrStudio#tags}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.userRole">UserRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#user_role EmrStudio#user_role}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public string AuthMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public string DefaultS3Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public string EngineSecurityGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}.
 
 ---
 
@@ -1087,7 +1087,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#name EmrStudio#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#name EmrStudio#name}.
 
 ---
 
@@ -1099,7 +1099,7 @@ public string ServiceRole { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#service_role EmrStudio#service_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#service_role EmrStudio#service_role}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}.
 
 ---
 
@@ -1135,7 +1135,7 @@ public string WorkspaceSecurityGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#description EmrStudio#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#description EmrStudio#description}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#id EmrStudio#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#id EmrStudio#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1174,7 @@ public string IdpAuthUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public string IdpRelayStateParameterName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#tags EmrStudio#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#tags EmrStudio#tags}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public string UserRole { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/emr_studio#user_role EmrStudio#user_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_studio#user_role EmrStudio#user_role}.
 
 ---
 

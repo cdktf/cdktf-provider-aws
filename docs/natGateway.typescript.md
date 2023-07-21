@@ -1,6 +1,6 @@
 # `aws_nat_gateway`
 
-Refer to the Terraform Registory for docs: [`aws_nat_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway).
+Refer to the Terraform Registory for docs: [`aws_nat_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway).
 
 # `natGateway` Submodule <a name="`natGateway` Submodule" id="@cdktf/provider-aws.natGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_nat_gateway`](https://registry.
 
 ### NatGateway <a name="NatGateway" id="@cdktf/provider-aws.natGateway.NatGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway aws_nat_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway aws_nat_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer"></a>
 
@@ -760,13 +760,13 @@ const natGatewayConfig: natGateway.NatGatewayConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#id NatGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp">privateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#id NatGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp">privateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
 
 ---
 
@@ -848,7 +848,7 @@ public readonly subnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
 
 ---
 
@@ -860,7 +860,7 @@ public readonly allocationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
 
 ---
 
@@ -872,7 +872,7 @@ public readonly connectivityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
 
 ---
 
@@ -884,7 +884,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#id NatGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#id NatGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ public readonly privateIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
 
 ---
 
@@ -911,7 +911,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#tags NatGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#tags NatGateway#tags}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
 
 ---
 

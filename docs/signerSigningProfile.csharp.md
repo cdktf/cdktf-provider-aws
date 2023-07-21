@@ -1,6 +1,6 @@
 # `aws_signer_signing_profile`
 
-Refer to the Terraform Registory for docs: [`aws_signer_signing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile).
+Refer to the Terraform Registory for docs: [`aws_signer_signing_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile).
 
 # `signerSigningProfile` Submodule <a name="`signerSigningProfile` Submodule" id="@cdktf/provider-aws.signerSigningProfile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_signer_signing_profile`](https:
 
 ### SignerSigningProfile <a name="SignerSigningProfile" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.Initializer"></a>
 
@@ -71,10 +71,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.putSignatureValidityPeriod">PutSignatureValidityPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.putSigningMaterial">PutSigningMaterial</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetNamePrefix">ResetNamePrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetSignatureValidityPeriod">ResetSignatureValidityPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetSigningMaterial">ResetSigningMaterial</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
 
@@ -276,6 +278,18 @@ private void PutSignatureValidityPeriod(SignerSigningProfileSignatureValidityPer
 
 ---
 
+##### `PutSigningMaterial` <a name="PutSigningMaterial" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.putSigningMaterial"></a>
+
+```csharp
+private void PutSigningMaterial(SignerSigningProfileSigningMaterial Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.putSigningMaterial.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a>
+
+---
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetId"></a>
 
 ```csharp
@@ -298,6 +312,12 @@ private void ResetNamePrefix()
 
 ```csharp
 private void ResetSignatureValidityPeriod()
+```
+
+##### `ResetSigningMaterial` <a name="ResetSigningMaterial" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetSigningMaterial"></a>
+
+```csharp
+private void ResetSigningMaterial()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.resetTags"></a>
@@ -404,6 +424,7 @@ SignerSigningProfile.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.platformDisplayName">PlatformDisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.revocationRecord">RevocationRecord</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordList">SignerSigningProfileRevocationRecordList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signatureValidityPeriod">SignatureValidityPeriod</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference">SignerSigningProfileSignatureValidityPeriodOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signingMaterial">SigningMaterial</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference">SignerSigningProfileSigningMaterialOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.version">Version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.versionArn">VersionArn</a></code> | <code>string</code> | *No description.* |
@@ -412,6 +433,7 @@ SignerSigningProfile.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.namePrefixInput">NamePrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.platformIdInput">PlatformIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signatureValidityPeriodInput">SignatureValidityPeriodInput</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod">SignerSigningProfileSignatureValidityPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signingMaterialInput">SigningMaterialInput</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.tagsAllInput">TagsAllInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -605,6 +627,16 @@ public SignerSigningProfileSignatureValidityPeriodOutputReference SignatureValid
 
 ---
 
+##### `SigningMaterial`<sup>Required</sup> <a name="SigningMaterial" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signingMaterial"></a>
+
+```csharp
+public SignerSigningProfileSigningMaterialOutputReference SigningMaterial { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference">SignerSigningProfileSigningMaterialOutputReference</a>
+
+---
+
 ##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.status"></a>
 
 ```csharp
@@ -682,6 +714,16 @@ public SignerSigningProfileSignatureValidityPeriod SignatureValidityPeriodInput 
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod">SignerSigningProfileSignatureValidityPeriod</a>
+
+---
+
+##### `SigningMaterialInput`<sup>Optional</sup> <a name="SigningMaterialInput" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfile.property.signingMaterialInput"></a>
+
+```csharp
+public SignerSigningProfileSigningMaterial SigningMaterialInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a>
 
 ---
 
@@ -805,6 +847,7 @@ new SignerSigningProfileConfig {
     string Name = null,
     string NamePrefix = null,
     SignerSigningProfileSignatureValidityPeriod SignatureValidityPeriod = null,
+    SignerSigningProfileSigningMaterial SigningMaterial = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     System.Collections.Generic.IDictionary<string, string> TagsAll = null
 };
@@ -821,13 +864,14 @@ new SignerSigningProfileConfig {
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.platformId">PlatformId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#platform_id SignerSigningProfile#platform_id}. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#id SignerSigningProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#name SignerSigningProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#name_prefix SignerSigningProfile#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.platformId">PlatformId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#platform_id SignerSigningProfile#platform_id}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#id SignerSigningProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#name SignerSigningProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#name_prefix SignerSigningProfile#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.signatureValidityPeriod">SignatureValidityPeriod</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod">SignerSigningProfileSignatureValidityPeriod</a></code> | signature_validity_period block. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#tags SignerSigningProfile#tags}. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#tags_all SignerSigningProfile#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.signingMaterial">SigningMaterial</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a></code> | signing_material block. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#tags SignerSigningProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#tags_all SignerSigningProfile#tags_all}. |
 
 ---
 
@@ -909,7 +953,7 @@ public string PlatformId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#platform_id SignerSigningProfile#platform_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#platform_id SignerSigningProfile#platform_id}.
 
 ---
 
@@ -921,7 +965,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#id SignerSigningProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#id SignerSigningProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +980,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#name SignerSigningProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#name SignerSigningProfile#name}.
 
 ---
 
@@ -948,7 +992,7 @@ public string NamePrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#name_prefix SignerSigningProfile#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#name_prefix SignerSigningProfile#name_prefix}.
 
 ---
 
@@ -962,7 +1006,21 @@ public SignerSigningProfileSignatureValidityPeriod SignatureValidityPeriod { get
 
 signature_validity_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#signature_validity_period SignerSigningProfile#signature_validity_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#signature_validity_period SignerSigningProfile#signature_validity_period}
+
+---
+
+##### `SigningMaterial`<sup>Optional</sup> <a name="SigningMaterial" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileConfig.property.signingMaterial"></a>
+
+```csharp
+public SignerSigningProfileSigningMaterial SigningMaterial { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a>
+
+signing_material block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#signing_material SignerSigningProfile#signing_material}
 
 ---
 
@@ -974,7 +1032,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#tags SignerSigningProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#tags SignerSigningProfile#tags}.
 
 ---
 
@@ -986,7 +1044,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#tags_all SignerSigningProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#tags_all SignerSigningProfile#tags_all}.
 
 ---
 
@@ -1020,8 +1078,8 @@ new SignerSigningProfileSignatureValidityPeriod {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#type SignerSigningProfile#type}. |
-| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#value SignerSigningProfile#value}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#type SignerSigningProfile#type}. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#value SignerSigningProfile#value}. |
 
 ---
 
@@ -1033,7 +1091,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#type SignerSigningProfile#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#type SignerSigningProfile#type}.
 
 ---
 
@@ -1045,7 +1103,39 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile#value SignerSigningProfile#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#value SignerSigningProfile#value}.
+
+---
+
+### SignerSigningProfileSigningMaterial <a name="SignerSigningProfileSigningMaterial" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new SignerSigningProfileSigningMaterial {
+    string CertificateArn
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial.property.certificateArn">CertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#certificate_arn SignerSigningProfile#certificate_arn}. |
+
+---
+
+##### `CertificateArn`<sup>Required</sup> <a name="CertificateArn" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial.property.certificateArn"></a>
+
+```csharp
+public string CertificateArn { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#certificate_arn SignerSigningProfile#certificate_arn}.
 
 ---
 
@@ -1772,6 +1862,277 @@ public SignerSigningProfileSignatureValidityPeriod InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriod">SignerSigningProfileSignatureValidityPeriod</a>
+
+---
+
+
+### SignerSigningProfileSigningMaterialOutputReference <a name="SignerSigningProfileSigningMaterialOutputReference" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+new SignerSigningProfileSigningMaterialOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.certificateArnInput">CertificateArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.certificateArn">CertificateArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CertificateArnInput`<sup>Optional</sup> <a name="CertificateArnInput" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.certificateArnInput"></a>
+
+```csharp
+public string CertificateArnInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CertificateArn`<sup>Required</sup> <a name="CertificateArn" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.certificateArn"></a>
+
+```csharp
+public string CertificateArn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterialOutputReference.property.internalValue"></a>
+
+```csharp
+public SignerSigningProfileSigningMaterial InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSigningMaterial">SignerSigningProfileSigningMaterial</a>
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_spot_datafeed_subscription`
 
-Refer to the Terraform Registory for docs: [`aws_spot_datafeed_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription).
+Refer to the Terraform Registory for docs: [`aws_spot_datafeed_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription).
 
 # `spotDatafeedSubscription` Submodule <a name="`spotDatafeedSubscription` Submodule" id="@cdktf/provider-aws.spotDatafeedSubscription"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_spot_datafeed_subscription`](ht
 
 ### SpotDatafeedSubscription <a name="SpotDatafeedSubscription" id="@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer"></a>
 
@@ -42,9 +42,9 @@ spotDatafeedSubscription.SpotDatafeedSubscription(
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer.parameter.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
 
 ---
 
@@ -738,9 +738,9 @@ spotDatafeedSubscription.SpotDatafeedSubscriptionConfig(
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
 
 ---
 
@@ -822,7 +822,7 @@ bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
 
 ---
 
@@ -834,7 +834,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
 
 ---
 

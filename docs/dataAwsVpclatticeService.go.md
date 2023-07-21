@@ -1,6 +1,6 @@
 # `data_aws_vpclattice_service`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service).
+Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service).
 
 # `dataAwsVpclatticeService` Submodule <a name="`dataAwsVpclatticeService` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeService"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service`](https
 
 ### DataAwsVpclatticeService <a name="DataAwsVpclatticeService" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service aws_vpclattice_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service aws_vpclattice_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeService(scope Construct, id *string, config DataAwsVpclatticeServiceConfig) DataAwsVpclatticeService
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 &dataawsvpclatticeservice.DataAwsVpclatticeServiceConfig {
 	Connection: interface{},
@@ -677,9 +677,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.serviceIdentifier">ServiceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}. |
 
 ---
 
@@ -761,7 +761,7 @@ ServiceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}.
 
 ---
 
@@ -773,7 +773,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}.
 
 ---
 
@@ -797,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 &dataawsvpclatticeservice.DataAwsVpclatticeServiceDnsEntry {
 
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeServiceDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeServiceDnsEntryList
 ```
@@ -944,7 +944,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeServiceDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeServiceDnsEntryOutputReference
 ```

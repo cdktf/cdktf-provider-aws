@@ -1,6 +1,6 @@
 # `data_aws_identitystore_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_identitystore_group`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group).
+Refer to the Terraform Registory for docs: [`data_aws_identitystore_group`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group).
 
 # `dataAwsIdentitystoreGroup` Submodule <a name="`dataAwsIdentitystoreGroup` Submodule" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_identitystore_group`](http
 
 ### DataAwsIdentitystoreGroup <a name="DataAwsIdentitystoreGroup" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group aws_identitystore_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group aws_identitystore_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroup(scope Construct, id *string, config DataAwsIdentitystoreGroupConfig) DataAwsIdentitystoreGroup
 ```
@@ -304,7 +304,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.DataAwsIdentitystoreGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -648,11 +648,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifier {
-	ExternalId: github.com/cdktf/cdktf-provider-aws-go/aws/v16.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId,
-	UniqueAttribute: github.com/cdktf/cdktf-provider-aws-go/aws/v16.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute,
+	ExternalId: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId,
+	UniqueAttribute: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute,
 }
 ```
 
@@ -675,7 +675,7 @@ ExternalId DataAwsIdentitystoreGroupAlternateIdentifierExternalId
 
 external_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
 
 ---
 
@@ -689,7 +689,7 @@ UniqueAttribute DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute
 
 unique_attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
 
 ---
 
@@ -698,7 +698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId {
 	Id: *string,
@@ -710,8 +710,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalId.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}. |
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ Issuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}.
 
 ---
 
@@ -747,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute {
 	AttributePath: *string,
@@ -759,8 +759,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.property.attributePath">AttributePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.property.attributePath">AttributePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute.property.attributeValue">AttributeValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}. |
 
 ---
 
@@ -772,7 +772,7 @@ AttributePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}.
 
 ---
 
@@ -784,7 +784,7 @@ AttributeValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}.
 
 ---
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	IdentityStoreId: *string,
-	AlternateIdentifier: github.com/cdktf/cdktf-provider-aws-go/aws/v16.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier,
+	AlternateIdentifier: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier,
 	GroupId: *string,
 	Id: *string,
 }
@@ -821,10 +821,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.identityStoreId">IdentityStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.alternateIdentifier">AlternateIdentifier</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifier">DataAwsIdentitystoreGroupAlternateIdentifier</a></code> | alternate_identifier block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}. |
 
 ---
 
@@ -906,7 +906,7 @@ IdentityStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}.
 
 ---
 
@@ -920,7 +920,7 @@ AlternateIdentifier DataAwsIdentitystoreGroupAlternateIdentifier
 
 alternate_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#alternate_identifier DataAwsIdentitystoreGroup#alternate_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#alternate_identifier DataAwsIdentitystoreGroup#alternate_identifier}
 
 ---
 
@@ -932,7 +932,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}.
 
 ---
 
@@ -944,7 +944,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -956,7 +956,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 &dataawsidentitystoregroup.DataAwsIdentitystoreGroupExternalIds {
 
@@ -971,7 +971,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReference
 ```
@@ -1264,7 +1264,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifierExternalId
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierOutputReference
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifier
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputReference
 ```
@@ -1890,7 +1890,7 @@ func InternalValue() DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIdentitystoreGroupExternalIdsList
 ```
@@ -2022,7 +2022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoregroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsidentitystoregroup"
 
 dataawsidentitystoregroup.NewDataAwsIdentitystoreGroupExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupExternalIdsOutputReference
 ```

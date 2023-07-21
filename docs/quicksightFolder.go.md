@@ -1,6 +1,6 @@
 # `aws_quicksight_folder`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_folder`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder).
+Refer to the Terraform Registory for docs: [`aws_quicksight_folder`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder).
 
 # `quicksightFolder` Submodule <a name="`quicksightFolder` Submodule" id="@cdktf/provider-aws.quicksightFolder"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_folder`](https://reg
 
 ### QuicksightFolder <a name="QuicksightFolder" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder aws_quicksight_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder aws_quicksight_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolder(scope Construct, id *string, config QuicksightFolderConfig) QuicksightFolder
 ```
@@ -359,7 +359,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ quicksightfolder.QuicksightFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.QuicksightFolder_IsTerraformResource(x interface{}) *bool
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
 	Permissions: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.quicksightFolder.QuicksightFolderTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightFolder.QuicksightFolderTimeouts,
 }
 ```
 
@@ -902,15 +902,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
 | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.folderId">FolderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#folder_id QuicksightFolder#folder_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#aws_account_id QuicksightFolder#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.folderType">FolderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#folder_type QuicksightFolder#folder_type}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#id QuicksightFolder#id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#name QuicksightFolder#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.parentFolderArn">ParentFolderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#parent_folder_arn QuicksightFolder#parent_folder_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.folderId">FolderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#folder_id QuicksightFolder#folder_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#aws_account_id QuicksightFolder#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.folderType">FolderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#folder_type QuicksightFolder#folder_type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#id QuicksightFolder#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#name QuicksightFolder#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.parentFolderArn">ParentFolderArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#parent_folder_arn QuicksightFolder#parent_folder_arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#tags QuicksightFolder#tags}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#tags_all QuicksightFolder#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#tags QuicksightFolder#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#tags_all QuicksightFolder#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts">QuicksightFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -993,7 +993,7 @@ FolderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#folder_id QuicksightFolder#folder_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#folder_id QuicksightFolder#folder_id}.
 
 ---
 
@@ -1005,7 +1005,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#aws_account_id QuicksightFolder#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#aws_account_id QuicksightFolder#aws_account_id}.
 
 ---
 
@@ -1017,7 +1017,7 @@ FolderType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#folder_type QuicksightFolder#folder_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#folder_type QuicksightFolder#folder_type}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#id QuicksightFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#id QuicksightFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1044,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#name QuicksightFolder#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#name QuicksightFolder#name}.
 
 ---
 
@@ -1056,7 +1056,7 @@ ParentFolderArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#parent_folder_arn QuicksightFolder#parent_folder_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#parent_folder_arn QuicksightFolder#parent_folder_arn}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#permissions QuicksightFolder#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#permissions QuicksightFolder#permissions}
 
 ---
 
@@ -1082,7 +1082,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#tags QuicksightFolder#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#tags QuicksightFolder#tags}.
 
 ---
 
@@ -1094,7 +1094,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#tags_all QuicksightFolder#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#tags_all QuicksightFolder#tags_all}.
 
 ---
 
@@ -1108,7 +1108,7 @@ Timeouts QuicksightFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#timeouts QuicksightFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#timeouts QuicksightFolder#timeouts}
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderPermissions {
 	Actions: *[]*string,
@@ -1129,8 +1129,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#actions QuicksightFolder#actions}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#principal QuicksightFolder#principal}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#actions QuicksightFolder#actions}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#principal QuicksightFolder#principal}. |
 
 ---
 
@@ -1142,7 +1142,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#actions QuicksightFolder#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#actions QuicksightFolder#actions}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#principal QuicksightFolder#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#principal QuicksightFolder#principal}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 &quicksightfolder.QuicksightFolderTimeouts {
 	Create: *string,
@@ -1177,10 +1177,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#create QuicksightFolder#create}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#delete QuicksightFolder#delete}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#read QuicksightFolder#read}. |
-| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#update QuicksightFolder#update}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#create QuicksightFolder#create}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#delete QuicksightFolder#delete}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#read QuicksightFolder#read}. |
+| <code><a href="#@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#update QuicksightFolder#update}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#create QuicksightFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#create QuicksightFolder#create}.
 
 ---
 
@@ -1204,7 +1204,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#delete QuicksightFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#delete QuicksightFolder#delete}.
 
 ---
 
@@ -1216,7 +1216,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#read QuicksightFolder#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#read QuicksightFolder#read}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/quicksight_folder#update QuicksightFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#update QuicksightFolder#update}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightFolderPermissionsList
 ```
@@ -1382,7 +1382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightFolderPermissionsOutputReference
 ```
@@ -1693,7 +1693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightFolder.QuicksightFolderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightfolder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightfolder"
 
 quicksightfolder.NewQuicksightFolderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightFolderTimeoutsOutputReference
 ```

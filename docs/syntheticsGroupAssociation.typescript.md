@@ -1,6 +1,6 @@
 # `aws_synthetics_group_association`
 
-Refer to the Terraform Registory for docs: [`aws_synthetics_group_association`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association).
+Refer to the Terraform Registory for docs: [`aws_synthetics_group_association`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association).
 
 # `syntheticsGroupAssociation` Submodule <a name="`syntheticsGroupAssociation` Submodule" id="@cdktf/provider-aws.syntheticsGroupAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_synthetics_group_association`](
 
 ### SyntheticsGroupAssociation <a name="SyntheticsGroupAssociation" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association aws_synthetics_group_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association aws_synthetics_group_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociation.Initializer"></a>
 
@@ -626,9 +626,9 @@ const syntheticsGroupAssociationConfig: syntheticsGroupAssociation.SyntheticsGro
 | <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.canaryArn">canaryArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}. |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}. |
-| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.canaryArn">canaryArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}. |
+| <code><a href="#@cdktf/provider-aws.syntheticsGroupAssociation.SyntheticsGroupAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ public readonly canaryArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#canary_arn SyntheticsGroupAssociation#canary_arn}.
 
 ---
 
@@ -722,7 +722,7 @@ public readonly groupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#group_name SyntheticsGroupAssociation#group_name}.
 
 ---
 
@@ -734,7 +734,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_group_association#id SyntheticsGroupAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
