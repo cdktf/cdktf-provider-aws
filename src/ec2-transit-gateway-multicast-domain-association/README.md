@@ -1,3 +1,3 @@
 # `aws_ec2_transit_gateway_multicast_domain_association`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_multicast_domain_association`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_transit_gateway_multicast_domain_association).
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway_multicast_domain_association`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association).

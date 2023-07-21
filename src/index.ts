@@ -1233,6 +1233,7 @@ export * as wafv2WebAclAssociation from './wafv2-web-acl-association';
 export * as wafv2WebAclLoggingConfiguration from './wafv2-web-acl-logging-configuration';
 export * as worklinkFleet from './worklink-fleet';
 export * as worklinkWebsiteCertificateAuthorityAssociation from './worklink-website-certificate-authority-association';
+export * as workspacesConnectionAlias from './workspaces-connection-alias';
 export * as workspacesDirectory from './workspaces-directory';
 export * as workspacesIpGroup from './workspaces-ip-group';
 export * as workspacesWorkspace from './workspaces-workspace';

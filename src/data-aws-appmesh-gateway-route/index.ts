@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route
+// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAppmeshGatewayRouteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#id DataAwsAppmeshGatewayRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_name DataAwsAppmeshGatewayRoute#mesh_name}
   */
   readonly meshName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#mesh_owner DataAwsAppmeshGatewayRoute#mesh_owner}
   */
   readonly meshOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#name DataAwsAppmeshGatewayRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#tags DataAwsAppmeshGatewayRoute#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route#virtual_gateway_name DataAwsAppmeshGatewayRoute#virtual_gateway_name}
   */
   readonly virtualGatewayName: string;
 }
@@ -443,6 +443,70 @@ export class DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList e
     return new DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath {
+}
+
+export function dataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathToTerraform(struct?: DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+}
+
+export class DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference {
+    return new DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix {
 }
 
@@ -556,6 +620,12 @@ export class DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReferenc
   private _hostname = new DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList(this, "hostname", false);
   public get hostname() {
     return this._hostname;
+  }
+
+  // path - computed: true, optional: false, required: false
+  private _path = new DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList(this, "path", false);
+  public get path() {
+    return this._path;
   }
 
   // prefix - computed: true, optional: false, required: false
@@ -1517,6 +1587,70 @@ export class DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList ex
     return new DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath {
+}
+
+export function dataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathToTerraform(struct?: DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePath | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // exact - computed: true, optional: false, required: false
+  public get exact() {
+    return this.getStringAttribute('exact');
+  }
+}
+
+export class DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference {
+    return new DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePrefix {
 }
 
@@ -1630,6 +1764,12 @@ export class DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference
   private _hostname = new DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameList(this, "hostname", false);
   public get hostname() {
     return this._hostname;
+  }
+
+  // path - computed: true, optional: false, required: false
+  private _path = new DataAwsAppmeshGatewayRouteSpecHttpRouteActionRewritePathList(this, "path", false);
+  public get path() {
+    return this._path;
   }
 
   // prefix - computed: true, optional: false, required: false
@@ -2611,7 +2751,7 @@ export class DataAwsAppmeshGatewayRouteSpecList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}
 */
 export class DataAwsAppmeshGatewayRoute extends cdktf.TerraformDataSource {
 
@@ -2625,7 +2765,7 @@ export class DataAwsAppmeshGatewayRoute extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2636,7 +2776,7 @@ export class DataAwsAppmeshGatewayRoute extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_appmesh_gateway_route',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

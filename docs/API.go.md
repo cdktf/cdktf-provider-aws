@@ -1741,6 +1741,7 @@ The following submodules are available:
 - [wafv2WebAclLoggingConfiguration](./wafv2WebAclLoggingConfiguration.go.md)
 - [worklinkFleet](./worklinkFleet.go.md)
 - [worklinkWebsiteCertificateAuthorityAssociation](./worklinkWebsiteCertificateAuthorityAssociation.go.md)
+- [workspacesConnectionAlias](./workspacesConnectionAlias.go.md)
 - [workspacesDirectory](./workspacesDirectory.go.md)
 - [workspacesIpGroup](./workspacesIpGroup.go.md)
 - [workspacesWorkspace](./workspacesWorkspace.go.md)

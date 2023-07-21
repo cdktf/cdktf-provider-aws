@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter
+// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface Macie2InvitationAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter#administrator_account_id Macie2InvitationAccepter#administrator_account_id}
   */
   readonly administratorAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter#id Macie2InvitationAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,13 +26,13 @@ export interface Macie2InvitationAccepterConfig extends cdktf.TerraformMetaArgum
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter#timeouts Macie2InvitationAccepter#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter#timeouts Macie2InvitationAccepter#timeouts}
   */
   readonly timeouts?: Macie2InvitationAccepterTimeouts;
 }
 export interface Macie2InvitationAccepterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter#create Macie2InvitationAccepter#create}
   */
   readonly create?: string;
 }
@@ -107,7 +107,7 @@ export class Macie2InvitationAccepterTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter}
 */
 export class Macie2InvitationAccepter extends cdktf.TerraformResource {
 
@@ -121,7 +121,7 @@ export class Macie2InvitationAccepter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter aws_macie2_invitation_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class Macie2InvitationAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_macie2_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

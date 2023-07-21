@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway
+// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsInternetGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#id DataAwsInternetGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#id DataAwsInternetGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#internet_gateway_id DataAwsInternetGateway#internet_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#internet_gateway_id DataAwsInternetGateway#internet_gateway_id}
   */
   readonly internetGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#tags DataAwsInternetGateway#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#tags DataAwsInternetGateway#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#filter DataAwsInternetGateway#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#filter DataAwsInternetGateway#filter}
   */
   readonly filter?: DataAwsInternetGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#timeouts DataAwsInternetGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#timeouts DataAwsInternetGateway#timeouts}
   */
   readonly timeouts?: DataAwsInternetGatewayTimeouts;
 }
@@ -111,11 +111,11 @@ export class DataAwsInternetGatewayAttachmentsList extends cdktf.ComplexList {
 }
 export interface DataAwsInternetGatewayFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#name DataAwsInternetGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#name DataAwsInternetGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#values DataAwsInternetGateway#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#values DataAwsInternetGateway#values}
   */
   readonly values: string[];
 }
@@ -229,7 +229,7 @@ export class DataAwsInternetGatewayFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsInternetGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway#read DataAwsInternetGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway#read DataAwsInternetGateway#read}
   */
   readonly read?: string;
 }
@@ -304,7 +304,7 @@ export class DataAwsInternetGatewayTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway aws_internet_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway aws_internet_gateway}
 */
 export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
 
@@ -318,7 +318,7 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/internet_gateway aws_internet_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/internet_gateway aws_internet_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -329,7 +329,7 @@ export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_internet_gateway',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

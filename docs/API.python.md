@@ -1741,6 +1741,7 @@ The following submodules are available:
 - [wafv2WebAclLoggingConfiguration](./wafv2WebAclLoggingConfiguration.python.md)
 - [worklinkFleet](./worklinkFleet.python.md)
 - [worklinkWebsiteCertificateAuthorityAssociation](./worklinkWebsiteCertificateAuthorityAssociation.python.md)
+- [workspacesConnectionAlias](./workspacesConnectionAlias.python.md)
 - [workspacesDirectory](./workspacesDirectory.python.md)
 - [workspacesIpGroup](./workspacesIpGroup.python.md)
 - [workspacesWorkspace](./workspacesWorkspace.python.md)

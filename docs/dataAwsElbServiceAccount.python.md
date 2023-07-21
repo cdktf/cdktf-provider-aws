@@ -1,6 +1,6 @@
 # `data_aws_elb_service_account`
 
-Refer to the Terraform Registory for docs: [`data_aws_elb_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account).
+Refer to the Terraform Registory for docs: [`data_aws_elb_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account).
 
 # `dataAwsElbServiceAccount` Submodule <a name="`dataAwsElbServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsElbServiceAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_elb_service_account`](http
 
 ### DataAwsElbServiceAccount <a name="DataAwsElbServiceAccount" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account aws_elb_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account aws_elb_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsElbServiceAccount.DataAwsElbServiceAccount(
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}.
 
 ---
 
@@ -694,8 +694,8 @@ dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}. |
 
 ---
 
@@ -777,7 +777,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#id DataAwsElbServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -792,7 +792,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elb_service_account#region DataAwsElbServiceAccount#region}.
 
 ---
 
