@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_voice_profile_domain
 // generated from terraform resource schema
 
@@ -30,13 +25,13 @@ export interface ChimesdkvoiceVoiceProfileDomainConfig extends cdktf.TerraformMe
   readonly tagsAll?: { [key: string]: string };
   /**
   * server_side_encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_voice_profile_domain#server_side_encryption_configuration ChimesdkvoiceVoiceProfileDomain#server_side_encryption_configuration}
   */
   readonly serverSideEncryptionConfiguration: ChimesdkvoiceVoiceProfileDomainServerSideEncryptionConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_voice_profile_domain#timeouts ChimesdkvoiceVoiceProfileDomain#timeouts}
   */
   readonly timeouts?: ChimesdkvoiceVoiceProfileDomainTimeouts;

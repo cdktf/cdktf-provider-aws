@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_public_virtual_interface
 // generated from terraform resource schema
 
@@ -65,7 +60,7 @@ export interface DxPublicVirtualInterfaceConfig extends cdktf.TerraformMetaArgum
   readonly vlan: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_public_virtual_interface#timeouts DxPublicVirtualInterface#timeouts}
   */
   readonly timeouts?: DxPublicVirtualInterfaceTimeouts;

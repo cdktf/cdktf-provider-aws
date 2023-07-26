@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_core_network_policy_attachment
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface NetworkmanagerCoreNetworkPolicyAttachmentConfig extends cdktf.T
   readonly policyDocument: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_core_network_policy_attachment#timeouts NetworkmanagerCoreNetworkPolicyAttachment#timeouts}
   */
   readonly timeouts?: NetworkmanagerCoreNetworkPolicyAttachmentTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream
 // generated from terraform resource schema
 
@@ -53,25 +48,25 @@ export interface CloudwatchMetricStreamConfig extends cdktf.TerraformMetaArgumen
   readonly tagsAll?: { [key: string]: string };
   /**
   * exclude_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream#exclude_filter CloudwatchMetricStream#exclude_filter}
   */
   readonly excludeFilter?: CloudwatchMetricStreamExcludeFilter[] | cdktf.IResolvable;
   /**
   * include_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream#include_filter CloudwatchMetricStream#include_filter}
   */
   readonly includeFilter?: CloudwatchMetricStreamIncludeFilter[] | cdktf.IResolvable;
   /**
   * statistics_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream#statistics_configuration CloudwatchMetricStream#statistics_configuration}
   */
   readonly statisticsConfiguration?: CloudwatchMetricStreamStatisticsConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream#timeouts CloudwatchMetricStream#timeouts}
   */
   readonly timeouts?: CloudwatchMetricStreamTimeouts;
@@ -443,7 +438,7 @@ export interface CloudwatchMetricStreamStatisticsConfiguration {
   readonly additionalStatistics: string[];
   /**
   * include_metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_stream#include_metric CloudwatchMetricStream#include_metric}
   */
   readonly includeMetric: CloudwatchMetricStreamStatisticsConfigurationIncludeMetric[] | cdktf.IResolvable;

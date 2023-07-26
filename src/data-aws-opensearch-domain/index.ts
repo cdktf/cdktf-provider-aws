@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArgume
   readonly tags?: { [key: string]: string };
   /**
   * off_peak_window_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
   */
   readonly offPeakWindowOptions?: DataAwsOpensearchDomainOffPeakWindowOptions;

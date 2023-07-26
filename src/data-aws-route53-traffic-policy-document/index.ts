@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface DataAwsRoute53TrafficPolicyDocumentConfig extends cdktf.Terrafo
   readonly version?: string;
   /**
   * endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#endpoint DataAwsRoute53TrafficPolicyDocument#endpoint}
   */
   readonly endpoint?: DataAwsRoute53TrafficPolicyDocumentEndpoint[] | cdktf.IResolvable;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#rule DataAwsRoute53TrafficPolicyDocument#rule}
   */
   readonly rule?: DataAwsRoute53TrafficPolicyDocumentRule[] | cdktf.IResolvable;
@@ -1433,37 +1428,37 @@ export interface DataAwsRoute53TrafficPolicyDocumentRule {
   readonly type?: string;
   /**
   * geo_proximity_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#geo_proximity_location DataAwsRoute53TrafficPolicyDocument#geo_proximity_location}
   */
   readonly geoProximityLocation?: DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocation[] | cdktf.IResolvable;
   /**
   * items block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#items DataAwsRoute53TrafficPolicyDocument#items}
   */
   readonly items?: DataAwsRoute53TrafficPolicyDocumentRuleItems[] | cdktf.IResolvable;
   /**
   * location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#location DataAwsRoute53TrafficPolicyDocument#location}
   */
   readonly location?: DataAwsRoute53TrafficPolicyDocumentRuleLocation[] | cdktf.IResolvable;
   /**
   * primary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#primary DataAwsRoute53TrafficPolicyDocument#primary}
   */
   readonly primary?: DataAwsRoute53TrafficPolicyDocumentRulePrimary;
   /**
   * region block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#region DataAwsRoute53TrafficPolicyDocument#region}
   */
   readonly region?: DataAwsRoute53TrafficPolicyDocumentRuleRegion[] | cdktf.IResolvable;
   /**
   * secondary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_traffic_policy_document#secondary DataAwsRoute53TrafficPolicyDocument#secondary}
   */
   readonly secondary?: DataAwsRoute53TrafficPolicyDocumentRuleSecondary;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface Wafv2WebAclLoggingConfigurationConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * AWS Kinesis Firehose Delivery Stream ARNs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#log_destination_configs Wafv2WebAclLoggingConfiguration#log_destination_configs}
   */
   readonly logDestinationConfigs: string[];
   /**
   * AWS WebACL ARN
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#resource_arn Wafv2WebAclLoggingConfiguration#resource_arn}
   */
   readonly resourceArn: string;
   /**
   * logging_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#logging_filter Wafv2WebAclLoggingConfiguration#logging_filter}
   */
   readonly loggingFilter?: Wafv2WebAclLoggingConfigurationLoggingFilter;
   /**
   * redacted_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#redacted_fields Wafv2WebAclLoggingConfiguration#redacted_fields}
   */
   readonly redactedFields?: Wafv2WebAclLoggingConfigurationRedactedFields[] | cdktf.IResolvable;
@@ -171,13 +166,13 @@ export class Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNam
 export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition {
   /**
   * action_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#action_condition Wafv2WebAclLoggingConfiguration#action_condition}
   */
   readonly actionCondition?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition;
   /**
   * label_name_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#label_name_condition Wafv2WebAclLoggingConfiguration#label_name_condition}
   */
   readonly labelNameCondition?: Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition;
@@ -307,7 +302,7 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilterFilter {
   readonly requirement: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#condition Wafv2WebAclLoggingConfiguration#condition}
   */
   readonly condition: Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition[] | cdktf.IResolvable;
@@ -447,7 +442,7 @@ export interface Wafv2WebAclLoggingConfigurationLoggingFilter {
   readonly defaultBehavior: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#filter Wafv2WebAclLoggingConfiguration#filter}
   */
   readonly filter: Wafv2WebAclLoggingConfigurationLoggingFilterFilter[] | cdktf.IResolvable;
@@ -707,25 +702,25 @@ export class Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference
 export interface Wafv2WebAclLoggingConfigurationRedactedFields {
   /**
   * method block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#method Wafv2WebAclLoggingConfiguration#method}
   */
   readonly method?: Wafv2WebAclLoggingConfigurationRedactedFieldsMethod;
   /**
   * query_string block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#query_string Wafv2WebAclLoggingConfiguration#query_string}
   */
   readonly queryString?: Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString;
   /**
   * single_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#single_header Wafv2WebAclLoggingConfiguration#single_header}
   */
   readonly singleHeader?: Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader;
   /**
   * uri_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_logging_configuration#uri_path Wafv2WebAclLoggingConfiguration#uri_path}
   */
   readonly uriPath?: Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath;

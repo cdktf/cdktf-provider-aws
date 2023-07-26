@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/dms_endpoint
 // generated from terraform resource schema
 
@@ -33,19 +28,19 @@ export interface DataAwsDmsEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * elasticsearch_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/dms_endpoint#elasticsearch_settings DataAwsDmsEndpoint#elasticsearch_settings}
   */
   readonly elasticsearchSettings?: DataAwsDmsEndpointElasticsearchSettings[] | cdktf.IResolvable;
   /**
   * kafka_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/dms_endpoint#kafka_settings DataAwsDmsEndpoint#kafka_settings}
   */
   readonly kafkaSettings?: DataAwsDmsEndpointKafkaSettings[] | cdktf.IResolvable;
   /**
   * mongodb_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/dms_endpoint#mongodb_settings DataAwsDmsEndpoint#mongodb_settings}
   */
   readonly mongodbSettings?: DataAwsDmsEndpointMongodbSettings[] | cdktf.IResolvable;

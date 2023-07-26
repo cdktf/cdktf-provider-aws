@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_job
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface SignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   readonly profileName: string;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_job#destination SignerSigningJob#destination}
   */
   readonly destination: SignerSigningJobDestination;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_job#source SignerSigningJob#source}
   */
   readonly source: SignerSigningJobSource;
@@ -340,7 +335,7 @@ export class SignerSigningJobDestinationS3OutputReference extends cdktf.ComplexO
 export interface SignerSigningJobDestination {
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
   */
   readonly s3: SignerSigningJobDestinationS3;
@@ -514,7 +509,7 @@ export class SignerSigningJobSourceS3OutputReference extends cdktf.ComplexObject
 export interface SignerSigningJobSource {
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
   */
   readonly s3: SignerSigningJobSourceS3;

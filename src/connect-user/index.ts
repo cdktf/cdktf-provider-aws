@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user
 // generated from terraform resource schema
 
@@ -57,13 +52,13 @@ export interface ConnectUserConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * identity_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user#identity_info ConnectUser#identity_info}
   */
   readonly identityInfo?: ConnectUserIdentityInfo;
   /**
   * phone_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user#phone_config ConnectUser#phone_config}
   */
   readonly phoneConfig: ConnectUserPhoneConfig;

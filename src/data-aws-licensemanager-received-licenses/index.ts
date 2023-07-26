@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/licensemanager_received_licenses
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataAwsLicensemanagerReceivedLicensesConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/licensemanager_received_licenses#filter DataAwsLicensemanagerReceivedLicenses#filter}
   */
   readonly filter?: DataAwsLicensemanagerReceivedLicensesFilter[] | cdktf.IResolvable;

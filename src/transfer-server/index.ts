@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server
 // generated from terraform resource schema
 
@@ -89,19 +84,19 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   readonly url?: string;
   /**
   * endpoint_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server#endpoint_details TransferServer#endpoint_details}
   */
   readonly endpointDetails?: TransferServerEndpointDetails;
   /**
   * protocol_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server#protocol_details TransferServer#protocol_details}
   */
   readonly protocolDetails?: TransferServerProtocolDetails;
   /**
   * workflow_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server#workflow_details TransferServer#workflow_details}
   */
   readonly workflowDetails?: TransferServerWorkflowDetails;
@@ -600,13 +595,13 @@ export class TransferServerWorkflowDetailsOnUploadOutputReference extends cdktf.
 export interface TransferServerWorkflowDetails {
   /**
   * on_partial_upload block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server#on_partial_upload TransferServer#on_partial_upload}
   */
   readonly onPartialUpload?: TransferServerWorkflowDetailsOnPartialUpload;
   /**
   * on_upload block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_server#on_upload TransferServer#on_upload}
   */
   readonly onUpload?: TransferServerWorkflowDetailsOnUpload;

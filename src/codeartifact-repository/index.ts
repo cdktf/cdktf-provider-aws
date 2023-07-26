@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codeartifact_repository
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   readonly tagsAll?: { [key: string]: string };
   /**
   * external_connections block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codeartifact_repository#external_connections CodeartifactRepository#external_connections}
   */
   readonly externalConnections?: CodeartifactRepositoryExternalConnections;
   /**
   * upstream block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codeartifact_repository#upstream CodeartifactRepository#upstream}
   */
   readonly upstream?: CodeartifactRepositoryUpstream[] | cdktf.IResolvable;

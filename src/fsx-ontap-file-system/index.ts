@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_file_system
 // generated from terraform resource schema
 
@@ -85,13 +80,13 @@ export interface FsxOntapFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * disk_iops_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_file_system#disk_iops_configuration FsxOntapFileSystem#disk_iops_configuration}
   */
   readonly diskIopsConfiguration?: FsxOntapFileSystemDiskIopsConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_file_system#timeouts FsxOntapFileSystem#timeouts}
   */
   readonly timeouts?: FsxOntapFileSystemTimeouts;

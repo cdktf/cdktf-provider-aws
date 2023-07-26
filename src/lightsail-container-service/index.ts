@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service
 // generated from terraform resource schema
 
@@ -45,19 +40,19 @@ export interface LightsailContainerServiceConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * private_registry_access block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service#private_registry_access LightsailContainerService#private_registry_access}
   */
   readonly privateRegistryAccess?: LightsailContainerServicePrivateRegistryAccess;
   /**
   * public_domain_names block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service#public_domain_names LightsailContainerService#public_domain_names}
   */
   readonly publicDomainNames?: LightsailContainerServicePublicDomainNames;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service#timeouts LightsailContainerService#timeouts}
   */
   readonly timeouts?: LightsailContainerServiceTimeouts;
@@ -135,7 +130,7 @@ export class LightsailContainerServicePrivateRegistryAccessEcrImagePullerRoleOut
 export interface LightsailContainerServicePrivateRegistryAccess {
   /**
   * ecr_image_puller_role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service#ecr_image_puller_role LightsailContainerService#ecr_image_puller_role}
   */
   readonly ecrImagePullerRole?: LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole;
@@ -320,7 +315,7 @@ export class LightsailContainerServicePublicDomainNamesCertificateList extends c
 export interface LightsailContainerServicePublicDomainNames {
   /**
   * certificate block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service#certificate LightsailContainerService#certificate}
   */
   readonly certificate: LightsailContainerServicePublicDomainNamesCertificate[] | cdktf.IResolvable;

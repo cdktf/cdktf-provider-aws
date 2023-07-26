@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_build
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GameliftBuildConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /**
   * storage_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_build#storage_location GameliftBuild#storage_location}
   */
   readonly storageLocation: GameliftBuildStorageLocation;

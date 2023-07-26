@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition
 // generated from terraform resource schema
 
@@ -25,19 +20,19 @@ export interface DatapipelinePipelineDefinitionConfig extends cdktf.TerraformMet
   readonly pipelineId: string;
   /**
   * parameter_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition#parameter_object DatapipelinePipelineDefinition#parameter_object}
   */
   readonly parameterObject?: DatapipelinePipelineDefinitionParameterObject[] | cdktf.IResolvable;
   /**
   * parameter_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition#parameter_value DatapipelinePipelineDefinition#parameter_value}
   */
   readonly parameterValue?: DatapipelinePipelineDefinitionParameterValue[] | cdktf.IResolvable;
   /**
   * pipeline_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition#pipeline_object DatapipelinePipelineDefinition#pipeline_object}
   */
   readonly pipelineObject: DatapipelinePipelineDefinitionPipelineObject[] | cdktf.IResolvable;
@@ -170,7 +165,7 @@ export interface DatapipelinePipelineDefinitionParameterObject {
   readonly id: string;
   /**
   * attribute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition#attribute DatapipelinePipelineDefinition#attribute}
   */
   readonly attribute?: DatapipelinePipelineDefinitionParameterObjectAttribute[] | cdktf.IResolvable;
@@ -569,7 +564,7 @@ export interface DatapipelinePipelineDefinitionPipelineObject {
   readonly name: string;
   /**
   * field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datapipeline_pipeline_definition#field DatapipelinePipelineDefinition#field}
   */
   readonly field?: DatapipelinePipelineDefinitionPipelineObjectField[] | cdktf.IResolvable;

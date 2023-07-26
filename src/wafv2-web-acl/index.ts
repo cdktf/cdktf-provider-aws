@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { Wafv2WebAclAssociationConfig, 
@@ -60,37 +55,37 @@ export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   readonly tokenDomains?: string[];
   /**
   * association_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#association_config Wafv2WebAcl#association_config}
   */
   readonly associationConfig?: Wafv2WebAclAssociationConfig;
   /**
   * captcha_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
   */
   readonly captchaConfig?: Wafv2WebAclCaptchaConfig;
   /**
   * custom_response_body block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#custom_response_body Wafv2WebAcl#custom_response_body}
   */
   readonly customResponseBody?: Wafv2WebAclCustomResponseBody[] | cdktf.IResolvable;
   /**
   * default_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#default_action Wafv2WebAcl#default_action}
   */
   readonly defaultAction: Wafv2WebAclDefaultAction;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#rule Wafv2WebAcl#rule}
   */
   readonly rule?: Wafv2WebAclRule[] | cdktf.IResolvable;
   /**
   * visibility_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
   */
   readonly visibilityConfig: Wafv2WebAclVisibilityConfig;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule
 // generated from terraform resource schema
 
@@ -49,43 +44,43 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tlsPolicy?: string;
   /**
   * add_header_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#add_header_action SesReceiptRule#add_header_action}
   */
   readonly addHeaderAction?: SesReceiptRuleAddHeaderAction[] | cdktf.IResolvable;
   /**
   * bounce_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#bounce_action SesReceiptRule#bounce_action}
   */
   readonly bounceAction?: SesReceiptRuleBounceAction[] | cdktf.IResolvable;
   /**
   * lambda_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#lambda_action SesReceiptRule#lambda_action}
   */
   readonly lambdaAction?: SesReceiptRuleLambdaAction[] | cdktf.IResolvable;
   /**
   * s3_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#s3_action SesReceiptRule#s3_action}
   */
   readonly s3Action?: SesReceiptRuleS3Action[] | cdktf.IResolvable;
   /**
   * sns_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#sns_action SesReceiptRule#sns_action}
   */
   readonly snsAction?: SesReceiptRuleSnsAction[] | cdktf.IResolvable;
   /**
   * stop_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#stop_action SesReceiptRule#stop_action}
   */
   readonly stopAction?: SesReceiptRuleStopAction[] | cdktf.IResolvable;
   /**
   * workmail_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_receipt_rule#workmail_action SesReceiptRule#workmail_action}
   */
   readonly workmailAction?: SesReceiptRuleWorkmailAction[] | cdktf.IResolvable;

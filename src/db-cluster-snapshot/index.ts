@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_cluster_snapshot
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface DbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_cluster_snapshot#timeouts DbClusterSnapshot#timeouts}
   */
   readonly timeouts?: DbClusterSnapshotTimeouts;

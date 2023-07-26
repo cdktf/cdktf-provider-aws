@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_aggregator
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface ConfigConfigurationAggregatorConfig extends cdktf.TerraformMeta
   readonly tagsAll?: { [key: string]: string };
   /**
   * account_aggregation_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_aggregator#account_aggregation_source ConfigConfigurationAggregator#account_aggregation_source}
   */
   readonly accountAggregationSource?: ConfigConfigurationAggregatorAccountAggregationSource;
   /**
   * organization_aggregation_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_aggregator#organization_aggregation_source ConfigConfigurationAggregator#organization_aggregation_source}
   */
   readonly organizationAggregationSource?: ConfigConfigurationAggregatorOrganizationAggregationSource;

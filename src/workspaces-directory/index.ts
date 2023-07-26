@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_directory
 // generated from terraform resource schema
 
@@ -41,19 +36,19 @@ export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * self_service_permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_directory#self_service_permissions WorkspacesDirectory#self_service_permissions}
   */
   readonly selfServicePermissions?: WorkspacesDirectorySelfServicePermissions;
   /**
   * workspace_access_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_directory#workspace_access_properties WorkspacesDirectory#workspace_access_properties}
   */
   readonly workspaceAccessProperties?: WorkspacesDirectoryWorkspaceAccessProperties;
   /**
   * workspace_creation_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_directory#workspace_creation_properties WorkspacesDirectory#workspace_creation_properties}
   */
   readonly workspaceCreationProperties?: WorkspacesDirectoryWorkspaceCreationProperties;

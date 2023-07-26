@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface LexSlotTypeConfig extends cdktf.TerraformMetaArguments {
   readonly valueSelectionStrategy?: string;
   /**
   * enumeration_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type#enumeration_value LexSlotType#enumeration_value}
   */
   readonly enumerationValue: LexSlotTypeEnumerationValue[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type#timeouts LexSlotType#timeouts}
   */
   readonly timeouts?: LexSlotTypeTimeouts;

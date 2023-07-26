@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_fargate_profile
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface EksFargateProfileConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_fargate_profile#selector EksFargateProfile#selector}
   */
   readonly selector: EksFargateProfileSelector[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_fargate_profile#timeouts EksFargateProfile#timeouts}
   */
   readonly timeouts?: EksFargateProfileTimeouts;

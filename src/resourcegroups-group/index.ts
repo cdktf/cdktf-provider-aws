@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_group
 // generated from terraform resource schema
 
@@ -37,19 +32,19 @@ export interface ResourcegroupsGroupConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_group#configuration ResourcegroupsGroup#configuration}
   */
   readonly configuration?: ResourcegroupsGroupConfiguration[] | cdktf.IResolvable;
   /**
   * resource_query block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_group#resource_query ResourcegroupsGroup#resource_query}
   */
   readonly resourceQuery?: ResourcegroupsGroupResourceQuery;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_group#timeouts ResourcegroupsGroup#timeouts}
   */
   readonly timeouts?: ResourcegroupsGroupTimeouts;
@@ -179,7 +174,7 @@ export interface ResourcegroupsGroupConfiguration {
   readonly type: string;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_group#parameters ResourcegroupsGroup#parameters}
   */
   readonly parameters?: ResourcegroupsGroupConfigurationParameters[] | cdktf.IResolvable;

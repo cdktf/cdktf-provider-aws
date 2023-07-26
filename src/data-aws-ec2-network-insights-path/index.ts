@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_network_insights_path
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataAwsEc2NetworkInsightsPathConfig extends cdktf.TerraformMeta
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_network_insights_path#filter DataAwsEc2NetworkInsightsPath#filter}
   */
   readonly filter?: DataAwsEc2NetworkInsightsPathFilter[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rolesanywhere_trust_anchor
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface RolesanywhereTrustAnchorConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rolesanywhere_trust_anchor#source RolesanywhereTrustAnchor#source}
   */
   readonly source: RolesanywhereTrustAnchorSource;
@@ -141,7 +136,7 @@ export interface RolesanywhereTrustAnchorSource {
   readonly sourceType: string;
   /**
   * source_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rolesanywhere_trust_anchor#source_data RolesanywhereTrustAnchor#source_data}
   */
   readonly sourceData: RolesanywhereTrustAnchorSourceSourceData;

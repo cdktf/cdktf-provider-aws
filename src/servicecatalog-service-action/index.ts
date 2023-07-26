@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_service_action
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface ServicecatalogServiceActionConfig extends cdktf.TerraformMetaAr
   readonly name: string;
   /**
   * definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_service_action#definition ServicecatalogServiceAction#definition}
   */
   readonly definition: ServicecatalogServiceActionDefinition;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_service_action#timeouts ServicecatalogServiceAction#timeouts}
   */
   readonly timeouts?: ServicecatalogServiceActionTimeouts;

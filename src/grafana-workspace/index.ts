@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_workspace
 // generated from terraform resource schema
 
@@ -81,19 +76,19 @@ export interface GrafanaWorkspaceConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * network_access_control block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_workspace#network_access_control GrafanaWorkspace#network_access_control}
   */
   readonly networkAccessControl?: GrafanaWorkspaceNetworkAccessControl;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_workspace#timeouts GrafanaWorkspace#timeouts}
   */
   readonly timeouts?: GrafanaWorkspaceTimeouts;
   /**
   * vpc_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_workspace#vpc_configuration GrafanaWorkspace#vpc_configuration}
   */
   readonly vpcConfiguration?: GrafanaWorkspaceVpcConfiguration;

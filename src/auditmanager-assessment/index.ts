@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_assessment
 // generated from terraform resource schema
 
@@ -34,13 +29,13 @@ export interface AuditmanagerAssessmentConfig extends cdktf.TerraformMetaArgumen
   readonly tags?: { [key: string]: string };
   /**
   * assessment_reports_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_assessment#assessment_reports_destination AuditmanagerAssessment#assessment_reports_destination}
   */
   readonly assessmentReportsDestination?: AuditmanagerAssessmentAssessmentReportsDestination[] | cdktf.IResolvable;
   /**
   * scope block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_assessment#scope AuditmanagerAssessment#scope}
   */
   readonly scope?: AuditmanagerAssessmentScope[] | cdktf.IResolvable;
@@ -544,13 +539,13 @@ export class AuditmanagerAssessmentScopeAwsServicesList extends cdktf.ComplexLis
 export interface AuditmanagerAssessmentScope {
   /**
   * aws_accounts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_assessment#aws_accounts AuditmanagerAssessment#aws_accounts}
   */
   readonly awsAccounts?: AuditmanagerAssessmentScopeAwsAccounts[] | cdktf.IResolvable;
   /**
   * aws_services block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_assessment#aws_services AuditmanagerAssessment#aws_services}
   */
   readonly awsServices?: AuditmanagerAssessmentScopeAwsServices[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_thesaurus
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface KendraThesaurusConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * source_s3_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_thesaurus#source_s3_path KendraThesaurus#source_s3_path}
   */
   readonly sourceS3Path: KendraThesaurusSourceS3Path;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_thesaurus#timeouts KendraThesaurus#timeouts}
   */
   readonly timeouts?: KendraThesaurusTimeouts;

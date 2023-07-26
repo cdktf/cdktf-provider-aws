@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_shared_directory
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface DirectoryServiceSharedDirectoryConfig extends cdktf.TerraformMe
   readonly notes?: string;
   /**
   * target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_shared_directory#target DirectoryServiceSharedDirectory#target}
   */
   readonly target: DirectoryServiceSharedDirectoryTarget;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_shared_directory#timeouts DirectoryServiceSharedDirectory#timeouts}
   */
   readonly timeouts?: DirectoryServiceSharedDirectoryTimeouts;

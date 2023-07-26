@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection
 // generated from terraform resource schema
 
@@ -49,19 +44,19 @@ export interface VpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments
   readonly vpcId: string;
   /**
   * accepter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection#accepter VpcPeeringConnection#accepter}
   */
   readonly accepter?: VpcPeeringConnectionAccepter;
   /**
   * requester block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection#requester VpcPeeringConnection#requester}
   */
   readonly requester?: VpcPeeringConnectionRequester;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection#timeouts VpcPeeringConnection#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionTimeouts;

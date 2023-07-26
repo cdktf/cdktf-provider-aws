@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshiftdata_statement
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface RedshiftdataStatementConfig extends cdktf.TerraformMetaArgument
   readonly workgroupName?: string;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshiftdata_statement#parameters RedshiftdataStatement#parameters}
   */
   readonly parameters?: RedshiftdataStatementParameters[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshiftdata_statement#timeouts RedshiftdataStatement#timeouts}
   */
   readonly timeouts?: RedshiftdataStatementTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_tag_option
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface ServicecatalogTagOptionConfig extends cdktf.TerraformMetaArgume
   readonly value: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
   */
   readonly timeouts?: ServicecatalogTagOptionTimeouts;

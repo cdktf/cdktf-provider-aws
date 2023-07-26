@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface QuicksightFolderConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#permissions QuicksightFolder#permissions}
   */
   readonly permissions?: QuicksightFolderPermissions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_folder#timeouts QuicksightFolder#timeouts}
   */
   readonly timeouts?: QuicksightFolderTimeouts;

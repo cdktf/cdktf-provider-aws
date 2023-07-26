@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set_instance
 // generated from terraform resource schema
 
@@ -45,19 +40,19 @@ export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMet
   readonly stackSetName: string;
   /**
   * deployment_targets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set_instance#deployment_targets CloudformationStackSetInstance#deployment_targets}
   */
   readonly deploymentTargets?: CloudformationStackSetInstanceDeploymentTargets;
   /**
   * operation_preferences block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set_instance#operation_preferences CloudformationStackSetInstance#operation_preferences}
   */
   readonly operationPreferences?: CloudformationStackSetInstanceOperationPreferences;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set_instance#timeouts CloudformationStackSetInstance#timeouts}
   */
   readonly timeouts?: CloudformationStackSetInstanceTimeouts;

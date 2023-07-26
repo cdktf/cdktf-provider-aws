@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_instance_automated_backups_replication
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface DbInstanceAutomatedBackupsReplicationConfig extends cdktf.Terra
   readonly sourceDbInstanceArn: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_instance_automated_backups_replication#timeouts DbInstanceAutomatedBackupsReplication#timeouts}
   */
   readonly timeouts?: DbInstanceAutomatedBackupsReplicationTimeouts;

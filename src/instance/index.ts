@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance
 // generated from terraform resource schema
 
@@ -157,85 +152,85 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSecurityGroupIds?: string[];
   /**
   * capacity_reservation_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#capacity_reservation_specification Instance#capacity_reservation_specification}
   */
   readonly capacityReservationSpecification?: InstanceCapacityReservationSpecification;
   /**
   * cpu_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#cpu_options Instance#cpu_options}
   */
   readonly cpuOptions?: InstanceCpuOptions;
   /**
   * credit_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#credit_specification Instance#credit_specification}
   */
   readonly creditSpecification?: InstanceCreditSpecification;
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#ebs_block_device Instance#ebs_block_device}
   */
   readonly ebsBlockDevice?: InstanceEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * enclave_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#enclave_options Instance#enclave_options}
   */
   readonly enclaveOptions?: InstanceEnclaveOptions;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#ephemeral_block_device Instance#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: InstanceEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * instance_market_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#instance_market_options Instance#instance_market_options}
   */
   readonly instanceMarketOptions?: InstanceInstanceMarketOptions;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#launch_template Instance#launch_template}
   */
   readonly launchTemplate?: InstanceLaunchTemplate;
   /**
   * maintenance_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#maintenance_options Instance#maintenance_options}
   */
   readonly maintenanceOptions?: InstanceMaintenanceOptions;
   /**
   * metadata_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#metadata_options Instance#metadata_options}
   */
   readonly metadataOptions?: InstanceMetadataOptions;
   /**
   * network_interface block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#network_interface Instance#network_interface}
   */
   readonly networkInterface?: InstanceNetworkInterface[] | cdktf.IResolvable;
   /**
   * private_dns_name_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#private_dns_name_options Instance#private_dns_name_options}
   */
   readonly privateDnsNameOptions?: InstancePrivateDnsNameOptions;
   /**
   * root_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#root_block_device Instance#root_block_device}
   */
   readonly rootBlockDevice?: InstanceRootBlockDevice;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#timeouts Instance#timeouts}
   */
   readonly timeouts?: InstanceTimeouts;
@@ -339,7 +334,7 @@ export interface InstanceCapacityReservationSpecification {
   readonly capacityReservationPreference?: string;
   /**
   * capacity_reservation_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#capacity_reservation_target Instance#capacity_reservation_target}
   */
   readonly capacityReservationTarget?: InstanceCapacityReservationSpecificationCapacityReservationTarget;
@@ -1318,7 +1313,7 @@ export interface InstanceInstanceMarketOptions {
   readonly marketType?: string;
   /**
   * spot_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/instance#spot_options Instance#spot_options}
   */
   readonly spotOptions?: InstanceInstanceMarketOptionsSpotOptions;

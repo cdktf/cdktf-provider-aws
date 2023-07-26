@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/key_pair
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface DataAwsKeyPairConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/key_pair#filter DataAwsKeyPair#filter}
   */
   readonly filter?: DataAwsKeyPairFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/key_pair#timeouts DataAwsKeyPair#timeouts}
   */
   readonly timeouts?: DataAwsKeyPairTimeouts;

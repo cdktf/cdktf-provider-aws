@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_stage
 // generated from terraform resource schema
 
@@ -69,13 +64,13 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   readonly xrayTracingEnabled?: boolean | cdktf.IResolvable;
   /**
   * access_log_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_stage#access_log_settings ApiGatewayStage#access_log_settings}
   */
   readonly accessLogSettings?: ApiGatewayStageAccessLogSettings;
   /**
   * canary_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_stage#canary_settings ApiGatewayStage#canary_settings}
   */
   readonly canarySettings?: ApiGatewayStageCanarySettings;

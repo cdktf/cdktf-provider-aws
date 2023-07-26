@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { Wafv2RuleGroupCustomResponseBody, 
@@ -51,19 +46,19 @@ export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * custom_response_body block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_rule_group#custom_response_body Wafv2RuleGroup#custom_response_body}
   */
   readonly customResponseBody?: Wafv2RuleGroupCustomResponseBody[] | cdktf.IResolvable;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_rule_group#rule Wafv2RuleGroup#rule}
   */
   readonly rule?: Wafv2RuleGroupRule[] | cdktf.IResolvable;
   /**
   * visibility_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_rule_group#visibility_config Wafv2RuleGroup#visibility_config}
   */
   readonly visibilityConfig: Wafv2RuleGroupVisibilityConfig;

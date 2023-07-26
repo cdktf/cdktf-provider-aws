@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_permission
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface CloudwatchEventPermissionConfig extends cdktf.TerraformMetaArgu
   readonly statementId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_permission#condition CloudwatchEventPermission#condition}
   */
   readonly condition?: CloudwatchEventPermissionCondition;

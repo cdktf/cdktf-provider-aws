@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association
 // generated from terraform resource schema
 
@@ -29,19 +24,19 @@ export interface CodegurureviewerRepositoryAssociationConfig extends cdktf.Terra
   readonly tagsAll?: { [key: string]: string };
   /**
   * kms_key_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#kms_key_details CodegurureviewerRepositoryAssociation#kms_key_details}
   */
   readonly kmsKeyDetails?: CodegurureviewerRepositoryAssociationKmsKeyDetails;
   /**
   * repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#repository CodegurureviewerRepositoryAssociation#repository}
   */
   readonly repository: CodegurureviewerRepositoryAssociationRepository;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#timeouts CodegurureviewerRepositoryAssociation#timeouts}
   */
   readonly timeouts?: CodegurureviewerRepositoryAssociationTimeouts;
@@ -648,25 +643,25 @@ export class CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputRefere
 export interface CodegurureviewerRepositoryAssociationRepository {
   /**
   * bitbucket block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#bitbucket CodegurureviewerRepositoryAssociation#bitbucket}
   */
   readonly bitbucket?: CodegurureviewerRepositoryAssociationRepositoryBitbucket;
   /**
   * codecommit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#codecommit CodegurureviewerRepositoryAssociation#codecommit}
   */
   readonly codecommit?: CodegurureviewerRepositoryAssociationRepositoryCodecommit;
   /**
   * github_enterprise_server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#github_enterprise_server CodegurureviewerRepositoryAssociation#github_enterprise_server}
   */
   readonly githubEnterpriseServer?: CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer;
   /**
   * s3_bucket block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codegurureviewer_repository_association#s3_bucket CodegurureviewerRepositoryAssociation#s3_bucket}
   */
   readonly s3Bucket?: CodegurureviewerRepositoryAssociationRepositoryS3Bucket;

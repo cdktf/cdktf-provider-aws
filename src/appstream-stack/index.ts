@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack
 // generated from terraform resource schema
 
@@ -53,31 +48,31 @@ export interface AppstreamStackConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * access_endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack#access_endpoints AppstreamStack#access_endpoints}
   */
   readonly accessEndpoints?: AppstreamStackAccessEndpoints[] | cdktf.IResolvable;
   /**
   * application_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack#application_settings AppstreamStack#application_settings}
   */
   readonly applicationSettings?: AppstreamStackApplicationSettings;
   /**
   * storage_connectors block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack#storage_connectors AppstreamStack#storage_connectors}
   */
   readonly storageConnectors?: AppstreamStackStorageConnectors[] | cdktf.IResolvable;
   /**
   * streaming_experience_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack#streaming_experience_settings AppstreamStack#streaming_experience_settings}
   */
   readonly streamingExperienceSettings?: AppstreamStackStreamingExperienceSettings;
   /**
   * user_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_stack#user_settings AppstreamStack#user_settings}
   */
   readonly userSettings?: AppstreamStackUserSettings[] | cdktf.IResolvable;

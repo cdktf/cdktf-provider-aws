@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group
 // generated from terraform resource schema
 
@@ -57,25 +52,25 @@ export interface GameliftGameServerGroupConfig extends cdktf.TerraformMetaArgume
   readonly vpcSubnets?: string[];
   /**
   * auto_scaling_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group#auto_scaling_policy GameliftGameServerGroup#auto_scaling_policy}
   */
   readonly autoScalingPolicy?: GameliftGameServerGroupAutoScalingPolicy;
   /**
   * instance_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group#instance_definition GameliftGameServerGroup#instance_definition}
   */
   readonly instanceDefinition: GameliftGameServerGroupInstanceDefinition[] | cdktf.IResolvable;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group#launch_template GameliftGameServerGroup#launch_template}
   */
   readonly launchTemplate: GameliftGameServerGroupLaunchTemplate;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group#timeouts GameliftGameServerGroup#timeouts}
   */
   readonly timeouts?: GameliftGameServerGroupTimeouts;
@@ -149,7 +144,7 @@ export interface GameliftGameServerGroupAutoScalingPolicy {
   readonly estimatedInstanceWarmup?: number;
   /**
   * target_tracking_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_game_server_group#target_tracking_configuration GameliftGameServerGroup#target_tracking_configuration}
   */
   readonly targetTrackingConfiguration: GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration;

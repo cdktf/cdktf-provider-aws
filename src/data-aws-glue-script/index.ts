@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/glue_script
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface DataAwsGlueScriptConfig extends cdktf.TerraformMetaArguments {
   readonly language?: string;
   /**
   * dag_edge block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/glue_script#dag_edge DataAwsGlueScript#dag_edge}
   */
   readonly dagEdge: DataAwsGlueScriptDagEdge[] | cdktf.IResolvable;
   /**
   * dag_node block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/glue_script#dag_node DataAwsGlueScript#dag_node}
   */
   readonly dagNode: DataAwsGlueScriptDagNode[] | cdktf.IResolvable;
@@ -344,7 +339,7 @@ export interface DataAwsGlueScriptDagNode {
   readonly nodeType: string;
   /**
   * args block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/glue_script#args DataAwsGlueScript#args}
   */
   readonly args: DataAwsGlueScriptDagNodeArgs[] | cdktf.IResolvable;

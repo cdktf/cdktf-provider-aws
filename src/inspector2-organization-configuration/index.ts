@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_organization_configuration
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface Inspector2OrganizationConfigurationConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * auto_enable block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_organization_configuration#auto_enable Inspector2OrganizationConfiguration#auto_enable}
   */
   readonly autoEnable: Inspector2OrganizationConfigurationAutoEnable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_organization_configuration#timeouts Inspector2OrganizationConfiguration#timeouts}
   */
   readonly timeouts?: Inspector2OrganizationConfigurationTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataAwsIdentitystoreGroupConfig extends cdktf.TerraformMetaArgu
   readonly identityStoreId: string;
   /**
   * alternate_identifier block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#alternate_identifier DataAwsIdentitystoreGroup#alternate_identifier}
   */
   readonly alternateIdentifier?: DataAwsIdentitystoreGroupAlternateIdentifier;
@@ -281,13 +276,13 @@ export class DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttributeOutputRe
 export interface DataAwsIdentitystoreGroupAlternateIdentifier {
   /**
   * external_id block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
   */
   readonly externalId?: DataAwsIdentitystoreGroupAlternateIdentifierExternalId;
   /**
   * unique_attribute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
   */
   readonly uniqueAttribute?: DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute;

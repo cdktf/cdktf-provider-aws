@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_vocabulary
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface TranscribeVocabularyConfig extends cdktf.TerraformMetaArguments
   readonly vocabularyName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_vocabulary#timeouts TranscribeVocabulary#timeouts}
   */
   readonly timeouts?: TranscribeVocabularyTimeouts;

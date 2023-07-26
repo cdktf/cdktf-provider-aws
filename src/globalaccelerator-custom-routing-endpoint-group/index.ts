@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_endpoint_group
 // generated from terraform resource schema
 
@@ -29,19 +24,19 @@ export interface GlobalacceleratorCustomRoutingEndpointGroupConfig extends cdktf
   readonly listenerArn: string;
   /**
   * destination_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_endpoint_group#destination_configuration GlobalacceleratorCustomRoutingEndpointGroup#destination_configuration}
   */
   readonly destinationConfiguration: GlobalacceleratorCustomRoutingEndpointGroupDestinationConfiguration[] | cdktf.IResolvable;
   /**
   * endpoint_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_endpoint_group#endpoint_configuration GlobalacceleratorCustomRoutingEndpointGroup#endpoint_configuration}
   */
   readonly endpointConfiguration?: GlobalacceleratorCustomRoutingEndpointGroupEndpointConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_endpoint_group#timeouts GlobalacceleratorCustomRoutingEndpointGroup#timeouts}
   */
   readonly timeouts?: GlobalacceleratorCustomRoutingEndpointGroupTimeouts;

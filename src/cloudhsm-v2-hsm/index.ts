@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudhsm_v2_hsm
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface CloudhsmV2HsmConfig extends cdktf.TerraformMetaArguments {
   readonly subnetId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudhsm_v2_hsm#timeouts CloudhsmV2Hsm#timeouts}
   */
   readonly timeouts?: CloudhsmV2HsmTimeouts;

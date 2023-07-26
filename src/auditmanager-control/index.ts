@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_control
 // generated from terraform resource schema
 
@@ -38,7 +33,7 @@ export interface AuditmanagerControlConfig extends cdktf.TerraformMetaArguments 
   readonly testingInformation?: string;
   /**
   * control_mapping_sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_control#control_mapping_sources AuditmanagerControl#control_mapping_sources}
   */
   readonly controlMappingSources?: AuditmanagerControlControlMappingSources[] | cdktf.IResolvable;
@@ -188,7 +183,7 @@ export interface AuditmanagerControlControlMappingSources {
   readonly troubleshootingText?: string;
   /**
   * source_keyword block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_control#source_keyword AuditmanagerControl#source_keyword}
   */
   readonly sourceKeyword?: AuditmanagerControlControlMappingSourcesSourceKeyword[] | cdktf.IResolvable;

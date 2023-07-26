@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface Ec2InstanceStateConfig extends cdktf.TerraformMetaArguments {
   readonly state: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#timeouts Ec2InstanceState#timeouts}
   */
   readonly timeouts?: Ec2InstanceStateTimeouts;

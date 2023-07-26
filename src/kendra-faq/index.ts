@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_faq
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface KendraFaqConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * s3_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_faq#s3_path KendraFaq#s3_path}
   */
   readonly s3Path: KendraFaqS3Path;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_faq#timeouts KendraFaq#timeouts}
   */
   readonly timeouts?: KendraFaqTimeouts;

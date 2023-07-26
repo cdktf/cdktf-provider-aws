@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_connect_attachment
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface NetworkmanagerConnectAttachmentConfig extends cdktf.TerraformMe
   readonly transportAttachmentId: string;
   /**
   * options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_connect_attachment#options NetworkmanagerConnectAttachment#options}
   */
   readonly options: NetworkmanagerConnectAttachmentOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_connect_attachment#timeouts NetworkmanagerConnectAttachment#timeouts}
   */
   readonly timeouts?: NetworkmanagerConnectAttachmentTimeouts;

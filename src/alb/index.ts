@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb
 // generated from terraform resource schema
 
@@ -105,19 +100,19 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   readonly xffHeaderProcessingMode?: string;
   /**
   * access_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb#access_logs Alb#access_logs}
   */
   readonly accessLogs?: AlbAccessLogs;
   /**
   * subnet_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb#subnet_mapping Alb#subnet_mapping}
   */
   readonly subnetMapping?: AlbSubnetMapping[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb#timeouts Alb#timeouts}
   */
   readonly timeouts?: AlbTimeouts;

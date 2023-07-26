@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route_table
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route_table#filter DataAwsRouteTable#filter}
   */
   readonly filter?: DataAwsRouteTableFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route_table#timeouts DataAwsRouteTable#timeouts}
   */
   readonly timeouts?: DataAwsRouteTableTimeouts;

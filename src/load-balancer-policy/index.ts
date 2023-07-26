@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/load_balancer_policy
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policyTypeName: string;
   /**
   * policy_attribute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/load_balancer_policy#policy_attribute LoadBalancerPolicy#policy_attribute}
   */
   readonly policyAttribute?: LoadBalancerPolicyPolicyAttribute[] | cdktf.IResolvable;

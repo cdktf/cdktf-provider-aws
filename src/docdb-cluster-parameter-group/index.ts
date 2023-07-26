@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/docdb_cluster_parameter_group
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface DocdbClusterParameterGroupConfig extends cdktf.TerraformMetaArg
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/docdb_cluster_parameter_group#parameter DocdbClusterParameterGroup#parameter}
   */
   readonly parameter?: DocdbClusterParameterGroupParameter[] | cdktf.IResolvable;

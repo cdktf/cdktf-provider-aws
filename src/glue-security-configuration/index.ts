@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_security_configuration
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface GlueSecurityConfigurationConfig extends cdktf.TerraformMetaArgu
   readonly name: string;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_security_configuration#encryption_configuration GlueSecurityConfiguration#encryption_configuration}
   */
   readonly encryptionConfiguration: GlueSecurityConfigurationEncryptionConfiguration;
@@ -309,19 +304,19 @@ export class GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputR
 export interface GlueSecurityConfigurationEncryptionConfiguration {
   /**
   * cloudwatch_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_security_configuration#cloudwatch_encryption GlueSecurityConfiguration#cloudwatch_encryption}
   */
   readonly cloudwatchEncryption: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption;
   /**
   * job_bookmarks_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_security_configuration#job_bookmarks_encryption GlueSecurityConfiguration#job_bookmarks_encryption}
   */
   readonly jobBookmarksEncryption: GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption;
   /**
   * s3_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_security_configuration#s3_encryption GlueSecurityConfiguration#s3_encryption}
   */
   readonly s3Encryption: GlueSecurityConfigurationEncryptionConfigurationS3Encryption;

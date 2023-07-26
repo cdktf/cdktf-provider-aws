@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_object_lambda_access_point
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface S3ControlObjectLambdaAccessPointConfig extends cdktf.TerraformM
   readonly name: string;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_object_lambda_access_point#configuration S3ControlObjectLambdaAccessPoint#configuration}
   */
   readonly configuration: S3ControlObjectLambdaAccessPointConfiguration;
@@ -126,7 +121,7 @@ export class S3ControlObjectLambdaAccessPointConfigurationTransformationConfigur
 export interface S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation {
   /**
   * aws_lambda block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_object_lambda_access_point#aws_lambda S3ControlObjectLambdaAccessPoint#aws_lambda}
   */
   readonly awsLambda: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationAwsLambda;
@@ -194,7 +189,7 @@ export interface S3ControlObjectLambdaAccessPointConfigurationTransformationConf
   readonly actions: string[];
   /**
   * content_transformation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_object_lambda_access_point#content_transformation S3ControlObjectLambdaAccessPoint#content_transformation}
   */
   readonly contentTransformation: S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformation;
@@ -322,7 +317,7 @@ export interface S3ControlObjectLambdaAccessPointConfiguration {
   readonly supportingAccessPoint: string;
   /**
   * transformation_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_object_lambda_access_point#transformation_configuration S3ControlObjectLambdaAccessPoint#transformation_configuration}
   */
   readonly transformationConfiguration: S3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_language_model
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface TranscribeLanguageModelConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * input_data_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_language_model#input_data_config TranscribeLanguageModel#input_data_config}
   */
   readonly inputDataConfig: TranscribeLanguageModelInputDataConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_language_model#timeouts TranscribeLanguageModel#timeouts}
   */
   readonly timeouts?: TranscribeLanguageModelTimeouts;

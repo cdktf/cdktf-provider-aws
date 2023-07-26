@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition
 // generated from terraform resource schema
 
@@ -37,25 +32,25 @@ export interface SagemakerFlowDefinitionConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * human_loop_activation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#human_loop_activation_config SagemakerFlowDefinition#human_loop_activation_config}
   */
   readonly humanLoopActivationConfig?: SagemakerFlowDefinitionHumanLoopActivationConfig;
   /**
   * human_loop_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#human_loop_config SagemakerFlowDefinition#human_loop_config}
   */
   readonly humanLoopConfig: SagemakerFlowDefinitionHumanLoopConfig;
   /**
   * human_loop_request_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#human_loop_request_source SagemakerFlowDefinition#human_loop_request_source}
   */
   readonly humanLoopRequestSource?: SagemakerFlowDefinitionHumanLoopRequestSource;
   /**
   * output_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#output_config SagemakerFlowDefinition#output_config}
   */
   readonly outputConfig: SagemakerFlowDefinitionOutputConfig;
@@ -125,7 +120,7 @@ export class SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivation
 export interface SagemakerFlowDefinitionHumanLoopActivationConfig {
   /**
   * human_loop_activation_conditions_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#human_loop_activation_conditions_config SagemakerFlowDefinition#human_loop_activation_conditions_config}
   */
   readonly humanLoopActivationConditionsConfig?: SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfig;
@@ -311,7 +306,7 @@ export class SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmoun
 export interface SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice {
   /**
   * amount_in_usd block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#amount_in_usd SagemakerFlowDefinition#amount_in_usd}
   */
   readonly amountInUsd?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPriceAmountInUsd;
@@ -410,7 +405,7 @@ export interface SagemakerFlowDefinitionHumanLoopConfig {
   readonly workteamArn: string;
   /**
   * public_workforce_task_price block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_flow_definition#public_workforce_task_price SagemakerFlowDefinition#public_workforce_task_price}
   */
   readonly publicWorkforceTaskPrice?: SagemakerFlowDefinitionHumanLoopConfigPublicWorkforceTaskPrice;

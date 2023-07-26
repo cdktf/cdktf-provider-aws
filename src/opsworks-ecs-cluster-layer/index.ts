@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer
 // generated from terraform resource schema
 
@@ -109,19 +104,19 @@ export interface OpsworksEcsClusterLayerConfig extends cdktf.TerraformMetaArgume
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#cloudwatch_configuration OpsworksEcsClusterLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksEcsClusterLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#ebs_volume OpsworksEcsClusterLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksEcsClusterLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#load_based_auto_scaling OpsworksEcsClusterLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksEcsClusterLayerLoadBasedAutoScaling;
@@ -494,7 +489,7 @@ export interface OpsworksEcsClusterLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#log_streams OpsworksEcsClusterLayer#log_streams}
   */
   readonly logStreams?: OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1292,13 +1287,13 @@ export interface OpsworksEcsClusterLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#downscaling OpsworksEcsClusterLayer#downscaling}
   */
   readonly downscaling?: OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ecs_cluster_layer#upscaling OpsworksEcsClusterLayer#upscaling}
   */
   readonly upscaling?: OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling;

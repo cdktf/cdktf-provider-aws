@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_field_level_encryption_profile
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface CloudfrontFieldLevelEncryptionProfileConfig extends cdktf.Terra
   readonly name: string;
   /**
   * encryption_entities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_field_level_encryption_profile#encryption_entities CloudfrontFieldLevelEncryptionProfile#encryption_entities}
   */
   readonly encryptionEntities: CloudfrontFieldLevelEncryptionProfileEncryptionEntities;
@@ -110,7 +105,7 @@ export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems {
   readonly publicKeyId: string;
   /**
   * field_patterns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_field_level_encryption_profile#field_patterns CloudfrontFieldLevelEncryptionProfile#field_patterns}
   */
   readonly fieldPatterns: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns;
@@ -246,7 +241,7 @@ export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList ex
 export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntities {
   /**
   * items block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_field_level_encryption_profile#items CloudfrontFieldLevelEncryptionProfile#items}
   */
   readonly items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | cdktf.IResolvable;

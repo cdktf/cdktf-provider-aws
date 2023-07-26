@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_log_metric_filter
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface CloudwatchLogMetricFilterConfig extends cdktf.TerraformMetaArgu
   readonly pattern: string;
   /**
   * metric_transformation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_log_metric_filter#metric_transformation CloudwatchLogMetricFilter#metric_transformation}
   */
   readonly metricTransformation: CloudwatchLogMetricFilterMetricTransformation;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_user
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataAwsIdentitystoreUserConfig extends cdktf.TerraformMetaArgum
   readonly userId?: string;
   /**
   * alternate_identifier block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_user#alternate_identifier DataAwsIdentitystoreUser#alternate_identifier}
   */
   readonly alternateIdentifier?: DataAwsIdentitystoreUserAlternateIdentifier;
@@ -617,13 +612,13 @@ export class DataAwsIdentitystoreUserAlternateIdentifierUniqueAttributeOutputRef
 export interface DataAwsIdentitystoreUserAlternateIdentifier {
   /**
   * external_id block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_user#external_id DataAwsIdentitystoreUser#external_id}
   */
   readonly externalId?: DataAwsIdentitystoreUserAlternateIdentifierExternalId;
   /**
   * unique_attribute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/identitystore_user#unique_attribute DataAwsIdentitystoreUser#unique_attribute}
   */
   readonly uniqueAttribute?: DataAwsIdentitystoreUserAlternateIdentifierUniqueAttribute;

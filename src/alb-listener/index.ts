@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#default_action AlbListener#default_action}
   */
   readonly defaultAction: AlbListenerDefaultAction[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#timeouts AlbListener#timeouts}
   */
   readonly timeouts?: AlbListenerTimeouts;
@@ -955,13 +950,13 @@ export class AlbListenerDefaultActionForwardTargetGroupList extends cdktf.Comple
 export interface AlbListenerDefaultActionForward {
   /**
   * stickiness block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#stickiness AlbListener#stickiness}
   */
   readonly stickiness?: AlbListenerDefaultActionForwardStickiness;
   /**
   * target_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#target_group AlbListener#target_group}
   */
   readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable;
@@ -1257,31 +1252,31 @@ export interface AlbListenerDefaultAction {
   readonly type: string;
   /**
   * authenticate_cognito block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#authenticate_cognito AlbListener#authenticate_cognito}
   */
   readonly authenticateCognito?: AlbListenerDefaultActionAuthenticateCognito;
   /**
   * authenticate_oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#authenticate_oidc AlbListener#authenticate_oidc}
   */
   readonly authenticateOidc?: AlbListenerDefaultActionAuthenticateOidc;
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#fixed_response AlbListener#fixed_response}
   */
   readonly fixedResponse?: AlbListenerDefaultActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#forward AlbListener#forward}
   */
   readonly forward?: AlbListenerDefaultActionForward;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener#redirect AlbListener#redirect}
   */
   readonly redirect?: AlbListenerDefaultActionRedirect;

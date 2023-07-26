@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set
 // generated from terraform resource schema
 
@@ -65,31 +60,31 @@ export interface EcsTaskSetConfig extends cdktf.TerraformMetaArguments {
   readonly waitUntilStableTimeout?: string;
   /**
   * capacity_provider_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set#capacity_provider_strategy EcsTaskSet#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsTaskSetCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * load_balancer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set#load_balancer EcsTaskSet#load_balancer}
   */
   readonly loadBalancer?: EcsTaskSetLoadBalancer[] | cdktf.IResolvable;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set#network_configuration EcsTaskSet#network_configuration}
   */
   readonly networkConfiguration?: EcsTaskSetNetworkConfiguration;
   /**
   * scale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set#scale EcsTaskSet#scale}
   */
   readonly scale?: EcsTaskSetScale;
   /**
   * service_registries block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_set#service_registries EcsTaskSet#service_registries}
   */
   readonly serviceRegistries?: EcsTaskSetServiceRegistries;

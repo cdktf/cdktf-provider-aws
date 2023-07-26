@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/efs_file_system
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly throughputMode?: string;
   /**
   * lifecycle_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/efs_file_system#lifecycle_policy EfsFileSystem#lifecycle_policy}
   */
   readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource
 // generated from terraform resource schema
 
@@ -41,43 +36,43 @@ export interface AppsyncDatasourceConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * dynamodb_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#dynamodb_config AppsyncDatasource#dynamodb_config}
   */
   readonly dynamodbConfig?: AppsyncDatasourceDynamodbConfig;
   /**
   * elasticsearch_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#elasticsearch_config AppsyncDatasource#elasticsearch_config}
   */
   readonly elasticsearchConfig?: AppsyncDatasourceElasticsearchConfig;
   /**
   * event_bridge_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#event_bridge_config AppsyncDatasource#event_bridge_config}
   */
   readonly eventBridgeConfig?: AppsyncDatasourceEventBridgeConfig;
   /**
   * http_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#http_config AppsyncDatasource#http_config}
   */
   readonly httpConfig?: AppsyncDatasourceHttpConfig;
   /**
   * lambda_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#lambda_config AppsyncDatasource#lambda_config}
   */
   readonly lambdaConfig?: AppsyncDatasourceLambdaConfig;
   /**
   * opensearchservice_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#opensearchservice_config AppsyncDatasource#opensearchservice_config}
   */
   readonly opensearchserviceConfig?: AppsyncDatasourceOpensearchserviceConfig;
   /**
   * relational_database_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#relational_database_config AppsyncDatasource#relational_database_config}
   */
   readonly relationalDatabaseConfig?: AppsyncDatasourceRelationalDatabaseConfig;
@@ -217,7 +212,7 @@ export interface AppsyncDatasourceDynamodbConfig {
   readonly versioned?: boolean | cdktf.IResolvable;
   /**
   * delta_sync_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#delta_sync_config AppsyncDatasource#delta_sync_config}
   */
   readonly deltaSyncConfig?: AppsyncDatasourceDynamodbConfigDeltaSyncConfig;
@@ -620,7 +615,7 @@ export interface AppsyncDatasourceHttpConfigAuthorizationConfig {
   readonly authorizationType?: string;
   /**
   * aws_iam_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#aws_iam_config AppsyncDatasource#aws_iam_config}
   */
   readonly awsIamConfig?: AppsyncDatasourceHttpConfigAuthorizationConfigAwsIamConfig;
@@ -714,7 +709,7 @@ export interface AppsyncDatasourceHttpConfig {
   readonly endpoint: string;
   /**
   * authorization_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#authorization_config AppsyncDatasource#authorization_config}
   */
   readonly authorizationConfig?: AppsyncDatasourceHttpConfigAuthorizationConfig;
@@ -1123,7 +1118,7 @@ export interface AppsyncDatasourceRelationalDatabaseConfig {
   readonly sourceType?: string;
   /**
   * http_endpoint_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_datasource#http_endpoint_config AppsyncDatasource#http_endpoint_config}
   */
   readonly httpEndpointConfig?: AppsyncDatasourceRelationalDatabaseConfigHttpEndpointConfig;

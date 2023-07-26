@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_zone
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * vpc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
   */
   readonly vpc?: Route53ZoneVpc[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/emr_release_labels
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataAwsEmrReleaseLabelsConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * filters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/emr_release_labels#filters DataAwsEmrReleaseLabels#filters}
   */
   readonly filters?: DataAwsEmrReleaseLabelsFilters;

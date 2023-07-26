@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_global_settings
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface ChimesdkvoiceGlobalSettingsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * voice_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_global_settings#voice_connector ChimesdkvoiceGlobalSettings#voice_connector}
   */
   readonly voiceConnector: ChimesdkvoiceGlobalSettingsVoiceConnector;

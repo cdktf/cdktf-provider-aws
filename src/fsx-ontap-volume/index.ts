@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_volume
 // generated from terraform resource schema
 
@@ -65,13 +60,13 @@ export interface FsxOntapVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly volumeType?: string;
   /**
   * tiering_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_volume#tiering_policy FsxOntapVolume#tiering_policy}
   */
   readonly tieringPolicy?: FsxOntapVolumeTieringPolicy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_ontap_volume#timeouts FsxOntapVolume#timeouts}
   */
   readonly timeouts?: FsxOntapVolumeTimeouts;

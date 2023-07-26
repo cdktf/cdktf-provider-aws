@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_usage_plan
 // generated from terraform resource schema
 
@@ -41,19 +36,19 @@ export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * api_stages block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_usage_plan#api_stages ApiGatewayUsagePlan#api_stages}
   */
   readonly apiStages?: ApiGatewayUsagePlanApiStages[] | cdktf.IResolvable;
   /**
   * quota_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_usage_plan#quota_settings ApiGatewayUsagePlan#quota_settings}
   */
   readonly quotaSettings?: ApiGatewayUsagePlanQuotaSettings;
   /**
   * throttle_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_usage_plan#throttle_settings ApiGatewayUsagePlan#throttle_settings}
   */
   readonly throttleSettings?: ApiGatewayUsagePlanThrottleSettings;
@@ -217,7 +212,7 @@ export interface ApiGatewayUsagePlanApiStages {
   readonly stage: string;
   /**
   * throttle block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_usage_plan#throttle ApiGatewayUsagePlan#throttle}
   */
   readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[] | cdktf.IResolvable;

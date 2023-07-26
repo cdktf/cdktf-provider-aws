@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/default_network_acl
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface DefaultNetworkAclConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * egress block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/default_network_acl#egress DefaultNetworkAcl#egress}
   */
   readonly egress?: DefaultNetworkAclEgress[] | cdktf.IResolvable;
   /**
   * ingress block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/default_network_acl#ingress DefaultNetworkAcl#ingress}
   */
   readonly ingress?: DefaultNetworkAclIngress[] | cdktf.IResolvable;

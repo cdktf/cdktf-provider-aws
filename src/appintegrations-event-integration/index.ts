@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appintegrations_event_integration
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface AppintegrationsEventIntegrationConfig extends cdktf.TerraformMe
   readonly tagsAll?: { [key: string]: string };
   /**
   * event_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appintegrations_event_integration#event_filter AppintegrationsEventIntegration#event_filter}
   */
   readonly eventFilter: AppintegrationsEventIntegrationEventFilter;

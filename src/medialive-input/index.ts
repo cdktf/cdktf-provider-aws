@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input
 // generated from terraform resource schema
 
@@ -45,37 +40,37 @@ export interface MedialiveInputConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * destinations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#destinations MedialiveInput#destinations}
   */
   readonly destinations?: MedialiveInputDestinations[] | cdktf.IResolvable;
   /**
   * input_devices block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#input_devices MedialiveInput#input_devices}
   */
   readonly inputDevices?: MedialiveInputInputDevices[] | cdktf.IResolvable;
   /**
   * media_connect_flows block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#media_connect_flows MedialiveInput#media_connect_flows}
   */
   readonly mediaConnectFlows?: MedialiveInputMediaConnectFlows[] | cdktf.IResolvable;
   /**
   * sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#sources MedialiveInput#sources}
   */
   readonly sources?: MedialiveInputSources[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#timeouts MedialiveInput#timeouts}
   */
   readonly timeouts?: MedialiveInputTimeouts;
   /**
   * vpc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#vpc MedialiveInput#vpc}
   */
   readonly vpc?: MedialiveInputVpc;

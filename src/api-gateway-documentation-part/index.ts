@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_documentation_part
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface ApiGatewayDocumentationPartConfig extends cdktf.TerraformMetaAr
   readonly restApiId: string;
   /**
   * location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_documentation_part#location ApiGatewayDocumentationPart#location}
   */
   readonly location: ApiGatewayDocumentationPartLocation;

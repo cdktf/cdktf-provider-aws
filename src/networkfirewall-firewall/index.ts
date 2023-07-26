@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall
 // generated from terraform resource schema
 
@@ -57,13 +52,13 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   readonly vpcId: string;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
   */
   readonly encryptionConfiguration?: NetworkfirewallFirewallEncryptionConfiguration;
   /**
   * subnet_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
   */
   readonly subnetMapping: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable;

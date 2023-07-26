@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline
 // generated from terraform resource schema
 
@@ -41,31 +36,31 @@ export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArgu
   readonly role: string;
   /**
   * content_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline#content_config ElastictranscoderPipeline#content_config}
   */
   readonly contentConfig?: ElastictranscoderPipelineContentConfig;
   /**
   * content_config_permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline#content_config_permissions ElastictranscoderPipeline#content_config_permissions}
   */
   readonly contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[] | cdktf.IResolvable;
   /**
   * notifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline#notifications ElastictranscoderPipeline#notifications}
   */
   readonly notifications?: ElastictranscoderPipelineNotifications;
   /**
   * thumbnail_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline#thumbnail_config ElastictranscoderPipeline#thumbnail_config}
   */
   readonly thumbnailConfig?: ElastictranscoderPipelineThumbnailConfig;
   /**
   * thumbnail_config_permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_pipeline#thumbnail_config_permissions ElastictranscoderPipeline#thumbnail_config_permissions}
   */
   readonly thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[] | cdktf.IResolvable;

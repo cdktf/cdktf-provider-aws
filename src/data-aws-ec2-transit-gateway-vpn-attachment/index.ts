@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_vpn_attachment
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends cdktf.Terra
   readonly vpnConnectionId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_vpn_attachment#filter DataAwsEc2TransitGatewayVpnAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayVpnAttachmentFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_vpn_attachment#timeouts DataAwsEc2TransitGatewayVpnAttachment#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayVpnAttachmentTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_replication_set
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface SsmincidentsReplicationSetConfig extends cdktf.TerraformMetaArg
   readonly tagsAll?: { [key: string]: string };
   /**
   * region block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_replication_set#region SsmincidentsReplicationSet#region}
   */
   readonly region: SsmincidentsReplicationSetRegion[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_replication_set#timeouts SsmincidentsReplicationSet#timeouts}
   */
   readonly timeouts?: SsmincidentsReplicationSetTimeouts;

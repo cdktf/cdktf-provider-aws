@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_instance
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface LightsailInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly userData?: string;
   /**
   * add_on block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_instance#add_on LightsailInstance#add_on}
   */
   readonly addOn?: LightsailInstanceAddOn;

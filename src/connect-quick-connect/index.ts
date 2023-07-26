@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_quick_connect
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface ConnectQuickConnectConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * quick_connect_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_quick_connect#quick_connect_config ConnectQuickConnect#quick_connect_config}
   */
   readonly quickConnectConfig: ConnectQuickConnectQuickConnectConfig;
@@ -383,19 +378,19 @@ export interface ConnectQuickConnectQuickConnectConfig {
   readonly quickConnectType: string;
   /**
   * phone_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
   */
   readonly phoneConfig?: ConnectQuickConnectQuickConnectConfigPhoneConfig[] | cdktf.IResolvable;
   /**
   * queue_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
   */
   readonly queueConfig?: ConnectQuickConnectQuickConnectConfigQueueConfig[] | cdktf.IResolvable;
   /**
   * user_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
   */
   readonly userConfig?: ConnectQuickConnectQuickConnectConfigUserConfig[] | cdktf.IResolvable;

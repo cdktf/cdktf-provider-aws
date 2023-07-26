@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_provisioning_artifacts
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DataAwsServicecatalogProvisioningArtifactsConfig extends cdktf.
   readonly productId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_provisioning_artifacts#timeouts DataAwsServicecatalogProvisioningArtifacts#timeouts}
   */
   readonly timeouts?: DataAwsServicecatalogProvisioningArtifactsTimeouts;

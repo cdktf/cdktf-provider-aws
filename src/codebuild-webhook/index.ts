@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_webhook
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly projectName: string;
   /**
   * filter_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
   */
   readonly filterGroup?: CodebuildWebhookFilterGroup[] | cdktf.IResolvable;
@@ -186,7 +181,7 @@ export class CodebuildWebhookFilterGroupFilterList extends cdktf.ComplexList {
 export interface CodebuildWebhookFilterGroup {
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_webhook#filter CodebuildWebhook#filter}
   */
   readonly filter?: CodebuildWebhookFilterGroupFilter[] | cdktf.IResolvable;

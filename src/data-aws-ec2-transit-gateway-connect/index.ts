@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_connect
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface DataAwsEc2TransitGatewayConnectConfig extends cdktf.TerraformMe
   readonly transitGatewayConnectId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_connect#filter DataAwsEc2TransitGatewayConnect#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayConnectFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_connect#timeouts DataAwsEc2TransitGatewayConnect#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayConnectTimeouts;

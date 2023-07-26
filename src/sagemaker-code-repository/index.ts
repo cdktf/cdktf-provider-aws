@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_code_repository
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface SagemakerCodeRepositoryConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * git_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_code_repository#git_config SagemakerCodeRepository#git_config}
   */
   readonly gitConfig: SagemakerCodeRepositoryGitConfig;

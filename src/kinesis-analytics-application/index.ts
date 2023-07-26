@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application
 // generated from terraform resource schema
 
@@ -45,25 +40,25 @@ export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * cloudwatch_logging_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#cloudwatch_logging_options KinesisAnalyticsApplication#cloudwatch_logging_options}
   */
   readonly cloudwatchLoggingOptions?: KinesisAnalyticsApplicationCloudwatchLoggingOptions;
   /**
   * inputs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#inputs KinesisAnalyticsApplication#inputs}
   */
   readonly inputs?: KinesisAnalyticsApplicationInputs;
   /**
   * outputs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#outputs KinesisAnalyticsApplication#outputs}
   */
   readonly outputs?: KinesisAnalyticsApplicationOutputs[] | cdktf.IResolvable;
   /**
   * reference_data_sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#reference_data_sources KinesisAnalyticsApplication#reference_data_sources}
   */
   readonly referenceDataSources?: KinesisAnalyticsApplicationReferenceDataSources;
@@ -485,7 +480,7 @@ export class KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutpu
 export interface KinesisAnalyticsApplicationInputsProcessingConfiguration {
   /**
   * lambda block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#lambda KinesisAnalyticsApplication#lambda}
   */
   readonly lambda: KinesisAnalyticsApplicationInputsProcessingConfigurationLambda;
@@ -842,13 +837,13 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters {
   /**
   * csv block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#csv KinesisAnalyticsApplication#csv}
   */
   readonly csv?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv;
   /**
   * json block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#json KinesisAnalyticsApplication#json}
   */
   readonly json?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson;
@@ -938,7 +933,7 @@ export class KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameter
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormat {
   /**
   * mapping_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#mapping_parameters KinesisAnalyticsApplication#mapping_parameters}
   */
   readonly mappingParameters?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters;
@@ -1014,13 +1009,13 @@ export interface KinesisAnalyticsApplicationInputsSchema {
   readonly recordEncoding?: string;
   /**
   * record_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#record_columns KinesisAnalyticsApplication#record_columns}
   */
   readonly recordColumns: KinesisAnalyticsApplicationInputsSchemaRecordColumns[] | cdktf.IResolvable;
   /**
   * record_format block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#record_format KinesisAnalyticsApplication#record_format}
   */
   readonly recordFormat: KinesisAnalyticsApplicationInputsSchemaRecordFormat;
@@ -1228,37 +1223,37 @@ export interface KinesisAnalyticsApplicationInputs {
   readonly namePrefix: string;
   /**
   * kinesis_firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#kinesis_firehose KinesisAnalyticsApplication#kinesis_firehose}
   */
   readonly kinesisFirehose?: KinesisAnalyticsApplicationInputsKinesisFirehose;
   /**
   * kinesis_stream block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#kinesis_stream KinesisAnalyticsApplication#kinesis_stream}
   */
   readonly kinesisStream?: KinesisAnalyticsApplicationInputsKinesisStream;
   /**
   * parallelism block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#parallelism KinesisAnalyticsApplication#parallelism}
   */
   readonly parallelism?: KinesisAnalyticsApplicationInputsParallelism;
   /**
   * processing_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#processing_configuration KinesisAnalyticsApplication#processing_configuration}
   */
   readonly processingConfiguration?: KinesisAnalyticsApplicationInputsProcessingConfiguration;
   /**
   * schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#schema KinesisAnalyticsApplication#schema}
   */
   readonly schema: KinesisAnalyticsApplicationInputsSchema;
   /**
   * starting_position_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#starting_position_configuration KinesisAnalyticsApplication#starting_position_configuration}
   */
   readonly startingPositionConfiguration?: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[] | cdktf.IResolvable;
@@ -1791,25 +1786,25 @@ export interface KinesisAnalyticsApplicationOutputs {
   readonly name: string;
   /**
   * kinesis_firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#kinesis_firehose KinesisAnalyticsApplication#kinesis_firehose}
   */
   readonly kinesisFirehose?: KinesisAnalyticsApplicationOutputsKinesisFirehose;
   /**
   * kinesis_stream block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#kinesis_stream KinesisAnalyticsApplication#kinesis_stream}
   */
   readonly kinesisStream?: KinesisAnalyticsApplicationOutputsKinesisStream;
   /**
   * lambda block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#lambda KinesisAnalyticsApplication#lambda}
   */
   readonly lambda?: KinesisAnalyticsApplicationOutputsLambda;
   /**
   * schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#schema KinesisAnalyticsApplication#schema}
   */
   readonly schema: KinesisAnalyticsApplicationOutputsSchema;
@@ -2402,13 +2397,13 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {
   /**
   * csv block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#csv KinesisAnalyticsApplication#csv}
   */
   readonly csv?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv;
   /**
   * json block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#json KinesisAnalyticsApplication#json}
   */
   readonly json?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson;
@@ -2498,7 +2493,7 @@ export class KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMa
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   /**
   * mapping_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#mapping_parameters KinesisAnalyticsApplication#mapping_parameters}
   */
   readonly mappingParameters?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters;
@@ -2574,13 +2569,13 @@ export interface KinesisAnalyticsApplicationReferenceDataSourcesSchema {
   readonly recordEncoding?: string;
   /**
   * record_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#record_columns KinesisAnalyticsApplication#record_columns}
   */
   readonly recordColumns: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[] | cdktf.IResolvable;
   /**
   * record_format block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#record_format KinesisAnalyticsApplication#record_format}
   */
   readonly recordFormat: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat;
@@ -2691,13 +2686,13 @@ export interface KinesisAnalyticsApplicationReferenceDataSources {
   readonly tableName: string;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#s3 KinesisAnalyticsApplication#s3}
   */
   readonly s3: KinesisAnalyticsApplicationReferenceDataSourcesS3;
   /**
   * schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_analytics_application#schema KinesisAnalyticsApplication#schema}
   */
   readonly schema: KinesisAnalyticsApplicationReferenceDataSourcesSchema;

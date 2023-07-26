@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_stage
 // generated from terraform resource schema
 
@@ -57,19 +52,19 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * access_log_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_stage#access_log_settings Apigatewayv2Stage#access_log_settings}
   */
   readonly accessLogSettings?: Apigatewayv2StageAccessLogSettings;
   /**
   * default_route_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_stage#default_route_settings Apigatewayv2Stage#default_route_settings}
   */
   readonly defaultRouteSettings?: Apigatewayv2StageDefaultRouteSettings;
   /**
   * route_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_stage#route_settings Apigatewayv2Stage#route_settings}
   */
   readonly routeSettings?: Apigatewayv2StageRouteSettings[] | cdktf.IResolvable;

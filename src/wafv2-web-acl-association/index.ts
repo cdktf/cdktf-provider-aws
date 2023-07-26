@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface Wafv2WebAclAssociationConfigA extends cdktf.TerraformMetaArgume
   readonly webAclArn: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#timeouts Wafv2WebAclAssociation#timeouts}
   */
   readonly timeouts?: Wafv2WebAclAssociationTimeouts;

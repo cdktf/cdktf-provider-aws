@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssoadmin_customer_managed_policy_attachment
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface SsoadminCustomerManagedPolicyAttachmentConfig extends cdktf.Ter
   readonly permissionSetArn: string;
   /**
   * customer_managed_policy_reference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssoadmin_customer_managed_policy_attachment#customer_managed_policy_reference SsoadminCustomerManagedPolicyAttachment#customer_managed_policy_reference}
   */
   readonly customerManagedPolicyReference: SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReference;

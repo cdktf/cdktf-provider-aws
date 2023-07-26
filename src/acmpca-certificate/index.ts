@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/acmpca_certificate
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface AcmpcaCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly templateArn?: string;
   /**
   * validity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/acmpca_certificate#validity AcmpcaCertificate#validity}
   */
   readonly validity: AcmpcaCertificateValidity;

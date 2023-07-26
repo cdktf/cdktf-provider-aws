@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_user
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   readonly userName: string;
   /**
   * authentication_mode block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
   */
   readonly authenticationMode?: ElasticacheUserAuthenticationMode;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
   */
   readonly timeouts?: ElasticacheUserTimeouts;

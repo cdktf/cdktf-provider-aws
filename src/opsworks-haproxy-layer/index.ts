@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer
 // generated from terraform resource schema
 
@@ -129,19 +124,19 @@ export interface OpsworksHaproxyLayerConfig extends cdktf.TerraformMetaArguments
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#cloudwatch_configuration OpsworksHaproxyLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksHaproxyLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#ebs_volume OpsworksHaproxyLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksHaproxyLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#load_based_auto_scaling OpsworksHaproxyLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksHaproxyLayerLoadBasedAutoScaling;
@@ -514,7 +509,7 @@ export interface OpsworksHaproxyLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#log_streams OpsworksHaproxyLayer#log_streams}
   */
   readonly logStreams?: OpsworksHaproxyLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1312,13 +1307,13 @@ export interface OpsworksHaproxyLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#downscaling OpsworksHaproxyLayer#downscaling}
   */
   readonly downscaling?: OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_haproxy_layer#upscaling OpsworksHaproxyLayer#upscaling}
   */
   readonly upscaling?: OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling;

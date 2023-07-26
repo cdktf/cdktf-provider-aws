@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping
 // generated from terraform resource schema
 
@@ -81,49 +76,49 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   readonly tumblingWindowInSeconds?: number;
   /**
   * amazon_managed_kafka_event_source_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
   */
   readonly amazonManagedKafkaEventSourceConfig?: LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig;
   /**
   * destination_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
   */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig;
   /**
   * document_db_event_source_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
   */
   readonly documentDbEventSourceConfig?: LambdaEventSourceMappingDocumentDbEventSourceConfig;
   /**
   * filter_criteria block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
   */
   readonly filterCriteria?: LambdaEventSourceMappingFilterCriteria;
   /**
   * scaling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
   */
   readonly scalingConfig?: LambdaEventSourceMappingScalingConfig;
   /**
   * self_managed_event_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
   */
   readonly selfManagedEventSource?: LambdaEventSourceMappingSelfManagedEventSource;
   /**
   * self_managed_kafka_event_source_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
   */
   readonly selfManagedKafkaEventSourceConfig?: LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig;
   /**
   * source_access_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
   */
   readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[] | cdktf.IResolvable;
@@ -258,7 +253,7 @@ export class LambdaEventSourceMappingDestinationConfigOnFailureOutputReference e
 export interface LambdaEventSourceMappingDestinationConfig {
   /**
   * on_failure block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
   */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure;
@@ -538,7 +533,7 @@ export class LambdaEventSourceMappingFilterCriteriaFilterList extends cdktf.Comp
 export interface LambdaEventSourceMappingFilterCriteria {
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
   */
   readonly filter?: LambdaEventSourceMappingFilterCriteriaFilter[] | cdktf.IResolvable;

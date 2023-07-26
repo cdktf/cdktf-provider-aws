@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup#configuration AthenaWorkgroup#configuration}
   */
   readonly configuration?: AthenaWorkgroupConfiguration;
@@ -285,13 +280,13 @@ export interface AthenaWorkgroupConfigurationResultConfiguration {
   readonly outputLocation?: string;
   /**
   * acl_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup#acl_configuration AthenaWorkgroup#acl_configuration}
   */
   readonly aclConfiguration?: AthenaWorkgroupConfigurationResultConfigurationAclConfiguration;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup#encryption_configuration AthenaWorkgroup#encryption_configuration}
   */
   readonly encryptionConfiguration?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration;
@@ -447,13 +442,13 @@ export interface AthenaWorkgroupConfiguration {
   readonly requesterPaysEnabled?: boolean | cdktf.IResolvable;
   /**
   * engine_version block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup#engine_version AthenaWorkgroup#engine_version}
   */
   readonly engineVersion?: AthenaWorkgroupConfigurationEngineVersion;
   /**
   * result_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/athena_workgroup#result_configuration AthenaWorkgroup#result_configuration}
   */
   readonly resultConfiguration?: AthenaWorkgroupConfigurationResultConfiguration;

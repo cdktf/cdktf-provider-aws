@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target
 // generated from terraform resource schema
 
@@ -49,61 +44,61 @@ export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArgument
   readonly targetId?: string;
   /**
   * batch_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#batch_target CloudwatchEventTarget#batch_target}
   */
   readonly batchTarget?: CloudwatchEventTargetBatchTarget;
   /**
   * dead_letter_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#dead_letter_config CloudwatchEventTarget#dead_letter_config}
   */
   readonly deadLetterConfig?: CloudwatchEventTargetDeadLetterConfig;
   /**
   * ecs_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#ecs_target CloudwatchEventTarget#ecs_target}
   */
   readonly ecsTarget?: CloudwatchEventTargetEcsTarget;
   /**
   * http_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#http_target CloudwatchEventTarget#http_target}
   */
   readonly httpTarget?: CloudwatchEventTargetHttpTarget;
   /**
   * input_transformer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#input_transformer CloudwatchEventTarget#input_transformer}
   */
   readonly inputTransformer?: CloudwatchEventTargetInputTransformer;
   /**
   * kinesis_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#kinesis_target CloudwatchEventTarget#kinesis_target}
   */
   readonly kinesisTarget?: CloudwatchEventTargetKinesisTarget;
   /**
   * redshift_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#redshift_target CloudwatchEventTarget#redshift_target}
   */
   readonly redshiftTarget?: CloudwatchEventTargetRedshiftTarget;
   /**
   * retry_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#retry_policy CloudwatchEventTarget#retry_policy}
   */
   readonly retryPolicy?: CloudwatchEventTargetRetryPolicy;
   /**
   * run_command_targets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#run_command_targets CloudwatchEventTarget#run_command_targets}
   */
   readonly runCommandTargets?: CloudwatchEventTargetRunCommandTargets[] | cdktf.IResolvable;
   /**
   * sqs_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#sqs_target CloudwatchEventTarget#sqs_target}
   */
   readonly sqsTarget?: CloudwatchEventTargetSqsTarget;
@@ -858,25 +853,25 @@ export interface CloudwatchEventTargetEcsTarget {
   readonly taskDefinitionArn: string;
   /**
   * capacity_provider_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#capacity_provider_strategy CloudwatchEventTarget#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: CloudwatchEventTargetEcsTargetCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#network_configuration CloudwatchEventTarget#network_configuration}
   */
   readonly networkConfiguration?: CloudwatchEventTargetEcsTargetNetworkConfiguration;
   /**
   * ordered_placement_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#ordered_placement_strategy CloudwatchEventTarget#ordered_placement_strategy}
   */
   readonly orderedPlacementStrategy?: CloudwatchEventTargetEcsTargetOrderedPlacementStrategy[] | cdktf.IResolvable;
   /**
   * placement_constraint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_target#placement_constraint CloudwatchEventTarget#placement_constraint}
   */
   readonly placementConstraint?: CloudwatchEventTargetEcsTargetPlacementConstraint[] | cdktf.IResolvable;

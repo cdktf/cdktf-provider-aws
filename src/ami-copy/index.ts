@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami_copy
 // generated from terraform resource schema
 
@@ -61,19 +56,19 @@ export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami_copy#ebs_block_device AmiCopy#ebs_block_device}
   */
   readonly ebsBlockDevice?: AmiCopyEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami_copy#ephemeral_block_device AmiCopy#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: AmiCopyEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami_copy#timeouts AmiCopy#timeouts}
   */
   readonly timeouts?: AmiCopyTimeouts;

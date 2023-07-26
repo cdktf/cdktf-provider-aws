@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_rule
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * target_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_rule#target_ip Route53ResolverRule#target_ip}
   */
   readonly targetIp?: Route53ResolverRuleTargetIp[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_rule#timeouts Route53ResolverRule#timeouts}
   */
   readonly timeouts?: Route53ResolverRuleTimeouts;

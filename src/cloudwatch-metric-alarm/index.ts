@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_alarm
 // generated from terraform resource schema
 
@@ -109,7 +104,7 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   readonly unit?: string;
   /**
   * metric_query block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_alarm#metric_query CloudwatchMetricAlarm#metric_query}
   */
   readonly metricQuery?: CloudwatchMetricAlarmMetricQuery[] | cdktf.IResolvable;
@@ -335,7 +330,7 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly returnData?: boolean | cdktf.IResolvable;
   /**
   * metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_metric_alarm#metric CloudwatchMetricAlarm#metric}
   */
   readonly metric?: CloudwatchMetricAlarmMetricQueryMetric;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dms_s3_endpoint
 // generated from terraform resource schema
 
@@ -213,7 +208,7 @@ export interface DmsS3EndpointConfig extends cdktf.TerraformMetaArguments {
   readonly useTaskStartTimeForFullLoadTimestamp?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dms_s3_endpoint#timeouts DmsS3Endpoint#timeouts}
   */
   readonly timeouts?: DmsS3EndpointTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface MedialiveChannelCdiInputSpecification {
   /**
@@ -434,19 +429,19 @@ export interface MedialiveChannelDestinations {
   readonly id: string;
   /**
   * media_package_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
   */
   readonly mediaPackageSettings?: MedialiveChannelDestinationsMediaPackageSettings[] | cdktf.IResolvable;
   /**
   * multiplex_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
   */
   readonly multiplexSettings?: MedialiveChannelDestinationsMultiplexSettings;
   /**
   * settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
   */
   readonly settings?: MedialiveChannelDestinationsSettings[] | cdktf.IResolvable;
@@ -962,13 +957,13 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkS
   readonly nielsenDistributionType?: string;
   /**
   * nielsen_cbet_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_cbet_settings MedialiveChannel#nielsen_cbet_settings}
   */
   readonly nielsenCbetSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings;
   /**
   * nielsen_naes_ii_nw_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
   */
   readonly nielsenNaesIiNwSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings[] | cdktf.IResolvable;
@@ -1081,7 +1076,7 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSetti
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings {
   /**
   * nielsen_watermarks_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_watermarks_settings MedialiveChannel#nielsen_watermarks_settings}
   */
   readonly nielsenWatermarksSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings;
@@ -2737,43 +2732,43 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSet
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings {
   /**
   * aac_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#aac_settings MedialiveChannel#aac_settings}
   */
   readonly aacSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings;
   /**
   * ac3_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ac3_settings MedialiveChannel#ac3_settings}
   */
   readonly ac3Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings;
   /**
   * eac3_atmos_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
   */
   readonly eac3AtmosSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings;
   /**
   * eac3_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
   */
   readonly eac3Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings;
   /**
   * mp2_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
   */
   readonly mp2Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings;
   /**
   * pass_through_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
   */
   readonly passThroughSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings;
   /**
   * wav_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#wav_settings MedialiveChannel#wav_settings}
   */
   readonly wavSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings;
@@ -3100,7 +3095,7 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsCh
   readonly outputChannel: number;
   /**
   * input_channel_levels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_channel_levels MedialiveChannel#input_channel_levels}
   */
   readonly inputChannelLevels: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels[] | cdktf.IResolvable;
@@ -3224,7 +3219,7 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings {
   readonly channelsOut?: number;
   /**
   * channel_mappings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#channel_mappings MedialiveChannel#channel_mappings}
   */
   readonly channelMappings: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings[] | cdktf.IResolvable;
@@ -3362,25 +3357,25 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptions {
   readonly streamName?: string;
   /**
   * audio_normalization_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_normalization_settings MedialiveChannel#audio_normalization_settings}
   */
   readonly audioNormalizationSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings;
   /**
   * audio_watermark_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_watermark_settings MedialiveChannel#audio_watermark_settings}
   */
   readonly audioWatermarkSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings;
   /**
   * codec_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
   */
   readonly codecSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings;
   /**
   * remix_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#remix_settings MedialiveChannel#remix_settings}
   */
   readonly remixSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings;
@@ -3823,7 +3818,7 @@ export interface MedialiveChannelEncoderSettingsAvailBlanking {
   readonly state?: string;
   /**
   * avail_blanking_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
   */
   readonly availBlankingImage?: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage;
@@ -3978,7 +3973,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchi
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings {
   /**
   * archive_s3_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_s3_settings MedialiveChannel#archive_s3_settings}
   */
   readonly archiveS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings;
@@ -4111,13 +4106,13 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsA
   readonly rolloverInterval?: number;
   /**
   * archive_cdn_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_cdn_settings MedialiveChannel#archive_cdn_settings}
   */
   readonly archiveCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination;
@@ -4386,7 +4381,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrame
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings {
   /**
   * frame_capture_s3_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_s3_settings MedialiveChannel#frame_capture_s3_settings}
   */
   readonly frameCaptureS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings;
@@ -4453,13 +4448,13 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrame
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings {
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination;
   /**
   * frame_capture_cdn_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_cdn_settings MedialiveChannel#frame_capture_cdn_settings}
   */
   readonly frameCaptureCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings;
@@ -5534,31 +5529,31 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings {
   /**
   * hls_akamai_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_akamai_settings MedialiveChannel#hls_akamai_settings}
   */
   readonly hlsAkamaiSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings;
   /**
   * hls_basic_put_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_basic_put_settings MedialiveChannel#hls_basic_put_settings}
   */
   readonly hlsBasicPutSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings;
   /**
   * hls_media_store_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_media_store_settings MedialiveChannel#hls_media_store_settings}
   */
   readonly hlsMediaStoreSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings;
   /**
   * hls_s3_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_s3_settings MedialiveChannel#hls_s3_settings}
   */
   readonly hlsS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings;
   /**
   * hls_webdav_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_webdav_settings MedialiveChannel#hls_webdav_settings}
   */
   readonly hlsWebdavSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings;
@@ -5869,7 +5864,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   readonly staticKeyValue: string;
   /**
   * key_provider_server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
   */
   readonly keyProviderServer?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer;
@@ -5988,7 +5983,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings {
   /**
   * static_key_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
   */
   readonly staticKeySettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings[] | cdktf.IResolvable;
@@ -6207,25 +6202,25 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   readonly tsFileMode?: string;
   /**
   * caption_language_mappings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
   */
   readonly captionLanguageMappings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings[] | cdktf.IResolvable;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination;
   /**
   * hls_cdn_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
   */
   readonly hlsCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings[] | cdktf.IResolvable;
   /**
   * key_provider_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
   */
   readonly keyProviderSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings;
@@ -7294,7 +7289,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMedia
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings {
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination;
@@ -7492,7 +7487,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsM
   readonly timestampOffsetMode?: string;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination;
@@ -8354,49 +8349,49 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGr
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings {
   /**
   * archive_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
   */
   readonly archiveGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings[] | cdktf.IResolvable;
   /**
   * frame_capture_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
   */
   readonly frameCaptureGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings;
   /**
   * hls_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_group_settings MedialiveChannel#hls_group_settings}
   */
   readonly hlsGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings;
   /**
   * media_package_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_group_settings MedialiveChannel#media_package_group_settings}
   */
   readonly mediaPackageGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings;
   /**
   * ms_smooth_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ms_smooth_group_settings MedialiveChannel#ms_smooth_group_settings}
   */
   readonly msSmoothGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings;
   /**
   * multiplex_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_group_settings MedialiveChannel#multiplex_group_settings}
   */
   readonly multiplexGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings;
   /**
   * rtmp_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rtmp_group_settings MedialiveChannel#rtmp_group_settings}
   */
   readonly rtmpGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings;
   /**
   * udp_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
   */
   readonly udpGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings;
@@ -9124,19 +9119,19 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly videoPid?: string;
   /**
   * dvb_nit_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
   */
   readonly dvbNitSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings;
   /**
   * dvb_sdt_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
   */
   readonly dvbSdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings;
   /**
   * dvb_tdt_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
   */
   readonly dvbTdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings;
@@ -10299,13 +10294,13 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings {
   /**
   * m2ts_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
   */
   readonly m2TsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings;
   /**
   * raw_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#raw_settings MedialiveChannel#raw_settings}
   */
   readonly rawSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings;
@@ -10403,7 +10398,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly nameModifier?: string;
   /**
   * container_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
   */
   readonly containerSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings;
@@ -10709,7 +10704,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly segmentType?: string;
   /**
   * audio_only_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_only_image MedialiveChannel#audio_only_image}
   */
   readonly audioOnlyImage?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage;
@@ -11503,7 +11498,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly audioRenditionSets?: string;
   /**
   * m3u8_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m3u8_settings MedialiveChannel#m3u8_settings}
   */
   readonly m3U8Settings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings;
@@ -11590,25 +11585,25 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings {
   /**
   * audio_only_hls_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_only_hls_settings MedialiveChannel#audio_only_hls_settings}
   */
   readonly audioOnlyHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings;
   /**
   * fmp4_hls_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fmp4_hls_settings MedialiveChannel#fmp4_hls_settings}
   */
   readonly fmp4HlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings;
   /**
   * frame_capture_hls_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_hls_settings MedialiveChannel#frame_capture_hls_settings}
   */
   readonly frameCaptureHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings;
   /**
   * standard_hls_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#standard_hls_settings MedialiveChannel#standard_hls_settings}
   */
   readonly standardHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings;
@@ -11756,7 +11751,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly segmentModifier?: string;
   /**
   * hls_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_settings MedialiveChannel#hls_settings}
   */
   readonly hlsSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings;
@@ -12081,7 +12076,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMul
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings {
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination;
@@ -12219,7 +12214,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly numRetries?: number;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination;
@@ -12852,19 +12847,19 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly videoPid?: string;
   /**
   * dvb_nit_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
   */
   readonly dvbNitSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings;
   /**
   * dvb_sdt_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
   */
   readonly dvbSdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings;
   /**
   * dvb_tdt_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
   */
   readonly dvbTdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings;
@@ -13989,7 +13984,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings {
   /**
   * m2ts_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
   */
   readonly m2TsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings;
@@ -14241,19 +14236,19 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   readonly bufferMsec?: number;
   /**
   * container_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
   */
   readonly containerSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination;
   /**
   * fec_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fec_output_settings MedialiveChannel#fec_output_settings}
   */
   readonly fecOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings;
@@ -14383,49 +14378,49 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings {
   /**
   * archive_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_output_settings MedialiveChannel#archive_output_settings}
   */
   readonly archiveOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings;
   /**
   * frame_capture_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_output_settings MedialiveChannel#frame_capture_output_settings}
   */
   readonly frameCaptureOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings;
   /**
   * hls_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_output_settings MedialiveChannel#hls_output_settings}
   */
   readonly hlsOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings;
   /**
   * media_package_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_output_settings MedialiveChannel#media_package_output_settings}
   */
   readonly mediaPackageOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings;
   /**
   * ms_smooth_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ms_smooth_output_settings MedialiveChannel#ms_smooth_output_settings}
   */
   readonly msSmoothOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings;
   /**
   * multiplex_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_output_settings MedialiveChannel#multiplex_output_settings}
   */
   readonly multiplexOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings;
   /**
   * rtmp_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rtmp_output_settings MedialiveChannel#rtmp_output_settings}
   */
   readonly rtmpOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings;
   /**
   * udp_output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#udp_output_settings MedialiveChannel#udp_output_settings}
   */
   readonly udpOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings;
@@ -14669,7 +14664,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputs {
   readonly videoDescriptionName?: string;
   /**
   * output_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_settings MedialiveChannel#output_settings}
   */
   readonly outputSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings;
@@ -14861,13 +14856,13 @@ export interface MedialiveChannelEncoderSettingsOutputGroups {
   readonly name?: string;
   /**
   * output_group_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_group_settings MedialiveChannel#output_group_settings}
   */
   readonly outputGroupSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings;
   /**
   * outputs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
   */
   readonly outputs: MedialiveChannelEncoderSettingsOutputGroupsOutputs[] | cdktf.IResolvable;
@@ -15279,7 +15274,7 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings {
   /**
   * temporal_filter_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
   */
   readonly temporalFilterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings;
@@ -15502,7 +15497,7 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   readonly timecodeInsertion?: string;
   /**
   * filter_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
   */
   readonly filterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings;
@@ -16710,31 +16705,31 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings {
   /**
   * color_space_passthrough_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_space_passthrough_settings MedialiveChannel#color_space_passthrough_settings}
   */
   readonly colorSpacePassthroughSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings;
   /**
   * dolby_vision81_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dolby_vision81_settings MedialiveChannel#dolby_vision81_settings}
   */
   readonly dolbyVision81Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings;
   /**
   * hdr10_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hdr10_settings MedialiveChannel#hdr10_settings}
   */
   readonly hdr10Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings;
   /**
   * rec601_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rec601_settings MedialiveChannel#rec601_settings}
   */
   readonly rec601Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings;
   /**
   * rec709_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rec709_settings MedialiveChannel#rec709_settings}
   */
   readonly rec709Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings;
@@ -16985,7 +16980,7 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings {
   /**
   * temporal_filter_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
   */
   readonly temporalFilterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings;
@@ -17279,19 +17274,19 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   readonly timecodeInsertion?: string;
   /**
   * color_space_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_space_settings MedialiveChannel#color_space_settings}
   */
   readonly colorSpaceSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings;
   /**
   * filter_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
   */
   readonly filterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings;
   /**
   * timecode_burnin_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_burnin_settings MedialiveChannel#timecode_burnin_settings}
   */
   readonly timecodeBurninSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings;
@@ -18016,19 +18011,19 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings {
   /**
   * frame_capture_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_settings MedialiveChannel#frame_capture_settings}
   */
   readonly frameCaptureSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings;
   /**
   * h264_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h264_settings MedialiveChannel#h264_settings}
   */
   readonly h264Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings;
   /**
   * h265_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h265_settings MedialiveChannel#h265_settings}
   */
   readonly h265Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings;
@@ -18165,7 +18160,7 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptions {
   readonly width?: number;
   /**
   * codec_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
   */
   readonly codecSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings;
@@ -18399,31 +18394,31 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsList extends cdktf.
 export interface MedialiveChannelEncoderSettings {
   /**
   * audio_descriptions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
   */
   readonly audioDescriptions?: MedialiveChannelEncoderSettingsAudioDescriptions[] | cdktf.IResolvable;
   /**
   * avail_blanking block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
   */
   readonly availBlanking?: MedialiveChannelEncoderSettingsAvailBlanking;
   /**
   * output_groups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_groups MedialiveChannel#output_groups}
   */
   readonly outputGroups: MedialiveChannelEncoderSettingsOutputGroups[] | cdktf.IResolvable;
   /**
   * timecode_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_config MedialiveChannel#timecode_config}
   */
   readonly timecodeConfig: MedialiveChannelEncoderSettingsTimecodeConfig;
   /**
   * video_descriptions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}
   */
   readonly videoDescriptions?: MedialiveChannelEncoderSettingsVideoDescriptions[] | cdktf.IResolvable;
@@ -18822,19 +18817,19 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailo
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings {
   /**
   * audio_silence_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
   */
   readonly audioSilenceSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings;
   /**
   * input_loss_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
   */
   readonly inputLossSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings;
   /**
   * video_black_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
   */
   readonly videoBlackSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings;
@@ -18947,7 +18942,7 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailo
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition {
   /**
   * failover_condition_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
   */
   readonly failoverConditionSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings;
@@ -19058,7 +19053,7 @@ export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings 
   readonly secondaryInputId: string;
   /**
   * failover_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
   */
   readonly failoverCondition?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition[] | cdktf.IResolvable;
@@ -19522,7 +19517,7 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection {
   /**
   * track block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#track MedialiveChannel#track}
   */
   readonly track: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack[] | cdktf.IResolvable;
@@ -19586,25 +19581,25 @@ export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorS
 export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings {
   /**
   * audio_hls_rendition_selection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
   */
   readonly audioHlsRenditionSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection;
   /**
   * audio_language_selection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
   */
   readonly audioLanguageSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection;
   /**
   * audio_pid_selection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
   */
   readonly audioPidSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection;
   /**
   * audio_track_selection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
   */
   readonly audioTrackSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection;
@@ -19744,7 +19739,7 @@ export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelector {
   readonly name: string;
   /**
   * selector_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
   */
   readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings;
@@ -20488,7 +20483,7 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSel
   readonly pageNumber?: string;
   /**
   * output_rectangle block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
   */
   readonly outputRectangle?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle;
@@ -20578,37 +20573,37 @@ export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelecto
 export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings {
   /**
   * ancillary_source_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
   */
   readonly ancillarySourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings;
   /**
   * dvb_tdt_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
   */
   readonly dvbTdtSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings;
   /**
   * embedded_source_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
   */
   readonly embeddedSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings;
   /**
   * scte20_source_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
   */
   readonly scte20SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings;
   /**
   * scte27_source_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
   */
   readonly scte27SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings;
   /**
   * teletext_source_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
   */
   readonly teletextSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings;
@@ -20798,7 +20793,7 @@ export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
   readonly name: string;
   /**
   * selector_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
   */
   readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings;
@@ -21117,7 +21112,7 @@ export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettin
   readonly serverValidation?: string;
   /**
   * hls_input_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
   */
   readonly hlsInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings;

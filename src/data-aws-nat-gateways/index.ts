@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateways
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface DataAwsNatGatewaysConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateways#filter DataAwsNatGateways#filter}
   */
   readonly filter?: DataAwsNatGatewaysFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateways#timeouts DataAwsNatGateways#timeouts}
   */
   readonly timeouts?: DataAwsNatGatewaysTimeouts;

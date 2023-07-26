@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_ipset
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * ip_set_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_ipset#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
   */
   readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workteam
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface SagemakerWorkteamConfig extends cdktf.TerraformMetaArguments {
   readonly workteamName: string;
   /**
   * member_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
   */
   readonly memberDefinition: SagemakerWorkteamMemberDefinition[] | cdktf.IResolvable;
   /**
   * notification_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workteam#notification_configuration SagemakerWorkteam#notification_configuration}
   */
   readonly notificationConfiguration?: SagemakerWorkteamNotificationConfiguration;
@@ -227,13 +222,13 @@ export class SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReferenc
 export interface SagemakerWorkteamMemberDefinition {
   /**
   * cognito_member_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workteam#cognito_member_definition SagemakerWorkteam#cognito_member_definition}
   */
   readonly cognitoMemberDefinition?: SagemakerWorkteamMemberDefinitionCognitoMemberDefinition;
   /**
   * oidc_member_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workteam#oidc_member_definition SagemakerWorkteam#oidc_member_definition}
   */
   readonly oidcMemberDefinition?: SagemakerWorkteamMemberDefinitionOidcMemberDefinition;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_xss_match_set
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArgumen
   readonly name: string;
   /**
   * xss_match_tuple block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_xss_match_set#xss_match_tuple WafregionalXssMatchSet#xss_match_tuple}
   */
   readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[] | cdktf.IResolvable;
@@ -126,7 +121,7 @@ export interface WafregionalXssMatchSetXssMatchTuple {
   readonly textTransformation: string;
   /**
   * field_to_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_xss_match_set#field_to_match WafregionalXssMatchSet#field_to_match}
   */
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch;

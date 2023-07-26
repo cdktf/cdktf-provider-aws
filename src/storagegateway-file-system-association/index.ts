@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_file_system_association
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface StoragegatewayFileSystemAssociationConfig extends cdktf.Terrafo
   readonly username: string;
   /**
   * cache_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_file_system_association#cache_attributes StoragegatewayFileSystemAssociation#cache_attributes}
   */
   readonly cacheAttributes?: StoragegatewayFileSystemAssociationCacheAttributes;

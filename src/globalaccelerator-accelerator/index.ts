@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_accelerator
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   readonly tagsAll?: { [key: string]: string };
   /**
   * attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_accelerator#attributes GlobalacceleratorAccelerator#attributes}
   */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_accelerator#timeouts GlobalacceleratorAccelerator#timeouts}
   */
   readonly timeouts?: GlobalacceleratorAcceleratorTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain
 // generated from terraform resource schema
 
@@ -57,25 +52,25 @@ export interface SagemakerDomainConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * default_space_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_space_settings SagemakerDomain#default_space_settings}
   */
   readonly defaultSpaceSettings?: SagemakerDomainDefaultSpaceSettings;
   /**
   * default_user_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_user_settings SagemakerDomain#default_user_settings}
   */
   readonly defaultUserSettings: SagemakerDomainDefaultUserSettings;
   /**
   * domain_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#domain_settings SagemakerDomain#domain_settings}
   */
   readonly domainSettings?: SagemakerDomainDomainSettings;
   /**
   * retention_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#retention_policy SagemakerDomain#retention_policy}
   */
   readonly retentionPolicy?: SagemakerDomainRetentionPolicy;
@@ -327,13 +322,13 @@ export interface SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings {
   readonly lifecycleConfigArns?: string[];
   /**
   * code_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
   */
   readonly codeRepository?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpec;
@@ -741,13 +736,13 @@ export interface SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings {
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettingsDefaultResourceSpec;
@@ -868,13 +863,13 @@ export interface SagemakerDomainDefaultSpaceSettings {
   readonly securityGroups?: string[];
   /**
   * jupyter_server_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
   */
   readonly jupyterServerAppSettings?: SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettings;
   /**
   * kernel_gateway_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
   */
   readonly kernelGatewayAppSettings?: SagemakerDomainDefaultSpaceSettingsKernelGatewayAppSettings;
@@ -1191,13 +1186,13 @@ export class SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForeca
 export interface SagemakerDomainDefaultUserSettingsCanvasAppSettings {
   /**
   * model_register_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#model_register_settings SagemakerDomain#model_register_settings}
   */
   readonly modelRegisterSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettings;
   /**
   * time_series_forecasting_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#time_series_forecasting_settings SagemakerDomain#time_series_forecasting_settings}
   */
   readonly timeSeriesForecastingSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings;
@@ -1531,13 +1526,13 @@ export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettings {
   readonly lifecycleConfigArns?: string[];
   /**
   * code_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#code_repository SagemakerDomain#code_repository}
   */
   readonly codeRepository?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepository[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec;
@@ -1945,13 +1940,13 @@ export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings {
   readonly lifecycleConfigArns?: string[];
   /**
   * custom_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec;
@@ -2355,13 +2350,13 @@ export class SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourc
 export interface SagemakerDomainDefaultUserSettingsRSessionAppSettings {
   /**
   * custom_image block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#custom_image SagemakerDomain#custom_image}
   */
   readonly customImage?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage[] | cdktf.IResolvable;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpec;
@@ -2808,7 +2803,7 @@ export class SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultReso
 export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettings {
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec;
@@ -2883,43 +2878,43 @@ export interface SagemakerDomainDefaultUserSettings {
   readonly securityGroups?: string[];
   /**
   * canvas_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#canvas_app_settings SagemakerDomain#canvas_app_settings}
   */
   readonly canvasAppSettings?: SagemakerDomainDefaultUserSettingsCanvasAppSettings;
   /**
   * jupyter_server_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#jupyter_server_app_settings SagemakerDomain#jupyter_server_app_settings}
   */
   readonly jupyterServerAppSettings?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettings;
   /**
   * kernel_gateway_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#kernel_gateway_app_settings SagemakerDomain#kernel_gateway_app_settings}
   */
   readonly kernelGatewayAppSettings?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings;
   /**
   * r_session_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#r_session_app_settings SagemakerDomain#r_session_app_settings}
   */
   readonly rSessionAppSettings?: SagemakerDomainDefaultUserSettingsRSessionAppSettings;
   /**
   * r_studio_server_pro_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#r_studio_server_pro_app_settings SagemakerDomain#r_studio_server_pro_app_settings}
   */
   readonly rStudioServerProAppSettings?: SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings;
   /**
   * sharing_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#sharing_settings SagemakerDomain#sharing_settings}
   */
   readonly sharingSettings?: SagemakerDomainDefaultUserSettingsSharingSettings;
   /**
   * tensor_board_app_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#tensor_board_app_settings SagemakerDomain#tensor_board_app_settings}
   */
   readonly tensorBoardAppSettings?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettings;
@@ -3325,7 +3320,7 @@ export interface SagemakerDomainDomainSettingsRStudioServerProDomainSettings {
   readonly rStudioPackageManagerUrl?: string;
   /**
   * default_resource_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#default_resource_spec SagemakerDomain#default_resource_spec}
   */
   readonly defaultResourceSpec?: SagemakerDomainDomainSettingsRStudioServerProDomainSettingsDefaultResourceSpec;
@@ -3466,7 +3461,7 @@ export interface SagemakerDomainDomainSettings {
   readonly securityGroupIds?: string[];
   /**
   * r_studio_server_pro_domain_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_domain#r_studio_server_pro_domain_settings SagemakerDomain#r_studio_server_pro_domain_settings}
   */
   readonly rStudioServerProDomainSettings?: SagemakerDomainDomainSettingsRStudioServerProDomainSettings;

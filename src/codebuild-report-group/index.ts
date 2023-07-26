@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_report_group
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments
   readonly type: string;
   /**
   * export_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_report_group#export_config CodebuildReportGroup#export_config}
   */
   readonly exportConfig: CodebuildReportGroupExportConfig;
@@ -220,7 +215,7 @@ export interface CodebuildReportGroupExportConfig {
   readonly type: string;
   /**
   * s3_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_report_group#s3_destination CodebuildReportGroup#s3_destination}
   */
   readonly s3Destination?: CodebuildReportGroupExportConfigS3Destination;

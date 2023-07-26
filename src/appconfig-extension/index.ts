@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_extension
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface AppconfigExtensionConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * action_point block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_extension#action_point AppconfigExtension#action_point}
   */
   readonly actionPoint: AppconfigExtensionActionPoint[] | cdktf.IResolvable;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_extension#parameter AppconfigExtension#parameter}
   */
   readonly parameter?: AppconfigExtensionParameter[] | cdktf.IResolvable;
@@ -224,7 +219,7 @@ export interface AppconfigExtensionActionPoint {
   readonly point: string;
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_extension#action AppconfigExtension#action}
   */
   readonly action: AppconfigExtensionActionPointAction[] | cdktf.IResolvable;

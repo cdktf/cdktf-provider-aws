@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent
 // generated from terraform resource schema
 
@@ -41,49 +36,49 @@ export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   readonly sampleUtterances?: string[];
   /**
   * conclusion_statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#conclusion_statement LexIntent#conclusion_statement}
   */
   readonly conclusionStatement?: LexIntentConclusionStatement;
   /**
   * confirmation_prompt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#confirmation_prompt LexIntent#confirmation_prompt}
   */
   readonly confirmationPrompt?: LexIntentConfirmationPrompt;
   /**
   * dialog_code_hook block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#dialog_code_hook LexIntent#dialog_code_hook}
   */
   readonly dialogCodeHook?: LexIntentDialogCodeHook;
   /**
   * follow_up_prompt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#follow_up_prompt LexIntent#follow_up_prompt}
   */
   readonly followUpPrompt?: LexIntentFollowUpPrompt;
   /**
   * fulfillment_activity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#fulfillment_activity LexIntent#fulfillment_activity}
   */
   readonly fulfillmentActivity: LexIntentFulfillmentActivity;
   /**
   * rejection_statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement?: LexIntentRejectionStatement;
   /**
   * slot block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#slot LexIntent#slot}
   */
   readonly slot?: LexIntentSlot[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#timeouts LexIntent#timeouts}
   */
   readonly timeouts?: LexIntentTimeouts;
@@ -240,7 +235,7 @@ export interface LexIntentConclusionStatement {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConclusionStatementMessage[] | cdktf.IResolvable;
@@ -480,7 +475,7 @@ export interface LexIntentConfirmationPrompt {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentConfirmationPromptMessage[] | cdktf.IResolvable;
@@ -826,7 +821,7 @@ export interface LexIntentFollowUpPromptPrompt {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptPromptMessage[] | cdktf.IResolvable;
@@ -1082,7 +1077,7 @@ export interface LexIntentFollowUpPromptRejectionStatement {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentFollowUpPromptRejectionStatementMessage[] | cdktf.IResolvable;
@@ -1169,13 +1164,13 @@ export class LexIntentFollowUpPromptRejectionStatementOutputReference extends cd
 export interface LexIntentFollowUpPrompt {
   /**
   * prompt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#prompt LexIntent#prompt}
   */
   readonly prompt: LexIntentFollowUpPromptPrompt;
   /**
   * rejection_statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#rejection_statement LexIntent#rejection_statement}
   */
   readonly rejectionStatement: LexIntentFollowUpPromptRejectionStatement;
@@ -1349,7 +1344,7 @@ export interface LexIntentFulfillmentActivity {
   readonly type: string;
   /**
   * code_hook block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#code_hook LexIntent#code_hook}
   */
   readonly codeHook?: LexIntentFulfillmentActivityCodeHook;
@@ -1585,7 +1580,7 @@ export interface LexIntentRejectionStatement {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentRejectionStatementMessage[] | cdktf.IResolvable;
@@ -1825,7 +1820,7 @@ export interface LexIntentSlotValueElicitationPrompt {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#message LexIntent#message}
   */
   readonly message: LexIntentSlotValueElicitationPromptMessage[] | cdktf.IResolvable;
@@ -1964,7 +1959,7 @@ export interface LexIntentSlot {
   readonly slotTypeVersion?: string;
   /**
   * value_elicitation_prompt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_intent#value_elicitation_prompt LexIntent#value_elicitation_prompt}
   */
   readonly valueElicitationPrompt?: LexIntentSlotValueElicitationPrompt;

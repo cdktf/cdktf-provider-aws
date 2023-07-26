@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentConfig extends 
   readonly version?: string;
   /**
   * statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#statement DataAwsCloudwatchLogDataProtectionPolicyDocument#statement}
   */
   readonly statement: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement[] | cdktf.IResolvable;
@@ -227,19 +222,19 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationA
 export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#cloudwatch_logs DataAwsCloudwatchLogDataProtectionPolicyDocument#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationCloudwatchLogs;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#firehose DataAwsCloudwatchLogDataProtectionPolicyDocument#firehose}
   */
   readonly firehose?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationFirehose;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#s3 DataAwsCloudwatchLogDataProtectionPolicyDocument#s3}
   */
   readonly s3?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestinationS3;
@@ -352,7 +347,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationA
 export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit {
   /**
   * findings_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#findings_destination DataAwsCloudwatchLogDataProtectionPolicyDocument#findings_destination}
   */
   readonly findingsDestination: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditFindingsDestination;
@@ -454,7 +449,7 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationD
 export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify {
   /**
   * mask_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#mask_config DataAwsCloudwatchLogDataProtectionPolicyDocument#mask_config}
   */
   readonly maskConfig: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig;
@@ -518,13 +513,13 @@ export class DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationD
 export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation {
   /**
   * audit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#audit DataAwsCloudwatchLogDataProtectionPolicyDocument#audit}
   */
   readonly audit?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAudit;
   /**
   * deidentify block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#deidentify DataAwsCloudwatchLogDataProtectionPolicyDocument#deidentify}
   */
   readonly deidentify?: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentify;
@@ -622,7 +617,7 @@ export interface DataAwsCloudwatchLogDataProtectionPolicyDocumentStatement {
   readonly sid?: string;
   /**
   * operation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/cloudwatch_log_data_protection_policy_document#operation DataAwsCloudwatchLogDataProtectionPolicyDocument#operation}
   */
   readonly operation: DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperation;

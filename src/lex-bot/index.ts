@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot
 // generated from terraform resource schema
 
@@ -65,25 +60,25 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   readonly voiceId?: string;
   /**
   * abort_statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
   */
   readonly abortStatement: LexBotAbortStatement;
   /**
   * clarification_prompt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
   */
   readonly clarificationPrompt?: LexBotClarificationPrompt;
   /**
   * intent block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#intent LexBot#intent}
   */
   readonly intent: LexBotIntent[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
   */
   readonly timeouts?: LexBotTimeouts;
@@ -240,7 +235,7 @@ export interface LexBotAbortStatement {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#message LexBot#message}
   */
   readonly message: LexBotAbortStatementMessage[] | cdktf.IResolvable;
@@ -480,7 +475,7 @@ export interface LexBotClarificationPrompt {
   readonly responseCard?: string;
   /**
   * message block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot#message LexBot#message}
   */
   readonly message: LexBotClarificationPromptMessage[] | cdktf.IResolvable;

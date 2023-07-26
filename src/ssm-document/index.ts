@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_document
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly versionName?: string;
   /**
   * attachments_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_document#attachments_source SsmDocument#attachments_source}
   */
   readonly attachmentsSource?: SsmDocumentAttachmentsSource[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface Route53RecoveryreadinessResourceSetConfig extends cdktf.Terrafo
   readonly tagsAll?: { [key: string]: string };
   /**
   * resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#resources Route53RecoveryreadinessResourceSet#resources}
   */
   readonly resources: Route53RecoveryreadinessResourceSetResources[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#timeouts Route53RecoveryreadinessResourceSet#timeouts}
   */
   readonly timeouts?: Route53RecoveryreadinessResourceSetTimeouts;
@@ -208,13 +203,13 @@ export class Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTarget
 export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource {
   /**
   * nlb_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#nlb_resource Route53RecoveryreadinessResourceSet#nlb_resource}
   */
   readonly nlbResource?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResource;
   /**
   * r53_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#r53_resource Route53RecoveryreadinessResourceSet#r53_resource}
   */
   readonly r53Resource?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceR53Resource;
@@ -320,7 +315,7 @@ export interface Route53RecoveryreadinessResourceSetResourcesDnsTargetResource {
   readonly recordType?: string;
   /**
   * target_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#target_resource Route53RecoveryreadinessResourceSet#target_resource}
   */
   readonly targetResource?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResource;
@@ -484,7 +479,7 @@ export interface Route53RecoveryreadinessResourceSetResources {
   readonly resourceArn?: string;
   /**
   * dns_target_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_resource_set#dns_target_resource Route53RecoveryreadinessResourceSet#dns_target_resource}
   */
   readonly dnsTargetResource?: Route53RecoveryreadinessResourceSetResourcesDnsTargetResource;

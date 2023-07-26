@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_framework
 // generated from terraform resource schema
 
@@ -30,7 +25,7 @@ export interface AuditmanagerFrameworkConfig extends cdktf.TerraformMetaArgument
   readonly tags?: { [key: string]: string };
   /**
   * control_sets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_framework#control_sets AuditmanagerFramework#control_sets}
   */
   readonly controlSets?: AuditmanagerFrameworkControlSets[] | cdktf.IResolvable;
@@ -139,7 +134,7 @@ export interface AuditmanagerFrameworkControlSets {
   readonly name: string;
   /**
   * controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/auditmanager_framework#controls AuditmanagerFramework#controls}
   */
   readonly controls?: AuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable;

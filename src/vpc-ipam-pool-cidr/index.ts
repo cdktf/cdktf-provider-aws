@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam_pool_cidr
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface VpcIpamPoolCidrConfig extends cdktf.TerraformMetaArguments {
   readonly netmaskLength?: number;
   /**
   * cidr_authorization_context block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam_pool_cidr#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
   */
   readonly cidrAuthorizationContext?: VpcIpamPoolCidrCidrAuthorizationContext;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam_pool_cidr#timeouts VpcIpamPoolCidr#timeouts}
   */
   readonly timeouts?: VpcIpamPoolCidrTimeouts;

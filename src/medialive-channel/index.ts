@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // generated from terraform resource schema
 
 import { MedialiveChannelCdiInputSpecification, 
@@ -70,49 +65,49 @@ export interface MedialiveChannelConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * cdi_input_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cdi_input_specification MedialiveChannel#cdi_input_specification}
   */
   readonly cdiInputSpecification?: MedialiveChannelCdiInputSpecification;
   /**
   * destinations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destinations MedialiveChannel#destinations}
   */
   readonly destinations: MedialiveChannelDestinations[] | cdktf.IResolvable;
   /**
   * encoder_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#encoder_settings MedialiveChannel#encoder_settings}
   */
   readonly encoderSettings: MedialiveChannelEncoderSettings;
   /**
   * input_attachments block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_attachments MedialiveChannel#input_attachments}
   */
   readonly inputAttachments: MedialiveChannelInputAttachments[] | cdktf.IResolvable;
   /**
   * input_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_specification MedialiveChannel#input_specification}
   */
   readonly inputSpecification: MedialiveChannelInputSpecification;
   /**
   * maintenance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#maintenance MedialiveChannel#maintenance}
   */
   readonly maintenance?: MedialiveChannelMaintenance;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timeouts MedialiveChannel#timeouts}
   */
   readonly timeouts?: MedialiveChannelTimeouts;
   /**
   * vpc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#vpc MedialiveChannel#vpc}
   */
   readonly vpc?: MedialiveChannelVpc;

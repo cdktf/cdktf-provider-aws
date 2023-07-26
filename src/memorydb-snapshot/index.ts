@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/memorydb_snapshot
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface MemorydbSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/memorydb_snapshot#timeouts MemorydbSnapshot#timeouts}
   */
   readonly timeouts?: MemorydbSnapshotTimeouts;

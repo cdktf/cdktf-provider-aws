@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_database
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * create_table_default_permission block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_database#create_table_default_permission GlueCatalogDatabase#create_table_default_permission}
   */
   readonly createTableDefaultPermission?: GlueCatalogDatabaseCreateTableDefaultPermission[] | cdktf.IResolvable;
   /**
   * target_database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_database#target_database GlueCatalogDatabase#target_database}
   */
   readonly targetDatabase?: GlueCatalogDatabaseTargetDatabase;
@@ -132,7 +127,7 @@ export interface GlueCatalogDatabaseCreateTableDefaultPermission {
   readonly permissions?: string[];
   /**
   * principal block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_database#principal GlueCatalogDatabase#principal}
   */
   readonly principal?: GlueCatalogDatabaseCreateTableDefaultPermissionPrincipal;

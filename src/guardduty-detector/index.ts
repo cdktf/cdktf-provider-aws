@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * datasources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
   */
   readonly datasources?: GuarddutyDetectorDatasources;
@@ -107,7 +102,7 @@ export class GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference exte
 export interface GuarddutyDetectorDatasourcesKubernetes {
   /**
   * audit_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
   */
   readonly auditLogs: GuarddutyDetectorDatasourcesKubernetesAuditLogs;
@@ -233,7 +228,7 @@ export class GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFin
 export interface GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings {
   /**
   * ebs_volumes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
   */
   readonly ebsVolumes: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes;
@@ -297,7 +292,7 @@ export class GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFin
 export interface GuarddutyDetectorDatasourcesMalwareProtection {
   /**
   * scan_ec2_instance_with_findings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
   */
   readonly scanEc2InstanceWithFindings: GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings;
@@ -423,19 +418,19 @@ export class GuarddutyDetectorDatasourcesS3LogsOutputReference extends cdktf.Com
 export interface GuarddutyDetectorDatasources {
   /**
   * kubernetes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
   */
   readonly kubernetes?: GuarddutyDetectorDatasourcesKubernetes;
   /**
   * malware_protection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
   */
   readonly malwareProtection?: GuarddutyDetectorDatasourcesMalwareProtection;
   /**
   * s3_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
   */
   readonly s3Logs?: GuarddutyDetectorDatasourcesS3Logs;

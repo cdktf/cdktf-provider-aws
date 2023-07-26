@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot_alias
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface LexBotAliasConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * conversation_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot_alias#conversation_logs LexBotAlias#conversation_logs}
   */
   readonly conversationLogs?: LexBotAliasConversationLogs;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot_alias#timeouts LexBotAlias#timeouts}
   */
   readonly timeouts?: LexBotAliasTimeouts;
@@ -229,7 +224,7 @@ export interface LexBotAliasConversationLogs {
   readonly iamRoleArn: string;
   /**
   * log_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_bot_alias#log_settings LexBotAlias#log_settings}
   */
   readonly logSettings?: LexBotAliasConversationLogsLogSettings[] | cdktf.IResolvable;

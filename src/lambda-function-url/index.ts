@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_url
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface LambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
   readonly qualifier?: string;
   /**
   * cors block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_url#cors LambdaFunctionUrl#cors}
   */
   readonly cors?: LambdaFunctionUrlCors;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_url#timeouts LambdaFunctionUrl#timeouts}
   */
   readonly timeouts?: LambdaFunctionUrlTimeouts;

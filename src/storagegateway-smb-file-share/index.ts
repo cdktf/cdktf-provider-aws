@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_smb_file_share
 // generated from terraform resource schema
 
@@ -121,13 +116,13 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   readonly vpcEndpointDnsName?: string;
   /**
   * cache_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_smb_file_share#cache_attributes StoragegatewaySmbFileShare#cache_attributes}
   */
   readonly cacheAttributes?: StoragegatewaySmbFileShareCacheAttributes;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_smb_file_share#timeouts StoragegatewaySmbFileShare#timeouts}
   */
   readonly timeouts?: StoragegatewaySmbFileShareTimeouts;

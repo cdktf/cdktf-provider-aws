@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_ownership_controls
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface S3BucketOwnershipControlsConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_ownership_controls#rule S3BucketOwnershipControls#rule}
   */
   readonly rule: S3BucketOwnershipControlsRule;

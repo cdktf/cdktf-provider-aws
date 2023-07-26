@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe
 // generated from terraform resource schema
 
@@ -69,19 +64,19 @@ export interface ImagebuilderContainerRecipeConfig extends cdktf.TerraformMetaAr
   readonly workingDirectory?: string;
   /**
   * component block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#component ImagebuilderContainerRecipe#component}
   */
   readonly component: ImagebuilderContainerRecipeComponent[] | cdktf.IResolvable;
   /**
   * instance_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#instance_configuration ImagebuilderContainerRecipe#instance_configuration}
   */
   readonly instanceConfiguration?: ImagebuilderContainerRecipeInstanceConfiguration;
   /**
   * target_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#target_repository ImagebuilderContainerRecipe#target_repository}
   */
   readonly targetRepository: ImagebuilderContainerRecipeTargetRepository;
@@ -211,7 +206,7 @@ export interface ImagebuilderContainerRecipeComponent {
   readonly componentArn: string;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#parameter ImagebuilderContainerRecipe#parameter}
   */
   readonly parameter?: ImagebuilderContainerRecipeComponentParameter[] | cdktf.IResolvable;
@@ -596,7 +591,7 @@ export interface ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapp
   readonly virtualName?: string;
   /**
   * ebs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#ebs ImagebuilderContainerRecipe#ebs}
   */
   readonly ebs?: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbs;
@@ -768,7 +763,7 @@ export interface ImagebuilderContainerRecipeInstanceConfiguration {
   readonly image?: string;
   /**
   * block_device_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_container_recipe#block_device_mapping ImagebuilderContainerRecipe#block_device_mapping}
   */
   readonly blockDeviceMapping?: ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping[] | cdktf.IResolvable;

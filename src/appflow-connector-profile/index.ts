@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface AppflowConnectorProfileConfig extends cdktf.TerraformMetaArgume
   readonly name: string;
   /**
   * connector_profile_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#connector_profile_config AppflowConnectorProfile#connector_profile_config}
   */
   readonly connectorProfileConfig: AppflowConnectorProfileConnectorProfileConfig;
@@ -507,7 +502,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly refreshToken?: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2OauthRequest;
@@ -670,25 +665,25 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly authenticationType: string;
   /**
   * api_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#api_key AppflowConnectorProfile#api_key}
   */
   readonly apiKey?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorApiKey;
   /**
   * basic block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#basic AppflowConnectorProfile#basic}
   */
   readonly basic?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorBasic;
   /**
   * custom block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#custom AppflowConnectorProfile#custom}
   */
   readonly custom?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustom;
   /**
   * oauth2 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth2 AppflowConnectorProfile#oauth2}
   */
   readonly oauth2?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorOauth2;
@@ -1100,7 +1095,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly refreshToken?: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalyticsOauthRequest;
@@ -1353,7 +1348,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly refreshToken?: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycodeOauthRequest;
@@ -1704,7 +1699,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly clientSecret: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketoOauthRequest;
@@ -2024,7 +2019,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly refreshToken?: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest;
@@ -2354,7 +2349,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly refreshToken?: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentialsOauthRequest;
@@ -2507,13 +2502,13 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData {
   /**
   * basic_auth_credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#basic_auth_credentials AppflowConnectorProfile#basic_auth_credentials}
   */
   readonly basicAuthCredentials?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataBasicAuthCredentials;
   /**
   * oauth_credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_credentials AppflowConnectorProfile#oauth_credentials}
   */
   readonly oauthCredentials?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoDataOauthCredentials;
@@ -2855,7 +2850,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly clientSecret: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest;
@@ -3323,7 +3318,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCr
   readonly clientSecret: string;
   /**
   * oauth_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_request AppflowConnectorProfile#oauth_request}
   */
   readonly oauthRequest?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendeskOauthRequest;
@@ -3453,109 +3448,109 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileCreden
 export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials {
   /**
   * amplitude block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
   */
   readonly amplitude?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsAmplitude;
   /**
   * custom_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
   */
   readonly customConnector?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnector;
   /**
   * datadog block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
   */
   readonly datadog?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDatadog;
   /**
   * dynatrace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
   */
   readonly dynatrace?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsDynatrace;
   /**
   * google_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
   */
   readonly googleAnalytics?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsGoogleAnalytics;
   /**
   * honeycode block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
   */
   readonly honeycode?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsHoneycode;
   /**
   * infor_nexus block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
   */
   readonly inforNexus?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsInforNexus;
   /**
   * marketo block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
   */
   readonly marketo?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsMarketo;
   /**
   * redshift block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
   */
   readonly redshift?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift;
   /**
   * salesforce block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
   */
   readonly salesforce?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce;
   /**
   * sapo_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
   */
   readonly sapoData?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSapoData;
   /**
   * service_now block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
   */
   readonly serviceNow?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsServiceNow;
   /**
   * singular block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
   */
   readonly singular?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSingular;
   /**
   * slack block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
   */
   readonly slack?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlack;
   /**
   * snowflake block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
   */
   readonly snowflake?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSnowflake;
   /**
   * trendmicro block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
   */
   readonly trendmicro?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicro;
   /**
   * veeva block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
   */
   readonly veeva?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeeva;
   /**
   * zendesk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
   */
   readonly zendesk?: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsZendesk;
@@ -4168,7 +4163,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
   readonly profileProperties?: { [key: string]: string };
   /**
   * oauth2_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth2_properties AppflowConnectorProfile#oauth2_properties}
   */
   readonly oauth2Properties?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnectorOauth2Properties;
@@ -5029,7 +5024,7 @@ export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfilePr
   readonly privateLinkServiceName?: string;
   /**
   * oauth_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#oauth_properties AppflowConnectorProfile#oauth_properties}
   */
   readonly oauthProperties?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoDataOauthProperties;
@@ -5764,109 +5759,109 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
 export interface AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties {
   /**
   * amplitude block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#amplitude AppflowConnectorProfile#amplitude}
   */
   readonly amplitude?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude;
   /**
   * custom_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#custom_connector AppflowConnectorProfile#custom_connector}
   */
   readonly customConnector?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesCustomConnector;
   /**
   * datadog block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#datadog AppflowConnectorProfile#datadog}
   */
   readonly datadog?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDatadog;
   /**
   * dynatrace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#dynatrace AppflowConnectorProfile#dynatrace}
   */
   readonly dynatrace?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesDynatrace;
   /**
   * google_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#google_analytics AppflowConnectorProfile#google_analytics}
   */
   readonly googleAnalytics?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesGoogleAnalytics;
   /**
   * honeycode block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#honeycode AppflowConnectorProfile#honeycode}
   */
   readonly honeycode?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesHoneycode;
   /**
   * infor_nexus block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#infor_nexus AppflowConnectorProfile#infor_nexus}
   */
   readonly inforNexus?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexus;
   /**
   * marketo block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#marketo AppflowConnectorProfile#marketo}
   */
   readonly marketo?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketo;
   /**
   * redshift block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#redshift AppflowConnectorProfile#redshift}
   */
   readonly redshift?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshift;
   /**
   * salesforce block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#salesforce AppflowConnectorProfile#salesforce}
   */
   readonly salesforce?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSalesforce;
   /**
   * sapo_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#sapo_data AppflowConnectorProfile#sapo_data}
   */
   readonly sapoData?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSapoData;
   /**
   * service_now block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#service_now AppflowConnectorProfile#service_now}
   */
   readonly serviceNow?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesServiceNow;
   /**
   * singular block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#singular AppflowConnectorProfile#singular}
   */
   readonly singular?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular;
   /**
   * slack block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#slack AppflowConnectorProfile#slack}
   */
   readonly slack?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSlack;
   /**
   * snowflake block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#snowflake AppflowConnectorProfile#snowflake}
   */
   readonly snowflake?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSnowflake;
   /**
   * trendmicro block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#trendmicro AppflowConnectorProfile#trendmicro}
   */
   readonly trendmicro?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro;
   /**
   * veeva block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#veeva AppflowConnectorProfile#veeva}
   */
   readonly veeva?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesVeeva;
   /**
   * zendesk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#zendesk AppflowConnectorProfile#zendesk}
   */
   readonly zendesk?: AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesZendesk;
@@ -6324,13 +6319,13 @@ export class AppflowConnectorProfileConnectorProfileConfigConnectorProfileProper
 export interface AppflowConnectorProfileConnectorProfileConfig {
   /**
   * connector_profile_credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#connector_profile_credentials AppflowConnectorProfile#connector_profile_credentials}
   */
   readonly connectorProfileCredentials: AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials;
   /**
   * connector_profile_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_connector_profile#connector_profile_properties AppflowConnectorProfile#connector_profile_properties}
   */
   readonly connectorProfileProperties: AppflowConnectorProfileConnectorProfileConfigConnectorProfileProperties;

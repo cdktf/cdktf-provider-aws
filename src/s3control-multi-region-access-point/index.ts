@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_multi_region_access_point
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface S3ControlMultiRegionAccessPointConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_multi_region_access_point#details S3ControlMultiRegionAccessPoint#details}
   */
   readonly details: S3ControlMultiRegionAccessPointDetails;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_multi_region_access_point#timeouts S3ControlMultiRegionAccessPoint#timeouts}
   */
   readonly timeouts?: S3ControlMultiRegionAccessPointTimeouts;
@@ -283,13 +278,13 @@ export interface S3ControlMultiRegionAccessPointDetails {
   readonly name: string;
   /**
   * public_access_block block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_multi_region_access_point#public_access_block S3ControlMultiRegionAccessPoint#public_access_block}
   */
   readonly publicAccessBlock?: S3ControlMultiRegionAccessPointDetailsPublicAccessBlock;
   /**
   * region block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_multi_region_access_point#region S3ControlMultiRegionAccessPoint#region}
   */
   readonly region: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable;

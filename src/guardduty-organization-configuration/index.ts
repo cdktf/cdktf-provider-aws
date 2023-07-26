@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface GuarddutyOrganizationConfigurationConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * datasources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#datasources GuarddutyOrganizationConfiguration#datasources}
   */
   readonly datasources?: GuarddutyOrganizationConfigurationDatasources;
@@ -103,7 +98,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogsOut
 export interface GuarddutyOrganizationConfigurationDatasourcesKubernetes {
   /**
   * audit_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#audit_logs GuarddutyOrganizationConfiguration#audit_logs}
   */
   readonly auditLogs: GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogs;
@@ -229,7 +224,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesMalwareProtectionScanE
 export interface GuarddutyOrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindings {
   /**
   * ebs_volumes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#ebs_volumes GuarddutyOrganizationConfiguration#ebs_volumes}
   */
   readonly ebsVolumes: GuarddutyOrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes;
@@ -293,7 +288,7 @@ export class GuarddutyOrganizationConfigurationDatasourcesMalwareProtectionScanE
 export interface GuarddutyOrganizationConfigurationDatasourcesMalwareProtection {
   /**
   * scan_ec2_instance_with_findings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#scan_ec2_instance_with_findings GuarddutyOrganizationConfiguration#scan_ec2_instance_with_findings}
   */
   readonly scanEc2InstanceWithFindings: GuarddutyOrganizationConfigurationDatasourcesMalwareProtectionScanEc2InstanceWithFindings;
@@ -419,19 +414,19 @@ export class GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference 
 export interface GuarddutyOrganizationConfigurationDatasources {
   /**
   * kubernetes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#kubernetes GuarddutyOrganizationConfiguration#kubernetes}
   */
   readonly kubernetes?: GuarddutyOrganizationConfigurationDatasourcesKubernetes;
   /**
   * malware_protection block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#malware_protection GuarddutyOrganizationConfiguration#malware_protection}
   */
   readonly malwareProtection?: GuarddutyOrganizationConfigurationDatasourcesMalwareProtection;
   /**
   * s3_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/guardduty_organization_configuration#s3_logs GuarddutyOrganizationConfiguration#s3_logs}
   */
   readonly s3Logs?: GuarddutyOrganizationConfigurationDatasourcesS3Logs;

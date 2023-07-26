@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/fsx_openzfs_snapshot
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface DataAwsFsxOpenzfsSnapshotConfig extends cdktf.TerraformMetaArgu
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/fsx_openzfs_snapshot#filter DataAwsFsxOpenzfsSnapshot#filter}
   */
   readonly filter?: DataAwsFsxOpenzfsSnapshotFilter[] | cdktf.IResolvable;

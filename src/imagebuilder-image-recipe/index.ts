@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe
 // generated from terraform resource schema
 
@@ -53,19 +48,19 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   readonly workingDirectory?: string;
   /**
   * block_device_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe#block_device_mapping ImagebuilderImageRecipe#block_device_mapping}
   */
   readonly blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[] | cdktf.IResolvable;
   /**
   * component block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe#component ImagebuilderImageRecipe#component}
   */
   readonly component: ImagebuilderImageRecipeComponent[] | cdktf.IResolvable;
   /**
   * systems_manager_agent block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe#systems_manager_agent ImagebuilderImageRecipe#systems_manager_agent}
   */
   readonly systemsManagerAgent?: ImagebuilderImageRecipeSystemsManagerAgent;
@@ -339,7 +334,7 @@ export interface ImagebuilderImageRecipeBlockDeviceMapping {
   readonly virtualName?: string;
   /**
   * ebs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe#ebs ImagebuilderImageRecipe#ebs}
   */
   readonly ebs?: ImagebuilderImageRecipeBlockDeviceMappingEbs;
@@ -629,7 +624,7 @@ export interface ImagebuilderImageRecipeComponent {
   readonly componentArn: string;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image_recipe#parameter ImagebuilderImageRecipe#parameter}
   */
   readonly parameter?: ImagebuilderImageRecipeComponentParameter[] | cdktf.IResolvable;

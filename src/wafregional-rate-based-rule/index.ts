@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_rate_based_rule
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * predicate block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_rate_based_rule#predicate WafregionalRateBasedRule#predicate}
   */
   readonly predicate?: WafregionalRateBasedRulePredicate[] | cdktf.IResolvable;

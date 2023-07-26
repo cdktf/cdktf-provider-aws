@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface Macie2InvitationAccepterConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_invitation_accepter#timeouts Macie2InvitationAccepter#timeouts}
   */
   readonly timeouts?: Macie2InvitationAccepterTimeouts;

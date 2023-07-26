@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_rule_association
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface Route53ResolverRuleAssociationConfig extends cdktf.TerraformMet
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_rule_association#timeouts Route53ResolverRuleAssociation#timeouts}
   */
   readonly timeouts?: Route53ResolverRuleAssociationTimeouts;

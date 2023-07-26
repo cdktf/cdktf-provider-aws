@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_hours_of_operation
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface ConnectHoursOfOperationConfig extends cdktf.TerraformMetaArgume
   readonly timeZone: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_hours_of_operation#config ConnectHoursOfOperation#config}
   */
   readonly config: ConnectHoursOfOperationConfigA[] | cdktf.IResolvable;
@@ -229,13 +224,13 @@ export interface ConnectHoursOfOperationConfigA {
   readonly day: string;
   /**
   * end_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_hours_of_operation#end_time ConnectHoursOfOperation#end_time}
   */
   readonly endTime: ConnectHoursOfOperationConfigEndTime;
   /**
   * start_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_hours_of_operation#start_time ConnectHoursOfOperation#start_time}
   */
   readonly startTime: ConnectHoursOfOperationConfigStartTime;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_route
 // generated from terraform resource schema
 
@@ -65,7 +60,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   readonly target?: string;
   /**
   * request_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_route#request_parameter Apigatewayv2Route#request_parameter}
   */
   readonly requestParameter?: Apigatewayv2RouteRequestParameter[] | cdktf.IResolvable;

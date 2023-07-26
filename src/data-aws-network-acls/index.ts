@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/network_acls
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface DataAwsNetworkAclsConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
   */
   readonly filter?: DataAwsNetworkAclsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
   */
   readonly timeouts?: DataAwsNetworkAclsTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_integration
 // generated from terraform resource schema
 
@@ -85,13 +80,13 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   readonly timeoutMilliseconds?: number;
   /**
   * response_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_integration#response_parameters Apigatewayv2Integration#response_parameters}
   */
   readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[] | cdktf.IResolvable;
   /**
   * tls_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_integration#tls_config Apigatewayv2Integration#tls_config}
   */
   readonly tlsConfig?: Apigatewayv2IntegrationTlsConfig;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface TransferWorkflowConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * on_exception_steps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#on_exception_steps TransferWorkflow#on_exception_steps}
   */
   readonly onExceptionSteps?: TransferWorkflowOnExceptionSteps[] | cdktf.IResolvable;
   /**
   * steps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#steps TransferWorkflow#steps}
   */
   readonly steps: TransferWorkflowSteps[] | cdktf.IResolvable;
@@ -231,13 +226,13 @@ export class TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocat
 export interface TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation {
   /**
   * efs_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
   */
   readonly efsFileLocation?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation;
   /**
   * s3_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
   */
   readonly s3FileLocation?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation;
@@ -339,7 +334,7 @@ export interface TransferWorkflowOnExceptionStepsCopyStepDetails {
   readonly sourceFileLocation?: string;
   /**
   * destination_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
   */
   readonly destinationFileLocation?: TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation;
@@ -805,13 +800,13 @@ export class TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLo
 export interface TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation {
   /**
   * efs_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
   */
   readonly efsFileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation;
   /**
   * s3_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
   */
   readonly s3FileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation;
@@ -917,7 +912,7 @@ export interface TransferWorkflowOnExceptionStepsDecryptStepDetails {
   readonly type: string;
   /**
   * destination_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
   */
   readonly destinationFileLocation?: TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation;
@@ -1291,7 +1286,7 @@ export interface TransferWorkflowOnExceptionStepsTagStepDetails {
   readonly sourceFileLocation?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#tags TransferWorkflow#tags}
   */
   readonly tags?: TransferWorkflowOnExceptionStepsTagStepDetailsTags[] | cdktf.IResolvable;
@@ -1408,31 +1403,31 @@ export interface TransferWorkflowOnExceptionSteps {
   readonly type: string;
   /**
   * copy_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#copy_step_details TransferWorkflow#copy_step_details}
   */
   readonly copyStepDetails?: TransferWorkflowOnExceptionStepsCopyStepDetails;
   /**
   * custom_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#custom_step_details TransferWorkflow#custom_step_details}
   */
   readonly customStepDetails?: TransferWorkflowOnExceptionStepsCustomStepDetails;
   /**
   * decrypt_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#decrypt_step_details TransferWorkflow#decrypt_step_details}
   */
   readonly decryptStepDetails?: TransferWorkflowOnExceptionStepsDecryptStepDetails;
   /**
   * delete_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#delete_step_details TransferWorkflow#delete_step_details}
   */
   readonly deleteStepDetails?: TransferWorkflowOnExceptionStepsDeleteStepDetails;
   /**
   * tag_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#tag_step_details TransferWorkflow#tag_step_details}
   */
   readonly tagStepDetails?: TransferWorkflowOnExceptionStepsTagStepDetails;
@@ -1827,13 +1822,13 @@ export class TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLo
 export interface TransferWorkflowStepsCopyStepDetailsDestinationFileLocation {
   /**
   * efs_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
   */
   readonly efsFileLocation?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation;
   /**
   * s3_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
   */
   readonly s3FileLocation?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation;
@@ -1935,7 +1930,7 @@ export interface TransferWorkflowStepsCopyStepDetails {
   readonly sourceFileLocation?: string;
   /**
   * destination_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
   */
   readonly destinationFileLocation?: TransferWorkflowStepsCopyStepDetailsDestinationFileLocation;
@@ -2401,13 +2396,13 @@ export class TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3Fil
 export interface TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation {
   /**
   * efs_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#efs_file_location TransferWorkflow#efs_file_location}
   */
   readonly efsFileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation;
   /**
   * s3_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#s3_file_location TransferWorkflow#s3_file_location}
   */
   readonly s3FileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation;
@@ -2513,7 +2508,7 @@ export interface TransferWorkflowStepsDecryptStepDetails {
   readonly type: string;
   /**
   * destination_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#destination_file_location TransferWorkflow#destination_file_location}
   */
   readonly destinationFileLocation?: TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation;
@@ -2887,7 +2882,7 @@ export interface TransferWorkflowStepsTagStepDetails {
   readonly sourceFileLocation?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#tags TransferWorkflow#tags}
   */
   readonly tags?: TransferWorkflowStepsTagStepDetailsTags[] | cdktf.IResolvable;
@@ -3004,31 +2999,31 @@ export interface TransferWorkflowSteps {
   readonly type: string;
   /**
   * copy_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#copy_step_details TransferWorkflow#copy_step_details}
   */
   readonly copyStepDetails?: TransferWorkflowStepsCopyStepDetails;
   /**
   * custom_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#custom_step_details TransferWorkflow#custom_step_details}
   */
   readonly customStepDetails?: TransferWorkflowStepsCustomStepDetails;
   /**
   * decrypt_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#decrypt_step_details TransferWorkflow#decrypt_step_details}
   */
   readonly decryptStepDetails?: TransferWorkflowStepsDecryptStepDetails;
   /**
   * delete_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#delete_step_details TransferWorkflow#delete_step_details}
   */
   readonly deleteStepDetails?: TransferWorkflowStepsDeleteStepDetails;
   /**
   * tag_step_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_workflow#tag_step_details TransferWorkflow#tag_step_details}
   */
   readonly tagStepDetails?: TransferWorkflowStepsTagStepDetails;

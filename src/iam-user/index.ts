@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_user
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface IamUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_user#force_destroy IamUser#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;

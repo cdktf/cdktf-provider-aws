@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_cluster
 // generated from terraform resource schema
 
@@ -173,19 +168,19 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSecurityGroupIds?: string[];
   /**
   * logging block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_cluster#logging RedshiftCluster#logging}
   */
   readonly logging?: RedshiftClusterLogging;
   /**
   * snapshot_copy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_cluster#snapshot_copy RedshiftCluster#snapshot_copy}
   */
   readonly snapshotCopy?: RedshiftClusterSnapshotCopy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_cluster#timeouts RedshiftCluster#timeouts}
   */
   readonly timeouts?: RedshiftClusterTimeouts;

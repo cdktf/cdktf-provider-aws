@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_windows_file_system
 // generated from terraform resource schema
 
@@ -93,19 +88,19 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * audit_log_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_windows_file_system#audit_log_configuration FsxWindowsFileSystem#audit_log_configuration}
   */
   readonly auditLogConfiguration?: FsxWindowsFileSystemAuditLogConfiguration;
   /**
   * self_managed_active_directory block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_windows_file_system#self_managed_active_directory FsxWindowsFileSystem#self_managed_active_directory}
   */
   readonly selfManagedActiveDirectory?: FsxWindowsFileSystemSelfManagedActiveDirectory;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_windows_file_system#timeouts FsxWindowsFileSystem#timeouts}
   */
   readonly timeouts?: FsxWindowsFileSystemTimeouts;

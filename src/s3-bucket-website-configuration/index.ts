@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration
 // generated from terraform resource schema
 
@@ -33,25 +28,25 @@ export interface S3BucketWebsiteConfigurationConfig extends cdktf.TerraformMetaA
   readonly routingRules?: string;
   /**
   * error_document block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
   */
   readonly errorDocument?: S3BucketWebsiteConfigurationErrorDocument;
   /**
   * index_document block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
   */
   readonly indexDocument?: S3BucketWebsiteConfigurationIndexDocument;
   /**
   * redirect_all_requests_to block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
   */
   readonly redirectAllRequestsTo?: S3BucketWebsiteConfigurationRedirectAllRequestsTo;
   /**
   * routing_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
   */
   readonly routingRule?: S3BucketWebsiteConfigurationRoutingRule[] | cdktf.IResolvable;
@@ -537,13 +532,13 @@ export class S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference exte
 export interface S3BucketWebsiteConfigurationRoutingRule {
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
   */
   readonly condition?: S3BucketWebsiteConfigurationRoutingRuleCondition;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
   */
   readonly redirect: S3BucketWebsiteConfigurationRoutingRuleRedirect;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface Ec2TransitGatewayMulticastDomainAssociationConfig extends cdktf
   readonly transitGatewayMulticastDomainId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association#timeouts Ec2TransitGatewayMulticastDomainAssociation#timeouts}
   */
   readonly timeouts?: Ec2TransitGatewayMulticastDomainAssociationTimeouts;

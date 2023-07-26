@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_portfolio_share
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   readonly waitForAcceptance?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_portfolio_share#timeouts ServicecatalogPortfolioShare#timeouts}
   */
   readonly timeouts?: ServicecatalogPortfolioShareTimeouts;

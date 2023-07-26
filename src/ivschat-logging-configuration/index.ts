@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface IvschatLoggingConfigurationConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * destination_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration#destination_configuration IvschatLoggingConfiguration#destination_configuration}
   */
   readonly destinationConfiguration?: IvschatLoggingConfigurationDestinationConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration#timeouts IvschatLoggingConfiguration#timeouts}
   */
   readonly timeouts?: IvschatLoggingConfigurationTimeouts;
@@ -233,19 +228,19 @@ export class IvschatLoggingConfigurationDestinationConfigurationS3OutputReferenc
 export interface IvschatLoggingConfigurationDestinationConfiguration {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration#cloudwatch_logs IvschatLoggingConfiguration#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogs;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration#firehose IvschatLoggingConfiguration#firehose}
   */
   readonly firehose?: IvschatLoggingConfigurationDestinationConfigurationFirehose;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_logging_configuration#s3 IvschatLoggingConfiguration#s3}
   */
   readonly s3?: IvschatLoggingConfigurationDestinationConfigurationS3;

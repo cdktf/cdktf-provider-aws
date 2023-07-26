@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule
 // generated from terraform resource schema
 
@@ -61,13 +56,13 @@ export interface SchedulerScheduleConfig extends cdktf.TerraformMetaArguments {
   readonly state?: string;
   /**
   * flexible_time_window block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#flexible_time_window SchedulerSchedule#flexible_time_window}
   */
   readonly flexibleTimeWindow: SchedulerScheduleFlexibleTimeWindow;
   /**
   * target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#target SchedulerSchedule#target}
   */
   readonly target: SchedulerScheduleTarget;
@@ -772,25 +767,25 @@ export interface SchedulerScheduleTargetEcsParameters {
   readonly taskDefinitionArn: string;
   /**
   * capacity_provider_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#capacity_provider_strategy SchedulerSchedule#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: SchedulerScheduleTargetEcsParametersCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#network_configuration SchedulerSchedule#network_configuration}
   */
   readonly networkConfiguration?: SchedulerScheduleTargetEcsParametersNetworkConfiguration;
   /**
   * placement_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#placement_constraints SchedulerSchedule#placement_constraints}
   */
   readonly placementConstraints?: SchedulerScheduleTargetEcsParametersPlacementConstraints[] | cdktf.IResolvable;
   /**
   * placement_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#placement_strategy SchedulerSchedule#placement_strategy}
   */
   readonly placementStrategy?: SchedulerScheduleTargetEcsParametersPlacementStrategy[] | cdktf.IResolvable;
@@ -1511,7 +1506,7 @@ export class SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter
 export interface SchedulerScheduleTargetSagemakerPipelineParameters {
   /**
   * pipeline_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#pipeline_parameter SchedulerSchedule#pipeline_parameter}
   */
   readonly pipelineParameter?: SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter[] | cdktf.IResolvable;
@@ -1655,43 +1650,43 @@ export interface SchedulerScheduleTarget {
   readonly roleArn: string;
   /**
   * dead_letter_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#dead_letter_config SchedulerSchedule#dead_letter_config}
   */
   readonly deadLetterConfig?: SchedulerScheduleTargetDeadLetterConfig;
   /**
   * ecs_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#ecs_parameters SchedulerSchedule#ecs_parameters}
   */
   readonly ecsParameters?: SchedulerScheduleTargetEcsParameters;
   /**
   * eventbridge_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#eventbridge_parameters SchedulerSchedule#eventbridge_parameters}
   */
   readonly eventbridgeParameters?: SchedulerScheduleTargetEventbridgeParameters;
   /**
   * kinesis_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#kinesis_parameters SchedulerSchedule#kinesis_parameters}
   */
   readonly kinesisParameters?: SchedulerScheduleTargetKinesisParameters;
   /**
   * retry_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#retry_policy SchedulerSchedule#retry_policy}
   */
   readonly retryPolicy?: SchedulerScheduleTargetRetryPolicy;
   /**
   * sagemaker_pipeline_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#sagemaker_pipeline_parameters SchedulerSchedule#sagemaker_pipeline_parameters}
   */
   readonly sagemakerPipelineParameters?: SchedulerScheduleTargetSagemakerPipelineParameters;
   /**
   * sqs_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/scheduler_schedule#sqs_parameters SchedulerSchedule#sqs_parameters}
   */
   readonly sqsParameters?: SchedulerScheduleTargetSqsParameters;

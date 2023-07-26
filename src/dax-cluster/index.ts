@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dax_cluster
 // generated from terraform resource schema
 
@@ -77,13 +72,13 @@ export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * server_side_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dax_cluster#server_side_encryption DaxCluster#server_side_encryption}
   */
   readonly serverSideEncryption?: DaxClusterServerSideEncryption;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dax_cluster#timeouts DaxCluster#timeouts}
   */
   readonly timeouts?: DaxClusterTimeouts;

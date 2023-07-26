@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector
 // generated from terraform resource schema
 
@@ -41,49 +36,49 @@ export interface MskconnectConnectorConfig extends cdktf.TerraformMetaArguments 
   readonly serviceExecutionRoleArn: string;
   /**
   * capacity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#capacity MskconnectConnector#capacity}
   */
   readonly capacity: MskconnectConnectorCapacity;
   /**
   * kafka_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#kafka_cluster MskconnectConnector#kafka_cluster}
   */
   readonly kafkaCluster: MskconnectConnectorKafkaCluster;
   /**
   * kafka_cluster_client_authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#kafka_cluster_client_authentication MskconnectConnector#kafka_cluster_client_authentication}
   */
   readonly kafkaClusterClientAuthentication: MskconnectConnectorKafkaClusterClientAuthentication;
   /**
   * kafka_cluster_encryption_in_transit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#kafka_cluster_encryption_in_transit MskconnectConnector#kafka_cluster_encryption_in_transit}
   */
   readonly kafkaClusterEncryptionInTransit: MskconnectConnectorKafkaClusterEncryptionInTransit;
   /**
   * log_delivery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#log_delivery MskconnectConnector#log_delivery}
   */
   readonly logDelivery?: MskconnectConnectorLogDelivery;
   /**
   * plugin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#plugin MskconnectConnector#plugin}
   */
   readonly plugin: MskconnectConnectorPlugin[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#timeouts MskconnectConnector#timeouts}
   */
   readonly timeouts?: MskconnectConnectorTimeouts;
   /**
   * worker_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#worker_configuration MskconnectConnector#worker_configuration}
   */
   readonly workerConfiguration?: MskconnectConnectorWorkerConfiguration;
@@ -233,13 +228,13 @@ export interface MskconnectConnectorCapacityAutoscaling {
   readonly minWorkerCount: number;
   /**
   * scale_in_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#scale_in_policy MskconnectConnector#scale_in_policy}
   */
   readonly scaleInPolicy?: MskconnectConnectorCapacityAutoscalingScaleInPolicy;
   /**
   * scale_out_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#scale_out_policy MskconnectConnector#scale_out_policy}
   */
   readonly scaleOutPolicy?: MskconnectConnectorCapacityAutoscalingScaleOutPolicy;
@@ -481,13 +476,13 @@ export class MskconnectConnectorCapacityProvisionedCapacityOutputReference exten
 export interface MskconnectConnectorCapacity {
   /**
   * autoscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#autoscaling MskconnectConnector#autoscaling}
   */
   readonly autoscaling?: MskconnectConnectorCapacityAutoscaling;
   /**
   * provisioned_capacity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#provisioned_capacity MskconnectConnector#provisioned_capacity}
   */
   readonly provisionedCapacity?: MskconnectConnectorCapacityProvisionedCapacity;
@@ -667,7 +662,7 @@ export interface MskconnectConnectorKafkaClusterApacheKafkaCluster {
   readonly bootstrapServers: string;
   /**
   * vpc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#vpc MskconnectConnector#vpc}
   */
   readonly vpc: MskconnectConnectorKafkaClusterApacheKafkaClusterVpc;
@@ -751,7 +746,7 @@ export class MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference ex
 export interface MskconnectConnectorKafkaCluster {
   /**
   * apache_kafka_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#apache_kafka_cluster MskconnectConnector#apache_kafka_cluster}
   */
   readonly apacheKafkaCluster: MskconnectConnectorKafkaClusterApacheKafkaCluster;
@@ -1239,19 +1234,19 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryS3OutputReference ex
 export interface MskconnectConnectorLogDeliveryWorkerLogDelivery {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#cloudwatch_logs MskconnectConnector#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: MskconnectConnectorLogDeliveryWorkerLogDeliveryCloudwatchLogs;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#firehose MskconnectConnector#firehose}
   */
   readonly firehose?: MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#s3 MskconnectConnector#s3}
   */
   readonly s3?: MskconnectConnectorLogDeliveryWorkerLogDeliveryS3;
@@ -1364,7 +1359,7 @@ export class MskconnectConnectorLogDeliveryWorkerLogDeliveryOutputReference exte
 export interface MskconnectConnectorLogDelivery {
   /**
   * worker_log_delivery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#worker_log_delivery MskconnectConnector#worker_log_delivery}
   */
   readonly workerLogDelivery: MskconnectConnectorLogDeliveryWorkerLogDelivery;
@@ -1514,7 +1509,7 @@ export class MskconnectConnectorPluginCustomPluginOutputReference extends cdktf.
 export interface MskconnectConnectorPlugin {
   /**
   * custom_plugin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_connector#custom_plugin MskconnectConnector#custom_plugin}
   */
   readonly customPlugin: MskconnectConnectorPluginCustomPlugin;

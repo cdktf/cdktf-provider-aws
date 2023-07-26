@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface CeAnomalySubscriptionConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * subscriber block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#subscriber CeAnomalySubscription#subscriber}
   */
   readonly subscriber: CeAnomalySubscriptionSubscriber[] | cdktf.IResolvable;
   /**
   * threshold_expression block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#threshold_expression CeAnomalySubscription#threshold_expression}
   */
   readonly thresholdExpression?: CeAnomalySubscriptionThresholdExpression;
@@ -534,19 +529,19 @@ export class CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference exte
 export interface CeAnomalySubscriptionThresholdExpressionAnd {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionAndCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionAndDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionAndTags;
@@ -1286,19 +1281,19 @@ export class CeAnomalySubscriptionThresholdExpressionNotTagsOutputReference exte
 export interface CeAnomalySubscriptionThresholdExpressionNot {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionNotCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionNotDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionNotTags;
@@ -1768,19 +1763,19 @@ export class CeAnomalySubscriptionThresholdExpressionOrTagsOutputReference exten
 export interface CeAnomalySubscriptionThresholdExpressionOr {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionOrCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionOrDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionOrTags;
@@ -2044,37 +2039,37 @@ export class CeAnomalySubscriptionThresholdExpressionTagsOutputReference extends
 export interface CeAnomalySubscriptionThresholdExpression {
   /**
   * and block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#and CeAnomalySubscription#and}
   */
   readonly and?: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktf.IResolvable;
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionDimension;
   /**
   * not block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#not CeAnomalySubscription#not}
   */
   readonly not?: CeAnomalySubscriptionThresholdExpressionNot;
   /**
   * or block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#or CeAnomalySubscription#or}
   */
   readonly or?: CeAnomalySubscriptionThresholdExpressionOr[] | cdktf.IResolvable;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionTags;

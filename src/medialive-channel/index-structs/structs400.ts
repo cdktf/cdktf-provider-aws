@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 import { MedialiveChannelInputAttachmentsInputSettingsAudioSelector,
 medialiveChannelInputAttachmentsInputSettingsAudioSelectorToTerraform,
@@ -139,25 +134,25 @@ export interface MedialiveChannelInputAttachmentsInputSettings {
   readonly sourceEndBehavior?: string;
   /**
   * audio_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_selector MedialiveChannel#audio_selector}
   */
   readonly audioSelector?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector[] | cdktf.IResolvable;
   /**
   * caption_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_selector MedialiveChannel#caption_selector}
   */
   readonly captionSelector?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable;
   /**
   * network_input_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#network_input_settings MedialiveChannel#network_input_settings}
   */
   readonly networkInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings;
   /**
   * video_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_selector MedialiveChannel#video_selector}
   */
   readonly videoSelector?: MedialiveChannelInputAttachmentsInputSettingsVideoSelector;
@@ -462,13 +457,13 @@ export interface MedialiveChannelInputAttachments {
   readonly inputId: string;
   /**
   * automatic_input_failover_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#automatic_input_failover_settings MedialiveChannel#automatic_input_failover_settings}
   */
   readonly automaticInputFailoverSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings;
   /**
   * input_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_settings MedialiveChannel#input_settings}
   */
   readonly inputSettings?: MedialiveChannelInputAttachmentsInputSettings;

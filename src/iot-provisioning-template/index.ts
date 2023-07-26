@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_provisioning_template
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface IotProvisioningTemplateConfig extends cdktf.TerraformMetaArgume
   readonly templateBody: string;
   /**
   * pre_provisioning_hook block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_provisioning_template#pre_provisioning_hook IotProvisioningTemplate#pre_provisioning_hook}
   */
   readonly preProvisioningHook?: IotProvisioningTemplatePreProvisioningHook;

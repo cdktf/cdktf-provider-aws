@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_project
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface EvidentlyProjectConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_delivery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_project#data_delivery EvidentlyProject#data_delivery}
   */
   readonly dataDelivery?: EvidentlyProjectDataDelivery;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_project#timeouts EvidentlyProject#timeouts}
   */
   readonly timeouts?: EvidentlyProjectTimeouts;
@@ -208,13 +203,13 @@ export class EvidentlyProjectDataDeliveryS3DestinationOutputReference extends cd
 export interface EvidentlyProjectDataDelivery {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_project#cloudwatch_logs EvidentlyProject#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: EvidentlyProjectDataDeliveryCloudwatchLogs;
   /**
   * s3_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_project#s3_destination EvidentlyProject#s3_destination}
   */
   readonly s3Destination?: EvidentlyProjectDataDeliveryS3Destination;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_plan
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface SsmcontactsPlanConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * stage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_plan#stage SsmcontactsPlan#stage}
   */
   readonly stage: SsmcontactsPlanStage[] | cdktf.IResolvable;
@@ -211,13 +206,13 @@ export class SsmcontactsPlanStageTargetContactTargetInfoOutputReference extends 
 export interface SsmcontactsPlanStageTarget {
   /**
   * channel_target_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_plan#channel_target_info SsmcontactsPlan#channel_target_info}
   */
   readonly channelTargetInfo?: SsmcontactsPlanStageTargetChannelTargetInfo;
   /**
   * contact_target_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_plan#contact_target_info SsmcontactsPlan#contact_target_info}
   */
   readonly contactTargetInfo?: SsmcontactsPlanStageTargetContactTargetInfo;
@@ -343,7 +338,7 @@ export interface SsmcontactsPlanStage {
   readonly durationInMinutes: number;
   /**
   * target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_plan#target SsmcontactsPlan#target}
   */
   readonly target?: SsmcontactsPlanStageTarget[] | cdktf.IResolvable;

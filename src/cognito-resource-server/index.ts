@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_resource_server
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface CognitoResourceServerConfig extends cdktf.TerraformMetaArgument
   readonly userPoolId: string;
   /**
   * scope block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_resource_server#scope CognitoResourceServer#scope}
   */
   readonly scope?: CognitoResourceServerScope[] | cdktf.IResolvable;

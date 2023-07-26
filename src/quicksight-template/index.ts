@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template
 // generated from terraform resource schema
 
@@ -45,25 +40,25 @@ export interface QuicksightTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly versionDescription: string;
   /**
   * definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#definition QuicksightTemplate#definition}
   */
   readonly definition?: any;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#permissions QuicksightTemplate#permissions}
   */
   readonly permissions?: QuicksightTemplatePermissions[] | cdktf.IResolvable;
   /**
   * source_entity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#source_entity QuicksightTemplate#source_entity}
   */
   readonly sourceEntity?: QuicksightTemplateSourceEntity;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#timeouts QuicksightTemplate#timeouts}
   */
   readonly timeouts?: QuicksightTemplateTimeouts;
@@ -311,7 +306,7 @@ export interface QuicksightTemplateSourceEntitySourceAnalysis {
   readonly arn: string;
   /**
   * data_set_references block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#data_set_references QuicksightTemplate#data_set_references}
   */
   readonly dataSetReferences: QuicksightTemplateSourceEntitySourceAnalysisDataSetReferences[] | cdktf.IResolvable;
@@ -457,13 +452,13 @@ export class QuicksightTemplateSourceEntitySourceTemplateOutputReference extends
 export interface QuicksightTemplateSourceEntity {
   /**
   * source_analysis block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#source_analysis QuicksightTemplate#source_analysis}
   */
   readonly sourceAnalysis?: QuicksightTemplateSourceEntitySourceAnalysis;
   /**
   * source_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_template#source_template QuicksightTemplate#source_template}
   */
   readonly sourceTemplate?: QuicksightTemplateSourceEntitySourceTemplate;

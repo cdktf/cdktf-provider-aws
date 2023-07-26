@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_backup
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface FsxBackupConfig extends cdktf.TerraformMetaArguments {
   readonly volumeId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_backup#timeouts FsxBackup#timeouts}
   */
   readonly timeouts?: FsxBackupTimeouts;

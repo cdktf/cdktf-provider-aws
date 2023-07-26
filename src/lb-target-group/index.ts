@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_target_group
 // generated from terraform resource schema
 
@@ -93,19 +88,19 @@ export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * health_check block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_target_group#health_check LbTargetGroup#health_check}
   */
   readonly healthCheck?: LbTargetGroupHealthCheck;
   /**
   * stickiness block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_target_group#stickiness LbTargetGroup#stickiness}
   */
   readonly stickiness?: LbTargetGroupStickiness;
   /**
   * target_failover block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_target_group#target_failover LbTargetGroup#target_failover}
   */
   readonly targetFailover?: LbTargetGroupTargetFailover[] | cdktf.IResolvable;

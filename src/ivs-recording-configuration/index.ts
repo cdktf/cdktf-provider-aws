@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_recording_configuration
 // generated from terraform resource schema
 
@@ -37,19 +32,19 @@ export interface IvsRecordingConfigurationConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * destination_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_recording_configuration#destination_configuration IvsRecordingConfiguration#destination_configuration}
   */
   readonly destinationConfiguration: IvsRecordingConfigurationDestinationConfiguration;
   /**
   * thumbnail_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_recording_configuration#thumbnail_configuration IvsRecordingConfiguration#thumbnail_configuration}
   */
   readonly thumbnailConfiguration?: IvsRecordingConfigurationThumbnailConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_recording_configuration#timeouts IvsRecordingConfiguration#timeouts}
   */
   readonly timeouts?: IvsRecordingConfigurationTimeouts;
@@ -119,7 +114,7 @@ export class IvsRecordingConfigurationDestinationConfigurationS3OutputReference 
 export interface IvsRecordingConfigurationDestinationConfiguration {
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_recording_configuration#s3 IvsRecordingConfiguration#s3}
   */
   readonly s3: IvsRecordingConfigurationDestinationConfigurationS3;

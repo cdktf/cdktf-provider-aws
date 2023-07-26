@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface EmrcontainersJobTemplateConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * job_template_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#job_template_data EmrcontainersJobTemplate#job_template_data}
   */
   readonly jobTemplateData: EmrcontainersJobTemplateJobTemplateData;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#timeouts EmrcontainersJobTemplate#timeouts}
   */
   readonly timeouts?: EmrcontainersJobTemplateTimeouts;
@@ -183,7 +178,7 @@ export interface EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesAp
   readonly properties?: { [key: string]: string };
   /**
   * configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#configurations EmrcontainersJobTemplate#configurations}
   */
   readonly configurations?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurations[] | cdktf.IResolvable;
@@ -480,13 +475,13 @@ export interface EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMo
   readonly persistentAppUi?: string;
   /**
   * cloud_watch_monitoring_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#cloud_watch_monitoring_configuration EmrcontainersJobTemplate#cloud_watch_monitoring_configuration}
   */
   readonly cloudWatchMonitoringConfiguration?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration;
   /**
   * s3_monitoring_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#s3_monitoring_configuration EmrcontainersJobTemplate#s3_monitoring_configuration}
   */
   readonly s3MonitoringConfiguration?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration;
@@ -599,13 +594,13 @@ export class EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonito
 export interface EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides {
   /**
   * application_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#application_configuration EmrcontainersJobTemplate#application_configuration}
   */
   readonly applicationConfiguration?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfiguration[] | cdktf.IResolvable;
   /**
   * monitoring_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#monitoring_configuration EmrcontainersJobTemplate#monitoring_configuration}
   */
   readonly monitoringConfiguration?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfiguration;
@@ -903,13 +898,13 @@ export class EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDrive
 export interface EmrcontainersJobTemplateJobTemplateDataJobDriver {
   /**
   * spark_sql_job_driver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#spark_sql_job_driver EmrcontainersJobTemplate#spark_sql_job_driver}
   */
   readonly sparkSqlJobDriver?: EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriver;
   /**
   * spark_submit_job_driver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#spark_submit_job_driver EmrcontainersJobTemplate#spark_submit_job_driver}
   */
   readonly sparkSubmitJobDriver?: EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriver;
@@ -1011,13 +1006,13 @@ export interface EmrcontainersJobTemplateJobTemplateData {
   readonly releaseLabel: string;
   /**
   * configuration_overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#configuration_overrides EmrcontainersJobTemplate#configuration_overrides}
   */
   readonly configurationOverrides?: EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides;
   /**
   * job_driver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_job_template#job_driver EmrcontainersJobTemplate#job_driver}
   */
   readonly jobDriver: EmrcontainersJobTemplateJobTemplateDataJobDriver;

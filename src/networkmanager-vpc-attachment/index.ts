@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_vpc_attachment
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface NetworkmanagerVpcAttachmentConfig extends cdktf.TerraformMetaAr
   readonly vpcArn: string;
   /**
   * options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_vpc_attachment#options NetworkmanagerVpcAttachment#options}
   */
   readonly options?: NetworkmanagerVpcAttachmentOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_vpc_attachment#timeouts NetworkmanagerVpcAttachment#timeouts}
   */
   readonly timeouts?: NetworkmanagerVpcAttachmentTimeouts;

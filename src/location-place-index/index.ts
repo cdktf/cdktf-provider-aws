@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/location_place_index
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface LocationPlaceIndexConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_source_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
   */
   readonly dataSourceConfiguration?: LocationPlaceIndexDataSourceConfiguration;

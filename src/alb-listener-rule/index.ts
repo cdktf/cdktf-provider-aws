@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface AlbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#action AlbListenerRule#action}
   */
   readonly action: AlbListenerRuleAction[] | cdktf.IResolvable;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#condition AlbListenerRule#condition}
   */
   readonly condition: AlbListenerRuleCondition[] | cdktf.IResolvable;
@@ -939,13 +934,13 @@ export class AlbListenerRuleActionForwardTargetGroupList extends cdktf.ComplexLi
 export interface AlbListenerRuleActionForward {
   /**
   * stickiness block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#stickiness AlbListenerRule#stickiness}
   */
   readonly stickiness?: AlbListenerRuleActionForwardStickiness;
   /**
   * target_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#target_group AlbListenerRule#target_group}
   */
   readonly targetGroup: AlbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable;
@@ -1241,31 +1236,31 @@ export interface AlbListenerRuleAction {
   readonly type: string;
   /**
   * authenticate_cognito block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#authenticate_cognito AlbListenerRule#authenticate_cognito}
   */
   readonly authenticateCognito?: AlbListenerRuleActionAuthenticateCognito;
   /**
   * authenticate_oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#authenticate_oidc AlbListenerRule#authenticate_oidc}
   */
   readonly authenticateOidc?: AlbListenerRuleActionAuthenticateOidc;
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#fixed_response AlbListenerRule#fixed_response}
   */
   readonly fixedResponse?: AlbListenerRuleActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#forward AlbListenerRule#forward}
   */
   readonly forward?: AlbListenerRuleActionForward;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#redirect AlbListenerRule#redirect}
   */
   readonly redirect?: AlbListenerRuleActionRedirect;
@@ -1977,37 +1972,37 @@ export class AlbListenerRuleConditionSourceIpOutputReference extends cdktf.Compl
 export interface AlbListenerRuleCondition {
   /**
   * host_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#host_header AlbListenerRule#host_header}
   */
   readonly hostHeader?: AlbListenerRuleConditionHostHeader;
   /**
   * http_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#http_header AlbListenerRule#http_header}
   */
   readonly httpHeader?: AlbListenerRuleConditionHttpHeader;
   /**
   * http_request_method block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#http_request_method AlbListenerRule#http_request_method}
   */
   readonly httpRequestMethod?: AlbListenerRuleConditionHttpRequestMethod;
   /**
   * path_pattern block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#path_pattern AlbListenerRule#path_pattern}
   */
   readonly pathPattern?: AlbListenerRuleConditionPathPattern;
   /**
   * query_string block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#query_string AlbListenerRule#query_string}
   */
   readonly queryString?: AlbListenerRuleConditionQueryString[] | cdktf.IResolvable;
   /**
   * source_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/alb_listener_rule#source_ip AlbListenerRule#source_ip}
   */
   readonly sourceIp?: AlbListenerRuleConditionSourceIp;

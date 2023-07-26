@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * operating_regions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam#operating_regions VpcIpam#operating_regions}
   */
   readonly operatingRegions: VpcIpamOperatingRegions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipam#timeouts VpcIpam#timeouts}
   */
   readonly timeouts?: VpcIpamTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_app_image_config
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface SagemakerAppImageConfigConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * kernel_gateway_image_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_app_image_config#kernel_gateway_image_config SagemakerAppImageConfig#kernel_gateway_image_config}
   */
   readonly kernelGatewayImageConfig?: SagemakerAppImageConfigKernelGatewayImageConfig;
@@ -249,13 +244,13 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputRefe
 export interface SagemakerAppImageConfigKernelGatewayImageConfig {
   /**
   * file_system_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_app_image_config#file_system_config SagemakerAppImageConfig#file_system_config}
   */
   readonly fileSystemConfig?: SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig;
   /**
   * kernel_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_app_image_config#kernel_spec SagemakerAppImageConfig#kernel_spec}
   */
   readonly kernelSpec: SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_video_stream
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface KinesisVideoStreamConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_video_stream#timeouts KinesisVideoStream#timeouts}
   */
   readonly timeouts?: KinesisVideoStreamTimeouts;

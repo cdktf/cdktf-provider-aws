@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_ipam_pool_cidrs
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface DataAwsVpcIpamPoolCidrsConfig extends cdktf.TerraformMetaArgume
   readonly ipamPoolId: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_ipam_pool_cidrs#filter DataAwsVpcIpamPoolCidrs#filter}
   */
   readonly filter?: DataAwsVpcIpamPoolCidrsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_ipam_pool_cidrs#timeouts DataAwsVpcIpamPoolCidrs#timeouts}
   */
   readonly timeouts?: DataAwsVpcIpamPoolCidrsTimeouts;

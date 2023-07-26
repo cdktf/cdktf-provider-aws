@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain
 // generated from terraform resource schema
 
@@ -53,31 +48,31 @@ export interface Route53DomainsRegisteredDomainConfig extends cdktf.TerraformMet
   readonly transferLock?: boolean | cdktf.IResolvable;
   /**
   * admin_contact block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain#admin_contact Route53DomainsRegisteredDomain#admin_contact}
   */
   readonly adminContact?: Route53DomainsRegisteredDomainAdminContact;
   /**
   * name_server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain#name_server Route53DomainsRegisteredDomain#name_server}
   */
   readonly nameServer?: Route53DomainsRegisteredDomainNameServer[] | cdktf.IResolvable;
   /**
   * registrant_contact block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain#registrant_contact Route53DomainsRegisteredDomain#registrant_contact}
   */
   readonly registrantContact?: Route53DomainsRegisteredDomainRegistrantContact;
   /**
   * tech_contact block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain#tech_contact Route53DomainsRegisteredDomain#tech_contact}
   */
   readonly techContact?: Route53DomainsRegisteredDomainTechContact;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53domains_registered_domain#timeouts Route53DomainsRegisteredDomain#timeouts}
   */
   readonly timeouts?: Route53DomainsRegisteredDomainTimeouts;

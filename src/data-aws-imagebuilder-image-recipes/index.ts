@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/imagebuilder_image_recipes
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface DataAwsImagebuilderImageRecipesConfig extends cdktf.TerraformMe
   readonly owner?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/imagebuilder_image_recipes#filter DataAwsImagebuilderImageRecipes#filter}
   */
   readonly filter?: DataAwsImagebuilderImageRecipesFilter[] | cdktf.IResolvable;

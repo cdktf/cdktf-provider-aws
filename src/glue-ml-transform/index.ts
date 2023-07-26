@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_ml_transform
 // generated from terraform resource schema
 
@@ -65,13 +60,13 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   readonly workerType?: string;
   /**
   * input_record_tables block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_ml_transform#input_record_tables GlueMlTransform#input_record_tables}
   */
   readonly inputRecordTables: GlueMlTransformInputRecordTables[] | cdktf.IResolvable;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_ml_transform#parameters GlueMlTransform#parameters}
   */
   readonly parameters: GlueMlTransformParameters;
@@ -470,7 +465,7 @@ export interface GlueMlTransformParameters {
   readonly transformType: string;
   /**
   * find_matches_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_ml_transform#find_matches_parameters GlueMlTransform#find_matches_parameters}
   */
   readonly findMatchesParameters: GlueMlTransformParametersFindMatchesParameters;

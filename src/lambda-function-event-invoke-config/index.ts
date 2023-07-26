@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_event_invoke_config
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMe
   readonly qualifier?: string;
   /**
   * destination_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_event_invoke_config#destination_config LambdaFunctionEventInvokeConfig#destination_config}
   */
   readonly destinationConfig?: LambdaFunctionEventInvokeConfigDestinationConfig;
@@ -169,13 +164,13 @@ export class LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputRefe
 export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   /**
   * on_failure block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_event_invoke_config#on_failure LambdaFunctionEventInvokeConfig#on_failure}
   */
   readonly onFailure?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure;
   /**
   * on_success block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function_event_invoke_config#on_success LambdaFunctionEventInvokeConfig#on_success}
   */
   readonly onSuccess?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess;

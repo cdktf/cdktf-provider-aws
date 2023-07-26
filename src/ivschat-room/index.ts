@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_room
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface IvschatRoomConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * message_review_handler block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_room#message_review_handler IvschatRoom#message_review_handler}
   */
   readonly messageReviewHandler?: IvschatRoomMessageReviewHandler;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivschat_room#timeouts IvschatRoom#timeouts}
   */
   readonly timeouts?: IvschatRoomTimeouts;

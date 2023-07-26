@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface IotIndexingConfigurationConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * thing_group_indexing_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#thing_group_indexing_configuration IotIndexingConfiguration#thing_group_indexing_configuration}
   */
   readonly thingGroupIndexingConfiguration?: IotIndexingConfigurationThingGroupIndexingConfiguration;
   /**
   * thing_indexing_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#thing_indexing_configuration IotIndexingConfiguration#thing_indexing_configuration}
   */
   readonly thingIndexingConfiguration?: IotIndexingConfigurationThingIndexingConfiguration;
@@ -287,13 +282,13 @@ export interface IotIndexingConfigurationThingGroupIndexingConfiguration {
   readonly thingGroupIndexingMode: string;
   /**
   * custom_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
   */
   readonly customField?: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable;
   /**
   * managed_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
   */
   readonly managedField?: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable;
@@ -667,13 +662,13 @@ export interface IotIndexingConfigurationThingIndexingConfiguration {
   readonly thingIndexingMode: string;
   /**
   * custom_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
   */
   readonly customField?: IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable;
   /**
   * managed_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
   */
   readonly managedField?: IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable;

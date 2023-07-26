@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule
 // generated from terraform resource schema
 
@@ -30,25 +25,25 @@ export interface RbinRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * lock_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
   */
   readonly lockConfiguration?: RbinRuleLockConfiguration;
   /**
   * resource_tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
   */
   readonly resourceTags?: RbinRuleResourceTags[] | cdktf.IResolvable;
   /**
   * retention_period block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
   */
   readonly retentionPeriod: RbinRuleRetentionPeriod;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
   */
   readonly timeouts?: RbinRuleTimeouts;
@@ -142,7 +137,7 @@ export class RbinRuleLockConfigurationUnlockDelayOutputReference extends cdktf.C
 export interface RbinRuleLockConfiguration {
   /**
   * unlock_delay block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
   */
   readonly unlockDelay: RbinRuleLockConfigurationUnlockDelay;

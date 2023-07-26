@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_iam_policy_assignment
 // generated from terraform resource schema
 
@@ -34,7 +29,7 @@ export interface QuicksightIamPolicyAssignmentConfig extends cdktf.TerraformMeta
   readonly policyArn?: string;
   /**
   * identities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_iam_policy_assignment#identities QuicksightIamPolicyAssignment#identities}
   */
   readonly identities?: QuicksightIamPolicyAssignmentIdentities[] | cdktf.IResolvable;

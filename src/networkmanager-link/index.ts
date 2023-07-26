@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_link
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface NetworkmanagerLinkConfig extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /**
   * bandwidth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_link#bandwidth NetworkmanagerLink#bandwidth}
   */
   readonly bandwidth: NetworkmanagerLinkBandwidth;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_link#timeouts NetworkmanagerLink#timeouts}
   */
   readonly timeouts?: NetworkmanagerLinkTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_device_fleet
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface SagemakerDeviceFleetConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * output_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_device_fleet#output_config SagemakerDeviceFleet#output_config}
   */
   readonly outputConfig: SagemakerDeviceFleetOutputConfig;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_ip_group
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface WorkspacesIpGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_ip_group#rules WorkspacesIpGroup#rules}
   */
   readonly rules?: WorkspacesIpGroupRules[] | cdktf.IResolvable;

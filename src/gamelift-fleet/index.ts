@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet
 // generated from terraform resource schema
 
@@ -65,31 +60,31 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * certificate_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#certificate_configuration GameliftFleet#certificate_configuration}
   */
   readonly certificateConfiguration?: GameliftFleetCertificateConfiguration;
   /**
   * ec2_inbound_permission block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#ec2_inbound_permission GameliftFleet#ec2_inbound_permission}
   */
   readonly ec2InboundPermission?: GameliftFleetEc2InboundPermission[] | cdktf.IResolvable;
   /**
   * resource_creation_limit_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#resource_creation_limit_policy GameliftFleet#resource_creation_limit_policy}
   */
   readonly resourceCreationLimitPolicy?: GameliftFleetResourceCreationLimitPolicy;
   /**
   * runtime_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#runtime_configuration GameliftFleet#runtime_configuration}
   */
   readonly runtimeConfiguration?: GameliftFleetRuntimeConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#timeouts GameliftFleet#timeouts}
   */
   readonly timeouts?: GameliftFleetTimeouts;
@@ -573,7 +568,7 @@ export interface GameliftFleetRuntimeConfiguration {
   readonly maxConcurrentGameSessionActivations?: number;
   /**
   * server_process block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_fleet#server_process GameliftFleet#server_process}
   */
   readonly serverProcess?: GameliftFleetRuntimeConfigurationServerProcess[] | cdktf.IResolvable;

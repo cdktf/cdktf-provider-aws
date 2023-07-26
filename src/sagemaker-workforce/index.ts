@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workforce
 // generated from terraform resource schema
 
@@ -25,25 +20,25 @@ export interface SagemakerWorkforceConfig extends cdktf.TerraformMetaArguments {
   readonly workforceName: string;
   /**
   * cognito_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workforce#cognito_config SagemakerWorkforce#cognito_config}
   */
   readonly cognitoConfig?: SagemakerWorkforceCognitoConfig;
   /**
   * oidc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workforce#oidc_config SagemakerWorkforce#oidc_config}
   */
   readonly oidcConfig?: SagemakerWorkforceOidcConfig;
   /**
   * source_ip_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
   */
   readonly sourceIpConfig?: SagemakerWorkforceSourceIpConfig;
   /**
   * workforce_vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
   */
   readonly workforceVpcConfig?: SagemakerWorkforceWorkforceVpcConfig;

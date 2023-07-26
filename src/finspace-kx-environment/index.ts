@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_environment
 // generated from terraform resource schema
 
@@ -34,19 +29,19 @@ export interface FinspaceKxEnvironmentConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * custom_dns_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_environment#custom_dns_configuration FinspaceKxEnvironment#custom_dns_configuration}
   */
   readonly customDnsConfiguration?: FinspaceKxEnvironmentCustomDnsConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_environment#timeouts FinspaceKxEnvironment#timeouts}
   */
   readonly timeouts?: FinspaceKxEnvironmentTimeouts;
   /**
   * transit_gateway_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_environment#transit_gateway_configuration FinspaceKxEnvironment#transit_gateway_configuration}
   */
   readonly transitGatewayConfiguration?: FinspaceKxEnvironmentTransitGatewayConfiguration;

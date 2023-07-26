@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack
 // generated from terraform resource schema
 
@@ -77,7 +72,7 @@ export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments 
   readonly timeoutInMinutes?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack#timeouts CloudformationStack#timeouts}
   */
   readonly timeouts?: CloudformationStackTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_rule_group
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface WafregionalRuleGroupConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * activated_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_rule_group#activated_rule WafregionalRuleGroup#activated_rule}
   */
   readonly activatedRule?: WafregionalRuleGroupActivatedRule[] | cdktf.IResolvable;
@@ -119,7 +114,7 @@ export interface WafregionalRuleGroupActivatedRule {
   readonly type?: string;
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_rule_group#action WafregionalRuleGroup#action}
   */
   readonly action: WafregionalRuleGroupActivatedRuleAction;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_option_group
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface DbOptionGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_option_group#option DbOptionGroup#option}
   */
   readonly option?: DbOptionGroupOption[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_option_group#timeouts DbOptionGroup#timeouts}
   */
   readonly timeouts?: DbOptionGroupTimeouts;
@@ -201,7 +196,7 @@ export interface DbOptionGroupOption {
   readonly vpcSecurityGroupMemberships?: string[];
   /**
   * option_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_option_group#option_settings DbOptionGroup#option_settings}
   */
   readonly optionSettings?: DbOptionGroupOptionOptionSettings[] | cdktf.IResolvable;

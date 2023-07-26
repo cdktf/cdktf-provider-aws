@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_device
 // generated from terraform resource schema
 
@@ -57,19 +52,19 @@ export interface NetworkmanagerDeviceConfig extends cdktf.TerraformMetaArguments
   readonly vendor?: string;
   /**
   * aws_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_device#aws_location NetworkmanagerDevice#aws_location}
   */
   readonly awsLocation?: NetworkmanagerDeviceAwsLocation;
   /**
   * location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_device#location NetworkmanagerDevice#location}
   */
   readonly location?: NetworkmanagerDeviceLocation;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_device#timeouts NetworkmanagerDevice#timeouts}
   */
   readonly timeouts?: NetworkmanagerDeviceTimeouts;

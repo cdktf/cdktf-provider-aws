@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer
 // generated from terraform resource schema
 
@@ -105,19 +100,19 @@ export interface OpsworksPhpAppLayerConfig extends cdktf.TerraformMetaArguments 
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#cloudwatch_configuration OpsworksPhpAppLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksPhpAppLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#ebs_volume OpsworksPhpAppLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksPhpAppLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#load_based_auto_scaling OpsworksPhpAppLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksPhpAppLayerLoadBasedAutoScaling;
@@ -490,7 +485,7 @@ export interface OpsworksPhpAppLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#log_streams OpsworksPhpAppLayer#log_streams}
   */
   readonly logStreams?: OpsworksPhpAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1288,13 +1283,13 @@ export interface OpsworksPhpAppLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#downscaling OpsworksPhpAppLayer#downscaling}
   */
   readonly downscaling?: OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_php_app_layer#upscaling OpsworksPhpAppLayer#upscaling}
   */
   readonly upscaling?: OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling;

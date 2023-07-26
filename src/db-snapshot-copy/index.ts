@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_snapshot_copy
 // generated from terraform resource schema
 
@@ -61,7 +56,7 @@ export interface DbSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   readonly targetDbSnapshotIdentifier: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_snapshot_copy#timeouts DbSnapshotCopy#timeouts}
   */
   readonly timeouts?: DbSnapshotCopyTimeouts;

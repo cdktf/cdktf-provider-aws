@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_peering_connection
 // generated from terraform resource schema
 
@@ -61,13 +56,13 @@ export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaAr
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_peering_connection#filter DataAwsVpcPeeringConnection#filter}
   */
   readonly filter?: DataAwsVpcPeeringConnectionFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_peering_connection#timeouts DataAwsVpcPeeringConnection#timeouts}
   */
   readonly timeouts?: DataAwsVpcPeeringConnectionTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster
 // generated from terraform resource schema
 
@@ -45,31 +40,31 @@ export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#encryption_config EksCluster#encryption_config}
   */
   readonly encryptionConfig?: EksClusterEncryptionConfig;
   /**
   * kubernetes_network_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#kubernetes_network_config EksCluster#kubernetes_network_config}
   */
   readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig;
   /**
   * outpost_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#outpost_config EksCluster#outpost_config}
   */
   readonly outpostConfig?: EksClusterOutpostConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#timeouts EksCluster#timeouts}
   */
   readonly timeouts?: EksClusterTimeouts;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#vpc_config EksCluster#vpc_config}
   */
   readonly vpcConfig: EksClusterVpcConfig;
@@ -336,7 +331,7 @@ export interface EksClusterEncryptionConfig {
   readonly resources: string[];
   /**
   * provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#provider EksCluster#provider}
   */
   readonly provider: EksClusterEncryptionConfigProvider;
@@ -587,7 +582,7 @@ export interface EksClusterOutpostConfig {
   readonly outpostArns: string[];
   /**
   * control_plane_placement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_cluster#control_plane_placement EksCluster#control_plane_placement}
   */
   readonly controlPlanePlacement?: EksClusterOutpostConfigControlPlanePlacement;

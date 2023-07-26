@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/quicksight_data_set
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface DataAwsQuicksightDataSetConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * column_level_permission_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/quicksight_data_set#column_level_permission_rules DataAwsQuicksightDataSet#column_level_permission_rules}
   */
   readonly columnLevelPermissionRules?: DataAwsQuicksightDataSetColumnLevelPermissionRules[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_region
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface DirectoryServiceRegionConfig extends cdktf.TerraformMetaArgumen
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_region#timeouts DirectoryServiceRegion#timeouts}
   */
   readonly timeouts?: DirectoryServiceRegionTimeouts;
   /**
   * vpc_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_region#vpc_settings DirectoryServiceRegion#vpc_settings}
   */
   readonly vpcSettings: DirectoryServiceRegionVpcSettings;

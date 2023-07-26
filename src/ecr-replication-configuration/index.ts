@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_replication_configuration
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface EcrReplicationConfigurationConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * replication_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_replication_configuration#replication_configuration EcrReplicationConfiguration#replication_configuration}
   */
   readonly replicationConfiguration?: EcrReplicationConfigurationReplicationConfiguration;
@@ -265,13 +260,13 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFi
 export interface EcrReplicationConfigurationReplicationConfigurationRule {
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_replication_configuration#destination EcrReplicationConfiguration#destination}
   */
   readonly destination: EcrReplicationConfigurationReplicationConfigurationRuleDestination[] | cdktf.IResolvable;
   /**
   * repository_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_replication_configuration#repository_filter EcrReplicationConfiguration#repository_filter}
   */
   readonly repositoryFilter?: EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilter[] | cdktf.IResolvable;
@@ -390,7 +385,7 @@ export class EcrReplicationConfigurationReplicationConfigurationRuleList extends
 export interface EcrReplicationConfigurationReplicationConfiguration {
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_replication_configuration#rule EcrReplicationConfiguration#rule}
   */
   readonly rule: EcrReplicationConfigurationReplicationConfigurationRule[] | cdktf.IResolvable;

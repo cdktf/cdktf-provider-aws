@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_volume
 // generated from terraform resource schema
 
@@ -29,13 +24,13 @@ export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_volume#filter DataAwsEbsVolume#filter}
   */
   readonly filter?: DataAwsEbsVolumeFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_volume#timeouts DataAwsEbsVolume#timeouts}
   */
   readonly timeouts?: DataAwsEbsVolumeTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface ConnectUserHierarchyStructureConfig extends cdktf.TerraformMeta
   readonly instanceId: string;
   /**
   * hierarchy_structure block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#hierarchy_structure ConnectUserHierarchyStructure#hierarchy_structure}
   */
   readonly hierarchyStructure: ConnectUserHierarchyStructureHierarchyStructure;
@@ -393,31 +388,31 @@ export class ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputRefere
 export interface ConnectUserHierarchyStructureHierarchyStructure {
   /**
   * level_five block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#level_five ConnectUserHierarchyStructure#level_five}
   */
   readonly levelFive?: ConnectUserHierarchyStructureHierarchyStructureLevelFive;
   /**
   * level_four block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#level_four ConnectUserHierarchyStructure#level_four}
   */
   readonly levelFour?: ConnectUserHierarchyStructureHierarchyStructureLevelFour;
   /**
   * level_one block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#level_one ConnectUserHierarchyStructure#level_one}
   */
   readonly levelOne?: ConnectUserHierarchyStructureHierarchyStructureLevelOne;
   /**
   * level_three block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#level_three ConnectUserHierarchyStructure#level_three}
   */
   readonly levelThree?: ConnectUserHierarchyStructureHierarchyStructureLevelThree;
   /**
   * level_two block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_user_hierarchy_structure#level_two ConnectUserHierarchyStructure#level_two}
   */
   readonly levelTwo?: ConnectUserHierarchyStructureHierarchyStructureLevelTwo;

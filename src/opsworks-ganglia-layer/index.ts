@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer
 // generated from terraform resource schema
 
@@ -117,19 +112,19 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   readonly username?: string;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#cloudwatch_configuration OpsworksGangliaLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksGangliaLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#ebs_volume OpsworksGangliaLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksGangliaLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#load_based_auto_scaling OpsworksGangliaLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksGangliaLayerLoadBasedAutoScaling;
@@ -502,7 +497,7 @@ export interface OpsworksGangliaLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#log_streams OpsworksGangliaLayer#log_streams}
   */
   readonly logStreams?: OpsworksGangliaLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1300,13 +1295,13 @@ export interface OpsworksGangliaLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#downscaling OpsworksGangliaLayer#downscaling}
   */
   readonly downscaling?: OpsworksGangliaLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_ganglia_layer#upscaling OpsworksGangliaLayer#upscaling}
   */
   readonly upscaling?: OpsworksGangliaLayerLoadBasedAutoScalingUpscaling;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application
 // generated from terraform resource schema
 
@@ -45,37 +40,37 @@ export interface EmrserverlessApplicationConfig extends cdktf.TerraformMetaArgum
   readonly type: string;
   /**
   * auto_start_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}
   */
   readonly autoStartConfiguration?: EmrserverlessApplicationAutoStartConfiguration;
   /**
   * auto_stop_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#auto_stop_configuration EmrserverlessApplication#auto_stop_configuration}
   */
   readonly autoStopConfiguration?: EmrserverlessApplicationAutoStopConfiguration;
   /**
   * image_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#image_configuration EmrserverlessApplication#image_configuration}
   */
   readonly imageConfiguration?: EmrserverlessApplicationImageConfiguration;
   /**
   * initial_capacity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#initial_capacity EmrserverlessApplication#initial_capacity}
   */
   readonly initialCapacity?: EmrserverlessApplicationInitialCapacity[] | cdktf.IResolvable;
   /**
   * maximum_capacity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#maximum_capacity EmrserverlessApplication#maximum_capacity}
   */
   readonly maximumCapacity?: EmrserverlessApplicationMaximumCapacity;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#network_configuration EmrserverlessApplication#network_configuration}
   */
   readonly networkConfiguration?: EmrserverlessApplicationNetworkConfiguration;
@@ -419,7 +414,7 @@ export interface EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
   readonly workerCount: number;
   /**
   * worker_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#worker_configuration EmrserverlessApplication#worker_configuration}
   */
   readonly workerConfiguration?: EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration;
@@ -510,7 +505,7 @@ export interface EmrserverlessApplicationInitialCapacity {
   readonly initialCapacityType: string;
   /**
   * initial_capacity_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrserverless_application#initial_capacity_config EmrserverlessApplication#initial_capacity_config}
   */
   readonly initialCapacityConfig?: EmrserverlessApplicationInitialCapacityInitialCapacityConfig;

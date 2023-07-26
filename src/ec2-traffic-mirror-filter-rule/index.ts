@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_traffic_mirror_filter_rule
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface Ec2TrafficMirrorFilterRuleConfig extends cdktf.TerraformMetaArg
   readonly trafficMirrorFilterId: string;
   /**
   * destination_port_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_traffic_mirror_filter_rule#destination_port_range Ec2TrafficMirrorFilterRule#destination_port_range}
   */
   readonly destinationPortRange?: Ec2TrafficMirrorFilterRuleDestinationPortRange;
   /**
   * source_port_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_traffic_mirror_filter_rule#source_port_range Ec2TrafficMirrorFilterRule#source_port_range}
   */
   readonly sourcePortRange?: Ec2TrafficMirrorFilterRuleSourcePortRange;

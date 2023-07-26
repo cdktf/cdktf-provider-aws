@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain
 // generated from terraform resource schema
 
@@ -45,73 +40,73 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_security_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#advanced_security_options ElasticsearchDomain#advanced_security_options}
   */
   readonly advancedSecurityOptions?: ElasticsearchDomainAdvancedSecurityOptions;
   /**
   * auto_tune_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#auto_tune_options ElasticsearchDomain#auto_tune_options}
   */
   readonly autoTuneOptions?: ElasticsearchDomainAutoTuneOptions;
   /**
   * cluster_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#cluster_config ElasticsearchDomain#cluster_config}
   */
   readonly clusterConfig?: ElasticsearchDomainClusterConfig;
   /**
   * cognito_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#cognito_options ElasticsearchDomain#cognito_options}
   */
   readonly cognitoOptions?: ElasticsearchDomainCognitoOptions;
   /**
   * domain_endpoint_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#domain_endpoint_options ElasticsearchDomain#domain_endpoint_options}
   */
   readonly domainEndpointOptions?: ElasticsearchDomainDomainEndpointOptions;
   /**
   * ebs_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#ebs_options ElasticsearchDomain#ebs_options}
   */
   readonly ebsOptions?: ElasticsearchDomainEbsOptions;
   /**
   * encrypt_at_rest block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#encrypt_at_rest ElasticsearchDomain#encrypt_at_rest}
   */
   readonly encryptAtRest?: ElasticsearchDomainEncryptAtRest;
   /**
   * log_publishing_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#log_publishing_options ElasticsearchDomain#log_publishing_options}
   */
   readonly logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[] | cdktf.IResolvable;
   /**
   * node_to_node_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#node_to_node_encryption ElasticsearchDomain#node_to_node_encryption}
   */
   readonly nodeToNodeEncryption?: ElasticsearchDomainNodeToNodeEncryption;
   /**
   * snapshot_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#snapshot_options ElasticsearchDomain#snapshot_options}
   */
   readonly snapshotOptions?: ElasticsearchDomainSnapshotOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#timeouts ElasticsearchDomain#timeouts}
   */
   readonly timeouts?: ElasticsearchDomainTimeouts;
   /**
   * vpc_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#vpc_options ElasticsearchDomain#vpc_options}
   */
   readonly vpcOptions?: ElasticsearchDomainVpcOptions;
@@ -246,7 +241,7 @@ export interface ElasticsearchDomainAdvancedSecurityOptions {
   readonly internalUserDatabaseEnabled?: boolean | cdktf.IResolvable;
   /**
   * master_user_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#master_user_options ElasticsearchDomain#master_user_options}
   */
   readonly masterUserOptions?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions;
@@ -450,7 +445,7 @@ export interface ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule {
   readonly startAt: string;
   /**
   * duration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#duration ElasticsearchDomain#duration}
   */
   readonly duration: ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration;
@@ -594,7 +589,7 @@ export interface ElasticsearchDomainAutoTuneOptions {
   readonly rollbackOnDisable?: string;
   /**
   * maintenance_schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#maintenance_schedule ElasticsearchDomain#maintenance_schedule}
   */
   readonly maintenanceSchedule?: ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule[] | cdktf.IResolvable;
@@ -870,13 +865,13 @@ export interface ElasticsearchDomainClusterConfig {
   readonly zoneAwarenessEnabled?: boolean | cdktf.IResolvable;
   /**
   * cold_storage_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#cold_storage_options ElasticsearchDomain#cold_storage_options}
   */
   readonly coldStorageOptions?: ElasticsearchDomainClusterConfigColdStorageOptions;
   /**
   * zone_awareness_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain#zone_awareness_config ElasticsearchDomain#zone_awareness_config}
   */
   readonly zoneAwarenessConfig?: ElasticsearchDomainClusterConfigZoneAwarenessConfig;

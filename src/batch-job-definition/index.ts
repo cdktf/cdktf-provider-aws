@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_job_definition
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * retry_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_job_definition#retry_strategy BatchJobDefinition#retry_strategy}
   */
   readonly retryStrategy?: BatchJobDefinitionRetryStrategy;
   /**
   * timeout block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_job_definition#timeout BatchJobDefinition#timeout}
   */
   readonly timeout?: BatchJobDefinitionTimeout;
@@ -246,7 +241,7 @@ export interface BatchJobDefinitionRetryStrategy {
   readonly attempts?: number;
   /**
   * evaluate_on_exit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_job_definition#evaluate_on_exit BatchJobDefinition#evaluate_on_exit}
   */
   readonly evaluateOnExit?: BatchJobDefinitionRetryStrategyEvaluateOnExit[] | cdktf.IResolvable;

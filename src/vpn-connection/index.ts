@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpn_connection
 // generated from terraform resource schema
 
@@ -233,13 +228,13 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly vpnGatewayId?: string;
   /**
   * tunnel1_log_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpn_connection#tunnel1_log_options VpnConnection#tunnel1_log_options}
   */
   readonly tunnel1LogOptions?: VpnConnectionTunnel1LogOptions;
   /**
   * tunnel2_log_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpn_connection#tunnel2_log_options VpnConnection#tunnel2_log_options}
   */
   readonly tunnel2LogOptions?: VpnConnectionTunnel2LogOptions;
@@ -529,7 +524,7 @@ export class VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference e
 export interface VpnConnectionTunnel1LogOptions {
   /**
   * cloudwatch_log_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
   */
   readonly cloudwatchLogOptions?: VpnConnectionTunnel1LogOptionsCloudwatchLogOptions;
@@ -715,7 +710,7 @@ export class VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference e
 export interface VpnConnectionTunnel2LogOptions {
   /**
   * cloudwatch_log_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
   */
   readonly cloudwatchLogOptions?: VpnConnectionTunnel2LogOptionsCloudwatchLogOptions;

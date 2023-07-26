@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_principal_portfolio_association
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface ServicecatalogPrincipalPortfolioAssociationConfig extends cdktf
   readonly principalType?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_principal_portfolio_association#timeouts ServicecatalogPrincipalPortfolioAssociation#timeouts}
   */
   readonly timeouts?: ServicecatalogPrincipalPortfolioAssociationTimeouts;

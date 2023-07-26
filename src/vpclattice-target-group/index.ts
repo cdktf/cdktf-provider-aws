@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface VpclatticeTargetGroupConfig extends cdktf.TerraformMetaArgument
   readonly type: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group#config VpclatticeTargetGroup#config}
   */
   readonly config?: VpclatticeTargetGroupConfigA;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group#timeouts VpclatticeTargetGroup#timeouts}
   */
   readonly timeouts?: VpclatticeTargetGroupTimeouts;
@@ -152,7 +147,7 @@ export interface VpclatticeTargetGroupConfigHealthCheck {
   readonly unhealthyThresholdCount?: number;
   /**
   * matcher block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group#matcher VpclatticeTargetGroup#matcher}
   */
   readonly matcher?: VpclatticeTargetGroupConfigHealthCheckMatcher;
@@ -446,7 +441,7 @@ export interface VpclatticeTargetGroupConfigA {
   readonly vpcIdentifier: string;
   /**
   * health_check block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group#health_check VpclatticeTargetGroup#health_check}
   */
   readonly healthCheck?: VpclatticeTargetGroupConfigHealthCheck;

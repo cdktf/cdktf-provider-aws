@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume
 // generated from terraform resource schema
 
@@ -65,25 +60,25 @@ export interface FsxOpenzfsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly volumeType?: string;
   /**
   * nfs_exports block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume#nfs_exports FsxOpenzfsVolume#nfs_exports}
   */
   readonly nfsExports?: FsxOpenzfsVolumeNfsExports;
   /**
   * origin_snapshot block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume#origin_snapshot FsxOpenzfsVolume#origin_snapshot}
   */
   readonly originSnapshot?: FsxOpenzfsVolumeOriginSnapshot;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume#timeouts FsxOpenzfsVolume#timeouts}
   */
   readonly timeouts?: FsxOpenzfsVolumeTimeouts;
   /**
   * user_and_group_quotas block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume#user_and_group_quotas FsxOpenzfsVolume#user_and_group_quotas}
   */
   readonly userAndGroupQuotas?: FsxOpenzfsVolumeUserAndGroupQuotas[] | cdktf.IResolvable;
@@ -209,7 +204,7 @@ export class FsxOpenzfsVolumeNfsExportsClientConfigurationsList extends cdktf.Co
 export interface FsxOpenzfsVolumeNfsExports {
   /**
   * client_configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_volume#client_configurations FsxOpenzfsVolume#client_configurations}
   */
   readonly clientConfigurations: FsxOpenzfsVolumeNfsExportsClientConfigurations[] | cdktf.IResolvable;

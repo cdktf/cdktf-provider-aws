@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/account_alternate_contact
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface AccountAlternateContactConfig extends cdktf.TerraformMetaArgume
   readonly title: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/account_alternate_contact#timeouts AccountAlternateContact#timeouts}
   */
   readonly timeouts?: AccountAlternateContactTimeouts;

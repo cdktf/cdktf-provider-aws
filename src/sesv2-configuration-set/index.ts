@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set
 // generated from terraform resource schema
 
@@ -33,37 +28,37 @@ export interface Sesv2ConfigurationSetConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * delivery_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#delivery_options Sesv2ConfigurationSet#delivery_options}
   */
   readonly deliveryOptions?: Sesv2ConfigurationSetDeliveryOptions;
   /**
   * reputation_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#reputation_options Sesv2ConfigurationSet#reputation_options}
   */
   readonly reputationOptions?: Sesv2ConfigurationSetReputationOptions;
   /**
   * sending_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#sending_options Sesv2ConfigurationSet#sending_options}
   */
   readonly sendingOptions?: Sesv2ConfigurationSetSendingOptions;
   /**
   * suppression_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#suppression_options Sesv2ConfigurationSet#suppression_options}
   */
   readonly suppressionOptions?: Sesv2ConfigurationSetSuppressionOptions;
   /**
   * tracking_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#tracking_options Sesv2ConfigurationSet#tracking_options}
   */
   readonly trackingOptions?: Sesv2ConfigurationSetTrackingOptions;
   /**
   * vdm_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#vdm_options Sesv2ConfigurationSet#vdm_options}
   */
   readonly vdmOptions?: Sesv2ConfigurationSetVdmOptions;
@@ -555,13 +550,13 @@ export class Sesv2ConfigurationSetVdmOptionsGuardianOptionsOutputReference exten
 export interface Sesv2ConfigurationSetVdmOptions {
   /**
   * dashboard_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#dashboard_options Sesv2ConfigurationSet#dashboard_options}
   */
   readonly dashboardOptions?: Sesv2ConfigurationSetVdmOptionsDashboardOptions;
   /**
   * guardian_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set#guardian_options Sesv2ConfigurationSet#guardian_options}
   */
   readonly guardianOptions?: Sesv2ConfigurationSetVdmOptionsGuardianOptions;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache
 // generated from terraform resource schema
 
@@ -57,19 +52,19 @@ export interface FsxFileCacheConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_repository_association block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
   */
   readonly dataRepositoryAssociation?: FsxFileCacheDataRepositoryAssociation[] | cdktf.IResolvable;
   /**
   * lustre_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
   */
   readonly lustreConfiguration?: FsxFileCacheLustreConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
   */
   readonly timeouts?: FsxFileCacheTimeouts;
@@ -214,7 +209,7 @@ export interface FsxFileCacheDataRepositoryAssociation {
   readonly tags?: { [key: string]: string };
   /**
   * nfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
   */
   readonly nfs?: FsxFileCacheDataRepositoryAssociationNfs[] | cdktf.IResolvable;
@@ -604,7 +599,7 @@ export interface FsxFileCacheLustreConfiguration {
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * metadata_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
   */
   readonly metadataConfiguration: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktf.IResolvable;

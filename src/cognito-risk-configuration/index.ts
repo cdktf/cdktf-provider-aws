@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration
 // generated from terraform resource schema
 
@@ -29,19 +24,19 @@ export interface CognitoRiskConfigurationConfig extends cdktf.TerraformMetaArgum
   readonly userPoolId: string;
   /**
   * account_takeover_risk_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#account_takeover_risk_configuration CognitoRiskConfiguration#account_takeover_risk_configuration}
   */
   readonly accountTakeoverRiskConfiguration?: CognitoRiskConfigurationAccountTakeoverRiskConfiguration;
   /**
   * compromised_credentials_risk_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#compromised_credentials_risk_configuration CognitoRiskConfiguration#compromised_credentials_risk_configuration}
   */
   readonly compromisedCredentialsRiskConfiguration?: CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration;
   /**
   * risk_exception_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#risk_exception_configuration CognitoRiskConfiguration#risk_exception_configuration}
   */
   readonly riskExceptionConfiguration?: CognitoRiskConfigurationRiskExceptionConfiguration;
@@ -307,19 +302,19 @@ export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMedi
 export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions {
   /**
   * high_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#high_action CognitoRiskConfiguration#high_action}
   */
   readonly highAction?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction;
   /**
   * low_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#low_action CognitoRiskConfiguration#low_action}
   */
   readonly lowAction?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction;
   /**
   * medium_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#medium_action CognitoRiskConfiguration#medium_action}
   */
   readonly mediumAction?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction;
@@ -774,19 +769,19 @@ export interface CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyC
   readonly sourceArn: string;
   /**
   * block_email block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#block_email CognitoRiskConfiguration#block_email}
   */
   readonly blockEmail?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail;
   /**
   * mfa_email block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#mfa_email CognitoRiskConfiguration#mfa_email}
   */
   readonly mfaEmail?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail;
   /**
   * no_action_email block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#no_action_email CognitoRiskConfiguration#no_action_email}
   */
   readonly noActionEmail?: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail;
@@ -965,13 +960,13 @@ export class CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfi
 export interface CognitoRiskConfigurationAccountTakeoverRiskConfiguration {
   /**
   * actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
   */
   readonly actions: CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions;
   /**
   * notify_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#notify_configuration CognitoRiskConfiguration#notify_configuration}
   */
   readonly notifyConfiguration: CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration;
@@ -1121,7 +1116,7 @@ export interface CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration
   readonly eventFilter?: string[];
   /**
   * actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
   */
   readonly actions: CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions;

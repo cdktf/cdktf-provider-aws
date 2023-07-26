@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpn_gateway
 // generated from terraform resource schema
 
@@ -41,13 +36,13 @@ export interface DataAwsVpnGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpn_gateway#filter DataAwsVpnGateway#filter}
   */
   readonly filter?: DataAwsVpnGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpn_gateway#timeouts DataAwsVpnGateway#timeouts}
   */
   readonly timeouts?: DataAwsVpnGatewayTimeouts;

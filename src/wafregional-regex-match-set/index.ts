@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_regex_match_set
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface WafregionalRegexMatchSetConfig extends cdktf.TerraformMetaArgum
   readonly name: string;
   /**
   * regex_match_tuple block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_regex_match_set#regex_match_tuple WafregionalRegexMatchSet#regex_match_tuple}
   */
   readonly regexMatchTuple?: WafregionalRegexMatchSetRegexMatchTuple[] | cdktf.IResolvable;
@@ -130,7 +125,7 @@ export interface WafregionalRegexMatchSetRegexMatchTuple {
   readonly textTransformation: string;
   /**
   * field_to_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_regex_match_set#field_to_match WafregionalRegexMatchSet#field_to_match}
   */
   readonly fieldToMatch: WafregionalRegexMatchSetRegexMatchTupleFieldToMatch;

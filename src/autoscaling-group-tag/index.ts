@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group_tag
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface AutoscalingGroupTagAConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group_tag#tag AutoscalingGroupTagA#tag}
   */
   readonly tag: AutoscalingGroupTagTag;

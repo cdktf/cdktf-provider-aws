@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface Sesv2ConfigurationSetEventDestinationConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * event_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#event_destination Sesv2ConfigurationSetEventDestination#event_destination}
   */
   readonly eventDestination: Sesv2ConfigurationSetEventDestinationEventDestination;
@@ -179,7 +174,7 @@ export class Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDest
 export interface Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination {
   /**
   * dimension_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#dimension_configuration Sesv2ConfigurationSetEventDestination#dimension_configuration}
   */
   readonly dimensionConfiguration: Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration[] | cdktf.IResolvable;
@@ -461,25 +456,25 @@ export interface Sesv2ConfigurationSetEventDestinationEventDestination {
   readonly matchingEventTypes: string[];
   /**
   * cloud_watch_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#cloud_watch_destination Sesv2ConfigurationSetEventDestination#cloud_watch_destination}
   */
   readonly cloudWatchDestination?: Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination;
   /**
   * kinesis_firehose_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#kinesis_firehose_destination Sesv2ConfigurationSetEventDestination#kinesis_firehose_destination}
   */
   readonly kinesisFirehoseDestination?: Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination;
   /**
   * pinpoint_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#pinpoint_destination Sesv2ConfigurationSetEventDestination#pinpoint_destination}
   */
   readonly pinpointDestination?: Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination;
   /**
   * sns_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_configuration_set_event_destination#sns_destination Sesv2ConfigurationSetEventDestination#sns_destination}
   */
   readonly snsDestination?: Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination;

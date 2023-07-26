@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution
 // generated from terraform resource schema
 
@@ -69,31 +64,31 @@ export interface DataAwsEcsTaskExecutionConfig extends cdktf.TerraformMetaArgume
   readonly taskDefinition: string;
   /**
   * capacity_provider_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#capacity_provider_strategy DataAwsEcsTaskExecution#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: DataAwsEcsTaskExecutionCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#network_configuration DataAwsEcsTaskExecution#network_configuration}
   */
   readonly networkConfiguration?: DataAwsEcsTaskExecutionNetworkConfiguration;
   /**
   * overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#overrides DataAwsEcsTaskExecution#overrides}
   */
   readonly overrides?: DataAwsEcsTaskExecutionOverrides;
   /**
   * placement_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#placement_constraints DataAwsEcsTaskExecution#placement_constraints}
   */
   readonly placementConstraints?: DataAwsEcsTaskExecutionPlacementConstraints[] | cdktf.IResolvable;
   /**
   * placement_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#placement_strategy DataAwsEcsTaskExecution#placement_strategy}
   */
   readonly placementStrategy?: DataAwsEcsTaskExecutionPlacementStrategy[] | cdktf.IResolvable;
@@ -621,13 +616,13 @@ export interface DataAwsEcsTaskExecutionOverridesContainerOverrides {
   readonly name: string;
   /**
   * environment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#environment DataAwsEcsTaskExecution#environment}
   */
   readonly environment?: DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment[] | cdktf.IResolvable;
   /**
   * resource_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#resource_requirements DataAwsEcsTaskExecution#resource_requirements}
   */
   readonly resourceRequirements?: DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements[] | cdktf.IResolvable;
@@ -1001,13 +996,13 @@ export interface DataAwsEcsTaskExecutionOverrides {
   readonly taskRoleArn?: string;
   /**
   * container_overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#container_overrides DataAwsEcsTaskExecution#container_overrides}
   */
   readonly containerOverrides?: DataAwsEcsTaskExecutionOverridesContainerOverrides[] | cdktf.IResolvable;
   /**
   * inference_accelerator_overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ecs_task_execution#inference_accelerator_overrides DataAwsEcsTaskExecution#inference_accelerator_overrides}
   */
   readonly inferenceAcceleratorOverrides?: DataAwsEcsTaskExecutionOverridesInferenceAcceleratorOverrides[] | cdktf.IResolvable;

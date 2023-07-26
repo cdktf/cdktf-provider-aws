@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_lifecycle_configuration
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface S3ControlBucketLifecycleConfigurationConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_lifecycle_configuration#rule S3ControlBucketLifecycleConfiguration#rule}
   */
   readonly rule: S3ControlBucketLifecycleConfigurationRule[] | cdktf.IResolvable;
@@ -317,19 +312,19 @@ export interface S3ControlBucketLifecycleConfigurationRule {
   readonly status?: string;
   /**
   * abort_incomplete_multipart_upload block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3ControlBucketLifecycleConfiguration#abort_incomplete_multipart_upload}
   */
   readonly abortIncompleteMultipartUpload?: S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload;
   /**
   * expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_lifecycle_configuration#expiration S3ControlBucketLifecycleConfiguration#expiration}
   */
   readonly expiration?: S3ControlBucketLifecycleConfigurationRuleExpiration;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3control_bucket_lifecycle_configuration#filter S3ControlBucketLifecycleConfiguration#filter}
   */
   readonly filter?: S3ControlBucketLifecycleConfigurationRuleFilter;

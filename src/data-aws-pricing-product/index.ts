@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/pricing_product
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArgument
   readonly serviceCode: string;
   /**
   * filters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
   */
   readonly filters: DataAwsPricingProductFilters[] | cdktf.IResolvable;

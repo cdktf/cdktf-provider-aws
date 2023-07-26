@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service
 // generated from terraform resource schema
 
@@ -37,37 +32,37 @@ export interface ApprunnerServiceConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#encryption_configuration ApprunnerService#encryption_configuration}
   */
   readonly encryptionConfiguration?: ApprunnerServiceEncryptionConfiguration;
   /**
   * health_check_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#health_check_configuration ApprunnerService#health_check_configuration}
   */
   readonly healthCheckConfiguration?: ApprunnerServiceHealthCheckConfiguration;
   /**
   * instance_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#instance_configuration ApprunnerService#instance_configuration}
   */
   readonly instanceConfiguration?: ApprunnerServiceInstanceConfiguration;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#network_configuration ApprunnerService#network_configuration}
   */
   readonly networkConfiguration?: ApprunnerServiceNetworkConfiguration;
   /**
   * observability_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#observability_configuration ApprunnerService#observability_configuration}
   */
   readonly observabilityConfiguration?: ApprunnerServiceObservabilityConfiguration;
   /**
   * source_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#source_configuration ApprunnerService#source_configuration}
   */
   readonly sourceConfiguration: ApprunnerServiceSourceConfiguration;
@@ -613,13 +608,13 @@ export class ApprunnerServiceNetworkConfigurationIngressConfigurationOutputRefer
 export interface ApprunnerServiceNetworkConfiguration {
   /**
   * egress_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#egress_configuration ApprunnerService#egress_configuration}
   */
   readonly egressConfiguration?: ApprunnerServiceNetworkConfigurationEgressConfiguration;
   /**
   * ingress_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#ingress_configuration ApprunnerService#ingress_configuration}
   */
   readonly ingressConfiguration?: ApprunnerServiceNetworkConfigurationIngressConfiguration;
@@ -1091,7 +1086,7 @@ export interface ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurat
   readonly configurationSource: string;
   /**
   * code_configuration_values block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#code_configuration_values ApprunnerService#code_configuration_values}
   */
   readonly codeConfigurationValues?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues;
@@ -1268,13 +1263,13 @@ export interface ApprunnerServiceSourceConfigurationCodeRepository {
   readonly repositoryUrl: string;
   /**
   * code_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#code_configuration ApprunnerService#code_configuration}
   */
   readonly codeConfiguration?: ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration;
   /**
   * source_code_version block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#source_code_version ApprunnerService#source_code_version}
   */
   readonly sourceCodeVersion: ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion;
@@ -1535,7 +1530,7 @@ export interface ApprunnerServiceSourceConfigurationImageRepository {
   readonly imageRepositoryType: string;
   /**
   * image_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#image_configuration ApprunnerService#image_configuration}
   */
   readonly imageConfiguration?: ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration;
@@ -1646,19 +1641,19 @@ export interface ApprunnerServiceSourceConfiguration {
   readonly autoDeploymentsEnabled?: boolean | cdktf.IResolvable;
   /**
   * authentication_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#authentication_configuration ApprunnerService#authentication_configuration}
   */
   readonly authenticationConfiguration?: ApprunnerServiceSourceConfigurationAuthenticationConfiguration;
   /**
   * code_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#code_repository ApprunnerService#code_repository}
   */
   readonly codeRepository?: ApprunnerServiceSourceConfigurationCodeRepository;
   /**
   * image_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_service#image_repository ApprunnerService#image_repository}
   */
   readonly imageRepository?: ApprunnerServiceSourceConfigurationImageRepository;

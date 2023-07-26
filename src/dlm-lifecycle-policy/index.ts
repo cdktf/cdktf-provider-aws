@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface DlmLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * policy_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#policy_details DlmLifecyclePolicy#policy_details}
   */
   readonly policyDetails: DlmLifecyclePolicyPolicyDetails;
@@ -231,13 +226,13 @@ export interface DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy {
   readonly target: string;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#encryption_configuration DlmLifecyclePolicy#encryption_configuration}
   */
   readonly encryptionConfiguration: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyEncryptionConfiguration;
   /**
   * retain_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
   */
   readonly retainRule?: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyRetainRule;
@@ -380,7 +375,7 @@ export interface DlmLifecyclePolicyPolicyDetailsAction {
   readonly name: string;
   /**
   * cross_region_copy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#cross_region_copy DlmLifecyclePolicy#cross_region_copy}
   */
   readonly crossRegionCopy: DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopy[] | cdktf.IResolvable;
@@ -578,7 +573,7 @@ export interface DlmLifecyclePolicyPolicyDetailsEventSource {
   readonly type: string;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
   */
   readonly parameters: DlmLifecyclePolicyPolicyDetailsEventSourceParameters;
@@ -1115,13 +1110,13 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule {
   readonly target: string;
   /**
   * deprecate_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
   */
   readonly deprecateRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule;
   /**
   * retain_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
   */
   readonly retainRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule;
@@ -1842,37 +1837,37 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   readonly variableTags?: { [key: string]: string };
   /**
   * create_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#create_rule DlmLifecyclePolicy#create_rule}
   */
   readonly createRule: DlmLifecyclePolicyPolicyDetailsScheduleCreateRule;
   /**
   * cross_region_copy_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
   */
   readonly crossRegionCopyRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[] | cdktf.IResolvable;
   /**
   * deprecate_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
   */
   readonly deprecateRule?: DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule;
   /**
   * fast_restore_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#fast_restore_rule DlmLifecyclePolicy#fast_restore_rule}
   */
   readonly fastRestoreRule?: DlmLifecyclePolicyPolicyDetailsScheduleFastRestoreRule;
   /**
   * retain_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#retain_rule DlmLifecyclePolicy#retain_rule}
   */
   readonly retainRule: DlmLifecyclePolicyPolicyDetailsScheduleRetainRule;
   /**
   * share_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#share_rule DlmLifecyclePolicy#share_rule}
   */
   readonly shareRule?: DlmLifecyclePolicyPolicyDetailsScheduleShareRule;
@@ -2185,25 +2180,25 @@ export interface DlmLifecyclePolicyPolicyDetails {
   readonly targetTags?: { [key: string]: string };
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#action DlmLifecyclePolicy#action}
   */
   readonly action?: DlmLifecyclePolicyPolicyDetailsAction;
   /**
   * event_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#event_source DlmLifecyclePolicy#event_source}
   */
   readonly eventSource?: DlmLifecyclePolicyPolicyDetailsEventSource;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#parameters DlmLifecyclePolicy#parameters}
   */
   readonly parameters?: DlmLifecyclePolicyPolicyDetailsParameters;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dlm_lifecycle_policy#schedule DlmLifecyclePolicy#schedule}
   */
   readonly schedule?: DlmLifecyclePolicyPolicyDetailsSchedule[] | cdktf.IResolvable;

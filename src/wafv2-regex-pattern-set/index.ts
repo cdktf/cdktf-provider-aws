@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_regex_pattern_set
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * regular_expression block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_regex_pattern_set#regular_expression Wafv2RegexPatternSet#regular_expression}
   */
   readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface NetworkfirewallRuleGroupConfig extends cdktf.TerraformMetaArgum
   readonly type: string;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#encryption_configuration NetworkfirewallRuleGroup#encryption_configuration}
   */
   readonly encryptionConfiguration?: NetworkfirewallRuleGroupEncryptionConfiguration;
   /**
   * rule_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rule_group NetworkfirewallRuleGroup#rule_group}
   */
   readonly ruleGroup?: NetworkfirewallRuleGroupRuleGroup;
@@ -250,7 +245,7 @@ export interface NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences {
   readonly key: string;
   /**
   * ip_set_reference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#ip_set_reference NetworkfirewallRuleGroup#ip_set_reference}
   */
   readonly ipSetReference: NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReference[] | cdktf.IResolvable;
@@ -366,7 +361,7 @@ export class NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesList e
 export interface NetworkfirewallRuleGroupRuleGroupReferenceSets {
   /**
   * ip_set_references block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#ip_set_references NetworkfirewallRuleGroup#ip_set_references}
   */
   readonly ipSetReferences?: NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferences[] | cdktf.IResolvable;
@@ -499,7 +494,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSets {
   readonly key: string;
   /**
   * ip_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#ip_set NetworkfirewallRuleGroup#ip_set}
   */
   readonly ipSet: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsIpSet;
@@ -681,7 +676,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSets {
   readonly key: string;
   /**
   * port_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#port_set NetworkfirewallRuleGroup#port_set}
   */
   readonly portSet: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSet;
@@ -797,13 +792,13 @@ export class NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList extends 
 export interface NetworkfirewallRuleGroupRuleGroupRuleVariables {
   /**
   * ip_sets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#ip_sets NetworkfirewallRuleGroup#ip_sets}
   */
   readonly ipSets?: NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSets[] | cdktf.IResolvable;
   /**
   * port_sets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#port_sets NetworkfirewallRuleGroup#port_sets}
   */
   readonly portSets?: NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSets[] | cdktf.IResolvable;
@@ -1310,13 +1305,13 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule {
   readonly action: string;
   /**
   * header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#header NetworkfirewallRuleGroup#header}
   */
   readonly header: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleHeader;
   /**
   * rule_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rule_option NetworkfirewallRuleGroup#rule_option}
   */
   readonly ruleOption: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOption[] | cdktf.IResolvable;
@@ -1546,7 +1541,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction {
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#dimension NetworkfirewallRuleGroup#dimension}
   */
   readonly dimension: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable;
@@ -1610,7 +1605,7 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition {
   /**
   * publish_metric_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#publish_metric_action NetworkfirewallRuleGroup#publish_metric_action}
   */
   readonly publishMetricAction: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinitionPublishMetricAction;
@@ -1678,7 +1673,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   readonly actionName: string;
   /**
   * action_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#action_definition NetworkfirewallRuleGroup#action_definition}
   */
   readonly actionDefinition: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomActionActionDefinition;
@@ -2349,31 +2344,31 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   readonly protocols?: number[];
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#destination NetworkfirewallRuleGroup#destination}
   */
   readonly destination?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination[] | cdktf.IResolvable;
   /**
   * destination_port block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#destination_port NetworkfirewallRuleGroup#destination_port}
   */
   readonly destinationPort?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationPort[] | cdktf.IResolvable;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#source NetworkfirewallRuleGroup#source}
   */
   readonly source?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSource[] | cdktf.IResolvable;
   /**
   * source_port block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#source_port NetworkfirewallRuleGroup#source_port}
   */
   readonly sourcePort?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort[] | cdktf.IResolvable;
   /**
   * tcp_flag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#tcp_flag NetworkfirewallRuleGroup#tcp_flag}
   */
   readonly tcpFlag?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag[] | cdktf.IResolvable;
@@ -2559,7 +2554,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   readonly actions: string[];
   /**
   * match_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#match_attributes NetworkfirewallRuleGroup#match_attributes}
   */
   readonly matchAttributes: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributes;
@@ -2647,7 +2642,7 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCu
   readonly priority: number;
   /**
   * rule_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rule_definition NetworkfirewallRuleGroup#rule_definition}
   */
   readonly ruleDefinition: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition;
@@ -2763,13 +2758,13 @@ export class NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustom
 export interface NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions {
   /**
   * custom_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#custom_action NetworkfirewallRuleGroup#custom_action}
   */
   readonly customAction?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction[] | cdktf.IResolvable;
   /**
   * stateless_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#stateless_rule NetworkfirewallRuleGroup#stateless_rule}
   */
   readonly statelessRule: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule[] | cdktf.IResolvable;
@@ -2860,19 +2855,19 @@ export interface NetworkfirewallRuleGroupRuleGroupRulesSource {
   readonly rulesString?: string;
   /**
   * rules_source_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rules_source_list NetworkfirewallRuleGroup#rules_source_list}
   */
   readonly rulesSourceList?: NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct;
   /**
   * stateful_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#stateful_rule NetworkfirewallRuleGroup#stateful_rule}
   */
   readonly statefulRule?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRule[] | cdktf.IResolvable;
   /**
   * stateless_rules_and_custom_actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#stateless_rules_and_custom_actions NetworkfirewallRuleGroup#stateless_rules_and_custom_actions}
   */
   readonly statelessRulesAndCustomActions?: NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions;
@@ -3070,25 +3065,25 @@ export class NetworkfirewallRuleGroupRuleGroupStatefulRuleOptionsOutputReference
 export interface NetworkfirewallRuleGroupRuleGroup {
   /**
   * reference_sets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#reference_sets NetworkfirewallRuleGroup#reference_sets}
   */
   readonly referenceSets?: NetworkfirewallRuleGroupRuleGroupReferenceSets;
   /**
   * rule_variables block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rule_variables NetworkfirewallRuleGroup#rule_variables}
   */
   readonly ruleVariables?: NetworkfirewallRuleGroupRuleGroupRuleVariables;
   /**
   * rules_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#rules_source NetworkfirewallRuleGroup#rules_source}
   */
   readonly rulesSource: NetworkfirewallRuleGroupRuleGroupRulesSource;
   /**
   * stateful_rule_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_rule_group#stateful_rule_options NetworkfirewallRuleGroup#stateful_rule_options}
   */
   readonly statefulRuleOptions?: NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions;

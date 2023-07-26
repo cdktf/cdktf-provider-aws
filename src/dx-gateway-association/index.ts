@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_gateway_association
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface DxGatewayAssociationConfig extends cdktf.TerraformMetaArguments
   readonly vpnGatewayId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_gateway_association#timeouts DxGatewayAssociation#timeouts}
   */
   readonly timeouts?: DxGatewayAssociationTimeouts;

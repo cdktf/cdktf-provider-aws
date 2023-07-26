@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker
 // generated from terraform resource schema
 
@@ -77,43 +72,43 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#configuration MqBroker#configuration}
   */
   readonly configuration?: MqBrokerConfiguration;
   /**
   * encryption_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#encryption_options MqBroker#encryption_options}
   */
   readonly encryptionOptions?: MqBrokerEncryptionOptions;
   /**
   * ldap_server_metadata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#ldap_server_metadata MqBroker#ldap_server_metadata}
   */
   readonly ldapServerMetadata?: MqBrokerLdapServerMetadata;
   /**
   * logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#logs MqBroker#logs}
   */
   readonly logs?: MqBrokerLogs;
   /**
   * maintenance_window_start_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#maintenance_window_start_time MqBroker#maintenance_window_start_time}
   */
   readonly maintenanceWindowStartTime?: MqBrokerMaintenanceWindowStartTime;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#timeouts MqBroker#timeouts}
   */
   readonly timeouts?: MqBrokerTimeouts;
   /**
   * user block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mq_broker#user MqBroker#user}
   */
   readonly user: MqBrokerUser[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_infrastructure_configuration
 // generated from terraform resource schema
 
@@ -69,13 +64,13 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   readonly terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
   /**
   * instance_metadata_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_infrastructure_configuration#instance_metadata_options ImagebuilderInfrastructureConfiguration#instance_metadata_options}
   */
   readonly instanceMetadataOptions?: ImagebuilderInfrastructureConfigurationInstanceMetadataOptions;
   /**
   * logging block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_infrastructure_configuration#logging ImagebuilderInfrastructureConfiguration#logging}
   */
   readonly logging?: ImagebuilderInfrastructureConfigurationLogging;
@@ -264,7 +259,7 @@ export class ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference
 export interface ImagebuilderInfrastructureConfigurationLogging {
   /**
   * s3_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_infrastructure_configuration#s3_logs ImagebuilderInfrastructureConfiguration#s3_logs}
   */
   readonly s3Logs: ImagebuilderInfrastructureConfigurationLoggingS3Logs;

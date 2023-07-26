@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group
 // generated from terraform resource schema
 
@@ -49,19 +44,19 @@ export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * feature_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#feature_definition SagemakerFeatureGroup#feature_definition}
   */
   readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[] | cdktf.IResolvable;
   /**
   * offline_store_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#offline_store_config SagemakerFeatureGroup#offline_store_config}
   */
   readonly offlineStoreConfig?: SagemakerFeatureGroupOfflineStoreConfig;
   /**
   * online_store_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#online_store_config SagemakerFeatureGroup#online_store_config}
   */
   readonly onlineStoreConfig?: SagemakerFeatureGroupOnlineStoreConfig;
@@ -409,13 +404,13 @@ export interface SagemakerFeatureGroupOfflineStoreConfig {
   readonly tableFormat?: string;
   /**
   * data_catalog_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#data_catalog_config SagemakerFeatureGroup#data_catalog_config}
   */
   readonly dataCatalogConfig?: SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig;
   /**
   * s3_storage_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#s3_storage_config SagemakerFeatureGroup#s3_storage_config}
   */
   readonly s3StorageConfig: SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig;
@@ -617,7 +612,7 @@ export interface SagemakerFeatureGroupOnlineStoreConfig {
   readonly enableOnlineStore?: boolean | cdktf.IResolvable;
   /**
   * security_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_feature_group#security_config SagemakerFeatureGroup#security_config}
   */
   readonly securityConfig?: SagemakerFeatureGroupOnlineStoreConfigSecurityConfig;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_s3
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * s3_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_s3#s3_config DatasyncLocationS3#s3_config}
   */
   readonly s3Config: DatasyncLocationS3S3Config;

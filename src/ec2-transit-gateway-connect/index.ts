@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_connect
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface Ec2TransitGatewayConnectConfig extends cdktf.TerraformMetaArgum
   readonly transportAttachmentId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_connect#timeouts Ec2TransitGatewayConnect#timeouts}
   */
   readonly timeouts?: Ec2TransitGatewayConnectTimeouts;

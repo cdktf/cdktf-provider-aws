@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_volume
 // generated from terraform resource schema
 
@@ -73,7 +68,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_volume#timeouts EbsVolume#timeouts}
   */
   readonly timeouts?: EbsVolumeTimeouts;

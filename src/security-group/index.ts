@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/security_group
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface SecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/security_group#timeouts SecurityGroup#timeouts}
   */
   readonly timeouts?: SecurityGroupTimeouts;

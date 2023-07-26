@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster
 // generated from terraform resource schema
 
@@ -69,49 +64,49 @@ export interface FinspaceKxClusterConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * auto_scaling_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#auto_scaling_configuration FinspaceKxCluster#auto_scaling_configuration}
   */
   readonly autoScalingConfiguration?: FinspaceKxClusterAutoScalingConfiguration;
   /**
   * cache_storage_configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#cache_storage_configurations FinspaceKxCluster#cache_storage_configurations}
   */
   readonly cacheStorageConfigurations?: FinspaceKxClusterCacheStorageConfigurations[] | cdktf.IResolvable;
   /**
   * capacity_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#capacity_configuration FinspaceKxCluster#capacity_configuration}
   */
   readonly capacityConfiguration: FinspaceKxClusterCapacityConfiguration;
   /**
   * code block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#code FinspaceKxCluster#code}
   */
   readonly code?: FinspaceKxClusterCode;
   /**
   * database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#database FinspaceKxCluster#database}
   */
   readonly database?: FinspaceKxClusterDatabase[] | cdktf.IResolvable;
   /**
   * savedown_storage_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#savedown_storage_configuration FinspaceKxCluster#savedown_storage_configuration}
   */
   readonly savedownStorageConfiguration?: FinspaceKxClusterSavedownStorageConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#timeouts FinspaceKxCluster#timeouts}
   */
   readonly timeouts?: FinspaceKxClusterTimeouts;
   /**
   * vpc_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#vpc_configuration FinspaceKxCluster#vpc_configuration}
   */
   readonly vpcConfiguration: FinspaceKxClusterVpcConfiguration;
@@ -744,7 +739,7 @@ export interface FinspaceKxClusterDatabase {
   readonly databaseName: string;
   /**
   * cache_configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
   */
   readonly cacheConfigurations: FinspaceKxClusterDatabaseCacheConfigurations[] | cdktf.IResolvable;
