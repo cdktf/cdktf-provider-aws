@@ -58,7 +58,7 @@
     "jsii-rosetta": "~5.1.2",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.71.149",
+    "projen": "^0.71.150",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
