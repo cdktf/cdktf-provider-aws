@@ -37,19 +37,19 @@ export interface SesEventDestinationConfig extends cdktf.TerraformMetaArguments 
   readonly name: string;
   /**
   * cloudwatch_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_event_destination#cloudwatch_destination SesEventDestination#cloudwatch_destination}
   */
   readonly cloudwatchDestination?: SesEventDestinationCloudwatchDestination[] | cdktf.IResolvable;
   /**
   * kinesis_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_event_destination#kinesis_destination SesEventDestination#kinesis_destination}
   */
   readonly kinesisDestination?: SesEventDestinationKinesisDestination;
   /**
   * sns_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_event_destination#sns_destination SesEventDestination#sns_destination}
   */
   readonly snsDestination?: SesEventDestinationSnsDestination;

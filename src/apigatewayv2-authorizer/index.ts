@@ -57,7 +57,7 @@ export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArgumen
   readonly name: string;
   /**
   * jwt_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_authorizer#jwt_configuration Apigatewayv2Authorizer#jwt_configuration}
   */
   readonly jwtConfiguration?: Apigatewayv2AuthorizerJwtConfiguration;

@@ -25,7 +25,7 @@ export interface EmrBlockPublicAccessConfigurationConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * permitted_public_security_group_rule_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_block_public_access_configuration#permitted_public_security_group_rule_range EmrBlockPublicAccessConfiguration#permitted_public_security_group_rule_range}
   */
   readonly permittedPublicSecurityGroupRuleRange?: EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange[] | cdktf.IResolvable;

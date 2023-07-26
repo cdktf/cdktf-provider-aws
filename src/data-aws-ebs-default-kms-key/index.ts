@@ -21,7 +21,7 @@ export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_default_kms_key#timeouts DataAwsEbsDefaultKmsKey#timeouts}
   */
   readonly timeouts?: DataAwsEbsDefaultKmsKeyTimeouts;

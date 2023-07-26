@@ -25,13 +25,13 @@ export interface DataAwsSubnetsConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/subnets#filter DataAwsSubnets#filter}
   */
   readonly filter?: DataAwsSubnetsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/subnets#timeouts DataAwsSubnets#timeouts}
   */
   readonly timeouts?: DataAwsSubnetsTimeouts;

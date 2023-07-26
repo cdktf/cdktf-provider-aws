@@ -37,13 +37,13 @@ export interface DataAwsAvailabilityZoneConfig extends cdktf.TerraformMetaArgume
   readonly zoneId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/availability_zone#filter DataAwsAvailabilityZone#filter}
   */
   readonly filter?: DataAwsAvailabilityZoneFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/availability_zone#timeouts DataAwsAvailabilityZone#timeouts}
   */
   readonly timeouts?: DataAwsAvailabilityZoneTimeouts;

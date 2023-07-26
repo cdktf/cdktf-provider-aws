@@ -45,7 +45,7 @@ export interface NeptuneClusterParameterGroupConfig extends cdktf.TerraformMetaA
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/neptune_cluster_parameter_group#parameter NeptuneClusterParameterGroup#parameter}
   */
   readonly parameter?: NeptuneClusterParameterGroupParameter[] | cdktf.IResolvable;

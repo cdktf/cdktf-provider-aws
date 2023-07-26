@@ -105,19 +105,19 @@ export interface OpsworksStaticWebLayerConfig extends cdktf.TerraformMetaArgumen
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#cloudwatch_configuration OpsworksStaticWebLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksStaticWebLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#ebs_volume OpsworksStaticWebLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksStaticWebLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#load_based_auto_scaling OpsworksStaticWebLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksStaticWebLayerLoadBasedAutoScaling;
@@ -490,7 +490,7 @@ export interface OpsworksStaticWebLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#log_streams OpsworksStaticWebLayer#log_streams}
   */
   readonly logStreams?: OpsworksStaticWebLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1288,13 +1288,13 @@ export interface OpsworksStaticWebLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#downscaling OpsworksStaticWebLayer#downscaling}
   */
   readonly downscaling?: OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_static_web_layer#upscaling OpsworksStaticWebLayer#upscaling}
   */
   readonly upscaling?: OpsworksStaticWebLayerLoadBasedAutoScalingUpscaling;

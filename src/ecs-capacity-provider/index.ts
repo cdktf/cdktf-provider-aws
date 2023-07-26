@@ -33,7 +33,7 @@ export interface EcsCapacityProviderConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * auto_scaling_group_provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_capacity_provider#auto_scaling_group_provider EcsCapacityProvider#auto_scaling_group_provider}
   */
   readonly autoScalingGroupProvider: EcsCapacityProviderAutoScalingGroupProvider;
@@ -222,7 +222,7 @@ export interface EcsCapacityProviderAutoScalingGroupProvider {
   readonly managedTerminationProtection?: string;
   /**
   * managed_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_capacity_provider#managed_scaling EcsCapacityProvider#managed_scaling}
   */
   readonly managedScaling?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling;

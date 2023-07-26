@@ -37,43 +37,43 @@ export interface SagemakerDataQualityJobDefinitionConfig extends cdktf.Terraform
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_quality_app_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#data_quality_app_specification SagemakerDataQualityJobDefinition#data_quality_app_specification}
   */
   readonly dataQualityAppSpecification: SagemakerDataQualityJobDefinitionDataQualityAppSpecification;
   /**
   * data_quality_baseline_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#data_quality_baseline_config SagemakerDataQualityJobDefinition#data_quality_baseline_config}
   */
   readonly dataQualityBaselineConfig?: SagemakerDataQualityJobDefinitionDataQualityBaselineConfig;
   /**
   * data_quality_job_input block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#data_quality_job_input SagemakerDataQualityJobDefinition#data_quality_job_input}
   */
   readonly dataQualityJobInput: SagemakerDataQualityJobDefinitionDataQualityJobInput;
   /**
   * data_quality_job_output_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#data_quality_job_output_config SagemakerDataQualityJobDefinition#data_quality_job_output_config}
   */
   readonly dataQualityJobOutputConfig: SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig;
   /**
   * job_resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#job_resources SagemakerDataQualityJobDefinition#job_resources}
   */
   readonly jobResources: SagemakerDataQualityJobDefinitionJobResources;
   /**
   * network_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#network_config SagemakerDataQualityJobDefinition#network_config}
   */
   readonly networkConfig?: SagemakerDataQualityJobDefinitionNetworkConfig;
   /**
   * stopping_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#stopping_condition SagemakerDataQualityJobDefinition#stopping_condition}
   */
   readonly stoppingCondition?: SagemakerDataQualityJobDefinitionStoppingCondition;
@@ -354,13 +354,13 @@ export class SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatistic
 export interface SagemakerDataQualityJobDefinitionDataQualityBaselineConfig {
   /**
   * constraints_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#constraints_resource SagemakerDataQualityJobDefinition#constraints_resource}
   */
   readonly constraintsResource?: SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResource;
   /**
   * statistics_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#statistics_resource SagemakerDataQualityJobDefinition#statistics_resource}
   */
   readonly statisticsResource?: SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResource;
@@ -580,13 +580,13 @@ export class SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformI
 export interface SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat {
   /**
   * csv block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#csv SagemakerDataQualityJobDefinition#csv}
   */
   readonly csv?: SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsv;
   /**
   * json block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#json SagemakerDataQualityJobDefinition#json}
   */
   readonly json?: SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJson;
@@ -692,7 +692,7 @@ export interface SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransf
   readonly s3InputMode?: string;
   /**
   * dataset_format block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#dataset_format SagemakerDataQualityJobDefinition#dataset_format}
   */
   readonly datasetFormat: SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat;
@@ -988,13 +988,13 @@ export class SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOu
 export interface SagemakerDataQualityJobDefinitionDataQualityJobInput {
   /**
   * batch_transform_input block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#batch_transform_input SagemakerDataQualityJobDefinition#batch_transform_input}
   */
   readonly batchTransformInput?: SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInput;
   /**
   * endpoint_input block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#endpoint_input SagemakerDataQualityJobDefinition#endpoint_input}
   */
   readonly endpointInput?: SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInput;
@@ -1200,7 +1200,7 @@ export class SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitori
 export interface SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs {
   /**
   * s3_output block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#s3_output SagemakerDataQualityJobDefinition#s3_output}
   */
   readonly s3Output: SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Output;
@@ -1268,7 +1268,7 @@ export interface SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig {
   readonly kmsKeyId?: string;
   /**
   * monitoring_outputs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#monitoring_outputs SagemakerDataQualityJobDefinition#monitoring_outputs}
   */
   readonly monitoringOutputs: SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs;
@@ -1492,7 +1492,7 @@ export class SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputRef
 export interface SagemakerDataQualityJobDefinitionJobResources {
   /**
   * cluster_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#cluster_config SagemakerDataQualityJobDefinition#cluster_config}
   */
   readonly clusterConfig: SagemakerDataQualityJobDefinitionJobResourcesClusterConfig;
@@ -1650,7 +1650,7 @@ export interface SagemakerDataQualityJobDefinitionNetworkConfig {
   readonly enableNetworkIsolation?: boolean | cdktf.IResolvable;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_data_quality_job_definition#vpc_config SagemakerDataQualityJobDefinition#vpc_config}
   */
   readonly vpcConfig?: SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig;

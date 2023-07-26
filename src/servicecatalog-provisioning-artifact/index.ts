@@ -61,7 +61,7 @@ export interface ServicecatalogProvisioningArtifactConfig extends cdktf.Terrafor
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_provisioning_artifact#timeouts ServicecatalogProvisioningArtifact#timeouts}
   */
   readonly timeouts?: ServicecatalogProvisioningArtifactTimeouts;

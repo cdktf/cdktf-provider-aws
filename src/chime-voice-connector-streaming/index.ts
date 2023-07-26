@@ -37,7 +37,7 @@ export interface ChimeVoiceConnectorStreamingConfig extends cdktf.TerraformMetaA
   readonly voiceConnectorId: string;
   /**
   * media_insights_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chime_voice_connector_streaming#media_insights_configuration ChimeVoiceConnectorStreaming#media_insights_configuration}
   */
   readonly mediaInsightsConfiguration?: ChimeVoiceConnectorStreamingMediaInsightsConfiguration;

@@ -33,13 +33,13 @@ export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_backup_setting block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
   */
   readonly advancedBackupSetting?: BackupPlanAdvancedBackupSetting[] | cdktf.IResolvable;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_plan#rule BackupPlan#rule}
   */
   readonly rule: BackupPlanRule[] | cdktf.IResolvable;
@@ -261,7 +261,7 @@ export interface BackupPlanRuleCopyAction {
   readonly destinationVaultArn: string;
   /**
   * lifecycle block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleCopyActionLifecycle;
@@ -500,13 +500,13 @@ export interface BackupPlanRule {
   readonly targetVaultName: string;
   /**
   * copy_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
   */
   readonly copyAction?: BackupPlanRuleCopyAction[] | cdktf.IResolvable;
   /**
   * lifecycle block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
   */
   readonly lifecycle?: BackupPlanRuleLifecycle;

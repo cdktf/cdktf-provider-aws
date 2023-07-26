@@ -25,7 +25,7 @@ export interface WafregionalByteMatchSetConfig extends cdktf.TerraformMetaArgume
   readonly name: string;
   /**
   * byte_match_tuples block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_byte_match_set#byte_match_tuples WafregionalByteMatchSet#byte_match_tuples}
   */
   readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[] | cdktf.IResolvable;
@@ -134,7 +134,7 @@ export interface WafregionalByteMatchSetByteMatchTuples {
   readonly textTransformation: string;
   /**
   * field_to_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_byte_match_set#field_to_match WafregionalByteMatchSet#field_to_match}
   */
   readonly fieldToMatch: WafregionalByteMatchSetByteMatchTuplesFieldToMatch;

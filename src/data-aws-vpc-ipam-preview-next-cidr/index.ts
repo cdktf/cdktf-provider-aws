@@ -33,7 +33,7 @@ export interface DataAwsVpcIpamPreviewNextCidrConfig extends cdktf.TerraformMeta
   readonly netmaskLength?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_ipam_preview_next_cidr#timeouts DataAwsVpcIpamPreviewNextCidr#timeouts}
   */
   readonly timeouts?: DataAwsVpcIpamPreviewNextCidrTimeouts;

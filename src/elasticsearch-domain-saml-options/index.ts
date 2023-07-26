@@ -25,13 +25,13 @@ export interface ElasticsearchDomainSamlOptionsConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * saml_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain_saml_options#saml_options ElasticsearchDomainSamlOptions#saml_options}
   */
   readonly samlOptions?: ElasticsearchDomainSamlOptionsSamlOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain_saml_options#timeouts ElasticsearchDomainSamlOptions#timeouts}
   */
   readonly timeouts?: ElasticsearchDomainSamlOptionsTimeouts;
@@ -149,7 +149,7 @@ export interface ElasticsearchDomainSamlOptionsSamlOptions {
   readonly subjectKey?: string;
   /**
   * idp block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticsearch_domain_saml_options#idp ElasticsearchDomainSamlOptions#idp}
   */
   readonly idp?: ElasticsearchDomainSamlOptionsSamlOptionsIdp;

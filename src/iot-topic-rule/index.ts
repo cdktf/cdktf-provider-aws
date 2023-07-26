@@ -49,121 +49,121 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * cloudwatch_alarm block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[] | cdktf.IResolvable;
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: IotTopicRuleCloudwatchLogs[] | cdktf.IResolvable;
   /**
   * cloudwatch_metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleCloudwatchMetric[] | cdktf.IResolvable;
   /**
   * dynamodb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleDynamodb[] | cdktf.IResolvable;
   /**
   * dynamodbv2 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleDynamodbv2[] | cdktf.IResolvable;
   /**
   * elasticsearch block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleElasticsearch[] | cdktf.IResolvable;
   /**
   * error_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#error_action IotTopicRule#error_action}
   */
   readonly errorAction?: IotTopicRuleErrorAction;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleFirehose[] | cdktf.IResolvable;
   /**
   * http block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
   */
   readonly http?: IotTopicRuleHttp[] | cdktf.IResolvable;
   /**
   * iot_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleIotAnalytics[] | cdktf.IResolvable;
   /**
   * iot_events block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleIotEvents[] | cdktf.IResolvable;
   /**
   * kafka block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
   */
   readonly kafka?: IotTopicRuleKafka[] | cdktf.IResolvable;
   /**
   * kinesis block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleKinesis[] | cdktf.IResolvable;
   /**
   * lambda block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleLambda[] | cdktf.IResolvable;
   /**
   * republish block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleRepublish[] | cdktf.IResolvable;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleS3[] | cdktf.IResolvable;
   /**
   * sns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleSns[] | cdktf.IResolvable;
   /**
   * sqs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleSqs[] | cdktf.IResolvable;
   /**
   * step_functions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleStepFunctions[] | cdktf.IResolvable;
   /**
   * timestream block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
   */
   readonly timestream?: IotTopicRuleTimestream[] | cdktf.IResolvable;
@@ -1066,7 +1066,7 @@ export interface IotTopicRuleDynamodbv2 {
   readonly roleArn: string;
   /**
   * put_item block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleDynamodbv2PutItem;
@@ -2145,7 +2145,7 @@ export interface IotTopicRuleErrorActionDynamodbv2 {
   readonly roleArn: string;
   /**
   * put_item block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#put_item IotTopicRule#put_item}
   */
   readonly putItem?: IotTopicRuleErrorActionDynamodbv2PutItem;
@@ -2659,7 +2659,7 @@ export interface IotTopicRuleErrorActionHttp {
   readonly url: string;
   /**
   * http_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
   readonly httpHeader?: IotTopicRuleErrorActionHttpHttpHeader[] | cdktf.IResolvable;
@@ -4163,13 +4163,13 @@ export interface IotTopicRuleErrorActionTimestream {
   readonly tableName: string;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
   readonly dimension: IotTopicRuleErrorActionTimestreamDimension[] | cdktf.IResolvable;
   /**
   * timestamp block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
   */
   readonly timestamp?: IotTopicRuleErrorActionTimestreamTimestamp;
@@ -4316,115 +4316,115 @@ export class IotTopicRuleErrorActionTimestreamOutputReference extends cdktf.Comp
 export interface IotTopicRuleErrorAction {
   /**
   * cloudwatch_alarm block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_alarm IotTopicRule#cloudwatch_alarm}
   */
   readonly cloudwatchAlarm?: IotTopicRuleErrorActionCloudwatchAlarm;
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_logs IotTopicRule#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: IotTopicRuleErrorActionCloudwatchLogs;
   /**
   * cloudwatch_metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#cloudwatch_metric IotTopicRule#cloudwatch_metric}
   */
   readonly cloudwatchMetric?: IotTopicRuleErrorActionCloudwatchMetric;
   /**
   * dynamodb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dynamodb IotTopicRule#dynamodb}
   */
   readonly dynamodb?: IotTopicRuleErrorActionDynamodb;
   /**
   * dynamodbv2 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dynamodbv2 IotTopicRule#dynamodbv2}
   */
   readonly dynamodbv2?: IotTopicRuleErrorActionDynamodbv2;
   /**
   * elasticsearch block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#elasticsearch IotTopicRule#elasticsearch}
   */
   readonly elasticsearch?: IotTopicRuleErrorActionElasticsearch;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#firehose IotTopicRule#firehose}
   */
   readonly firehose?: IotTopicRuleErrorActionFirehose;
   /**
   * http block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#http IotTopicRule#http}
   */
   readonly http?: IotTopicRuleErrorActionHttp;
   /**
   * iot_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#iot_analytics IotTopicRule#iot_analytics}
   */
   readonly iotAnalytics?: IotTopicRuleErrorActionIotAnalytics;
   /**
   * iot_events block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#iot_events IotTopicRule#iot_events}
   */
   readonly iotEvents?: IotTopicRuleErrorActionIotEvents;
   /**
   * kafka block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#kafka IotTopicRule#kafka}
   */
   readonly kafka?: IotTopicRuleErrorActionKafka;
   /**
   * kinesis block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#kinesis IotTopicRule#kinesis}
   */
   readonly kinesis?: IotTopicRuleErrorActionKinesis;
   /**
   * lambda block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#lambda IotTopicRule#lambda}
   */
   readonly lambda?: IotTopicRuleErrorActionLambda;
   /**
   * republish block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#republish IotTopicRule#republish}
   */
   readonly republish?: IotTopicRuleErrorActionRepublish;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#s3 IotTopicRule#s3}
   */
   readonly s3?: IotTopicRuleErrorActionS3;
   /**
   * sns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#sns IotTopicRule#sns}
   */
   readonly sns?: IotTopicRuleErrorActionSns;
   /**
   * sqs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#sqs IotTopicRule#sqs}
   */
   readonly sqs?: IotTopicRuleErrorActionSqs;
   /**
   * step_functions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#step_functions IotTopicRule#step_functions}
   */
   readonly stepFunctions?: IotTopicRuleErrorActionStepFunctions;
   /**
   * timestream block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#timestream IotTopicRule#timestream}
   */
   readonly timestream?: IotTopicRuleErrorActionTimestream;
@@ -5203,7 +5203,7 @@ export interface IotTopicRuleHttp {
   readonly url: string;
   /**
   * http_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#http_header IotTopicRule#http_header}
   */
   readonly httpHeader?: IotTopicRuleHttpHttpHeader[] | cdktf.IResolvable;
@@ -7059,13 +7059,13 @@ export interface IotTopicRuleTimestream {
   readonly tableName: string;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#dimension IotTopicRule#dimension}
   */
   readonly dimension: IotTopicRuleTimestreamDimension[] | cdktf.IResolvable;
   /**
   * timestamp block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_topic_rule#timestamp IotTopicRule#timestamp}
   */
   readonly timestamp?: IotTopicRuleTimestreamTimestamp;

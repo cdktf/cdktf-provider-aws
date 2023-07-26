@@ -25,7 +25,7 @@ export interface DataAwsDatapipelinePipelineDefinitionConfig extends cdktf.Terra
   readonly pipelineId: string;
   /**
   * parameter_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/datapipeline_pipeline_definition#parameter_value DataAwsDatapipelinePipelineDefinition#parameter_value}
   */
   readonly parameterValue?: DataAwsDatapipelinePipelineDefinitionParameterValue[] | cdktf.IResolvable;

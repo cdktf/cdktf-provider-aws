@@ -29,7 +29,7 @@ export interface OamSinkPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly sinkIdentifier: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/oam_sink_policy#timeouts OamSinkPolicy#timeouts}
   */
   readonly timeouts?: OamSinkPolicyTimeouts;

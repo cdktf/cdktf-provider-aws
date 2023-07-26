@@ -49,37 +49,37 @@ export interface QuicksightDashboardConfig extends cdktf.TerraformMetaArguments 
   readonly versionDescription: string;
   /**
   * dashboard_publish_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#dashboard_publish_options QuicksightDashboard#dashboard_publish_options}
   */
   readonly dashboardPublishOptions?: QuicksightDashboardDashboardPublishOptions;
   /**
   * definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#definition QuicksightDashboard#definition}
   */
   readonly definition?: any;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#parameters QuicksightDashboard#parameters}
   */
   readonly parameters?: QuicksightDashboardParameters;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#permissions QuicksightDashboard#permissions}
   */
   readonly permissions?: QuicksightDashboardPermissions[] | cdktf.IResolvable;
   /**
   * source_entity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#source_entity QuicksightDashboard#source_entity}
   */
   readonly sourceEntity?: QuicksightDashboardSourceEntity;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#timeouts QuicksightDashboard#timeouts}
   */
   readonly timeouts?: QuicksightDashboardTimeouts;
@@ -737,61 +737,61 @@ export class QuicksightDashboardDashboardPublishOptionsVisualMenuOptionOutputRef
 export interface QuicksightDashboardDashboardPublishOptions {
   /**
   * ad_hoc_filtering_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#ad_hoc_filtering_option QuicksightDashboard#ad_hoc_filtering_option}
   */
   readonly adHocFilteringOption?: QuicksightDashboardDashboardPublishOptionsAdHocFilteringOption;
   /**
   * data_point_drill_up_down_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#data_point_drill_up_down_option QuicksightDashboard#data_point_drill_up_down_option}
   */
   readonly dataPointDrillUpDownOption?: QuicksightDashboardDashboardPublishOptionsDataPointDrillUpDownOption;
   /**
   * data_point_menu_label_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#data_point_menu_label_option QuicksightDashboard#data_point_menu_label_option}
   */
   readonly dataPointMenuLabelOption?: QuicksightDashboardDashboardPublishOptionsDataPointMenuLabelOption;
   /**
   * data_point_tooltip_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#data_point_tooltip_option QuicksightDashboard#data_point_tooltip_option}
   */
   readonly dataPointTooltipOption?: QuicksightDashboardDashboardPublishOptionsDataPointTooltipOption;
   /**
   * export_to_csv_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#export_to_csv_option QuicksightDashboard#export_to_csv_option}
   */
   readonly exportToCsvOption?: QuicksightDashboardDashboardPublishOptionsExportToCsvOption;
   /**
   * export_with_hidden_fields_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#export_with_hidden_fields_option QuicksightDashboard#export_with_hidden_fields_option}
   */
   readonly exportWithHiddenFieldsOption?: QuicksightDashboardDashboardPublishOptionsExportWithHiddenFieldsOption;
   /**
   * sheet_controls_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#sheet_controls_option QuicksightDashboard#sheet_controls_option}
   */
   readonly sheetControlsOption?: QuicksightDashboardDashboardPublishOptionsSheetControlsOption;
   /**
   * sheet_layout_element_maximization_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#sheet_layout_element_maximization_option QuicksightDashboard#sheet_layout_element_maximization_option}
   */
   readonly sheetLayoutElementMaximizationOption?: QuicksightDashboardDashboardPublishOptionsSheetLayoutElementMaximizationOption;
   /**
   * visual_axis_sort_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#visual_axis_sort_option QuicksightDashboard#visual_axis_sort_option}
   */
   readonly visualAxisSortOption?: QuicksightDashboardDashboardPublishOptionsVisualAxisSortOption;
   /**
   * visual_menu_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#visual_menu_option QuicksightDashboard#visual_menu_option}
   */
   readonly visualMenuOption?: QuicksightDashboardDashboardPublishOptionsVisualMenuOption;
@@ -1537,25 +1537,25 @@ export class QuicksightDashboardParametersStringParametersList extends cdktf.Com
 export interface QuicksightDashboardParameters {
   /**
   * date_time_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#date_time_parameters QuicksightDashboard#date_time_parameters}
   */
   readonly dateTimeParameters?: QuicksightDashboardParametersDateTimeParameters[] | cdktf.IResolvable;
   /**
   * decimal_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#decimal_parameters QuicksightDashboard#decimal_parameters}
   */
   readonly decimalParameters?: QuicksightDashboardParametersDecimalParameters[] | cdktf.IResolvable;
   /**
   * integer_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#integer_parameters QuicksightDashboard#integer_parameters}
   */
   readonly integerParameters?: QuicksightDashboardParametersIntegerParameters[] | cdktf.IResolvable;
   /**
   * string_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#string_parameters QuicksightDashboard#string_parameters}
   */
   readonly stringParameters?: QuicksightDashboardParametersStringParameters[] | cdktf.IResolvable;
@@ -1931,7 +1931,7 @@ export interface QuicksightDashboardSourceEntitySourceTemplate {
   readonly arn: string;
   /**
   * data_set_references block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#data_set_references QuicksightDashboard#data_set_references}
   */
   readonly dataSetReferences: QuicksightDashboardSourceEntitySourceTemplateDataSetReferences[] | cdktf.IResolvable;
@@ -2015,7 +2015,7 @@ export class QuicksightDashboardSourceEntitySourceTemplateOutputReference extend
 export interface QuicksightDashboardSourceEntity {
   /**
   * source_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_dashboard#source_template QuicksightDashboard#source_template}
   */
   readonly sourceTemplate?: QuicksightDashboardSourceEntitySourceTemplate;

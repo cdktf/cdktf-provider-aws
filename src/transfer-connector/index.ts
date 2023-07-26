@@ -41,7 +41,7 @@ export interface TransferConnectorConfig extends cdktf.TerraformMetaArguments {
   readonly url: string;
   /**
   * as2_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
   */
   readonly as2Config: TransferConnectorAs2Config;

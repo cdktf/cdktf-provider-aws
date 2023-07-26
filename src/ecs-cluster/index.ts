@@ -33,19 +33,19 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster#configuration EcsCluster#configuration}
   */
   readonly configuration?: EcsClusterConfiguration;
   /**
   * service_connect_defaults block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster#service_connect_defaults EcsCluster#service_connect_defaults}
   */
   readonly serviceConnectDefaults?: EcsClusterServiceConnectDefaults;
   /**
   * setting block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster#setting EcsCluster#setting}
   */
   readonly setting?: EcsClusterSetting[] | cdktf.IResolvable;
@@ -234,7 +234,7 @@ export interface EcsClusterConfigurationExecuteCommandConfiguration {
   readonly logging?: string;
   /**
   * log_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster#log_configuration EcsCluster#log_configuration}
   */
   readonly logConfiguration?: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration;
@@ -347,7 +347,7 @@ export class EcsClusterConfigurationExecuteCommandConfigurationOutputReference e
 export interface EcsClusterConfiguration {
   /**
   * execute_command_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
   */
   readonly executeCommandConfiguration?: EcsClusterConfigurationExecuteCommandConfiguration;

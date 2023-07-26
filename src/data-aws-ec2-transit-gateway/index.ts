@@ -25,13 +25,13 @@ export interface DataAwsEc2TransitGatewayConfig extends cdktf.TerraformMetaArgum
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway#filter DataAwsEc2TransitGateway#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway#timeouts DataAwsEc2TransitGateway#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayTimeouts;

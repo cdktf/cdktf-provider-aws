@@ -45,13 +45,13 @@ export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments 
   readonly targetPipeline: string;
   /**
   * authentication_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_webhook#authentication_configuration CodepipelineWebhook#authentication_configuration}
   */
   readonly authenticationConfiguration?: CodepipelineWebhookAuthenticationConfiguration;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_webhook#filter CodepipelineWebhook#filter}
   */
   readonly filter: CodepipelineWebhookFilter[] | cdktf.IResolvable;

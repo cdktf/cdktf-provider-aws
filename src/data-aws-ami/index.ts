@@ -45,13 +45,13 @@ export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ami#filter DataAwsAmi#filter}
   */
   readonly filter?: DataAwsAmiFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ami#timeouts DataAwsAmi#timeouts}
   */
   readonly timeouts?: DataAwsAmiTimeouts;

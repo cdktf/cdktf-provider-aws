@@ -37,13 +37,13 @@ export interface KendraExperienceConfig extends cdktf.TerraformMetaArguments {
   readonly roleArn: string;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_experience#configuration KendraExperience#configuration}
   */
   readonly configuration?: KendraExperienceConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_experience#timeouts KendraExperience#timeouts}
   */
   readonly timeouts?: KendraExperienceTimeouts;
@@ -301,13 +301,13 @@ export class KendraExperienceConfigurationUserIdentityConfigurationOutputReferen
 export interface KendraExperienceConfiguration {
   /**
   * content_source_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_experience#content_source_configuration KendraExperience#content_source_configuration}
   */
   readonly contentSourceConfiguration?: KendraExperienceConfigurationContentSourceConfiguration;
   /**
   * user_identity_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_experience#user_identity_configuration KendraExperience#user_identity_configuration}
   */
   readonly userIdentityConfiguration?: KendraExperienceConfigurationUserIdentityConfiguration;

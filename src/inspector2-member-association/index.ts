@@ -25,7 +25,7 @@ export interface Inspector2MemberAssociationConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_member_association#timeouts Inspector2MemberAssociation#timeouts}
   */
   readonly timeouts?: Inspector2MemberAssociationTimeouts;

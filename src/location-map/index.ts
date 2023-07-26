@@ -37,7 +37,7 @@ export interface LocationMapConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/location_map#configuration LocationMap#configuration}
   */
   readonly configuration: LocationMapConfiguration;

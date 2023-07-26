@@ -25,13 +25,13 @@ export interface GlobalacceleratorCustomRoutingListenerConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * port_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_listener#port_range GlobalacceleratorCustomRoutingListener#port_range}
   */
   readonly portRange: GlobalacceleratorCustomRoutingListenerPortRange[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_custom_routing_listener#timeouts GlobalacceleratorCustomRoutingListener#timeouts}
   */
   readonly timeouts?: GlobalacceleratorCustomRoutingListenerTimeouts;

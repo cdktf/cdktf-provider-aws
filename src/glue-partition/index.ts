@@ -41,7 +41,7 @@ export interface GluePartitionConfig extends cdktf.TerraformMetaArguments {
   readonly tableName: string;
   /**
   * storage_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition#storage_descriptor GluePartition#storage_descriptor}
   */
   readonly storageDescriptor?: GluePartitionStorageDescriptor;
@@ -585,25 +585,25 @@ export interface GluePartitionStorageDescriptor {
   readonly storedAsSubDirectories?: boolean | cdktf.IResolvable;
   /**
   * columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition#columns GluePartition#columns}
   */
   readonly columns?: GluePartitionStorageDescriptorColumns[] | cdktf.IResolvable;
   /**
   * ser_de_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition#ser_de_info GluePartition#ser_de_info}
   */
   readonly serDeInfo?: GluePartitionStorageDescriptorSerDeInfo;
   /**
   * skewed_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition#skewed_info GluePartition#skewed_info}
   */
   readonly skewedInfo?: GluePartitionStorageDescriptorSkewedInfo;
   /**
   * sort_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition#sort_columns GluePartition#sort_columns}
   */
   readonly sortColumns?: GluePartitionStorageDescriptorSortColumns[] | cdktf.IResolvable;

@@ -29,19 +29,19 @@ export interface DataAwsCeTagsConfig extends cdktf.TerraformMetaArguments {
   readonly tagKey?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#filter DataAwsCeTags#filter}
   */
   readonly filter?: DataAwsCeTagsFilter;
   /**
   * sort_by block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#sort_by DataAwsCeTags#sort_by}
   */
   readonly sortBy?: DataAwsCeTagsSortBy[] | cdktf.IResolvable;
   /**
   * time_period block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#time_period DataAwsCeTags#time_period}
   */
   readonly timePeriod: DataAwsCeTagsTimePeriod;
@@ -406,19 +406,19 @@ export class DataAwsCeTagsFilterAndTagsOutputReference extends cdktf.ComplexObje
 export interface DataAwsCeTagsFilterAnd {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterAndCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterAndDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterAndTags;
@@ -1158,19 +1158,19 @@ export class DataAwsCeTagsFilterNotTagsOutputReference extends cdktf.ComplexObje
 export interface DataAwsCeTagsFilterNot {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterNotCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterNotDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterNotTags;
@@ -1640,19 +1640,19 @@ export class DataAwsCeTagsFilterOrTagsOutputReference extends cdktf.ComplexObjec
 export interface DataAwsCeTagsFilterOr {
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterOrCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterOrDimension;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterOrTags;
@@ -1916,37 +1916,37 @@ export class DataAwsCeTagsFilterTagsOutputReference extends cdktf.ComplexObject 
 export interface DataAwsCeTagsFilter {
   /**
   * and block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#and DataAwsCeTags#and}
   */
   readonly and?: DataAwsCeTagsFilterAnd[] | cdktf.IResolvable;
   /**
   * cost_category block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#cost_category DataAwsCeTags#cost_category}
   */
   readonly costCategory?: DataAwsCeTagsFilterCostCategory;
   /**
   * dimension block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#dimension DataAwsCeTags#dimension}
   */
   readonly dimension?: DataAwsCeTagsFilterDimension;
   /**
   * not block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#not DataAwsCeTags#not}
   */
   readonly not?: DataAwsCeTagsFilterNot;
   /**
   * or block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#or DataAwsCeTags#or}
   */
   readonly or?: DataAwsCeTagsFilterOr[] | cdktf.IResolvable;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ce_tags#tags DataAwsCeTags#tags}
   */
   readonly tags?: DataAwsCeTagsFilterTags;

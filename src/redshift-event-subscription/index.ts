@@ -57,7 +57,7 @@ export interface RedshiftEventSubscriptionConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_event_subscription#timeouts RedshiftEventSubscription#timeouts}
   */
   readonly timeouts?: RedshiftEventSubscriptionTimeouts;

@@ -53,7 +53,7 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   /**
   * ebs_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_instance_group#ebs_config EmrInstanceGroup#ebs_config}
   */
   readonly ebsConfig?: EmrInstanceGroupEbsConfig[] | cdktf.IResolvable;

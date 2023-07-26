@@ -49,19 +49,19 @@ export interface QuicksightThemeConfig extends cdktf.TerraformMetaArguments {
   readonly versionDescription?: string;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#configuration QuicksightTheme#configuration}
   */
   readonly configuration?: QuicksightThemeConfiguration;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#permissions QuicksightTheme#permissions}
   */
   readonly permissions?: QuicksightThemePermissions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#timeouts QuicksightTheme#timeouts}
   */
   readonly timeouts?: QuicksightThemeTimeouts;
@@ -253,7 +253,7 @@ export class QuicksightThemeConfigurationSheetTileBorderOutputReference extends 
 export interface QuicksightThemeConfigurationSheetTile {
   /**
   * border block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#border QuicksightTheme#border}
   */
   readonly border?: QuicksightThemeConfigurationSheetTileBorder;
@@ -450,13 +450,13 @@ export class QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference ex
 export interface QuicksightThemeConfigurationSheetTileLayout {
   /**
   * gutter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#gutter QuicksightTheme#gutter}
   */
   readonly gutter?: QuicksightThemeConfigurationSheetTileLayoutGutter;
   /**
   * margin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#margin QuicksightTheme#margin}
   */
   readonly margin?: QuicksightThemeConfigurationSheetTileLayoutMargin;
@@ -546,13 +546,13 @@ export class QuicksightThemeConfigurationSheetTileLayoutOutputReference extends 
 export interface QuicksightThemeConfigurationSheet {
   /**
   * tile block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#tile QuicksightTheme#tile}
   */
   readonly tile?: QuicksightThemeConfigurationSheetTile;
   /**
   * tile_layout block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#tile_layout QuicksightTheme#tile_layout}
   */
   readonly tileLayout?: QuicksightThemeConfigurationSheetTileLayout;
@@ -739,7 +739,7 @@ export class QuicksightThemeConfigurationTypographyFontFamiliesList extends cdkt
 export interface QuicksightThemeConfigurationTypography {
   /**
   * font_families block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#font_families QuicksightTheme#font_families}
   */
   readonly fontFamilies?: QuicksightThemeConfigurationTypographyFontFamilies[] | cdktf.IResolvable;
@@ -1276,25 +1276,25 @@ export class QuicksightThemeConfigurationUiColorPaletteOutputReference extends c
 export interface QuicksightThemeConfiguration {
   /**
   * data_color_palette block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#data_color_palette QuicksightTheme#data_color_palette}
   */
   readonly dataColorPalette?: QuicksightThemeConfigurationDataColorPalette;
   /**
   * sheet block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#sheet QuicksightTheme#sheet}
   */
   readonly sheet?: QuicksightThemeConfigurationSheet;
   /**
   * typography block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#typography QuicksightTheme#typography}
   */
   readonly typography?: QuicksightThemeConfigurationTypography;
   /**
   * ui_color_palette block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_theme#ui_color_palette QuicksightTheme#ui_color_palette}
   */
   readonly uiColorPalette?: QuicksightThemeConfigurationUiColorPalette;

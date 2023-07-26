@@ -49,31 +49,31 @@ export interface QuicksightAnalysisConfig extends cdktf.TerraformMetaArguments {
   readonly themeArn?: string;
   /**
   * definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#definition QuicksightAnalysis#definition}
   */
   readonly definition?: any;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#parameters QuicksightAnalysis#parameters}
   */
   readonly parameters?: QuicksightAnalysisParameters;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#permissions QuicksightAnalysis#permissions}
   */
   readonly permissions?: QuicksightAnalysisPermissions[] | cdktf.IResolvable;
   /**
   * source_entity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#source_entity QuicksightAnalysis#source_entity}
   */
   readonly sourceEntity?: QuicksightAnalysisSourceEntity;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#timeouts QuicksightAnalysis#timeouts}
   */
   readonly timeouts?: QuicksightAnalysisTimeouts;
@@ -553,25 +553,25 @@ export class QuicksightAnalysisParametersStringParametersList extends cdktf.Comp
 export interface QuicksightAnalysisParameters {
   /**
   * date_time_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#date_time_parameters QuicksightAnalysis#date_time_parameters}
   */
   readonly dateTimeParameters?: QuicksightAnalysisParametersDateTimeParameters[] | cdktf.IResolvable;
   /**
   * decimal_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#decimal_parameters QuicksightAnalysis#decimal_parameters}
   */
   readonly decimalParameters?: QuicksightAnalysisParametersDecimalParameters[] | cdktf.IResolvable;
   /**
   * integer_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#integer_parameters QuicksightAnalysis#integer_parameters}
   */
   readonly integerParameters?: QuicksightAnalysisParametersIntegerParameters[] | cdktf.IResolvable;
   /**
   * string_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#string_parameters QuicksightAnalysis#string_parameters}
   */
   readonly stringParameters?: QuicksightAnalysisParametersStringParameters[] | cdktf.IResolvable;
@@ -947,7 +947,7 @@ export interface QuicksightAnalysisSourceEntitySourceTemplate {
   readonly arn: string;
   /**
   * data_set_references block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#data_set_references QuicksightAnalysis#data_set_references}
   */
   readonly dataSetReferences: QuicksightAnalysisSourceEntitySourceTemplateDataSetReferences[] | cdktf.IResolvable;
@@ -1031,7 +1031,7 @@ export class QuicksightAnalysisSourceEntitySourceTemplateOutputReference extends
 export interface QuicksightAnalysisSourceEntity {
   /**
   * source_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_analysis#source_template QuicksightAnalysis#source_template}
   */
   readonly sourceTemplate?: QuicksightAnalysisSourceEntitySourceTemplate;

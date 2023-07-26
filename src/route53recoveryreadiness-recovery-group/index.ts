@@ -37,7 +37,7 @@ export interface Route53RecoveryreadinessRecoveryGroupConfig extends cdktf.Terra
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_recovery_group#timeouts Route53RecoveryreadinessRecoveryGroup#timeouts}
   */
   readonly timeouts?: Route53RecoveryreadinessRecoveryGroupTimeouts;

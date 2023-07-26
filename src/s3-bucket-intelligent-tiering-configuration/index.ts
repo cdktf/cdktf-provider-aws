@@ -33,13 +33,13 @@ export interface S3BucketIntelligentTieringConfigurationConfig extends cdktf.Ter
   readonly status?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_intelligent_tiering_configuration#filter S3BucketIntelligentTieringConfiguration#filter}
   */
   readonly filter?: S3BucketIntelligentTieringConfigurationFilter;
   /**
   * tiering block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_intelligent_tiering_configuration#tiering S3BucketIntelligentTieringConfiguration#tiering}
   */
   readonly tiering: S3BucketIntelligentTieringConfigurationTiering[] | cdktf.IResolvable;

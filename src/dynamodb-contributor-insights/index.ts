@@ -29,7 +29,7 @@ export interface DynamodbContributorInsightsConfig extends cdktf.TerraformMetaAr
   readonly tableName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_contributor_insights#timeouts DynamodbContributorInsights#timeouts}
   */
   readonly timeouts?: DynamodbContributorInsightsTimeouts;

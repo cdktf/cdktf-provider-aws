@@ -25,13 +25,13 @@ export interface DataAwsEc2TransitGatewayRouteTablePropagationsConfig extends cd
   readonly transitGatewayRouteTableId: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_route_table_propagations#filter DataAwsEc2TransitGatewayRouteTablePropagations#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayRouteTablePropagationsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_route_table_propagations#timeouts DataAwsEc2TransitGatewayRouteTablePropagations#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts;

@@ -33,7 +33,7 @@ export interface S3BucketVersioningAConfig extends cdktf.TerraformMetaArguments 
   readonly mfa?: string;
   /**
   * versioning_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioningA#versioning_configuration}
   */
   readonly versioningConfiguration: S3BucketVersioningVersioningConfiguration;

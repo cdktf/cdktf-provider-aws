@@ -41,13 +41,13 @@ export interface SignerSigningProfileConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * signature_validity_period block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#signature_validity_period SignerSigningProfile#signature_validity_period}
   */
   readonly signatureValidityPeriod?: SignerSigningProfileSignatureValidityPeriod;
   /**
   * signing_material block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile#signing_material SignerSigningProfile#signing_material}
   */
   readonly signingMaterial?: SignerSigningProfileSigningMaterial;

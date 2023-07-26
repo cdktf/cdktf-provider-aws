@@ -81,7 +81,7 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * destination_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
   */
   readonly destinationOptions?: FlowLogDestinationOptions;

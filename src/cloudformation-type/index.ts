@@ -37,7 +37,7 @@ export interface CloudformationTypeConfig extends cdktf.TerraformMetaArguments {
   readonly typeName: string;
   /**
   * logging_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_type#logging_config CloudformationType#logging_config}
   */
   readonly loggingConfig?: CloudformationTypeLoggingConfig;

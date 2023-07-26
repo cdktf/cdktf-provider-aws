@@ -57,7 +57,7 @@ export interface SecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/security_group#timeouts SecurityGroup#timeouts}
   */
   readonly timeouts?: SecurityGroupTimeouts;

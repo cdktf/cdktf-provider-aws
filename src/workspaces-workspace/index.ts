@@ -53,13 +53,13 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   readonly volumeEncryptionKey?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_workspace#timeouts WorkspacesWorkspace#timeouts}
   */
   readonly timeouts?: WorkspacesWorkspaceTimeouts;
   /**
   * workspace_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/workspaces_workspace#workspace_properties WorkspacesWorkspace#workspace_properties}
   */
   readonly workspaceProperties?: WorkspacesWorkspaceWorkspaceProperties;

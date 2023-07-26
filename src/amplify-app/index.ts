@@ -89,13 +89,13 @@ export interface AmplifyAppConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * auto_branch_creation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
   */
   readonly autoBranchCreationConfig?: AmplifyAppAutoBranchCreationConfig;
   /**
   * custom_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
   */
   readonly customRule?: AmplifyAppCustomRule[] | cdktf.IResolvable;

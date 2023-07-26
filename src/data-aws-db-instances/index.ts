@@ -21,7 +21,7 @@ export interface DataAwsDbInstancesConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/db_instances#filter DataAwsDbInstances#filter}
   */
   readonly filter?: DataAwsDbInstancesFilter[] | cdktf.IResolvable;

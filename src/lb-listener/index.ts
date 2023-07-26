@@ -53,13 +53,13 @@ export interface LbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#default_action LbListener#default_action}
   */
   readonly defaultAction: LbListenerDefaultAction[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#timeouts LbListener#timeouts}
   */
   readonly timeouts?: LbListenerTimeouts;
@@ -955,13 +955,13 @@ export class LbListenerDefaultActionForwardTargetGroupList extends cdktf.Complex
 export interface LbListenerDefaultActionForward {
   /**
   * stickiness block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#stickiness LbListener#stickiness}
   */
   readonly stickiness?: LbListenerDefaultActionForwardStickiness;
   /**
   * target_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#target_group LbListener#target_group}
   */
   readonly targetGroup: LbListenerDefaultActionForwardTargetGroup[] | cdktf.IResolvable;
@@ -1257,31 +1257,31 @@ export interface LbListenerDefaultAction {
   readonly type: string;
   /**
   * authenticate_cognito block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#authenticate_cognito LbListener#authenticate_cognito}
   */
   readonly authenticateCognito?: LbListenerDefaultActionAuthenticateCognito;
   /**
   * authenticate_oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#authenticate_oidc LbListener#authenticate_oidc}
   */
   readonly authenticateOidc?: LbListenerDefaultActionAuthenticateOidc;
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#fixed_response LbListener#fixed_response}
   */
   readonly fixedResponse?: LbListenerDefaultActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#forward LbListener#forward}
   */
   readonly forward?: LbListenerDefaultActionForward;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener#redirect LbListener#redirect}
   */
   readonly redirect?: LbListenerDefaultActionRedirect;

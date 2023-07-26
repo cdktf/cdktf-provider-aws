@@ -33,13 +33,13 @@ export interface MskconnectCustomPluginConfig extends cdktf.TerraformMetaArgumen
   readonly name: string;
   /**
   * location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_custom_plugin#location MskconnectCustomPlugin#location}
   */
   readonly location: MskconnectCustomPluginLocation;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_custom_plugin#timeouts MskconnectCustomPlugin#timeouts}
   */
   readonly timeouts?: MskconnectCustomPluginTimeouts;
@@ -160,7 +160,7 @@ export class MskconnectCustomPluginLocationS3OutputReference extends cdktf.Compl
 export interface MskconnectCustomPluginLocation {
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/mskconnect_custom_plugin#s3 MskconnectCustomPlugin#s3}
   */
   readonly s3: MskconnectCustomPluginLocationS3;

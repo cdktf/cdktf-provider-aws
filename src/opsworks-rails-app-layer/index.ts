@@ -129,19 +129,19 @@ export interface OpsworksRailsAppLayerConfig extends cdktf.TerraformMetaArgument
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#cloudwatch_configuration OpsworksRailsAppLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksRailsAppLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#ebs_volume OpsworksRailsAppLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksRailsAppLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#load_based_auto_scaling OpsworksRailsAppLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksRailsAppLayerLoadBasedAutoScaling;
@@ -514,7 +514,7 @@ export interface OpsworksRailsAppLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#log_streams OpsworksRailsAppLayer#log_streams}
   */
   readonly logStreams?: OpsworksRailsAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1312,13 +1312,13 @@ export interface OpsworksRailsAppLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#downscaling OpsworksRailsAppLayer#downscaling}
   */
   readonly downscaling?: OpsworksRailsAppLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_rails_app_layer#upscaling OpsworksRailsAppLayer#upscaling}
   */
   readonly upscaling?: OpsworksRailsAppLayerLoadBasedAutoScalingUpscaling;

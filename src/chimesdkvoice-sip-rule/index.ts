@@ -37,7 +37,7 @@ export interface ChimesdkvoiceSipRuleConfig extends cdktf.TerraformMetaArguments
   readonly triggerValue: string;
   /**
   * target_applications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_sip_rule#target_applications ChimesdkvoiceSipRule#target_applications}
   */
   readonly targetApplications: ChimesdkvoiceSipRuleTargetApplications[] | cdktf.IResolvable;

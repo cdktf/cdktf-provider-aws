@@ -29,13 +29,13 @@ export interface DataAwsPrefixListConfig extends cdktf.TerraformMetaArguments {
   readonly prefixListId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/prefix_list#filter DataAwsPrefixList#filter}
   */
   readonly filter?: DataAwsPrefixListFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/prefix_list#timeouts DataAwsPrefixList#timeouts}
   */
   readonly timeouts?: DataAwsPrefixListTimeouts;

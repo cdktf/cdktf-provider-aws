@@ -49,37 +49,37 @@ export interface KendraIndexConfig extends cdktf.TerraformMetaArguments {
   readonly userContextPolicy?: string;
   /**
   * capacity_units block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#capacity_units KendraIndex#capacity_units}
   */
   readonly capacityUnits?: KendraIndexCapacityUnits;
   /**
   * document_metadata_configuration_updates block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#document_metadata_configuration_updates KendraIndex#document_metadata_configuration_updates}
   */
   readonly documentMetadataConfigurationUpdates?: KendraIndexDocumentMetadataConfigurationUpdates[] | cdktf.IResolvable;
   /**
   * server_side_encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#server_side_encryption_configuration KendraIndex#server_side_encryption_configuration}
   */
   readonly serverSideEncryptionConfiguration?: KendraIndexServerSideEncryptionConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#timeouts KendraIndex#timeouts}
   */
   readonly timeouts?: KendraIndexTimeouts;
   /**
   * user_group_resolution_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#user_group_resolution_configuration KendraIndex#user_group_resolution_configuration}
   */
   readonly userGroupResolutionConfiguration?: KendraIndexUserGroupResolutionConfiguration;
   /**
   * user_token_configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#user_token_configurations KendraIndex#user_token_configurations}
   */
   readonly userTokenConfigurations?: KendraIndexUserTokenConfigurations;
@@ -710,13 +710,13 @@ export interface KendraIndexDocumentMetadataConfigurationUpdates {
   readonly type: string;
   /**
   * relevance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#relevance KendraIndex#relevance}
   */
   readonly relevance?: KendraIndexDocumentMetadataConfigurationUpdatesRelevance;
   /**
   * search block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#search KendraIndex#search}
   */
   readonly search?: KendraIndexDocumentMetadataConfigurationUpdatesSearch;
@@ -1444,13 +1444,13 @@ export class KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputRe
 export interface KendraIndexUserTokenConfigurations {
   /**
   * json_token_type_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#json_token_type_configuration KendraIndex#json_token_type_configuration}
   */
   readonly jsonTokenTypeConfiguration?: KendraIndexUserTokenConfigurationsJsonTokenTypeConfiguration;
   /**
   * jwt_token_type_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_index#jwt_token_type_configuration KendraIndex#jwt_token_type_configuration}
   */
   readonly jwtTokenTypeConfiguration?: KendraIndexUserTokenConfigurationsJwtTokenTypeConfiguration;

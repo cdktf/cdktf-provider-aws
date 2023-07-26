@@ -29,7 +29,7 @@ export interface AcmCertificateValidationConfig extends cdktf.TerraformMetaArgum
   readonly validationRecordFqdns?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/acm_certificate_validation#timeouts AcmCertificateValidation#timeouts}
   */
   readonly timeouts?: AcmCertificateValidationTimeouts;

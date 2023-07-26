@@ -29,7 +29,7 @@ export interface OpensearchDomainPolicyConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain_policy#timeouts OpensearchDomainPolicy#timeouts}
   */
   readonly timeouts?: OpensearchDomainPolicyTimeouts;

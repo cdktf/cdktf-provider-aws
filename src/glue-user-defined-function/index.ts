@@ -45,7 +45,7 @@ export interface GlueUserDefinedFunctionConfig extends cdktf.TerraformMetaArgume
   readonly ownerType: string;
   /**
   * resource_uris block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_user_defined_function#resource_uris GlueUserDefinedFunction#resource_uris}
   */
   readonly resourceUris?: GlueUserDefinedFunctionResourceUris[] | cdktf.IResolvable;

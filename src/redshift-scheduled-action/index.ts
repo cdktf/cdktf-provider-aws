@@ -49,7 +49,7 @@ export interface RedshiftScheduledActionConfig extends cdktf.TerraformMetaArgume
   readonly startTime?: string;
   /**
   * target_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
   */
   readonly targetAction: RedshiftScheduledActionTargetAction;
@@ -351,19 +351,19 @@ export class RedshiftScheduledActionTargetActionResumeClusterOutputReference ext
 export interface RedshiftScheduledActionTargetAction {
   /**
   * pause_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
   */
   readonly pauseCluster?: RedshiftScheduledActionTargetActionPauseCluster;
   /**
   * resize_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
   */
   readonly resizeCluster?: RedshiftScheduledActionTargetActionResizeCluster;
   /**
   * resume_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
   */
   readonly resumeCluster?: RedshiftScheduledActionTargetActionResumeCluster;

@@ -37,7 +37,7 @@ export interface S3BucketLoggingAConfig extends cdktf.TerraformMetaArguments {
   readonly targetPrefix: string;
   /**
   * target_grant block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
   */
   readonly targetGrant?: S3BucketLoggingTargetGrant[] | cdktf.IResolvable;
@@ -200,7 +200,7 @@ export interface S3BucketLoggingTargetGrant {
   readonly permission: string;
   /**
   * grantee block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
   */
   readonly grantee: S3BucketLoggingTargetGrantGrantee;

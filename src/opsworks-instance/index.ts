@@ -129,25 +129,25 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly virtualizationType?: string;
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_instance#ebs_block_device OpsworksInstance#ebs_block_device}
   */
   readonly ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_instance#ephemeral_block_device OpsworksInstance#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * root_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_instance#root_block_device OpsworksInstance#root_block_device}
   */
   readonly rootBlockDevice?: OpsworksInstanceRootBlockDevice[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_instance#timeouts OpsworksInstance#timeouts}
   */
   readonly timeouts?: OpsworksInstanceTimeouts;

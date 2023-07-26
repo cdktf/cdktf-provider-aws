@@ -77,25 +77,25 @@ export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments 
   readonly userDataBase64?: string;
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_configuration#ebs_block_device LaunchConfiguration#ebs_block_device}
   */
   readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_configuration#ephemeral_block_device LaunchConfiguration#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * metadata_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_configuration#metadata_options LaunchConfiguration#metadata_options}
   */
   readonly metadataOptions?: LaunchConfigurationMetadataOptions;
   /**
   * root_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_configuration#root_block_device LaunchConfiguration#root_block_device}
   */
   readonly rootBlockDevice?: LaunchConfigurationRootBlockDevice;

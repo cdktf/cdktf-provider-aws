@@ -22,7 +22,7 @@ export interface DataAwsAuditmanagerControlConfig extends cdktf.TerraformMetaArg
   readonly type: string;
   /**
   * control_mapping_sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
   */
   readonly controlMappingSources?: DataAwsAuditmanagerControlControlMappingSources[] | cdktf.IResolvable;
@@ -110,7 +110,7 @@ export class DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList ex
 export interface DataAwsAuditmanagerControlControlMappingSources {
   /**
   * source_keyword block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
   */
   readonly sourceKeyword?: DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword[] | cdktf.IResolvable;

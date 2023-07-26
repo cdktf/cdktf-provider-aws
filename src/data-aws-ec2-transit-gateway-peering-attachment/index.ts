@@ -25,13 +25,13 @@ export interface DataAwsEc2TransitGatewayPeeringAttachmentConfig extends cdktf.T
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_peering_attachment#filter DataAwsEc2TransitGatewayPeeringAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayPeeringAttachmentFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_peering_attachment#timeouts DataAwsEc2TransitGatewayPeeringAttachment#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayPeeringAttachmentTimeouts;

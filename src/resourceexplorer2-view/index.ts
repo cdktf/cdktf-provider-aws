@@ -26,13 +26,13 @@ export interface Resourceexplorer2ViewConfig extends cdktf.TerraformMetaArgument
   readonly tags?: { [key: string]: string };
   /**
   * filters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourceexplorer2_view#filters Resourceexplorer2View#filters}
   */
   readonly filters?: Resourceexplorer2ViewFilters[] | cdktf.IResolvable;
   /**
   * included_property block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourceexplorer2_view#included_property Resourceexplorer2View#included_property}
   */
   readonly includedProperty?: Resourceexplorer2ViewIncludedProperty[] | cdktf.IResolvable;

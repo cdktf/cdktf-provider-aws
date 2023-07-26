@@ -33,7 +33,7 @@ export interface SagemakerMonitoringScheduleConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * monitoring_schedule_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_monitoring_schedule#monitoring_schedule_config SagemakerMonitoringSchedule#monitoring_schedule_config}
   */
   readonly monitoringScheduleConfig: SagemakerMonitoringScheduleMonitoringScheduleConfig;
@@ -111,7 +111,7 @@ export interface SagemakerMonitoringScheduleMonitoringScheduleConfig {
   readonly monitoringType: string;
   /**
   * schedule_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_monitoring_schedule#schedule_config SagemakerMonitoringSchedule#schedule_config}
   */
   readonly scheduleConfig?: SagemakerMonitoringScheduleMonitoringScheduleConfigScheduleConfig;

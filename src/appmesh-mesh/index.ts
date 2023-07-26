@@ -33,7 +33,7 @@ export interface AppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_mesh#spec AppmeshMesh#spec}
   */
   readonly spec?: AppmeshMeshSpec;
@@ -106,7 +106,7 @@ export class AppmeshMeshSpecEgressFilterOutputReference extends cdktf.ComplexObj
 export interface AppmeshMeshSpec {
   /**
   * egress_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_mesh#egress_filter AppmeshMesh#egress_filter}
   */
   readonly egressFilter?: AppmeshMeshSpecEgressFilter;

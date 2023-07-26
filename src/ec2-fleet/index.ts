@@ -73,37 +73,37 @@ export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   readonly validUntil?: string;
   /**
   * fleet_instance_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#fleet_instance_set Ec2Fleet#fleet_instance_set}
   */
   readonly fleetInstanceSet?: Ec2FleetFleetInstanceSet[] | cdktf.IResolvable;
   /**
   * launch_template_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#launch_template_config Ec2Fleet#launch_template_config}
   */
   readonly launchTemplateConfig: Ec2FleetLaunchTemplateConfig[] | cdktf.IResolvable;
   /**
   * on_demand_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#on_demand_options Ec2Fleet#on_demand_options}
   */
   readonly onDemandOptions?: Ec2FleetOnDemandOptions;
   /**
   * spot_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#spot_options Ec2Fleet#spot_options}
   */
   readonly spotOptions?: Ec2FleetSpotOptions;
   /**
   * target_capacity_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#target_capacity_specification Ec2Fleet#target_capacity_specification}
   */
   readonly targetCapacitySpecification: Ec2FleetTargetCapacitySpecification;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#timeouts Ec2Fleet#timeouts}
   */
   readonly timeouts?: Ec2FleetTimeouts;
@@ -1283,55 +1283,55 @@ export interface Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements {
   readonly spotMaxPricePercentageOverLowestPrice?: number;
   /**
   * accelerator_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#accelerator_count Ec2Fleet#accelerator_count}
   */
   readonly acceleratorCount?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorCount;
   /**
   * accelerator_total_memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#accelerator_total_memory_mib Ec2Fleet#accelerator_total_memory_mib}
   */
   readonly acceleratorTotalMemoryMib?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsAcceleratorTotalMemoryMib;
   /**
   * baseline_ebs_bandwidth_mbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#baseline_ebs_bandwidth_mbps Ec2Fleet#baseline_ebs_bandwidth_mbps}
   */
   readonly baselineEbsBandwidthMbps?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps;
   /**
   * memory_gib_per_vcpu block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#memory_gib_per_vcpu Ec2Fleet#memory_gib_per_vcpu}
   */
   readonly memoryGibPerVcpu?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu;
   /**
   * memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#memory_mib Ec2Fleet#memory_mib}
   */
   readonly memoryMib: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib;
   /**
   * network_bandwidth_gbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#network_bandwidth_gbps Ec2Fleet#network_bandwidth_gbps}
   */
   readonly networkBandwidthGbps?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps;
   /**
   * network_interface_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#network_interface_count Ec2Fleet#network_interface_count}
   */
   readonly networkInterfaceCount?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount;
   /**
   * total_local_storage_gb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#total_local_storage_gb Ec2Fleet#total_local_storage_gb}
   */
   readonly totalLocalStorageGb?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb;
   /**
   * vcpu_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#vcpu_count Ec2Fleet#vcpu_count}
   */
   readonly vcpuCount: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount;
@@ -1922,7 +1922,7 @@ export interface Ec2FleetLaunchTemplateConfigOverride {
   readonly weightedCapacity?: number;
   /**
   * instance_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#instance_requirements Ec2Fleet#instance_requirements}
   */
   readonly instanceRequirements?: Ec2FleetLaunchTemplateConfigOverrideInstanceRequirements;
@@ -2159,13 +2159,13 @@ export class Ec2FleetLaunchTemplateConfigOverrideList extends cdktf.ComplexList 
 export interface Ec2FleetLaunchTemplateConfig {
   /**
   * launch_template_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#launch_template_specification Ec2Fleet#launch_template_specification}
   */
   readonly launchTemplateSpecification?: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification;
   /**
   * override block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#override Ec2Fleet#override}
   */
   readonly override?: Ec2FleetLaunchTemplateConfigOverride[] | cdktf.IResolvable;
@@ -2552,7 +2552,7 @@ export class Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputRefe
 export interface Ec2FleetSpotOptionsMaintenanceStrategies {
   /**
   * capacity_rebalance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#capacity_rebalance Ec2Fleet#capacity_rebalance}
   */
   readonly capacityRebalance?: Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance;
@@ -2631,7 +2631,7 @@ export interface Ec2FleetSpotOptions {
   readonly instancePoolsToUseCount?: number;
   /**
   * maintenance_strategies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_fleet#maintenance_strategies Ec2Fleet#maintenance_strategies}
   */
   readonly maintenanceStrategies?: Ec2FleetSpotOptionsMaintenanceStrategies;

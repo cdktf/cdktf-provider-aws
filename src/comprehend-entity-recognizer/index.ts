@@ -57,19 +57,19 @@ export interface ComprehendEntityRecognizerConfig extends cdktf.TerraformMetaArg
   readonly volumeKmsKeyId?: string;
   /**
   * input_data_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#input_data_config ComprehendEntityRecognizer#input_data_config}
   */
   readonly inputDataConfig: ComprehendEntityRecognizerInputDataConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#timeouts ComprehendEntityRecognizer#timeouts}
   */
   readonly timeouts?: ComprehendEntityRecognizerTimeouts;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#vpc_config ComprehendEntityRecognizer#vpc_config}
   */
   readonly vpcConfig?: ComprehendEntityRecognizerVpcConfig;
@@ -668,31 +668,31 @@ export interface ComprehendEntityRecognizerInputDataConfig {
   readonly dataFormat?: string;
   /**
   * annotations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#annotations ComprehendEntityRecognizer#annotations}
   */
   readonly annotations?: ComprehendEntityRecognizerInputDataConfigAnnotations;
   /**
   * augmented_manifests block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#augmented_manifests ComprehendEntityRecognizer#augmented_manifests}
   */
   readonly augmentedManifests?: ComprehendEntityRecognizerInputDataConfigAugmentedManifests[] | cdktf.IResolvable;
   /**
   * documents block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#documents ComprehendEntityRecognizer#documents}
   */
   readonly documents?: ComprehendEntityRecognizerInputDataConfigDocuments;
   /**
   * entity_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#entity_list ComprehendEntityRecognizer#entity_list}
   */
   readonly entityList?: ComprehendEntityRecognizerInputDataConfigEntityListStruct;
   /**
   * entity_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_entity_recognizer#entity_types ComprehendEntityRecognizer#entity_types}
   */
   readonly entityTypes: ComprehendEntityRecognizerInputDataConfigEntityTypes[] | cdktf.IResolvable;

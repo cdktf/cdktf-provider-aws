@@ -61,25 +61,25 @@ export interface ComprehendDocumentClassifierConfig extends cdktf.TerraformMetaA
   readonly volumeKmsKeyId?: string;
   /**
   * input_data_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_document_classifier#input_data_config ComprehendDocumentClassifier#input_data_config}
   */
   readonly inputDataConfig: ComprehendDocumentClassifierInputDataConfig;
   /**
   * output_data_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_document_classifier#output_data_config ComprehendDocumentClassifier#output_data_config}
   */
   readonly outputDataConfig?: ComprehendDocumentClassifierOutputDataConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_document_classifier#timeouts ComprehendDocumentClassifier#timeouts}
   */
   readonly timeouts?: ComprehendDocumentClassifierTimeouts;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_document_classifier#vpc_config ComprehendDocumentClassifier#vpc_config}
   */
   readonly vpcConfig?: ComprehendDocumentClassifierVpcConfig;
@@ -329,7 +329,7 @@ export interface ComprehendDocumentClassifierInputDataConfig {
   readonly testS3Uri?: string;
   /**
   * augmented_manifests block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/comprehend_document_classifier#augmented_manifests ComprehendDocumentClassifier#augmented_manifests}
   */
   readonly augmentedManifests?: ComprehendDocumentClassifierInputDataConfigAugmentedManifests[] | cdktf.IResolvable;

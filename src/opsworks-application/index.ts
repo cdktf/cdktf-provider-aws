@@ -77,19 +77,19 @@ export interface OpsworksApplicationConfig extends cdktf.TerraformMetaArguments 
   readonly type: string;
   /**
   * app_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_application#app_source OpsworksApplication#app_source}
   */
   readonly appSource?: OpsworksApplicationAppSource[] | cdktf.IResolvable;
   /**
   * environment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_application#environment OpsworksApplication#environment}
   */
   readonly environment?: OpsworksApplicationEnvironment[] | cdktf.IResolvable;
   /**
   * ssl_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_application#ssl_configuration OpsworksApplication#ssl_configuration}
   */
   readonly sslConfiguration?: OpsworksApplicationSslConfiguration[] | cdktf.IResolvable;

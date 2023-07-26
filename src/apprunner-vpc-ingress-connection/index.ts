@@ -37,7 +37,7 @@ export interface ApprunnerVpcIngressConnectionConfig extends cdktf.TerraformMeta
   readonly tagsAll?: { [key: string]: string };
   /**
   * ingress_vpc_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_vpc_ingress_connection#ingress_vpc_configuration ApprunnerVpcIngressConnection#ingress_vpc_configuration}
   */
   readonly ingressVpcConfiguration: ApprunnerVpcIngressConnectionIngressVpcConfiguration;

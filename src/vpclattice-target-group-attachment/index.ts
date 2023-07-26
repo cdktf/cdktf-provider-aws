@@ -25,13 +25,13 @@ export interface VpclatticeTargetGroupAttachmentConfig extends cdktf.TerraformMe
   readonly targetGroupIdentifier: string;
   /**
   * target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group_attachment#target VpclatticeTargetGroupAttachment#target}
   */
   readonly target: VpclatticeTargetGroupAttachmentTarget;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_target_group_attachment#timeouts VpclatticeTargetGroupAttachment#timeouts}
   */
   readonly timeouts?: VpclatticeTargetGroupAttachmentTimeouts;

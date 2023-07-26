@@ -41,13 +41,13 @@ export interface RumAppMonitorConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * app_monitor_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
   */
   readonly appMonitorConfiguration?: RumAppMonitorAppMonitorConfiguration;
   /**
   * custom_events block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rum_app_monitor#custom_events RumAppMonitor#custom_events}
   */
   readonly customEvents?: RumAppMonitorCustomEvents;

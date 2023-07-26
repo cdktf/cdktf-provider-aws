@@ -57,7 +57,7 @@ export interface DirectoryServiceRadiusSettingsConfig extends cdktf.TerraformMet
   readonly useSameUsername?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_radius_settings#timeouts DirectoryServiceRadiusSettings#timeouts}
   */
   readonly timeouts?: DirectoryServiceRadiusSettingsTimeouts;

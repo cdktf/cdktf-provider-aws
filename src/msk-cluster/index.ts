@@ -49,43 +49,43 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * broker_node_group_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#broker_node_group_info MskCluster#broker_node_group_info}
   */
   readonly brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo;
   /**
   * client_authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#client_authentication MskCluster#client_authentication}
   */
   readonly clientAuthentication?: MskClusterClientAuthentication;
   /**
   * configuration_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#configuration_info MskCluster#configuration_info}
   */
   readonly configurationInfo?: MskClusterConfigurationInfo;
   /**
   * encryption_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#encryption_info MskCluster#encryption_info}
   */
   readonly encryptionInfo?: MskClusterEncryptionInfo;
   /**
   * logging_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#logging_info MskCluster#logging_info}
   */
   readonly loggingInfo?: MskClusterLoggingInfo;
   /**
   * open_monitoring block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#open_monitoring MskCluster#open_monitoring}
   */
   readonly openMonitoring?: MskClusterOpenMonitoring;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#timeouts MskCluster#timeouts}
   */
   readonly timeouts?: MskClusterTimeouts;
@@ -158,7 +158,7 @@ export class MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccessOutputRefe
 export interface MskClusterBrokerNodeGroupInfoConnectivityInfo {
   /**
   * public_access block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#public_access MskCluster#public_access}
   */
   readonly publicAccess?: MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess;
@@ -321,7 +321,7 @@ export interface MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo {
   readonly volumeSize?: number;
   /**
   * provisioned_throughput block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#provisioned_throughput MskCluster#provisioned_throughput}
   */
   readonly provisionedThroughput?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughput;
@@ -411,7 +411,7 @@ export class MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoOutputReferen
 export interface MskClusterBrokerNodeGroupInfoStorageInfo {
   /**
   * ebs_storage_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#ebs_storage_info MskCluster#ebs_storage_info}
   */
   readonly ebsStorageInfo?: MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfo;
@@ -494,13 +494,13 @@ export interface MskClusterBrokerNodeGroupInfo {
   readonly securityGroups: string[];
   /**
   * connectivity_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#connectivity_info MskCluster#connectivity_info}
   */
   readonly connectivityInfo?: MskClusterBrokerNodeGroupInfoConnectivityInfo;
   /**
   * storage_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#storage_info MskCluster#storage_info}
   */
   readonly storageInfo?: MskClusterBrokerNodeGroupInfoStorageInfo;
@@ -834,13 +834,13 @@ export interface MskClusterClientAuthentication {
   readonly unauthenticated?: boolean | cdktf.IResolvable;
   /**
   * sasl block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#sasl MskCluster#sasl}
   */
   readonly sasl?: MskClusterClientAuthenticationSasl;
   /**
   * tls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#tls MskCluster#tls}
   */
   readonly tls?: MskClusterClientAuthenticationTls;
@@ -1135,7 +1135,7 @@ export interface MskClusterEncryptionInfo {
   readonly encryptionAtRestKmsKeyArn?: string;
   /**
   * encryption_in_transit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#encryption_in_transit MskCluster#encryption_in_transit}
   */
   readonly encryptionInTransit?: MskClusterEncryptionInfoEncryptionInTransit;
@@ -1519,19 +1519,19 @@ export class MskClusterLoggingInfoBrokerLogsS3OutputReference extends cdktf.Comp
 export interface MskClusterLoggingInfoBrokerLogs {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#cloudwatch_logs MskCluster#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: MskClusterLoggingInfoBrokerLogsCloudwatchLogs;
   /**
   * firehose block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#firehose MskCluster#firehose}
   */
   readonly firehose?: MskClusterLoggingInfoBrokerLogsFirehose;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#s3 MskCluster#s3}
   */
   readonly s3?: MskClusterLoggingInfoBrokerLogsS3;
@@ -1644,7 +1644,7 @@ export class MskClusterLoggingInfoBrokerLogsOutputReference extends cdktf.Comple
 export interface MskClusterLoggingInfo {
   /**
   * broker_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#broker_logs MskCluster#broker_logs}
   */
   readonly brokerLogs: MskClusterLoggingInfoBrokerLogs;
@@ -1832,13 +1832,13 @@ export class MskClusterOpenMonitoringPrometheusNodeExporterOutputReference exten
 export interface MskClusterOpenMonitoringPrometheus {
   /**
   * jmx_exporter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#jmx_exporter MskCluster#jmx_exporter}
   */
   readonly jmxExporter?: MskClusterOpenMonitoringPrometheusJmxExporter;
   /**
   * node_exporter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#node_exporter MskCluster#node_exporter}
   */
   readonly nodeExporter?: MskClusterOpenMonitoringPrometheusNodeExporter;
@@ -1928,7 +1928,7 @@ export class MskClusterOpenMonitoringPrometheusOutputReference extends cdktf.Com
 export interface MskClusterOpenMonitoring {
   /**
   * prometheus block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_cluster#prometheus MskCluster#prometheus}
   */
   readonly prometheus: MskClusterOpenMonitoringPrometheus;

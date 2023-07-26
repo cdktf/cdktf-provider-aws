@@ -77,7 +77,7 @@ export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
   readonly vpcPeeringConnectionId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route#timeouts DataAwsRoute#timeouts}
   */
   readonly timeouts?: DataAwsRouteTimeouts;

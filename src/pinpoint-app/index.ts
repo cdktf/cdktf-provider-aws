@@ -37,19 +37,19 @@ export interface PinpointAppConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * campaign_hook block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/pinpoint_app#campaign_hook PinpointApp#campaign_hook}
   */
   readonly campaignHook?: PinpointAppCampaignHook;
   /**
   * limits block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/pinpoint_app#limits PinpointApp#limits}
   */
   readonly limits?: PinpointAppLimits;
   /**
   * quiet_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/pinpoint_app#quiet_time PinpointApp#quiet_time}
   */
   readonly quietTime?: PinpointAppQuietTime;

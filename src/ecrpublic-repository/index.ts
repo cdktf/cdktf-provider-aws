@@ -37,13 +37,13 @@ export interface EcrpublicRepositoryConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * catalog_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
   */
   readonly catalogData?: EcrpublicRepositoryCatalogData;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
   */
   readonly timeouts?: EcrpublicRepositoryTimeouts;

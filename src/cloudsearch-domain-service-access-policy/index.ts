@@ -29,7 +29,7 @@ export interface CloudsearchDomainServiceAccessPolicyConfig extends cdktf.Terraf
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudsearch_domain_service_access_policy#timeouts CloudsearchDomainServiceAccessPolicy#timeouts}
   */
   readonly timeouts?: CloudsearchDomainServiceAccessPolicyTimeouts;

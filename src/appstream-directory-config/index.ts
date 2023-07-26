@@ -29,7 +29,7 @@ export interface AppstreamDirectoryConfigConfig extends cdktf.TerraformMetaArgum
   readonly organizationalUnitDistinguishedNames: string[];
   /**
   * service_account_credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_directory_config#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
   */
   readonly serviceAccountCredentials: AppstreamDirectoryConfigServiceAccountCredentials;

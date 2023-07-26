@@ -37,13 +37,13 @@ export interface BackupReportPlanConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * report_delivery_channel block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_report_plan#report_delivery_channel BackupReportPlan#report_delivery_channel}
   */
   readonly reportDeliveryChannel: BackupReportPlanReportDeliveryChannel;
   /**
   * report_setting block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_report_plan#report_setting BackupReportPlan#report_setting}
   */
   readonly reportSetting: BackupReportPlanReportSetting;

@@ -37,7 +37,7 @@ export interface Sesv2DedicatedIpPoolConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_dedicated_ip_pool#timeouts Sesv2DedicatedIpPool#timeouts}
   */
   readonly timeouts?: Sesv2DedicatedIpPoolTimeouts;

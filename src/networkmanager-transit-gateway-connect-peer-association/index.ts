@@ -37,7 +37,7 @@ export interface NetworkmanagerTransitGatewayConnectPeerAssociationConfig extend
   readonly transitGatewayConnectPeerArn: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_transit_gateway_connect_peer_association#timeouts NetworkmanagerTransitGatewayConnectPeerAssociation#timeouts}
   */
   readonly timeouts?: NetworkmanagerTransitGatewayConnectPeerAssociationTimeouts;

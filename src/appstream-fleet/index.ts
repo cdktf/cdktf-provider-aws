@@ -81,19 +81,19 @@ export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * compute_capacity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_fleet#compute_capacity AppstreamFleet#compute_capacity}
   */
   readonly computeCapacity: AppstreamFleetComputeCapacity;
   /**
   * domain_join_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_fleet#domain_join_info AppstreamFleet#domain_join_info}
   */
   readonly domainJoinInfo?: AppstreamFleetDomainJoinInfo;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_fleet#vpc_config AppstreamFleet#vpc_config}
   */
   readonly vpcConfig?: AppstreamFleetVpcConfig;

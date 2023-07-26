@@ -33,19 +33,19 @@ export interface MskServerlessClusterConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * client_authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
   */
   readonly clientAuthentication: MskServerlessClusterClientAuthentication;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
   */
   readonly timeouts?: MskServerlessClusterTimeouts;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
   */
   readonly vpcConfig: MskServerlessClusterVpcConfig[] | cdktf.IResolvable;
@@ -115,7 +115,7 @@ export class MskServerlessClusterClientAuthenticationSaslIamOutputReference exte
 export interface MskServerlessClusterClientAuthenticationSasl {
   /**
   * iam block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_serverless_cluster#iam MskServerlessCluster#iam}
   */
   readonly iam: MskServerlessClusterClientAuthenticationSaslIam;
@@ -179,7 +179,7 @@ export class MskServerlessClusterClientAuthenticationSaslOutputReference extends
 export interface MskServerlessClusterClientAuthentication {
   /**
   * sasl block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/msk_serverless_cluster#sasl MskServerlessCluster#sasl}
   */
   readonly sasl: MskServerlessClusterClientAuthenticationSasl;

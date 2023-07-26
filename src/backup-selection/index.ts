@@ -41,13 +41,13 @@ export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   readonly resources?: string[];
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#condition BackupSelection#condition}
   */
   readonly condition?: BackupSelectionCondition[] | cdktf.IResolvable;
   /**
   * selection_tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
   */
   readonly selectionTag?: BackupSelectionSelectionTag[] | cdktf.IResolvable;
@@ -527,25 +527,25 @@ export class BackupSelectionConditionStringNotLikeList extends cdktf.ComplexList
 export interface BackupSelectionCondition {
   /**
   * string_equals block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
   */
   readonly stringEquals?: BackupSelectionConditionStringEquals[] | cdktf.IResolvable;
   /**
   * string_like block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#string_like BackupSelection#string_like}
   */
   readonly stringLike?: BackupSelectionConditionStringLike[] | cdktf.IResolvable;
   /**
   * string_not_equals block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
   */
   readonly stringNotEquals?: BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable;
   /**
   * string_not_like block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
   */
   readonly stringNotLike?: BackupSelectionConditionStringNotLike[] | cdktf.IResolvable;

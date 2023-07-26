@@ -81,37 +81,37 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#launch_template EksNodeGroup#launch_template}
   */
   readonly launchTemplate?: EksNodeGroupLaunchTemplate;
   /**
   * remote_access block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#remote_access EksNodeGroup#remote_access}
   */
   readonly remoteAccess?: EksNodeGroupRemoteAccess;
   /**
   * scaling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#scaling_config EksNodeGroup#scaling_config}
   */
   readonly scalingConfig: EksNodeGroupScalingConfig;
   /**
   * taint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#taint EksNodeGroup#taint}
   */
   readonly taint?: EksNodeGroupTaint[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#timeouts EksNodeGroup#timeouts}
   */
   readonly timeouts?: EksNodeGroupTimeouts;
   /**
   * update_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_node_group#update_config EksNodeGroup#update_config}
   */
   readonly updateConfig?: EksNodeGroupUpdateConfig;

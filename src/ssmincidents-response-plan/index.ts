@@ -45,19 +45,19 @@ export interface SsmincidentsResponsePlanConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#action SsmincidentsResponsePlan#action}
   */
   readonly action?: SsmincidentsResponsePlanAction;
   /**
   * incident_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#incident_template SsmincidentsResponsePlan#incident_template}
   */
   readonly incidentTemplate: SsmincidentsResponsePlanIncidentTemplate;
   /**
   * integration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#integration SsmincidentsResponsePlan#integration}
   */
   readonly integration?: SsmincidentsResponsePlanIntegration;
@@ -203,7 +203,7 @@ export interface SsmincidentsResponsePlanActionSsmAutomation {
   readonly targetAccount?: string;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#parameter SsmincidentsResponsePlan#parameter}
   */
   readonly parameter?: SsmincidentsResponsePlanActionSsmAutomationParameter[] | cdktf.IResolvable;
@@ -411,7 +411,7 @@ export class SsmincidentsResponsePlanActionSsmAutomationList extends cdktf.Compl
 export interface SsmincidentsResponsePlanAction {
   /**
   * ssm_automation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#ssm_automation SsmincidentsResponsePlan#ssm_automation}
   */
   readonly ssmAutomation?: SsmincidentsResponsePlanActionSsmAutomation[] | cdktf.IResolvable;
@@ -592,7 +592,7 @@ export interface SsmincidentsResponsePlanIncidentTemplate {
   readonly title: string;
   /**
   * notification_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#notification_target SsmincidentsResponsePlan#notification_target}
   */
   readonly notificationTarget?: SsmincidentsResponsePlanIncidentTemplateNotificationTarget[] | cdktf.IResolvable;
@@ -910,7 +910,7 @@ export class SsmincidentsResponsePlanIntegrationPagerdutyList extends cdktf.Comp
 export interface SsmincidentsResponsePlanIntegration {
   /**
   * pagerduty block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmincidents_response_plan#pagerduty SsmincidentsResponsePlan#pagerduty}
   */
   readonly pagerduty?: SsmincidentsResponsePlanIntegrationPagerduty[] | cdktf.IResolvable;

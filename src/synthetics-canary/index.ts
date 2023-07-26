@@ -81,25 +81,25 @@ export interface SyntheticsCanaryConfig extends cdktf.TerraformMetaArguments {
   readonly zipFile?: string;
   /**
   * artifact_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_canary#artifact_config SyntheticsCanary#artifact_config}
   */
   readonly artifactConfig?: SyntheticsCanaryArtifactConfig;
   /**
   * run_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_canary#run_config SyntheticsCanary#run_config}
   */
   readonly runConfig?: SyntheticsCanaryRunConfig;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_canary#schedule SyntheticsCanary#schedule}
   */
   readonly schedule: SyntheticsCanarySchedule;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_canary#vpc_config SyntheticsCanary#vpc_config}
   */
   readonly vpcConfig?: SyntheticsCanaryVpcConfig;
@@ -278,7 +278,7 @@ export class SyntheticsCanaryArtifactConfigS3EncryptionOutputReference extends c
 export interface SyntheticsCanaryArtifactConfig {
   /**
   * s3_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/synthetics_canary#s3_encryption SyntheticsCanary#s3_encryption}
   */
   readonly s3Encryption?: SyntheticsCanaryArtifactConfigS3Encryption;

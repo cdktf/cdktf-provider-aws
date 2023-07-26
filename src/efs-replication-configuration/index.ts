@@ -25,13 +25,13 @@ export interface EfsReplicationConfigurationConfig extends cdktf.TerraformMetaAr
   readonly sourceFileSystemId: string;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/efs_replication_configuration#destination EfsReplicationConfiguration#destination}
   */
   readonly destination: EfsReplicationConfigurationDestination;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/efs_replication_configuration#timeouts EfsReplicationConfiguration#timeouts}
   */
   readonly timeouts?: EfsReplicationConfigurationTimeouts;

@@ -37,7 +37,7 @@ export interface DevicefarmTestGridProjectConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/devicefarm_test_grid_project#vpc_config DevicefarmTestGridProject#vpc_config}
   */
   readonly vpcConfig?: DevicefarmTestGridProjectVpcConfig;

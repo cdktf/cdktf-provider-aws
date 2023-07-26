@@ -33,13 +33,13 @@ export interface GluePartitionIndexConfig extends cdktf.TerraformMetaArguments {
   readonly tableName: string;
   /**
   * partition_index block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition_index#partition_index GluePartitionIndex#partition_index}
   */
   readonly partitionIndex: GluePartitionIndexPartitionIndex;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_partition_index#timeouts GluePartitionIndex#timeouts}
   */
   readonly timeouts?: GluePartitionIndexTimeouts;

@@ -37,7 +37,7 @@ export interface LambdaAliasConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * routing_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
   */
   readonly routingConfig?: LambdaAliasRoutingConfig;

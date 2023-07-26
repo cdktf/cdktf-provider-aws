@@ -33,7 +33,7 @@ export interface RdsClusterRoleAssociationConfig extends cdktf.TerraformMetaArgu
   readonly roleArn: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster_role_association#timeouts RdsClusterRoleAssociation#timeouts}
   */
   readonly timeouts?: RdsClusterRoleAssociationTimeouts;

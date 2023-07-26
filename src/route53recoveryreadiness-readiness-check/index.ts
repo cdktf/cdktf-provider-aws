@@ -37,7 +37,7 @@ export interface Route53RecoveryreadinessReadinessCheckConfig extends cdktf.Terr
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_readiness_check#timeouts Route53RecoveryreadinessReadinessCheck#timeouts}
   */
   readonly timeouts?: Route53RecoveryreadinessReadinessCheckTimeouts;

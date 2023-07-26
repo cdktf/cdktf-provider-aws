@@ -37,7 +37,7 @@ export interface GameliftAliasConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * routing_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/gamelift_alias#routing_strategy GameliftAlias#routing_strategy}
   */
   readonly routingStrategy: GameliftAliasRoutingStrategy;

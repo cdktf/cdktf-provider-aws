@@ -69,13 +69,13 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly waitForSuccessTimeoutSeconds?: number;
   /**
   * output_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_association#output_location SsmAssociation#output_location}
   */
   readonly outputLocation?: SsmAssociationOutputLocation;
   /**
   * targets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_association#targets SsmAssociation#targets}
   */
   readonly targets?: SsmAssociationTargets[] | cdktf.IResolvable;

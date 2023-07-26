@@ -33,7 +33,7 @@ export interface RouteTableAssociationConfig extends cdktf.TerraformMetaArgument
   readonly subnetId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route_table_association#timeouts RouteTableAssociation#timeouts}
   */
   readonly timeouts?: RouteTableAssociationTimeouts;

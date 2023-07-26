@@ -25,7 +25,7 @@ export interface ServicecatalogOrganizationsAccessConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_organizations_access#timeouts ServicecatalogOrganizationsAccess#timeouts}
   */
   readonly timeouts?: ServicecatalogOrganizationsAccessTimeouts;

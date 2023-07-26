@@ -29,7 +29,7 @@ export interface ResourcegroupsResourceConfig extends cdktf.TerraformMetaArgumen
   readonly resourceArn: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourcegroups_resource#timeouts ResourcegroupsResource#timeouts}
   */
   readonly timeouts?: ResourcegroupsResourceTimeouts;

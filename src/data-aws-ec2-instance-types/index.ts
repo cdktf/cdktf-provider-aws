@@ -21,13 +21,13 @@ export interface DataAwsEc2InstanceTypesConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_instance_types#filter DataAwsEc2InstanceTypes#filter}
   */
   readonly filter?: DataAwsEc2InstanceTypesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_instance_types#timeouts DataAwsEc2InstanceTypes#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypesTimeouts;

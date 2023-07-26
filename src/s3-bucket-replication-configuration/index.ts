@@ -33,7 +33,7 @@ export interface S3BucketReplicationConfigurationAConfig extends cdktf.Terraform
   readonly token?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#rule S3BucketReplicationConfigurationA#rule}
   */
   readonly rule: S3BucketReplicationConfigurationRule[] | cdktf.IResolvable;
@@ -293,7 +293,7 @@ export interface S3BucketReplicationConfigurationRuleDestinationMetrics {
   readonly status: string;
   /**
   * event_threshold block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#event_threshold S3BucketReplicationConfigurationA#event_threshold}
   */
   readonly eventThreshold?: S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold;
@@ -446,7 +446,7 @@ export interface S3BucketReplicationConfigurationRuleDestinationReplicationTime 
   readonly status: string;
   /**
   * time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#time S3BucketReplicationConfigurationA#time}
   */
   readonly time: S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime;
@@ -542,25 +542,25 @@ export interface S3BucketReplicationConfigurationRuleDestination {
   readonly storageClass?: string;
   /**
   * access_control_translation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#access_control_translation S3BucketReplicationConfigurationA#access_control_translation}
   */
   readonly accessControlTranslation?: S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation;
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#encryption_configuration S3BucketReplicationConfigurationA#encryption_configuration}
   */
   readonly encryptionConfiguration?: S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration;
   /**
   * metrics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#metrics S3BucketReplicationConfigurationA#metrics}
   */
   readonly metrics?: S3BucketReplicationConfigurationRuleDestinationMetrics;
   /**
   * replication_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#replication_time S3BucketReplicationConfigurationA#replication_time}
   */
   readonly replicationTime?: S3BucketReplicationConfigurationRuleDestinationReplicationTime;
@@ -1006,13 +1006,13 @@ export interface S3BucketReplicationConfigurationRuleFilter {
   readonly prefix?: string;
   /**
   * and block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#and S3BucketReplicationConfigurationA#and}
   */
   readonly and?: S3BucketReplicationConfigurationRuleFilterAnd;
   /**
   * tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#tag S3BucketReplicationConfigurationA#tag}
   */
   readonly tag?: S3BucketReplicationConfigurationRuleFilterTag;
@@ -1249,13 +1249,13 @@ export class S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEn
 export interface S3BucketReplicationConfigurationRuleSourceSelectionCriteria {
   /**
   * replica_modifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#replica_modifications S3BucketReplicationConfigurationA#replica_modifications}
   */
   readonly replicaModifications?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications;
   /**
   * sse_kms_encrypted_objects block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#sse_kms_encrypted_objects S3BucketReplicationConfigurationA#sse_kms_encrypted_objects}
   */
   readonly sseKmsEncryptedObjects?: S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects;
@@ -1364,31 +1364,31 @@ export interface S3BucketReplicationConfigurationRule {
   readonly status: string;
   /**
   * delete_marker_replication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#delete_marker_replication S3BucketReplicationConfigurationA#delete_marker_replication}
   */
   readonly deleteMarkerReplication?: S3BucketReplicationConfigurationRuleDeleteMarkerReplication;
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#destination S3BucketReplicationConfigurationA#destination}
   */
   readonly destination: S3BucketReplicationConfigurationRuleDestination;
   /**
   * existing_object_replication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#existing_object_replication S3BucketReplicationConfigurationA#existing_object_replication}
   */
   readonly existingObjectReplication?: S3BucketReplicationConfigurationRuleExistingObjectReplication;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#filter S3BucketReplicationConfigurationA#filter}
   */
   readonly filter?: S3BucketReplicationConfigurationRuleFilter;
   /**
   * source_selection_criteria block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_replication_configuration#source_selection_criteria S3BucketReplicationConfigurationA#source_selection_criteria}
   */
   readonly sourceSelectionCriteria?: S3BucketReplicationConfigurationRuleSourceSelectionCriteria;

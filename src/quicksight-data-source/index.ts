@@ -45,31 +45,31 @@ export interface QuicksightDataSourceConfig extends cdktf.TerraformMetaArguments
   readonly type: string;
   /**
   * credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#credentials QuicksightDataSource#credentials}
   */
   readonly credentials?: QuicksightDataSourceCredentials;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#parameters QuicksightDataSource#parameters}
   */
   readonly parameters: QuicksightDataSourceParameters;
   /**
   * permission block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#permission QuicksightDataSource#permission}
   */
   readonly permission?: QuicksightDataSourcePermission[] | cdktf.IResolvable;
   /**
   * ssl_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#ssl_properties QuicksightDataSource#ssl_properties}
   */
   readonly sslProperties?: QuicksightDataSourceSslProperties;
   /**
   * vpc_connection_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
   */
   readonly vpcConnectionProperties?: QuicksightDataSourceVpcConnectionProperties;
@@ -167,7 +167,7 @@ export interface QuicksightDataSourceCredentials {
   readonly copySourceArn?: string;
   /**
   * credential_pair block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#credential_pair QuicksightDataSource#credential_pair}
   */
   readonly credentialPair?: QuicksightDataSourceCredentialsCredentialPair;
@@ -1593,7 +1593,7 @@ export class QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
 export interface QuicksightDataSourceParametersS3 {
   /**
   * manifest_file_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#manifest_file_location QuicksightDataSource#manifest_file_location}
   */
   readonly manifestFileLocation: QuicksightDataSourceParametersS3ManifestFileLocation;
@@ -2221,121 +2221,121 @@ export class QuicksightDataSourceParametersTwitterOutputReference extends cdktf.
 export interface QuicksightDataSourceParameters {
   /**
   * amazon_elasticsearch block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#amazon_elasticsearch QuicksightDataSource#amazon_elasticsearch}
   */
   readonly amazonElasticsearch?: QuicksightDataSourceParametersAmazonElasticsearch;
   /**
   * athena block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#athena QuicksightDataSource#athena}
   */
   readonly athena?: QuicksightDataSourceParametersAthena;
   /**
   * aurora block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#aurora QuicksightDataSource#aurora}
   */
   readonly aurora?: QuicksightDataSourceParametersAurora;
   /**
   * aurora_postgresql block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#aurora_postgresql QuicksightDataSource#aurora_postgresql}
   */
   readonly auroraPostgresql?: QuicksightDataSourceParametersAuroraPostgresql;
   /**
   * aws_iot_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#aws_iot_analytics QuicksightDataSource#aws_iot_analytics}
   */
   readonly awsIotAnalytics?: QuicksightDataSourceParametersAwsIotAnalytics;
   /**
   * jira block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#jira QuicksightDataSource#jira}
   */
   readonly jira?: QuicksightDataSourceParametersJira;
   /**
   * maria_db block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#maria_db QuicksightDataSource#maria_db}
   */
   readonly mariaDb?: QuicksightDataSourceParametersMariaDb;
   /**
   * mysql block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#mysql QuicksightDataSource#mysql}
   */
   readonly mysql?: QuicksightDataSourceParametersMysql;
   /**
   * oracle block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#oracle QuicksightDataSource#oracle}
   */
   readonly oracle?: QuicksightDataSourceParametersOracle;
   /**
   * postgresql block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#postgresql QuicksightDataSource#postgresql}
   */
   readonly postgresql?: QuicksightDataSourceParametersPostgresql;
   /**
   * presto block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#presto QuicksightDataSource#presto}
   */
   readonly presto?: QuicksightDataSourceParametersPresto;
   /**
   * rds block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#rds QuicksightDataSource#rds}
   */
   readonly rds?: QuicksightDataSourceParametersRds;
   /**
   * redshift block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#redshift QuicksightDataSource#redshift}
   */
   readonly redshift?: QuicksightDataSourceParametersRedshift;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#s3 QuicksightDataSource#s3}
   */
   readonly s3?: QuicksightDataSourceParametersS3;
   /**
   * service_now block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#service_now QuicksightDataSource#service_now}
   */
   readonly serviceNow?: QuicksightDataSourceParametersServiceNow;
   /**
   * snowflake block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#snowflake QuicksightDataSource#snowflake}
   */
   readonly snowflake?: QuicksightDataSourceParametersSnowflake;
   /**
   * spark block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#spark QuicksightDataSource#spark}
   */
   readonly spark?: QuicksightDataSourceParametersSpark;
   /**
   * sql_server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#sql_server QuicksightDataSource#sql_server}
   */
   readonly sqlServer?: QuicksightDataSourceParametersSqlServer;
   /**
   * teradata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#teradata QuicksightDataSource#teradata}
   */
   readonly teradata?: QuicksightDataSourceParametersTeradata;
   /**
   * twitter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_data_source#twitter QuicksightDataSource#twitter}
   */
   readonly twitter?: QuicksightDataSourceParametersTwitter;

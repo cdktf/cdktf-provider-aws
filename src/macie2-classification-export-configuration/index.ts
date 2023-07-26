@@ -21,7 +21,7 @@ export interface Macie2ClassificationExportConfigurationConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * s3_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_classification_export_configuration#s3_destination Macie2ClassificationExportConfiguration#s3_destination}
   */
   readonly s3Destination?: Macie2ClassificationExportConfigurationS3Destination;

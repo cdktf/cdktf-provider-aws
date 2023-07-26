@@ -37,7 +37,7 @@ export interface KmsCustomKeyStoreConfig extends cdktf.TerraformMetaArguments {
   readonly trustAnchorCertificate: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kms_custom_key_store#timeouts KmsCustomKeyStore#timeouts}
   */
   readonly timeouts?: KmsCustomKeyStoreTimeouts;

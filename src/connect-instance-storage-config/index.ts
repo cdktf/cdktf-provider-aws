@@ -29,7 +29,7 @@ export interface ConnectInstanceStorageConfigConfig extends cdktf.TerraformMetaA
   readonly resourceType: string;
   /**
   * storage_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#storage_config ConnectInstanceStorageConfig#storage_config}
   */
   readonly storageConfig: ConnectInstanceStorageConfigStorageConfig;
@@ -255,7 +255,7 @@ export interface ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConf
   readonly retentionPeriodHours: number;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#encryption_config ConnectInstanceStorageConfig#encryption_config}
   */
   readonly encryptionConfig: ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig;
@@ -453,7 +453,7 @@ export interface ConnectInstanceStorageConfigStorageConfigS3Config {
   readonly bucketPrefix: string;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#encryption_config ConnectInstanceStorageConfig#encryption_config}
   */
   readonly encryptionConfig?: ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig;
@@ -564,25 +564,25 @@ export interface ConnectInstanceStorageConfigStorageConfig {
   readonly storageType: string;
   /**
   * kinesis_firehose_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#kinesis_firehose_config ConnectInstanceStorageConfig#kinesis_firehose_config}
   */
   readonly kinesisFirehoseConfig?: ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig;
   /**
   * kinesis_stream_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#kinesis_stream_config ConnectInstanceStorageConfig#kinesis_stream_config}
   */
   readonly kinesisStreamConfig?: ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig;
   /**
   * kinesis_video_stream_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#kinesis_video_stream_config ConnectInstanceStorageConfig#kinesis_video_stream_config}
   */
   readonly kinesisVideoStreamConfig?: ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig;
   /**
   * s3_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_instance_storage_config#s3_config ConnectInstanceStorageConfig#s3_config}
   */
   readonly s3Config?: ConnectInstanceStorageConfigStorageConfigS3Config;

@@ -73,67 +73,67 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * artifacts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#artifacts CodebuildProject#artifacts}
   */
   readonly artifacts: CodebuildProjectArtifacts;
   /**
   * build_batch_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#build_batch_config CodebuildProject#build_batch_config}
   */
   readonly buildBatchConfig?: CodebuildProjectBuildBatchConfig;
   /**
   * cache block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#cache CodebuildProject#cache}
   */
   readonly cache?: CodebuildProjectCache;
   /**
   * environment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#environment CodebuildProject#environment}
   */
   readonly environment: CodebuildProjectEnvironment;
   /**
   * file_system_locations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#file_system_locations CodebuildProject#file_system_locations}
   */
   readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[] | cdktf.IResolvable;
   /**
   * logs_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#logs_config CodebuildProject#logs_config}
   */
   readonly logsConfig?: CodebuildProjectLogsConfig;
   /**
   * secondary_artifacts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#secondary_artifacts CodebuildProject#secondary_artifacts}
   */
   readonly secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[] | cdktf.IResolvable;
   /**
   * secondary_source_version block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#secondary_source_version CodebuildProject#secondary_source_version}
   */
   readonly secondarySourceVersion?: CodebuildProjectSecondarySourceVersion[] | cdktf.IResolvable;
   /**
   * secondary_sources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#secondary_sources CodebuildProject#secondary_sources}
   */
   readonly secondarySources?: CodebuildProjectSecondarySources[] | cdktf.IResolvable;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#source CodebuildProject#source}
   */
   readonly source: CodebuildProjectSource;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#vpc_config CodebuildProject#vpc_config}
   */
   readonly vpcConfig?: CodebuildProjectVpcConfig;
@@ -550,7 +550,7 @@ export interface CodebuildProjectBuildBatchConfig {
   readonly timeoutInMins?: number;
   /**
   * restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#restrictions CodebuildProject#restrictions}
   */
   readonly restrictions?: CodebuildProjectBuildBatchConfigRestrictions;
@@ -1057,13 +1057,13 @@ export interface CodebuildProjectEnvironment {
   readonly type: string;
   /**
   * environment_variable block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#environment_variable CodebuildProject#environment_variable}
   */
   readonly environmentVariable?: CodebuildProjectEnvironmentEnvironmentVariable[] | cdktf.IResolvable;
   /**
   * registry_credential block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#registry_credential CodebuildProject#registry_credential}
   */
   readonly registryCredential?: CodebuildProjectEnvironmentRegistryCredential;
@@ -1752,13 +1752,13 @@ export class CodebuildProjectLogsConfigS3LogsOutputReference extends cdktf.Compl
 export interface CodebuildProjectLogsConfig {
   /**
   * cloudwatch_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#cloudwatch_logs CodebuildProject#cloudwatch_logs}
   */
   readonly cloudwatchLogs?: CodebuildProjectLogsConfigCloudwatchLogs;
   /**
   * s3_logs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#s3_logs CodebuildProject#s3_logs}
   */
   readonly s3Logs?: CodebuildProjectLogsConfigS3Logs;
@@ -2482,13 +2482,13 @@ export interface CodebuildProjectSecondarySources {
   readonly type: string;
   /**
   * build_status_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#build_status_config CodebuildProject#build_status_config}
   */
   readonly buildStatusConfig?: CodebuildProjectSecondarySourcesBuildStatusConfig;
   /**
   * git_submodules_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#git_submodules_config CodebuildProject#git_submodules_config}
   */
   readonly gitSubmodulesConfig?: CodebuildProjectSecondarySourcesGitSubmodulesConfig;
@@ -2943,13 +2943,13 @@ export interface CodebuildProjectSource {
   readonly type: string;
   /**
   * build_status_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#build_status_config CodebuildProject#build_status_config}
   */
   readonly buildStatusConfig?: CodebuildProjectSourceBuildStatusConfig;
   /**
   * git_submodules_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codebuild_project#git_submodules_config CodebuildProject#git_submodules_config}
   */
   readonly gitSubmodulesConfig?: CodebuildProjectSourceGitSubmodulesConfig;

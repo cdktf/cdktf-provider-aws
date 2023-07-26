@@ -29,13 +29,13 @@ export interface MedialiveInputSecurityGroupConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input_security_group#timeouts MedialiveInputSecurityGroup#timeouts}
   */
   readonly timeouts?: MedialiveInputSecurityGroupTimeouts;
   /**
   * whitelist_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input_security_group#whitelist_rules MedialiveInputSecurityGroup#whitelist_rules}
   */
   readonly whitelistRules: MedialiveInputSecurityGroupWhitelistRules[] | cdktf.IResolvable;

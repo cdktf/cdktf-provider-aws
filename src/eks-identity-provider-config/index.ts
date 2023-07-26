@@ -33,13 +33,13 @@ export interface EksIdentityProviderConfigConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_identity_provider_config#oidc EksIdentityProviderConfig#oidc}
   */
   readonly oidc: EksIdentityProviderConfigOidc;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_identity_provider_config#timeouts EksIdentityProviderConfig#timeouts}
   */
   readonly timeouts?: EksIdentityProviderConfigTimeouts;

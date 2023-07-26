@@ -41,7 +41,7 @@ export interface ConfigDeliveryChannelConfig extends cdktf.TerraformMetaArgument
   readonly snsTopicArn?: string;
   /**
   * snapshot_delivery_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_delivery_channel#snapshot_delivery_properties ConfigDeliveryChannel#snapshot_delivery_properties}
   */
   readonly snapshotDeliveryProperties?: ConfigDeliveryChannelSnapshotDeliveryProperties;

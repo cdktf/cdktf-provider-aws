@@ -33,7 +33,7 @@ export interface NetworkmanagerLinkAssociationConfig extends cdktf.TerraformMeta
   readonly linkId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_link_association#timeouts NetworkmanagerLinkAssociation#timeouts}
   */
   readonly timeouts?: NetworkmanagerLinkAssociationTimeouts;

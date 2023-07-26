@@ -29,7 +29,7 @@ export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArgu
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/main_route_table_association#timeouts MainRouteTableAssociation#timeouts}
   */
   readonly timeouts?: MainRouteTableAssociationTimeouts;

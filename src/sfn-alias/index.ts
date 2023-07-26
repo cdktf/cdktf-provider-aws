@@ -29,13 +29,13 @@ export interface SfnAliasConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * routing_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sfn_alias#routing_configuration SfnAlias#routing_configuration}
   */
   readonly routingConfiguration: SfnAliasRoutingConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sfn_alias#timeouts SfnAlias#timeouts}
   */
   readonly timeouts?: SfnAliasTimeouts;

@@ -29,7 +29,7 @@ export interface ConfigConfigurationRecorderConfig extends cdktf.TerraformMetaAr
   readonly roleArn: string;
   /**
   * recording_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
   */
   readonly recordingGroup?: ConfigConfigurationRecorderRecordingGroup;
@@ -243,13 +243,13 @@ export interface ConfigConfigurationRecorderRecordingGroup {
   readonly resourceTypes?: string[];
   /**
   * exclusion_by_resource_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
   */
   readonly exclusionByResourceTypes?: ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes[] | cdktf.IResolvable;
   /**
   * recording_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
   */
   readonly recordingStrategy?: ConfigConfigurationRecorderRecordingGroupRecordingStrategy[] | cdktf.IResolvable;

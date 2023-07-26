@@ -33,7 +33,7 @@ export interface SsmcontactsContactChannelConfig extends cdktf.TerraformMetaArgu
   readonly type: string;
   /**
   * delivery_address block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssmcontacts_contact_channel#delivery_address SsmcontactsContactChannel#delivery_address}
   */
   readonly deliveryAddress: SsmcontactsContactChannelDeliveryAddress;

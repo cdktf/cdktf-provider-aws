@@ -29,7 +29,7 @@ export interface SnapshotCreateVolumePermissionConfig extends cdktf.TerraformMet
   readonly snapshotId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/snapshot_create_volume_permission#timeouts SnapshotCreateVolumePermission#timeouts}
   */
   readonly timeouts?: SnapshotCreateVolumePermissionTimeouts;

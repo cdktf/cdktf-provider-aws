@@ -65,7 +65,7 @@ export interface EipConfig extends cdktf.TerraformMetaArguments {
   readonly vpc?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eip#timeouts Eip#timeouts}
   */
   readonly timeouts?: EipTimeouts;

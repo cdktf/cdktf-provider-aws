@@ -25,19 +25,19 @@ export interface LightsailContainerServiceDeploymentVersionConfig extends cdktf.
   readonly serviceName: string;
   /**
   * container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service_deployment_version#container LightsailContainerServiceDeploymentVersion#container}
   */
   readonly container: LightsailContainerServiceDeploymentVersionContainer[] | cdktf.IResolvable;
   /**
   * public_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service_deployment_version#public_endpoint LightsailContainerServiceDeploymentVersion#public_endpoint}
   */
   readonly publicEndpoint?: LightsailContainerServiceDeploymentVersionPublicEndpoint;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service_deployment_version#timeouts LightsailContainerServiceDeploymentVersion#timeouts}
   */
   readonly timeouts?: LightsailContainerServiceDeploymentVersionTimeouts;
@@ -452,7 +452,7 @@ export interface LightsailContainerServiceDeploymentVersionPublicEndpoint {
   readonly containerPort: number;
   /**
   * health_check block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_container_service_deployment_version#health_check LightsailContainerServiceDeploymentVersion#health_check}
   */
   readonly healthCheck: LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheck;

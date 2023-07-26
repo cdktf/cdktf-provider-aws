@@ -29,13 +29,13 @@ export interface DataAwsVpcDhcpOptionsConfig extends cdktf.TerraformMetaArgument
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_dhcp_options#filter DataAwsVpcDhcpOptions#filter}
   */
   readonly filter?: DataAwsVpcDhcpOptionsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_dhcp_options#timeouts DataAwsVpcDhcpOptions#timeouts}
   */
   readonly timeouts?: DataAwsVpcDhcpOptionsTimeouts;

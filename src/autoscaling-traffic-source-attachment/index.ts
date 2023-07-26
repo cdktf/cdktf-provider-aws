@@ -25,13 +25,13 @@ export interface AutoscalingTrafficSourceAttachmentConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_traffic_source_attachment#timeouts AutoscalingTrafficSourceAttachment#timeouts}
   */
   readonly timeouts?: AutoscalingTrafficSourceAttachmentTimeouts;
   /**
   * traffic_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_traffic_source_attachment#traffic_source AutoscalingTrafficSourceAttachment#traffic_source}
   */
   readonly trafficSource?: AutoscalingTrafficSourceAttachmentTrafficSource;

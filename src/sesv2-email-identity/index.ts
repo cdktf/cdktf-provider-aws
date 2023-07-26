@@ -37,7 +37,7 @@ export interface Sesv2EmailIdentityConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * dkim_signing_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_email_identity#dkim_signing_attributes Sesv2EmailIdentity#dkim_signing_attributes}
   */
   readonly dkimSigningAttributes?: Sesv2EmailIdentityDkimSigningAttributes;

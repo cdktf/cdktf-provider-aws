@@ -69,19 +69,19 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   readonly type?: string;
   /**
   * connect_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
   */
   readonly connectSettings?: DirectoryServiceDirectoryConnectSettings;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
   */
   readonly timeouts?: DirectoryServiceDirectoryTimeouts;
   /**
   * vpc_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
   */
   readonly vpcSettings?: DirectoryServiceDirectoryVpcSettings;

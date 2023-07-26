@@ -33,13 +33,13 @@ export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends cdktf
   readonly transitGatewayId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment#filter DataAwsEc2TransitGatewayDxGatewayAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment#timeouts DataAwsEc2TransitGatewayDxGatewayAttachment#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts;

@@ -57,13 +57,13 @@ export interface RedshiftserverlessWorkgroupConfig extends cdktf.TerraformMetaAr
   readonly workgroupName: string;
   /**
   * config_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshiftserverless_workgroup#config_parameter RedshiftserverlessWorkgroup#config_parameter}
   */
   readonly configParameter?: RedshiftserverlessWorkgroupConfigParameter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/redshiftserverless_workgroup#timeouts RedshiftserverlessWorkgroup#timeouts}
   */
   readonly timeouts?: RedshiftserverlessWorkgroupTimeouts;

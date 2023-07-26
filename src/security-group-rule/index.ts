@@ -65,7 +65,7 @@ export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/security_group_rule#timeouts SecurityGroupRule#timeouts}
   */
   readonly timeouts?: SecurityGroupRuleTimeouts;

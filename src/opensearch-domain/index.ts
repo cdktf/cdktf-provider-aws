@@ -45,79 +45,79 @@ export interface OpensearchDomainConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_security_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#advanced_security_options OpensearchDomain#advanced_security_options}
   */
   readonly advancedSecurityOptions?: OpensearchDomainAdvancedSecurityOptions;
   /**
   * auto_tune_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#auto_tune_options OpensearchDomain#auto_tune_options}
   */
   readonly autoTuneOptions?: OpensearchDomainAutoTuneOptions;
   /**
   * cluster_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#cluster_config OpensearchDomain#cluster_config}
   */
   readonly clusterConfig?: OpensearchDomainClusterConfig;
   /**
   * cognito_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#cognito_options OpensearchDomain#cognito_options}
   */
   readonly cognitoOptions?: OpensearchDomainCognitoOptions;
   /**
   * domain_endpoint_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#domain_endpoint_options OpensearchDomain#domain_endpoint_options}
   */
   readonly domainEndpointOptions?: OpensearchDomainDomainEndpointOptions;
   /**
   * ebs_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#ebs_options OpensearchDomain#ebs_options}
   */
   readonly ebsOptions?: OpensearchDomainEbsOptions;
   /**
   * encrypt_at_rest block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#encrypt_at_rest OpensearchDomain#encrypt_at_rest}
   */
   readonly encryptAtRest?: OpensearchDomainEncryptAtRest;
   /**
   * log_publishing_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#log_publishing_options OpensearchDomain#log_publishing_options}
   */
   readonly logPublishingOptions?: OpensearchDomainLogPublishingOptions[] | cdktf.IResolvable;
   /**
   * node_to_node_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#node_to_node_encryption OpensearchDomain#node_to_node_encryption}
   */
   readonly nodeToNodeEncryption?: OpensearchDomainNodeToNodeEncryption;
   /**
   * off_peak_window_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#off_peak_window_options OpensearchDomain#off_peak_window_options}
   */
   readonly offPeakWindowOptions?: OpensearchDomainOffPeakWindowOptions;
   /**
   * snapshot_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#snapshot_options OpensearchDomain#snapshot_options}
   */
   readonly snapshotOptions?: OpensearchDomainSnapshotOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#timeouts OpensearchDomain#timeouts}
   */
   readonly timeouts?: OpensearchDomainTimeouts;
   /**
   * vpc_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#vpc_options OpensearchDomain#vpc_options}
   */
   readonly vpcOptions?: OpensearchDomainVpcOptions;
@@ -256,7 +256,7 @@ export interface OpensearchDomainAdvancedSecurityOptions {
   readonly internalUserDatabaseEnabled?: boolean | cdktf.IResolvable;
   /**
   * master_user_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#master_user_options OpensearchDomain#master_user_options}
   */
   readonly masterUserOptions?: OpensearchDomainAdvancedSecurityOptionsMasterUserOptions;
@@ -483,7 +483,7 @@ export interface OpensearchDomainAutoTuneOptionsMaintenanceSchedule {
   readonly startAt: string;
   /**
   * duration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#duration OpensearchDomain#duration}
   */
   readonly duration: OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration;
@@ -627,7 +627,7 @@ export interface OpensearchDomainAutoTuneOptions {
   readonly rollbackOnDisable?: string;
   /**
   * maintenance_schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#maintenance_schedule OpensearchDomain#maintenance_schedule}
   */
   readonly maintenanceSchedule?: OpensearchDomainAutoTuneOptionsMaintenanceSchedule[] | cdktf.IResolvable;
@@ -903,13 +903,13 @@ export interface OpensearchDomainClusterConfig {
   readonly zoneAwarenessEnabled?: boolean | cdktf.IResolvable;
   /**
   * cold_storage_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#cold_storage_options OpensearchDomain#cold_storage_options}
   */
   readonly coldStorageOptions?: OpensearchDomainClusterConfigColdStorageOptions;
   /**
   * zone_awareness_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#zone_awareness_config OpensearchDomain#zone_awareness_config}
   */
   readonly zoneAwarenessConfig?: OpensearchDomainClusterConfigZoneAwarenessConfig;
@@ -2074,7 +2074,7 @@ export class OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOut
 export interface OpensearchDomainOffPeakWindowOptionsOffPeakWindow {
   /**
   * window_start_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#window_start_time OpensearchDomain#window_start_time}
   */
   readonly windowStartTime?: OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime;
@@ -2145,7 +2145,7 @@ export interface OpensearchDomainOffPeakWindowOptions {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * off_peak_window block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain#off_peak_window OpensearchDomain#off_peak_window}
   */
   readonly offPeakWindow?: OpensearchDomainOffPeakWindowOptionsOffPeakWindow;

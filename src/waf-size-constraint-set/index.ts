@@ -25,7 +25,7 @@ export interface WafSizeConstraintSetConfig extends cdktf.TerraformMetaArguments
   readonly name: string;
   /**
   * size_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/waf_size_constraint_set#size_constraints WafSizeConstraintSet#size_constraints}
   */
   readonly sizeConstraints?: WafSizeConstraintSetSizeConstraints[] | cdktf.IResolvable;
@@ -134,7 +134,7 @@ export interface WafSizeConstraintSetSizeConstraints {
   readonly textTransformation: string;
   /**
   * field_to_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/waf_size_constraint_set#field_to_match WafSizeConstraintSet#field_to_match}
   */
   readonly fieldToMatch: WafSizeConstraintSetSizeConstraintsFieldToMatch;

@@ -41,7 +41,7 @@ export interface CloudfrontCachePolicyConfig extends cdktf.TerraformMetaArgument
   readonly name: string;
   /**
   * parameters_in_cache_key_and_forwarded_to_origin block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#parameters_in_cache_key_and_forwarded_to_origin CloudfrontCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
   */
   readonly parametersInCacheKeyAndForwardedToOrigin: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin;
@@ -118,7 +118,7 @@ export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCo
   readonly cookieBehavior: string;
   /**
   * cookies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#cookies CloudfrontCachePolicy#cookies}
   */
   readonly cookies?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies;
@@ -274,7 +274,7 @@ export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHe
   readonly headerBehavior?: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#headers CloudfrontCachePolicy#headers}
   */
   readonly headers?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders;
@@ -433,7 +433,7 @@ export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQu
   readonly queryStringBehavior: string;
   /**
   * query_strings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#query_strings CloudfrontCachePolicy#query_strings}
   */
   readonly queryStrings?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings;
@@ -528,19 +528,19 @@ export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin {
   readonly enableAcceptEncodingGzip?: boolean | cdktf.IResolvable;
   /**
   * cookies_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#cookies_config CloudfrontCachePolicy#cookies_config}
   */
   readonly cookiesConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfig;
   /**
   * headers_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#headers_config CloudfrontCachePolicy#headers_config}
   */
   readonly headersConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfig;
   /**
   * query_strings_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_cache_policy#query_strings_config CloudfrontCachePolicy#query_strings_config}
   */
   readonly queryStringsConfig: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfig;

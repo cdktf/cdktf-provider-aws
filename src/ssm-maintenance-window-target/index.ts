@@ -41,7 +41,7 @@ export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArg
   readonly windowId: string;
   /**
   * targets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_maintenance_window_target#targets SsmMaintenanceWindowTarget#targets}
   */
   readonly targets: SsmMaintenanceWindowTargetTargets[] | cdktf.IResolvable;

@@ -97,115 +97,115 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSecurityGroupIds?: string[];
   /**
   * block_device_mappings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#block_device_mappings LaunchTemplate#block_device_mappings}
   */
   readonly blockDeviceMappings?: LaunchTemplateBlockDeviceMappings[] | cdktf.IResolvable;
   /**
   * capacity_reservation_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#capacity_reservation_specification LaunchTemplate#capacity_reservation_specification}
   */
   readonly capacityReservationSpecification?: LaunchTemplateCapacityReservationSpecification;
   /**
   * cpu_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#cpu_options LaunchTemplate#cpu_options}
   */
   readonly cpuOptions?: LaunchTemplateCpuOptions;
   /**
   * credit_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#credit_specification LaunchTemplate#credit_specification}
   */
   readonly creditSpecification?: LaunchTemplateCreditSpecification;
   /**
   * elastic_gpu_specifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#elastic_gpu_specifications LaunchTemplate#elastic_gpu_specifications}
   */
   readonly elasticGpuSpecifications?: LaunchTemplateElasticGpuSpecifications[] | cdktf.IResolvable;
   /**
   * elastic_inference_accelerator block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#elastic_inference_accelerator LaunchTemplate#elastic_inference_accelerator}
   */
   readonly elasticInferenceAccelerator?: LaunchTemplateElasticInferenceAccelerator;
   /**
   * enclave_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#enclave_options LaunchTemplate#enclave_options}
   */
   readonly enclaveOptions?: LaunchTemplateEnclaveOptions;
   /**
   * hibernation_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#hibernation_options LaunchTemplate#hibernation_options}
   */
   readonly hibernationOptions?: LaunchTemplateHibernationOptions;
   /**
   * iam_instance_profile block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#iam_instance_profile LaunchTemplate#iam_instance_profile}
   */
   readonly iamInstanceProfile?: LaunchTemplateIamInstanceProfile;
   /**
   * instance_market_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#instance_market_options LaunchTemplate#instance_market_options}
   */
   readonly instanceMarketOptions?: LaunchTemplateInstanceMarketOptions;
   /**
   * instance_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#instance_requirements LaunchTemplate#instance_requirements}
   */
   readonly instanceRequirements?: LaunchTemplateInstanceRequirements;
   /**
   * license_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#license_specification LaunchTemplate#license_specification}
   */
   readonly licenseSpecification?: LaunchTemplateLicenseSpecification[] | cdktf.IResolvable;
   /**
   * maintenance_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#maintenance_options LaunchTemplate#maintenance_options}
   */
   readonly maintenanceOptions?: LaunchTemplateMaintenanceOptions;
   /**
   * metadata_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#metadata_options LaunchTemplate#metadata_options}
   */
   readonly metadataOptions?: LaunchTemplateMetadataOptions;
   /**
   * monitoring block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#monitoring LaunchTemplate#monitoring}
   */
   readonly monitoring?: LaunchTemplateMonitoring;
   /**
   * network_interfaces block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#network_interfaces LaunchTemplate#network_interfaces}
   */
   readonly networkInterfaces?: LaunchTemplateNetworkInterfaces[] | cdktf.IResolvable;
   /**
   * placement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#placement LaunchTemplate#placement}
   */
   readonly placement?: LaunchTemplatePlacement;
   /**
   * private_dns_name_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#private_dns_name_options LaunchTemplate#private_dns_name_options}
   */
   readonly privateDnsNameOptions?: LaunchTemplatePrivateDnsNameOptions;
   /**
   * tag_specifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#tag_specifications LaunchTemplate#tag_specifications}
   */
   readonly tagSpecifications?: LaunchTemplateTagSpecifications[] | cdktf.IResolvable;
@@ -479,7 +479,7 @@ export interface LaunchTemplateBlockDeviceMappings {
   readonly virtualName?: string;
   /**
   * ebs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#ebs LaunchTemplate#ebs}
   */
   readonly ebs?: LaunchTemplateBlockDeviceMappingsEbs;
@@ -743,7 +743,7 @@ export interface LaunchTemplateCapacityReservationSpecification {
   readonly capacityReservationPreference?: string;
   /**
   * capacity_reservation_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#capacity_reservation_target LaunchTemplate#capacity_reservation_target}
   */
   readonly capacityReservationTarget?: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget;
@@ -1569,7 +1569,7 @@ export interface LaunchTemplateInstanceMarketOptions {
   readonly marketType?: string;
   /**
   * spot_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#spot_options LaunchTemplate#spot_options}
   */
   readonly spotOptions?: LaunchTemplateInstanceMarketOptionsSpotOptions;
@@ -2537,55 +2537,55 @@ export interface LaunchTemplateInstanceRequirements {
   readonly spotMaxPricePercentageOverLowestPrice?: number;
   /**
   * accelerator_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#accelerator_count LaunchTemplate#accelerator_count}
   */
   readonly acceleratorCount?: LaunchTemplateInstanceRequirementsAcceleratorCount;
   /**
   * accelerator_total_memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#accelerator_total_memory_mib LaunchTemplate#accelerator_total_memory_mib}
   */
   readonly acceleratorTotalMemoryMib?: LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib;
   /**
   * baseline_ebs_bandwidth_mbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#baseline_ebs_bandwidth_mbps LaunchTemplate#baseline_ebs_bandwidth_mbps}
   */
   readonly baselineEbsBandwidthMbps?: LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps;
   /**
   * memory_gib_per_vcpu block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#memory_gib_per_vcpu LaunchTemplate#memory_gib_per_vcpu}
   */
   readonly memoryGibPerVcpu?: LaunchTemplateInstanceRequirementsMemoryGibPerVcpu;
   /**
   * memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#memory_mib LaunchTemplate#memory_mib}
   */
   readonly memoryMib: LaunchTemplateInstanceRequirementsMemoryMib;
   /**
   * network_bandwidth_gbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#network_bandwidth_gbps LaunchTemplate#network_bandwidth_gbps}
   */
   readonly networkBandwidthGbps?: LaunchTemplateInstanceRequirementsNetworkBandwidthGbps;
   /**
   * network_interface_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#network_interface_count LaunchTemplate#network_interface_count}
   */
   readonly networkInterfaceCount?: LaunchTemplateInstanceRequirementsNetworkInterfaceCount;
   /**
   * total_local_storage_gb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#total_local_storage_gb LaunchTemplate#total_local_storage_gb}
   */
   readonly totalLocalStorageGb?: LaunchTemplateInstanceRequirementsTotalLocalStorageGb;
   /**
   * vcpu_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/launch_template#vcpu_count LaunchTemplate#vcpu_count}
   */
   readonly vcpuCount: LaunchTemplateInstanceRequirementsVcpuCount;

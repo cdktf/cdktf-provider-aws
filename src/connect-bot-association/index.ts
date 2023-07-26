@@ -25,7 +25,7 @@ export interface ConnectBotAssociationConfig extends cdktf.TerraformMetaArgument
   readonly instanceId: string;
   /**
   * lex_bot block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/connect_bot_association#lex_bot ConnectBotAssociation#lex_bot}
   */
   readonly lexBot: ConnectBotAssociationLexBot;

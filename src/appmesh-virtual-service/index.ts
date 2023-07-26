@@ -41,7 +41,7 @@ export interface AppmeshVirtualServiceConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_service#spec AppmeshVirtualService#spec}
   */
   readonly spec: AppmeshVirtualServiceSpec;
@@ -173,13 +173,13 @@ export class AppmeshVirtualServiceSpecProviderVirtualRouterOutputReference exten
 export interface AppmeshVirtualServiceSpecProvider {
   /**
   * virtual_node block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_service#virtual_node AppmeshVirtualService#virtual_node}
   */
   readonly virtualNode?: AppmeshVirtualServiceSpecProviderVirtualNode;
   /**
   * virtual_router block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_service#virtual_router AppmeshVirtualService#virtual_router}
   */
   readonly virtualRouter?: AppmeshVirtualServiceSpecProviderVirtualRouter;
@@ -269,7 +269,7 @@ export class AppmeshVirtualServiceSpecProviderOutputReference extends cdktf.Comp
 export interface AppmeshVirtualServiceSpec {
   /**
   * provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_service#provider AppmeshVirtualService#provider}
   */
   readonly provider?: AppmeshVirtualServiceSpecProvider;

@@ -65,13 +65,13 @@ export interface ServicecatalogProductConfig extends cdktf.TerraformMetaArgument
   readonly type: string;
   /**
   * provisioning_artifact_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_product#provisioning_artifact_parameters ServicecatalogProduct#provisioning_artifact_parameters}
   */
   readonly provisioningArtifactParameters: ServicecatalogProductProvisioningArtifactParameters;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_product#timeouts ServicecatalogProduct#timeouts}
   */
   readonly timeouts?: ServicecatalogProductTimeouts;

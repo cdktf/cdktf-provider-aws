@@ -65,19 +65,19 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * exclude_map block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#exclude_map FmsPolicy#exclude_map}
   */
   readonly excludeMap?: FmsPolicyExcludeMap;
   /**
   * include_map block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#include_map FmsPolicy#include_map}
   */
   readonly includeMap?: FmsPolicyIncludeMap;
   /**
   * security_service_policy_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#security_service_policy_data FmsPolicy#security_service_policy_data}
   */
   readonly securityServicePolicyData: FmsPolicySecurityServicePolicyData;
@@ -399,13 +399,13 @@ export class FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPol
 export interface FmsPolicySecurityServicePolicyDataPolicyOption {
   /**
   * network_firewall_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#network_firewall_policy FmsPolicy#network_firewall_policy}
   */
   readonly networkFirewallPolicy?: FmsPolicySecurityServicePolicyDataPolicyOptionNetworkFirewallPolicy;
   /**
   * third_party_firewall_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#third_party_firewall_policy FmsPolicy#third_party_firewall_policy}
   */
   readonly thirdPartyFirewallPolicy?: FmsPolicySecurityServicePolicyDataPolicyOptionThirdPartyFirewallPolicy;
@@ -503,7 +503,7 @@ export interface FmsPolicySecurityServicePolicyData {
   readonly type: string;
   /**
   * policy_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fms_policy#policy_option FmsPolicy#policy_option}
   */
   readonly policyOption?: FmsPolicySecurityServicePolicyDataPolicyOption;

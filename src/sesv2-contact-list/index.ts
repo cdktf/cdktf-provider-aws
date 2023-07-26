@@ -37,7 +37,7 @@ export interface Sesv2ContactListConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * topic block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_contact_list#topic Sesv2ContactList#topic}
   */
   readonly topic?: Sesv2ContactListTopic[] | cdktf.IResolvable;

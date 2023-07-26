@@ -37,13 +37,13 @@ export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * artifact_store block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline#artifact_store Codepipeline#artifact_store}
   */
   readonly artifactStore: CodepipelineArtifactStore[] | cdktf.IResolvable;
   /**
   * stage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline#stage Codepipeline#stage}
   */
   readonly stage: CodepipelineStage[] | cdktf.IResolvable;
@@ -152,7 +152,7 @@ export interface CodepipelineArtifactStore {
   readonly type: string;
   /**
   * encryption_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline#encryption_key Codepipeline#encryption_key}
   */
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey;
@@ -697,7 +697,7 @@ export interface CodepipelineStage {
   readonly name: string;
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline#action Codepipeline#action}
   */
   readonly action: CodepipelineStageAction[] | cdktf.IResolvable;

@@ -45,7 +45,7 @@ export interface InspectorAssessmentTemplateConfig extends cdktf.TerraformMetaAr
   readonly targetArn: string;
   /**
   * event_subscription block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector_assessment_template#event_subscription InspectorAssessmentTemplate#event_subscription}
   */
   readonly eventSubscription?: InspectorAssessmentTemplateEventSubscription[] | cdktf.IResolvable;

@@ -53,13 +53,13 @@ export interface EvidentlyFeatureConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_feature#timeouts EvidentlyFeature#timeouts}
   */
   readonly timeouts?: EvidentlyFeatureTimeouts;
   /**
   * variations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_feature#variations EvidentlyFeature#variations}
   */
   readonly variations: EvidentlyFeatureVariations[] | cdktf.IResolvable;
@@ -415,7 +415,7 @@ export interface EvidentlyFeatureVariations {
   readonly name: string;
   /**
   * value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_feature#value EvidentlyFeature#value}
   */
   readonly value: EvidentlyFeatureVariationsValue;

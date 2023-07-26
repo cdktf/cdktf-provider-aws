@@ -41,19 +41,19 @@ export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * encryption_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_repository#encryption_configuration EcrRepository#encryption_configuration}
   */
   readonly encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[] | cdktf.IResolvable;
   /**
   * image_scanning_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_repository#image_scanning_configuration EcrRepository#image_scanning_configuration}
   */
   readonly imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecr_repository#timeouts EcrRepository#timeouts}
   */
   readonly timeouts?: EcrRepositoryTimeouts;

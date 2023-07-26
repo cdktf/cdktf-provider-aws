@@ -41,25 +41,25 @@ export interface CodepipelineCustomActionTypeConfig extends cdktf.TerraformMetaA
   readonly version: string;
   /**
   * configuration_property block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_custom_action_type#configuration_property CodepipelineCustomActionType#configuration_property}
   */
   readonly configurationProperty?: CodepipelineCustomActionTypeConfigurationProperty[] | cdktf.IResolvable;
   /**
   * input_artifact_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_custom_action_type#input_artifact_details CodepipelineCustomActionType#input_artifact_details}
   */
   readonly inputArtifactDetails: CodepipelineCustomActionTypeInputArtifactDetails;
   /**
   * output_artifact_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_custom_action_type#output_artifact_details CodepipelineCustomActionType#output_artifact_details}
   */
   readonly outputArtifactDetails: CodepipelineCustomActionTypeOutputArtifactDetails;
   /**
   * settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codepipeline_custom_action_type#settings CodepipelineCustomActionType#settings}
   */
   readonly settings?: CodepipelineCustomActionTypeSettings;

@@ -37,7 +37,7 @@ export interface WafRuleGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * activated_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/waf_rule_group#activated_rule WafRuleGroup#activated_rule}
   */
   readonly activatedRule?: WafRuleGroupActivatedRule[] | cdktf.IResolvable;
@@ -119,7 +119,7 @@ export interface WafRuleGroupActivatedRule {
   readonly type?: string;
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/waf_rule_group#action WafRuleGroup#action}
   */
   readonly action: WafRuleGroupActivatedRuleAction;

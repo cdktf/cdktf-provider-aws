@@ -45,19 +45,19 @@ export interface VpclatticeListenerRuleConfig extends cdktf.TerraformMetaArgumen
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#action VpclatticeListenerRule#action}
   */
   readonly action: VpclatticeListenerRuleAction;
   /**
   * match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatch;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#timeouts VpclatticeListenerRule#timeouts}
   */
   readonly timeouts?: VpclatticeListenerRuleTimeouts;
@@ -248,7 +248,7 @@ export class VpclatticeListenerRuleActionForwardTargetGroupsList extends cdktf.C
 export interface VpclatticeListenerRuleActionForward {
   /**
   * target_groups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
   */
   readonly targetGroups: VpclatticeListenerRuleActionForwardTargetGroups[] | cdktf.IResolvable;
@@ -312,13 +312,13 @@ export class VpclatticeListenerRuleActionForwardOutputReference extends cdktf.Co
 export interface VpclatticeListenerRuleAction {
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#fixed_response VpclatticeListenerRule#fixed_response}
   */
   readonly fixedResponse?: VpclatticeListenerRuleActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#forward VpclatticeListenerRule#forward}
   */
   readonly forward?: VpclatticeListenerRuleActionForward;
@@ -535,7 +535,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchHeaderMatches {
   readonly name: string;
   /**
   * match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch;
@@ -770,7 +770,7 @@ export interface VpclatticeListenerRuleMatchHttpMatchPathMatch {
   readonly caseSensitive?: boolean | cdktf.IResolvable;
   /**
   * match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#match VpclatticeListenerRule#match}
   */
   readonly match: VpclatticeListenerRuleMatchHttpMatchPathMatchMatch;
@@ -861,13 +861,13 @@ export interface VpclatticeListenerRuleMatchHttpMatch {
   readonly method?: string;
   /**
   * header_matches block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#header_matches VpclatticeListenerRule#header_matches}
   */
   readonly headerMatches?: VpclatticeListenerRuleMatchHttpMatchHeaderMatches[] | cdktf.IResolvable;
   /**
   * path_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#path_match VpclatticeListenerRule#path_match}
   */
   readonly pathMatch?: VpclatticeListenerRuleMatchHttpMatchPathMatch;
@@ -980,7 +980,7 @@ export class VpclatticeListenerRuleMatchHttpMatchOutputReference extends cdktf.C
 export interface VpclatticeListenerRuleMatch {
   /**
   * http_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener_rule#http_match VpclatticeListenerRule#http_match}
   */
   readonly httpMatch?: VpclatticeListenerRuleMatchHttpMatch;

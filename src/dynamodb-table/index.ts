@@ -81,49 +81,49 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   readonly writeCapacity?: number;
   /**
   * attribute block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
   */
   readonly attribute?: DynamodbTableAttribute[] | cdktf.IResolvable;
   /**
   * global_secondary_index block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
   */
   readonly globalSecondaryIndex?: DynamodbTableGlobalSecondaryIndex[] | cdktf.IResolvable;
   /**
   * local_secondary_index block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
   */
   readonly localSecondaryIndex?: DynamodbTableLocalSecondaryIndex[] | cdktf.IResolvable;
   /**
   * point_in_time_recovery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
   */
   readonly pointInTimeRecovery?: DynamodbTablePointInTimeRecovery;
   /**
   * replica block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
   */
   readonly replica?: DynamodbTableReplica[] | cdktf.IResolvable;
   /**
   * server_side_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
   */
   readonly serverSideEncryption?: DynamodbTableServerSideEncryption;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
   */
   readonly timeouts?: DynamodbTableTimeouts;
   /**
   * ttl block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
   */
   readonly ttl?: DynamodbTableTtl;

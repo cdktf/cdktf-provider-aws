@@ -37,7 +37,7 @@ export interface XrayGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * insights_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/xray_group#insights_configuration XrayGroup#insights_configuration}
   */
   readonly insightsConfiguration?: XrayGroupInsightsConfiguration;

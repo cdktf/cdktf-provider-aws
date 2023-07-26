@@ -57,13 +57,13 @@ export interface AppsyncFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly responseMappingTemplate?: string;
   /**
   * runtime block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_function#runtime AppsyncFunction#runtime}
   */
   readonly runtime?: AppsyncFunctionRuntime;
   /**
   * sync_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_function#sync_config AppsyncFunction#sync_config}
   */
   readonly syncConfig?: AppsyncFunctionSyncConfig;
@@ -230,7 +230,7 @@ export interface AppsyncFunctionSyncConfig {
   readonly conflictHandler?: string;
   /**
   * lambda_conflict_handler_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appsync_function#lambda_conflict_handler_config AppsyncFunction#lambda_conflict_handler_config}
   */
   readonly lambdaConflictHandlerConfig?: AppsyncFunctionSyncConfigLambdaConflictHandlerConfig;

@@ -29,7 +29,7 @@ export interface DataAwsEc2TransitGatewayAttachmentConfig extends cdktf.Terrafor
   readonly transitGatewayAttachmentId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_attachment#filter DataAwsEc2TransitGatewayAttachment#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayAttachmentFilter[] | cdktf.IResolvable;

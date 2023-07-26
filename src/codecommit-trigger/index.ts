@@ -25,7 +25,7 @@ export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly repositoryName: string;
   /**
   * trigger block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codecommit_trigger#trigger CodecommitTrigger#trigger}
   */
   readonly trigger: CodecommitTriggerTrigger[] | cdktf.IResolvable;

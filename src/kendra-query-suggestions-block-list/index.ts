@@ -45,13 +45,13 @@ export interface KendraQuerySuggestionsBlockListConfig extends cdktf.TerraformMe
   readonly tagsAll?: { [key: string]: string };
   /**
   * source_s3_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_query_suggestions_block_list#source_s3_path KendraQuerySuggestionsBlockList#source_s3_path}
   */
   readonly sourceS3Path: KendraQuerySuggestionsBlockListSourceS3Path;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_query_suggestions_block_list#timeouts KendraQuerySuggestionsBlockList#timeouts}
   */
   readonly timeouts?: KendraQuerySuggestionsBlockListTimeouts;

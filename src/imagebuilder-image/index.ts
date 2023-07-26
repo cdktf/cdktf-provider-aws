@@ -49,13 +49,13 @@ export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * image_tests_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
   */
   readonly imageTestsConfiguration?: ImagebuilderImageImageTestsConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
   */
   readonly timeouts?: ImagebuilderImageTimeouts;

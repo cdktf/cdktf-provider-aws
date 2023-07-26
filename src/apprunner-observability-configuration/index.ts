@@ -33,7 +33,7 @@ export interface ApprunnerObservabilityConfigurationConfig extends cdktf.Terrafo
   readonly tagsAll?: { [key: string]: string };
   /**
   * trace_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apprunner_observability_configuration#trace_configuration ApprunnerObservabilityConfiguration#trace_configuration}
   */
   readonly traceConfiguration?: ApprunnerObservabilityConfigurationTraceConfiguration;

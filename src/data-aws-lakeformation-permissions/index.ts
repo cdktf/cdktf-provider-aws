@@ -33,37 +33,37 @@ export interface DataAwsLakeformationPermissionsConfig extends cdktf.TerraformMe
   readonly principal: string;
   /**
   * data_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#data_location DataAwsLakeformationPermissions#data_location}
   */
   readonly dataLocation?: DataAwsLakeformationPermissionsDataLocation;
   /**
   * database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#database DataAwsLakeformationPermissions#database}
   */
   readonly database?: DataAwsLakeformationPermissionsDatabase;
   /**
   * lf_tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#lf_tag DataAwsLakeformationPermissions#lf_tag}
   */
   readonly lfTag?: DataAwsLakeformationPermissionsLfTag;
   /**
   * lf_tag_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#lf_tag_policy DataAwsLakeformationPermissions#lf_tag_policy}
   */
   readonly lfTagPolicy?: DataAwsLakeformationPermissionsLfTagPolicy;
   /**
   * table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#table DataAwsLakeformationPermissions#table}
   */
   readonly table?: DataAwsLakeformationPermissionsTable;
   /**
   * table_with_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#table_with_columns DataAwsLakeformationPermissions#table_with_columns}
   */
   readonly tableWithColumns?: DataAwsLakeformationPermissionsTableWithColumns;
@@ -488,7 +488,7 @@ export interface DataAwsLakeformationPermissionsLfTagPolicy {
   readonly resourceType: string;
   /**
   * expression block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lakeformation_permissions#expression DataAwsLakeformationPermissions#expression}
   */
   readonly expression: DataAwsLakeformationPermissionsLfTagPolicyExpression[] | cdktf.IResolvable;

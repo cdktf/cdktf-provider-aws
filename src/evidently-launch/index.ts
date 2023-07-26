@@ -45,25 +45,25 @@ export interface EvidentlyLaunchConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * groups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#groups EvidentlyLaunch#groups}
   */
   readonly groups: EvidentlyLaunchGroups[] | cdktf.IResolvable;
   /**
   * metric_monitors block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#metric_monitors EvidentlyLaunch#metric_monitors}
   */
   readonly metricMonitors?: EvidentlyLaunchMetricMonitors[] | cdktf.IResolvable;
   /**
   * scheduled_splits_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#scheduled_splits_config EvidentlyLaunch#scheduled_splits_config}
   */
   readonly scheduledSplitsConfig?: EvidentlyLaunchScheduledSplitsConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#timeouts EvidentlyLaunch#timeouts}
   */
   readonly timeouts?: EvidentlyLaunchTimeouts;
@@ -473,7 +473,7 @@ export class EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference extend
 export interface EvidentlyLaunchMetricMonitors {
   /**
   * metric_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#metric_definition EvidentlyLaunch#metric_definition}
   */
   readonly metricDefinition: EvidentlyLaunchMetricMonitorsMetricDefinition;
@@ -719,7 +719,7 @@ export interface EvidentlyLaunchScheduledSplitsConfigSteps {
   readonly startTime: string;
   /**
   * segment_overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#segment_overrides EvidentlyLaunch#segment_overrides}
   */
   readonly segmentOverrides?: EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides[] | cdktf.IResolvable;
@@ -858,7 +858,7 @@ export class EvidentlyLaunchScheduledSplitsConfigStepsList extends cdktf.Complex
 export interface EvidentlyLaunchScheduledSplitsConfig {
   /**
   * steps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
   */
   readonly steps: EvidentlyLaunchScheduledSplitsConfigSteps[] | cdktf.IResolvable;

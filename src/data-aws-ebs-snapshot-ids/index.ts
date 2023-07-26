@@ -29,13 +29,13 @@ export interface DataAwsEbsSnapshotIdsConfig extends cdktf.TerraformMetaArgument
   readonly restorableByUserIds?: string[];
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_snapshot_ids#filter DataAwsEbsSnapshotIds#filter}
   */
   readonly filter?: DataAwsEbsSnapshotIdsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_snapshot_ids#timeouts DataAwsEbsSnapshotIds#timeouts}
   */
   readonly timeouts?: DataAwsEbsSnapshotIdsTimeouts;

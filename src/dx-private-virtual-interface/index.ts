@@ -77,7 +77,7 @@ export interface DxPrivateVirtualInterfaceConfig extends cdktf.TerraformMetaArgu
   readonly vpnGatewayId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_private_virtual_interface#timeouts DxPrivateVirtualInterface#timeouts}
   */
   readonly timeouts?: DxPrivateVirtualInterfaceTimeouts;

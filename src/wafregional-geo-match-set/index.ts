@@ -25,7 +25,7 @@ export interface WafregionalGeoMatchSetConfig extends cdktf.TerraformMetaArgumen
   readonly name: string;
   /**
   * geo_match_constraint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafregional_geo_match_set#geo_match_constraint WafregionalGeoMatchSet#geo_match_constraint}
   */
   readonly geoMatchConstraint?: WafregionalGeoMatchSetGeoMatchConstraint[] | cdktf.IResolvable;

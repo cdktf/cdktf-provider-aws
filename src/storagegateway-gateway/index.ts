@@ -85,19 +85,19 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   readonly tapeDriveType?: string;
   /**
   * maintenance_start_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_gateway#maintenance_start_time StoragegatewayGateway#maintenance_start_time}
   */
   readonly maintenanceStartTime?: StoragegatewayGatewayMaintenanceStartTime;
   /**
   * smb_active_directory_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_gateway#smb_active_directory_settings StoragegatewayGateway#smb_active_directory_settings}
   */
   readonly smbActiveDirectorySettings?: StoragegatewayGatewaySmbActiveDirectorySettings;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_gateway#timeouts StoragegatewayGateway#timeouts}
   */
   readonly timeouts?: StoragegatewayGatewayTimeouts;

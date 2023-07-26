@@ -105,19 +105,19 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * log_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_lustre_file_system#log_configuration FsxLustreFileSystem#log_configuration}
   */
   readonly logConfiguration?: FsxLustreFileSystemLogConfiguration;
   /**
   * root_squash_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_lustre_file_system#root_squash_configuration FsxLustreFileSystem#root_squash_configuration}
   */
   readonly rootSquashConfiguration?: FsxLustreFileSystemRootSquashConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_lustre_file_system#timeouts FsxLustreFileSystem#timeouts}
   */
   readonly timeouts?: FsxLustreFileSystemTimeouts;

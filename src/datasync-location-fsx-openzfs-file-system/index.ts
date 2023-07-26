@@ -41,7 +41,7 @@ export interface DatasyncLocationFsxOpenzfsFileSystemConfig extends cdktf.Terraf
   readonly tagsAll?: { [key: string]: string };
   /**
   * protocol block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_fsx_openzfs_file_system#protocol DatasyncLocationFsxOpenzfsFileSystem#protocol}
   */
   readonly protocol: DatasyncLocationFsxOpenzfsFileSystemProtocol;
@@ -114,7 +114,7 @@ export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputRe
 export interface DatasyncLocationFsxOpenzfsFileSystemProtocolNfs {
   /**
   * mount_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_fsx_openzfs_file_system#mount_options DatasyncLocationFsxOpenzfsFileSystem#mount_options}
   */
   readonly mountOptions: DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptions;
@@ -178,7 +178,7 @@ export class DatasyncLocationFsxOpenzfsFileSystemProtocolNfsOutputReference exte
 export interface DatasyncLocationFsxOpenzfsFileSystemProtocol {
   /**
   * nfs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_fsx_openzfs_file_system#nfs DatasyncLocationFsxOpenzfsFileSystem#nfs}
   */
   readonly nfs: DatasyncLocationFsxOpenzfsFileSystemProtocolNfs;

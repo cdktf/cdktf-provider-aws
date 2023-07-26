@@ -25,7 +25,7 @@ export interface OpensearchInboundConnectionAccepterConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_inbound_connection_accepter#timeouts OpensearchInboundConnectionAccepter#timeouts}
   */
   readonly timeouts?: OpensearchInboundConnectionAccepterTimeouts;

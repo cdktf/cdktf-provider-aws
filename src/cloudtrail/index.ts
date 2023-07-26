@@ -77,19 +77,19 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * advanced_event_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudtrail#advanced_event_selector Cloudtrail#advanced_event_selector}
   */
   readonly advancedEventSelector?: CloudtrailAdvancedEventSelector[] | cdktf.IResolvable;
   /**
   * event_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudtrail#event_selector Cloudtrail#event_selector}
   */
   readonly eventSelector?: CloudtrailEventSelector[] | cdktf.IResolvable;
   /**
   * insight_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudtrail#insight_selector Cloudtrail#insight_selector}
   */
   readonly insightSelector?: CloudtrailInsightSelector[] | cdktf.IResolvable;
@@ -357,7 +357,7 @@ export interface CloudtrailAdvancedEventSelector {
   readonly name?: string;
   /**
   * field_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudtrail#field_selector Cloudtrail#field_selector}
   */
   readonly fieldSelector: CloudtrailAdvancedEventSelectorFieldSelector[] | cdktf.IResolvable;
@@ -606,7 +606,7 @@ export interface CloudtrailEventSelector {
   readonly readWriteType?: string;
   /**
   * data_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudtrail#data_resource Cloudtrail#data_resource}
   */
   readonly dataResource?: CloudtrailEventSelectorDataResource[] | cdktf.IResolvable;

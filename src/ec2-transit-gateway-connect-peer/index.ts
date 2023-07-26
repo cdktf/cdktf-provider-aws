@@ -49,7 +49,7 @@ export interface Ec2TransitGatewayConnectPeerConfig extends cdktf.TerraformMetaA
   readonly transitGatewayAttachmentId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_connect_peer#timeouts Ec2TransitGatewayConnectPeer#timeouts}
   */
   readonly timeouts?: Ec2TransitGatewayConnectPeerTimeouts;

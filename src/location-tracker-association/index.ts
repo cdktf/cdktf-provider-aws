@@ -29,7 +29,7 @@ export interface LocationTrackerAssociationConfig extends cdktf.TerraformMetaArg
   readonly trackerName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/location_tracker_association#timeouts LocationTrackerAssociation#timeouts}
   */
   readonly timeouts?: LocationTrackerAssociationTimeouts;

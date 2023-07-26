@@ -45,7 +45,7 @@ export interface DevicefarmDevicePoolConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/devicefarm_device_pool#rule DevicefarmDevicePool#rule}
   */
   readonly rule: DevicefarmDevicePoolRule[] | cdktf.IResolvable;

@@ -141,49 +141,49 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly waitForElbCapacity?: number;
   /**
   * initial_lifecycle_hook block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#initial_lifecycle_hook AutoscalingGroup#initial_lifecycle_hook}
   */
   readonly initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[] | cdktf.IResolvable;
   /**
   * instance_refresh block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#instance_refresh AutoscalingGroup#instance_refresh}
   */
   readonly instanceRefresh?: AutoscalingGroupInstanceRefresh;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
   */
   readonly launchTemplate?: AutoscalingGroupLaunchTemplate;
   /**
   * mixed_instances_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#mixed_instances_policy AutoscalingGroup#mixed_instances_policy}
   */
   readonly mixedInstancesPolicy?: AutoscalingGroupMixedInstancesPolicy;
   /**
   * tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#tag AutoscalingGroup#tag}
   */
   readonly tag?: AutoscalingGroupTag[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
   */
   readonly timeouts?: AutoscalingGroupTimeouts;
   /**
   * traffic_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#traffic_source AutoscalingGroup#traffic_source}
   */
   readonly trafficSource?: AutoscalingGroupTrafficSource[] | cdktf.IResolvable;
   /**
   * warm_pool block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#warm_pool AutoscalingGroup#warm_pool}
   */
   readonly warmPool?: AutoscalingGroupWarmPool;
@@ -652,7 +652,7 @@ export interface AutoscalingGroupInstanceRefresh {
   readonly triggers?: string[];
   /**
   * preferences block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#preferences AutoscalingGroup#preferences}
   */
   readonly preferences?: AutoscalingGroupInstanceRefreshPreferences;
@@ -2087,55 +2087,55 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInsta
   readonly spotMaxPricePercentageOverLowestPrice?: number;
   /**
   * accelerator_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#accelerator_count AutoscalingGroup#accelerator_count}
   */
   readonly acceleratorCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount;
   /**
   * accelerator_total_memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#accelerator_total_memory_mib AutoscalingGroup#accelerator_total_memory_mib}
   */
   readonly acceleratorTotalMemoryMib?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib;
   /**
   * baseline_ebs_bandwidth_mbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#baseline_ebs_bandwidth_mbps AutoscalingGroup#baseline_ebs_bandwidth_mbps}
   */
   readonly baselineEbsBandwidthMbps?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps;
   /**
   * memory_gib_per_vcpu block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#memory_gib_per_vcpu AutoscalingGroup#memory_gib_per_vcpu}
   */
   readonly memoryGibPerVcpu?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu;
   /**
   * memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#memory_mib AutoscalingGroup#memory_mib}
   */
   readonly memoryMib?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib;
   /**
   * network_bandwidth_gbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#network_bandwidth_gbps AutoscalingGroup#network_bandwidth_gbps}
   */
   readonly networkBandwidthGbps?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps;
   /**
   * network_interface_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#network_interface_count AutoscalingGroup#network_interface_count}
   */
   readonly networkInterfaceCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount;
   /**
   * total_local_storage_gb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#total_local_storage_gb AutoscalingGroup#total_local_storage_gb}
   */
   readonly totalLocalStorageGb?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb;
   /**
   * vcpu_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#vcpu_count AutoscalingGroup#vcpu_count}
   */
   readonly vcpuCount?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount;
@@ -2835,13 +2835,13 @@ export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
   readonly weightedCapacity?: string;
   /**
   * instance_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#instance_requirements AutoscalingGroup#instance_requirements}
   */
   readonly instanceRequirements?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements;
   /**
   * launch_template_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
   */
   readonly launchTemplateSpecification?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification;
@@ -3009,13 +3009,13 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList exte
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplate {
   /**
   * launch_template_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#launch_template_specification AutoscalingGroup#launch_template_specification}
   */
   readonly launchTemplateSpecification: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification;
   /**
   * override block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#override AutoscalingGroup#override}
   */
   readonly override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[] | cdktf.IResolvable;
@@ -3102,13 +3102,13 @@ export class AutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference e
 export interface AutoscalingGroupMixedInstancesPolicy {
   /**
   * instances_distribution block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#instances_distribution AutoscalingGroup#instances_distribution}
   */
   readonly instancesDistribution?: AutoscalingGroupMixedInstancesPolicyInstancesDistribution;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#launch_template AutoscalingGroup#launch_template}
   */
   readonly launchTemplate: AutoscalingGroupMixedInstancesPolicyLaunchTemplate;
@@ -3637,7 +3637,7 @@ export interface AutoscalingGroupWarmPool {
   readonly poolState?: string;
   /**
   * instance_reuse_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_group#instance_reuse_policy AutoscalingGroup#instance_reuse_policy}
   */
   readonly instanceReusePolicy?: AutoscalingGroupWarmPoolInstanceReusePolicy;

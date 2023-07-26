@@ -37,13 +37,13 @@ export interface NetworkmanagerSiteConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_site#location NetworkmanagerSite#location}
   */
   readonly location?: NetworkmanagerSiteLocation;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_site#timeouts NetworkmanagerSite#timeouts}
   */
   readonly timeouts?: NetworkmanagerSiteTimeouts;

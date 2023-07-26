@@ -37,13 +37,13 @@ export interface BackupFrameworkConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * control block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_framework#control BackupFramework#control}
   */
   readonly control: BackupFrameworkControl[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
   */
   readonly timeouts?: BackupFrameworkTimeouts;
@@ -298,13 +298,13 @@ export interface BackupFrameworkControl {
   readonly name: string;
   /**
   * input_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
   */
   readonly inputParameter?: BackupFrameworkControlInputParameter[] | cdktf.IResolvable;
   /**
   * scope block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_framework#scope BackupFramework#scope}
   */
   readonly scope?: BackupFrameworkControlScope;

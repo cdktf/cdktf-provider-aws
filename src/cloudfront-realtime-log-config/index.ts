@@ -33,7 +33,7 @@ export interface CloudfrontRealtimeLogConfigConfig extends cdktf.TerraformMetaAr
   readonly samplingRate: number;
   /**
   * endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_realtime_log_config#endpoint CloudfrontRealtimeLogConfig#endpoint}
   */
   readonly endpoint: CloudfrontRealtimeLogConfigEndpoint;
@@ -131,7 +131,7 @@ export interface CloudfrontRealtimeLogConfigEndpoint {
   readonly streamType: string;
   /**
   * kinesis_stream_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_realtime_log_config#kinesis_stream_config CloudfrontRealtimeLogConfig#kinesis_stream_config}
   */
   readonly kinesisStreamConfig: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig;

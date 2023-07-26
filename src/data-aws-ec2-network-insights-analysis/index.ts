@@ -29,7 +29,7 @@ export interface DataAwsEc2NetworkInsightsAnalysisConfig extends cdktf.Terraform
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_network_insights_analysis#filter DataAwsEc2NetworkInsightsAnalysis#filter}
   */
   readonly filter?: DataAwsEc2NetworkInsightsAnalysisFilter[] | cdktf.IResolvable;

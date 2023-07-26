@@ -29,13 +29,13 @@ export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * minimum_healthy_hosts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_config#minimum_healthy_hosts CodedeployDeploymentConfig#minimum_healthy_hosts}
   */
   readonly minimumHealthyHosts?: CodedeployDeploymentConfigMinimumHealthyHosts;
   /**
   * traffic_routing_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_config#traffic_routing_config CodedeployDeploymentConfig#traffic_routing_config}
   */
   readonly trafficRoutingConfig?: CodedeployDeploymentConfigTrafficRoutingConfig;
@@ -323,13 +323,13 @@ export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   readonly type?: string;
   /**
   * time_based_canary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_config#time_based_canary CodedeployDeploymentConfig#time_based_canary}
   */
   readonly timeBasedCanary?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary;
   /**
   * time_based_linear block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_config#time_based_linear CodedeployDeploymentConfig#time_based_linear}
   */
   readonly timeBasedLinear?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear;

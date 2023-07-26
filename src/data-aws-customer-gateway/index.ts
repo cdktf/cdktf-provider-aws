@@ -25,13 +25,13 @@ export interface DataAwsCustomerGatewayConfig extends cdktf.TerraformMetaArgumen
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
   */
   readonly filter?: DataAwsCustomerGatewayFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
   */
   readonly timeouts?: DataAwsCustomerGatewayTimeouts;

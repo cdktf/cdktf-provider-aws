@@ -29,7 +29,7 @@ export interface ChimeVoiceConnectorOriginationConfig extends cdktf.TerraformMet
   readonly voiceConnectorId: string;
   /**
   * route block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chime_voice_connector_origination#route ChimeVoiceConnectorOrigination#route}
   */
   readonly route: ChimeVoiceConnectorOriginationRoute[] | cdktf.IResolvable;

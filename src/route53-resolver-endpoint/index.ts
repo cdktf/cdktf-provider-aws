@@ -41,13 +41,13 @@ export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * ip_address block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_endpoint#ip_address Route53ResolverEndpoint#ip_address}
   */
   readonly ipAddress: Route53ResolverEndpointIpAddress[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_resolver_endpoint#timeouts Route53ResolverEndpoint#timeouts}
   */
   readonly timeouts?: Route53ResolverEndpointTimeouts;

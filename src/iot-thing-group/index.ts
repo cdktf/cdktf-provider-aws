@@ -37,7 +37,7 @@ export interface IotThingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_thing_group#properties IotThingGroup#properties}
   */
   readonly properties?: IotThingGroupProperties;
@@ -258,7 +258,7 @@ export interface IotThingGroupProperties {
   readonly description?: string;
   /**
   * attribute_payload block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iot_thing_group#attribute_payload IotThingGroup#attribute_payload}
   */
   readonly attributePayload?: IotThingGroupPropertiesAttributePayload;

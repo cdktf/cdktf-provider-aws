@@ -25,31 +25,31 @@ export interface LakeformationResourceLfTagsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * database block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lakeformation_resource_lf_tags#database LakeformationResourceLfTags#database}
   */
   readonly database?: LakeformationResourceLfTagsDatabase;
   /**
   * lf_tag block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lakeformation_resource_lf_tags#lf_tag LakeformationResourceLfTags#lf_tag}
   */
   readonly lfTag: LakeformationResourceLfTagsLfTag[] | cdktf.IResolvable;
   /**
   * table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lakeformation_resource_lf_tags#table LakeformationResourceLfTags#table}
   */
   readonly table?: LakeformationResourceLfTagsTable;
   /**
   * table_with_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lakeformation_resource_lf_tags#table_with_columns LakeformationResourceLfTags#table_with_columns}
   */
   readonly tableWithColumns?: LakeformationResourceLfTagsTableWithColumns;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lakeformation_resource_lf_tags#timeouts LakeformationResourceLfTags#timeouts}
   */
   readonly timeouts?: LakeformationResourceLfTagsTimeouts;

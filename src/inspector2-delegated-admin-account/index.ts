@@ -25,7 +25,7 @@ export interface Inspector2DelegatedAdminAccountConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_delegated_admin_account#timeouts Inspector2DelegatedAdminAccount#timeouts}
   */
   readonly timeouts?: Inspector2DelegatedAdminAccountTimeouts;

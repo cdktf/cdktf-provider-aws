@@ -121,55 +121,55 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly timeout?: number;
   /**
   * dead_letter_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#dead_letter_config LambdaFunction#dead_letter_config}
   */
   readonly deadLetterConfig?: LambdaFunctionDeadLetterConfig;
   /**
   * environment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#environment LambdaFunction#environment}
   */
   readonly environment?: LambdaFunctionEnvironment;
   /**
   * ephemeral_storage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#ephemeral_storage LambdaFunction#ephemeral_storage}
   */
   readonly ephemeralStorage?: LambdaFunctionEphemeralStorage;
   /**
   * file_system_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#file_system_config LambdaFunction#file_system_config}
   */
   readonly fileSystemConfig?: LambdaFunctionFileSystemConfig;
   /**
   * image_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#image_config LambdaFunction#image_config}
   */
   readonly imageConfig?: LambdaFunctionImageConfig;
   /**
   * snap_start block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#snap_start LambdaFunction#snap_start}
   */
   readonly snapStart?: LambdaFunctionSnapStart;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#timeouts LambdaFunction#timeouts}
   */
   readonly timeouts?: LambdaFunctionTimeouts;
   /**
   * tracing_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#tracing_config LambdaFunction#tracing_config}
   */
   readonly tracingConfig?: LambdaFunctionTracingConfig;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lambda_function#vpc_config LambdaFunction#vpc_config}
   */
   readonly vpcConfig?: LambdaFunctionVpcConfig;

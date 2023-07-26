@@ -25,19 +25,19 @@ export interface OpensearchOutboundConnectionConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * local_domain_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_outbound_connection#local_domain_info OpensearchOutboundConnection#local_domain_info}
   */
   readonly localDomainInfo: OpensearchOutboundConnectionLocalDomainInfo;
   /**
   * remote_domain_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_outbound_connection#remote_domain_info OpensearchOutboundConnection#remote_domain_info}
   */
   readonly remoteDomainInfo: OpensearchOutboundConnectionRemoteDomainInfo;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_outbound_connection#timeouts OpensearchOutboundConnection#timeouts}
   */
   readonly timeouts?: OpensearchOutboundConnectionTimeouts;

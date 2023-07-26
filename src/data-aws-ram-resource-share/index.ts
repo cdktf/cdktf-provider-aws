@@ -37,7 +37,7 @@ export interface DataAwsRamResourceShareConfig extends cdktf.TerraformMetaArgume
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ram_resource_share#filter DataAwsRamResourceShare#filter}
   */
   readonly filter?: DataAwsRamResourceShareFilter[] | cdktf.IResolvable;

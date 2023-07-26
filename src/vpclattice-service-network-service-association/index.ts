@@ -37,7 +37,7 @@ export interface VpclatticeServiceNetworkServiceAssociationConfig extends cdktf.
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_service_network_service_association#timeouts VpclatticeServiceNetworkServiceAssociation#timeouts}
   */
   readonly timeouts?: VpclatticeServiceNetworkServiceAssociationTimeouts;

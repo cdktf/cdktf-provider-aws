@@ -25,7 +25,7 @@ export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ses_domain_identity_verification#timeouts SesDomainIdentityVerification#timeouts}
   */
   readonly timeouts?: SesDomainIdentityVerificationTimeouts;

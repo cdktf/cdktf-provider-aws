@@ -25,13 +25,13 @@ export interface DataAwsEc2LocalGatewayVirtualInterfaceConfig extends cdktf.Terr
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_local_gateway_virtual_interface#filter DataAwsEc2LocalGatewayVirtualInterface#filter}
   */
   readonly filter?: DataAwsEc2LocalGatewayVirtualInterfaceFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_local_gateway_virtual_interface#timeouts DataAwsEc2LocalGatewayVirtualInterface#timeouts}
   */
   readonly timeouts?: DataAwsEc2LocalGatewayVirtualInterfaceTimeouts;

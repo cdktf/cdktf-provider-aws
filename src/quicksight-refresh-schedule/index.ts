@@ -26,7 +26,7 @@ export interface QuicksightRefreshScheduleConfig extends cdktf.TerraformMetaArgu
   readonly scheduleId: string;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_refresh_schedule#schedule QuicksightRefreshSchedule#schedule}
   */
   readonly schedule?: QuicksightRefreshScheduleSchedule[] | cdktf.IResolvable;
@@ -170,7 +170,7 @@ export interface QuicksightRefreshScheduleScheduleScheduleFrequency {
   readonly timezone?: string;
   /**
   * refresh_on_day block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_refresh_schedule#refresh_on_day QuicksightRefreshSchedule#refresh_on_day}
   */
   readonly refreshOnDay?: QuicksightRefreshScheduleScheduleScheduleFrequencyRefreshOnDay[] | cdktf.IResolvable;
@@ -343,7 +343,7 @@ export interface QuicksightRefreshScheduleSchedule {
   readonly startAfterDateTime?: string;
   /**
   * schedule_frequency block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/quicksight_refresh_schedule#schedule_frequency QuicksightRefreshSchedule#schedule_frequency}
   */
   readonly scheduleFrequency?: QuicksightRefreshScheduleScheduleScheduleFrequency[] | cdktf.IResolvable;

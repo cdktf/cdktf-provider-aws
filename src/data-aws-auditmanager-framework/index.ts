@@ -22,7 +22,7 @@ export interface DataAwsAuditmanagerFrameworkConfig extends cdktf.TerraformMetaA
   readonly name: string;
   /**
   * control_sets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/auditmanager_framework#control_sets DataAwsAuditmanagerFramework#control_sets}
   */
   readonly controlSets?: DataAwsAuditmanagerFrameworkControlSets[] | cdktf.IResolvable;
@@ -105,7 +105,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsControlsList extends cdktf.C
 export interface DataAwsAuditmanagerFrameworkControlSets {
   /**
   * controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/auditmanager_framework#controls DataAwsAuditmanagerFramework#controls}
   */
   readonly controls?: DataAwsAuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable;

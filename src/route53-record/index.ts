@@ -57,37 +57,37 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   readonly zoneId: string;
   /**
   * alias block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#alias Route53Record#alias}
   */
   readonly alias?: Route53RecordAlias;
   /**
   * cidr_routing_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#cidr_routing_policy Route53Record#cidr_routing_policy}
   */
   readonly cidrRoutingPolicy?: Route53RecordCidrRoutingPolicy;
   /**
   * failover_routing_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
   */
   readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy;
   /**
   * geolocation_routing_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#geolocation_routing_policy Route53Record#geolocation_routing_policy}
   */
   readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy;
   /**
   * latency_routing_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#latency_routing_policy Route53Record#latency_routing_policy}
   */
   readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy;
   /**
   * weighted_routing_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53_record#weighted_routing_policy Route53Record#weighted_routing_policy}
   */
   readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy;

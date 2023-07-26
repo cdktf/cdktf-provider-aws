@@ -41,13 +41,13 @@ export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
   readonly sortAscending?: boolean | cdktf.IResolvable;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
   */
   readonly filter?: DataAwsAmiIdsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ami_ids#timeouts DataAwsAmiIds#timeouts}
   */
   readonly timeouts?: DataAwsAmiIdsTimeouts;

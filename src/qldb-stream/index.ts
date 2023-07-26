@@ -49,13 +49,13 @@ export interface QldbStreamConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * kinesis_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/qldb_stream#kinesis_configuration QldbStream#kinesis_configuration}
   */
   readonly kinesisConfiguration: QldbStreamKinesisConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/qldb_stream#timeouts QldbStream#timeouts}
   */
   readonly timeouts?: QldbStreamTimeouts;

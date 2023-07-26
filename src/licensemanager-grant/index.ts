@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface LicensemanagerGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allowed operations for the grant. This is a subset of the allowed operations on the license.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/licensemanager_grant#allowed_operations LicensemanagerGrant#allowed_operations}
   */
   readonly allowedOperations: string[];
@@ -27,19 +27,19 @@ export interface LicensemanagerGrantConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * License ARN.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/licensemanager_grant#license_arn LicensemanagerGrant#license_arn}
   */
   readonly licenseArn: string;
   /**
   * Name of the grant.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/licensemanager_grant#name LicensemanagerGrant#name}
   */
   readonly name: string;
   /**
   * The grantee principal ARN. The target account for the grant in the form of the ARN for an account principal of the root user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/licensemanager_grant#principal LicensemanagerGrant#principal}
   */
   readonly principal: string;

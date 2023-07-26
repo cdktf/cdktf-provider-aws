@@ -37,7 +37,7 @@ export interface S3BucketObjectLockConfigurationAConfig extends cdktf.TerraformM
   readonly token?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfigurationA#rule}
   */
   readonly rule?: S3BucketObjectLockConfigurationRuleA;
@@ -164,7 +164,7 @@ export class S3BucketObjectLockConfigurationRuleDefaultRetentionAOutputReference
 export interface S3BucketObjectLockConfigurationRuleA {
   /**
   * default_retention block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_object_lock_configuration#default_retention S3BucketObjectLockConfigurationA#default_retention}
   */
   readonly defaultRetention: S3BucketObjectLockConfigurationRuleDefaultRetentionA;

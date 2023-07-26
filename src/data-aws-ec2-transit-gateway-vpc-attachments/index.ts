@@ -21,13 +21,13 @@ export interface DataAwsEc2TransitGatewayVpcAttachmentsConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#filter DataAwsEc2TransitGatewayVpcAttachments#filter}
   */
   readonly filter?: DataAwsEc2TransitGatewayVpcAttachmentsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_transit_gateway_vpc_attachments#timeouts DataAwsEc2TransitGatewayVpcAttachments#timeouts}
   */
   readonly timeouts?: DataAwsEc2TransitGatewayVpcAttachmentsTimeouts;

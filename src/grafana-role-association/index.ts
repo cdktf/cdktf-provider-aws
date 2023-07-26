@@ -37,7 +37,7 @@ export interface GrafanaRoleAssociationConfig extends cdktf.TerraformMetaArgumen
   readonly workspaceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_role_association#timeouts GrafanaRoleAssociation#timeouts}
   */
   readonly timeouts?: GrafanaRoleAssociationTimeouts;

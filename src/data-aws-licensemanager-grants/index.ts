@@ -21,7 +21,7 @@ export interface DataAwsLicensemanagerGrantsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/licensemanager_grants#filter DataAwsLicensemanagerGrants#filter}
   */
   readonly filter?: DataAwsLicensemanagerGrantsFilter[] | cdktf.IResolvable;

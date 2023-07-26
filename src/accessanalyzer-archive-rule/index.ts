@@ -29,7 +29,7 @@ export interface AccessanalyzerArchiveRuleConfig extends cdktf.TerraformMetaArgu
   readonly ruleName: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/accessanalyzer_archive_rule#filter AccessanalyzerArchiveRule#filter}
   */
   readonly filter: AccessanalyzerArchiveRuleFilter[] | cdktf.IResolvable;

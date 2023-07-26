@@ -29,13 +29,13 @@ export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   readonly instanceTags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/instances#filter DataAwsInstances#filter}
   */
   readonly filter?: DataAwsInstancesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/instances#timeouts DataAwsInstances#timeouts}
   */
   readonly timeouts?: DataAwsInstancesTimeouts;

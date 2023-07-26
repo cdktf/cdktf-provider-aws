@@ -41,13 +41,13 @@ export interface WorklinkFleetConfig extends cdktf.TerraformMetaArguments {
   readonly optimizeForEndUserLocation?: boolean | cdktf.IResolvable;
   /**
   * identity_provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/worklink_fleet#identity_provider WorklinkFleet#identity_provider}
   */
   readonly identityProvider?: WorklinkFleetIdentityProvider;
   /**
   * network block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/worklink_fleet#network WorklinkFleet#network}
   */
   readonly network?: WorklinkFleetNetwork;

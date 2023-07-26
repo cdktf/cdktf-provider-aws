@@ -113,25 +113,25 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   readonly waitForFulfillment?: boolean | cdktf.IResolvable;
   /**
   * launch_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#launch_specification SpotFleetRequest#launch_specification}
   */
   readonly launchSpecification?: SpotFleetRequestLaunchSpecification[] | cdktf.IResolvable;
   /**
   * launch_template_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#launch_template_config SpotFleetRequest#launch_template_config}
   */
   readonly launchTemplateConfig?: SpotFleetRequestLaunchTemplateConfig[] | cdktf.IResolvable;
   /**
   * spot_maintenance_strategies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#spot_maintenance_strategies SpotFleetRequest#spot_maintenance_strategies}
   */
   readonly spotMaintenanceStrategies?: SpotFleetRequestSpotMaintenanceStrategies;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#timeouts SpotFleetRequest#timeouts}
   */
   readonly timeouts?: SpotFleetRequestTimeouts;
@@ -894,19 +894,19 @@ export interface SpotFleetRequestLaunchSpecification {
   readonly weightedCapacity?: string;
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#ebs_block_device SpotFleetRequest#ebs_block_device}
   */
   readonly ebsBlockDevice?: SpotFleetRequestLaunchSpecificationEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#ephemeral_block_device SpotFleetRequest#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: SpotFleetRequestLaunchSpecificationEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * root_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#root_block_device SpotFleetRequest#root_block_device}
   */
   readonly rootBlockDevice?: SpotFleetRequestLaunchSpecificationRootBlockDevice[] | cdktf.IResolvable;
@@ -2442,55 +2442,55 @@ export interface SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequiremen
   readonly spotMaxPricePercentageOverLowestPrice?: number;
   /**
   * accelerator_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#accelerator_count SpotFleetRequest#accelerator_count}
   */
   readonly acceleratorCount?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount;
   /**
   * accelerator_total_memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#accelerator_total_memory_mib SpotFleetRequest#accelerator_total_memory_mib}
   */
   readonly acceleratorTotalMemoryMib?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib;
   /**
   * baseline_ebs_bandwidth_mbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#baseline_ebs_bandwidth_mbps SpotFleetRequest#baseline_ebs_bandwidth_mbps}
   */
   readonly baselineEbsBandwidthMbps?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps;
   /**
   * memory_gib_per_vcpu block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#memory_gib_per_vcpu SpotFleetRequest#memory_gib_per_vcpu}
   */
   readonly memoryGibPerVcpu?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu;
   /**
   * memory_mib block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#memory_mib SpotFleetRequest#memory_mib}
   */
   readonly memoryMib?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib;
   /**
   * network_bandwidth_gbps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#network_bandwidth_gbps SpotFleetRequest#network_bandwidth_gbps}
   */
   readonly networkBandwidthGbps?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps;
   /**
   * network_interface_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#network_interface_count SpotFleetRequest#network_interface_count}
   */
   readonly networkInterfaceCount?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount;
   /**
   * total_local_storage_gb block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#total_local_storage_gb SpotFleetRequest#total_local_storage_gb}
   */
   readonly totalLocalStorageGb?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb;
   /**
   * vcpu_count block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#vcpu_count SpotFleetRequest#vcpu_count}
   */
   readonly vcpuCount?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount;
@@ -3087,7 +3087,7 @@ export interface SpotFleetRequestLaunchTemplateConfigOverrides {
   readonly weightedCapacity?: number;
   /**
   * instance_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#instance_requirements SpotFleetRequest#instance_requirements}
   */
   readonly instanceRequirements?: SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirements;
@@ -3324,13 +3324,13 @@ export class SpotFleetRequestLaunchTemplateConfigOverridesList extends cdktf.Com
 export interface SpotFleetRequestLaunchTemplateConfig {
   /**
   * launch_template_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#launch_template_specification SpotFleetRequest#launch_template_specification}
   */
   readonly launchTemplateSpecification: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification;
   /**
   * overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#overrides SpotFleetRequest#overrides}
   */
   readonly overrides?: SpotFleetRequestLaunchTemplateConfigOverrides[] | cdktf.IResolvable;
@@ -3514,7 +3514,7 @@ export class SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceOutputRef
 export interface SpotFleetRequestSpotMaintenanceStrategies {
   /**
   * capacity_rebalance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/spot_fleet_request#capacity_rebalance SpotFleetRequest#capacity_rebalance}
   */
   readonly capacityRebalance?: SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance;

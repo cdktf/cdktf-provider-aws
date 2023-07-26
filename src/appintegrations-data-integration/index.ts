@@ -45,7 +45,7 @@ export interface AppintegrationsDataIntegrationConfig extends cdktf.TerraformMet
   readonly tagsAll?: { [key: string]: string };
   /**
   * schedule_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appintegrations_data_integration#schedule_config AppintegrationsDataIntegration#schedule_config}
   */
   readonly scheduleConfig: AppintegrationsDataIntegrationScheduleConfig;

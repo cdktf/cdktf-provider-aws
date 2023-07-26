@@ -173,7 +173,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   readonly websiteRedirect?: string;
   /**
   * grant block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_object_copy#grant S3ObjectCopy#grant}
   */
   readonly grant?: S3ObjectCopyGrant[] | cdktf.IResolvable;

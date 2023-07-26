@@ -29,13 +29,13 @@ export interface DataAwsRouteTablesConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route_tables#filter DataAwsRouteTables#filter}
   */
   readonly filter?: DataAwsRouteTablesFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route_tables#timeouts DataAwsRouteTables#timeouts}
   */
   readonly timeouts?: DataAwsRouteTablesTimeouts;

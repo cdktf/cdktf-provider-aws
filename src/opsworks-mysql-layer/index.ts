@@ -113,19 +113,19 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#cloudwatch_configuration OpsworksMysqlLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksMysqlLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#ebs_volume OpsworksMysqlLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksMysqlLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#load_based_auto_scaling OpsworksMysqlLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksMysqlLayerLoadBasedAutoScaling;
@@ -498,7 +498,7 @@ export interface OpsworksMysqlLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#log_streams OpsworksMysqlLayer#log_streams}
   */
   readonly logStreams?: OpsworksMysqlLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1296,13 +1296,13 @@ export interface OpsworksMysqlLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#downscaling OpsworksMysqlLayer#downscaling}
   */
   readonly downscaling?: OpsworksMysqlLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_mysql_layer#upscaling OpsworksMysqlLayer#upscaling}
   */
   readonly upscaling?: OpsworksMysqlLayerLoadBasedAutoScalingUpscaling;

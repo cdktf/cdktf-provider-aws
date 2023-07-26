@@ -25,13 +25,13 @@ export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArgume
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/network_interface#filter DataAwsNetworkInterface#filter}
   */
   readonly filter?: DataAwsNetworkInterfaceFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/network_interface#timeouts DataAwsNetworkInterface#timeouts}
   */
   readonly timeouts?: DataAwsNetworkInterfaceTimeouts;

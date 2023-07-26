@@ -49,7 +49,7 @@ export interface Macie2FindingsFilterConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * finding_criteria block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_findings_filter#finding_criteria Macie2FindingsFilter#finding_criteria}
   */
   readonly findingCriteria: Macie2FindingsFilterFindingCriteria;
@@ -340,7 +340,7 @@ export class Macie2FindingsFilterFindingCriteriaCriterionList extends cdktf.Comp
 export interface Macie2FindingsFilterFindingCriteria {
   /**
   * criterion block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
   */
   readonly criterion?: Macie2FindingsFilterFindingCriteriaCriterion[] | cdktf.IResolvable;

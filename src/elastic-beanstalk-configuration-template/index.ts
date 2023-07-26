@@ -41,7 +41,7 @@ export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.Terra
   readonly solutionStackName?: string;
   /**
   * setting block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastic_beanstalk_configuration_template#setting ElasticBeanstalkConfigurationTemplate#setting}
   */
   readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[] | cdktf.IResolvable;

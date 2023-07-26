@@ -53,7 +53,7 @@ export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * physical_connection_requirements block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_connection#physical_connection_requirements GlueConnection#physical_connection_requirements}
   */
   readonly physicalConnectionRequirements?: GlueConnectionPhysicalConnectionRequirements;

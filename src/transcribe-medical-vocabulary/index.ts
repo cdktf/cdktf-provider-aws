@@ -41,7 +41,7 @@ export interface TranscribeMedicalVocabularyConfig extends cdktf.TerraformMetaAr
   readonly vocabularyName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transcribe_medical_vocabulary#timeouts TranscribeMedicalVocabulary#timeouts}
   */
   readonly timeouts?: TranscribeMedicalVocabularyTimeouts;

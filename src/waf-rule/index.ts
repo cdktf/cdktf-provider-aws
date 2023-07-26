@@ -37,7 +37,7 @@ export interface WafRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * predicates block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/waf_rule#predicates WafRule#predicates}
   */
   readonly predicates?: WafRulePredicates[] | cdktf.IResolvable;

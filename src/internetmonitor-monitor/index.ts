@@ -49,13 +49,13 @@ export interface InternetmonitorMonitorConfig extends cdktf.TerraformMetaArgumen
   readonly trafficPercentageToMonitor?: number;
   /**
   * health_events_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/internetmonitor_monitor#health_events_config InternetmonitorMonitor#health_events_config}
   */
   readonly healthEventsConfig?: InternetmonitorMonitorHealthEventsConfig;
   /**
   * internet_measurements_log_delivery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/internetmonitor_monitor#internet_measurements_log_delivery InternetmonitorMonitor#internet_measurements_log_delivery}
   */
   readonly internetMeasurementsLogDelivery?: InternetmonitorMonitorInternetMeasurementsLogDelivery;
@@ -271,7 +271,7 @@ export class InternetmonitorMonitorInternetMeasurementsLogDeliveryS3ConfigOutput
 export interface InternetmonitorMonitorInternetMeasurementsLogDelivery {
   /**
   * s3_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/internetmonitor_monitor#s3_config InternetmonitorMonitor#s3_config}
   */
   readonly s3Config?: InternetmonitorMonitorInternetMeasurementsLogDeliveryS3Config;

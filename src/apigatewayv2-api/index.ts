@@ -77,7 +77,7 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /**
   * cors_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
   */
   readonly corsConfiguration?: Apigatewayv2ApiCorsConfiguration;

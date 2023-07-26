@@ -49,61 +49,61 @@ export interface CodedeployDeploymentGroupConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * alarm_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#alarm_configuration CodedeployDeploymentGroup#alarm_configuration}
   */
   readonly alarmConfiguration?: CodedeployDeploymentGroupAlarmConfiguration;
   /**
   * auto_rollback_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#auto_rollback_configuration CodedeployDeploymentGroup#auto_rollback_configuration}
   */
   readonly autoRollbackConfiguration?: CodedeployDeploymentGroupAutoRollbackConfiguration;
   /**
   * blue_green_deployment_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#blue_green_deployment_config CodedeployDeploymentGroup#blue_green_deployment_config}
   */
   readonly blueGreenDeploymentConfig?: CodedeployDeploymentGroupBlueGreenDeploymentConfig;
   /**
   * deployment_style block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#deployment_style CodedeployDeploymentGroup#deployment_style}
   */
   readonly deploymentStyle?: CodedeployDeploymentGroupDeploymentStyle;
   /**
   * ec2_tag_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
   */
   readonly ec2TagFilter?: CodedeployDeploymentGroupEc2TagFilter[] | cdktf.IResolvable;
   /**
   * ec2_tag_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#ec2_tag_set CodedeployDeploymentGroup#ec2_tag_set}
   */
   readonly ec2TagSet?: CodedeployDeploymentGroupEc2TagSet[] | cdktf.IResolvable;
   /**
   * ecs_service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#ecs_service CodedeployDeploymentGroup#ecs_service}
   */
   readonly ecsService?: CodedeployDeploymentGroupEcsService;
   /**
   * load_balancer_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#load_balancer_info CodedeployDeploymentGroup#load_balancer_info}
   */
   readonly loadBalancerInfo?: CodedeployDeploymentGroupLoadBalancerInfo;
   /**
   * on_premises_instance_tag_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#on_premises_instance_tag_filter CodedeployDeploymentGroup#on_premises_instance_tag_filter}
   */
   readonly onPremisesInstanceTagFilter?: CodedeployDeploymentGroupOnPremisesInstanceTagFilter[] | cdktf.IResolvable;
   /**
   * trigger_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#trigger_configuration CodedeployDeploymentGroup#trigger_configuration}
   */
   readonly triggerConfiguration?: CodedeployDeploymentGroupTriggerConfiguration[] | cdktf.IResolvable;
@@ -571,19 +571,19 @@ export class CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInst
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfig {
   /**
   * deployment_ready_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#deployment_ready_option CodedeployDeploymentGroup#deployment_ready_option}
   */
   readonly deploymentReadyOption?: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption;
   /**
   * green_fleet_provisioning_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#green_fleet_provisioning_option CodedeployDeploymentGroup#green_fleet_provisioning_option}
   */
   readonly greenFleetProvisioningOption?: CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption;
   /**
   * terminate_blue_instances_on_deployment_success block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#terminate_blue_instances_on_deployment_success CodedeployDeploymentGroup#terminate_blue_instances_on_deployment_success}
   */
   readonly terminateBlueInstancesOnDeploymentSuccess?: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess;
@@ -1090,7 +1090,7 @@ export class CodedeployDeploymentGroupEc2TagSetEc2TagFilterList extends cdktf.Co
 export interface CodedeployDeploymentGroupEc2TagSet {
   /**
   * ec2_tag_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#ec2_tag_filter CodedeployDeploymentGroup#ec2_tag_filter}
   */
   readonly ec2TagFilter?: CodedeployDeploymentGroupEc2TagSetEc2TagFilter[] | cdktf.IResolvable;
@@ -1687,19 +1687,19 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTra
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   /**
   * prod_traffic_route block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#prod_traffic_route CodedeployDeploymentGroup#prod_traffic_route}
   */
   readonly prodTrafficRoute: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute;
   /**
   * target_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#target_group CodedeployDeploymentGroup#target_group}
   */
   readonly targetGroup: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup[] | cdktf.IResolvable;
   /**
   * test_traffic_route block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#test_traffic_route CodedeployDeploymentGroup#test_traffic_route}
   */
   readonly testTrafficRoute?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute;
@@ -1806,19 +1806,19 @@ export class CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoOutputR
 export interface CodedeployDeploymentGroupLoadBalancerInfo {
   /**
   * elb_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#elb_info CodedeployDeploymentGroup#elb_info}
   */
   readonly elbInfo?: CodedeployDeploymentGroupLoadBalancerInfoElbInfo[] | cdktf.IResolvable;
   /**
   * target_group_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#target_group_info CodedeployDeploymentGroup#target_group_info}
   */
   readonly targetGroupInfo?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo[] | cdktf.IResolvable;
   /**
   * target_group_pair_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codedeploy_deployment_group#target_group_pair_info CodedeployDeploymentGroup#target_group_pair_info}
   */
   readonly targetGroupPairInfo?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo;

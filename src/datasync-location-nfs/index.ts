@@ -37,13 +37,13 @@ export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * mount_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
   */
   readonly mountOptions?: DatasyncLocationNfsMountOptions;
   /**
   * on_prem_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
   */
   readonly onPremConfig: DatasyncLocationNfsOnPremConfig;

@@ -41,7 +41,7 @@ export interface ElasticacheParameterGroupConfig extends cdktf.TerraformMetaArgu
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_parameter_group#parameter ElasticacheParameterGroup#parameter}
   */
   readonly parameter?: ElasticacheParameterGroupParameter[] | cdktf.IResolvable;

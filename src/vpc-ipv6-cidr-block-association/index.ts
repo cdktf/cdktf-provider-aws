@@ -37,7 +37,7 @@ export interface VpcIpv6CidrBlockAssociationConfig extends cdktf.TerraformMetaAr
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_ipv6_cidr_block_association#timeouts VpcIpv6CidrBlockAssociation#timeouts}
   */
   readonly timeouts?: VpcIpv6CidrBlockAssociationTimeouts;

@@ -57,19 +57,19 @@ export interface KendraDataSourceConfig extends cdktf.TerraformMetaArguments {
   readonly type: string;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#configuration KendraDataSource#configuration}
   */
   readonly configuration?: KendraDataSourceConfiguration;
   /**
   * custom_document_enrichment_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#custom_document_enrichment_configuration KendraDataSource#custom_document_enrichment_configuration}
   */
   readonly customDocumentEnrichmentConfiguration?: KendraDataSourceCustomDocumentEnrichmentConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#timeouts KendraDataSource#timeouts}
   */
   readonly timeouts?: KendraDataSourceTimeouts;
@@ -223,13 +223,13 @@ export interface KendraDataSourceConfigurationS3Configuration {
   readonly inclusionPrefixes?: string[];
   /**
   * access_control_list_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#access_control_list_configuration KendraDataSource#access_control_list_configuration}
   */
   readonly accessControlListConfiguration?: KendraDataSourceConfigurationS3ConfigurationAccessControlListConfiguration;
   /**
   * documents_metadata_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#documents_metadata_configuration KendraDataSource#documents_metadata_configuration}
   */
   readonly documentsMetadataConfiguration?: KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfiguration;
@@ -550,7 +550,7 @@ export class KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationC
 export interface KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration {
   /**
   * basic_authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#basic_authentication KendraDataSource#basic_authentication}
   */
   readonly basicAuthentication?: KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationBasicAuthentication[] | cdktf.IResolvable;
@@ -881,13 +881,13 @@ export class KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsCon
 export interface KendraDataSourceConfigurationWebCrawlerConfigurationUrls {
   /**
   * seed_url_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#seed_url_configuration KendraDataSource#seed_url_configuration}
   */
   readonly seedUrlConfiguration?: KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSeedUrlConfiguration;
   /**
   * site_maps_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#site_maps_configuration KendraDataSource#site_maps_configuration}
   */
   readonly siteMapsConfiguration?: KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfiguration;
@@ -1001,19 +1001,19 @@ export interface KendraDataSourceConfigurationWebCrawlerConfiguration {
   readonly urlInclusionPatterns?: string[];
   /**
   * authentication_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#authentication_configuration KendraDataSource#authentication_configuration}
   */
   readonly authenticationConfiguration?: KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfiguration;
   /**
   * proxy_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#proxy_configuration KendraDataSource#proxy_configuration}
   */
   readonly proxyConfiguration?: KendraDataSourceConfigurationWebCrawlerConfigurationProxyConfiguration;
   /**
   * urls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#urls KendraDataSource#urls}
   */
   readonly urls: KendraDataSourceConfigurationWebCrawlerConfigurationUrls;
@@ -1261,13 +1261,13 @@ export class KendraDataSourceConfigurationWebCrawlerConfigurationOutputReference
 export interface KendraDataSourceConfiguration {
   /**
   * s3_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#s3_configuration KendraDataSource#s3_configuration}
   */
   readonly s3Configuration?: KendraDataSourceConfigurationS3Configuration;
   /**
   * web_crawler_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#web_crawler_configuration KendraDataSource#web_crawler_configuration}
   */
   readonly webCrawlerConfiguration?: KendraDataSourceConfigurationWebCrawlerConfiguration;
@@ -1511,7 +1511,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConf
   readonly operator: string;
   /**
   * condition_on_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#condition_on_value KendraDataSource#condition_on_value}
   */
   readonly conditionOnValue?: KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsConditionConditionOnValue;
@@ -1772,7 +1772,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConf
   readonly targetDocumentAttributeValueDeletion?: boolean | cdktf.IResolvable;
   /**
   * target_document_attribute_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#target_document_attribute_value KendraDataSource#target_document_attribute_value}
   */
   readonly targetDocumentAttributeValue?: KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTargetTargetDocumentAttributeValue;
@@ -1889,13 +1889,13 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConf
   readonly documentContentDeletion?: boolean | cdktf.IResolvable;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#condition KendraDataSource#condition}
   */
   readonly condition?: KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsCondition;
   /**
   * target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#target KendraDataSource#target}
   */
   readonly target?: KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsTarget;
@@ -2194,7 +2194,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtrac
   readonly operator: string;
   /**
   * condition_on_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#condition_on_value KendraDataSource#condition_on_value}
   */
   readonly conditionOnValue?: KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationConditionConditionOnValue;
@@ -2309,7 +2309,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtrac
   readonly s3Bucket: string;
   /**
   * invocation_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#invocation_condition KendraDataSource#invocation_condition}
   */
   readonly invocationCondition?: KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfigurationInvocationCondition;
@@ -2570,7 +2570,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtract
   readonly operator: string;
   /**
   * condition_on_value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#condition_on_value KendraDataSource#condition_on_value}
   */
   readonly conditionOnValue?: KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionConditionOnValue;
@@ -2685,7 +2685,7 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtract
   readonly s3Bucket: string;
   /**
   * invocation_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#invocation_condition KendraDataSource#invocation_condition}
   */
   readonly invocationCondition?: KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationCondition;
@@ -2796,19 +2796,19 @@ export interface KendraDataSourceCustomDocumentEnrichmentConfiguration {
   readonly roleArn?: string;
   /**
   * inline_configurations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#inline_configurations KendraDataSource#inline_configurations}
   */
   readonly inlineConfigurations?: KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurations[] | cdktf.IResolvable;
   /**
   * post_extraction_hook_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#post_extraction_hook_configuration KendraDataSource#post_extraction_hook_configuration}
   */
   readonly postExtractionHookConfiguration?: KendraDataSourceCustomDocumentEnrichmentConfigurationPostExtractionHookConfiguration;
   /**
   * pre_extraction_hook_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kendra_data_source#pre_extraction_hook_configuration KendraDataSource#pre_extraction_hook_configuration}
   */
   readonly preExtractionHookConfiguration?: KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfiguration;

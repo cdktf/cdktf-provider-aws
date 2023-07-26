@@ -33,13 +33,13 @@ export interface CodestarconnectionsHostConfig extends cdktf.TerraformMetaArgume
   readonly providerType: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codestarconnections_host#timeouts CodestarconnectionsHost#timeouts}
   */
   readonly timeouts?: CodestarconnectionsHostTimeouts;
   /**
   * vpc_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codestarconnections_host#vpc_configuration CodestarconnectionsHost#vpc_configuration}
   */
   readonly vpcConfiguration?: CodestarconnectionsHostVpcConfiguration;

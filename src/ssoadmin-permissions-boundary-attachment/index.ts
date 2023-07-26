@@ -29,7 +29,7 @@ export interface SsoadminPermissionsBoundaryAttachmentConfig extends cdktf.Terra
   readonly permissionSetArn: string;
   /**
   * permissions_boundary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssoadmin_permissions_boundary_attachment#permissions_boundary SsoadminPermissionsBoundaryAttachment#permissions_boundary}
   */
   readonly permissionsBoundary: SsoadminPermissionsBoundaryAttachmentPermissionsBoundary;
@@ -130,7 +130,7 @@ export interface SsoadminPermissionsBoundaryAttachmentPermissionsBoundary {
   readonly managedPolicyArn?: string;
   /**
   * customer_managed_policy_reference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssoadmin_permissions_boundary_attachment#customer_managed_policy_reference SsoadminPermissionsBoundaryAttachment#customer_managed_policy_reference}
   */
   readonly customerManagedPolicyReference?: SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference;

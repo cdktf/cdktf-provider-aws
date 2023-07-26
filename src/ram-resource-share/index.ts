@@ -41,7 +41,7 @@ export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ram_resource_share#timeouts RamResourceShare#timeouts}
   */
   readonly timeouts?: RamResourceShareTimeouts;

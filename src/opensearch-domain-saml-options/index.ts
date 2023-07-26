@@ -25,13 +25,13 @@ export interface OpensearchDomainSamlOptionsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * saml_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain_saml_options#saml_options OpensearchDomainSamlOptions#saml_options}
   */
   readonly samlOptions?: OpensearchDomainSamlOptionsSamlOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain_saml_options#timeouts OpensearchDomainSamlOptions#timeouts}
   */
   readonly timeouts?: OpensearchDomainSamlOptionsTimeouts;
@@ -149,7 +149,7 @@ export interface OpensearchDomainSamlOptionsSamlOptions {
   readonly subjectKey?: string;
   /**
   * idp block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opensearch_domain_saml_options#idp OpensearchDomainSamlOptions#idp}
   */
   readonly idp?: OpensearchDomainSamlOptionsSamlOptionsIdp;

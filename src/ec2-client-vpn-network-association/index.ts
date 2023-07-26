@@ -29,7 +29,7 @@ export interface Ec2ClientVpnNetworkAssociationConfig extends cdktf.TerraformMet
   readonly subnetId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_network_association#timeouts Ec2ClientVpnNetworkAssociation#timeouts}
   */
   readonly timeouts?: Ec2ClientVpnNetworkAssociationTimeouts;

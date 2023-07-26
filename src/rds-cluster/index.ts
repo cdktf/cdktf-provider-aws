@@ -201,31 +201,31 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSecurityGroupIds?: string[];
   /**
   * restore_to_point_in_time block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster#restore_to_point_in_time RdsCluster#restore_to_point_in_time}
   */
   readonly restoreToPointInTime?: RdsClusterRestoreToPointInTime;
   /**
   * s3_import block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster#s3_import RdsCluster#s3_import}
   */
   readonly s3Import?: RdsClusterS3Import;
   /**
   * scaling_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster#scaling_configuration RdsCluster#scaling_configuration}
   */
   readonly scalingConfiguration?: RdsClusterScalingConfiguration;
   /**
   * serverlessv2_scaling_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster#serverlessv2_scaling_configuration RdsCluster#serverlessv2_scaling_configuration}
   */
   readonly serverlessv2ScalingConfiguration?: RdsClusterServerlessv2ScalingConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster#timeouts RdsCluster#timeouts}
   */
   readonly timeouts?: RdsClusterTimeouts;

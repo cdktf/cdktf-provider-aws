@@ -21,7 +21,7 @@ export interface DataAwsImagebuilderDistributionConfigurationsConfig extends cdk
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/imagebuilder_distribution_configurations#filter DataAwsImagebuilderDistributionConfigurations#filter}
   */
   readonly filter?: DataAwsImagebuilderDistributionConfigurationsFilter[] | cdktf.IResolvable;

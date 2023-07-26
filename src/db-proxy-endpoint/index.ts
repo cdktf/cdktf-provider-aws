@@ -49,7 +49,7 @@ export interface DbProxyEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSubnetIds: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_proxy_endpoint#timeouts DbProxyEndpoint#timeouts}
   */
   readonly timeouts?: DbProxyEndpointTimeouts;

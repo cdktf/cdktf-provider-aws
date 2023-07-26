@@ -69,13 +69,13 @@ export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * endpoint_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_domain_name#endpoint_configuration ApiGatewayDomainName#endpoint_configuration}
   */
   readonly endpointConfiguration?: ApiGatewayDomainNameEndpointConfiguration;
   /**
   * mutual_tls_authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_domain_name#mutual_tls_authentication ApiGatewayDomainName#mutual_tls_authentication}
   */
   readonly mutualTlsAuthentication?: ApiGatewayDomainNameMutualTlsAuthentication;

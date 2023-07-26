@@ -45,7 +45,7 @@ export interface DbParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_parameter_group#parameter DbParameterGroup#parameter}
   */
   readonly parameter?: DbParameterGroupParameter[] | cdktf.IResolvable;

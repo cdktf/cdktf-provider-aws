@@ -53,13 +53,13 @@ export interface FsxDataRepositoryAssociationConfig extends cdktf.TerraformMetaA
   readonly tagsAll?: { [key: string]: string };
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_data_repository_association#s3 FsxDataRepositoryAssociation#s3}
   */
   readonly s3?: FsxDataRepositoryAssociationS3;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_data_repository_association#timeouts FsxDataRepositoryAssociation#timeouts}
   */
   readonly timeouts?: FsxDataRepositoryAssociationTimeouts;
@@ -197,13 +197,13 @@ export class FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference exten
 export interface FsxDataRepositoryAssociationS3 {
   /**
   * auto_export_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_data_repository_association#auto_export_policy FsxDataRepositoryAssociation#auto_export_policy}
   */
   readonly autoExportPolicy?: FsxDataRepositoryAssociationS3AutoExportPolicy;
   /**
   * auto_import_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_data_repository_association#auto_import_policy FsxDataRepositoryAssociation#auto_import_policy}
   */
   readonly autoImportPolicy?: FsxDataRepositoryAssociationS3AutoImportPolicy;

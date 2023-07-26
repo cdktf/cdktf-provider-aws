@@ -49,13 +49,13 @@ export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArgume
   readonly type: string;
   /**
   * compute_resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_compute_environment#compute_resources BatchComputeEnvironment#compute_resources}
   */
   readonly computeResources?: BatchComputeEnvironmentComputeResources;
   /**
   * eks_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_compute_environment#eks_configuration BatchComputeEnvironment#eks_configuration}
   */
   readonly eksConfiguration?: BatchComputeEnvironmentEksConfiguration;
@@ -366,13 +366,13 @@ export interface BatchComputeEnvironmentComputeResources {
   readonly type: string;
   /**
   * ec2_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_compute_environment#ec2_configuration BatchComputeEnvironment#ec2_configuration}
   */
   readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration[] | cdktf.IResolvable;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/batch_compute_environment#launch_template BatchComputeEnvironment#launch_template}
   */
   readonly launchTemplate?: BatchComputeEnvironmentComputeResourcesLaunchTemplate;

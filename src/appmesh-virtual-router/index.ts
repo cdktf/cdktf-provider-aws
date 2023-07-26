@@ -41,7 +41,7 @@ export interface AppmeshVirtualRouterConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_router#spec AppmeshVirtualRouter#spec}
   */
   readonly spec: AppmeshVirtualRouterSpec;
@@ -135,7 +135,7 @@ export class AppmeshVirtualRouterSpecListenerPortMappingOutputReference extends 
 export interface AppmeshVirtualRouterSpecListener {
   /**
   * port_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_router#port_mapping AppmeshVirtualRouter#port_mapping}
   */
   readonly portMapping: AppmeshVirtualRouterSpecListenerPortMapping;
@@ -231,7 +231,7 @@ export class AppmeshVirtualRouterSpecListenerList extends cdktf.ComplexList {
 export interface AppmeshVirtualRouterSpec {
   /**
   * listener block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appmesh_virtual_router#listener AppmeshVirtualRouter#listener}
   */
   readonly listener?: AppmeshVirtualRouterSpecListener[] | cdktf.IResolvable;

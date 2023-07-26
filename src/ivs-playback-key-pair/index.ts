@@ -37,7 +37,7 @@ export interface IvsPlaybackKeyPairConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_playback_key_pair#timeouts IvsPlaybackKeyPair#timeouts}
   */
   readonly timeouts?: IvsPlaybackKeyPairTimeouts;

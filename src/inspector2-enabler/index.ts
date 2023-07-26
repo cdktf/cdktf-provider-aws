@@ -29,7 +29,7 @@ export interface Inspector2EnablerConfig extends cdktf.TerraformMetaArguments {
   readonly resourceTypes: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
   */
   readonly timeouts?: Inspector2EnablerTimeouts;

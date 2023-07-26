@@ -49,7 +49,7 @@ export interface IvsChannelConfig extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ivs_channel#timeouts IvsChannel#timeouts}
   */
   readonly timeouts?: IvsChannelTimeouts;

@@ -25,7 +25,7 @@ export interface DataAwsEc2InstanceTypeConfig extends cdktf.TerraformMetaArgumen
   readonly instanceType: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypeTimeouts;

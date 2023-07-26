@@ -41,7 +41,7 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMeta
   readonly targetNetworkCidr: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_authorization_rule#timeouts Ec2ClientVpnAuthorizationRule#timeouts}
   */
   readonly timeouts?: Ec2ClientVpnAuthorizationRuleTimeouts;

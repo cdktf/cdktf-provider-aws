@@ -69,25 +69,25 @@ export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArgumen
   readonly templateUrl?: string;
   /**
   * auto_deployment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
   */
   readonly autoDeployment?: CloudformationStackSetAutoDeployment;
   /**
   * managed_execution block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
   */
   readonly managedExecution?: CloudformationStackSetManagedExecution;
   /**
   * operation_preferences block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
   */
   readonly operationPreferences?: CloudformationStackSetOperationPreferences;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
   */
   readonly timeouts?: CloudformationStackSetTimeouts;

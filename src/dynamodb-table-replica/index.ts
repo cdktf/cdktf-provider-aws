@@ -45,7 +45,7 @@ export interface DynamodbTableReplicaAConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_table_replica#timeouts DynamodbTableReplicaA#timeouts}
   */
   readonly timeouts?: DynamodbTableReplicaTimeouts;

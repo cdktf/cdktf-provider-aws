@@ -97,67 +97,67 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly waitForSteadyState?: boolean | cdktf.IResolvable;
   /**
   * alarms block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#alarms EcsService#alarms}
   */
   readonly alarms?: EcsServiceAlarms;
   /**
   * capacity_provider_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}
   */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[] | cdktf.IResolvable;
   /**
   * deployment_circuit_breaker block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
   */
   readonly deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker;
   /**
   * deployment_controller block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#deployment_controller EcsService#deployment_controller}
   */
   readonly deploymentController?: EcsServiceDeploymentController;
   /**
   * load_balancer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#load_balancer EcsService#load_balancer}
   */
   readonly loadBalancer?: EcsServiceLoadBalancer[] | cdktf.IResolvable;
   /**
   * network_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#network_configuration EcsService#network_configuration}
   */
   readonly networkConfiguration?: EcsServiceNetworkConfiguration;
   /**
   * ordered_placement_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#ordered_placement_strategy EcsService#ordered_placement_strategy}
   */
   readonly orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[] | cdktf.IResolvable;
   /**
   * placement_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#placement_constraints EcsService#placement_constraints}
   */
   readonly placementConstraints?: EcsServicePlacementConstraints[] | cdktf.IResolvable;
   /**
   * service_connect_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
   */
   readonly serviceConnectConfiguration?: EcsServiceServiceConnectConfiguration;
   /**
   * service_registries block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#service_registries EcsService#service_registries}
   */
   readonly serviceRegistries?: EcsServiceServiceRegistries;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#timeouts EcsService#timeouts}
   */
   readonly timeouts?: EcsServiceTimeouts;
@@ -1230,7 +1230,7 @@ export interface EcsServiceServiceConnectConfigurationLogConfiguration {
   readonly options?: { [key: string]: string };
   /**
   * secret_option block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#secret_option EcsService#secret_option}
   */
   readonly secretOption?: EcsServiceServiceConnectConfigurationLogConfigurationSecretOption[] | cdktf.IResolvable;
@@ -1441,7 +1441,7 @@ export interface EcsServiceServiceConnectConfigurationService {
   readonly portName: string;
   /**
   * client_alias block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#client_alias EcsService#client_alias}
   */
   readonly clientAlias?: EcsServiceServiceConnectConfigurationServiceClientAlias;
@@ -1614,13 +1614,13 @@ export interface EcsServiceServiceConnectConfiguration {
   readonly namespace?: string;
   /**
   * log_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#log_configuration EcsService#log_configuration}
   */
   readonly logConfiguration?: EcsServiceServiceConnectConfigurationLogConfiguration;
   /**
   * service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_service#service EcsService#service}
   */
   readonly service?: EcsServiceServiceConnectConfigurationService[] | cdktf.IResolvable;

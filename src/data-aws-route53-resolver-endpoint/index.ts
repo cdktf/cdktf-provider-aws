@@ -25,7 +25,7 @@ export interface DataAwsRoute53ResolverEndpointConfig extends cdktf.TerraformMet
   readonly resolverEndpointId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_endpoint#filter DataAwsRoute53ResolverEndpoint#filter}
   */
   readonly filter?: DataAwsRoute53ResolverEndpointFilter[] | cdktf.IResolvable;

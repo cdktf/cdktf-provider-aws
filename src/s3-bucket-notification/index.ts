@@ -29,19 +29,19 @@ export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * lambda_function block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_notification#lambda_function S3BucketNotification#lambda_function}
   */
   readonly lambdaFunction?: S3BucketNotificationLambdaFunction[] | cdktf.IResolvable;
   /**
   * queue block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_notification#queue S3BucketNotification#queue}
   */
   readonly queue?: S3BucketNotificationQueue[] | cdktf.IResolvable;
   /**
   * topic block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_notification#topic S3BucketNotification#topic}
   */
   readonly topic?: S3BucketNotificationTopic[] | cdktf.IResolvable;

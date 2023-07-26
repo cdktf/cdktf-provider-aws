@@ -37,7 +37,7 @@ export interface DxHostedTransitVirtualInterfaceAccepterConfig extends cdktf.Ter
   readonly virtualInterfaceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_hosted_transit_virtual_interface_accepter#timeouts DxHostedTransitVirtualInterfaceAccepter#timeouts}
   */
   readonly timeouts?: DxHostedTransitVirtualInterfaceAccepterTimeouts;

@@ -45,13 +45,13 @@ export interface TransferAccessConfig extends cdktf.TerraformMetaArguments {
   readonly serverId: string;
   /**
   * home_directory_mappings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
   */
   readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable;
   /**
   * posix_profile block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/transfer_access#posix_profile TransferAccess#posix_profile}
   */
   readonly posixProfile?: TransferAccessPosixProfile;

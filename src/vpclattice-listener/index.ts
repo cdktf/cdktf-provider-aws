@@ -49,13 +49,13 @@ export interface VpclatticeListenerConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * default_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener#default_action VpclatticeListener#default_action}
   */
   readonly defaultAction: VpclatticeListenerDefaultAction;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener#timeouts VpclatticeListener#timeouts}
   */
   readonly timeouts?: VpclatticeListenerTimeouts;
@@ -249,7 +249,7 @@ export class VpclatticeListenerDefaultActionForwardTargetGroupsList extends cdkt
 export interface VpclatticeListenerDefaultActionForward {
   /**
   * target_groups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener#target_groups VpclatticeListener#target_groups}
   */
   readonly targetGroups?: VpclatticeListenerDefaultActionForwardTargetGroups[] | cdktf.IResolvable;
@@ -348,13 +348,13 @@ export class VpclatticeListenerDefaultActionForwardList extends cdktf.ComplexLis
 export interface VpclatticeListenerDefaultAction {
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener#fixed_response VpclatticeListener#fixed_response}
   */
   readonly fixedResponse?: VpclatticeListenerDefaultActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_listener#forward VpclatticeListener#forward}
   */
   readonly forward?: VpclatticeListenerDefaultActionForward[] | cdktf.IResolvable;

@@ -73,19 +73,19 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   readonly tagsAll?: { [key: string]: string };
   /**
   * provisioning_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_provisioned_product#provisioning_parameters ServicecatalogProvisionedProduct#provisioning_parameters}
   */
   readonly provisioningParameters?: ServicecatalogProvisionedProductProvisioningParameters[] | cdktf.IResolvable;
   /**
   * stack_set_provisioning_preferences block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_provisioned_product#stack_set_provisioning_preferences ServicecatalogProvisionedProduct#stack_set_provisioning_preferences}
   */
   readonly stackSetProvisioningPreferences?: ServicecatalogProvisionedProductStackSetProvisioningPreferences;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_provisioned_product#timeouts ServicecatalogProvisionedProduct#timeouts}
   */
   readonly timeouts?: ServicecatalogProvisionedProductTimeouts;

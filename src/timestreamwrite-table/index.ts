@@ -37,19 +37,19 @@ export interface TimestreamwriteTableConfig extends cdktf.TerraformMetaArguments
   readonly tagsAll?: { [key: string]: string };
   /**
   * magnetic_store_write_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#magnetic_store_write_properties TimestreamwriteTable#magnetic_store_write_properties}
   */
   readonly magneticStoreWriteProperties?: TimestreamwriteTableMagneticStoreWriteProperties;
   /**
   * retention_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#retention_properties TimestreamwriteTable#retention_properties}
   */
   readonly retentionProperties?: TimestreamwriteTableRetentionProperties;
   /**
   * schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#schema TimestreamwriteTable#schema}
   */
   readonly schema?: TimestreamwriteTableSchema;
@@ -203,7 +203,7 @@ export class TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreReject
 export interface TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation {
   /**
   * s3_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#s3_configuration TimestreamwriteTable#s3_configuration}
   */
   readonly s3Configuration?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration;
@@ -274,7 +274,7 @@ export interface TimestreamwriteTableMagneticStoreWriteProperties {
   readonly enableMagneticStoreWrites?: boolean | cdktf.IResolvable;
   /**
   * magnetic_store_rejected_data_location block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#magnetic_store_rejected_data_location TimestreamwriteTable#magnetic_store_rejected_data_location}
   */
   readonly magneticStoreRejectedDataLocation?: TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation;
@@ -566,7 +566,7 @@ export class TimestreamwriteTableSchemaCompositePartitionKeyOutputReference exte
 export interface TimestreamwriteTableSchema {
   /**
   * composite_partition_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/timestreamwrite_table#composite_partition_key TimestreamwriteTable#composite_partition_key}
   */
   readonly compositePartitionKey?: TimestreamwriteTableSchemaCompositePartitionKey;

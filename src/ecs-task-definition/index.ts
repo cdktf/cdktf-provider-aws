@@ -73,37 +73,37 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly taskRoleArn?: string;
   /**
   * ephemeral_storage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
   */
   readonly ephemeralStorage?: EcsTaskDefinitionEphemeralStorage;
   /**
   * inference_accelerator block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#inference_accelerator EcsTaskDefinition#inference_accelerator}
   */
   readonly inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[] | cdktf.IResolvable;
   /**
   * placement_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#placement_constraints EcsTaskDefinition#placement_constraints}
   */
   readonly placementConstraints?: EcsTaskDefinitionPlacementConstraints[] | cdktf.IResolvable;
   /**
   * proxy_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#proxy_configuration EcsTaskDefinition#proxy_configuration}
   */
   readonly proxyConfiguration?: EcsTaskDefinitionProxyConfiguration;
   /**
   * runtime_platform block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#runtime_platform EcsTaskDefinition#runtime_platform}
   */
   readonly runtimePlatform?: EcsTaskDefinitionRuntimePlatform;
   /**
   * volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#volume EcsTaskDefinition#volume}
   */
   readonly volume?: EcsTaskDefinitionVolume[] | cdktf.IResolvable;
@@ -901,7 +901,7 @@ export interface EcsTaskDefinitionVolumeEfsVolumeConfiguration {
   readonly transitEncryptionPort?: number;
   /**
   * authorization_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
   */
   readonly authorizationConfig?: EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig;
@@ -1151,7 +1151,7 @@ export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration 
   readonly rootDirectory: string;
   /**
   * authorization_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
   */
   readonly authorizationConfig: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig;
@@ -1263,19 +1263,19 @@ export interface EcsTaskDefinitionVolume {
   readonly name: string;
   /**
   * docker_volume_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#docker_volume_configuration EcsTaskDefinition#docker_volume_configuration}
   */
   readonly dockerVolumeConfiguration?: EcsTaskDefinitionVolumeDockerVolumeConfiguration;
   /**
   * efs_volume_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
   */
   readonly efsVolumeConfiguration?: EcsTaskDefinitionVolumeEfsVolumeConfiguration;
   /**
   * fsx_windows_file_server_volume_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_task_definition#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
   */
   readonly fsxWindowsFileServerVolumeConfiguration?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration;

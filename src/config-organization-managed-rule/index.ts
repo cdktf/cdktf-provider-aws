@@ -61,7 +61,7 @@ export interface ConfigOrganizationManagedRuleConfig extends cdktf.TerraformMeta
   readonly tagValueScope?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_organization_managed_rule#timeouts ConfigOrganizationManagedRule#timeouts}
   */
   readonly timeouts?: ConfigOrganizationManagedRuleTimeouts;

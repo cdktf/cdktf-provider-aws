@@ -33,7 +33,7 @@ export interface S3BucketAclConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * access_control_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
   */
   readonly accessControlPolicy?: S3BucketAclAccessControlPolicy;
@@ -196,7 +196,7 @@ export interface S3BucketAclAccessControlPolicyGrant {
   readonly permission: string;
   /**
   * grantee block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_acl#grantee S3BucketAcl#grantee}
   */
   readonly grantee?: S3BucketAclAccessControlPolicyGrantGrantee;
@@ -407,13 +407,13 @@ export class S3BucketAclAccessControlPolicyOwnerOutputReference extends cdktf.Co
 export interface S3BucketAclAccessControlPolicy {
   /**
   * grant block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
   */
   readonly grant?: S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable;
   /**
   * owner block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_acl#owner S3BucketAcl#owner}
   */
   readonly owner: S3BucketAclAccessControlPolicyOwner;

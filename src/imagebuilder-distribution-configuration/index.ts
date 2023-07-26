@@ -37,7 +37,7 @@ export interface ImagebuilderDistributionConfigurationConfig extends cdktf.Terra
   readonly tagsAll?: { [key: string]: string };
   /**
   * distribution block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#distribution ImagebuilderDistributionConfiguration#distribution}
   */
   readonly distribution: ImagebuilderDistributionConfigurationDistribution[] | cdktf.IResolvable;
@@ -211,7 +211,7 @@ export interface ImagebuilderDistributionConfigurationDistributionAmiDistributio
   readonly targetAccountIds?: string[];
   /**
   * launch_permission block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#launch_permission ImagebuilderDistributionConfiguration#launch_permission}
   */
   readonly launchPermission?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission;
@@ -487,7 +487,7 @@ export interface ImagebuilderDistributionConfigurationDistributionContainerDistr
   readonly description?: string;
   /**
   * target_repository block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#target_repository ImagebuilderDistributionConfiguration#target_repository}
   */
   readonly targetRepository: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepository;
@@ -793,13 +793,13 @@ export interface ImagebuilderDistributionConfigurationDistributionFastLaunchConf
   readonly maxParallelLaunches?: number;
   /**
   * launch_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#launch_template ImagebuilderDistributionConfiguration#launch_template}
   */
   readonly launchTemplate?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationLaunchTemplate;
   /**
   * snapshot_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#snapshot_configuration ImagebuilderDistributionConfiguration#snapshot_configuration}
   */
   readonly snapshotConfiguration?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationSnapshotConfiguration;
@@ -1140,25 +1140,25 @@ export interface ImagebuilderDistributionConfigurationDistribution {
   readonly region: string;
   /**
   * ami_distribution_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#ami_distribution_configuration ImagebuilderDistributionConfiguration#ami_distribution_configuration}
   */
   readonly amiDistributionConfiguration?: ImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration;
   /**
   * container_distribution_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#container_distribution_configuration ImagebuilderDistributionConfiguration#container_distribution_configuration}
   */
   readonly containerDistributionConfiguration?: ImagebuilderDistributionConfigurationDistributionContainerDistributionConfiguration;
   /**
   * fast_launch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#fast_launch_configuration ImagebuilderDistributionConfiguration#fast_launch_configuration}
   */
   readonly fastLaunchConfiguration?: ImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration[] | cdktf.IResolvable;
   /**
   * launch_template_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/imagebuilder_distribution_configuration#launch_template_configuration ImagebuilderDistributionConfiguration#launch_template_configuration}
   */
   readonly launchTemplateConfiguration?: ImagebuilderDistributionConfigurationDistributionLaunchTemplateConfiguration[] | cdktf.IResolvable;

@@ -45,7 +45,7 @@ export interface RdsClusterParameterGroupConfig extends cdktf.TerraformMetaArgum
   readonly tagsAll?: { [key: string]: string };
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster_parameter_group#parameter RdsClusterParameterGroup#parameter}
   */
   readonly parameter?: RdsClusterParameterGroupParameter[] | cdktf.IResolvable;

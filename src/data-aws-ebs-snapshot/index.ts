@@ -41,13 +41,13 @@ export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_snapshot#filter DataAwsEbsSnapshot#filter}
   */
   readonly filter?: DataAwsEbsSnapshotFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ebs_snapshot#timeouts DataAwsEbsSnapshot#timeouts}
   */
   readonly timeouts?: DataAwsEbsSnapshotTimeouts;

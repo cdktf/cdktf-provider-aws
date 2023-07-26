@@ -45,7 +45,7 @@ export interface MediaConvertQueueConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * reservation_plan_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
   */
   readonly reservationPlanSettings?: MediaConvertQueueReservationPlanSettings;

@@ -21,7 +21,7 @@ export interface DataAwsKmsSecretsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * secret block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kms_secrets#secret DataAwsKmsSecrets#secret}
   */
   readonly secret: DataAwsKmsSecretsSecret[] | cdktf.IResolvable;

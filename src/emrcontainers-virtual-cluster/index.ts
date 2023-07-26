@@ -33,13 +33,13 @@ export interface EmrcontainersVirtualClusterConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * container_provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_virtual_cluster#container_provider EmrcontainersVirtualCluster#container_provider}
   */
   readonly containerProvider: EmrcontainersVirtualClusterContainerProvider;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_virtual_cluster#timeouts EmrcontainersVirtualCluster#timeouts}
   */
   readonly timeouts?: EmrcontainersVirtualClusterTimeouts;
@@ -112,7 +112,7 @@ export class EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputRefere
 export interface EmrcontainersVirtualClusterContainerProviderInfo {
   /**
   * eks_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_virtual_cluster#eks_info EmrcontainersVirtualCluster#eks_info}
   */
   readonly eksInfo: EmrcontainersVirtualClusterContainerProviderInfoEksInfo;
@@ -187,7 +187,7 @@ export interface EmrcontainersVirtualClusterContainerProvider {
   readonly type: string;
   /**
   * info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emrcontainers_virtual_cluster#info EmrcontainersVirtualCluster#info}
   */
   readonly info: EmrcontainersVirtualClusterContainerProviderInfo;

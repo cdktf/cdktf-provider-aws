@@ -37,19 +37,19 @@ export interface VpcPeeringConnectionAccepterAConfig extends cdktf.TerraformMeta
   readonly vpcPeeringConnectionId: string;
   /**
   * accepter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection_accepter#accepter VpcPeeringConnectionAccepterA#accepter}
   */
   readonly accepter?: VpcPeeringConnectionAccepterAccepter;
   /**
   * requester block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection_accepter#requester VpcPeeringConnectionAccepterA#requester}
   */
   readonly requester?: VpcPeeringConnectionAccepterRequester;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_peering_connection_accepter#timeouts VpcPeeringConnectionAccepterA#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionAccepterTimeouts;

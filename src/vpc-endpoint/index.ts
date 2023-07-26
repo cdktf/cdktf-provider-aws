@@ -69,13 +69,13 @@ export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * dns_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_endpoint#dns_options VpcEndpoint#dns_options}
   */
   readonly dnsOptions?: VpcEndpointDnsOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_endpoint#timeouts VpcEndpoint#timeouts}
   */
   readonly timeouts?: VpcEndpointTimeouts;

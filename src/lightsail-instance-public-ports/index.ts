@@ -25,7 +25,7 @@ export interface LightsailInstancePublicPortsConfig extends cdktf.TerraformMetaA
   readonly instanceName: string;
   /**
   * port_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_instance_public_ports#port_info LightsailInstancePublicPorts#port_info}
   */
   readonly portInfo: LightsailInstancePublicPortsPortInfo[] | cdktf.IResolvable;

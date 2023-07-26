@@ -42,19 +42,19 @@ export interface CleanroomsCollaborationConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_encryption_metadata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cleanrooms_collaboration#data_encryption_metadata CleanroomsCollaboration#data_encryption_metadata}
   */
   readonly dataEncryptionMetadata?: CleanroomsCollaborationDataEncryptionMetadata;
   /**
   * member block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cleanrooms_collaboration#member CleanroomsCollaboration#member}
   */
   readonly member?: CleanroomsCollaborationMember[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cleanrooms_collaboration#timeouts CleanroomsCollaboration#timeouts}
   */
   readonly timeouts?: CleanroomsCollaborationTimeouts;

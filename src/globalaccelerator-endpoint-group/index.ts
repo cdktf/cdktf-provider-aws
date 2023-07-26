@@ -53,19 +53,19 @@ export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMet
   readonly trafficDialPercentage?: number;
   /**
   * endpoint_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_endpoint_group#endpoint_configuration GlobalacceleratorEndpointGroup#endpoint_configuration}
   */
   readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[] | cdktf.IResolvable;
   /**
   * port_override block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_endpoint_group#port_override GlobalacceleratorEndpointGroup#port_override}
   */
   readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/globalaccelerator_endpoint_group#timeouts GlobalacceleratorEndpointGroup#timeouts}
   */
   readonly timeouts?: GlobalacceleratorEndpointGroupTimeouts;

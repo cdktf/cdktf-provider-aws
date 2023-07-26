@@ -37,7 +37,7 @@ export interface ChimesdkvoiceSipMediaApplicationConfig extends cdktf.TerraformM
   readonly tagsAll?: { [key: string]: string };
   /**
   * endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chimesdkvoice_sip_media_application#endpoints ChimesdkvoiceSipMediaApplication#endpoints}
   */
   readonly endpoints: ChimesdkvoiceSipMediaApplicationEndpoints;

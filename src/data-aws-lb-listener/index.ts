@@ -37,7 +37,7 @@ export interface DataAwsLbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
   */
   readonly timeouts?: DataAwsLbListenerTimeouts;

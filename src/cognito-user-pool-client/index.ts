@@ -94,13 +94,13 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   readonly writeAttributes?: string[];
   /**
   * analytics_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool_client#analytics_configuration CognitoUserPoolClient#analytics_configuration}
   */
   readonly analyticsConfiguration?: CognitoUserPoolClientAnalyticsConfiguration[] | cdktf.IResolvable;
   /**
   * token_validity_units block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool_client#token_validity_units CognitoUserPoolClient#token_validity_units}
   */
   readonly tokenValidityUnits?: CognitoUserPoolClientTokenValidityUnits[] | cdktf.IResolvable;

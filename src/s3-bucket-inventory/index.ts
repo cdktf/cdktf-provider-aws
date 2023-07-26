@@ -41,19 +41,19 @@ export interface S3BucketInventoryConfig extends cdktf.TerraformMetaArguments {
   readonly optionalFields?: string[];
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#destination S3BucketInventory#destination}
   */
   readonly destination: S3BucketInventoryDestination;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#filter S3BucketInventory#filter}
   */
   readonly filter?: S3BucketInventoryFilter;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#schedule S3BucketInventory#schedule}
   */
   readonly schedule: S3BucketInventorySchedule;
@@ -161,13 +161,13 @@ export class S3BucketInventoryDestinationBucketEncryptionSseS3OutputReference ex
 export interface S3BucketInventoryDestinationBucketEncryption {
   /**
   * sse_kms block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#sse_kms S3BucketInventory#sse_kms}
   */
   readonly sseKms?: S3BucketInventoryDestinationBucketEncryptionSseKms;
   /**
   * sse_s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#sse_s3 S3BucketInventory#sse_s3}
   */
   readonly sseS3?: S3BucketInventoryDestinationBucketEncryptionSseS3;
@@ -273,7 +273,7 @@ export interface S3BucketInventoryDestinationBucket {
   readonly prefix?: string;
   /**
   * encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#encryption S3BucketInventory#encryption}
   */
   readonly encryption?: S3BucketInventoryDestinationBucketEncryption;
@@ -426,7 +426,7 @@ export class S3BucketInventoryDestinationBucketOutputReference extends cdktf.Com
 export interface S3BucketInventoryDestination {
   /**
   * bucket block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/s3_bucket_inventory#bucket S3BucketInventory#bucket}
   */
   readonly bucket: S3BucketInventoryDestinationBucket;

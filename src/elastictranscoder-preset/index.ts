@@ -41,31 +41,31 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   readonly videoCodecOptions?: { [key: string]: string };
   /**
   * audio block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_preset#audio ElastictranscoderPreset#audio}
   */
   readonly audio?: ElastictranscoderPresetAudio;
   /**
   * audio_codec_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_preset#audio_codec_options ElastictranscoderPreset#audio_codec_options}
   */
   readonly audioCodecOptions?: ElastictranscoderPresetAudioCodecOptions;
   /**
   * thumbnails block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_preset#thumbnails ElastictranscoderPreset#thumbnails}
   */
   readonly thumbnails?: ElastictranscoderPresetThumbnails;
   /**
   * video block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_preset#video ElastictranscoderPreset#video}
   */
   readonly video?: ElastictranscoderPresetVideo;
   /**
   * video_watermarks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elastictranscoder_preset#video_watermarks ElastictranscoderPreset#video_watermarks}
   */
   readonly videoWatermarks?: ElastictranscoderPresetVideoWatermarks[] | cdktf.IResolvable;

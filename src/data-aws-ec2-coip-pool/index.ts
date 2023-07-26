@@ -33,13 +33,13 @@ export interface DataAwsEc2CoipPoolConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_coip_pool#filter DataAwsEc2CoipPool#filter}
   */
   readonly filter?: DataAwsEc2CoipPoolFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_coip_pool#timeouts DataAwsEc2CoipPool#timeouts}
   */
   readonly timeouts?: DataAwsEc2CoipPoolTimeouts;

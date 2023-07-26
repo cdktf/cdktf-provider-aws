@@ -37,13 +37,13 @@ export interface LbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#action LbListenerRule#action}
   */
   readonly action: LbListenerRuleAction[] | cdktf.IResolvable;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#condition LbListenerRule#condition}
   */
   readonly condition: LbListenerRuleCondition[] | cdktf.IResolvable;
@@ -939,13 +939,13 @@ export class LbListenerRuleActionForwardTargetGroupList extends cdktf.ComplexLis
 export interface LbListenerRuleActionForward {
   /**
   * stickiness block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#stickiness LbListenerRule#stickiness}
   */
   readonly stickiness?: LbListenerRuleActionForwardStickiness;
   /**
   * target_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#target_group LbListenerRule#target_group}
   */
   readonly targetGroup: LbListenerRuleActionForwardTargetGroup[] | cdktf.IResolvable;
@@ -1241,31 +1241,31 @@ export interface LbListenerRuleAction {
   readonly type: string;
   /**
   * authenticate_cognito block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#authenticate_cognito LbListenerRule#authenticate_cognito}
   */
   readonly authenticateCognito?: LbListenerRuleActionAuthenticateCognito;
   /**
   * authenticate_oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#authenticate_oidc LbListenerRule#authenticate_oidc}
   */
   readonly authenticateOidc?: LbListenerRuleActionAuthenticateOidc;
   /**
   * fixed_response block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#fixed_response LbListenerRule#fixed_response}
   */
   readonly fixedResponse?: LbListenerRuleActionFixedResponse;
   /**
   * forward block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#forward LbListenerRule#forward}
   */
   readonly forward?: LbListenerRuleActionForward;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#redirect LbListenerRule#redirect}
   */
   readonly redirect?: LbListenerRuleActionRedirect;
@@ -1977,37 +1977,37 @@ export class LbListenerRuleConditionSourceIpOutputReference extends cdktf.Comple
 export interface LbListenerRuleCondition {
   /**
   * host_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#host_header LbListenerRule#host_header}
   */
   readonly hostHeader?: LbListenerRuleConditionHostHeader;
   /**
   * http_header block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#http_header LbListenerRule#http_header}
   */
   readonly httpHeader?: LbListenerRuleConditionHttpHeader;
   /**
   * http_request_method block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#http_request_method LbListenerRule#http_request_method}
   */
   readonly httpRequestMethod?: LbListenerRuleConditionHttpRequestMethod;
   /**
   * path_pattern block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#path_pattern LbListenerRule#path_pattern}
   */
   readonly pathPattern?: LbListenerRuleConditionPathPattern;
   /**
   * query_string block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#query_string LbListenerRule#query_string}
   */
   readonly queryString?: LbListenerRuleConditionQueryString[] | cdktf.IResolvable;
   /**
   * source_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lb_listener_rule#source_ip LbListenerRule#source_ip}
   */
   readonly sourceIp?: LbListenerRuleConditionSourceIp;

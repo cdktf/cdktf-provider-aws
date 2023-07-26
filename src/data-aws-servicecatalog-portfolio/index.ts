@@ -29,7 +29,7 @@ export interface DataAwsServicecatalogPortfolioConfig extends cdktf.TerraformMet
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_portfolio#timeouts DataAwsServicecatalogPortfolio#timeouts}
   */
   readonly timeouts?: DataAwsServicecatalogPortfolioTimeouts;

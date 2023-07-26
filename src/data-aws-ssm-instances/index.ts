@@ -21,7 +21,7 @@ export interface DataAwsSsmInstancesConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ssm_instances#filter DataAwsSsmInstances#filter}
   */
   readonly filter?: DataAwsSsmInstancesFilter[] | cdktf.IResolvable;

@@ -29,7 +29,7 @@ export interface InternetGatewayAttachmentConfig extends cdktf.TerraformMetaArgu
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/internet_gateway_attachment#timeouts InternetGatewayAttachment#timeouts}
   */
   readonly timeouts?: InternetGatewayAttachmentTimeouts;

@@ -45,7 +45,7 @@ export interface DxBgpPeerConfig extends cdktf.TerraformMetaArguments {
   readonly virtualInterfaceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
   */
   readonly timeouts?: DxBgpPeerTimeouts;

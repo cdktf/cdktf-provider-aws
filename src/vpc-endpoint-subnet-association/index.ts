@@ -29,7 +29,7 @@ export interface VpcEndpointSubnetAssociationConfig extends cdktf.TerraformMetaA
   readonly vpcEndpointId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpc_endpoint_subnet_association#timeouts VpcEndpointSubnetAssociation#timeouts}
   */
   readonly timeouts?: VpcEndpointSubnetAssociationTimeouts;

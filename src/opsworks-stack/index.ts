@@ -109,13 +109,13 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * custom_cookbooks_source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_stack#custom_cookbooks_source OpsworksStack#custom_cookbooks_source}
   */
   readonly customCookbooksSource?: OpsworksStackCustomCookbooksSource;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_stack#timeouts OpsworksStack#timeouts}
   */
   readonly timeouts?: OpsworksStackTimeouts;

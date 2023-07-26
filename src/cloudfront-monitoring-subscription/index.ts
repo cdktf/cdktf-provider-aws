@@ -25,7 +25,7 @@ export interface CloudfrontMonitoringSubscriptionConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * monitoring_subscription block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_monitoring_subscription#monitoring_subscription CloudfrontMonitoringSubscription#monitoring_subscription}
   */
   readonly monitoringSubscription: CloudfrontMonitoringSubscriptionMonitoringSubscription;
@@ -95,7 +95,7 @@ export class CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetri
 export interface CloudfrontMonitoringSubscriptionMonitoringSubscription {
   /**
   * realtime_metrics_subscription_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_monitoring_subscription#realtime_metrics_subscription_config CloudfrontMonitoringSubscription#realtime_metrics_subscription_config}
   */
   readonly realtimeMetricsSubscriptionConfig: CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfig;

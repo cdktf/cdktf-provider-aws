@@ -29,19 +29,19 @@ export interface CloudfrontOriginRequestPolicyConfig extends cdktf.TerraformMeta
   readonly name: string;
   /**
   * cookies_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#cookies_config CloudfrontOriginRequestPolicy#cookies_config}
   */
   readonly cookiesConfig: CloudfrontOriginRequestPolicyCookiesConfig;
   /**
   * headers_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#headers_config CloudfrontOriginRequestPolicy#headers_config}
   */
   readonly headersConfig: CloudfrontOriginRequestPolicyHeadersConfig;
   /**
   * query_strings_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#query_strings_config CloudfrontOriginRequestPolicy#query_strings_config}
   */
   readonly queryStringsConfig: CloudfrontOriginRequestPolicyQueryStringsConfig;
@@ -118,7 +118,7 @@ export interface CloudfrontOriginRequestPolicyCookiesConfig {
   readonly cookieBehavior: string;
   /**
   * cookies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#cookies CloudfrontOriginRequestPolicy#cookies}
   */
   readonly cookies?: CloudfrontOriginRequestPolicyCookiesConfigCookies;
@@ -274,7 +274,7 @@ export interface CloudfrontOriginRequestPolicyHeadersConfig {
   readonly headerBehavior?: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#headers CloudfrontOriginRequestPolicy#headers}
   */
   readonly headers?: CloudfrontOriginRequestPolicyHeadersConfigHeaders;
@@ -433,7 +433,7 @@ export interface CloudfrontOriginRequestPolicyQueryStringsConfig {
   readonly queryStringBehavior: string;
   /**
   * query_strings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudfront_origin_request_policy#query_strings CloudfrontOriginRequestPolicy#query_strings}
   */
   readonly queryStrings?: CloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings;

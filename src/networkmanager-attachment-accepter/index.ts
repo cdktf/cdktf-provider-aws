@@ -29,7 +29,7 @@ export interface NetworkmanagerAttachmentAccepterConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_attachment_accepter#timeouts NetworkmanagerAttachmentAccepter#timeouts}
   */
   readonly timeouts?: NetworkmanagerAttachmentAccepterTimeouts;

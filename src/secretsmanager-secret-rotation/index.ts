@@ -29,7 +29,7 @@ export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaA
   readonly secretId: string;
   /**
   * rotation_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
   */
   readonly rotationRules: SecretsmanagerSecretRotationRotationRules;

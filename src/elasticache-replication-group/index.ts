@@ -157,13 +157,13 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   readonly userGroupIds?: string[];
   /**
   * log_delivery_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_replication_group#log_delivery_configuration ElasticacheReplicationGroup#log_delivery_configuration}
   */
   readonly logDeliveryConfiguration?: ElasticacheReplicationGroupLogDeliveryConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elasticache_replication_group#timeouts ElasticacheReplicationGroup#timeouts}
   */
   readonly timeouts?: ElasticacheReplicationGroupTimeouts;

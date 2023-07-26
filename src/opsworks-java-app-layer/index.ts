@@ -125,19 +125,19 @@ export interface OpsworksJavaAppLayerConfig extends cdktf.TerraformMetaArguments
   readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * cloudwatch_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#cloudwatch_configuration OpsworksJavaAppLayer#cloudwatch_configuration}
   */
   readonly cloudwatchConfiguration?: OpsworksJavaAppLayerCloudwatchConfiguration;
   /**
   * ebs_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#ebs_volume OpsworksJavaAppLayer#ebs_volume}
   */
   readonly ebsVolume?: OpsworksJavaAppLayerEbsVolume[] | cdktf.IResolvable;
   /**
   * load_based_auto_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#load_based_auto_scaling OpsworksJavaAppLayer#load_based_auto_scaling}
   */
   readonly loadBasedAutoScaling?: OpsworksJavaAppLayerLoadBasedAutoScaling;
@@ -510,7 +510,7 @@ export interface OpsworksJavaAppLayerCloudwatchConfiguration {
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * log_streams block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#log_streams OpsworksJavaAppLayer#log_streams}
   */
   readonly logStreams?: OpsworksJavaAppLayerCloudwatchConfigurationLogStreams[] | cdktf.IResolvable;
@@ -1308,13 +1308,13 @@ export interface OpsworksJavaAppLayerLoadBasedAutoScaling {
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * downscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#downscaling OpsworksJavaAppLayer#downscaling}
   */
   readonly downscaling?: OpsworksJavaAppLayerLoadBasedAutoScalingDownscaling;
   /**
   * upscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/opsworks_java_app_layer#upscaling OpsworksJavaAppLayer#upscaling}
   */
   readonly upscaling?: OpsworksJavaAppLayerLoadBasedAutoScalingUpscaling;

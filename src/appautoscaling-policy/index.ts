@@ -41,13 +41,13 @@ export interface AppautoscalingPolicyConfig extends cdktf.TerraformMetaArguments
   readonly serviceNamespace: string;
   /**
   * step_scaling_policy_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#step_scaling_policy_configuration AppautoscalingPolicy#step_scaling_policy_configuration}
   */
   readonly stepScalingPolicyConfiguration?: AppautoscalingPolicyStepScalingPolicyConfiguration;
   /**
   * target_tracking_scaling_policy_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#target_tracking_scaling_policy_configuration AppautoscalingPolicy#target_tracking_scaling_policy_configuration}
   */
   readonly targetTrackingScalingPolicyConfiguration?: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration;
@@ -219,7 +219,7 @@ export interface AppautoscalingPolicyStepScalingPolicyConfiguration {
   readonly minAdjustmentMagnitude?: number;
   /**
   * step_adjustment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#step_adjustment AppautoscalingPolicy#step_adjustment}
   */
   readonly stepAdjustment?: AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment[] | cdktf.IResolvable;
@@ -622,7 +622,7 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCus
   readonly namespace: string;
   /**
   * dimensions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#dimensions AppautoscalingPolicy#dimensions}
   */
   readonly dimensions?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetricDimensions[] | cdktf.IResolvable;
@@ -737,7 +737,7 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCus
   readonly unit?: string;
   /**
   * metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#metric AppautoscalingPolicy#metric}
   */
   readonly metric: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStatMetric;
@@ -863,7 +863,7 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCus
   readonly returnData?: boolean | cdktf.IResolvable;
   /**
   * metric_stat block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#metric_stat AppautoscalingPolicy#metric_stat}
   */
   readonly metricStat?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetricsMetricStat;
@@ -1067,13 +1067,13 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCus
   readonly unit?: string;
   /**
   * dimensions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#dimensions AppautoscalingPolicy#dimensions}
   */
   readonly dimensions?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions[] | cdktf.IResolvable;
   /**
   * metrics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#metrics AppautoscalingPolicy#metrics}
   */
   readonly metrics?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMetrics[] | cdktf.IResolvable;
@@ -1360,13 +1360,13 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration {
   readonly targetValue: number;
   /**
   * customized_metric_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#customized_metric_specification AppautoscalingPolicy#customized_metric_specification}
   */
   readonly customizedMetricSpecification?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification;
   /**
   * predefined_metric_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appautoscaling_policy#predefined_metric_specification AppautoscalingPolicy#predefined_metric_specification}
   */
   readonly predefinedMetricSpecification?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification;

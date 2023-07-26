@@ -73,7 +73,7 @@ export interface GrafanaWorkspaceSamlConfigurationConfig extends cdktf.Terraform
   readonly workspaceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/grafana_workspace_saml_configuration#timeouts GrafanaWorkspaceSamlConfiguration#timeouts}
   */
   readonly timeouts?: GrafanaWorkspaceSamlConfigurationTimeouts;

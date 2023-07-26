@@ -65,19 +65,19 @@ export interface AppstreamImageBuilderConfig extends cdktf.TerraformMetaArgument
   readonly tagsAll?: { [key: string]: string };
   /**
   * access_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder#access_endpoint AppstreamImageBuilder#access_endpoint}
   */
   readonly accessEndpoint?: AppstreamImageBuilderAccessEndpoint[] | cdktf.IResolvable;
   /**
   * domain_join_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder#domain_join_info AppstreamImageBuilder#domain_join_info}
   */
   readonly domainJoinInfo?: AppstreamImageBuilderDomainJoinInfo;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder#vpc_config AppstreamImageBuilder#vpc_config}
   */
   readonly vpcConfig?: AppstreamImageBuilderVpcConfig;

@@ -37,13 +37,13 @@ export interface DataAwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_endpoint#filter DataAwsVpcEndpoint#filter}
   */
   readonly filter?: DataAwsVpcEndpointFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/vpc_endpoint#timeouts DataAwsVpcEndpoint#timeouts}
   */
   readonly timeouts?: DataAwsVpcEndpointTimeouts;

@@ -33,7 +33,7 @@ export interface ApiGatewayMethodSettingsConfig extends cdktf.TerraformMetaArgum
   readonly stageName: string;
   /**
   * settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_method_settings#settings ApiGatewayMethodSettings#settings}
   */
   readonly settings: ApiGatewayMethodSettingsSettings;

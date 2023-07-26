@@ -22,7 +22,7 @@ export interface MedialiveMultiplexProgramConfig extends cdktf.TerraformMetaArgu
   readonly programName: string;
   /**
   * multiplex_program_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
   */
   readonly multiplexProgramSettings?: MedialiveMultiplexProgramMultiplexProgramSettings[] | cdktf.IResolvable;
@@ -303,7 +303,7 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings 
   readonly constantBitrate?: number;
   /**
   * statmux_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_multiplex_program#statmux_settings MedialiveMultiplexProgram#statmux_settings}
   */
   readonly statmuxSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings[] | cdktf.IResolvable;
@@ -433,13 +433,13 @@ export interface MedialiveMultiplexProgramMultiplexProgramSettings {
   readonly programNumber: number;
   /**
   * service_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
   */
   readonly serviceDescriptor?: MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor[] | cdktf.IResolvable;
   /**
   * video_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
   */
   readonly videoSettings?: MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings[] | cdktf.IResolvable;

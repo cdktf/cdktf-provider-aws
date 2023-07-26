@@ -33,7 +33,7 @@ export interface PrometheusWorkspaceConfig extends cdktf.TerraformMetaArguments 
   readonly tagsAll?: { [key: string]: string };
   /**
   * logging_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/prometheus_workspace#logging_configuration PrometheusWorkspace#logging_configuration}
   */
   readonly loggingConfiguration?: PrometheusWorkspaceLoggingConfiguration;

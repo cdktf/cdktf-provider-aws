@@ -53,13 +53,13 @@ export interface ConfigRemediationConfigurationConfig extends cdktf.TerraformMet
   readonly targetVersion?: string;
   /**
   * execution_controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_remediation_configuration#execution_controls ConfigRemediationConfiguration#execution_controls}
   */
   readonly executionControls?: ConfigRemediationConfigurationExecutionControls;
   /**
   * parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_remediation_configuration#parameter ConfigRemediationConfiguration#parameter}
   */
   readonly parameter?: ConfigRemediationConfigurationParameter[] | cdktf.IResolvable;
@@ -159,7 +159,7 @@ export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputRef
 export interface ConfigRemediationConfigurationExecutionControls {
   /**
   * ssm_controls block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_remediation_configuration#ssm_controls ConfigRemediationConfiguration#ssm_controls}
   */
   readonly ssmControls?: ConfigRemediationConfigurationExecutionControlsSsmControls;

@@ -25,7 +25,7 @@ export interface ChimeVoiceConnectorGroupConfig extends cdktf.TerraformMetaArgum
   readonly name: string;
   /**
   * connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chime_voice_connector_group#connector ChimeVoiceConnectorGroup#connector}
   */
   readonly connector?: ChimeVoiceConnectorGroupConnector[] | cdktf.IResolvable;

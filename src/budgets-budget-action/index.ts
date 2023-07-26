@@ -45,25 +45,25 @@ export interface BudgetsBudgetActionConfig extends cdktf.TerraformMetaArguments 
   readonly notificationType: string;
   /**
   * action_threshold block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#action_threshold BudgetsBudgetAction#action_threshold}
   */
   readonly actionThreshold: BudgetsBudgetActionActionThreshold;
   /**
   * definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#definition BudgetsBudgetAction#definition}
   */
   readonly definition: BudgetsBudgetActionDefinition;
   /**
   * subscriber block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#subscriber BudgetsBudgetAction#subscriber}
   */
   readonly subscriber: BudgetsBudgetActionSubscriber[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#timeouts BudgetsBudgetAction#timeouts}
   */
   readonly timeouts?: BudgetsBudgetActionTimeouts;
@@ -496,19 +496,19 @@ export class BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference ext
 export interface BudgetsBudgetActionDefinition {
   /**
   * iam_action_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#iam_action_definition BudgetsBudgetAction#iam_action_definition}
   */
   readonly iamActionDefinition?: BudgetsBudgetActionDefinitionIamActionDefinition;
   /**
   * scp_action_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#scp_action_definition BudgetsBudgetAction#scp_action_definition}
   */
   readonly scpActionDefinition?: BudgetsBudgetActionDefinitionScpActionDefinition;
   /**
   * ssm_action_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action#ssm_action_definition BudgetsBudgetAction#ssm_action_definition}
   */
   readonly ssmActionDefinition?: BudgetsBudgetActionDefinitionSsmActionDefinition;

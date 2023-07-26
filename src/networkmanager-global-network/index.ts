@@ -33,7 +33,7 @@ export interface NetworkmanagerGlobalNetworkConfig extends cdktf.TerraformMetaAr
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_global_network#timeouts NetworkmanagerGlobalNetwork#timeouts}
   */
   readonly timeouts?: NetworkmanagerGlobalNetworkTimeouts;

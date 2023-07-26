@@ -41,25 +41,25 @@ export interface AppflowFlowConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * destination_flow_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#destination_flow_config AppflowFlow#destination_flow_config}
   */
   readonly destinationFlowConfig: AppflowFlowDestinationFlowConfig[] | cdktf.IResolvable;
   /**
   * source_flow_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#source_flow_config AppflowFlow#source_flow_config}
   */
   readonly sourceFlowConfig: AppflowFlowSourceFlowConfig;
   /**
   * task block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#task AppflowFlow#task}
   */
   readonly task: AppflowFlowTask[] | cdktf.IResolvable;
   /**
   * trigger_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#trigger_config AppflowFlow#trigger_config}
   */
   readonly triggerConfig: AppflowFlowTriggerConfig;
@@ -202,7 +202,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesC
   readonly writeOperationType?: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig;
@@ -570,7 +570,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesE
   readonly object: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig;
@@ -780,7 +780,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesH
   readonly object: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig;
@@ -1028,7 +1028,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesM
   readonly object: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig;
@@ -1246,7 +1246,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesR
   readonly object: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig;
@@ -1541,13 +1541,13 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   readonly preserveSourceDataTyping?: boolean | cdktf.IResolvable;
   /**
   * aggregation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
   */
   readonly aggregationConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig;
   /**
   * prefix_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
   */
   readonly prefixConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig;
@@ -1691,7 +1691,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   readonly bucketPrefix?: string;
   /**
   * s3_output_format_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
   */
   readonly s3OutputFormatConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig;
@@ -1932,7 +1932,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   readonly writeOperationType?: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig;
@@ -2288,13 +2288,13 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   readonly writeOperationType?: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig;
   /**
   * success_response_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#success_response_handling_config AppflowFlow#success_response_handling_config}
   */
   readonly successResponseHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig;
@@ -2581,7 +2581,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS
   readonly object: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig;
@@ -2869,13 +2869,13 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesU
   readonly fileType?: string;
   /**
   * aggregation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#aggregation_config AppflowFlow#aggregation_config}
   */
   readonly aggregationConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig;
   /**
   * prefix_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#prefix_config AppflowFlow#prefix_config}
   */
   readonly prefixConfig: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig;
@@ -2993,7 +2993,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesU
   readonly bucketPrefix?: string;
   /**
   * s3_output_format_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#s3_output_format_config AppflowFlow#s3_output_format_config}
   */
   readonly s3OutputFormatConfig: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig;
@@ -3231,7 +3231,7 @@ export interface AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZ
   readonly writeOperationType?: string;
   /**
   * error_handling_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#error_handling_config AppflowFlow#error_handling_config}
   */
   readonly errorHandlingConfig?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig;
@@ -3364,79 +3364,79 @@ export class AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZende
 export interface AppflowFlowDestinationFlowConfigDestinationConnectorProperties {
   /**
   * custom_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
   */
   readonly customConnector?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector;
   /**
   * customer_profiles block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#customer_profiles AppflowFlow#customer_profiles}
   */
   readonly customerProfiles?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles;
   /**
   * event_bridge block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#event_bridge AppflowFlow#event_bridge}
   */
   readonly eventBridge?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge;
   /**
   * honeycode block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#honeycode AppflowFlow#honeycode}
   */
   readonly honeycode?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode;
   /**
   * lookout_metrics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#lookout_metrics AppflowFlow#lookout_metrics}
   */
   readonly lookoutMetrics?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics;
   /**
   * marketo block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
   */
   readonly marketo?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo;
   /**
   * redshift block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#redshift AppflowFlow#redshift}
   */
   readonly redshift?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
   */
   readonly s3?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3;
   /**
   * salesforce block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
   */
   readonly salesforce?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce;
   /**
   * sapo_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
   */
   readonly sapoData?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData;
   /**
   * snowflake block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#snowflake AppflowFlow#snowflake}
   */
   readonly snowflake?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake;
   /**
   * upsolver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#upsolver AppflowFlow#upsolver}
   */
   readonly upsolver?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver;
   /**
   * zendesk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
   */
   readonly zendesk?: AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk;
@@ -3791,7 +3791,7 @@ export interface AppflowFlowDestinationFlowConfig {
   readonly connectorType: string;
   /**
   * destination_connector_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#destination_connector_properties AppflowFlow#destination_connector_properties}
   */
   readonly destinationConnectorProperties: AppflowFlowDestinationFlowConfigDestinationConnectorProperties;
@@ -4552,7 +4552,7 @@ export interface AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3 {
   readonly bucketPrefix?: string;
   /**
   * s3_input_format_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#s3_input_format_config AppflowFlow#s3_input_format_config}
   */
   readonly s3InputFormatConfig?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig;
@@ -5320,97 +5320,97 @@ export class AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputRe
 export interface AppflowFlowSourceFlowConfigSourceConnectorProperties {
   /**
   * amplitude block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#amplitude AppflowFlow#amplitude}
   */
   readonly amplitude?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude;
   /**
   * custom_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#custom_connector AppflowFlow#custom_connector}
   */
   readonly customConnector?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector;
   /**
   * datadog block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#datadog AppflowFlow#datadog}
   */
   readonly datadog?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog;
   /**
   * dynatrace block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#dynatrace AppflowFlow#dynatrace}
   */
   readonly dynatrace?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace;
   /**
   * google_analytics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#google_analytics AppflowFlow#google_analytics}
   */
   readonly googleAnalytics?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics;
   /**
   * infor_nexus block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#infor_nexus AppflowFlow#infor_nexus}
   */
   readonly inforNexus?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus;
   /**
   * marketo block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#marketo AppflowFlow#marketo}
   */
   readonly marketo?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo;
   /**
   * s3 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#s3 AppflowFlow#s3}
   */
   readonly s3?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3;
   /**
   * salesforce block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#salesforce AppflowFlow#salesforce}
   */
   readonly salesforce?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce;
   /**
   * sapo_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#sapo_data AppflowFlow#sapo_data}
   */
   readonly sapoData?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData;
   /**
   * service_now block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#service_now AppflowFlow#service_now}
   */
   readonly serviceNow?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow;
   /**
   * singular block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#singular AppflowFlow#singular}
   */
   readonly singular?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular;
   /**
   * slack block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#slack AppflowFlow#slack}
   */
   readonly slack?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack;
   /**
   * trendmicro block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#trendmicro AppflowFlow#trendmicro}
   */
   readonly trendmicro?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro;
   /**
   * veeva block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#veeva AppflowFlow#veeva}
   */
   readonly veeva?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva;
   /**
   * zendesk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#zendesk AppflowFlow#zendesk}
   */
   readonly zendesk?: AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk;
@@ -5834,13 +5834,13 @@ export interface AppflowFlowSourceFlowConfig {
   readonly connectorType: string;
   /**
   * incremental_pull_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#incremental_pull_config AppflowFlow#incremental_pull_config}
   */
   readonly incrementalPullConfig?: AppflowFlowSourceFlowConfigIncrementalPullConfig;
   /**
   * source_connector_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#source_connector_properties AppflowFlow#source_connector_properties}
   */
   readonly sourceConnectorProperties: AppflowFlowSourceFlowConfigSourceConnectorProperties;
@@ -6511,7 +6511,7 @@ export interface AppflowFlowTask {
   readonly taskType: string;
   /**
   * connector_operator block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#connector_operator AppflowFlow#connector_operator}
   */
   readonly connectorOperator?: AppflowFlowTaskConnectorOperator[] | cdktf.IResolvable;
@@ -6920,7 +6920,7 @@ export class AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference e
 export interface AppflowFlowTriggerConfigTriggerProperties {
   /**
   * scheduled block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#scheduled AppflowFlow#scheduled}
   */
   readonly scheduled?: AppflowFlowTriggerConfigTriggerPropertiesScheduled;
@@ -6991,7 +6991,7 @@ export interface AppflowFlowTriggerConfig {
   readonly triggerType: string;
   /**
   * trigger_properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appflow_flow#trigger_properties AppflowFlow#trigger_properties}
   */
   readonly triggerProperties?: AppflowFlowTriggerConfigTriggerProperties;

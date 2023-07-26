@@ -65,7 +65,7 @@ export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * inline_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
   */
   readonly inlinePolicy?: IamRoleInlinePolicy[] | cdktf.IResolvable;

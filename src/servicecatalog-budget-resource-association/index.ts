@@ -29,7 +29,7 @@ export interface ServicecatalogBudgetResourceAssociationConfig extends cdktf.Ter
   readonly resourceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_budget_resource_association#timeouts ServicecatalogBudgetResourceAssociation#timeouts}
   */
   readonly timeouts?: ServicecatalogBudgetResourceAssociationTimeouts;

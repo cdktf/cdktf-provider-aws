@@ -29,7 +29,7 @@ export interface DaxParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dax_parameter_group#parameters DaxParameterGroup#parameters}
   */
   readonly parameters?: DaxParameterGroupParameters[] | cdktf.IResolvable;

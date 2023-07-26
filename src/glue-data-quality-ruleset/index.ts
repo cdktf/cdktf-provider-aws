@@ -41,7 +41,7 @@ export interface GlueDataQualityRulesetConfig extends cdktf.TerraformMetaArgumen
   readonly tagsAll?: { [key: string]: string };
   /**
   * target_table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_data_quality_ruleset#target_table GlueDataQualityRuleset#target_table}
   */
   readonly targetTable?: GlueDataQualityRulesetTargetTable;

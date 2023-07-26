@@ -61,7 +61,7 @@ export interface DxHostedPrivateVirtualInterfaceConfig extends cdktf.TerraformMe
   readonly vlan: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_hosted_private_virtual_interface#timeouts DxHostedPrivateVirtualInterface#timeouts}
   */
   readonly timeouts?: DxHostedPrivateVirtualInterfaceTimeouts;

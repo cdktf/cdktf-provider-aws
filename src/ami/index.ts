@@ -85,19 +85,19 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   readonly virtualizationType?: string;
   /**
   * ebs_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
   */
   readonly ebsBlockDevice?: AmiEbsBlockDevice[] | cdktf.IResolvable;
   /**
   * ephemeral_block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: AmiEphemeralBlockDevice[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ami#timeouts Ami#timeouts}
   */
   readonly timeouts?: AmiTimeouts;

@@ -61,25 +61,25 @@ export interface GlueCatalogTableConfig extends cdktf.TerraformMetaArguments {
   readonly viewOriginalText?: string;
   /**
   * partition_index block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#partition_index GlueCatalogTable#partition_index}
   */
   readonly partitionIndex?: GlueCatalogTablePartitionIndex[] | cdktf.IResolvable;
   /**
   * partition_keys block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#partition_keys GlueCatalogTable#partition_keys}
   */
   readonly partitionKeys?: GlueCatalogTablePartitionKeys[] | cdktf.IResolvable;
   /**
   * storage_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#storage_descriptor GlueCatalogTable#storage_descriptor}
   */
   readonly storageDescriptor?: GlueCatalogTableStorageDescriptor;
   /**
   * target_table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#target_table GlueCatalogTable#target_table}
   */
   readonly targetTable?: GlueCatalogTableTargetTable;
@@ -660,7 +660,7 @@ export interface GlueCatalogTableStorageDescriptorSchemaReference {
   readonly schemaVersionNumber: number;
   /**
   * schema_id block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#schema_id GlueCatalogTable#schema_id}
   */
   readonly schemaId?: GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId;
@@ -1158,31 +1158,31 @@ export interface GlueCatalogTableStorageDescriptor {
   readonly storedAsSubDirectories?: boolean | cdktf.IResolvable;
   /**
   * columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#columns GlueCatalogTable#columns}
   */
   readonly columns?: GlueCatalogTableStorageDescriptorColumns[] | cdktf.IResolvable;
   /**
   * schema_reference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#schema_reference GlueCatalogTable#schema_reference}
   */
   readonly schemaReference?: GlueCatalogTableStorageDescriptorSchemaReference;
   /**
   * ser_de_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#ser_de_info GlueCatalogTable#ser_de_info}
   */
   readonly serDeInfo?: GlueCatalogTableStorageDescriptorSerDeInfo;
   /**
   * skewed_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#skewed_info GlueCatalogTable#skewed_info}
   */
   readonly skewedInfo?: GlueCatalogTableStorageDescriptorSkewedInfo;
   /**
   * sort_columns block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/glue_catalog_table#sort_columns GlueCatalogTable#sort_columns}
   */
   readonly sortColumns?: GlueCatalogTableStorageDescriptorSortColumns[] | cdktf.IResolvable;

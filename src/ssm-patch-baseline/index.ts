@@ -61,19 +61,19 @@ export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * approval_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_patch_baseline#approval_rule SsmPatchBaseline#approval_rule}
   */
   readonly approvalRule?: SsmPatchBaselineApprovalRule[] | cdktf.IResolvable;
   /**
   * global_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_patch_baseline#global_filter SsmPatchBaseline#global_filter}
   */
   readonly globalFilter?: SsmPatchBaselineGlobalFilter[] | cdktf.IResolvable;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_patch_baseline#source SsmPatchBaseline#source}
   */
   readonly source?: SsmPatchBaselineSource[] | cdktf.IResolvable;
@@ -215,7 +215,7 @@ export interface SsmPatchBaselineApprovalRule {
   readonly enableNonSecurity?: boolean | cdktf.IResolvable;
   /**
   * patch_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ssm_patch_baseline#patch_filter SsmPatchBaseline#patch_filter}
   */
   readonly patchFilter: SsmPatchBaselineApprovalRulePatchFilter[] | cdktf.IResolvable;

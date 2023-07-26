@@ -41,7 +41,7 @@ export interface ServicecatalogPortfolioConfig extends cdktf.TerraformMetaArgume
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_portfolio#timeouts ServicecatalogPortfolio#timeouts}
   */
   readonly timeouts?: ServicecatalogPortfolioTimeouts;

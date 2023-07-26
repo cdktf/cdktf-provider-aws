@@ -29,25 +29,25 @@ export interface CloudsearchDomainConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * endpoint_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudsearch_domain#endpoint_options CloudsearchDomain#endpoint_options}
   */
   readonly endpointOptions?: CloudsearchDomainEndpointOptions;
   /**
   * index_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudsearch_domain#index_field CloudsearchDomain#index_field}
   */
   readonly indexField?: CloudsearchDomainIndexField[] | cdktf.IResolvable;
   /**
   * scaling_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudsearch_domain#scaling_parameters CloudsearchDomain#scaling_parameters}
   */
   readonly scalingParameters?: CloudsearchDomainScalingParameters;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudsearch_domain#timeouts CloudsearchDomain#timeouts}
   */
   readonly timeouts?: CloudsearchDomainTimeouts;

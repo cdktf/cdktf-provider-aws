@@ -37,7 +37,7 @@ export interface ServicecatalogProductPortfolioAssociationConfig extends cdktf.T
   readonly sourcePortfolioId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/servicecatalog_product_portfolio_association#timeouts ServicecatalogProductPortfolioAssociation#timeouts}
   */
   readonly timeouts?: ServicecatalogProductPortfolioAssociationTimeouts;

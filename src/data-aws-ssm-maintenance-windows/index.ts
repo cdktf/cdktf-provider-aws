@@ -21,7 +21,7 @@ export interface DataAwsSsmMaintenanceWindowsConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ssm_maintenance_windows#filter DataAwsSsmMaintenanceWindows#filter}
   */
   readonly filter?: DataAwsSsmMaintenanceWindowsFilter[] | cdktf.IResolvable;

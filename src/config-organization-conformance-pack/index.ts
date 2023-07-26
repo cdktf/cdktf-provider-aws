@@ -45,13 +45,13 @@ export interface ConfigOrganizationConformancePackConfig extends cdktf.Terraform
   readonly templateS3Uri?: string;
   /**
   * input_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_organization_conformance_pack#input_parameter ConfigOrganizationConformancePack#input_parameter}
   */
   readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/config_organization_conformance_pack#timeouts ConfigOrganizationConformancePack#timeouts}
   */
   readonly timeouts?: ConfigOrganizationConformancePackTimeouts;

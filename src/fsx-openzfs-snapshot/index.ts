@@ -37,7 +37,7 @@ export interface FsxOpenzfsSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly volumeId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/fsx_openzfs_snapshot#timeouts FsxOpenzfsSnapshot#timeouts}
   */
   readonly timeouts?: FsxOpenzfsSnapshotTimeouts;

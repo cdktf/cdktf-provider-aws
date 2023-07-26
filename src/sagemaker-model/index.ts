@@ -41,25 +41,25 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#container SagemakerModel#container}
   */
   readonly container?: SagemakerModelContainer[] | cdktf.IResolvable;
   /**
   * inference_execution_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#inference_execution_config SagemakerModel#inference_execution_config}
   */
   readonly inferenceExecutionConfig?: SagemakerModelInferenceExecutionConfig;
   /**
   * primary_container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#primary_container SagemakerModel#primary_container}
   */
   readonly primaryContainer?: SagemakerModelPrimaryContainer;
   /**
   * vpc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#vpc_config SagemakerModel#vpc_config}
   */
   readonly vpcConfig?: SagemakerModelVpcConfig;
@@ -133,7 +133,7 @@ export interface SagemakerModelContainerImageConfig {
   readonly repositoryAccessMode: string;
   /**
   * repository_auth_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
   */
   readonly repositoryAuthConfig?: SagemakerModelContainerImageConfigRepositoryAuthConfig;
@@ -244,7 +244,7 @@ export interface SagemakerModelContainer {
   readonly modelPackageName?: string;
   /**
   * image_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelContainerImageConfig;
@@ -609,7 +609,7 @@ export interface SagemakerModelPrimaryContainerImageConfig {
   readonly repositoryAccessMode: string;
   /**
   * repository_auth_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#repository_auth_config SagemakerModel#repository_auth_config}
   */
   readonly repositoryAuthConfig?: SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig;
@@ -720,7 +720,7 @@ export interface SagemakerModelPrimaryContainer {
   readonly modelPackageName?: string;
   /**
   * image_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_model#image_config SagemakerModel#image_config}
   */
   readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig;

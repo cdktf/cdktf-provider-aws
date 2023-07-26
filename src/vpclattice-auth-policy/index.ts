@@ -33,7 +33,7 @@ export interface VpclatticeAuthPolicyConfig extends cdktf.TerraformMetaArguments
   readonly state?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
   */
   readonly timeouts?: VpclatticeAuthPolicyTimeouts;

@@ -41,49 +41,49 @@ export interface KeyspacesTableConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * capacity_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#capacity_specification KeyspacesTable#capacity_specification}
   */
   readonly capacitySpecification?: KeyspacesTableCapacitySpecification;
   /**
   * client_side_timestamps block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#client_side_timestamps KeyspacesTable#client_side_timestamps}
   */
   readonly clientSideTimestamps?: KeyspacesTableClientSideTimestamps;
   /**
   * comment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#comment KeyspacesTable#comment}
   */
   readonly comment?: KeyspacesTableComment;
   /**
   * encryption_specification block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#encryption_specification KeyspacesTable#encryption_specification}
   */
   readonly encryptionSpecification?: KeyspacesTableEncryptionSpecification;
   /**
   * point_in_time_recovery block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#point_in_time_recovery KeyspacesTable#point_in_time_recovery}
   */
   readonly pointInTimeRecovery?: KeyspacesTablePointInTimeRecovery;
   /**
   * schema_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#schema_definition KeyspacesTable#schema_definition}
   */
   readonly schemaDefinition: KeyspacesTableSchemaDefinition;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#timeouts KeyspacesTable#timeouts}
   */
   readonly timeouts?: KeyspacesTableTimeouts;
   /**
   * ttl block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#ttl KeyspacesTable#ttl}
   */
   readonly ttl?: KeyspacesTableTtl;
@@ -918,25 +918,25 @@ export class KeyspacesTableSchemaDefinitionStaticColumnList extends cdktf.Comple
 export interface KeyspacesTableSchemaDefinition {
   /**
   * clustering_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#clustering_key KeyspacesTable#clustering_key}
   */
   readonly clusteringKey?: KeyspacesTableSchemaDefinitionClusteringKey[] | cdktf.IResolvable;
   /**
   * column block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#column KeyspacesTable#column}
   */
   readonly column: KeyspacesTableSchemaDefinitionColumn[] | cdktf.IResolvable;
   /**
   * partition_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#partition_key KeyspacesTable#partition_key}
   */
   readonly partitionKey: KeyspacesTableSchemaDefinitionPartitionKey[] | cdktf.IResolvable;
   /**
   * static_column block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/keyspaces_table#static_column KeyspacesTable#static_column}
   */
   readonly staticColumn?: KeyspacesTableSchemaDefinitionStaticColumn[] | cdktf.IResolvable;

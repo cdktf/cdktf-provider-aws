@@ -30,7 +30,7 @@ export interface AppconfigEnvironmentConfig extends cdktf.TerraformMetaArguments
   readonly tags?: { [key: string]: string };
   /**
   * monitor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_environment#monitor AppconfigEnvironment#monitor}
   */
   readonly monitor?: AppconfigEnvironmentMonitor[] | cdktf.IResolvable;

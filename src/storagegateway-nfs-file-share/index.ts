@@ -97,19 +97,19 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   readonly vpcEndpointDnsName?: string;
   /**
   * cache_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_nfs_file_share#cache_attributes StoragegatewayNfsFileShare#cache_attributes}
   */
   readonly cacheAttributes?: StoragegatewayNfsFileShareCacheAttributes;
   /**
   * nfs_file_share_defaults block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_nfs_file_share#nfs_file_share_defaults StoragegatewayNfsFileShare#nfs_file_share_defaults}
   */
   readonly nfsFileShareDefaults?: StoragegatewayNfsFileShareNfsFileShareDefaults;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_nfs_file_share#timeouts StoragegatewayNfsFileShare#timeouts}
   */
   readonly timeouts?: StoragegatewayNfsFileShareTimeouts;

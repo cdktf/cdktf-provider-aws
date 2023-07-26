@@ -25,7 +25,7 @@ export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArgument
   readonly serviceCode: string;
   /**
   * filters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
   */
   readonly filters: DataAwsPricingProductFilters[] | cdktf.IResolvable;

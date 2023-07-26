@@ -137,13 +137,13 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   readonly vpcSecurityGroupIds?: string[];
   /**
   * serverless_v2_scaling_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/neptune_cluster#serverless_v2_scaling_configuration NeptuneCluster#serverless_v2_scaling_configuration}
   */
   readonly serverlessV2ScalingConfiguration?: NeptuneClusterServerlessV2ScalingConfiguration;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/neptune_cluster#timeouts NeptuneCluster#timeouts}
   */
   readonly timeouts?: NeptuneClusterTimeouts;

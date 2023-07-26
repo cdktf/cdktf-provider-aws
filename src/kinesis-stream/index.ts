@@ -61,13 +61,13 @@ export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * stream_mode_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
   */
   readonly streamModeDetails?: KinesisStreamStreamModeDetails;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
   */
   readonly timeouts?: KinesisStreamTimeouts;

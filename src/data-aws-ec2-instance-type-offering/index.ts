@@ -29,13 +29,13 @@ export interface DataAwsEc2InstanceTypeOfferingConfig extends cdktf.TerraformMet
   readonly preferredInstanceTypes?: string[];
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_instance_type_offering#filter DataAwsEc2InstanceTypeOffering#filter}
   */
   readonly filter?: DataAwsEc2InstanceTypeOfferingFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/ec2_instance_type_offering#timeouts DataAwsEc2InstanceTypeOffering#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypeOfferingTimeouts;

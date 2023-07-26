@@ -65,7 +65,7 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/eks_addon#timeouts EksAddon#timeouts}
   */
   readonly timeouts?: EksAddonTimeouts;

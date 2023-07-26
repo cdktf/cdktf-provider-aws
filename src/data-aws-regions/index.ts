@@ -25,7 +25,7 @@ export interface DataAwsRegionsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/regions#filter DataAwsRegions#filter}
   */
   readonly filter?: DataAwsRegionsFilter[] | cdktf.IResolvable;

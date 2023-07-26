@@ -25,7 +25,7 @@ export interface ChimeVoiceConnectorTerminationCredentialsConfig extends cdktf.T
   readonly voiceConnectorId: string;
   /**
   * credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/chime_voice_connector_termination_credentials#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
   */
   readonly credentials: ChimeVoiceConnectorTerminationCredentialsCredentials[] | cdktf.IResolvable;

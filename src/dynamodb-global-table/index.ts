@@ -25,13 +25,13 @@ export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments 
   readonly name: string;
   /**
   * replica block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
   */
   readonly replica: DynamodbGlobalTableReplica[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
   */
   readonly timeouts?: DynamodbGlobalTableTimeouts;

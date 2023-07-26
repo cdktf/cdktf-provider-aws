@@ -37,7 +37,7 @@ export interface SagemakerProjectConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * service_catalog_provisioning_details block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_project#service_catalog_provisioning_details SagemakerProject#service_catalog_provisioning_details}
   */
   readonly serviceCatalogProvisioningDetails: SagemakerProjectServiceCatalogProvisioningDetails;
@@ -178,7 +178,7 @@ export interface SagemakerProjectServiceCatalogProvisioningDetails {
   readonly provisioningArtifactId?: string;
   /**
   * provisioning_parameter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_project#provisioning_parameter SagemakerProject#provisioning_parameter}
   */
   readonly provisioningParameter?: SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter[] | cdktf.IResolvable;

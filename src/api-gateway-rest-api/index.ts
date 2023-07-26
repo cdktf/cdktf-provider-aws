@@ -73,7 +73,7 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   readonly tagsAll?: { [key: string]: string };
   /**
   * endpoint_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
   */
   readonly endpointConfiguration?: ApiGatewayRestApiEndpointConfiguration;

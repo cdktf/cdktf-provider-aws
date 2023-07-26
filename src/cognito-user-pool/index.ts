@@ -69,79 +69,79 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   readonly usernameAttributes?: string[];
   /**
   * account_recovery_setting block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#account_recovery_setting CognitoUserPool#account_recovery_setting}
   */
   readonly accountRecoverySetting?: CognitoUserPoolAccountRecoverySetting;
   /**
   * admin_create_user_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#admin_create_user_config CognitoUserPool#admin_create_user_config}
   */
   readonly adminCreateUserConfig?: CognitoUserPoolAdminCreateUserConfig;
   /**
   * device_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#device_configuration CognitoUserPool#device_configuration}
   */
   readonly deviceConfiguration?: CognitoUserPoolDeviceConfiguration;
   /**
   * email_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#email_configuration CognitoUserPool#email_configuration}
   */
   readonly emailConfiguration?: CognitoUserPoolEmailConfiguration;
   /**
   * lambda_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#lambda_config CognitoUserPool#lambda_config}
   */
   readonly lambdaConfig?: CognitoUserPoolLambdaConfig;
   /**
   * password_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#password_policy CognitoUserPool#password_policy}
   */
   readonly passwordPolicy?: CognitoUserPoolPasswordPolicy;
   /**
   * schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#schema CognitoUserPool#schema}
   */
   readonly schema?: CognitoUserPoolSchema[] | cdktf.IResolvable;
   /**
   * sms_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#sms_configuration CognitoUserPool#sms_configuration}
   */
   readonly smsConfiguration?: CognitoUserPoolSmsConfiguration;
   /**
   * software_token_mfa_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#software_token_mfa_configuration CognitoUserPool#software_token_mfa_configuration}
   */
   readonly softwareTokenMfaConfiguration?: CognitoUserPoolSoftwareTokenMfaConfiguration;
   /**
   * user_attribute_update_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#user_attribute_update_settings CognitoUserPool#user_attribute_update_settings}
   */
   readonly userAttributeUpdateSettings?: CognitoUserPoolUserAttributeUpdateSettings;
   /**
   * user_pool_add_ons block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#user_pool_add_ons CognitoUserPool#user_pool_add_ons}
   */
   readonly userPoolAddOns?: CognitoUserPoolUserPoolAddOns;
   /**
   * username_configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#username_configuration CognitoUserPool#username_configuration}
   */
   readonly usernameConfiguration?: CognitoUserPoolUsernameConfiguration;
   /**
   * verification_message_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#verification_message_template CognitoUserPool#verification_message_template}
   */
   readonly verificationMessageTemplate?: CognitoUserPoolVerificationMessageTemplate;
@@ -267,7 +267,7 @@ export class CognitoUserPoolAccountRecoverySettingRecoveryMechanismList extends 
 export interface CognitoUserPoolAccountRecoverySetting {
   /**
   * recovery_mechanism block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#recovery_mechanism CognitoUserPool#recovery_mechanism}
   */
   readonly recoveryMechanism?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[] | cdktf.IResolvable;
@@ -457,7 +457,7 @@ export interface CognitoUserPoolAdminCreateUserConfig {
   readonly allowAdminCreateUserOnly?: boolean | cdktf.IResolvable;
   /**
   * invite_message_template block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#invite_message_template CognitoUserPool#invite_message_template}
   */
   readonly inviteMessageTemplate?: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate;
@@ -1028,13 +1028,13 @@ export interface CognitoUserPoolLambdaConfig {
   readonly verifyAuthChallengeResponse?: string;
   /**
   * custom_email_sender block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#custom_email_sender CognitoUserPool#custom_email_sender}
   */
   readonly customEmailSender?: CognitoUserPoolLambdaConfigCustomEmailSender;
   /**
   * custom_sms_sender block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#custom_sms_sender CognitoUserPool#custom_sms_sender}
   */
   readonly customSmsSender?: CognitoUserPoolLambdaConfigCustomSmsSender;
@@ -1781,13 +1781,13 @@ export interface CognitoUserPoolSchema {
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * number_attribute_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#number_attribute_constraints CognitoUserPool#number_attribute_constraints}
   */
   readonly numberAttributeConstraints?: CognitoUserPoolSchemaNumberAttributeConstraints;
   /**
   * string_attribute_constraints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_user_pool#string_attribute_constraints CognitoUserPool#string_attribute_constraints}
   */
   readonly stringAttributeConstraints?: CognitoUserPoolSchemaStringAttributeConstraints;

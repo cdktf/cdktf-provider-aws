@@ -29,7 +29,7 @@ export interface Sesv2DedicatedIpAssignmentConfig extends cdktf.TerraformMetaArg
   readonly ip: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sesv2_dedicated_ip_assignment#timeouts Sesv2DedicatedIpAssignment#timeouts}
   */
   readonly timeouts?: Sesv2DedicatedIpAssignmentTimeouts;

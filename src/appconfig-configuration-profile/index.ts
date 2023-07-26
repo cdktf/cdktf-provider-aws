@@ -53,7 +53,7 @@ export interface AppconfigConfigurationProfileConfig extends cdktf.TerraformMeta
   readonly type?: string;
   /**
   * validator block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appconfig_configuration_profile#validator AppconfigConfigurationProfile#validator}
   */
   readonly validator?: AppconfigConfigurationProfileValidator[] | cdktf.IResolvable;

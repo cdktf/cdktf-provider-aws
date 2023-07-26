@@ -57,19 +57,19 @@ export interface EbsSnapshotImportConfig extends cdktf.TerraformMetaArguments {
   readonly temporaryRestoreDays?: number;
   /**
   * client_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_snapshot_import#client_data EbsSnapshotImport#client_data}
   */
   readonly clientData?: EbsSnapshotImportClientData;
   /**
   * disk_container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_snapshot_import#disk_container EbsSnapshotImport#disk_container}
   */
   readonly diskContainer: EbsSnapshotImportDiskContainer;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_snapshot_import#timeouts EbsSnapshotImport#timeouts}
   */
   readonly timeouts?: EbsSnapshotImportTimeouts;
@@ -321,7 +321,7 @@ export interface EbsSnapshotImportDiskContainer {
   readonly url?: string;
   /**
   * user_bucket block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ebs_snapshot_import#user_bucket EbsSnapshotImport#user_bucket}
   */
   readonly userBucket?: EbsSnapshotImportDiskContainerUserBucket;

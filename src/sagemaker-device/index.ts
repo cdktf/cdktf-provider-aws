@@ -25,7 +25,7 @@ export interface SagemakerDeviceConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_device#device SagemakerDevice#device}
   */
   readonly device: SagemakerDeviceDevice;

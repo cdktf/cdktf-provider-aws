@@ -37,7 +37,7 @@ export interface NetworkmanagerCustomerGatewayAssociationConfig extends cdktf.Te
   readonly linkId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkmanager_customer_gateway_association#timeouts NetworkmanagerCustomerGatewayAssociation#timeouts}
   */
   readonly timeouts?: NetworkmanagerCustomerGatewayAssociationTimeouts;

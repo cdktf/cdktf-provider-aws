@@ -25,7 +25,7 @@ export interface EmrManagedScalingPolicyConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * compute_limits block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/emr_managed_scaling_policy#compute_limits EmrManagedScalingPolicy#compute_limits}
   */
   readonly computeLimits: EmrManagedScalingPolicyComputeLimits[] | cdktf.IResolvable;

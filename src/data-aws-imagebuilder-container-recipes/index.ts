@@ -25,7 +25,7 @@ export interface DataAwsImagebuilderContainerRecipesConfig extends cdktf.Terrafo
   readonly owner?: string;
   /**
   * filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/imagebuilder_container_recipes#filter DataAwsImagebuilderContainerRecipes#filter}
   */
   readonly filter?: DataAwsImagebuilderContainerRecipesFilter[] | cdktf.IResolvable;

@@ -33,19 +33,19 @@ export interface CloudwatchEventEndpointConfig extends cdktf.TerraformMetaArgume
   readonly roleArn?: string;
   /**
   * event_bus block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#event_bus CloudwatchEventEndpoint#event_bus}
   */
   readonly eventBus: CloudwatchEventEndpointEventBus[] | cdktf.IResolvable;
   /**
   * replication_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#replication_config CloudwatchEventEndpoint#replication_config}
   */
   readonly replicationConfig?: CloudwatchEventEndpointReplicationConfig;
   /**
   * routing_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#routing_config CloudwatchEventEndpoint#routing_config}
   */
   readonly routingConfig: CloudwatchEventEndpointRoutingConfig;
@@ -342,13 +342,13 @@ export class CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputRe
 export interface CloudwatchEventEndpointRoutingConfigFailoverConfig {
   /**
   * primary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#primary CloudwatchEventEndpoint#primary}
   */
   readonly primary: CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary;
   /**
   * secondary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#secondary CloudwatchEventEndpoint#secondary}
   */
   readonly secondary: CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary;
@@ -432,7 +432,7 @@ export class CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference e
 export interface CloudwatchEventEndpointRoutingConfig {
   /**
   * failover_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cloudwatch_event_endpoint#failover_config CloudwatchEventEndpoint#failover_config}
   */
   readonly failoverConfig: CloudwatchEventEndpointRoutingConfigFailoverConfig;

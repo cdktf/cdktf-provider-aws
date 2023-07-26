@@ -29,7 +29,7 @@ export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktf.Terrafor
   readonly roles: { [key: string]: string };
   /**
   * role_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_identity_pool_roles_attachment#role_mapping CognitoIdentityPoolRolesAttachment#role_mapping}
   */
   readonly roleMapping?: CognitoIdentityPoolRolesAttachmentRoleMapping[] | cdktf.IResolvable;
@@ -215,7 +215,7 @@ export interface CognitoIdentityPoolRolesAttachmentRoleMapping {
   readonly type: string;
   /**
   * mapping_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/cognito_identity_pool_roles_attachment#mapping_rule CognitoIdentityPoolRolesAttachment#mapping_rule}
   */
   readonly mappingRule?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[] | cdktf.IResolvable;

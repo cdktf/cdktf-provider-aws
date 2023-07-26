@@ -37,7 +37,7 @@ export interface Route53RecoveryreadinessCellConfig extends cdktf.TerraformMetaA
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/route53recoveryreadiness_cell#timeouts Route53RecoveryreadinessCell#timeouts}
   */
   readonly timeouts?: Route53RecoveryreadinessCellTimeouts;

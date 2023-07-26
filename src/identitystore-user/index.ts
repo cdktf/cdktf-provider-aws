@@ -61,25 +61,25 @@ export interface IdentitystoreUserConfig extends cdktf.TerraformMetaArguments {
   readonly userType?: string;
   /**
   * addresses block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/identitystore_user#addresses IdentitystoreUser#addresses}
   */
   readonly addresses?: IdentitystoreUserAddresses;
   /**
   * emails block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/identitystore_user#emails IdentitystoreUser#emails}
   */
   readonly emails?: IdentitystoreUserEmails;
   /**
   * name block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/identitystore_user#name IdentitystoreUser#name}
   */
   readonly name: IdentitystoreUserName;
   /**
   * phone_numbers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/identitystore_user#phone_numbers IdentitystoreUser#phone_numbers}
   */
   readonly phoneNumbers?: IdentitystoreUserPhoneNumbers;

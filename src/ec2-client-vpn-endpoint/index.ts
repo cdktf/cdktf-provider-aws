@@ -73,25 +73,25 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   readonly vpnPort?: number;
   /**
   * authentication_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_endpoint#authentication_options Ec2ClientVpnEndpoint#authentication_options}
   */
   readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[] | cdktf.IResolvable;
   /**
   * client_connect_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_endpoint#client_connect_options Ec2ClientVpnEndpoint#client_connect_options}
   */
   readonly clientConnectOptions?: Ec2ClientVpnEndpointClientConnectOptions;
   /**
   * client_login_banner_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_endpoint#client_login_banner_options Ec2ClientVpnEndpoint#client_login_banner_options}
   */
   readonly clientLoginBannerOptions?: Ec2ClientVpnEndpointClientLoginBannerOptions;
   /**
   * connection_log_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_client_vpn_endpoint#connection_log_options Ec2ClientVpnEndpoint#connection_log_options}
   */
   readonly connectionLogOptions: Ec2ClientVpnEndpointConnectionLogOptions;
