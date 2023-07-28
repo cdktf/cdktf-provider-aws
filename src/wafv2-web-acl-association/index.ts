@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface Wafv2WebAclAssociationConfigA extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#id Wafv2WebAclAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association#id Wafv2WebAclAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#resource_arn Wafv2WebAclAssociation#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association#resource_arn Wafv2WebAclAssociation#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#web_acl_arn Wafv2WebAclAssociation#web_acl_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association#web_acl_arn Wafv2WebAclAssociation#web_acl_arn}
   */
   readonly webAclArn: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#timeouts Wafv2WebAclAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association#timeouts Wafv2WebAclAssociation#timeouts}
   */
   readonly timeouts?: Wafv2WebAclAssociationTimeouts;
 }
 export interface Wafv2WebAclAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association#create Wafv2WebAclAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association#create Wafv2WebAclAssociation#create}
   */
   readonly create?: string;
 }
@@ -111,7 +106,7 @@ export class Wafv2WebAclAssociationTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association}
 */
 export class Wafv2WebAclAssociation extends cdktf.TerraformResource {
 
@@ -125,7 +120,7 @@ export class Wafv2WebAclAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -136,7 +131,7 @@ export class Wafv2WebAclAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_wafv2_web_acl_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

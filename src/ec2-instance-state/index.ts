@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2InstanceStateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#force Ec2InstanceState#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#force Ec2InstanceState#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#id Ec2InstanceState#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#id Ec2InstanceState#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#instance_id Ec2InstanceState#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#state Ec2InstanceState#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#state Ec2InstanceState#state}
   */
   readonly state: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#timeouts Ec2InstanceState#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#timeouts Ec2InstanceState#timeouts}
   */
   readonly timeouts?: Ec2InstanceStateTimeouts;
 }
 export interface Ec2InstanceStateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#create Ec2InstanceState#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#create Ec2InstanceState#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#delete Ec2InstanceState#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state#update Ec2InstanceState#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state#update Ec2InstanceState#update}
   */
   readonly update?: string;
 }
@@ -169,7 +164,7 @@ export class Ec2InstanceStateTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state aws_ec2_instance_state}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state aws_ec2_instance_state}
 */
 export class Ec2InstanceState extends cdktf.TerraformResource {
 
@@ -183,7 +178,7 @@ export class Ec2InstanceState extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_instance_state aws_ec2_instance_state} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,7 +189,7 @@ export class Ec2InstanceState extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_instance_state',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

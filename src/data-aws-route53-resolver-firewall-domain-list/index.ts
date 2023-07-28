@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_firewall_domain_list
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_domain_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRoute53ResolverFirewallDomainListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_firewall_domain_list#firewall_domain_list_id DataAwsRoute53ResolverFirewallDomainList#firewall_domain_list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_domain_list#firewall_domain_list_id DataAwsRoute53ResolverFirewallDomainList#firewall_domain_list_id}
   */
   readonly firewallDomainListId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_firewall_domain_list#id DataAwsRoute53ResolverFirewallDomainList#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_domain_list#id DataAwsRoute53ResolverFirewallDomainList#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface DataAwsRoute53ResolverFirewallDomainListConfig extends cdktf.Te
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
 */
 export class DataAwsRoute53ResolverFirewallDomainList extends cdktf.TerraformDataSource {
 
@@ -40,7 +35,7 @@ export class DataAwsRoute53ResolverFirewallDomainList extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class DataAwsRoute53ResolverFirewallDomainList extends cdktf.TerraformDat
       terraformResourceType: 'aws_route53_resolver_firewall_domain_list',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

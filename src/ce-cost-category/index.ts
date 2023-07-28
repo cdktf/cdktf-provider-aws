@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface CeCostCategoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#default_value CeCostCategory#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#effective_start CeCostCategory#effective_start}
   */
   readonly effectiveStart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#id CeCostCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#id CeCostCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#name CeCostCategory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#name CeCostCategory#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#rule_version CeCostCategory#rule_version}
   */
   readonly ruleVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags_all CeCostCategory#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
   */
   readonly rule: CeCostCategoryRule[] | cdktf.IResolvable;
   /**
   * split_charge_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#split_charge_rule CeCostCategory#split_charge_rule}
   */
   readonly splitChargeRule?: CeCostCategorySplitChargeRule[] | cdktf.IResolvable;
 }
 export interface CeCostCategoryRuleInheritedValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension_key CeCostCategory#dimension_key}
   */
   readonly dimensionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension_name CeCostCategory#dimension_name}
   */
   readonly dimensionName?: string;
 }
@@ -150,15 +145,15 @@ export class CeCostCategoryRuleInheritedValueOutputReference extends cdktf.Compl
 }
 export interface CeCostCategoryRuleRuleAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -269,15 +264,15 @@ export class CeCostCategoryRuleRuleAndCostCategoryOutputReference extends cdktf.
 }
 export interface CeCostCategoryRuleRuleAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -388,15 +383,15 @@ export class CeCostCategoryRuleRuleAndDimensionOutputReference extends cdktf.Com
 }
 export interface CeCostCategoryRuleRuleAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -509,19 +504,19 @@ export interface CeCostCategoryRuleRuleAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleAndTags;
 }
@@ -664,15 +659,15 @@ export class CeCostCategoryRuleRuleAndList extends cdktf.ComplexList {
 }
 export interface CeCostCategoryRuleRuleCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -783,15 +778,15 @@ export class CeCostCategoryRuleRuleCostCategoryOutputReference extends cdktf.Com
 }
 export interface CeCostCategoryRuleRuleDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -902,15 +897,15 @@ export class CeCostCategoryRuleRuleDimensionOutputReference extends cdktf.Comple
 }
 export interface CeCostCategoryRuleRuleNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1021,15 +1016,15 @@ export class CeCostCategoryRuleRuleNotCostCategoryOutputReference extends cdktf.
 }
 export interface CeCostCategoryRuleRuleNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1140,15 +1135,15 @@ export class CeCostCategoryRuleRuleNotDimensionOutputReference extends cdktf.Com
 }
 export interface CeCostCategoryRuleRuleNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1261,19 +1256,19 @@ export interface CeCostCategoryRuleRuleNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleNotTags;
 }
@@ -1384,15 +1379,15 @@ export class CeCostCategoryRuleRuleNotOutputReference extends cdktf.ComplexObjec
 }
 export interface CeCostCategoryRuleRuleOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1503,15 +1498,15 @@ export class CeCostCategoryRuleRuleOrCostCategoryOutputReference extends cdktf.C
 }
 export interface CeCostCategoryRuleRuleOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1622,15 +1617,15 @@ export class CeCostCategoryRuleRuleOrDimensionOutputReference extends cdktf.Comp
 }
 export interface CeCostCategoryRuleRuleOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -1743,19 +1738,19 @@ export interface CeCostCategoryRuleRuleOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleOrTags;
 }
@@ -1898,15 +1893,15 @@ export class CeCostCategoryRuleRuleOrList extends cdktf.ComplexList {
 }
 export interface CeCostCategoryRuleRuleTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#key CeCostCategory#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#key CeCostCategory#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#match_options CeCostCategory#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2019,37 +2014,37 @@ export interface CeCostCategoryRuleRule {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#and CeCostCategory#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#and CeCostCategory#and}
   */
   readonly and?: CeCostCategoryRuleRuleAnd[] | cdktf.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#cost_category CeCostCategory#cost_category}
   */
   readonly costCategory?: CeCostCategoryRuleRuleCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#dimension CeCostCategory#dimension}
   */
   readonly dimension?: CeCostCategoryRuleRuleDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#not CeCostCategory#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#not CeCostCategory#not}
   */
   readonly not?: CeCostCategoryRuleRuleNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#or CeCostCategory#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#or CeCostCategory#or}
   */
   readonly or?: CeCostCategoryRuleRuleOr[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#tags CeCostCategory#tags}
   */
   readonly tags?: CeCostCategoryRuleRuleTags;
 }
@@ -2229,23 +2224,23 @@ export class CeCostCategoryRuleRuleOutputReference extends cdktf.ComplexObject {
 }
 export interface CeCostCategoryRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#type CeCostCategory#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#type CeCostCategory#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#value CeCostCategory#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#value CeCostCategory#value}
   */
   readonly value?: string;
   /**
   * inherited_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#inherited_value CeCostCategory#inherited_value}
   */
   readonly inheritedValue?: CeCostCategoryRuleInheritedValue;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#rule CeCostCategory#rule}
   */
   readonly rule?: CeCostCategoryRuleRule;
 }
@@ -2411,11 +2406,11 @@ export class CeCostCategoryRuleList extends cdktf.ComplexList {
 }
 export interface CeCostCategorySplitChargeRuleParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#type CeCostCategory#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#type CeCostCategory#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#values CeCostCategory#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#values CeCostCategory#values}
   */
   readonly values?: string[];
 }
@@ -2535,21 +2530,21 @@ export class CeCostCategorySplitChargeRuleParameterList extends cdktf.ComplexLis
 }
 export interface CeCostCategorySplitChargeRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#method CeCostCategory#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#method CeCostCategory#method}
   */
   readonly method: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#source CeCostCategory#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#source CeCostCategory#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#targets CeCostCategory#targets}
   */
   readonly targets: string[];
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category#parameter CeCostCategory#parameter}
   */
   readonly parameter?: CeCostCategorySplitChargeRuleParameter[] | cdktf.IResolvable;
 }
@@ -2706,7 +2701,7 @@ export class CeCostCategorySplitChargeRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category aws_ce_cost_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category aws_ce_cost_category}
 */
 export class CeCostCategory extends cdktf.TerraformResource {
 
@@ -2720,7 +2715,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ce_cost_category aws_ce_cost_category} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ce_cost_category aws_ce_cost_category} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2731,7 +2726,7 @@ export class CeCostCategory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_cost_category',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

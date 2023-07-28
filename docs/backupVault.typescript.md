@@ -1,6 +1,6 @@
 # `aws_backup_vault`
 
-Refer to the Terraform Registory for docs: [`aws_backup_vault`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault).
+Refer to the Terraform Registory for docs: [`aws_backup_vault`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault).
 
 # `backupVault` Submodule <a name="`backupVault` Submodule" id="@cdktf/provider-aws.backupVault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_backup_vault`](https://registry
 
 ### BackupVault <a name="BackupVault" id="@cdktf/provider-aws.backupVault.BackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault aws_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault aws_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupVault.BackupVault.Initializer"></a>
 
@@ -762,12 +762,12 @@ const backupVaultConfig: backupVault.BackupVaultConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#name BackupVault#name}. |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#id BackupVault#id}. |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#tags BackupVault#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#tags_all BackupVault#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#name BackupVault#name}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#id BackupVault#id}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#tags BackupVault#tags}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#tags_all BackupVault#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultTimeouts">BackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -850,7 +850,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#name BackupVault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#name BackupVault#name}.
 
 ---
 
@@ -862,7 +862,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#id BackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#id BackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ public readonly kmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#tags BackupVault#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#tags BackupVault#tags}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#tags_all BackupVault#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#tags_all BackupVault#tags_all}.
 
 ---
 
@@ -927,7 +927,7 @@ public readonly timeouts: BackupVaultTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#timeouts BackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#timeouts BackupVault#timeouts}
 
 ---
 
@@ -945,7 +945,7 @@ const backupVaultTimeouts: backupVault.BackupVaultTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#delete BackupVault#delete}. |
+| <code><a href="#@cdktf/provider-aws.backupVault.BackupVaultTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#delete BackupVault#delete}. |
 
 ---
 
@@ -957,7 +957,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/backup_vault#delete BackupVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/backup_vault#delete BackupVault#delete}.
 
 ---
 

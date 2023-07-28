@@ -1,6 +1,6 @@
 # `data_aws_elasticache_subnet_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_elasticache_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group).
+Refer to the Terraform Registory for docs: [`data_aws_elasticache_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group).
 
 # `dataAwsElasticacheSubnetGroup` Submodule <a name="`dataAwsElasticacheSubnetGroup` Submodule" id="@cdktf/provider-aws.dataAwsElasticacheSubnetGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_elasticache_subnet_group`]
 
 ### DataAwsElasticacheSubnetGroup <a name="DataAwsElasticacheSubnetGroup" id="@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group aws_elasticache_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group aws_elasticache_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroup.Initializer"></a>
 
@@ -622,9 +622,9 @@ const dataAwsElasticacheSubnetGroupConfig: dataAwsElasticacheSubnetGroup.DataAws
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheSubnetGroup.DataAwsElasticacheSubnetGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}. |
 
 ---
 
@@ -706,7 +706,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#name DataAwsElasticacheSubnetGroup#name}.
 
 ---
 
@@ -718,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#id DataAwsElasticacheSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -733,7 +733,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/elasticache_subnet_group#tags DataAwsElasticacheSubnetGroup#tags}.
 
 ---
 

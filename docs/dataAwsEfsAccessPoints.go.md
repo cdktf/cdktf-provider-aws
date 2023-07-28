@@ -1,6 +1,6 @@
 # `data_aws_efs_access_points`
 
-Refer to the Terraform Registory for docs: [`data_aws_efs_access_points`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points).
+Refer to the Terraform Registory for docs: [`data_aws_efs_access_points`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points).
 
 # `dataAwsEfsAccessPoints` Submodule <a name="`dataAwsEfsAccessPoints` Submodule" id="@cdktf/provider-aws.dataAwsEfsAccessPoints"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_efs_access_points`](https:
 
 ### DataAwsEfsAccessPoints <a name="DataAwsEfsAccessPoints" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points aws_efs_access_points}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points aws_efs_access_points}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.NewDataAwsEfsAccessPoints(scope Construct, id *string, config DataAwsEfsAccessPointsConfig) DataAwsEfsAccessPoints
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 dataawsefsaccesspoints.DataAwsEfsAccessPoints_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsaccesspoints"
 
 &dataawsefsaccesspoints.DataAwsEfsAccessPointsConfig {
 	Connection: interface{},
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsefsaccesspoints"
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPointsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points#file_system_id DataAwsEfsAccessPoints#file_system_id}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/efs_access_points#id DataAwsEfsAccessPoints#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

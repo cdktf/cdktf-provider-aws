@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface DxBgpPeerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#address_family DxBgpPeer#address_family}
   */
   readonly addressFamily: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#amazon_address DxBgpPeer#amazon_address}
   */
   readonly amazonAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#bgp_asn DxBgpPeer#bgp_asn}
   */
   readonly bgpAsn: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#bgp_auth_key DxBgpPeer#bgp_auth_key}
   */
   readonly bgpAuthKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#customer_address DxBgpPeer#customer_address}
   */
   readonly customerAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#id DxBgpPeer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#virtual_interface_id DxBgpPeer#virtual_interface_id}
   */
   readonly virtualInterfaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#timeouts DxBgpPeer#timeouts}
   */
   readonly timeouts?: DxBgpPeerTimeouts;
 }
 export interface DxBgpPeerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#create DxBgpPeer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer#delete DxBgpPeer#delete}
   */
   readonly delete?: string;
 }
@@ -154,7 +149,7 @@ export class DxBgpPeerTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer}
 */
 export class DxBgpPeer extends cdktf.TerraformResource {
 
@@ -168,7 +163,7 @@ export class DxBgpPeer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/dx_bgp_peer aws_dx_bgp_peer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +174,7 @@ export class DxBgpPeer extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dx_bgp_peer',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

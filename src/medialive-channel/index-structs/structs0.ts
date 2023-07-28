@@ -1,12 +1,7 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface MedialiveChannelCdiInputSpecification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#resolution MedialiveChannel#resolution}
   */
   readonly resolution: string;
 }
@@ -68,7 +63,7 @@ export class MedialiveChannelCdiInputSpecificationOutputReference extends cdktf.
 }
 export interface MedialiveChannelDestinationsMediaPackageSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#channel_id MedialiveChannel#channel_id}
   */
   readonly channelId: string;
 }
@@ -162,11 +157,11 @@ export class MedialiveChannelDestinationsMediaPackageSettingsList extends cdktf.
 }
 export interface MedialiveChannelDestinationsMultiplexSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#multiplex_id MedialiveChannel#multiplex_id}
   */
   readonly multiplexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_name MedialiveChannel#program_name}
   */
   readonly programName: string;
 }
@@ -248,19 +243,19 @@ export class MedialiveChannelDestinationsMultiplexSettingsOutputReference extend
 }
 export interface MedialiveChannelDestinationsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
   */
   readonly passwordParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}
   */
   readonly streamName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#url MedialiveChannel#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#url MedialiveChannel#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
   */
   readonly username?: string;
 }
@@ -426,7 +421,7 @@ export class MedialiveChannelDestinationsSettingsList extends cdktf.ComplexList 
 }
 export interface MedialiveChannelDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#id MedialiveChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#id MedialiveChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -435,19 +430,19 @@ export interface MedialiveChannelDestinations {
   /**
   * media_package_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#media_package_settings MedialiveChannel#media_package_settings}
   */
   readonly mediaPackageSettings?: MedialiveChannelDestinationsMediaPackageSettings[] | cdktf.IResolvable;
   /**
   * multiplex_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#multiplex_settings MedialiveChannel#multiplex_settings}
   */
   readonly multiplexSettings?: MedialiveChannelDestinationsMultiplexSettings;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#settings MedialiveChannel#settings}
   */
   readonly settings?: MedialiveChannelDestinationsSettings[] | cdktf.IResolvable;
 }
@@ -610,15 +605,15 @@ export class MedialiveChannelDestinationsList extends cdktf.ComplexList {
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#algorithm MedialiveChannel#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#algorithm_control MedialiveChannel#algorithm_control}
   */
   readonly algorithmControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#target_lkfs MedialiveChannel#target_lkfs}
   */
   readonly targetLkfs?: number;
 }
@@ -729,15 +724,15 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationS
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cbet_check_digit_string MedialiveChannel#cbet_check_digit_string}
   */
   readonly cbetCheckDigitString: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cbet_stepaside MedialiveChannel#cbet_stepaside}
   */
   readonly cbetStepaside: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#csid MedialiveChannel#csid}
   */
   readonly csid: string;
 }
@@ -839,11 +834,11 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSetti
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#check_digit_string MedialiveChannel#check_digit_string}
   */
   readonly checkDigitString: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sid MedialiveChannel#sid}
   */
   readonly sid: number;
 }
@@ -957,19 +952,19 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSetti
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_distribution_type MedialiveChannel#nielsen_distribution_type}
   */
   readonly nielsenDistributionType?: string;
   /**
   * nielsen_cbet_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_cbet_settings MedialiveChannel#nielsen_cbet_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_cbet_settings MedialiveChannel#nielsen_cbet_settings}
   */
   readonly nielsenCbetSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings;
   /**
   * nielsen_naes_ii_nw_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_naes_ii_nw_settings MedialiveChannel#nielsen_naes_ii_nw_settings}
   */
   readonly nielsenNaesIiNwSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings[] | cdktf.IResolvable;
 }
@@ -1082,7 +1077,7 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkS
   /**
   * nielsen_watermarks_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_watermarks_settings MedialiveChannel#nielsen_watermarks_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_watermarks_settings MedialiveChannel#nielsen_watermarks_settings}
   */
   readonly nielsenWatermarksSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings;
 }
@@ -1147,39 +1142,39 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSetti
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_type MedialiveChannel#input_type}
   */
   readonly inputType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
   */
   readonly rateControlMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#raw_format MedialiveChannel#raw_format}
   */
   readonly rawFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
   */
   readonly sampleRate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#spec MedialiveChannel#spec}
   */
   readonly spec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#vbr_quality MedialiveChannel#vbr_quality}
   */
   readonly vbrQuality?: string;
 }
@@ -1428,31 +1423,31 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSet
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}
   */
   readonly bitstreamMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
   */
   readonly dialnorm?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#drc_profile MedialiveChannel#drc_profile}
   */
   readonly drcProfile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}
   */
   readonly lfeFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}
   */
   readonly metadataControl?: string;
 }
@@ -1655,31 +1650,31 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Set
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
   */
   readonly dialnorm?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}
   */
   readonly drcLine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}
   */
   readonly drcRf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#height_trim MedialiveChannel#height_trim}
   */
   readonly heightTrim?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#surround_trim MedialiveChannel#surround_trim}
   */
   readonly surroundTrim?: number;
 }
@@ -1882,83 +1877,83 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3At
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#attenuation_control MedialiveChannel#attenuation_control}
   */
   readonly attenuationControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitstream_mode MedialiveChannel#bitstream_mode}
   */
   readonly bitstreamMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dc_filter MedialiveChannel#dc_filter}
   */
   readonly dcFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dialnorm MedialiveChannel#dialnorm}
   */
   readonly dialnorm?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#drc_line MedialiveChannel#drc_line}
   */
   readonly drcLine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#drc_rf MedialiveChannel#drc_rf}
   */
   readonly drcRf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lfe_control MedialiveChannel#lfe_control}
   */
   readonly lfeControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lfe_filter MedialiveChannel#lfe_filter}
   */
   readonly lfeFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lo_ro_center_mix_level MedialiveChannel#lo_ro_center_mix_level}
   */
   readonly loRoCenterMixLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lo_ro_surround_mix_level MedialiveChannel#lo_ro_surround_mix_level}
   */
   readonly loRoSurroundMixLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lt_rt_center_mix_level MedialiveChannel#lt_rt_center_mix_level}
   */
   readonly ltRtCenterMixLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#lt_rt_surround_mix_level MedialiveChannel#lt_rt_surround_mix_level}
   */
   readonly ltRtSurroundMixLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#metadata_control MedialiveChannel#metadata_control}
   */
   readonly metadataControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#passthrough_control MedialiveChannel#passthrough_control}
   */
   readonly passthroughControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#phase_control MedialiveChannel#phase_control}
   */
   readonly phaseControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#stereo_downmix MedialiveChannel#stereo_downmix}
   */
   readonly stereoDownmix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#surround_ex_mode MedialiveChannel#surround_ex_mode}
   */
   readonly surroundExMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#surround_mode MedialiveChannel#surround_mode}
   */
   readonly surroundMode?: string;
 }
@@ -2460,15 +2455,15 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Se
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
   */
   readonly sampleRate?: number;
 }
@@ -2617,15 +2612,15 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassTh
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bit_depth MedialiveChannel#bit_depth}
   */
   readonly bitDepth?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#coding_mode MedialiveChannel#coding_mode}
   */
   readonly codingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sample_rate MedialiveChannel#sample_rate}
   */
   readonly sampleRate?: number;
 }
@@ -2738,43 +2733,43 @@ export interface MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings {
   /**
   * aac_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#aac_settings MedialiveChannel#aac_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#aac_settings MedialiveChannel#aac_settings}
   */
   readonly aacSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings;
   /**
   * ac3_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ac3_settings MedialiveChannel#ac3_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ac3_settings MedialiveChannel#ac3_settings}
   */
   readonly ac3Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings;
   /**
   * eac3_atmos_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#eac3_atmos_settings MedialiveChannel#eac3_atmos_settings}
   */
   readonly eac3AtmosSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings;
   /**
   * eac3_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#eac3_settings MedialiveChannel#eac3_settings}
   */
   readonly eac3Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings;
   /**
   * mp2_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#mp2_settings MedialiveChannel#mp2_settings}
   */
   readonly mp2Settings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings;
   /**
   * pass_through_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pass_through_settings MedialiveChannel#pass_through_settings}
   */
   readonly passThroughSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings;
   /**
   * wav_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#wav_settings MedialiveChannel#wav_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#wav_settings MedialiveChannel#wav_settings}
   */
   readonly wavSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings;
 }
@@ -2977,11 +2972,11 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutput
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gain MedialiveChannel#gain}
   */
   readonly gain: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_channel MedialiveChannel#input_channel}
   */
   readonly inputChannel: number;
 }
@@ -3095,13 +3090,13 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChanne
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_channel MedialiveChannel#output_channel}
   */
   readonly outputChannel: number;
   /**
   * input_channel_levels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_channel_levels MedialiveChannel#input_channel_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_channel_levels MedialiveChannel#input_channel_levels}
   */
   readonly inputChannelLevels: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels[] | cdktf.IResolvable;
 }
@@ -3215,17 +3210,17 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChanne
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#channels_in MedialiveChannel#channels_in}
   */
   readonly channelsIn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#channels_out MedialiveChannel#channels_out}
   */
   readonly channelsOut?: number;
   /**
   * channel_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#channel_mappings MedialiveChannel#channel_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#channel_mappings MedialiveChannel#channel_mappings}
   */
   readonly channelMappings: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings[] | cdktf.IResolvable;
 }
@@ -3333,55 +3328,55 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutput
 }
 export interface MedialiveChannelEncoderSettingsAudioDescriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}
   */
   readonly audioSelectorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_type MedialiveChannel#audio_type}
   */
   readonly audioType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_type_control MedialiveChannel#audio_type_control}
   */
   readonly audioTypeControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
   */
   readonly languageCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_code_control MedialiveChannel#language_code_control}
   */
   readonly languageCodeControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#stream_name MedialiveChannel#stream_name}
   */
   readonly streamName?: string;
   /**
   * audio_normalization_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_normalization_settings MedialiveChannel#audio_normalization_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_normalization_settings MedialiveChannel#audio_normalization_settings}
   */
   readonly audioNormalizationSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings;
   /**
   * audio_watermark_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_watermark_settings MedialiveChannel#audio_watermark_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_watermark_settings MedialiveChannel#audio_watermark_settings}
   */
   readonly audioWatermarkSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings;
   /**
   * codec_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
   */
   readonly codecSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings;
   /**
   * remix_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#remix_settings MedialiveChannel#remix_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#remix_settings MedialiveChannel#remix_settings}
   */
   readonly remixSettings?: MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings;
 }
@@ -3702,15 +3697,15 @@ export class MedialiveChannelEncoderSettingsAudioDescriptionsList extends cdktf.
 }
 export interface MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
   */
   readonly passwordParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
   */
   readonly uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
   */
   readonly username?: string;
 }
@@ -3818,13 +3813,13 @@ export class MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutpu
 }
 export interface MedialiveChannelEncoderSettingsAvailBlanking {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#state MedialiveChannel#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#state MedialiveChannel#state}
   */
   readonly state?: string;
   /**
   * avail_blanking_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
   */
   readonly availBlankingImage?: MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage;
 }
@@ -3910,9 +3905,3231 @@ export class MedialiveChannelEncoderSettingsAvailBlankingOutputReference extends
     return this._availBlankingImage.internalValue;
   }
 }
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  */
+  readonly passwordParam?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  */
+  readonly uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  */
+  readonly username?: string;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFontToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFontOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_param: cdktf.stringToTerraform(struct!.passwordParam),
+    uri: cdktf.stringToTerraform(struct!.uri),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFontOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordParam = this._passwordParam;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwordParam = undefined;
+      this._uri = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwordParam = value.passwordParam;
+      this._uri = value.uri;
+      this._username = value.username;
+    }
+  }
+
+  // password_param - computed: true, optional: true, required: false
+  private _passwordParam?: string; 
+  public get passwordParam() {
+    return this.getStringAttribute('password_param');
+  }
+  public set passwordParam(value: string) {
+    this._passwordParam = value;
+  }
+  public resetPasswordParam() {
+    this._passwordParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordParamInput() {
+    return this._passwordParam;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#alignment MedialiveChannel#alignment}
+  */
+  readonly alignment?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#background_color MedialiveChannel#background_color}
+  */
+  readonly backgroundColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#background_opacity MedialiveChannel#background_opacity}
+  */
+  readonly backgroundOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_color MedialiveChannel#font_color}
+  */
+  readonly fontColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_opacity MedialiveChannel#font_opacity}
+  */
+  readonly fontOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_resolution MedialiveChannel#font_resolution}
+  */
+  readonly fontResolution?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_size MedialiveChannel#font_size}
+  */
+  readonly fontSize?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#outline_color MedialiveChannel#outline_color}
+  */
+  readonly outlineColor: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#outline_size MedialiveChannel#outline_size}
+  */
+  readonly outlineSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_color MedialiveChannel#shadow_color}
+  */
+  readonly shadowColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_opacity MedialiveChannel#shadow_opacity}
+  */
+  readonly shadowOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_x_offset MedialiveChannel#shadow_x_offset}
+  */
+  readonly shadowXOffset?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_y_offset MedialiveChannel#shadow_y_offset}
+  */
+  readonly shadowYOffset?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#teletext_grid_control MedialiveChannel#teletext_grid_control}
+  */
+  readonly teletextGridControl: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#x_position MedialiveChannel#x_position}
+  */
+  readonly xPosition?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#y_position MedialiveChannel#y_position}
+  */
+  readonly yPosition?: number;
+  /**
+  * font block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font MedialiveChannel#font}
+  */
+  readonly font?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alignment: cdktf.stringToTerraform(struct!.alignment),
+    background_color: cdktf.stringToTerraform(struct!.backgroundColor),
+    background_opacity: cdktf.numberToTerraform(struct!.backgroundOpacity),
+    font_color: cdktf.stringToTerraform(struct!.fontColor),
+    font_opacity: cdktf.numberToTerraform(struct!.fontOpacity),
+    font_resolution: cdktf.numberToTerraform(struct!.fontResolution),
+    font_size: cdktf.stringToTerraform(struct!.fontSize),
+    outline_color: cdktf.stringToTerraform(struct!.outlineColor),
+    outline_size: cdktf.numberToTerraform(struct!.outlineSize),
+    shadow_color: cdktf.stringToTerraform(struct!.shadowColor),
+    shadow_opacity: cdktf.numberToTerraform(struct!.shadowOpacity),
+    shadow_x_offset: cdktf.numberToTerraform(struct!.shadowXOffset),
+    shadow_y_offset: cdktf.numberToTerraform(struct!.shadowYOffset),
+    teletext_grid_control: cdktf.stringToTerraform(struct!.teletextGridControl),
+    x_position: cdktf.numberToTerraform(struct!.xPosition),
+    y_position: cdktf.numberToTerraform(struct!.yPosition),
+    font: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFontToTerraform(struct!.font),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alignment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alignment = this._alignment;
+    }
+    if (this._backgroundColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backgroundColor = this._backgroundColor;
+    }
+    if (this._backgroundOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backgroundOpacity = this._backgroundOpacity;
+    }
+    if (this._fontColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontColor = this._fontColor;
+    }
+    if (this._fontOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontOpacity = this._fontOpacity;
+    }
+    if (this._fontResolution !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontResolution = this._fontResolution;
+    }
+    if (this._fontSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontSize = this._fontSize;
+    }
+    if (this._outlineColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outlineColor = this._outlineColor;
+    }
+    if (this._outlineSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outlineSize = this._outlineSize;
+    }
+    if (this._shadowColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowColor = this._shadowColor;
+    }
+    if (this._shadowOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowOpacity = this._shadowOpacity;
+    }
+    if (this._shadowXOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowXOffset = this._shadowXOffset;
+    }
+    if (this._shadowYOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowYOffset = this._shadowYOffset;
+    }
+    if (this._teletextGridControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teletextGridControl = this._teletextGridControl;
+    }
+    if (this._xPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.xPosition = this._xPosition;
+    }
+    if (this._yPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.yPosition = this._yPosition;
+    }
+    if (this._font?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.font = this._font?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alignment = undefined;
+      this._backgroundColor = undefined;
+      this._backgroundOpacity = undefined;
+      this._fontColor = undefined;
+      this._fontOpacity = undefined;
+      this._fontResolution = undefined;
+      this._fontSize = undefined;
+      this._outlineColor = undefined;
+      this._outlineSize = undefined;
+      this._shadowColor = undefined;
+      this._shadowOpacity = undefined;
+      this._shadowXOffset = undefined;
+      this._shadowYOffset = undefined;
+      this._teletextGridControl = undefined;
+      this._xPosition = undefined;
+      this._yPosition = undefined;
+      this._font.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alignment = value.alignment;
+      this._backgroundColor = value.backgroundColor;
+      this._backgroundOpacity = value.backgroundOpacity;
+      this._fontColor = value.fontColor;
+      this._fontOpacity = value.fontOpacity;
+      this._fontResolution = value.fontResolution;
+      this._fontSize = value.fontSize;
+      this._outlineColor = value.outlineColor;
+      this._outlineSize = value.outlineSize;
+      this._shadowColor = value.shadowColor;
+      this._shadowOpacity = value.shadowOpacity;
+      this._shadowXOffset = value.shadowXOffset;
+      this._shadowYOffset = value.shadowYOffset;
+      this._teletextGridControl = value.teletextGridControl;
+      this._xPosition = value.xPosition;
+      this._yPosition = value.yPosition;
+      this._font.internalValue = value.font;
+    }
+  }
+
+  // alignment - computed: false, optional: true, required: false
+  private _alignment?: string; 
+  public get alignment() {
+    return this.getStringAttribute('alignment');
+  }
+  public set alignment(value: string) {
+    this._alignment = value;
+  }
+  public resetAlignment() {
+    this._alignment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alignmentInput() {
+    return this._alignment;
+  }
+
+  // background_color - computed: false, optional: true, required: false
+  private _backgroundColor?: string; 
+  public get backgroundColor() {
+    return this.getStringAttribute('background_color');
+  }
+  public set backgroundColor(value: string) {
+    this._backgroundColor = value;
+  }
+  public resetBackgroundColor() {
+    this._backgroundColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backgroundColorInput() {
+    return this._backgroundColor;
+  }
+
+  // background_opacity - computed: false, optional: true, required: false
+  private _backgroundOpacity?: number; 
+  public get backgroundOpacity() {
+    return this.getNumberAttribute('background_opacity');
+  }
+  public set backgroundOpacity(value: number) {
+    this._backgroundOpacity = value;
+  }
+  public resetBackgroundOpacity() {
+    this._backgroundOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backgroundOpacityInput() {
+    return this._backgroundOpacity;
+  }
+
+  // font_color - computed: false, optional: true, required: false
+  private _fontColor?: string; 
+  public get fontColor() {
+    return this.getStringAttribute('font_color');
+  }
+  public set fontColor(value: string) {
+    this._fontColor = value;
+  }
+  public resetFontColor() {
+    this._fontColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontColorInput() {
+    return this._fontColor;
+  }
+
+  // font_opacity - computed: false, optional: true, required: false
+  private _fontOpacity?: number; 
+  public get fontOpacity() {
+    return this.getNumberAttribute('font_opacity');
+  }
+  public set fontOpacity(value: number) {
+    this._fontOpacity = value;
+  }
+  public resetFontOpacity() {
+    this._fontOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontOpacityInput() {
+    return this._fontOpacity;
+  }
+
+  // font_resolution - computed: false, optional: true, required: false
+  private _fontResolution?: number; 
+  public get fontResolution() {
+    return this.getNumberAttribute('font_resolution');
+  }
+  public set fontResolution(value: number) {
+    this._fontResolution = value;
+  }
+  public resetFontResolution() {
+    this._fontResolution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontResolutionInput() {
+    return this._fontResolution;
+  }
+
+  // font_size - computed: false, optional: true, required: false
+  private _fontSize?: string; 
+  public get fontSize() {
+    return this.getStringAttribute('font_size');
+  }
+  public set fontSize(value: string) {
+    this._fontSize = value;
+  }
+  public resetFontSize() {
+    this._fontSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontSizeInput() {
+    return this._fontSize;
+  }
+
+  // outline_color - computed: false, optional: false, required: true
+  private _outlineColor?: string; 
+  public get outlineColor() {
+    return this.getStringAttribute('outline_color');
+  }
+  public set outlineColor(value: string) {
+    this._outlineColor = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outlineColorInput() {
+    return this._outlineColor;
+  }
+
+  // outline_size - computed: false, optional: true, required: false
+  private _outlineSize?: number; 
+  public get outlineSize() {
+    return this.getNumberAttribute('outline_size');
+  }
+  public set outlineSize(value: number) {
+    this._outlineSize = value;
+  }
+  public resetOutlineSize() {
+    this._outlineSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outlineSizeInput() {
+    return this._outlineSize;
+  }
+
+  // shadow_color - computed: false, optional: true, required: false
+  private _shadowColor?: string; 
+  public get shadowColor() {
+    return this.getStringAttribute('shadow_color');
+  }
+  public set shadowColor(value: string) {
+    this._shadowColor = value;
+  }
+  public resetShadowColor() {
+    this._shadowColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowColorInput() {
+    return this._shadowColor;
+  }
+
+  // shadow_opacity - computed: false, optional: true, required: false
+  private _shadowOpacity?: number; 
+  public get shadowOpacity() {
+    return this.getNumberAttribute('shadow_opacity');
+  }
+  public set shadowOpacity(value: number) {
+    this._shadowOpacity = value;
+  }
+  public resetShadowOpacity() {
+    this._shadowOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowOpacityInput() {
+    return this._shadowOpacity;
+  }
+
+  // shadow_x_offset - computed: false, optional: true, required: false
+  private _shadowXOffset?: number; 
+  public get shadowXOffset() {
+    return this.getNumberAttribute('shadow_x_offset');
+  }
+  public set shadowXOffset(value: number) {
+    this._shadowXOffset = value;
+  }
+  public resetShadowXOffset() {
+    this._shadowXOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowXOffsetInput() {
+    return this._shadowXOffset;
+  }
+
+  // shadow_y_offset - computed: false, optional: true, required: false
+  private _shadowYOffset?: number; 
+  public get shadowYOffset() {
+    return this.getNumberAttribute('shadow_y_offset');
+  }
+  public set shadowYOffset(value: number) {
+    this._shadowYOffset = value;
+  }
+  public resetShadowYOffset() {
+    this._shadowYOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowYOffsetInput() {
+    return this._shadowYOffset;
+  }
+
+  // teletext_grid_control - computed: false, optional: false, required: true
+  private _teletextGridControl?: string; 
+  public get teletextGridControl() {
+    return this.getStringAttribute('teletext_grid_control');
+  }
+  public set teletextGridControl(value: string) {
+    this._teletextGridControl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teletextGridControlInput() {
+    return this._teletextGridControl;
+  }
+
+  // x_position - computed: false, optional: true, required: false
+  private _xPosition?: number; 
+  public get xPosition() {
+    return this.getNumberAttribute('x_position');
+  }
+  public set xPosition(value: number) {
+    this._xPosition = value;
+  }
+  public resetXPosition() {
+    this._xPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xPositionInput() {
+    return this._xPosition;
+  }
+
+  // y_position - computed: false, optional: true, required: false
+  private _yPosition?: number; 
+  public get yPosition() {
+    return this.getNumberAttribute('y_position');
+  }
+  public set yPosition(value: number) {
+    this._yPosition = value;
+  }
+  public resetYPosition() {
+    this._yPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yPositionInput() {
+    return this._yPosition;
+  }
+
+  // font - computed: false, optional: true, required: false
+  private _font = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFontOutputReference(this, "font");
+  public get font() {
+    return this._font;
+  }
+  public putFont(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont) {
+    this._font.internalValue = value;
+  }
+  public resetFont() {
+    this._font.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontInput() {
+    return this._font.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  */
+  readonly passwordParam?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  */
+  readonly uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  */
+  readonly username?: string;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFontToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFontOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_param: cdktf.stringToTerraform(struct!.passwordParam),
+    uri: cdktf.stringToTerraform(struct!.uri),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFontOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordParam = this._passwordParam;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwordParam = undefined;
+      this._uri = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwordParam = value.passwordParam;
+      this._uri = value.uri;
+      this._username = value.username;
+    }
+  }
+
+  // password_param - computed: true, optional: true, required: false
+  private _passwordParam?: string; 
+  public get passwordParam() {
+    return this.getStringAttribute('password_param');
+  }
+  public set passwordParam(value: string) {
+    this._passwordParam = value;
+  }
+  public resetPasswordParam() {
+    this._passwordParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordParamInput() {
+    return this._passwordParam;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#alignment MedialiveChannel#alignment}
+  */
+  readonly alignment?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#background_color MedialiveChannel#background_color}
+  */
+  readonly backgroundColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#background_opacity MedialiveChannel#background_opacity}
+  */
+  readonly backgroundOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_color MedialiveChannel#font_color}
+  */
+  readonly fontColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_opacity MedialiveChannel#font_opacity}
+  */
+  readonly fontOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_resolution MedialiveChannel#font_resolution}
+  */
+  readonly fontResolution?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_size MedialiveChannel#font_size}
+  */
+  readonly fontSize?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#outline_color MedialiveChannel#outline_color}
+  */
+  readonly outlineColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#outline_size MedialiveChannel#outline_size}
+  */
+  readonly outlineSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_color MedialiveChannel#shadow_color}
+  */
+  readonly shadowColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_opacity MedialiveChannel#shadow_opacity}
+  */
+  readonly shadowOpacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_x_offset MedialiveChannel#shadow_x_offset}
+  */
+  readonly shadowXOffset?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#shadow_y_offset MedialiveChannel#shadow_y_offset}
+  */
+  readonly shadowYOffset?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#teletext_grid_control MedialiveChannel#teletext_grid_control}
+  */
+  readonly teletextGridControl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#x_position MedialiveChannel#x_position}
+  */
+  readonly xPosition?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#y_position MedialiveChannel#y_position}
+  */
+  readonly yPosition?: number;
+  /**
+  * font block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font MedialiveChannel#font}
+  */
+  readonly font?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alignment: cdktf.stringToTerraform(struct!.alignment),
+    background_color: cdktf.stringToTerraform(struct!.backgroundColor),
+    background_opacity: cdktf.numberToTerraform(struct!.backgroundOpacity),
+    font_color: cdktf.stringToTerraform(struct!.fontColor),
+    font_opacity: cdktf.numberToTerraform(struct!.fontOpacity),
+    font_resolution: cdktf.numberToTerraform(struct!.fontResolution),
+    font_size: cdktf.stringToTerraform(struct!.fontSize),
+    outline_color: cdktf.stringToTerraform(struct!.outlineColor),
+    outline_size: cdktf.numberToTerraform(struct!.outlineSize),
+    shadow_color: cdktf.stringToTerraform(struct!.shadowColor),
+    shadow_opacity: cdktf.numberToTerraform(struct!.shadowOpacity),
+    shadow_x_offset: cdktf.numberToTerraform(struct!.shadowXOffset),
+    shadow_y_offset: cdktf.numberToTerraform(struct!.shadowYOffset),
+    teletext_grid_control: cdktf.stringToTerraform(struct!.teletextGridControl),
+    x_position: cdktf.numberToTerraform(struct!.xPosition),
+    y_position: cdktf.numberToTerraform(struct!.yPosition),
+    font: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFontToTerraform(struct!.font),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alignment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alignment = this._alignment;
+    }
+    if (this._backgroundColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backgroundColor = this._backgroundColor;
+    }
+    if (this._backgroundOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backgroundOpacity = this._backgroundOpacity;
+    }
+    if (this._fontColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontColor = this._fontColor;
+    }
+    if (this._fontOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontOpacity = this._fontOpacity;
+    }
+    if (this._fontResolution !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontResolution = this._fontResolution;
+    }
+    if (this._fontSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontSize = this._fontSize;
+    }
+    if (this._outlineColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outlineColor = this._outlineColor;
+    }
+    if (this._outlineSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outlineSize = this._outlineSize;
+    }
+    if (this._shadowColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowColor = this._shadowColor;
+    }
+    if (this._shadowOpacity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowOpacity = this._shadowOpacity;
+    }
+    if (this._shadowXOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowXOffset = this._shadowXOffset;
+    }
+    if (this._shadowYOffset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shadowYOffset = this._shadowYOffset;
+    }
+    if (this._teletextGridControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teletextGridControl = this._teletextGridControl;
+    }
+    if (this._xPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.xPosition = this._xPosition;
+    }
+    if (this._yPosition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.yPosition = this._yPosition;
+    }
+    if (this._font?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.font = this._font?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alignment = undefined;
+      this._backgroundColor = undefined;
+      this._backgroundOpacity = undefined;
+      this._fontColor = undefined;
+      this._fontOpacity = undefined;
+      this._fontResolution = undefined;
+      this._fontSize = undefined;
+      this._outlineColor = undefined;
+      this._outlineSize = undefined;
+      this._shadowColor = undefined;
+      this._shadowOpacity = undefined;
+      this._shadowXOffset = undefined;
+      this._shadowYOffset = undefined;
+      this._teletextGridControl = undefined;
+      this._xPosition = undefined;
+      this._yPosition = undefined;
+      this._font.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alignment = value.alignment;
+      this._backgroundColor = value.backgroundColor;
+      this._backgroundOpacity = value.backgroundOpacity;
+      this._fontColor = value.fontColor;
+      this._fontOpacity = value.fontOpacity;
+      this._fontResolution = value.fontResolution;
+      this._fontSize = value.fontSize;
+      this._outlineColor = value.outlineColor;
+      this._outlineSize = value.outlineSize;
+      this._shadowColor = value.shadowColor;
+      this._shadowOpacity = value.shadowOpacity;
+      this._shadowXOffset = value.shadowXOffset;
+      this._shadowYOffset = value.shadowYOffset;
+      this._teletextGridControl = value.teletextGridControl;
+      this._xPosition = value.xPosition;
+      this._yPosition = value.yPosition;
+      this._font.internalValue = value.font;
+    }
+  }
+
+  // alignment - computed: false, optional: true, required: false
+  private _alignment?: string; 
+  public get alignment() {
+    return this.getStringAttribute('alignment');
+  }
+  public set alignment(value: string) {
+    this._alignment = value;
+  }
+  public resetAlignment() {
+    this._alignment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alignmentInput() {
+    return this._alignment;
+  }
+
+  // background_color - computed: false, optional: true, required: false
+  private _backgroundColor?: string; 
+  public get backgroundColor() {
+    return this.getStringAttribute('background_color');
+  }
+  public set backgroundColor(value: string) {
+    this._backgroundColor = value;
+  }
+  public resetBackgroundColor() {
+    this._backgroundColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backgroundColorInput() {
+    return this._backgroundColor;
+  }
+
+  // background_opacity - computed: false, optional: true, required: false
+  private _backgroundOpacity?: number; 
+  public get backgroundOpacity() {
+    return this.getNumberAttribute('background_opacity');
+  }
+  public set backgroundOpacity(value: number) {
+    this._backgroundOpacity = value;
+  }
+  public resetBackgroundOpacity() {
+    this._backgroundOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backgroundOpacityInput() {
+    return this._backgroundOpacity;
+  }
+
+  // font_color - computed: false, optional: true, required: false
+  private _fontColor?: string; 
+  public get fontColor() {
+    return this.getStringAttribute('font_color');
+  }
+  public set fontColor(value: string) {
+    this._fontColor = value;
+  }
+  public resetFontColor() {
+    this._fontColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontColorInput() {
+    return this._fontColor;
+  }
+
+  // font_opacity - computed: false, optional: true, required: false
+  private _fontOpacity?: number; 
+  public get fontOpacity() {
+    return this.getNumberAttribute('font_opacity');
+  }
+  public set fontOpacity(value: number) {
+    this._fontOpacity = value;
+  }
+  public resetFontOpacity() {
+    this._fontOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontOpacityInput() {
+    return this._fontOpacity;
+  }
+
+  // font_resolution - computed: false, optional: true, required: false
+  private _fontResolution?: number; 
+  public get fontResolution() {
+    return this.getNumberAttribute('font_resolution');
+  }
+  public set fontResolution(value: number) {
+    this._fontResolution = value;
+  }
+  public resetFontResolution() {
+    this._fontResolution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontResolutionInput() {
+    return this._fontResolution;
+  }
+
+  // font_size - computed: true, optional: true, required: false
+  private _fontSize?: string; 
+  public get fontSize() {
+    return this.getStringAttribute('font_size');
+  }
+  public set fontSize(value: string) {
+    this._fontSize = value;
+  }
+  public resetFontSize() {
+    this._fontSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontSizeInput() {
+    return this._fontSize;
+  }
+
+  // outline_color - computed: false, optional: true, required: false
+  private _outlineColor?: string; 
+  public get outlineColor() {
+    return this.getStringAttribute('outline_color');
+  }
+  public set outlineColor(value: string) {
+    this._outlineColor = value;
+  }
+  public resetOutlineColor() {
+    this._outlineColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outlineColorInput() {
+    return this._outlineColor;
+  }
+
+  // outline_size - computed: false, optional: true, required: false
+  private _outlineSize?: number; 
+  public get outlineSize() {
+    return this.getNumberAttribute('outline_size');
+  }
+  public set outlineSize(value: number) {
+    this._outlineSize = value;
+  }
+  public resetOutlineSize() {
+    this._outlineSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outlineSizeInput() {
+    return this._outlineSize;
+  }
+
+  // shadow_color - computed: false, optional: true, required: false
+  private _shadowColor?: string; 
+  public get shadowColor() {
+    return this.getStringAttribute('shadow_color');
+  }
+  public set shadowColor(value: string) {
+    this._shadowColor = value;
+  }
+  public resetShadowColor() {
+    this._shadowColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowColorInput() {
+    return this._shadowColor;
+  }
+
+  // shadow_opacity - computed: false, optional: true, required: false
+  private _shadowOpacity?: number; 
+  public get shadowOpacity() {
+    return this.getNumberAttribute('shadow_opacity');
+  }
+  public set shadowOpacity(value: number) {
+    this._shadowOpacity = value;
+  }
+  public resetShadowOpacity() {
+    this._shadowOpacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowOpacityInput() {
+    return this._shadowOpacity;
+  }
+
+  // shadow_x_offset - computed: false, optional: true, required: false
+  private _shadowXOffset?: number; 
+  public get shadowXOffset() {
+    return this.getNumberAttribute('shadow_x_offset');
+  }
+  public set shadowXOffset(value: number) {
+    this._shadowXOffset = value;
+  }
+  public resetShadowXOffset() {
+    this._shadowXOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowXOffsetInput() {
+    return this._shadowXOffset;
+  }
+
+  // shadow_y_offset - computed: false, optional: true, required: false
+  private _shadowYOffset?: number; 
+  public get shadowYOffset() {
+    return this.getNumberAttribute('shadow_y_offset');
+  }
+  public set shadowYOffset(value: number) {
+    this._shadowYOffset = value;
+  }
+  public resetShadowYOffset() {
+    this._shadowYOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shadowYOffsetInput() {
+    return this._shadowYOffset;
+  }
+
+  // teletext_grid_control - computed: false, optional: true, required: false
+  private _teletextGridControl?: string; 
+  public get teletextGridControl() {
+    return this.getStringAttribute('teletext_grid_control');
+  }
+  public set teletextGridControl(value: string) {
+    this._teletextGridControl = value;
+  }
+  public resetTeletextGridControl() {
+    this._teletextGridControl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teletextGridControlInput() {
+    return this._teletextGridControl;
+  }
+
+  // x_position - computed: false, optional: true, required: false
+  private _xPosition?: number; 
+  public get xPosition() {
+    return this.getNumberAttribute('x_position');
+  }
+  public set xPosition(value: number) {
+    this._xPosition = value;
+  }
+  public resetXPosition() {
+    this._xPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xPositionInput() {
+    return this._xPosition;
+  }
+
+  // y_position - computed: false, optional: true, required: false
+  private _yPosition?: number; 
+  public get yPosition() {
+    return this.getNumberAttribute('y_position');
+  }
+  public set yPosition(value: number) {
+    this._yPosition = value;
+  }
+  public resetYPosition() {
+    this._yPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yPositionInput() {
+    return this._yPosition;
+  }
+
+  // font - computed: false, optional: true, required: false
+  private _font = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFontOutputReference(this, "font");
+  public get font() {
+    return this._font;
+  }
+  public putFont(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont) {
+    this._font.internalValue = value;
+  }
+  public resetFont() {
+    this._font.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontInput() {
+    return this._font.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#copyright_holder MedialiveChannel#copyright_holder}
+  */
+  readonly copyrightHolder?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fill_line_gap MedialiveChannel#fill_line_gap}
+  */
+  readonly fillLineGap?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#font_family MedialiveChannel#font_family}
+  */
+  readonly fontFamily?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#style_control MedialiveChannel#style_control}
+  */
+  readonly styleControl?: string;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    copyright_holder: cdktf.stringToTerraform(struct!.copyrightHolder),
+    fill_line_gap: cdktf.stringToTerraform(struct!.fillLineGap),
+    font_family: cdktf.stringToTerraform(struct!.fontFamily),
+    style_control: cdktf.stringToTerraform(struct!.styleControl),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._copyrightHolder !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.copyrightHolder = this._copyrightHolder;
+    }
+    if (this._fillLineGap !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fillLineGap = this._fillLineGap;
+    }
+    if (this._fontFamily !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fontFamily = this._fontFamily;
+    }
+    if (this._styleControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.styleControl = this._styleControl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._copyrightHolder = undefined;
+      this._fillLineGap = undefined;
+      this._fontFamily = undefined;
+      this._styleControl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._copyrightHolder = value.copyrightHolder;
+      this._fillLineGap = value.fillLineGap;
+      this._fontFamily = value.fontFamily;
+      this._styleControl = value.styleControl;
+    }
+  }
+
+  // copyright_holder - computed: false, optional: true, required: false
+  private _copyrightHolder?: string; 
+  public get copyrightHolder() {
+    return this.getStringAttribute('copyright_holder');
+  }
+  public set copyrightHolder(value: string) {
+    this._copyrightHolder = value;
+  }
+  public resetCopyrightHolder() {
+    this._copyrightHolder = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyrightHolderInput() {
+    return this._copyrightHolder;
+  }
+
+  // fill_line_gap - computed: false, optional: true, required: false
+  private _fillLineGap?: string; 
+  public get fillLineGap() {
+    return this.getStringAttribute('fill_line_gap');
+  }
+  public set fillLineGap(value: string) {
+    this._fillLineGap = value;
+  }
+  public resetFillLineGap() {
+    this._fillLineGap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fillLineGapInput() {
+    return this._fillLineGap;
+  }
+
+  // font_family - computed: false, optional: true, required: false
+  private _fontFamily?: string; 
+  public get fontFamily() {
+    return this.getStringAttribute('font_family');
+  }
+  public set fontFamily(value: string) {
+    this._fontFamily = value;
+  }
+  public resetFontFamily() {
+    this._fontFamily = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fontFamilyInput() {
+    return this._fontFamily;
+  }
+
+  // style_control - computed: true, optional: true, required: false
+  private _styleControl?: string; 
+  public get styleControl() {
+    return this.getStringAttribute('style_control');
+  }
+  public set styleControl(value: string) {
+    this._styleControl = value;
+  }
+  public resetStyleControl() {
+    this._styleControl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get styleControlInput() {
+    return this._styleControl;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings {
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#style_control MedialiveChannel#style_control}
+  */
+  readonly styleControl: string;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    style_control: cdktf.stringToTerraform(struct!.styleControl),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._styleControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.styleControl = this._styleControl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._styleControl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._styleControl = value.styleControl;
+    }
+  }
+
+  // style_control - computed: false, optional: false, required: true
+  private _styleControl?: string; 
+  public get styleControl() {
+    return this.getStringAttribute('style_control');
+  }
+  public set styleControl(value: string) {
+    this._styleControl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get styleControlInput() {
+    return this._styleControl;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#style_control MedialiveChannel#style_control}
+  */
+  readonly styleControl: string;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    style_control: cdktf.stringToTerraform(struct!.styleControl),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._styleControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.styleControl = this._styleControl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._styleControl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._styleControl = value.styleControl;
+    }
+  }
+
+  // style_control - computed: false, optional: false, required: true
+  private _styleControl?: string; 
+  public get styleControl() {
+    return this.getStringAttribute('style_control');
+  }
+  public set styleControl(value: string) {
+    this._styleControl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get styleControlInput() {
+    return this._styleControl;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings {
+  /**
+  * arib_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib_destination_settings MedialiveChannel#arib_destination_settings}
+  */
+  readonly aribDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings;
+  /**
+  * burn_in_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#burn_in_destination_settings MedialiveChannel#burn_in_destination_settings}
+  */
+  readonly burnInDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings;
+  /**
+  * dvb_sub_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_sub_destination_settings MedialiveChannel#dvb_sub_destination_settings}
+  */
+  readonly dvbSubDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings;
+  /**
+  * ebu_tt_d_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebu_tt_d_destination_settings MedialiveChannel#ebu_tt_d_destination_settings}
+  */
+  readonly ebuTtDDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings;
+  /**
+  * embedded_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#embedded_destination_settings MedialiveChannel#embedded_destination_settings}
+  */
+  readonly embeddedDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings;
+  /**
+  * embedded_plus_scte20_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#embedded_plus_scte20_destination_settings MedialiveChannel#embedded_plus_scte20_destination_settings}
+  */
+  readonly embeddedPlusScte20DestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings;
+  /**
+  * rtmp_caption_info_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rtmp_caption_info_destination_settings MedialiveChannel#rtmp_caption_info_destination_settings}
+  */
+  readonly rtmpCaptionInfoDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings;
+  /**
+  * scte20_plus_embedded_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte20_plus_embedded_destination_settings MedialiveChannel#scte20_plus_embedded_destination_settings}
+  */
+  readonly scte20PlusEmbeddedDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings;
+  /**
+  * scte27_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte27_destination_settings MedialiveChannel#scte27_destination_settings}
+  */
+  readonly scte27DestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings;
+  /**
+  * smpte_tt_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#smpte_tt_destination_settings MedialiveChannel#smpte_tt_destination_settings}
+  */
+  readonly smpteTtDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings;
+  /**
+  * teletext_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#teletext_destination_settings MedialiveChannel#teletext_destination_settings}
+  */
+  readonly teletextDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings;
+  /**
+  * ttml_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ttml_destination_settings MedialiveChannel#ttml_destination_settings}
+  */
+  readonly ttmlDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings;
+  /**
+  * webvtt_destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#webvtt_destination_settings MedialiveChannel#webvtt_destination_settings}
+  */
+  readonly webvttDestinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsOutputReference | MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    arib_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettingsToTerraform(struct!.aribDestinationSettings),
+    burn_in_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsToTerraform(struct!.burnInDestinationSettings),
+    dvb_sub_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsToTerraform(struct!.dvbSubDestinationSettings),
+    ebu_tt_d_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettingsToTerraform(struct!.ebuTtDDestinationSettings),
+    embedded_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettingsToTerraform(struct!.embeddedDestinationSettings),
+    embedded_plus_scte20_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettingsToTerraform(struct!.embeddedPlusScte20DestinationSettings),
+    rtmp_caption_info_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettingsToTerraform(struct!.rtmpCaptionInfoDestinationSettings),
+    scte20_plus_embedded_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettingsToTerraform(struct!.scte20PlusEmbeddedDestinationSettings),
+    scte27_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettingsToTerraform(struct!.scte27DestinationSettings),
+    smpte_tt_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettingsToTerraform(struct!.smpteTtDestinationSettings),
+    teletext_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettingsToTerraform(struct!.teletextDestinationSettings),
+    ttml_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettingsToTerraform(struct!.ttmlDestinationSettings),
+    webvtt_destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettingsToTerraform(struct!.webvttDestinationSettings),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aribDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aribDestinationSettings = this._aribDestinationSettings?.internalValue;
+    }
+    if (this._burnInDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.burnInDestinationSettings = this._burnInDestinationSettings?.internalValue;
+    }
+    if (this._dvbSubDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dvbSubDestinationSettings = this._dvbSubDestinationSettings?.internalValue;
+    }
+    if (this._ebuTtDDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebuTtDDestinationSettings = this._ebuTtDDestinationSettings?.internalValue;
+    }
+    if (this._embeddedDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.embeddedDestinationSettings = this._embeddedDestinationSettings?.internalValue;
+    }
+    if (this._embeddedPlusScte20DestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.embeddedPlusScte20DestinationSettings = this._embeddedPlusScte20DestinationSettings?.internalValue;
+    }
+    if (this._rtmpCaptionInfoDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rtmpCaptionInfoDestinationSettings = this._rtmpCaptionInfoDestinationSettings?.internalValue;
+    }
+    if (this._scte20PlusEmbeddedDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scte20PlusEmbeddedDestinationSettings = this._scte20PlusEmbeddedDestinationSettings?.internalValue;
+    }
+    if (this._scte27DestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scte27DestinationSettings = this._scte27DestinationSettings?.internalValue;
+    }
+    if (this._smpteTtDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.smpteTtDestinationSettings = this._smpteTtDestinationSettings?.internalValue;
+    }
+    if (this._teletextDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teletextDestinationSettings = this._teletextDestinationSettings?.internalValue;
+    }
+    if (this._ttmlDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttmlDestinationSettings = this._ttmlDestinationSettings?.internalValue;
+    }
+    if (this._webvttDestinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webvttDestinationSettings = this._webvttDestinationSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._aribDestinationSettings.internalValue = undefined;
+      this._burnInDestinationSettings.internalValue = undefined;
+      this._dvbSubDestinationSettings.internalValue = undefined;
+      this._ebuTtDDestinationSettings.internalValue = undefined;
+      this._embeddedDestinationSettings.internalValue = undefined;
+      this._embeddedPlusScte20DestinationSettings.internalValue = undefined;
+      this._rtmpCaptionInfoDestinationSettings.internalValue = undefined;
+      this._scte20PlusEmbeddedDestinationSettings.internalValue = undefined;
+      this._scte27DestinationSettings.internalValue = undefined;
+      this._smpteTtDestinationSettings.internalValue = undefined;
+      this._teletextDestinationSettings.internalValue = undefined;
+      this._ttmlDestinationSettings.internalValue = undefined;
+      this._webvttDestinationSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._aribDestinationSettings.internalValue = value.aribDestinationSettings;
+      this._burnInDestinationSettings.internalValue = value.burnInDestinationSettings;
+      this._dvbSubDestinationSettings.internalValue = value.dvbSubDestinationSettings;
+      this._ebuTtDDestinationSettings.internalValue = value.ebuTtDDestinationSettings;
+      this._embeddedDestinationSettings.internalValue = value.embeddedDestinationSettings;
+      this._embeddedPlusScte20DestinationSettings.internalValue = value.embeddedPlusScte20DestinationSettings;
+      this._rtmpCaptionInfoDestinationSettings.internalValue = value.rtmpCaptionInfoDestinationSettings;
+      this._scte20PlusEmbeddedDestinationSettings.internalValue = value.scte20PlusEmbeddedDestinationSettings;
+      this._scte27DestinationSettings.internalValue = value.scte27DestinationSettings;
+      this._smpteTtDestinationSettings.internalValue = value.smpteTtDestinationSettings;
+      this._teletextDestinationSettings.internalValue = value.teletextDestinationSettings;
+      this._ttmlDestinationSettings.internalValue = value.ttmlDestinationSettings;
+      this._webvttDestinationSettings.internalValue = value.webvttDestinationSettings;
+    }
+  }
+
+  // arib_destination_settings - computed: false, optional: true, required: false
+  private _aribDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettingsOutputReference(this, "arib_destination_settings");
+  public get aribDestinationSettings() {
+    return this._aribDestinationSettings;
+  }
+  public putAribDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings) {
+    this._aribDestinationSettings.internalValue = value;
+  }
+  public resetAribDestinationSettings() {
+    this._aribDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aribDestinationSettingsInput() {
+    return this._aribDestinationSettings.internalValue;
+  }
+
+  // burn_in_destination_settings - computed: false, optional: true, required: false
+  private _burnInDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsOutputReference(this, "burn_in_destination_settings");
+  public get burnInDestinationSettings() {
+    return this._burnInDestinationSettings;
+  }
+  public putBurnInDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings) {
+    this._burnInDestinationSettings.internalValue = value;
+  }
+  public resetBurnInDestinationSettings() {
+    this._burnInDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get burnInDestinationSettingsInput() {
+    return this._burnInDestinationSettings.internalValue;
+  }
+
+  // dvb_sub_destination_settings - computed: false, optional: true, required: false
+  private _dvbSubDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsOutputReference(this, "dvb_sub_destination_settings");
+  public get dvbSubDestinationSettings() {
+    return this._dvbSubDestinationSettings;
+  }
+  public putDvbSubDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings) {
+    this._dvbSubDestinationSettings.internalValue = value;
+  }
+  public resetDvbSubDestinationSettings() {
+    this._dvbSubDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dvbSubDestinationSettingsInput() {
+    return this._dvbSubDestinationSettings.internalValue;
+  }
+
+  // ebu_tt_d_destination_settings - computed: false, optional: true, required: false
+  private _ebuTtDDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettingsOutputReference(this, "ebu_tt_d_destination_settings");
+  public get ebuTtDDestinationSettings() {
+    return this._ebuTtDDestinationSettings;
+  }
+  public putEbuTtDDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings) {
+    this._ebuTtDDestinationSettings.internalValue = value;
+  }
+  public resetEbuTtDDestinationSettings() {
+    this._ebuTtDDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebuTtDDestinationSettingsInput() {
+    return this._ebuTtDDestinationSettings.internalValue;
+  }
+
+  // embedded_destination_settings - computed: false, optional: true, required: false
+  private _embeddedDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettingsOutputReference(this, "embedded_destination_settings");
+  public get embeddedDestinationSettings() {
+    return this._embeddedDestinationSettings;
+  }
+  public putEmbeddedDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings) {
+    this._embeddedDestinationSettings.internalValue = value;
+  }
+  public resetEmbeddedDestinationSettings() {
+    this._embeddedDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get embeddedDestinationSettingsInput() {
+    return this._embeddedDestinationSettings.internalValue;
+  }
+
+  // embedded_plus_scte20_destination_settings - computed: false, optional: true, required: false
+  private _embeddedPlusScte20DestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettingsOutputReference(this, "embedded_plus_scte20_destination_settings");
+  public get embeddedPlusScte20DestinationSettings() {
+    return this._embeddedPlusScte20DestinationSettings;
+  }
+  public putEmbeddedPlusScte20DestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings) {
+    this._embeddedPlusScte20DestinationSettings.internalValue = value;
+  }
+  public resetEmbeddedPlusScte20DestinationSettings() {
+    this._embeddedPlusScte20DestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get embeddedPlusScte20DestinationSettingsInput() {
+    return this._embeddedPlusScte20DestinationSettings.internalValue;
+  }
+
+  // rtmp_caption_info_destination_settings - computed: false, optional: true, required: false
+  private _rtmpCaptionInfoDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettingsOutputReference(this, "rtmp_caption_info_destination_settings");
+  public get rtmpCaptionInfoDestinationSettings() {
+    return this._rtmpCaptionInfoDestinationSettings;
+  }
+  public putRtmpCaptionInfoDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings) {
+    this._rtmpCaptionInfoDestinationSettings.internalValue = value;
+  }
+  public resetRtmpCaptionInfoDestinationSettings() {
+    this._rtmpCaptionInfoDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rtmpCaptionInfoDestinationSettingsInput() {
+    return this._rtmpCaptionInfoDestinationSettings.internalValue;
+  }
+
+  // scte20_plus_embedded_destination_settings - computed: false, optional: true, required: false
+  private _scte20PlusEmbeddedDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettingsOutputReference(this, "scte20_plus_embedded_destination_settings");
+  public get scte20PlusEmbeddedDestinationSettings() {
+    return this._scte20PlusEmbeddedDestinationSettings;
+  }
+  public putScte20PlusEmbeddedDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings) {
+    this._scte20PlusEmbeddedDestinationSettings.internalValue = value;
+  }
+  public resetScte20PlusEmbeddedDestinationSettings() {
+    this._scte20PlusEmbeddedDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scte20PlusEmbeddedDestinationSettingsInput() {
+    return this._scte20PlusEmbeddedDestinationSettings.internalValue;
+  }
+
+  // scte27_destination_settings - computed: false, optional: true, required: false
+  private _scte27DestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettingsOutputReference(this, "scte27_destination_settings");
+  public get scte27DestinationSettings() {
+    return this._scte27DestinationSettings;
+  }
+  public putScte27DestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings) {
+    this._scte27DestinationSettings.internalValue = value;
+  }
+  public resetScte27DestinationSettings() {
+    this._scte27DestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scte27DestinationSettingsInput() {
+    return this._scte27DestinationSettings.internalValue;
+  }
+
+  // smpte_tt_destination_settings - computed: false, optional: true, required: false
+  private _smpteTtDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettingsOutputReference(this, "smpte_tt_destination_settings");
+  public get smpteTtDestinationSettings() {
+    return this._smpteTtDestinationSettings;
+  }
+  public putSmpteTtDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings) {
+    this._smpteTtDestinationSettings.internalValue = value;
+  }
+  public resetSmpteTtDestinationSettings() {
+    this._smpteTtDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smpteTtDestinationSettingsInput() {
+    return this._smpteTtDestinationSettings.internalValue;
+  }
+
+  // teletext_destination_settings - computed: false, optional: true, required: false
+  private _teletextDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettingsOutputReference(this, "teletext_destination_settings");
+  public get teletextDestinationSettings() {
+    return this._teletextDestinationSettings;
+  }
+  public putTeletextDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings) {
+    this._teletextDestinationSettings.internalValue = value;
+  }
+  public resetTeletextDestinationSettings() {
+    this._teletextDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teletextDestinationSettingsInput() {
+    return this._teletextDestinationSettings.internalValue;
+  }
+
+  // ttml_destination_settings - computed: false, optional: true, required: false
+  private _ttmlDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettingsOutputReference(this, "ttml_destination_settings");
+  public get ttmlDestinationSettings() {
+    return this._ttmlDestinationSettings;
+  }
+  public putTtmlDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings) {
+    this._ttmlDestinationSettings.internalValue = value;
+  }
+  public resetTtmlDestinationSettings() {
+    this._ttmlDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttmlDestinationSettingsInput() {
+    return this._ttmlDestinationSettings.internalValue;
+  }
+
+  // webvtt_destination_settings - computed: false, optional: true, required: false
+  private _webvttDestinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettingsOutputReference(this, "webvtt_destination_settings");
+  public get webvttDestinationSettings() {
+    return this._webvttDestinationSettings;
+  }
+  public putWebvttDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings) {
+    this._webvttDestinationSettings.internalValue = value;
+  }
+  public resetWebvttDestinationSettings() {
+    this._webvttDestinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webvttDestinationSettingsInput() {
+    return this._webvttDestinationSettings.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsCaptionDescriptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#accessibility MedialiveChannel#accessibility}
+  */
+  readonly accessibility?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_selector_name MedialiveChannel#caption_selector_name}
+  */
+  readonly captionSelectorName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
+  */
+  readonly languageCode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}
+  */
+  readonly languageDescription?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  */
+  readonly name: string;
+  /**
+  * destination_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_settings MedialiveChannel#destination_settings}
+  */
+  readonly destinationSettings?: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings;
+}
+
+export function medialiveChannelEncoderSettingsCaptionDescriptionsToTerraform(struct?: MedialiveChannelEncoderSettingsCaptionDescriptions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accessibility: cdktf.stringToTerraform(struct!.accessibility),
+    caption_selector_name: cdktf.stringToTerraform(struct!.captionSelectorName),
+    language_code: cdktf.stringToTerraform(struct!.languageCode),
+    language_description: cdktf.stringToTerraform(struct!.languageDescription),
+    name: cdktf.stringToTerraform(struct!.name),
+    destination_settings: medialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsToTerraform(struct!.destinationSettings),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsCaptionDescriptions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessibility !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessibility = this._accessibility;
+    }
+    if (this._captionSelectorName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.captionSelectorName = this._captionSelectorName;
+    }
+    if (this._languageCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.languageCode = this._languageCode;
+    }
+    if (this._languageDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.languageDescription = this._languageDescription;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._destinationSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationSettings = this._destinationSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsCaptionDescriptions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accessibility = undefined;
+      this._captionSelectorName = undefined;
+      this._languageCode = undefined;
+      this._languageDescription = undefined;
+      this._name = undefined;
+      this._destinationSettings.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accessibility = value.accessibility;
+      this._captionSelectorName = value.captionSelectorName;
+      this._languageCode = value.languageCode;
+      this._languageDescription = value.languageDescription;
+      this._name = value.name;
+      this._destinationSettings.internalValue = value.destinationSettings;
+    }
+  }
+
+  // accessibility - computed: false, optional: true, required: false
+  private _accessibility?: string; 
+  public get accessibility() {
+    return this.getStringAttribute('accessibility');
+  }
+  public set accessibility(value: string) {
+    this._accessibility = value;
+  }
+  public resetAccessibility() {
+    this._accessibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessibilityInput() {
+    return this._accessibility;
+  }
+
+  // caption_selector_name - computed: false, optional: false, required: true
+  private _captionSelectorName?: string; 
+  public get captionSelectorName() {
+    return this.getStringAttribute('caption_selector_name');
+  }
+  public set captionSelectorName(value: string) {
+    this._captionSelectorName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get captionSelectorNameInput() {
+    return this._captionSelectorName;
+  }
+
+  // language_code - computed: false, optional: true, required: false
+  private _languageCode?: string; 
+  public get languageCode() {
+    return this.getStringAttribute('language_code');
+  }
+  public set languageCode(value: string) {
+    this._languageCode = value;
+  }
+  public resetLanguageCode() {
+    this._languageCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageCodeInput() {
+    return this._languageCode;
+  }
+
+  // language_description - computed: false, optional: true, required: false
+  private _languageDescription?: string; 
+  public get languageDescription() {
+    return this.getStringAttribute('language_description');
+  }
+  public set languageDescription(value: string) {
+    this._languageDescription = value;
+  }
+  public resetLanguageDescription() {
+    this._languageDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageDescriptionInput() {
+    return this._languageDescription;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // destination_settings - computed: false, optional: true, required: false
+  private _destinationSettings = new MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsOutputReference(this, "destination_settings");
+  public get destinationSettings() {
+    return this._destinationSettings;
+  }
+  public putDestinationSettings(value: MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettings) {
+    this._destinationSettings.internalValue = value;
+  }
+  public resetDestinationSettings() {
+    this._destinationSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationSettingsInput() {
+    return this._destinationSettings.internalValue;
+  }
+}
+
+export class MedialiveChannelEncoderSettingsCaptionDescriptionsList extends cdktf.ComplexList {
+  public internalValue? : MedialiveChannelEncoderSettingsCaptionDescriptions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MedialiveChannelEncoderSettingsCaptionDescriptionsOutputReference {
+    return new MedialiveChannelEncoderSettingsCaptionDescriptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  */
+  readonly passwordParam?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  */
+  readonly uri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  */
+  readonly username?: string;
+}
+
+export function medialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlateToTerraform(struct?: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlateOutputReference | MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    password_param: cdktf.stringToTerraform(struct!.passwordParam),
+    uri: cdktf.stringToTerraform(struct!.uri),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._passwordParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordParam = this._passwordParam;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._passwordParam = undefined;
+      this._uri = undefined;
+      this._username = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._passwordParam = value.passwordParam;
+      this._uri = value.uri;
+      this._username = value.username;
+    }
+  }
+
+  // password_param - computed: true, optional: true, required: false
+  private _passwordParam?: string; 
+  public get passwordParam() {
+    return this.getStringAttribute('password_param');
+  }
+  public set passwordParam(value: string) {
+    this._passwordParam = value;
+  }
+  public resetPasswordParam() {
+    this._passwordParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordParamInput() {
+    return this._passwordParam;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+
+  // username - computed: true, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+export interface MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#black_frame_msec MedialiveChannel#black_frame_msec}
+  */
+  readonly blackFrameMsec?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_image_color MedialiveChannel#input_loss_image_color}
+  */
+  readonly inputLossImageColor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_image_type MedialiveChannel#input_loss_image_type}
+  */
+  readonly inputLossImageType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#repeat_frame_msec MedialiveChannel#repeat_frame_msec}
+  */
+  readonly repeatFrameMsec?: number;
+  /**
+  * input_loss_image_slate block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_image_slate MedialiveChannel#input_loss_image_slate}
+  */
+  readonly inputLossImageSlate?: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate;
+}
+
+export function medialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorToTerraform(struct?: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference | MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    black_frame_msec: cdktf.numberToTerraform(struct!.blackFrameMsec),
+    input_loss_image_color: cdktf.stringToTerraform(struct!.inputLossImageColor),
+    input_loss_image_type: cdktf.stringToTerraform(struct!.inputLossImageType),
+    repeat_frame_msec: cdktf.numberToTerraform(struct!.repeatFrameMsec),
+    input_loss_image_slate: medialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlateToTerraform(struct!.inputLossImageSlate),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._blackFrameMsec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.blackFrameMsec = this._blackFrameMsec;
+    }
+    if (this._inputLossImageColor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputLossImageColor = this._inputLossImageColor;
+    }
+    if (this._inputLossImageType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputLossImageType = this._inputLossImageType;
+    }
+    if (this._repeatFrameMsec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repeatFrameMsec = this._repeatFrameMsec;
+    }
+    if (this._inputLossImageSlate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputLossImageSlate = this._inputLossImageSlate?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._blackFrameMsec = undefined;
+      this._inputLossImageColor = undefined;
+      this._inputLossImageType = undefined;
+      this._repeatFrameMsec = undefined;
+      this._inputLossImageSlate.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._blackFrameMsec = value.blackFrameMsec;
+      this._inputLossImageColor = value.inputLossImageColor;
+      this._inputLossImageType = value.inputLossImageType;
+      this._repeatFrameMsec = value.repeatFrameMsec;
+      this._inputLossImageSlate.internalValue = value.inputLossImageSlate;
+    }
+  }
+
+  // black_frame_msec - computed: false, optional: true, required: false
+  private _blackFrameMsec?: number; 
+  public get blackFrameMsec() {
+    return this.getNumberAttribute('black_frame_msec');
+  }
+  public set blackFrameMsec(value: number) {
+    this._blackFrameMsec = value;
+  }
+  public resetBlackFrameMsec() {
+    this._blackFrameMsec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blackFrameMsecInput() {
+    return this._blackFrameMsec;
+  }
+
+  // input_loss_image_color - computed: false, optional: true, required: false
+  private _inputLossImageColor?: string; 
+  public get inputLossImageColor() {
+    return this.getStringAttribute('input_loss_image_color');
+  }
+  public set inputLossImageColor(value: string) {
+    this._inputLossImageColor = value;
+  }
+  public resetInputLossImageColor() {
+    this._inputLossImageColor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputLossImageColorInput() {
+    return this._inputLossImageColor;
+  }
+
+  // input_loss_image_type - computed: false, optional: true, required: false
+  private _inputLossImageType?: string; 
+  public get inputLossImageType() {
+    return this.getStringAttribute('input_loss_image_type');
+  }
+  public set inputLossImageType(value: string) {
+    this._inputLossImageType = value;
+  }
+  public resetInputLossImageType() {
+    this._inputLossImageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputLossImageTypeInput() {
+    return this._inputLossImageType;
+  }
+
+  // repeat_frame_msec - computed: false, optional: true, required: false
+  private _repeatFrameMsec?: number; 
+  public get repeatFrameMsec() {
+    return this.getNumberAttribute('repeat_frame_msec');
+  }
+  public set repeatFrameMsec(value: number) {
+    this._repeatFrameMsec = value;
+  }
+  public resetRepeatFrameMsec() {
+    this._repeatFrameMsec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repeatFrameMsecInput() {
+    return this._repeatFrameMsec;
+  }
+
+  // input_loss_image_slate - computed: false, optional: true, required: false
+  private _inputLossImageSlate = new MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlateOutputReference(this, "input_loss_image_slate");
+  public get inputLossImageSlate() {
+    return this._inputLossImageSlate;
+  }
+  public putInputLossImageSlate(value: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate) {
+    this._inputLossImageSlate.internalValue = value;
+  }
+  public resetInputLossImageSlate() {
+    this._inputLossImageSlate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputLossImageSlateInput() {
+    return this._inputLossImageSlate.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsGlobalConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#initial_audio_gain MedialiveChannel#initial_audio_gain}
+  */
+  readonly initialAudioGain?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_end_action MedialiveChannel#input_end_action}
+  */
+  readonly inputEndAction?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_locking_mode MedialiveChannel#output_locking_mode}
+  */
+  readonly outputLockingMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_timing_source MedialiveChannel#output_timing_source}
+  */
+  readonly outputTimingSource?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#support_low_framerate_inputs MedialiveChannel#support_low_framerate_inputs}
+  */
+  readonly supportLowFramerateInputs?: string;
+  /**
+  * input_loss_behavior block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_behavior MedialiveChannel#input_loss_behavior}
+  */
+  readonly inputLossBehavior?: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior;
+}
+
+export function medialiveChannelEncoderSettingsGlobalConfigurationToTerraform(struct?: MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference | MedialiveChannelEncoderSettingsGlobalConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    initial_audio_gain: cdktf.numberToTerraform(struct!.initialAudioGain),
+    input_end_action: cdktf.stringToTerraform(struct!.inputEndAction),
+    output_locking_mode: cdktf.stringToTerraform(struct!.outputLockingMode),
+    output_timing_source: cdktf.stringToTerraform(struct!.outputTimingSource),
+    support_low_framerate_inputs: cdktf.stringToTerraform(struct!.supportLowFramerateInputs),
+    input_loss_behavior: medialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorToTerraform(struct!.inputLossBehavior),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsGlobalConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._initialAudioGain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialAudioGain = this._initialAudioGain;
+    }
+    if (this._inputEndAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputEndAction = this._inputEndAction;
+    }
+    if (this._outputLockingMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputLockingMode = this._outputLockingMode;
+    }
+    if (this._outputTimingSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputTimingSource = this._outputTimingSource;
+    }
+    if (this._supportLowFramerateInputs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.supportLowFramerateInputs = this._supportLowFramerateInputs;
+    }
+    if (this._inputLossBehavior?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inputLossBehavior = this._inputLossBehavior?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsGlobalConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._initialAudioGain = undefined;
+      this._inputEndAction = undefined;
+      this._outputLockingMode = undefined;
+      this._outputTimingSource = undefined;
+      this._supportLowFramerateInputs = undefined;
+      this._inputLossBehavior.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._initialAudioGain = value.initialAudioGain;
+      this._inputEndAction = value.inputEndAction;
+      this._outputLockingMode = value.outputLockingMode;
+      this._outputTimingSource = value.outputTimingSource;
+      this._supportLowFramerateInputs = value.supportLowFramerateInputs;
+      this._inputLossBehavior.internalValue = value.inputLossBehavior;
+    }
+  }
+
+  // initial_audio_gain - computed: false, optional: true, required: false
+  private _initialAudioGain?: number; 
+  public get initialAudioGain() {
+    return this.getNumberAttribute('initial_audio_gain');
+  }
+  public set initialAudioGain(value: number) {
+    this._initialAudioGain = value;
+  }
+  public resetInitialAudioGain() {
+    this._initialAudioGain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialAudioGainInput() {
+    return this._initialAudioGain;
+  }
+
+  // input_end_action - computed: false, optional: true, required: false
+  private _inputEndAction?: string; 
+  public get inputEndAction() {
+    return this.getStringAttribute('input_end_action');
+  }
+  public set inputEndAction(value: string) {
+    this._inputEndAction = value;
+  }
+  public resetInputEndAction() {
+    this._inputEndAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputEndActionInput() {
+    return this._inputEndAction;
+  }
+
+  // output_locking_mode - computed: false, optional: true, required: false
+  private _outputLockingMode?: string; 
+  public get outputLockingMode() {
+    return this.getStringAttribute('output_locking_mode');
+  }
+  public set outputLockingMode(value: string) {
+    this._outputLockingMode = value;
+  }
+  public resetOutputLockingMode() {
+    this._outputLockingMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputLockingModeInput() {
+    return this._outputLockingMode;
+  }
+
+  // output_timing_source - computed: false, optional: true, required: false
+  private _outputTimingSource?: string; 
+  public get outputTimingSource() {
+    return this.getStringAttribute('output_timing_source');
+  }
+  public set outputTimingSource(value: string) {
+    this._outputTimingSource = value;
+  }
+  public resetOutputTimingSource() {
+    this._outputTimingSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputTimingSourceInput() {
+    return this._outputTimingSource;
+  }
+
+  // support_low_framerate_inputs - computed: false, optional: true, required: false
+  private _supportLowFramerateInputs?: string; 
+  public get supportLowFramerateInputs() {
+    return this.getStringAttribute('support_low_framerate_inputs');
+  }
+  public set supportLowFramerateInputs(value: string) {
+    this._supportLowFramerateInputs = value;
+  }
+  public resetSupportLowFramerateInputs() {
+    this._supportLowFramerateInputs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportLowFramerateInputsInput() {
+    return this._supportLowFramerateInputs;
+  }
+
+  // input_loss_behavior - computed: false, optional: true, required: false
+  private _inputLossBehavior = new MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehaviorOutputReference(this, "input_loss_behavior");
+  public get inputLossBehavior() {
+    return this._inputLossBehavior;
+  }
+  public putInputLossBehavior(value: MedialiveChannelEncoderSettingsGlobalConfigurationInputLossBehavior) {
+    this._inputLossBehavior.internalValue = value;
+  }
+  public resetInputLossBehavior() {
+    this._inputLossBehavior.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputLossBehaviorInput() {
+    return this._inputLossBehavior.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings {
+}
+
+export function medialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettingsOutputReference | MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings {
+  /**
+  * html_motion_graphics_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#html_motion_graphics_settings MedialiveChannel#html_motion_graphics_settings}
+  */
+  readonly htmlMotionGraphicsSettings?: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings;
+}
+
+export function medialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsToTerraform(struct?: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsOutputReference | MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    html_motion_graphics_settings: medialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettingsToTerraform(struct!.htmlMotionGraphicsSettings),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._htmlMotionGraphicsSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.htmlMotionGraphicsSettings = this._htmlMotionGraphicsSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._htmlMotionGraphicsSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._htmlMotionGraphicsSettings.internalValue = value.htmlMotionGraphicsSettings;
+    }
+  }
+
+  // html_motion_graphics_settings - computed: false, optional: true, required: false
+  private _htmlMotionGraphicsSettings = new MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettingsOutputReference(this, "html_motion_graphics_settings");
+  public get htmlMotionGraphicsSettings() {
+    return this._htmlMotionGraphicsSettings;
+  }
+  public putHtmlMotionGraphicsSettings(value: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings) {
+    this._htmlMotionGraphicsSettings.internalValue = value;
+  }
+  public resetHtmlMotionGraphicsSettings() {
+    this._htmlMotionGraphicsSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get htmlMotionGraphicsSettingsInput() {
+    return this._htmlMotionGraphicsSettings.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsMotionGraphicsConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#motion_graphics_insertion MedialiveChannel#motion_graphics_insertion}
+  */
+  readonly motionGraphicsInsertion?: string;
+  /**
+  * motion_graphics_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#motion_graphics_settings MedialiveChannel#motion_graphics_settings}
+  */
+  readonly motionGraphicsSettings: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings;
+}
+
+export function medialiveChannelEncoderSettingsMotionGraphicsConfigurationToTerraform(struct?: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference | MedialiveChannelEncoderSettingsMotionGraphicsConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    motion_graphics_insertion: cdktf.stringToTerraform(struct!.motionGraphicsInsertion),
+    motion_graphics_settings: medialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsToTerraform(struct!.motionGraphicsSettings),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsMotionGraphicsConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._motionGraphicsInsertion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.motionGraphicsInsertion = this._motionGraphicsInsertion;
+    }
+    if (this._motionGraphicsSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.motionGraphicsSettings = this._motionGraphicsSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsMotionGraphicsConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._motionGraphicsInsertion = undefined;
+      this._motionGraphicsSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._motionGraphicsInsertion = value.motionGraphicsInsertion;
+      this._motionGraphicsSettings.internalValue = value.motionGraphicsSettings;
+    }
+  }
+
+  // motion_graphics_insertion - computed: false, optional: true, required: false
+  private _motionGraphicsInsertion?: string; 
+  public get motionGraphicsInsertion() {
+    return this.getStringAttribute('motion_graphics_insertion');
+  }
+  public set motionGraphicsInsertion(value: string) {
+    this._motionGraphicsInsertion = value;
+  }
+  public resetMotionGraphicsInsertion() {
+    this._motionGraphicsInsertion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get motionGraphicsInsertionInput() {
+    return this._motionGraphicsInsertion;
+  }
+
+  // motion_graphics_settings - computed: false, optional: false, required: true
+  private _motionGraphicsSettings = new MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsOutputReference(this, "motion_graphics_settings");
+  public get motionGraphicsSettings() {
+    return this._motionGraphicsSettings;
+  }
+  public putMotionGraphicsSettings(value: MedialiveChannelEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings) {
+    this._motionGraphicsSettings.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get motionGraphicsSettingsInput() {
+    return this._motionGraphicsSettings.internalValue;
+  }
+}
+export interface MedialiveChannelEncoderSettingsNielsenConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#distributor_id MedialiveChannel#distributor_id}
+  */
+  readonly distributorId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_pcm_to_id3_tagging MedialiveChannel#nielsen_pcm_to_id3_tagging}
+  */
+  readonly nielsenPcmToId3Tagging?: string;
+}
+
+export function medialiveChannelEncoderSettingsNielsenConfigurationToTerraform(struct?: MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference | MedialiveChannelEncoderSettingsNielsenConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    distributor_id: cdktf.stringToTerraform(struct!.distributorId),
+    nielsen_pcm_to_id3_tagging: cdktf.stringToTerraform(struct!.nielsenPcmToId3Tagging),
+  }
+}
+
+export class MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MedialiveChannelEncoderSettingsNielsenConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._distributorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.distributorId = this._distributorId;
+    }
+    if (this._nielsenPcmToId3Tagging !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nielsenPcmToId3Tagging = this._nielsenPcmToId3Tagging;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MedialiveChannelEncoderSettingsNielsenConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._distributorId = undefined;
+      this._nielsenPcmToId3Tagging = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._distributorId = value.distributorId;
+      this._nielsenPcmToId3Tagging = value.nielsenPcmToId3Tagging;
+    }
+  }
+
+  // distributor_id - computed: false, optional: true, required: false
+  private _distributorId?: string; 
+  public get distributorId() {
+    return this.getStringAttribute('distributor_id');
+  }
+  public set distributorId(value: string) {
+    this._distributorId = value;
+  }
+  public resetDistributorId() {
+    this._distributorId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get distributorIdInput() {
+    return this._distributorId;
+  }
+
+  // nielsen_pcm_to_id3_tagging - computed: false, optional: true, required: false
+  private _nielsenPcmToId3Tagging?: string; 
+  public get nielsenPcmToId3Tagging() {
+    return this.getStringAttribute('nielsen_pcm_to_id3_tagging');
+  }
+  public set nielsenPcmToId3Tagging(value: string) {
+    this._nielsenPcmToId3Tagging = value;
+  }
+  public resetNielsenPcmToId3Tagging() {
+    this._nielsenPcmToId3Tagging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nielsenPcmToId3TaggingInput() {
+    return this._nielsenPcmToId3Tagging;
+  }
+}
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
   */
   readonly cannedAcl?: string;
 }
@@ -3979,7 +7196,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsA
   /**
   * archive_s3_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_s3_settings MedialiveChannel#archive_s3_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#archive_s3_settings MedialiveChannel#archive_s3_settings}
   */
   readonly archiveS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings;
 }
@@ -4044,7 +7261,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchi
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -4106,19 +7323,19 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchi
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rollover_interval MedialiveChannel#rollover_interval}
   */
   readonly rolloverInterval?: number;
   /**
   * archive_cdn_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_cdn_settings MedialiveChannel#archive_cdn_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#archive_cdn_settings MedialiveChannel#archive_cdn_settings}
   */
   readonly archiveCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination;
 }
@@ -4258,7 +7475,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchi
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -4320,7 +7537,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrame
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
   */
   readonly cannedAcl?: string;
 }
@@ -4387,7 +7604,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsF
   /**
   * frame_capture_s3_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_s3_settings MedialiveChannel#frame_capture_s3_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_s3_settings MedialiveChannel#frame_capture_s3_settings}
   */
   readonly frameCaptureS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings;
 }
@@ -4454,13 +7671,13 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsF
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination;
   /**
   * frame_capture_cdn_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_cdn_settings MedialiveChannel#frame_capture_cdn_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_cdn_settings MedialiveChannel#frame_capture_cdn_settings}
   */
   readonly frameCaptureCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings;
 }
@@ -4545,15 +7762,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrame
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_channel MedialiveChannel#caption_channel}
   */
   readonly captionChannel: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
   */
   readonly languageCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#language_description MedialiveChannel#language_description}
   */
   readonly languageDescription: string;
 }
@@ -4687,7 +7904,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -4749,31 +7966,31 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
   */
   readonly filecacheDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}
   */
   readonly httpTransferMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#salt MedialiveChannel#salt}
   */
   readonly salt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#token MedialiveChannel#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#token MedialiveChannel#token}
   */
   readonly token?: string;
 }
@@ -4976,19 +8193,19 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
   */
   readonly filecacheDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
 }
@@ -5122,23 +8339,23 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
   */
   readonly filecacheDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#media_store_storage_class MedialiveChannel#media_store_storage_class}
   */
   readonly mediaStoreStorageClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
 }
@@ -5295,7 +8512,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#canned_acl MedialiveChannel#canned_acl}
   */
   readonly cannedAcl?: string;
 }
@@ -5360,23 +8577,23 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
   */
   readonly filecacheDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#http_transfer_mode MedialiveChannel#http_transfer_mode}
   */
   readonly httpTransferMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
 }
@@ -5535,31 +8752,31 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   /**
   * hls_akamai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_akamai_settings MedialiveChannel#hls_akamai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_akamai_settings MedialiveChannel#hls_akamai_settings}
   */
   readonly hlsAkamaiSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings;
   /**
   * hls_basic_put_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_basic_put_settings MedialiveChannel#hls_basic_put_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_basic_put_settings MedialiveChannel#hls_basic_put_settings}
   */
   readonly hlsBasicPutSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings;
   /**
   * hls_media_store_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_media_store_settings MedialiveChannel#hls_media_store_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_media_store_settings MedialiveChannel#hls_media_store_settings}
   */
   readonly hlsMediaStoreSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings;
   /**
   * hls_s3_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_s3_settings MedialiveChannel#hls_s3_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_s3_settings MedialiveChannel#hls_s3_settings}
   */
   readonly hlsS3Settings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings;
   /**
   * hls_webdav_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_webdav_settings MedialiveChannel#hls_webdav_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_webdav_settings MedialiveChannel#hls_webdav_settings}
   */
   readonly hlsWebdavSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings;
 }
@@ -5748,15 +8965,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
   */
   readonly passwordParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
   */
   readonly uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
   */
   readonly username?: string;
 }
@@ -5864,13 +9081,13 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#static_key_value MedialiveChannel#static_key_value}
   */
   readonly staticKeyValue: string;
   /**
   * key_provider_server block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#key_provider_server MedialiveChannel#key_provider_server}
   */
   readonly keyProviderServer?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer;
 }
@@ -5989,7 +9206,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsH
   /**
   * static_key_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#static_key_settings MedialiveChannel#static_key_settings}
   */
   readonly staticKeySettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings[] | cdktf.IResolvable;
 }
@@ -6054,179 +9271,179 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}
   */
   readonly adMarkers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#base_url_content MedialiveChannel#base_url_content}
   */
   readonly baseUrlContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#base_url_content1 MedialiveChannel#base_url_content1}
   */
   readonly baseUrlContent1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#base_url_manifest MedialiveChannel#base_url_manifest}
   */
   readonly baseUrlManifest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#base_url_manifest1 MedialiveChannel#base_url_manifest1}
   */
   readonly baseUrlManifest1?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_language_setting MedialiveChannel#caption_language_setting}
   */
   readonly captionLanguageSetting?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#client_cache MedialiveChannel#client_cache}
   */
   readonly clientCache?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#codec_specification MedialiveChannel#codec_specification}
   */
   readonly codecSpecification?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#constant_iv MedialiveChannel#constant_iv}
   */
   readonly constantIv?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#directory_structure MedialiveChannel#directory_structure}
   */
   readonly directoryStructure?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#discontinuity_tags MedialiveChannel#discontinuity_tags}
   */
   readonly discontinuityTags?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#encryption_type MedialiveChannel#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}
   */
   readonly hlsId3SegmentTagging?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}
   */
   readonly iframeOnlyPlaylists?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}
   */
   readonly incompleteSegmentBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}
   */
   readonly indexNSegments?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
   */
   readonly inputLossAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#iv_in_manifest MedialiveChannel#iv_in_manifest}
   */
   readonly ivInManifest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#iv_source MedialiveChannel#iv_source}
   */
   readonly ivSource?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#keep_segments MedialiveChannel#keep_segments}
   */
   readonly keepSegments?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#key_format MedialiveChannel#key_format}
   */
   readonly keyFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}
   */
   readonly keyFormatVersions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}
   */
   readonly manifestCompression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}
   */
   readonly manifestDurationFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#min_segment_length MedialiveChannel#min_segment_length}
   */
   readonly minSegmentLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#mode MedialiveChannel#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_selection MedialiveChannel#output_selection}
   */
   readonly outputSelection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_date_time MedialiveChannel#program_date_time}
   */
   readonly programDateTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}
   */
   readonly programDateTimeClock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_date_time_period MedialiveChannel#program_date_time_period}
   */
   readonly programDateTimePeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#redundant_manifest MedialiveChannel#redundant_manifest}
   */
   readonly redundantManifest?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segment_length MedialiveChannel#segment_length}
   */
   readonly segmentLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segments_per_subdirectory MedialiveChannel#segments_per_subdirectory}
   */
   readonly segmentsPerSubdirectory?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}
   */
   readonly streamInfResolution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}
   */
   readonly timedMetadataId3Frame?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}
   */
   readonly timedMetadataId3Period?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}
   */
   readonly timestampDeltaMilliseconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}
   */
   readonly tsFileMode?: string;
   /**
   * caption_language_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_language_mappings MedialiveChannel#caption_language_mappings}
   */
   readonly captionLanguageMappings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings[] | cdktf.IResolvable;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination;
   /**
   * hls_cdn_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_cdn_settings MedialiveChannel#hls_cdn_settings}
   */
   readonly hlsCdnSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings[] | cdktf.IResolvable;
   /**
   * key_provider_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
   */
   readonly keyProviderSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings;
 }
@@ -7231,7 +10448,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGr
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -7295,7 +10512,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsM
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination;
 }
@@ -7357,7 +10574,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMedia
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -7419,81 +10636,81 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmo
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}
   */
   readonly acquisitionPointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}
   */
   readonly audioOnlyTimecodeControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
   */
   readonly certificateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#event_id MedialiveChannel#event_id}
   */
   readonly eventId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}
   */
   readonly eventIdMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}
   */
   readonly eventStopBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filecache_duration MedialiveChannel#filecache_duration}
   */
   readonly filecacheDuration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fragment_length MedialiveChannel#fragment_length}
   */
   readonly fragmentLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
   */
   readonly inputLossAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_mode MedialiveChannel#segmentation_mode}
   */
   readonly segmentationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#send_delay_ms MedialiveChannel#send_delay_ms}
   */
   readonly sendDelayMs?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sparse_track_type MedialiveChannel#sparse_track_type}
   */
   readonly sparseTrackType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#stream_manifest_behavior MedialiveChannel#stream_manifest_behavior}
   */
   readonly streamManifestBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timestamp_offset MedialiveChannel#timestamp_offset}
   */
   readonly timestampOffset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timestamp_offset_mode MedialiveChannel#timestamp_offset_mode}
   */
   readonly timestampOffsetMode?: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination;
 }
@@ -8007,31 +11224,31 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMulti
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ad_markers MedialiveChannel#ad_markers}
   */
   readonly adMarkers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#authentication_scheme MedialiveChannel#authentication_scheme}
   */
   readonly authenticationScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cache_full_behavior MedialiveChannel#cache_full_behavior}
   */
   readonly cacheFullBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cache_length MedialiveChannel#cache_length}
   */
   readonly cacheLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_data MedialiveChannel#caption_data}
   */
   readonly captionData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
   */
   readonly inputLossAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#restart_delay MedialiveChannel#restart_delay}
   */
   readonly restartDelay?: number;
 }
@@ -8234,15 +11451,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpG
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#input_loss_action MedialiveChannel#input_loss_action}
   */
   readonly inputLossAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}
   */
   readonly timedMetadataId3Frame?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}
   */
   readonly timedMetadataId3Period?: number;
 }
@@ -8355,49 +11572,49 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings 
   /**
   * archive_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#archive_group_settings MedialiveChannel#archive_group_settings}
   */
   readonly archiveGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings[] | cdktf.IResolvable;
   /**
   * frame_capture_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_group_settings MedialiveChannel#frame_capture_group_settings}
   */
   readonly frameCaptureGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings;
   /**
   * hls_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_group_settings MedialiveChannel#hls_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_group_settings MedialiveChannel#hls_group_settings}
   */
   readonly hlsGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings;
   /**
   * media_package_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_group_settings MedialiveChannel#media_package_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#media_package_group_settings MedialiveChannel#media_package_group_settings}
   */
   readonly mediaPackageGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings;
   /**
   * ms_smooth_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ms_smooth_group_settings MedialiveChannel#ms_smooth_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ms_smooth_group_settings MedialiveChannel#ms_smooth_group_settings}
   */
   readonly msSmoothGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings;
   /**
   * multiplex_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_group_settings MedialiveChannel#multiplex_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#multiplex_group_settings MedialiveChannel#multiplex_group_settings}
   */
   readonly multiplexGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings;
   /**
   * rtmp_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rtmp_group_settings MedialiveChannel#rtmp_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rtmp_group_settings MedialiveChannel#rtmp_group_settings}
   */
   readonly rtmpGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings;
   /**
   * udp_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#udp_group_settings MedialiveChannel#udp_group_settings}
   */
   readonly udpGroupSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings;
 }
@@ -8623,15 +11840,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutpu
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}
   */
   readonly networkId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}
   */
   readonly networkName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
 }
@@ -8736,19 +11953,19 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}
   */
   readonly outputSdt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}
   */
   readonly serviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}
   */
   readonly serviceProviderName?: string;
 }
@@ -8882,7 +12099,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
 }
@@ -8947,197 +12164,197 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}
   */
   readonly absentInputAudioBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}
   */
   readonly arib?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}
   */
   readonly aribCaptionsPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}
   */
   readonly aribCaptionsPidControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}
   */
   readonly audioBufferModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
   */
   readonly audioFramesPerPes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
   */
   readonly audioPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}
   */
   readonly audioStreamType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}
   */
   readonly bufferModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}
   */
   readonly ccDescriptor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}
   */
   readonly dvbSubPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}
   */
   readonly dvbTeletextPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}
   */
   readonly ebif?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}
   */
   readonly ebpAudioInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}
   */
   readonly ebpLookaheadMs?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}
   */
   readonly ebpPlacement?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
   */
   readonly ecmPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}
   */
   readonly esRateInPes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}
   */
   readonly etvPlatformPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}
   */
   readonly etvSignalPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}
   */
   readonly fragmentTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}
   */
   readonly klv?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}
   */
   readonly klvDataPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
   */
   readonly nielsenId3Behavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}
   */
   readonly nullPacketBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
   */
   readonly patInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
   */
   readonly pcrControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
   */
   readonly pcrPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
   */
   readonly pcrPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
   */
   readonly pmtInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
   */
   readonly pmtPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
   */
   readonly programNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}
   */
   readonly rateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}
   */
   readonly scte27Pids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}
   */
   readonly scte35Control?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
   */
   readonly scte35Pid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}
   */
   readonly segmentationMarkers?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}
   */
   readonly segmentationStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}
   */
   readonly segmentationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
   */
   readonly timedMetadataBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
   */
   readonly timedMetadataPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
   */
   readonly transportStreamId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
   */
   readonly videoPid?: string;
   /**
   * dvb_nit_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
   */
   readonly dvbNitSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings;
   /**
   * dvb_sdt_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
   */
   readonly dvbSdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings;
   /**
   * dvb_tdt_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
   */
   readonly dvbTdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings;
 }
@@ -10300,13 +13517,13 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   /**
   * m2ts_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
   */
   readonly m2TsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings;
   /**
   * raw_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#raw_settings MedialiveChannel#raw_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#raw_settings MedialiveChannel#raw_settings}
   */
   readonly rawSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings;
 }
@@ -10394,17 +13611,17 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#extension MedialiveChannel#extension}
   */
   readonly extension?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
   */
   readonly nameModifier?: string;
   /**
   * container_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
   */
   readonly containerSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings;
 }
@@ -10515,7 +13732,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArc
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
   */
   readonly nameModifier?: string;
 }
@@ -10580,15 +13797,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFra
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#password_param MedialiveChannel#password_param}
   */
   readonly passwordParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#uri MedialiveChannel#uri}
   */
   readonly uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#username MedialiveChannel#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#username MedialiveChannel#username}
   */
   readonly username?: string;
 }
@@ -10696,21 +13913,21 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_group_id MedialiveChannel#audio_group_id}
   */
   readonly audioGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_track_type MedialiveChannel#audio_track_type}
   */
   readonly audioTrackType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segment_type MedialiveChannel#segment_type}
   */
   readonly segmentType?: string;
   /**
   * audio_only_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_only_image MedialiveChannel#audio_only_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_only_image MedialiveChannel#audio_only_image}
   */
   readonly audioOnlyImage?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage;
 }
@@ -10844,15 +14061,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}
   */
   readonly audioRenditionSets?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
   */
   readonly nielsenId3Behavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
   */
   readonly timedMetadataBehavior?: string;
 }
@@ -11001,71 +14218,71 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
   */
   readonly audioFramesPerPes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
   */
   readonly audioPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
   */
   readonly ecmPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
   */
   readonly nielsenId3Behavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
   */
   readonly patInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
   */
   readonly pcrControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
   */
   readonly pcrPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
   */
   readonly pcrPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
   */
   readonly pmtInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
   */
   readonly pmtPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
   */
   readonly programNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_behavior MedialiveChannel#scte35_behavior}
   */
   readonly scte35Behavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
   */
   readonly scte35Pid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
   */
   readonly timedMetadataBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
   */
   readonly timedMetadataPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
   */
   readonly transportStreamId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
   */
   readonly videoPid?: string;
 }
@@ -11498,13 +14715,13 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_rendition_sets MedialiveChannel#audio_rendition_sets}
   */
   readonly audioRenditionSets?: string;
   /**
   * m3u8_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m3u8_settings MedialiveChannel#m3u8_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#m3u8_settings MedialiveChannel#m3u8_settings}
   */
   readonly m3U8Settings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings;
 }
@@ -11591,25 +14808,25 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   /**
   * audio_only_hls_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_only_hls_settings MedialiveChannel#audio_only_hls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_only_hls_settings MedialiveChannel#audio_only_hls_settings}
   */
   readonly audioOnlyHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings;
   /**
   * fmp4_hls_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fmp4_hls_settings MedialiveChannel#fmp4_hls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fmp4_hls_settings MedialiveChannel#fmp4_hls_settings}
   */
   readonly fmp4HlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings;
   /**
   * frame_capture_hls_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_hls_settings MedialiveChannel#frame_capture_hls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_hls_settings MedialiveChannel#frame_capture_hls_settings}
   */
   readonly frameCaptureHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings;
   /**
   * standard_hls_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#standard_hls_settings MedialiveChannel#standard_hls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#standard_hls_settings MedialiveChannel#standard_hls_settings}
   */
   readonly standardHlsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings;
 }
@@ -11743,21 +14960,21 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHls
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}
   */
   readonly h265PackagingType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
   */
   readonly nameModifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segment_modifier MedialiveChannel#segment_modifier}
   */
   readonly segmentModifier?: string;
   /**
   * hls_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_settings MedialiveChannel#hls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_settings MedialiveChannel#hls_settings}
   */
   readonly hlsSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings;
 }
@@ -11926,11 +15143,11 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMed
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#h265_packaging_type MedialiveChannel#h265_packaging_type}
   */
   readonly h265PackagingType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name_modifier MedialiveChannel#name_modifier}
   */
   readonly nameModifier?: string;
 }
@@ -12018,7 +15235,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsS
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -12082,7 +15299,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination;
 }
@@ -12144,7 +15361,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMul
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -12206,21 +15423,21 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtm
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}
   */
   readonly certificateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}
   */
   readonly connectionRetryInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_retries MedialiveChannel#num_retries}
   */
   readonly numRetries?: number;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination;
 }
@@ -12351,15 +15568,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtm
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#network_id MedialiveChannel#network_id}
   */
   readonly networkId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#network_name MedialiveChannel#network_name}
   */
   readonly networkName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
 }
@@ -12464,19 +15681,19 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_sdt MedialiveChannel#output_sdt}
   */
   readonly outputSdt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#service_name MedialiveChannel#service_name}
   */
   readonly serviceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#service_provider_name MedialiveChannel#service_provider_name}
   */
   readonly serviceProviderName?: string;
 }
@@ -12610,7 +15827,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}
   */
   readonly repInterval?: number;
 }
@@ -12675,197 +15892,197 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#absent_input_audio_behavior MedialiveChannel#absent_input_audio_behavior}
   */
   readonly absentInputAudioBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib MedialiveChannel#arib}
   */
   readonly arib?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib_captions_pid MedialiveChannel#arib_captions_pid}
   */
   readonly aribCaptionsPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#arib_captions_pid_control MedialiveChannel#arib_captions_pid_control}
   */
   readonly aribCaptionsPidControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_buffer_model MedialiveChannel#audio_buffer_model}
   */
   readonly audioBufferModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_frames_per_pes MedialiveChannel#audio_frames_per_pes}
   */
   readonly audioFramesPerPes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_pids MedialiveChannel#audio_pids}
   */
   readonly audioPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_stream_type MedialiveChannel#audio_stream_type}
   */
   readonly audioStreamType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buffer_model MedialiveChannel#buffer_model}
   */
   readonly bufferModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#cc_descriptor MedialiveChannel#cc_descriptor}
   */
   readonly ccDescriptor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_sub_pids MedialiveChannel#dvb_sub_pids}
   */
   readonly dvbSubPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_teletext_pid MedialiveChannel#dvb_teletext_pid}
   */
   readonly dvbTeletextPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebif MedialiveChannel#ebif}
   */
   readonly ebif?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_audio_interval MedialiveChannel#ebp_audio_interval}
   */
   readonly ebpAudioInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_lookahead_ms MedialiveChannel#ebp_lookahead_ms}
   */
   readonly ebpLookaheadMs?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ebp_placement MedialiveChannel#ebp_placement}
   */
   readonly ebpPlacement?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ecm_pid MedialiveChannel#ecm_pid}
   */
   readonly ecmPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#es_rate_in_pes MedialiveChannel#es_rate_in_pes}
   */
   readonly esRateInPes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#etv_platform_pid MedialiveChannel#etv_platform_pid}
   */
   readonly etvPlatformPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#etv_signal_pid MedialiveChannel#etv_signal_pid}
   */
   readonly etvSignalPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fragment_time MedialiveChannel#fragment_time}
   */
   readonly fragmentTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#klv MedialiveChannel#klv}
   */
   readonly klv?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#klv_data_pids MedialiveChannel#klv_data_pids}
   */
   readonly klvDataPids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_id3_behavior MedialiveChannel#nielsen_id3_behavior}
   */
   readonly nielsenId3Behavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#null_packet_bitrate MedialiveChannel#null_packet_bitrate}
   */
   readonly nullPacketBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pat_interval MedialiveChannel#pat_interval}
   */
   readonly patInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_control MedialiveChannel#pcr_control}
   */
   readonly pcrControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_period MedialiveChannel#pcr_period}
   */
   readonly pcrPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pcr_pid MedialiveChannel#pcr_pid}
   */
   readonly pcrPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_interval MedialiveChannel#pmt_interval}
   */
   readonly pmtInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#pmt_pid MedialiveChannel#pmt_pid}
   */
   readonly pmtPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#program_num MedialiveChannel#program_num}
   */
   readonly programNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rate_mode MedialiveChannel#rate_mode}
   */
   readonly rateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte27_pids MedialiveChannel#scte27_pids}
   */
   readonly scte27Pids?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_control MedialiveChannel#scte35_control}
   */
   readonly scte35Control?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scte35_pid MedialiveChannel#scte35_pid}
   */
   readonly scte35Pid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_markers MedialiveChannel#segmentation_markers}
   */
   readonly segmentationMarkers?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_style MedialiveChannel#segmentation_style}
   */
   readonly segmentationStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#segmentation_time MedialiveChannel#segmentation_time}
   */
   readonly segmentationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_behavior MedialiveChannel#timed_metadata_behavior}
   */
   readonly timedMetadataBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timed_metadata_pid MedialiveChannel#timed_metadata_pid}
   */
   readonly timedMetadataPid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#transport_stream_id MedialiveChannel#transport_stream_id}
   */
   readonly transportStreamId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#video_pid MedialiveChannel#video_pid}
   */
   readonly videoPid?: string;
   /**
   * dvb_nit_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_nit_settings MedialiveChannel#dvb_nit_settings}
   */
   readonly dvbNitSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings;
   /**
   * dvb_sdt_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_sdt_settings MedialiveChannel#dvb_sdt_settings}
   */
   readonly dvbSdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings;
   /**
   * dvb_tdt_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
   */
   readonly dvbTdtSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings;
 }
@@ -13990,7 +17207,7 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   /**
   * m2ts_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#m2ts_settings MedialiveChannel#m2ts_settings}
   */
   readonly m2TsSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings;
 }
@@ -14055,7 +17272,7 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination_ref_id MedialiveChannel#destination_ref_id}
   */
   readonly destinationRefId: string;
 }
@@ -14117,15 +17334,15 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#column_depth MedialiveChannel#column_depth}
   */
   readonly columnDepth?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#include_fec MedialiveChannel#include_fec}
   */
   readonly includeFec?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#row_length MedialiveChannel#row_length}
   */
   readonly rowLength?: number;
 }
@@ -14236,25 +17453,25 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdp
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buffer_msec MedialiveChannel#buffer_msec}
   */
   readonly bufferMsec?: number;
   /**
   * container_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#container_settings MedialiveChannel#container_settings}
   */
   readonly containerSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#destination MedialiveChannel#destination}
   */
   readonly destination: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination;
   /**
   * fec_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fec_output_settings MedialiveChannel#fec_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fec_output_settings MedialiveChannel#fec_output_settings}
   */
   readonly fecOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings;
 }
@@ -14384,49 +17601,49 @@ export interface MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetting
   /**
   * archive_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#archive_output_settings MedialiveChannel#archive_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#archive_output_settings MedialiveChannel#archive_output_settings}
   */
   readonly archiveOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings;
   /**
   * frame_capture_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_output_settings MedialiveChannel#frame_capture_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_output_settings MedialiveChannel#frame_capture_output_settings}
   */
   readonly frameCaptureOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings;
   /**
   * hls_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_output_settings MedialiveChannel#hls_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hls_output_settings MedialiveChannel#hls_output_settings}
   */
   readonly hlsOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings;
   /**
   * media_package_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#media_package_output_settings MedialiveChannel#media_package_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#media_package_output_settings MedialiveChannel#media_package_output_settings}
   */
   readonly mediaPackageOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings;
   /**
   * ms_smooth_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ms_smooth_output_settings MedialiveChannel#ms_smooth_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#ms_smooth_output_settings MedialiveChannel#ms_smooth_output_settings}
   */
   readonly msSmoothOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings;
   /**
   * multiplex_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#multiplex_output_settings MedialiveChannel#multiplex_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#multiplex_output_settings MedialiveChannel#multiplex_output_settings}
   */
   readonly multiplexOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings;
   /**
   * rtmp_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rtmp_output_settings MedialiveChannel#rtmp_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rtmp_output_settings MedialiveChannel#rtmp_output_settings}
   */
   readonly rtmpOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings;
   /**
   * udp_output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#udp_output_settings MedialiveChannel#udp_output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#udp_output_settings MedialiveChannel#udp_output_settings}
   */
   readonly udpOutputSettings?: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings;
 }
@@ -14652,25 +17869,25 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOut
 }
 export interface MedialiveChannelEncoderSettingsOutputGroupsOutputs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_description_names MedialiveChannel#audio_description_names}
   */
   readonly audioDescriptionNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_description_names MedialiveChannel#caption_description_names}
   */
   readonly captionDescriptionNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_name MedialiveChannel#output_name}
   */
   readonly outputName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#video_description_name MedialiveChannel#video_description_name}
   */
   readonly videoDescriptionName?: string;
   /**
   * output_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_settings MedialiveChannel#output_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_settings MedialiveChannel#output_settings}
   */
   readonly outputSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings;
 }
@@ -14856,19 +18073,19 @@ export class MedialiveChannelEncoderSettingsOutputGroupsOutputsList extends cdkt
 }
 export interface MedialiveChannelEncoderSettingsOutputGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name?: string;
   /**
   * output_group_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_group_settings MedialiveChannel#output_group_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_group_settings MedialiveChannel#output_group_settings}
   */
   readonly outputGroupSettings: MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings;
   /**
   * outputs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#outputs MedialiveChannel#outputs}
   */
   readonly outputs: MedialiveChannelEncoderSettingsOutputGroupsOutputs[] | cdktf.IResolvable;
 }
@@ -15005,11 +18222,11 @@ export class MedialiveChannelEncoderSettingsOutputGroupsList extends cdktf.Compl
 }
 export interface MedialiveChannelEncoderSettingsTimecodeConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#source MedialiveChannel#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#source MedialiveChannel#source}
   */
   readonly source: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sync_threshold MedialiveChannel#sync_threshold}
   */
   readonly syncThreshold?: number;
 }
@@ -15094,11 +18311,11 @@ export class MedialiveChannelEncoderSettingsTimecodeConfigOutputReference extend
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}
   */
   readonly captureInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}
   */
   readonly captureIntervalUnits?: string;
 }
@@ -15186,11 +18403,11 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameC
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}
   */
   readonly postFilterSharpening?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}
   */
   readonly strength?: string;
 }
@@ -15280,7 +18497,7 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   /**
   * temporal_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
   */
   readonly temporalFilterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings;
 }
@@ -15345,165 +18562,165 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Se
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}
   */
   readonly adaptiveQuantization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}
   */
   readonly afdSignaling?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buf_fill_pct MedialiveChannel#buf_fill_pct}
   */
   readonly bufFillPct?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}
   */
   readonly bufSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}
   */
   readonly colorMetadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#entropy_encoding MedialiveChannel#entropy_encoding}
   */
   readonly entropyEncoding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}
   */
   readonly fixedAfd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}
   */
   readonly flickerAq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#force_field_pictures MedialiveChannel#force_field_pictures}
   */
   readonly forceFieldPictures?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#framerate_control MedialiveChannel#framerate_control}
   */
   readonly framerateControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}
   */
   readonly framerateDenominator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}
   */
   readonly framerateNumerator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}
   */
   readonly gopBReference?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}
   */
   readonly gopClosedCadence?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_num_b_frames MedialiveChannel#gop_num_b_frames}
   */
   readonly gopNumBFrames?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}
   */
   readonly gopSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}
   */
   readonly gopSizeUnits?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#level MedialiveChannel#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#level MedialiveChannel#level}
   */
   readonly level?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}
   */
   readonly lookAheadRateControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}
   */
   readonly maxBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}
   */
   readonly minIInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#num_ref_frames MedialiveChannel#num_ref_frames}
   */
   readonly numRefFrames?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#par_control MedialiveChannel#par_control}
   */
   readonly parControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}
   */
   readonly parDenominator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}
   */
   readonly parNumerator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#quality_level MedialiveChannel#quality_level}
   */
   readonly qualityLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}
   */
   readonly qvbrQualityLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
   */
   readonly rateControlMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}
   */
   readonly scanType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}
   */
   readonly sceneChangeDetect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}
   */
   readonly slices?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#softness MedialiveChannel#softness}
   */
   readonly softness?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#spatial_aq MedialiveChannel#spatial_aq}
   */
   readonly spatialAq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#subgop_length MedialiveChannel#subgop_length}
   */
   readonly subgopLength?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#syntax MedialiveChannel#syntax}
   */
   readonly syntax?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#temporal_aq MedialiveChannel#temporal_aq}
   */
   readonly temporalAq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}
   */
   readonly timecodeInsertion?: string;
   /**
   * filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
   */
   readonly filterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings;
 }
@@ -16541,11 +19758,11 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#max_cll MedialiveChannel#max_cll}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#max_cll MedialiveChannel#max_cll}
   */
   readonly maxCll?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#max_fall MedialiveChannel#max_fall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#max_fall MedialiveChannel#max_fall}
   */
   readonly maxFall?: number;
 }
@@ -16711,31 +19928,31 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   /**
   * color_space_passthrough_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_space_passthrough_settings MedialiveChannel#color_space_passthrough_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#color_space_passthrough_settings MedialiveChannel#color_space_passthrough_settings}
   */
   readonly colorSpacePassthroughSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings;
   /**
   * dolby_vision81_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dolby_vision81_settings MedialiveChannel#dolby_vision81_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#dolby_vision81_settings MedialiveChannel#dolby_vision81_settings}
   */
   readonly dolbyVision81Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings;
   /**
   * hdr10_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hdr10_settings MedialiveChannel#hdr10_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#hdr10_settings MedialiveChannel#hdr10_settings}
   */
   readonly hdr10Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings;
   /**
   * rec601_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rec601_settings MedialiveChannel#rec601_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rec601_settings MedialiveChannel#rec601_settings}
   */
   readonly rec601Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings;
   /**
   * rec709_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rec709_settings MedialiveChannel#rec709_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rec709_settings MedialiveChannel#rec709_settings}
   */
   readonly rec709Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings;
 }
@@ -16892,11 +20109,11 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#post_filter_sharpening MedialiveChannel#post_filter_sharpening}
   */
   readonly postFilterSharpening?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#strength MedialiveChannel#strength}
   */
   readonly strength?: string;
 }
@@ -16986,7 +20203,7 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH2
   /**
   * temporal_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#temporal_filter_settings MedialiveChannel#temporal_filter_settings}
   */
   readonly temporalFilterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings;
 }
@@ -17051,15 +20268,15 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#prefix MedialiveChannel#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#prefix MedialiveChannel#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_burnin_font_size MedialiveChannel#timecode_burnin_font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_burnin_font_size MedialiveChannel#timecode_burnin_font_size}
   */
   readonly timecodeBurninFontSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_burnin_position MedialiveChannel#timecode_burnin_position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_burnin_position MedialiveChannel#timecode_burnin_position}
   */
   readonly timecodeBurninPosition?: string;
 }
@@ -17170,129 +20387,129 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Se
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#adaptive_quantization MedialiveChannel#adaptive_quantization}
   */
   readonly adaptiveQuantization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#afd_signaling MedialiveChannel#afd_signaling}
   */
   readonly afdSignaling?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#alternative_transfer_function MedialiveChannel#alternative_transfer_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#alternative_transfer_function MedialiveChannel#alternative_transfer_function}
   */
   readonly alternativeTransferFunction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#bitrate MedialiveChannel#bitrate}
   */
   readonly bitrate: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#buf_size MedialiveChannel#buf_size}
   */
   readonly bufSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#color_metadata MedialiveChannel#color_metadata}
   */
   readonly colorMetadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#fixed_afd MedialiveChannel#fixed_afd}
   */
   readonly fixedAfd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#flicker_aq MedialiveChannel#flicker_aq}
   */
   readonly flickerAq?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}
   */
   readonly framerateDenominator: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}
   */
   readonly framerateNumerator: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}
   */
   readonly gopClosedCadence?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_size MedialiveChannel#gop_size}
   */
   readonly gopSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#gop_size_units MedialiveChannel#gop_size_units}
   */
   readonly gopSizeUnits?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#level MedialiveChannel#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#level MedialiveChannel#level}
   */
   readonly level?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#look_ahead_rate_control MedialiveChannel#look_ahead_rate_control}
   */
   readonly lookAheadRateControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#max_bitrate MedialiveChannel#max_bitrate}
   */
   readonly maxBitrate?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#min_i_interval MedialiveChannel#min_i_interval}
   */
   readonly minIInterval?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#par_denominator MedialiveChannel#par_denominator}
   */
   readonly parDenominator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#par_numerator MedialiveChannel#par_numerator}
   */
   readonly parNumerator?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#profile MedialiveChannel#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#qvbr_quality_level MedialiveChannel#qvbr_quality_level}
   */
   readonly qvbrQualityLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}
   */
   readonly rateControlMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scan_type MedialiveChannel#scan_type}
   */
   readonly scanType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scene_change_detect MedialiveChannel#scene_change_detect}
   */
   readonly sceneChangeDetect?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#slices MedialiveChannel#slices}
   */
   readonly slices?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#tier MedialiveChannel#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#tier MedialiveChannel#tier}
   */
   readonly tier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_insertion MedialiveChannel#timecode_insertion}
   */
   readonly timecodeInsertion?: string;
   /**
   * color_space_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#color_space_settings MedialiveChannel#color_space_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#color_space_settings MedialiveChannel#color_space_settings}
   */
   readonly colorSpaceSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings;
   /**
   * filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#filter_settings MedialiveChannel#filter_settings}
   */
   readonly filterSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings;
   /**
   * timecode_burnin_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_burnin_settings MedialiveChannel#timecode_burnin_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_burnin_settings MedialiveChannel#timecode_burnin_settings}
   */
   readonly timecodeBurninSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings;
 }
@@ -18017,19 +21234,19 @@ export interface MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings {
   /**
   * frame_capture_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#frame_capture_settings MedialiveChannel#frame_capture_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#frame_capture_settings MedialiveChannel#frame_capture_settings}
   */
   readonly frameCaptureSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings;
   /**
   * h264_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h264_settings MedialiveChannel#h264_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#h264_settings MedialiveChannel#h264_settings}
   */
   readonly h264Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings;
   /**
   * h265_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#h265_settings MedialiveChannel#h265_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#h265_settings MedialiveChannel#h265_settings}
   */
   readonly h265Settings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings;
 }
@@ -18140,33 +21357,33 @@ export class MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutput
 }
 export interface MedialiveChannelEncoderSettingsVideoDescriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#height MedialiveChannel#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#height MedialiveChannel#height}
   */
   readonly height?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#name MedialiveChannel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#respond_to_afd MedialiveChannel#respond_to_afd}
   */
   readonly respondToAfd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#scaling_behavior MedialiveChannel#scaling_behavior}
   */
   readonly scalingBehavior?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#sharpness MedialiveChannel#sharpness}
   */
   readonly sharpness?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#width MedialiveChannel#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#width MedialiveChannel#width}
   */
   readonly width?: number;
   /**
   * codec_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#codec_settings MedialiveChannel#codec_settings}
   */
   readonly codecSettings?: MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings;
 }
@@ -18400,31 +21617,55 @@ export interface MedialiveChannelEncoderSettings {
   /**
   * audio_descriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
   */
   readonly audioDescriptions?: MedialiveChannelEncoderSettingsAudioDescriptions[] | cdktf.IResolvable;
   /**
   * avail_blanking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
   */
   readonly availBlanking?: MedialiveChannelEncoderSettingsAvailBlanking;
   /**
+  * caption_descriptions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#caption_descriptions MedialiveChannel#caption_descriptions}
+  */
+  readonly captionDescriptions?: MedialiveChannelEncoderSettingsCaptionDescriptions[] | cdktf.IResolvable;
+  /**
+  * global_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#global_configuration MedialiveChannel#global_configuration}
+  */
+  readonly globalConfiguration?: MedialiveChannelEncoderSettingsGlobalConfiguration;
+  /**
+  * motion_graphics_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#motion_graphics_configuration MedialiveChannel#motion_graphics_configuration}
+  */
+  readonly motionGraphicsConfiguration?: MedialiveChannelEncoderSettingsMotionGraphicsConfiguration;
+  /**
+  * nielsen_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#nielsen_configuration MedialiveChannel#nielsen_configuration}
+  */
+  readonly nielsenConfiguration?: MedialiveChannelEncoderSettingsNielsenConfiguration;
+  /**
   * output_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_groups MedialiveChannel#output_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#output_groups MedialiveChannel#output_groups}
   */
   readonly outputGroups: MedialiveChannelEncoderSettingsOutputGroups[] | cdktf.IResolvable;
   /**
   * timecode_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#timecode_config MedialiveChannel#timecode_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#timecode_config MedialiveChannel#timecode_config}
   */
   readonly timecodeConfig: MedialiveChannelEncoderSettingsTimecodeConfig;
   /**
   * video_descriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}
   */
   readonly videoDescriptions?: MedialiveChannelEncoderSettingsVideoDescriptions[] | cdktf.IResolvable;
 }
@@ -18437,6 +21678,10 @@ export function medialiveChannelEncoderSettingsToTerraform(struct?: MedialiveCha
   return {
     audio_descriptions: cdktf.listMapper(medialiveChannelEncoderSettingsAudioDescriptionsToTerraform, true)(struct!.audioDescriptions),
     avail_blanking: medialiveChannelEncoderSettingsAvailBlankingToTerraform(struct!.availBlanking),
+    caption_descriptions: cdktf.listMapper(medialiveChannelEncoderSettingsCaptionDescriptionsToTerraform, true)(struct!.captionDescriptions),
+    global_configuration: medialiveChannelEncoderSettingsGlobalConfigurationToTerraform(struct!.globalConfiguration),
+    motion_graphics_configuration: medialiveChannelEncoderSettingsMotionGraphicsConfigurationToTerraform(struct!.motionGraphicsConfiguration),
+    nielsen_configuration: medialiveChannelEncoderSettingsNielsenConfigurationToTerraform(struct!.nielsenConfiguration),
     output_groups: cdktf.listMapper(medialiveChannelEncoderSettingsOutputGroupsToTerraform, true)(struct!.outputGroups),
     timecode_config: medialiveChannelEncoderSettingsTimecodeConfigToTerraform(struct!.timecodeConfig),
     video_descriptions: cdktf.listMapper(medialiveChannelEncoderSettingsVideoDescriptionsToTerraform, true)(struct!.videoDescriptions),
@@ -18465,6 +21710,22 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.availBlanking = this._availBlanking?.internalValue;
     }
+    if (this._captionDescriptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.captionDescriptions = this._captionDescriptions?.internalValue;
+    }
+    if (this._globalConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.globalConfiguration = this._globalConfiguration?.internalValue;
+    }
+    if (this._motionGraphicsConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.motionGraphicsConfiguration = this._motionGraphicsConfiguration?.internalValue;
+    }
+    if (this._nielsenConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nielsenConfiguration = this._nielsenConfiguration?.internalValue;
+    }
     if (this._outputGroups?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outputGroups = this._outputGroups?.internalValue;
@@ -18485,6 +21746,10 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this._audioDescriptions.internalValue = undefined;
       this._availBlanking.internalValue = undefined;
+      this._captionDescriptions.internalValue = undefined;
+      this._globalConfiguration.internalValue = undefined;
+      this._motionGraphicsConfiguration.internalValue = undefined;
+      this._nielsenConfiguration.internalValue = undefined;
       this._outputGroups.internalValue = undefined;
       this._timecodeConfig.internalValue = undefined;
       this._videoDescriptions.internalValue = undefined;
@@ -18493,6 +21758,10 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
       this.isEmptyObject = Object.keys(value).length === 0;
       this._audioDescriptions.internalValue = value.audioDescriptions;
       this._availBlanking.internalValue = value.availBlanking;
+      this._captionDescriptions.internalValue = value.captionDescriptions;
+      this._globalConfiguration.internalValue = value.globalConfiguration;
+      this._motionGraphicsConfiguration.internalValue = value.motionGraphicsConfiguration;
+      this._nielsenConfiguration.internalValue = value.nielsenConfiguration;
       this._outputGroups.internalValue = value.outputGroups;
       this._timecodeConfig.internalValue = value.timecodeConfig;
       this._videoDescriptions.internalValue = value.videoDescriptions;
@@ -18529,6 +21798,70 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get availBlankingInput() {
     return this._availBlanking.internalValue;
+  }
+
+  // caption_descriptions - computed: false, optional: true, required: false
+  private _captionDescriptions = new MedialiveChannelEncoderSettingsCaptionDescriptionsList(this, "caption_descriptions", false);
+  public get captionDescriptions() {
+    return this._captionDescriptions;
+  }
+  public putCaptionDescriptions(value: MedialiveChannelEncoderSettingsCaptionDescriptions[] | cdktf.IResolvable) {
+    this._captionDescriptions.internalValue = value;
+  }
+  public resetCaptionDescriptions() {
+    this._captionDescriptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get captionDescriptionsInput() {
+    return this._captionDescriptions.internalValue;
+  }
+
+  // global_configuration - computed: false, optional: true, required: false
+  private _globalConfiguration = new MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference(this, "global_configuration");
+  public get globalConfiguration() {
+    return this._globalConfiguration;
+  }
+  public putGlobalConfiguration(value: MedialiveChannelEncoderSettingsGlobalConfiguration) {
+    this._globalConfiguration.internalValue = value;
+  }
+  public resetGlobalConfiguration() {
+    this._globalConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalConfigurationInput() {
+    return this._globalConfiguration.internalValue;
+  }
+
+  // motion_graphics_configuration - computed: false, optional: true, required: false
+  private _motionGraphicsConfiguration = new MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference(this, "motion_graphics_configuration");
+  public get motionGraphicsConfiguration() {
+    return this._motionGraphicsConfiguration;
+  }
+  public putMotionGraphicsConfiguration(value: MedialiveChannelEncoderSettingsMotionGraphicsConfiguration) {
+    this._motionGraphicsConfiguration.internalValue = value;
+  }
+  public resetMotionGraphicsConfiguration() {
+    this._motionGraphicsConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get motionGraphicsConfigurationInput() {
+    return this._motionGraphicsConfiguration.internalValue;
+  }
+
+  // nielsen_configuration - computed: false, optional: true, required: false
+  private _nielsenConfiguration = new MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference(this, "nielsen_configuration");
+  public get nielsenConfiguration() {
+    return this._nielsenConfiguration;
+  }
+  public putNielsenConfiguration(value: MedialiveChannelEncoderSettingsNielsenConfiguration) {
+    this._nielsenConfiguration.internalValue = value;
+  }
+  public resetNielsenConfiguration() {
+    this._nielsenConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nielsenConfigurationInput() {
+    return this._nielsenConfiguration.internalValue;
   }
 
   // output_groups - computed: false, optional: false, required: true
@@ -18575,11 +21908,11 @@ export class MedialiveChannelEncoderSettingsOutputReference extends cdktf.Comple
 }
 export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_selector_name MedialiveChannel#audio_selector_name}
   */
   readonly audioSelectorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/medialive_channel#audio_silence_threshold_msec MedialiveChannel#audio_silence_threshold_msec}
   */
   readonly audioSilenceThresholdMsec?: number;
 }
@@ -18660,2547 +21993,5 @@ export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailo
   // Temporarily expose input value. Use with caution.
   public get audioSilenceThresholdMsecInput() {
     return this._audioSilenceThresholdMsec;
-  }
-}
-export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_threshold_msec MedialiveChannel#input_loss_threshold_msec}
-  */
-  readonly inputLossThresholdMsec?: number;
-}
-
-export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    input_loss_threshold_msec: cdktf.numberToTerraform(struct!.inputLossThresholdMsec),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._inputLossThresholdMsec !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.inputLossThresholdMsec = this._inputLossThresholdMsec;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._inputLossThresholdMsec = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._inputLossThresholdMsec = value.inputLossThresholdMsec;
-    }
-  }
-
-  // input_loss_threshold_msec - computed: false, optional: true, required: false
-  private _inputLossThresholdMsec?: number; 
-  public get inputLossThresholdMsec() {
-    return this.getNumberAttribute('input_loss_threshold_msec');
-  }
-  public set inputLossThresholdMsec(value: number) {
-    this._inputLossThresholdMsec = value;
-  }
-  public resetInputLossThresholdMsec() {
-    this._inputLossThresholdMsec = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputLossThresholdMsecInput() {
-    return this._inputLossThresholdMsec;
-  }
-}
-export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#black_detect_threshold MedialiveChannel#black_detect_threshold}
-  */
-  readonly blackDetectThreshold?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_black_threshold_msec MedialiveChannel#video_black_threshold_msec}
-  */
-  readonly videoBlackThresholdMsec?: number;
-}
-
-export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    black_detect_threshold: cdktf.numberToTerraform(struct!.blackDetectThreshold),
-    video_black_threshold_msec: cdktf.numberToTerraform(struct!.videoBlackThresholdMsec),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._blackDetectThreshold !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.blackDetectThreshold = this._blackDetectThreshold;
-    }
-    if (this._videoBlackThresholdMsec !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.videoBlackThresholdMsec = this._videoBlackThresholdMsec;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._blackDetectThreshold = undefined;
-      this._videoBlackThresholdMsec = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._blackDetectThreshold = value.blackDetectThreshold;
-      this._videoBlackThresholdMsec = value.videoBlackThresholdMsec;
-    }
-  }
-
-  // black_detect_threshold - computed: false, optional: true, required: false
-  private _blackDetectThreshold?: number; 
-  public get blackDetectThreshold() {
-    return this.getNumberAttribute('black_detect_threshold');
-  }
-  public set blackDetectThreshold(value: number) {
-    this._blackDetectThreshold = value;
-  }
-  public resetBlackDetectThreshold() {
-    this._blackDetectThreshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get blackDetectThresholdInput() {
-    return this._blackDetectThreshold;
-  }
-
-  // video_black_threshold_msec - computed: false, optional: true, required: false
-  private _videoBlackThresholdMsec?: number; 
-  public get videoBlackThresholdMsec() {
-    return this.getNumberAttribute('video_black_threshold_msec');
-  }
-  public set videoBlackThresholdMsec(value: number) {
-    this._videoBlackThresholdMsec = value;
-  }
-  public resetVideoBlackThresholdMsec() {
-    this._videoBlackThresholdMsec = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoBlackThresholdMsecInput() {
-    return this._videoBlackThresholdMsec;
-  }
-}
-export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings {
-  /**
-  * audio_silence_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_silence_settings MedialiveChannel#audio_silence_settings}
-  */
-  readonly audioSilenceSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings;
-  /**
-  * input_loss_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_loss_settings MedialiveChannel#input_loss_settings}
-  */
-  readonly inputLossSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings;
-  /**
-  * video_black_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#video_black_settings MedialiveChannel#video_black_settings}
-  */
-  readonly videoBlackSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings;
-}
-
-export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    audio_silence_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsToTerraform(struct!.audioSilenceSettings),
-    input_loss_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsToTerraform(struct!.inputLossSettings),
-    video_black_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsToTerraform(struct!.videoBlackSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._audioSilenceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioSilenceSettings = this._audioSilenceSettings?.internalValue;
-    }
-    if (this._inputLossSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.inputLossSettings = this._inputLossSettings?.internalValue;
-    }
-    if (this._videoBlackSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.videoBlackSettings = this._videoBlackSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._audioSilenceSettings.internalValue = undefined;
-      this._inputLossSettings.internalValue = undefined;
-      this._videoBlackSettings.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._audioSilenceSettings.internalValue = value.audioSilenceSettings;
-      this._inputLossSettings.internalValue = value.inputLossSettings;
-      this._videoBlackSettings.internalValue = value.videoBlackSettings;
-    }
-  }
-
-  // audio_silence_settings - computed: false, optional: true, required: false
-  private _audioSilenceSettings = new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference(this, "audio_silence_settings");
-  public get audioSilenceSettings() {
-    return this._audioSilenceSettings;
-  }
-  public putAudioSilenceSettings(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings) {
-    this._audioSilenceSettings.internalValue = value;
-  }
-  public resetAudioSilenceSettings() {
-    this._audioSilenceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioSilenceSettingsInput() {
-    return this._audioSilenceSettings.internalValue;
-  }
-
-  // input_loss_settings - computed: false, optional: true, required: false
-  private _inputLossSettings = new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference(this, "input_loss_settings");
-  public get inputLossSettings() {
-    return this._inputLossSettings;
-  }
-  public putInputLossSettings(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings) {
-    this._inputLossSettings.internalValue = value;
-  }
-  public resetInputLossSettings() {
-    this._inputLossSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputLossSettingsInput() {
-    return this._inputLossSettings.internalValue;
-  }
-
-  // video_black_settings - computed: false, optional: true, required: false
-  private _videoBlackSettings = new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference(this, "video_black_settings");
-  public get videoBlackSettings() {
-    return this._videoBlackSettings;
-  }
-  public putVideoBlackSettings(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings) {
-    this._videoBlackSettings.internalValue = value;
-  }
-  public resetVideoBlackSettings() {
-    this._videoBlackSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoBlackSettingsInput() {
-    return this._videoBlackSettings.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition {
-  /**
-  * failover_condition_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#failover_condition_settings MedialiveChannel#failover_condition_settings}
-  */
-  readonly failoverConditionSettings?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings;
-}
-
-export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionToTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    failover_condition_settings: medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsToTerraform(struct!.failoverConditionSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._failoverConditionSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.failoverConditionSettings = this._failoverConditionSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._failoverConditionSettings.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._failoverConditionSettings.internalValue = value.failoverConditionSettings;
-    }
-  }
-
-  // failover_condition_settings - computed: false, optional: true, required: false
-  private _failoverConditionSettings = new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference(this, "failover_condition_settings");
-  public get failoverConditionSettings() {
-    return this._failoverConditionSettings;
-  }
-  public putFailoverConditionSettings(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings) {
-    this._failoverConditionSettings.internalValue = value;
-  }
-  public resetFailoverConditionSettings() {
-    this._failoverConditionSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get failoverConditionSettingsInput() {
-    return this._failoverConditionSettings.internalValue;
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList extends cdktf.ComplexList {
-  public internalValue? : MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference {
-    return new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}
-  */
-  readonly errorClearTimeMsec?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#input_preference MedialiveChannel#input_preference}
-  */
-  readonly inputPreference?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}
-  */
-  readonly secondaryInputId: string;
-  /**
-  * failover_condition block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#failover_condition MedialiveChannel#failover_condition}
-  */
-  readonly failoverCondition?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition[] | cdktf.IResolvable;
-}
-
-export function medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference | MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    error_clear_time_msec: cdktf.numberToTerraform(struct!.errorClearTimeMsec),
-    input_preference: cdktf.stringToTerraform(struct!.inputPreference),
-    secondary_input_id: cdktf.stringToTerraform(struct!.secondaryInputId),
-    failover_condition: cdktf.listMapper(medialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionToTerraform, true)(struct!.failoverCondition),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._errorClearTimeMsec !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.errorClearTimeMsec = this._errorClearTimeMsec;
-    }
-    if (this._inputPreference !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.inputPreference = this._inputPreference;
-    }
-    if (this._secondaryInputId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.secondaryInputId = this._secondaryInputId;
-    }
-    if (this._failoverCondition?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.failoverCondition = this._failoverCondition?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._errorClearTimeMsec = undefined;
-      this._inputPreference = undefined;
-      this._secondaryInputId = undefined;
-      this._failoverCondition.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._errorClearTimeMsec = value.errorClearTimeMsec;
-      this._inputPreference = value.inputPreference;
-      this._secondaryInputId = value.secondaryInputId;
-      this._failoverCondition.internalValue = value.failoverCondition;
-    }
-  }
-
-  // error_clear_time_msec - computed: false, optional: true, required: false
-  private _errorClearTimeMsec?: number; 
-  public get errorClearTimeMsec() {
-    return this.getNumberAttribute('error_clear_time_msec');
-  }
-  public set errorClearTimeMsec(value: number) {
-    this._errorClearTimeMsec = value;
-  }
-  public resetErrorClearTimeMsec() {
-    this._errorClearTimeMsec = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get errorClearTimeMsecInput() {
-    return this._errorClearTimeMsec;
-  }
-
-  // input_preference - computed: false, optional: true, required: false
-  private _inputPreference?: string; 
-  public get inputPreference() {
-    return this.getStringAttribute('input_preference');
-  }
-  public set inputPreference(value: string) {
-    this._inputPreference = value;
-  }
-  public resetInputPreference() {
-    this._inputPreference = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputPreferenceInput() {
-    return this._inputPreference;
-  }
-
-  // secondary_input_id - computed: false, optional: false, required: true
-  private _secondaryInputId?: string; 
-  public get secondaryInputId() {
-    return this.getStringAttribute('secondary_input_id');
-  }
-  public set secondaryInputId(value: string) {
-    this._secondaryInputId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secondaryInputIdInput() {
-    return this._secondaryInputId;
-  }
-
-  // failover_condition - computed: false, optional: true, required: false
-  private _failoverCondition = new MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList(this, "failover_condition", true);
-  public get failoverCondition() {
-    return this._failoverCondition;
-  }
-  public putFailoverCondition(value: MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition[] | cdktf.IResolvable) {
-    this._failoverCondition.internalValue = value;
-  }
-  public resetFailoverCondition() {
-    this._failoverCondition.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get failoverConditionInput() {
-    return this._failoverCondition.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#group_id MedialiveChannel#group_id}
-  */
-  readonly groupId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
-  */
-  readonly name: string;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    group_id: cdktf.stringToTerraform(struct!.groupId),
-    name: cdktf.stringToTerraform(struct!.name),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._groupId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.groupId = this._groupId;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._groupId = undefined;
-      this._name = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._groupId = value.groupId;
-      this._name = value.name;
-    }
-  }
-
-  // group_id - computed: false, optional: false, required: true
-  private _groupId?: string; 
-  public get groupId() {
-    return this.getStringAttribute('group_id');
-  }
-  public set groupId(value: string) {
-    this._groupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupIdInput() {
-    return this._groupId;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
-  */
-  readonly languageCode: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_selection_policy MedialiveChannel#language_selection_policy}
-  */
-  readonly languageSelectionPolicy?: string;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    language_selection_policy: cdktf.stringToTerraform(struct!.languageSelectionPolicy),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._languageCode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.languageCode = this._languageCode;
-    }
-    if (this._languageSelectionPolicy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.languageSelectionPolicy = this._languageSelectionPolicy;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._languageCode = undefined;
-      this._languageSelectionPolicy = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._languageCode = value.languageCode;
-      this._languageSelectionPolicy = value.languageSelectionPolicy;
-    }
-  }
-
-  // language_code - computed: false, optional: false, required: true
-  private _languageCode?: string; 
-  public get languageCode() {
-    return this.getStringAttribute('language_code');
-  }
-  public set languageCode(value: string) {
-    this._languageCode = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageCodeInput() {
-    return this._languageCode;
-  }
-
-  // language_selection_policy - computed: false, optional: true, required: false
-  private _languageSelectionPolicy?: string; 
-  public get languageSelectionPolicy() {
-    return this.getStringAttribute('language_selection_policy');
-  }
-  public set languageSelectionPolicy(value: string) {
-    this._languageSelectionPolicy = value;
-  }
-  public resetLanguageSelectionPolicy() {
-    this._languageSelectionPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageSelectionPolicyInput() {
-    return this._languageSelectionPolicy;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
-  */
-  readonly pid: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    pid: cdktf.numberToTerraform(struct!.pid),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._pid !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pid = this._pid;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._pid = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._pid = value.pid;
-    }
-  }
-
-  // pid - computed: false, optional: false, required: true
-  private _pid?: number; 
-  public get pid() {
-    return this.getNumberAttribute('pid');
-  }
-  public set pid(value: number) {
-    this._pid = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pidInput() {
-    return this._pid;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#track MedialiveChannel#track}
-  */
-  readonly track: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    track: cdktf.numberToTerraform(struct!.track),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._track !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.track = this._track;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._track = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._track = value.track;
-    }
-  }
-
-  // track - computed: false, optional: false, required: true
-  private _track?: number; 
-  public get track() {
-    return this.getNumberAttribute('track');
-  }
-  public set track(value: number) {
-    this._track = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trackInput() {
-    return this._track;
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList extends cdktf.ComplexList {
-  public internalValue? : MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference {
-    return new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection {
-  /**
-  * track block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#track MedialiveChannel#track}
-  */
-  readonly track: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack[] | cdktf.IResolvable;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    track: cdktf.listMapper(medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackToTerraform, true)(struct!.track),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._track?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.track = this._track?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._track.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._track.internalValue = value.track;
-    }
-  }
-
-  // track - computed: false, optional: false, required: true
-  private _track = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList(this, "track", true);
-  public get track() {
-    return this._track;
-  }
-  public putTrack(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack[] | cdktf.IResolvable) {
-    this._track.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trackInput() {
-    return this._track.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings {
-  /**
-  * audio_hls_rendition_selection block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_hls_rendition_selection MedialiveChannel#audio_hls_rendition_selection}
-  */
-  readonly audioHlsRenditionSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection;
-  /**
-  * audio_language_selection block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_language_selection MedialiveChannel#audio_language_selection}
-  */
-  readonly audioLanguageSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection;
-  /**
-  * audio_pid_selection block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_pid_selection MedialiveChannel#audio_pid_selection}
-  */
-  readonly audioPidSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection;
-  /**
-  * audio_track_selection block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#audio_track_selection MedialiveChannel#audio_track_selection}
-  */
-  readonly audioTrackSelection?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    audio_hls_rendition_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionToTerraform(struct!.audioHlsRenditionSelection),
-    audio_language_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionToTerraform(struct!.audioLanguageSelection),
-    audio_pid_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionToTerraform(struct!.audioPidSelection),
-    audio_track_selection: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionToTerraform(struct!.audioTrackSelection),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._audioHlsRenditionSelection?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioHlsRenditionSelection = this._audioHlsRenditionSelection?.internalValue;
-    }
-    if (this._audioLanguageSelection?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioLanguageSelection = this._audioLanguageSelection?.internalValue;
-    }
-    if (this._audioPidSelection?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioPidSelection = this._audioPidSelection?.internalValue;
-    }
-    if (this._audioTrackSelection?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.audioTrackSelection = this._audioTrackSelection?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._audioHlsRenditionSelection.internalValue = undefined;
-      this._audioLanguageSelection.internalValue = undefined;
-      this._audioPidSelection.internalValue = undefined;
-      this._audioTrackSelection.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._audioHlsRenditionSelection.internalValue = value.audioHlsRenditionSelection;
-      this._audioLanguageSelection.internalValue = value.audioLanguageSelection;
-      this._audioPidSelection.internalValue = value.audioPidSelection;
-      this._audioTrackSelection.internalValue = value.audioTrackSelection;
-    }
-  }
-
-  // audio_hls_rendition_selection - computed: false, optional: true, required: false
-  private _audioHlsRenditionSelection = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference(this, "audio_hls_rendition_selection");
-  public get audioHlsRenditionSelection() {
-    return this._audioHlsRenditionSelection;
-  }
-  public putAudioHlsRenditionSelection(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection) {
-    this._audioHlsRenditionSelection.internalValue = value;
-  }
-  public resetAudioHlsRenditionSelection() {
-    this._audioHlsRenditionSelection.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioHlsRenditionSelectionInput() {
-    return this._audioHlsRenditionSelection.internalValue;
-  }
-
-  // audio_language_selection - computed: false, optional: true, required: false
-  private _audioLanguageSelection = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference(this, "audio_language_selection");
-  public get audioLanguageSelection() {
-    return this._audioLanguageSelection;
-  }
-  public putAudioLanguageSelection(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection) {
-    this._audioLanguageSelection.internalValue = value;
-  }
-  public resetAudioLanguageSelection() {
-    this._audioLanguageSelection.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioLanguageSelectionInput() {
-    return this._audioLanguageSelection.internalValue;
-  }
-
-  // audio_pid_selection - computed: false, optional: true, required: false
-  private _audioPidSelection = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference(this, "audio_pid_selection");
-  public get audioPidSelection() {
-    return this._audioPidSelection;
-  }
-  public putAudioPidSelection(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection) {
-    this._audioPidSelection.internalValue = value;
-  }
-  public resetAudioPidSelection() {
-    this._audioPidSelection.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioPidSelectionInput() {
-    return this._audioPidSelection.internalValue;
-  }
-
-  // audio_track_selection - computed: false, optional: true, required: false
-  private _audioTrackSelection = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference(this, "audio_track_selection");
-  public get audioTrackSelection() {
-    return this._audioTrackSelection;
-  }
-  public putAudioTrackSelection(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection) {
-    this._audioTrackSelection.internalValue = value;
-  }
-  public resetAudioTrackSelection() {
-    this._audioTrackSelection.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioTrackSelectionInput() {
-    return this._audioTrackSelection.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsAudioSelector {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
-  */
-  readonly name: string;
-  /**
-  * selector_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
-  */
-  readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsAudioSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsAudioSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    selector_settings: medialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsToTerraform(struct!.selectorSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsAudioSelector | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._selectorSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.selectorSettings = this._selectorSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelector | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._name = undefined;
-      this._selectorSettings.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._name = value.name;
-      this._selectorSettings.internalValue = value.selectorSettings;
-    }
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // selector_settings - computed: false, optional: true, required: false
-  private _selectorSettings = new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference(this, "selector_settings");
-  public get selectorSettings() {
-    return this._selectorSettings;
-  }
-  public putSelectorSettings(value: MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings) {
-    this._selectorSettings.internalValue = value;
-  }
-  public resetSelectorSettings() {
-    this._selectorSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectorSettingsInput() {
-    return this._selectorSettings.internalValue;
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList extends cdktf.ComplexList {
-  public internalValue? : MedialiveChannelInputAttachmentsInputSettingsAudioSelector[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference {
-    return new MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#source_ancillary_channel_number MedialiveChannel#source_ancillary_channel_number}
-  */
-  readonly sourceAncillaryChannelNumber?: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    source_ancillary_channel_number: cdktf.numberToTerraform(struct!.sourceAncillaryChannelNumber),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._sourceAncillaryChannelNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sourceAncillaryChannelNumber = this._sourceAncillaryChannelNumber;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._sourceAncillaryChannelNumber = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._sourceAncillaryChannelNumber = value.sourceAncillaryChannelNumber;
-    }
-  }
-
-  // source_ancillary_channel_number - computed: false, optional: true, required: false
-  private _sourceAncillaryChannelNumber?: number; 
-  public get sourceAncillaryChannelNumber() {
-    return this.getNumberAttribute('source_ancillary_channel_number');
-  }
-  public set sourceAncillaryChannelNumber(value: number) {
-    this._sourceAncillaryChannelNumber = value;
-  }
-  public resetSourceAncillaryChannelNumber() {
-    this._sourceAncillaryChannelNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceAncillaryChannelNumberInput() {
-    return this._sourceAncillaryChannelNumber;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
-  */
-  readonly ocrLanguage?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
-  */
-  readonly pid?: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    ocr_language: cdktf.stringToTerraform(struct!.ocrLanguage),
-    pid: cdktf.numberToTerraform(struct!.pid),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._ocrLanguage !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ocrLanguage = this._ocrLanguage;
-    }
-    if (this._pid !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pid = this._pid;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._ocrLanguage = undefined;
-      this._pid = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._ocrLanguage = value.ocrLanguage;
-      this._pid = value.pid;
-    }
-  }
-
-  // ocr_language - computed: false, optional: true, required: false
-  private _ocrLanguage?: string; 
-  public get ocrLanguage() {
-    return this.getStringAttribute('ocr_language');
-  }
-  public set ocrLanguage(value: string) {
-    this._ocrLanguage = value;
-  }
-  public resetOcrLanguage() {
-    this._ocrLanguage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ocrLanguageInput() {
-    return this._ocrLanguage;
-  }
-
-  // pid - computed: false, optional: true, required: false
-  private _pid?: number; 
-  public get pid() {
-    return this.getNumberAttribute('pid');
-  }
-  public set pid(value: number) {
-    this._pid = value;
-  }
-  public resetPid() {
-    this._pid = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pidInput() {
-    return this._pid;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
-  */
-  readonly convert608To708?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte20_detection MedialiveChannel#scte20_detection}
-  */
-  readonly scte20Detection?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
-  */
-  readonly source608ChannelNumber?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#source_608_track_number MedialiveChannel#source_608_track_number}
-  */
-  readonly source608TrackNumber?: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    convert_608_to_708: cdktf.stringToTerraform(struct!.convert608To708),
-    scte20_detection: cdktf.stringToTerraform(struct!.scte20Detection),
-    source_608_channel_number: cdktf.numberToTerraform(struct!.source608ChannelNumber),
-    source_608_track_number: cdktf.numberToTerraform(struct!.source608TrackNumber),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._convert608To708 !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.convert608To708 = this._convert608To708;
-    }
-    if (this._scte20Detection !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scte20Detection = this._scte20Detection;
-    }
-    if (this._source608ChannelNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source608ChannelNumber = this._source608ChannelNumber;
-    }
-    if (this._source608TrackNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source608TrackNumber = this._source608TrackNumber;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._convert608To708 = undefined;
-      this._scte20Detection = undefined;
-      this._source608ChannelNumber = undefined;
-      this._source608TrackNumber = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._convert608To708 = value.convert608To708;
-      this._scte20Detection = value.scte20Detection;
-      this._source608ChannelNumber = value.source608ChannelNumber;
-      this._source608TrackNumber = value.source608TrackNumber;
-    }
-  }
-
-  // convert_608_to_708 - computed: false, optional: true, required: false
-  private _convert608To708?: string; 
-  public get convert608To708() {
-    return this.getStringAttribute('convert_608_to_708');
-  }
-  public set convert608To708(value: string) {
-    this._convert608To708 = value;
-  }
-  public resetConvert608To708() {
-    this._convert608To708 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get convert608To708Input() {
-    return this._convert608To708;
-  }
-
-  // scte20_detection - computed: false, optional: true, required: false
-  private _scte20Detection?: string; 
-  public get scte20Detection() {
-    return this.getStringAttribute('scte20_detection');
-  }
-  public set scte20Detection(value: string) {
-    this._scte20Detection = value;
-  }
-  public resetScte20Detection() {
-    this._scte20Detection = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scte20DetectionInput() {
-    return this._scte20Detection;
-  }
-
-  // source_608_channel_number - computed: false, optional: true, required: false
-  private _source608ChannelNumber?: number; 
-  public get source608ChannelNumber() {
-    return this.getNumberAttribute('source_608_channel_number');
-  }
-  public set source608ChannelNumber(value: number) {
-    this._source608ChannelNumber = value;
-  }
-  public resetSource608ChannelNumber() {
-    this._source608ChannelNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get source608ChannelNumberInput() {
-    return this._source608ChannelNumber;
-  }
-
-  // source_608_track_number - computed: false, optional: true, required: false
-  private _source608TrackNumber?: number; 
-  public get source608TrackNumber() {
-    return this.getNumberAttribute('source_608_track_number');
-  }
-  public set source608TrackNumber(value: number) {
-    this._source608TrackNumber = value;
-  }
-  public resetSource608TrackNumber() {
-    this._source608TrackNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get source608TrackNumberInput() {
-    return this._source608TrackNumber;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#convert_608_to_708 MedialiveChannel#convert_608_to_708}
-  */
-  readonly convert608To708?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#source_608_channel_number MedialiveChannel#source_608_channel_number}
-  */
-  readonly source608ChannelNumber?: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    convert_608_to_708: cdktf.stringToTerraform(struct!.convert608To708),
-    source_608_channel_number: cdktf.numberToTerraform(struct!.source608ChannelNumber),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._convert608To708 !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.convert608To708 = this._convert608To708;
-    }
-    if (this._source608ChannelNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.source608ChannelNumber = this._source608ChannelNumber;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._convert608To708 = undefined;
-      this._source608ChannelNumber = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._convert608To708 = value.convert608To708;
-      this._source608ChannelNumber = value.source608ChannelNumber;
-    }
-  }
-
-  // convert_608_to_708 - computed: false, optional: true, required: false
-  private _convert608To708?: string; 
-  public get convert608To708() {
-    return this.getStringAttribute('convert_608_to_708');
-  }
-  public set convert608To708(value: string) {
-    this._convert608To708 = value;
-  }
-  public resetConvert608To708() {
-    this._convert608To708 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get convert608To708Input() {
-    return this._convert608To708;
-  }
-
-  // source_608_channel_number - computed: false, optional: true, required: false
-  private _source608ChannelNumber?: number; 
-  public get source608ChannelNumber() {
-    return this.getNumberAttribute('source_608_channel_number');
-  }
-  public set source608ChannelNumber(value: number) {
-    this._source608ChannelNumber = value;
-  }
-  public resetSource608ChannelNumber() {
-    this._source608ChannelNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get source608ChannelNumberInput() {
-    return this._source608ChannelNumber;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ocr_language MedialiveChannel#ocr_language}
-  */
-  readonly ocrLanguage?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}
-  */
-  readonly pid?: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    ocr_language: cdktf.stringToTerraform(struct!.ocrLanguage),
-    pid: cdktf.numberToTerraform(struct!.pid),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._ocrLanguage !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ocrLanguage = this._ocrLanguage;
-    }
-    if (this._pid !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pid = this._pid;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._ocrLanguage = undefined;
-      this._pid = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._ocrLanguage = value.ocrLanguage;
-      this._pid = value.pid;
-    }
-  }
-
-  // ocr_language - computed: false, optional: true, required: false
-  private _ocrLanguage?: string; 
-  public get ocrLanguage() {
-    return this.getStringAttribute('ocr_language');
-  }
-  public set ocrLanguage(value: string) {
-    this._ocrLanguage = value;
-  }
-  public resetOcrLanguage() {
-    this._ocrLanguage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ocrLanguageInput() {
-    return this._ocrLanguage;
-  }
-
-  // pid - computed: false, optional: true, required: false
-  private _pid?: number; 
-  public get pid() {
-    return this.getNumberAttribute('pid');
-  }
-  public set pid(value: number) {
-    this._pid = value;
-  }
-  public resetPid() {
-    this._pid = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pidInput() {
-    return this._pid;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#height MedialiveChannel#height}
-  */
-  readonly height: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#left_offset MedialiveChannel#left_offset}
-  */
-  readonly leftOffset: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#top_offset MedialiveChannel#top_offset}
-  */
-  readonly topOffset: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#width MedialiveChannel#width}
-  */
-  readonly width: number;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    height: cdktf.numberToTerraform(struct!.height),
-    left_offset: cdktf.numberToTerraform(struct!.leftOffset),
-    top_offset: cdktf.numberToTerraform(struct!.topOffset),
-    width: cdktf.numberToTerraform(struct!.width),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._height !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.height = this._height;
-    }
-    if (this._leftOffset !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.leftOffset = this._leftOffset;
-    }
-    if (this._topOffset !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.topOffset = this._topOffset;
-    }
-    if (this._width !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.width = this._width;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._height = undefined;
-      this._leftOffset = undefined;
-      this._topOffset = undefined;
-      this._width = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._height = value.height;
-      this._leftOffset = value.leftOffset;
-      this._topOffset = value.topOffset;
-      this._width = value.width;
-    }
-  }
-
-  // height - computed: false, optional: false, required: true
-  private _height?: number; 
-  public get height() {
-    return this.getNumberAttribute('height');
-  }
-  public set height(value: number) {
-    this._height = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get heightInput() {
-    return this._height;
-  }
-
-  // left_offset - computed: false, optional: false, required: true
-  private _leftOffset?: number; 
-  public get leftOffset() {
-    return this.getNumberAttribute('left_offset');
-  }
-  public set leftOffset(value: number) {
-    this._leftOffset = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get leftOffsetInput() {
-    return this._leftOffset;
-  }
-
-  // top_offset - computed: false, optional: false, required: true
-  private _topOffset?: number; 
-  public get topOffset() {
-    return this.getNumberAttribute('top_offset');
-  }
-  public set topOffset(value: number) {
-    this._topOffset = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get topOffsetInput() {
-    return this._topOffset;
-  }
-
-  // width - computed: false, optional: false, required: true
-  private _width?: number; 
-  public get width() {
-    return this.getNumberAttribute('width');
-  }
-  public set width(value: number) {
-    this._width = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get widthInput() {
-    return this._width;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#page_number MedialiveChannel#page_number}
-  */
-  readonly pageNumber?: string;
-  /**
-  * output_rectangle block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#output_rectangle MedialiveChannel#output_rectangle}
-  */
-  readonly outputRectangle?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    page_number: cdktf.stringToTerraform(struct!.pageNumber),
-    output_rectangle: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleToTerraform(struct!.outputRectangle),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._pageNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pageNumber = this._pageNumber;
-    }
-    if (this._outputRectangle?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.outputRectangle = this._outputRectangle?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._pageNumber = undefined;
-      this._outputRectangle.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._pageNumber = value.pageNumber;
-      this._outputRectangle.internalValue = value.outputRectangle;
-    }
-  }
-
-  // page_number - computed: false, optional: true, required: false
-  private _pageNumber?: string; 
-  public get pageNumber() {
-    return this.getStringAttribute('page_number');
-  }
-  public set pageNumber(value: string) {
-    this._pageNumber = value;
-  }
-  public resetPageNumber() {
-    this._pageNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pageNumberInput() {
-    return this._pageNumber;
-  }
-
-  // output_rectangle - computed: false, optional: true, required: false
-  private _outputRectangle = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference(this, "output_rectangle");
-  public get outputRectangle() {
-    return this._outputRectangle;
-  }
-  public putOutputRectangle(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle) {
-    this._outputRectangle.internalValue = value;
-  }
-  public resetOutputRectangle() {
-    this._outputRectangle.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get outputRectangleInput() {
-    return this._outputRectangle.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings {
-  /**
-  * ancillary_source_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#ancillary_source_settings MedialiveChannel#ancillary_source_settings}
-  */
-  readonly ancillarySourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings;
-  /**
-  * dvb_tdt_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#dvb_tdt_settings MedialiveChannel#dvb_tdt_settings}
-  */
-  readonly dvbTdtSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings;
-  /**
-  * embedded_source_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
-  */
-  readonly embeddedSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings;
-  /**
-  * scte20_source_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
-  */
-  readonly scte20SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings;
-  /**
-  * scte27_source_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
-  */
-  readonly scte27SourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings;
-  /**
-  * teletext_source_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#teletext_source_settings MedialiveChannel#teletext_source_settings}
-  */
-  readonly teletextSourceSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    ancillary_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsToTerraform(struct!.ancillarySourceSettings),
-    dvb_tdt_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsToTerraform(struct!.dvbTdtSettings),
-    embedded_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsToTerraform(struct!.embeddedSourceSettings),
-    scte20_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsToTerraform(struct!.scte20SourceSettings),
-    scte27_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsToTerraform(struct!.scte27SourceSettings),
-    teletext_source_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsToTerraform(struct!.teletextSourceSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._ancillarySourceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ancillarySourceSettings = this._ancillarySourceSettings?.internalValue;
-    }
-    if (this._dvbTdtSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dvbTdtSettings = this._dvbTdtSettings?.internalValue;
-    }
-    if (this._embeddedSourceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.embeddedSourceSettings = this._embeddedSourceSettings?.internalValue;
-    }
-    if (this._scte20SourceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scte20SourceSettings = this._scte20SourceSettings?.internalValue;
-    }
-    if (this._scte27SourceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scte27SourceSettings = this._scte27SourceSettings?.internalValue;
-    }
-    if (this._teletextSourceSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.teletextSourceSettings = this._teletextSourceSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._ancillarySourceSettings.internalValue = undefined;
-      this._dvbTdtSettings.internalValue = undefined;
-      this._embeddedSourceSettings.internalValue = undefined;
-      this._scte20SourceSettings.internalValue = undefined;
-      this._scte27SourceSettings.internalValue = undefined;
-      this._teletextSourceSettings.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._ancillarySourceSettings.internalValue = value.ancillarySourceSettings;
-      this._dvbTdtSettings.internalValue = value.dvbTdtSettings;
-      this._embeddedSourceSettings.internalValue = value.embeddedSourceSettings;
-      this._scte20SourceSettings.internalValue = value.scte20SourceSettings;
-      this._scte27SourceSettings.internalValue = value.scte27SourceSettings;
-      this._teletextSourceSettings.internalValue = value.teletextSourceSettings;
-    }
-  }
-
-  // ancillary_source_settings - computed: false, optional: true, required: false
-  private _ancillarySourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference(this, "ancillary_source_settings");
-  public get ancillarySourceSettings() {
-    return this._ancillarySourceSettings;
-  }
-  public putAncillarySourceSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings) {
-    this._ancillarySourceSettings.internalValue = value;
-  }
-  public resetAncillarySourceSettings() {
-    this._ancillarySourceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ancillarySourceSettingsInput() {
-    return this._ancillarySourceSettings.internalValue;
-  }
-
-  // dvb_tdt_settings - computed: false, optional: true, required: false
-  private _dvbTdtSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference(this, "dvb_tdt_settings");
-  public get dvbTdtSettings() {
-    return this._dvbTdtSettings;
-  }
-  public putDvbTdtSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings) {
-    this._dvbTdtSettings.internalValue = value;
-  }
-  public resetDvbTdtSettings() {
-    this._dvbTdtSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dvbTdtSettingsInput() {
-    return this._dvbTdtSettings.internalValue;
-  }
-
-  // embedded_source_settings - computed: false, optional: true, required: false
-  private _embeddedSourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference(this, "embedded_source_settings");
-  public get embeddedSourceSettings() {
-    return this._embeddedSourceSettings;
-  }
-  public putEmbeddedSourceSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings) {
-    this._embeddedSourceSettings.internalValue = value;
-  }
-  public resetEmbeddedSourceSettings() {
-    this._embeddedSourceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get embeddedSourceSettingsInput() {
-    return this._embeddedSourceSettings.internalValue;
-  }
-
-  // scte20_source_settings - computed: false, optional: true, required: false
-  private _scte20SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference(this, "scte20_source_settings");
-  public get scte20SourceSettings() {
-    return this._scte20SourceSettings;
-  }
-  public putScte20SourceSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings) {
-    this._scte20SourceSettings.internalValue = value;
-  }
-  public resetScte20SourceSettings() {
-    this._scte20SourceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scte20SourceSettingsInput() {
-    return this._scte20SourceSettings.internalValue;
-  }
-
-  // scte27_source_settings - computed: false, optional: true, required: false
-  private _scte27SourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference(this, "scte27_source_settings");
-  public get scte27SourceSettings() {
-    return this._scte27SourceSettings;
-  }
-  public putScte27SourceSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings) {
-    this._scte27SourceSettings.internalValue = value;
-  }
-  public resetScte27SourceSettings() {
-    this._scte27SourceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scte27SourceSettingsInput() {
-    return this._scte27SourceSettings.internalValue;
-  }
-
-  // teletext_source_settings - computed: false, optional: true, required: false
-  private _teletextSourceSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference(this, "teletext_source_settings");
-  public get teletextSourceSettings() {
-    return this._teletextSourceSettings;
-  }
-  public putTeletextSourceSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings) {
-    this._teletextSourceSettings.internalValue = value;
-  }
-  public resetTeletextSourceSettings() {
-    this._teletextSourceSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get teletextSourceSettingsInput() {
-    return this._teletextSourceSettings.internalValue;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsCaptionSelector {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#language_code MedialiveChannel#language_code}
-  */
-  readonly languageCode?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#name MedialiveChannel#name}
-  */
-  readonly name: string;
-  /**
-  * selector_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#selector_settings MedialiveChannel#selector_settings}
-  */
-  readonly selectorSettings?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsCaptionSelectorToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
-    name: cdktf.stringToTerraform(struct!.name),
-    selector_settings: medialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsToTerraform(struct!.selectorSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._languageCode !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.languageCode = this._languageCode;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._selectorSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.selectorSettings = this._selectorSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelector | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._languageCode = undefined;
-      this._name = undefined;
-      this._selectorSettings.internalValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._languageCode = value.languageCode;
-      this._name = value.name;
-      this._selectorSettings.internalValue = value.selectorSettings;
-    }
-  }
-
-  // language_code - computed: false, optional: true, required: false
-  private _languageCode?: string; 
-  public get languageCode() {
-    return this.getStringAttribute('language_code');
-  }
-  public set languageCode(value: string) {
-    this._languageCode = value;
-  }
-  public resetLanguageCode() {
-    this._languageCode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageCodeInput() {
-    return this._languageCode;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // selector_settings - computed: false, optional: true, required: false
-  private _selectorSettings = new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference(this, "selector_settings");
-  public get selectorSettings() {
-    return this._selectorSettings;
-  }
-  public putSelectorSettings(value: MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings) {
-    this._selectorSettings.internalValue = value;
-  }
-  public resetSelectorSettings() {
-    this._selectorSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectorSettingsInput() {
-    return this._selectorSettings.internalValue;
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList extends cdktf.ComplexList {
-  public internalValue? : MedialiveChannelInputAttachmentsInputSettingsCaptionSelector[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference {
-    return new MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#bandwidth MedialiveChannel#bandwidth}
-  */
-  readonly bandwidth?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#buffer_segments MedialiveChannel#buffer_segments}
-  */
-  readonly bufferSegments?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#retries MedialiveChannel#retries}
-  */
-  readonly retries?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#retry_interval MedialiveChannel#retry_interval}
-  */
-  readonly retryInterval?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#scte35_source MedialiveChannel#scte35_source}
-  */
-  readonly scte35Source?: string;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    bandwidth: cdktf.numberToTerraform(struct!.bandwidth),
-    buffer_segments: cdktf.numberToTerraform(struct!.bufferSegments),
-    retries: cdktf.numberToTerraform(struct!.retries),
-    retry_interval: cdktf.numberToTerraform(struct!.retryInterval),
-    scte35_source: cdktf.stringToTerraform(struct!.scte35Source),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._bandwidth !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bandwidth = this._bandwidth;
-    }
-    if (this._bufferSegments !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.bufferSegments = this._bufferSegments;
-    }
-    if (this._retries !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retries = this._retries;
-    }
-    if (this._retryInterval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retryInterval = this._retryInterval;
-    }
-    if (this._scte35Source !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.scte35Source = this._scte35Source;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._bandwidth = undefined;
-      this._bufferSegments = undefined;
-      this._retries = undefined;
-      this._retryInterval = undefined;
-      this._scte35Source = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._bandwidth = value.bandwidth;
-      this._bufferSegments = value.bufferSegments;
-      this._retries = value.retries;
-      this._retryInterval = value.retryInterval;
-      this._scte35Source = value.scte35Source;
-    }
-  }
-
-  // bandwidth - computed: false, optional: true, required: false
-  private _bandwidth?: number; 
-  public get bandwidth() {
-    return this.getNumberAttribute('bandwidth');
-  }
-  public set bandwidth(value: number) {
-    this._bandwidth = value;
-  }
-  public resetBandwidth() {
-    this._bandwidth = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bandwidthInput() {
-    return this._bandwidth;
-  }
-
-  // buffer_segments - computed: false, optional: true, required: false
-  private _bufferSegments?: number; 
-  public get bufferSegments() {
-    return this.getNumberAttribute('buffer_segments');
-  }
-  public set bufferSegments(value: number) {
-    this._bufferSegments = value;
-  }
-  public resetBufferSegments() {
-    this._bufferSegments = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bufferSegmentsInput() {
-    return this._bufferSegments;
-  }
-
-  // retries - computed: false, optional: true, required: false
-  private _retries?: number; 
-  public get retries() {
-    return this.getNumberAttribute('retries');
-  }
-  public set retries(value: number) {
-    this._retries = value;
-  }
-  public resetRetries() {
-    this._retries = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retriesInput() {
-    return this._retries;
-  }
-
-  // retry_interval - computed: false, optional: true, required: false
-  private _retryInterval?: number; 
-  public get retryInterval() {
-    return this.getNumberAttribute('retry_interval');
-  }
-  public set retryInterval(value: number) {
-    this._retryInterval = value;
-  }
-  public resetRetryInterval() {
-    this._retryInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retryIntervalInput() {
-    return this._retryInterval;
-  }
-
-  // scte35_source - computed: false, optional: true, required: false
-  private _scte35Source?: string; 
-  public get scte35Source() {
-    return this.getStringAttribute('scte35_source');
-  }
-  public set scte35Source(value: string) {
-    this._scte35Source = value;
-  }
-  public resetScte35Source() {
-    this._scte35Source = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scte35SourceInput() {
-    return this._scte35Source;
-  }
-}
-export interface MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#server_validation MedialiveChannel#server_validation}
-  */
-  readonly serverValidation?: string;
-  /**
-  * hls_input_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_channel#hls_input_settings MedialiveChannel#hls_input_settings}
-  */
-  readonly hlsInputSettings?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings;
-}
-
-export function medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsToTerraform(struct?: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference | MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    server_validation: cdktf.stringToTerraform(struct!.serverValidation),
-    hls_input_settings: medialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsToTerraform(struct!.hlsInputSettings),
-  }
-}
-
-export class MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._serverValidation !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serverValidation = this._serverValidation;
-    }
-    if (this._hlsInputSettings?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.hlsInputSettings = this._hlsInputSettings?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._serverValidation = undefined;
-      this._hlsInputSettings.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._serverValidation = value.serverValidation;
-      this._hlsInputSettings.internalValue = value.hlsInputSettings;
-    }
-  }
-
-  // server_validation - computed: false, optional: true, required: false
-  private _serverValidation?: string; 
-  public get serverValidation() {
-    return this.getStringAttribute('server_validation');
-  }
-  public set serverValidation(value: string) {
-    this._serverValidation = value;
-  }
-  public resetServerValidation() {
-    this._serverValidation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverValidationInput() {
-    return this._serverValidation;
-  }
-
-  // hls_input_settings - computed: false, optional: true, required: false
-  private _hlsInputSettings = new MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference(this, "hls_input_settings");
-  public get hlsInputSettings() {
-    return this._hlsInputSettings;
-  }
-  public putHlsInputSettings(value: MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings) {
-    this._hlsInputSettings.internalValue = value;
-  }
-  public resetHlsInputSettings() {
-    this._hlsInputSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hlsInputSettingsInput() {
-    return this._hlsInputSettings.internalValue;
   }
 }

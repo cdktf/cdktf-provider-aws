@@ -1082,6 +1082,7 @@ The following submodules are available:
 - [iamRolePolicy](./iamRolePolicy.go.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.go.md)
 - [iamSamlProvider](./iamSamlProvider.go.md)
+- [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.go.md)
 - [iamServerCertificate](./iamServerCertificate.go.md)
 - [iamServiceLinkedRole](./iamServiceLinkedRole.go.md)
 - [iamServiceSpecificCredential](./iamServiceSpecificCredential.go.md)

@@ -1,6 +1,6 @@
 # `data_aws_iam_instance_profile`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile).
+Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile).
 
 # `dataAwsIamInstanceProfile` Submodule <a name="`dataAwsIamInstanceProfile` Submodule" id="@cdktf/provider-aws.dataAwsIamInstanceProfile"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_instance_profile`](htt
 
 ### DataAwsIamInstanceProfile <a name="DataAwsIamInstanceProfile" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile aws_iam_instance_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile aws_iam_instance_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.NewDataAwsIamInstanceProfile(scope Construct, id *string, config DataAwsIamInstanceProfileConfig) DataAwsIamInstanceProfile
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 dataawsiaminstanceprofile.DataAwsIamInstanceProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiaminstanceprofile"
 
 &dataawsiaminstanceprofile.DataAwsIamInstanceProfileConfig {
 	Connection: interface{},
@@ -636,8 +636,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiaminstanceprofile
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile#name DataAwsIamInstanceProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile#id DataAwsIamInstanceProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile#name DataAwsIamInstanceProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamInstanceProfile.DataAwsIamInstanceProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile#id DataAwsIamInstanceProfile#id}. |
 
 ---
 
@@ -719,7 +719,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile#name DataAwsIamInstanceProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile#name DataAwsIamInstanceProfile#name}.
 
 ---
 
@@ -731,7 +731,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/iam_instance_profile#id DataAwsIamInstanceProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/iam_instance_profile#id DataAwsIamInstanceProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

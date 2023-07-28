@@ -1,3 +1,3 @@
 # `data_aws_connect_prompt`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/connect_prompt).
+Refer to the Terraform Registory for docs: [`data_aws_connect_prompt`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/connect_prompt).
