@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,82 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#account_id BudgetsBudget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#budget_type BudgetsBudget#budget_type}
   */
   readonly budgetType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#id BudgetsBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#id BudgetsBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#limit_amount BudgetsBudget#limit_amount}
   */
   readonly limitAmount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#limit_unit BudgetsBudget#limit_unit}
   */
   readonly limitUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#name_prefix BudgetsBudget#name_prefix}
   */
   readonly namePrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#time_period_end BudgetsBudget#time_period_end}
   */
   readonly timePeriodEnd?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#time_period_start BudgetsBudget#time_period_start}
   */
   readonly timePeriodStart?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#time_unit BudgetsBudget#time_unit}
   */
   readonly timeUnit: string;
   /**
   * auto_adjust_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#auto_adjust_data BudgetsBudget#auto_adjust_data}
   */
   readonly autoAdjustData?: BudgetsBudgetAutoAdjustData;
   /**
   * cost_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#cost_filter BudgetsBudget#cost_filter}
   */
   readonly costFilter?: BudgetsBudgetCostFilter[] | cdktf.IResolvable;
   /**
   * cost_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#cost_types BudgetsBudget#cost_types}
   */
   readonly costTypes?: BudgetsBudgetCostTypes;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#notification BudgetsBudget#notification}
   */
   readonly notification?: BudgetsBudgetNotification[] | cdktf.IResolvable;
   /**
   * planned_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#planned_limit BudgetsBudget#planned_limit}
   */
   readonly plannedLimit?: BudgetsBudgetPlannedLimit[] | cdktf.IResolvable;
 }
 export interface BudgetsBudgetAutoAdjustDataHistoricalOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#budget_adjustment_period BudgetsBudget#budget_adjustment_period}
   */
   readonly budgetAdjustmentPeriod: number;
 }
@@ -155,13 +155,13 @@ export class BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference extends
 }
 export interface BudgetsBudgetAutoAdjustData {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#auto_adjust_type BudgetsBudget#auto_adjust_type}
   */
   readonly autoAdjustType: string;
   /**
   * historical_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#historical_options BudgetsBudget#historical_options}
   */
   readonly historicalOptions?: BudgetsBudgetAutoAdjustDataHistoricalOptions;
 }
@@ -251,11 +251,11 @@ export class BudgetsBudgetAutoAdjustDataOutputReference extends cdktf.ComplexObj
 }
 export interface BudgetsBudgetCostFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#name BudgetsBudget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#name BudgetsBudget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#values BudgetsBudget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#values BudgetsBudget#values}
   */
   readonly values: string[];
 }
@@ -369,47 +369,47 @@ export class BudgetsBudgetCostFilterList extends cdktf.ComplexList {
 }
 export interface BudgetsBudgetCostTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_credit BudgetsBudget#include_credit}
   */
   readonly includeCredit?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_discount BudgetsBudget#include_discount}
   */
   readonly includeDiscount?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_other_subscription BudgetsBudget#include_other_subscription}
   */
   readonly includeOtherSubscription?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_recurring BudgetsBudget#include_recurring}
   */
   readonly includeRecurring?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_refund BudgetsBudget#include_refund}
   */
   readonly includeRefund?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_subscription BudgetsBudget#include_subscription}
   */
   readonly includeSubscription?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_support BudgetsBudget#include_support}
   */
   readonly includeSupport?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_tax BudgetsBudget#include_tax}
   */
   readonly includeTax?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#include_upfront BudgetsBudget#include_upfront}
   */
   readonly includeUpfront?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#use_amortized BudgetsBudget#use_amortized}
   */
   readonly useAmortized?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#use_blended BudgetsBudget#use_blended}
   */
   readonly useBlended?: boolean | cdktf.IResolvable;
 }
@@ -704,27 +704,27 @@ export class BudgetsBudgetCostTypesOutputReference extends cdktf.ComplexObject {
 }
 export interface BudgetsBudgetNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#comparison_operator BudgetsBudget#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#notification_type BudgetsBudget#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#subscriber_email_addresses BudgetsBudget#subscriber_email_addresses}
   */
   readonly subscriberEmailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#subscriber_sns_topic_arns BudgetsBudget#subscriber_sns_topic_arns}
   */
   readonly subscriberSnsTopicArns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#threshold BudgetsBudget#threshold}
   */
   readonly threshold: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#threshold_type BudgetsBudget#threshold_type}
   */
   readonly thresholdType: string;
 }
@@ -924,15 +924,15 @@ export class BudgetsBudgetNotificationList extends cdktf.ComplexList {
 }
 export interface BudgetsBudgetPlannedLimit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#amount BudgetsBudget#amount}
   */
   readonly amount: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#start_time BudgetsBudget#start_time}
   */
   readonly startTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget#unit BudgetsBudget#unit}
   */
   readonly unit: string;
 }
@@ -1066,7 +1066,7 @@ export class BudgetsBudgetPlannedLimitList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget aws_budgets_budget}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget aws_budgets_budget}
 */
 export class BudgetsBudget extends cdktf.TerraformResource {
 
@@ -1080,7 +1080,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget aws_budgets_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget aws_budgets_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1091,7 +1091,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       terraformResourceType: 'aws_budgets_budget',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

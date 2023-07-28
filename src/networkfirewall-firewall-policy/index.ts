@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkfirewallFirewallPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#description NetworkfirewallFirewallPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#description NetworkfirewallFirewallPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#id NetworkfirewallFirewallPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#id NetworkfirewallFirewallPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#name NetworkfirewallFirewallPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#name NetworkfirewallFirewallPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#tags NetworkfirewallFirewallPolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#tags NetworkfirewallFirewallPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#tags_all NetworkfirewallFirewallPolicy#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#tags_all NetworkfirewallFirewallPolicy#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#encryption_configuration NetworkfirewallFirewallPolicy#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#encryption_configuration NetworkfirewallFirewallPolicy#encryption_configuration}
   */
   readonly encryptionConfiguration?: NetworkfirewallFirewallPolicyEncryptionConfiguration;
   /**
   * firewall_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#firewall_policy NetworkfirewallFirewallPolicy#firewall_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#firewall_policy NetworkfirewallFirewallPolicy#firewall_policy}
   */
   readonly firewallPolicy: NetworkfirewallFirewallPolicyFirewallPolicy;
 }
 export interface NetworkfirewallFirewallPolicyEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#key_id NetworkfirewallFirewallPolicy#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#key_id NetworkfirewallFirewallPolicy#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#type NetworkfirewallFirewallPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#type NetworkfirewallFirewallPolicy#type}
   */
   readonly type: string;
 }
@@ -137,13 +137,262 @@ export class NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference
     return this._type;
   }
 }
+export interface NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#definition NetworkfirewallFirewallPolicy#definition}
+  */
+  readonly definition: string[];
+}
+
+export function networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSetToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSetOutputReference | NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    definition: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.definition),
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._definition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.definition = this._definition;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._definition = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._definition = value.definition;
+    }
+  }
+
+  // definition - computed: false, optional: false, required: true
+  private _definition?: string[]; 
+  public get definition() {
+    return cdktf.Fn.tolist(this.getListAttribute('definition'));
+  }
+  public set definition(value: string[]) {
+    this._definition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get definitionInput() {
+    return this._definition;
+  }
+}
+export interface NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#key NetworkfirewallFirewallPolicy#key}
+  */
+  readonly key: string;
+  /**
+  * ip_set block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#ip_set NetworkfirewallFirewallPolicy#ip_set}
+  */
+  readonly ipSet: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet;
+}
+
+export function networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    ip_set: networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSetToTerraform(struct!.ipSet),
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._ipSet?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipSet = this._ipSet?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._ipSet.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._ipSet.internalValue = value.ipSet;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // ip_set - computed: false, optional: false, required: true
+  private _ipSet = new NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSetOutputReference(this, "ip_set");
+  public get ipSet() {
+    return this._ipSet;
+  }
+  public putIpSet(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesIpSet) {
+    this._ipSet.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipSetInput() {
+    return this._ipSet.internalValue;
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesList extends cdktf.ComplexList {
+  public internalValue? : NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesOutputReference {
+    return new NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables {
+  /**
+  * rule_variables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#rule_variables NetworkfirewallFirewallPolicy#rule_variables}
+  */
+  readonly ruleVariables?: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables[] | cdktf.IResolvable;
+}
+
+export function networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesToTerraform(struct?: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference | NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    rule_variables: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesToTerraform, true)(struct!.ruleVariables),
+  }
+}
+
+export class NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ruleVariables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ruleVariables = this._ruleVariables?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ruleVariables.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ruleVariables.internalValue = value.ruleVariables;
+    }
+  }
+
+  // rule_variables - computed: false, optional: true, required: false
+  private _ruleVariables = new NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariablesList(this, "rule_variables", true);
+  public get ruleVariables() {
+    return this._ruleVariables;
+  }
+  public putRuleVariables(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesRuleVariables[] | cdktf.IResolvable) {
+    this._ruleVariables.internalValue = value;
+  }
+  public resetRuleVariables() {
+    this._ruleVariables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleVariablesInput() {
+    return this._ruleVariables.internalValue;
+  }
+}
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#rule_order NetworkfirewallFirewallPolicy#rule_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#rule_order NetworkfirewallFirewallPolicy#rule_order}
   */
   readonly ruleOrder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stream_exception_policy NetworkfirewallFirewallPolicy#stream_exception_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stream_exception_policy NetworkfirewallFirewallPolicy#stream_exception_policy}
   */
   readonly streamExceptionPolicy?: string;
 }
@@ -231,7 +480,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOut
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#action NetworkfirewallFirewallPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#action NetworkfirewallFirewallPolicy#action}
   */
   readonly action?: string;
 }
@@ -296,17 +545,17 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
   */
   readonly resourceArn: string;
   /**
   * override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#override NetworkfirewallFirewallPolicy#override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#override NetworkfirewallFirewallPolicy#override}
   */
   readonly override?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride;
 }
@@ -446,7 +695,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferen
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#value NetworkfirewallFirewallPolicy#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#value NetworkfirewallFirewallPolicy#value}
   */
   readonly value: string;
 }
@@ -542,7 +791,7 @@ export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActio
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#dimension NetworkfirewallFirewallPolicy#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#dimension NetworkfirewallFirewallPolicy#dimension}
   */
   readonly dimension: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension[] | cdktf.IResolvable;
 }
@@ -606,7 +855,7 @@ export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActio
   /**
   * publish_metric_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#publish_metric_action NetworkfirewallFirewallPolicy#publish_metric_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#publish_metric_action NetworkfirewallFirewallPolicy#publish_metric_action}
   */
   readonly publishMetricAction: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction;
 }
@@ -668,13 +917,13 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionAct
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#action_name NetworkfirewallFirewallPolicy#action_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#action_name NetworkfirewallFirewallPolicy#action_name}
   */
   readonly actionName: string;
   /**
   * action_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#action_definition NetworkfirewallFirewallPolicy#action_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#action_definition NetworkfirewallFirewallPolicy#action_definition}
   */
   readonly actionDefinition: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition;
 }
@@ -788,11 +1037,11 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionLis
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#priority NetworkfirewallFirewallPolicy#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#resource_arn NetworkfirewallFirewallPolicy#resource_arn}
   */
   readonly resourceArn: string;
 }
@@ -906,39 +1155,45 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupRefere
 }
 export interface NetworkfirewallFirewallPolicyFirewallPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateful_default_actions NetworkfirewallFirewallPolicy#stateful_default_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateful_default_actions NetworkfirewallFirewallPolicy#stateful_default_actions}
   */
   readonly statefulDefaultActions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateless_default_actions NetworkfirewallFirewallPolicy#stateless_default_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateless_default_actions NetworkfirewallFirewallPolicy#stateless_default_actions}
   */
   readonly statelessDefaultActions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateless_fragment_default_actions NetworkfirewallFirewallPolicy#stateless_fragment_default_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateless_fragment_default_actions NetworkfirewallFirewallPolicy#stateless_fragment_default_actions}
   */
   readonly statelessFragmentDefaultActions: string[];
   /**
+  * policy_variables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#policy_variables NetworkfirewallFirewallPolicy#policy_variables}
+  */
+  readonly policyVariables?: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables;
+  /**
   * stateful_engine_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateful_engine_options NetworkfirewallFirewallPolicy#stateful_engine_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateful_engine_options NetworkfirewallFirewallPolicy#stateful_engine_options}
   */
   readonly statefulEngineOptions?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions;
   /**
   * stateful_rule_group_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateful_rule_group_reference NetworkfirewallFirewallPolicy#stateful_rule_group_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateful_rule_group_reference NetworkfirewallFirewallPolicy#stateful_rule_group_reference}
   */
   readonly statefulRuleGroupReference?: NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference[] | cdktf.IResolvable;
   /**
   * stateless_custom_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateless_custom_action NetworkfirewallFirewallPolicy#stateless_custom_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateless_custom_action NetworkfirewallFirewallPolicy#stateless_custom_action}
   */
   readonly statelessCustomAction?: NetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomAction[] | cdktf.IResolvable;
   /**
   * stateless_rule_group_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy#stateless_rule_group_reference NetworkfirewallFirewallPolicy#stateless_rule_group_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy#stateless_rule_group_reference NetworkfirewallFirewallPolicy#stateless_rule_group_reference}
   */
   readonly statelessRuleGroupReference?: NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReference[] | cdktf.IResolvable;
 }
@@ -952,6 +1207,7 @@ export function networkfirewallFirewallPolicyFirewallPolicyToTerraform(struct?: 
     stateful_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statefulDefaultActions),
     stateless_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statelessDefaultActions),
     stateless_fragment_default_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statelessFragmentDefaultActions),
+    policy_variables: networkfirewallFirewallPolicyFirewallPolicyPolicyVariablesToTerraform(struct!.policyVariables),
     stateful_engine_options: networkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsToTerraform(struct!.statefulEngineOptions),
     stateful_rule_group_reference: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceToTerraform, true)(struct!.statefulRuleGroupReference),
     stateless_custom_action: cdktf.listMapper(networkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionToTerraform, true)(struct!.statelessCustomAction),
@@ -985,6 +1241,10 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       hasAnyValues = true;
       internalValueResult.statelessFragmentDefaultActions = this._statelessFragmentDefaultActions;
     }
+    if (this._policyVariables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyVariables = this._policyVariables?.internalValue;
+    }
     if (this._statefulEngineOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.statefulEngineOptions = this._statefulEngineOptions?.internalValue;
@@ -1010,6 +1270,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       this._statefulDefaultActions = undefined;
       this._statelessDefaultActions = undefined;
       this._statelessFragmentDefaultActions = undefined;
+      this._policyVariables.internalValue = undefined;
       this._statefulEngineOptions.internalValue = undefined;
       this._statefulRuleGroupReference.internalValue = undefined;
       this._statelessCustomAction.internalValue = undefined;
@@ -1020,6 +1281,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
       this._statefulDefaultActions = value.statefulDefaultActions;
       this._statelessDefaultActions = value.statelessDefaultActions;
       this._statelessFragmentDefaultActions = value.statelessFragmentDefaultActions;
+      this._policyVariables.internalValue = value.policyVariables;
       this._statefulEngineOptions.internalValue = value.statefulEngineOptions;
       this._statefulRuleGroupReference.internalValue = value.statefulRuleGroupReference;
       this._statelessCustomAction.internalValue = value.statelessCustomAction;
@@ -1067,6 +1329,22 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get statelessFragmentDefaultActionsInput() {
     return this._statelessFragmentDefaultActions;
+  }
+
+  // policy_variables - computed: false, optional: true, required: false
+  private _policyVariables = new NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference(this, "policy_variables");
+  public get policyVariables() {
+    return this._policyVariables;
+  }
+  public putPolicyVariables(value: NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables) {
+    this._policyVariables.internalValue = value;
+  }
+  public resetPolicyVariables() {
+    this._policyVariables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyVariablesInput() {
+    return this._policyVariables.internalValue;
   }
 
   // stateful_engine_options - computed: false, optional: true, required: false
@@ -1135,7 +1413,7 @@ export class NetworkfirewallFirewallPolicyFirewallPolicyOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy}
 */
 export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
 
@@ -1149,7 +1427,7 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1160,7 +1438,7 @@ export class NetworkfirewallFirewallPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkfirewall_firewall_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

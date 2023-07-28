@@ -575,6 +575,7 @@ export * as iamRole from './iam-role';
 export * as iamRolePolicy from './iam-role-policy';
 export * as iamRolePolicyAttachment from './iam-role-policy-attachment';
 export * as iamSamlProvider from './iam-saml-provider';
+export * as iamSecurityTokenServicePreferences from './iam-security-token-service-preferences';
 export * as iamServerCertificate from './iam-server-certificate';
 export * as iamServiceLinkedRole from './iam-service-linked-role';
 export * as iamServiceSpecificCredential from './iam-service-specific-credential';

@@ -1082,6 +1082,7 @@ The following submodules are available:
 - [iamRolePolicy](./iamRolePolicy.java.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.java.md)
 - [iamSamlProvider](./iamSamlProvider.java.md)
+- [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.java.md)
 - [iamServerCertificate](./iamServerCertificate.java.md)
 - [iamServiceLinkedRole](./iamServiceLinkedRole.java.md)
 - [iamServiceSpecificCredential](./iamServiceSpecificCredential.java.md)

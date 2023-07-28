@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus
+// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsKendraThesaurusConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus#id DataAwsKendraThesaurus#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus#id DataAwsKendraThesaurus#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus#index_id DataAwsKendraThesaurus#index_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus#index_id DataAwsKendraThesaurus#index_id}
   */
   readonly indexId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus#tags DataAwsKendraThesaurus#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus#tags DataAwsKendraThesaurus#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus#thesaurus_id DataAwsKendraThesaurus#thesaurus_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus#thesaurus_id DataAwsKendraThesaurus#thesaurus_id}
   */
   readonly thesaurusId: string;
 }
@@ -103,7 +103,7 @@ export class DataAwsKendraThesaurusSourceS3PathList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus}
 */
 export class DataAwsKendraThesaurus extends cdktf.TerraformDataSource {
 
@@ -117,7 +117,7 @@ export class DataAwsKendraThesaurus extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kendra_thesaurus aws_kendra_thesaurus} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -128,7 +128,7 @@ export class DataAwsKendraThesaurus extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_kendra_thesaurus',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

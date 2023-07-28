@@ -1082,6 +1082,7 @@ The following submodules are available:
 - [iamRolePolicy](./iamRolePolicy.typescript.md)
 - [iamRolePolicyAttachment](./iamRolePolicyAttachment.typescript.md)
 - [iamSamlProvider](./iamSamlProvider.typescript.md)
+- [iamSecurityTokenServicePreferences](./iamSecurityTokenServicePreferences.typescript.md)
 - [iamServerCertificate](./iamServerCertificate.typescript.md)
 - [iamServiceLinkedRole](./iamServiceLinkedRole.typescript.md)
 - [iamServiceSpecificCredential](./iamServiceSpecificCredential.typescript.md)
