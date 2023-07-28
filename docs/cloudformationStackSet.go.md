@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.NewCloudformationStackSet(scope Construct, id *string, config CloudformationStackSetConfig) CloudformationStackSet
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.CloudformationStackSet_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.CloudformationStackSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cloudformationstackset.CloudformationStackSet_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.CloudformationStackSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -1075,7 +1075,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 &cloudformationstackset.CloudformationStackSetAutoDeployment {
 	Enabled: interface{},
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 &cloudformationstackset.CloudformationStackSetConfig {
 	Connection: interface{},
@@ -1133,21 +1133,21 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
 	Provisioners: *[]interface{},
 	Name: *string,
 	AdministrationRoleArn: *string,
-	AutoDeployment: github.com/cdktf/cdktf-provider-aws-go/aws.cloudformationStackSet.CloudformationStackSetAutoDeployment,
+	AutoDeployment: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudformationStackSet.CloudformationStackSetAutoDeployment,
 	CallAs: *string,
 	Capabilities: *[]*string,
 	Description: *string,
 	ExecutionRoleName: *string,
 	Id: *string,
-	ManagedExecution: github.com/cdktf/cdktf-provider-aws-go/aws.cloudformationStackSet.CloudformationStackSetManagedExecution,
-	OperationPreferences: github.com/cdktf/cdktf-provider-aws-go/aws.cloudformationStackSet.CloudformationStackSetOperationPreferences,
+	ManagedExecution: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudformationStackSet.CloudformationStackSetManagedExecution,
+	OperationPreferences: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudformationStackSet.CloudformationStackSetOperationPreferences,
 	Parameters: *map[string]*string,
 	PermissionModel: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TemplateBody: *string,
 	TemplateUrl: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudformationStackSet.CloudformationStackSetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.cloudformationStackSet.CloudformationStackSetTimeouts,
 }
 ```
 
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 &cloudformationstackset.CloudformationStackSetManagedExecution {
 	Active: interface{},
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 &cloudformationstackset.CloudformationStackSetOperationPreferences {
 	FailureToleranceCount: *f64,
@@ -1606,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 &cloudformationstackset.CloudformationStackSetTimeouts {
 	Update: *string,
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.NewCloudformationStackSetAutoDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationStackSetAutoDeploymentOutputReference
 ```
@@ -1947,7 +1947,7 @@ func InternalValue() CloudformationStackSetAutoDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetManagedExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.NewCloudformationStackSetManagedExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationStackSetManagedExecutionOutputReference
 ```
@@ -2225,7 +2225,7 @@ func InternalValue() CloudformationStackSetManagedExecution
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetOperationPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.NewCloudformationStackSetOperationPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationStackSetOperationPreferencesOutputReference
 ```
@@ -2648,7 +2648,7 @@ func InternalValue() CloudformationStackSetOperationPreferences
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudformationstackset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset"
 
 cloudformationstackset.NewCloudformationStackSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationStackSetTimeoutsOutputReference
 ```

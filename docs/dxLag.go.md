@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxLag.DxLag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxlag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxlag"
 
 dxlag.NewDxLag(scope Construct, id *string, config DxLagConfig) DxLag
 ```
@@ -312,7 +312,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxLag.DxLag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxlag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxlag"
 
 dxlag.DxLag_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxLag.DxLag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxlag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxlag"
 
 dxlag.DxLag_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ dxlag.DxLag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxLag.DxLag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxlag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxlag"
 
 dxlag.DxLag_IsTerraformResource(x interface{}) *bool
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxLag.DxLagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxlag"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxlag"
 
 &dxlag.DxLagConfig {
 	Connection: interface{},

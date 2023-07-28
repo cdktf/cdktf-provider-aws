@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBroker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBroker(scope Construct, id *string, config MqBrokerConfig) MqBroker
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mqBroker.MqBroker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.MqBroker_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mqBroker.MqBroker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.MqBroker_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ mqbroker.MqBroker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mqBroker.MqBroker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.MqBroker_IsTerraformResource(x interface{}) *bool
 ```
@@ -1231,7 +1231,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerConfig {
 	Connection: interface{},
@@ -1249,20 +1249,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
 	ApplyImmediately: interface{},
 	AuthenticationStrategy: *string,
 	AutoMinorVersionUpgrade: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerConfiguration,
 	DeploymentMode: *string,
-	EncryptionOptions: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerEncryptionOptions,
+	EncryptionOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerEncryptionOptions,
 	Id: *string,
-	LdapServerMetadata: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerLdapServerMetadata,
-	Logs: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerLogs,
-	MaintenanceWindowStartTime: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerMaintenanceWindowStartTime,
+	LdapServerMetadata: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerLdapServerMetadata,
+	Logs: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerLogs,
+	MaintenanceWindowStartTime: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerMaintenanceWindowStartTime,
 	PubliclyAccessible: interface{},
 	SecurityGroups: *[]*string,
 	StorageType: *string,
 	SubnetIds: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.mqBroker.MqBrokerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.mqBroker.MqBrokerTimeouts,
 }
 ```
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerConfiguration {
 	Id: *string,
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerEncryptionOptions {
 	KmsKeyId: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerInstances {
 
@@ -1766,7 +1766,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerLdapServerMetadata {
 	Hosts: *[]*string,
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerLogs {
 	Audit: *string,
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerMaintenanceWindowStartTime {
 	DayOfWeek: *string,
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerTimeouts {
 	Create: *string,
@@ -2104,7 +2104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mqBroker.MqBrokerUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 &mqbroker.MqBrokerUser {
 	Password: *string,
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerConfigurationOutputReference
 ```
@@ -2501,7 +2501,7 @@ func InternalValue() MqBrokerConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerEncryptionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerEncryptionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerEncryptionOptionsOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() MqBrokerEncryptionOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MqBrokerInstancesList
 ```
@@ -2940,7 +2940,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MqBrokerInstancesOutputReference
 ```
@@ -3240,7 +3240,7 @@ func InternalValue() MqBrokerInstances
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerLdapServerMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerLdapServerMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerLdapServerMetadataOutputReference
 ```
@@ -3808,7 +3808,7 @@ func InternalValue() MqBrokerLdapServerMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerLogsOutputReference
 ```
@@ -4115,7 +4115,7 @@ func InternalValue() MqBrokerLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerMaintenanceWindowStartTimeOutputReference
 ```
@@ -4430,7 +4430,7 @@ func InternalValue() MqBrokerMaintenanceWindowStartTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MqBrokerTimeoutsOutputReference
 ```
@@ -4766,7 +4766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MqBrokerUserList
 ```
@@ -4909,7 +4909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mqBroker.MqBrokerUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mqbroker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/mqbroker"
 
 mqbroker.NewMqBrokerUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MqBrokerUserOutputReference
 ```

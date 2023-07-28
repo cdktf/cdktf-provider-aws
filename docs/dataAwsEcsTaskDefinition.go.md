@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.NewDataAwsEcsTaskDefinition(scope Construct, id *string, config DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecstaskdefinition"
 
 dataawsecstaskdefinition.DataAwsEcsTaskDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcsTaskDefinition.DataAwsEcsTaskDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecstaskdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsecstaskdefinition"
 
 &dataawsecstaskdefinition.DataAwsEcsTaskDefinitionConfig {
 	Connection: interface{},

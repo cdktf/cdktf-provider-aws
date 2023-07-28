@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.NewDataAwsImagebuilderDistributionConfigurations(scope Construct, id *string, config DataAwsImagebuilderDistributionConfigurationsConfig) DataAwsImagebuilderDistributionConfigurations
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionConfigurations_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionConfigurations_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionCon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionConfigurations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 &dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionConfigurationsConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurationsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 &dataawsimagebuilderdistributionconfigurations.DataAwsImagebuilderDistributionConfigurationsFilter {
 	Name: *string,
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurationsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.NewDataAwsImagebuilderDistributionConfigurationsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderDistributionConfigurationsFilterList
 ```
@@ -912,7 +912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurationsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderdistributionconfigurations"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderdistributionconfigurations"
 
 dataawsimagebuilderdistributionconfigurations.NewDataAwsImagebuilderDistributionConfigurationsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderDistributionConfigurationsFilterOutputReference
 ```

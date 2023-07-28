@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.NewElasticsearchDomainSamlOptions(scope Construct, id *string, config ElasticsearchDomainSamlOptionsConfig) ElasticsearchDomainSamlOptions
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptions_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptions_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 &elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptionsConfig {
 	Connection: interface{},
@@ -662,8 +662,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloption
 	Provisioners: *[]interface{},
 	DomainName: *string,
 	Id: *string,
-	SamlOptions: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptions,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeouts,
+	SamlOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptions,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeouts,
 }
 ```
 
@@ -815,11 +815,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 &elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptionsSamlOptions {
 	Enabled: interface{},
-	Idp: github.com/cdktf/cdktf-provider-aws-go/aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp,
+	Idp: github.com/cdktf/cdktf-provider-aws-go/aws/v16.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp,
 	MasterBackendRole: *string,
 	MasterUserName: *string,
 	RolesKey: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 &elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp {
 	EntityId: *string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 &elasticsearchdomainsamloptions.ElasticsearchDomainSamlOptionsTimeouts {
 	Delete: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.NewElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference
 ```
@@ -1320,7 +1320,7 @@ func InternalValue() ElasticsearchDomainSamlOptionsSamlOptionsIdp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.NewElasticsearchDomainSamlOptionsSamlOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainSamlOptionsSamlOptionsOutputReference
 ```
@@ -1785,7 +1785,7 @@ func InternalValue() ElasticsearchDomainSamlOptionsSamlOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticsearchdomainsamloptions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticsearchdomainsamloptions"
 
 elasticsearchdomainsamloptions.NewElasticsearchDomainSamlOptionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainSamlOptionsTimeoutsOutputReference
 ```
