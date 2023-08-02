@@ -350,7 +350,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade"
+          "exec": "yarn upgrade @actions/core @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii node-fetch npm-check-updates projen standard-version typescript cdktf constructs"
         },
         {
           "exec": "npx projen"
