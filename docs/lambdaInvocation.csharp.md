@@ -1,6 +1,6 @@
 # `aws_lambda_invocation`
 
-Refer to the Terraform Registory for docs: [`aws_lambda_invocation`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation).
+Refer to the Terraform Registory for docs: [`aws_lambda_invocation`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation).
 
 # `lambdaInvocation` Submodule <a name="`lambdaInvocation` Submodule" id="@cdktf/provider-aws.lambdaInvocation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lambda_invocation`](https://reg
 
 ### LambdaInvocation <a name="LambdaInvocation" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation aws_lambda_invocation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation aws_lambda_invocation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer"></a>
 
@@ -746,13 +746,13 @@ new LambdaInvocationConfig {
 | <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input">Input</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#input LambdaInvocation#input}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#id LambdaInvocation#id}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope">LifecycleScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier">Qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey">TerraformKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers">Triggers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName">FunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input">Input</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#input LambdaInvocation#input}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#id LambdaInvocation#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope">LifecycleScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier">Qualifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey">TerraformKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}. |
+| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers">Triggers</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}. |
 
 ---
 
@@ -834,7 +834,7 @@ public string FunctionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}.
 
 ---
 
@@ -846,7 +846,7 @@ public string Input { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#input LambdaInvocation#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#input LambdaInvocation#input}.
 
 ---
 
@@ -858,7 +858,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#id LambdaInvocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#id LambdaInvocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +873,7 @@ public string LifecycleScope { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}.
 
 ---
 
@@ -885,7 +885,7 @@ public string Qualifier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}.
 
 ---
 
@@ -897,7 +897,7 @@ public string TerraformKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}.
 
 ---
 
@@ -909,7 +909,7 @@ public System.Collections.Generic.IDictionary<string, string> Triggers { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}.
 
 ---
 

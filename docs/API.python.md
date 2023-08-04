@@ -1512,6 +1512,7 @@ The following submodules are available:
 - [sagemakerMonitoringSchedule](./sagemakerMonitoringSchedule.python.md)
 - [sagemakerNotebookInstance](./sagemakerNotebookInstance.python.md)
 - [sagemakerNotebookInstanceLifecycleConfiguration](./sagemakerNotebookInstanceLifecycleConfiguration.python.md)
+- [sagemakerPipeline](./sagemakerPipeline.python.md)
 - [sagemakerProject](./sagemakerProject.python.md)
 - [sagemakerServicecatalogPortfolioStatus](./sagemakerServicecatalogPortfolioStatus.python.md)
 - [sagemakerSpace](./sagemakerSpace.python.md)

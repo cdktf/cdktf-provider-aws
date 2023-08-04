@@ -1,6 +1,6 @@
 # `data_aws_vpclattice_service_network`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network).
+Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network).
 
 # `dataAwsVpclatticeServiceNetwork` Submodule <a name="`dataAwsVpclatticeServiceNetwork` Submodule" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_vpclattice_service_network
 
 ### DataAwsVpclatticeServiceNetwork <a name="DataAwsVpclatticeServiceNetwork" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer"></a>
 
@@ -26,6 +26,7 @@ dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   service_network_identifier: str,
+  id: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -41,8 +42,9 @@ dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork(
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.serviceNetworkIdentifier">service_network_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.serviceNetworkIdentifier">service_network_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
 
 ---
 
@@ -110,7 +112,18 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -118,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
 
 ---
 
@@ -142,6 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
@@ -355,6 +369,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.resetId"></a>
+
+```python
+def reset_id() -> None
+```
+
 ##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.resetTags"></a>
 
 ```python
@@ -456,13 +476,14 @@ dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.is_terraform_dat
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.lastUpdatedAt">last_updated_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.numberOfAssociatedServices">number_of_associated_services</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.numberOfAssociatedVpcs">number_of_associated_vpcs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.serviceNetworkIdentifierInput">service_network_identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.serviceNetworkIdentifier">service_network_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
@@ -620,16 +641,6 @@ created_at: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
 ##### `last_updated_at`<sup>Required</sup> <a name="last_updated_at" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.lastUpdatedAt"></a>
 
 ```python
@@ -670,6 +681,16 @@ number_of_associated_vpcs: typing.Union[int, float]
 
 ---
 
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `service_network_identifier_input`<sup>Optional</sup> <a name="service_network_identifier_input" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.serviceNetworkIdentifierInput"></a>
 
 ```python
@@ -687,6 +708,16 @@ tags_input: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetwork.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -746,6 +777,7 @@ dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   service_network_identifier: str,
+  id: str = None,
   tags: typing.Mapping[str] = None
 )
 ```
@@ -761,8 +793,9 @@ dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">service_network_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.serviceNetworkIdentifier">service_network_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}. |
 
 ---
 
@@ -844,7 +877,22 @@ service_network_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#service_network_identifier DataAwsVpclatticeServiceNetwork#service_network_identifier}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.dataAwsVpclatticeServiceNetwork.DataAwsVpclatticeServiceNetworkConfig.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#id DataAwsVpclatticeServiceNetwork#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -856,7 +904,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service_network#tags DataAwsVpclatticeServiceNetwork#tags}.
 
 ---
 

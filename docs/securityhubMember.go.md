@@ -1,6 +1,6 @@
 # `aws_securityhub_member`
 
-Refer to the Terraform Registory for docs: [`aws_securityhub_member`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member).
+Refer to the Terraform Registory for docs: [`aws_securityhub_member`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member).
 
 # `securityhubMember` Submodule <a name="`securityhubMember` Submodule" id="@cdktf/provider-aws.securityhubMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_securityhub_member`](https://re
 
 ### SecurityhubMember <a name="SecurityhubMember" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member aws_securityhub_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member aws_securityhub_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubMember.SecurityhubMember.Initializer"></a>
 
@@ -674,10 +674,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/securityhubmember"
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}. |
-| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#email SecurityhubMember#email}. |
-| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#id SecurityhubMember#id}. |
-| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}. |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#email SecurityhubMember#email}. |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#id SecurityhubMember#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubMember.SecurityhubMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}. |
 
 ---
 
@@ -759,7 +759,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}.
 
 ---
 
@@ -771,7 +771,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#email SecurityhubMember#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#email SecurityhubMember#email}.
 
 ---
 
@@ -783,7 +783,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#id SecurityhubMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#id SecurityhubMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -798,7 +798,7 @@ Invite interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}.
 
 ---
 

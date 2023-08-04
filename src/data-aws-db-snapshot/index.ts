@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,44 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDbSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#db_instance_identifier DataAwsDbSnapshot#db_instance_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#db_instance_identifier DataAwsDbSnapshot#db_instance_identifier}
   */
   readonly dbInstanceIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#db_snapshot_identifier DataAwsDbSnapshot#db_snapshot_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#db_snapshot_identifier DataAwsDbSnapshot#db_snapshot_identifier}
   */
   readonly dbSnapshotIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#id DataAwsDbSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#id DataAwsDbSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#include_public DataAwsDbSnapshot#include_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#include_public DataAwsDbSnapshot#include_public}
   */
   readonly includePublic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#include_shared DataAwsDbSnapshot#include_shared}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#include_shared DataAwsDbSnapshot#include_shared}
   */
   readonly includeShared?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#most_recent DataAwsDbSnapshot#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#most_recent DataAwsDbSnapshot#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot#snapshot_type DataAwsDbSnapshot#snapshot_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#snapshot_type DataAwsDbSnapshot#snapshot_type}
   */
   readonly snapshotType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot#tags DataAwsDbSnapshot#tags}
+  */
+  readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot aws_db_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot aws_db_snapshot}
 */
 export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
 
@@ -60,7 +64,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +75,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -89,6 +93,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
     this._includeShared = config.includeShared;
     this._mostRecent = config.mostRecent;
     this._snapshotType = config.snapshotType;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -287,6 +292,22 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
     return this.getStringAttribute('storage_type');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
@@ -305,6 +326,7 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
       include_shared: cdktf.booleanToTerraform(this._includeShared),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       snapshot_type: cdktf.stringToTerraform(this._snapshotType),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

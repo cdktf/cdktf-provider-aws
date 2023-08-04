@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#application ElasticBeanstalkApplicationVersion#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#application ElasticBeanstalkApplicationVersion#application}
   */
   readonly application: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#bucket ElasticBeanstalkApplicationVersion#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#bucket ElasticBeanstalkApplicationVersion#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#description ElasticBeanstalkApplicationVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#description ElasticBeanstalkApplicationVersion#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#force_delete ElasticBeanstalkApplicationVersion#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#force_delete ElasticBeanstalkApplicationVersion#force_delete}
   */
   readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#id ElasticBeanstalkApplicationVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#id ElasticBeanstalkApplicationVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#key ElasticBeanstalkApplicationVersion#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#key ElasticBeanstalkApplicationVersion#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#name ElasticBeanstalkApplicationVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#name ElasticBeanstalkApplicationVersion#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#tags ElasticBeanstalkApplicationVersion#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#tags ElasticBeanstalkApplicationVersion#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version#tags_all ElasticBeanstalkApplicationVersion#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version#tags_all ElasticBeanstalkApplicationVersion#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}
 */
 export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
       terraformResourceType: 'aws_elastic_beanstalk_application_version',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

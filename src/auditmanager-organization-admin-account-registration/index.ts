@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface AuditmanagerOrganizationAdminAccountRegistrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration#admin_account_id AuditmanagerOrganizationAdminAccountRegistration#admin_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration#admin_account_id AuditmanagerOrganizationAdminAccountRegistration#admin_account_id}
   */
   readonly adminAccountId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration}
 */
 export class AuditmanagerOrganizationAdminAccountRegistration extends cdktf.TerraformResource {
 
@@ -33,7 +33,7 @@ export class AuditmanagerOrganizationAdminAccountRegistration extends cdktf.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -44,7 +44,7 @@ export class AuditmanagerOrganizationAdminAccountRegistration extends cdktf.Terr
       terraformResourceType: 'aws_auditmanager_organization_admin_account_registration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

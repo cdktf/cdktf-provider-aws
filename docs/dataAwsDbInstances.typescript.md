@@ -1,6 +1,6 @@
 # `data_aws_db_instances`
 
-Refer to the Terraform Registory for docs: [`data_aws_db_instances`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances).
+Refer to the Terraform Registory for docs: [`data_aws_db_instances`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances).
 
 # `dataAwsDbInstances` Submodule <a name="`dataAwsDbInstances` Submodule" id="@cdktf/provider-aws.dataAwsDbInstances"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_db_instances`](https://reg
 
 ### DataAwsDbInstances <a name="DataAwsDbInstances" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public resetFilter(): void
 public resetId(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -375,7 +382,9 @@ dataAwsDbInstances.DataAwsDbInstances.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.instanceIdentifiers">instanceIdentifiers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.filterInput">filterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter">DataAwsDbInstancesFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -551,6 +560,16 @@ public readonly idInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.id"></a>
 
 ```typescript
@@ -558,6 +577,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstances.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -603,7 +632,8 @@ const dataAwsDbInstancesConfig: dataAwsDbInstances.DataAwsDbInstancesConfig = { 
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter">DataAwsDbInstancesFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#tags DataAwsDbInstances#tags}. |
 
 ---
 
@@ -687,7 +717,7 @@ public readonly filter: IResolvable | DataAwsDbInstancesFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#filter DataAwsDbInstances#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#filter DataAwsDbInstances#filter}
 
 ---
 
@@ -699,10 +729,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#tags DataAwsDbInstances#tags}.
 
 ---
 
@@ -720,8 +762,8 @@ const dataAwsDbInstancesFilter: dataAwsDbInstances.DataAwsDbInstancesFilter = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbInstances.DataAwsDbInstancesFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}. |
 
 ---
 
@@ -733,7 +775,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}.
 
 ---
 
@@ -745,7 +787,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}.
 
 ---
 

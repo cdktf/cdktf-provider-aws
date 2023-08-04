@@ -1004,6 +1004,7 @@ export * as sagemakerModelPackageGroupPolicy from './sagemaker-model-package-gro
 export * as sagemakerMonitoringSchedule from './sagemaker-monitoring-schedule';
 export * as sagemakerNotebookInstance from './sagemaker-notebook-instance';
 export * as sagemakerNotebookInstanceLifecycleConfiguration from './sagemaker-notebook-instance-lifecycle-configuration';
+export * as sagemakerPipeline from './sagemaker-pipeline';
 export * as sagemakerProject from './sagemaker-project';
 export * as sagemakerServicecatalogPortfolioStatus from './sagemaker-servicecatalog-portfolio-status';
 export * as sagemakerSpace from './sagemaker-space';

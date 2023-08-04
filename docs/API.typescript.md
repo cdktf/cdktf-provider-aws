@@ -1512,6 +1512,7 @@ The following submodules are available:
 - [sagemakerMonitoringSchedule](./sagemakerMonitoringSchedule.typescript.md)
 - [sagemakerNotebookInstance](./sagemakerNotebookInstance.typescript.md)
 - [sagemakerNotebookInstanceLifecycleConfiguration](./sagemakerNotebookInstanceLifecycleConfiguration.typescript.md)
+- [sagemakerPipeline](./sagemakerPipeline.typescript.md)
 - [sagemakerProject](./sagemakerProject.typescript.md)
 - [sagemakerServicecatalogPortfolioStatus](./sagemakerServicecatalogPortfolioStatus.typescript.md)
 - [sagemakerSpace](./sagemakerSpace.typescript.md)

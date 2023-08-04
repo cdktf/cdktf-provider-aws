@@ -1,6 +1,6 @@
 # `data_aws_route53_resolver_firewall_config`
 
-Refer to the Terraform Registory for docs: [`data_aws_route53_resolver_firewall_config`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config).
+Refer to the Terraform Registory for docs: [`data_aws_route53_resolver_firewall_config`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config).
 
 # `dataAwsRoute53ResolverFirewallConfig` Submodule <a name="`dataAwsRoute53ResolverFirewallConfig` Submodule" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_route53_resolver_firewall_
 
 ### DataAwsRoute53ResolverFirewallConfig <a name="DataAwsRoute53ResolverFirewallConfig" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfig.Initializer"></a>
 
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsroute53resolverfir
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallConfig.DataAwsRoute53ResolverFirewallConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config#resource_id DataAwsRoute53ResolverFirewallConfig#resource_id}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/route53_resolver_firewall_config#id DataAwsRoute53ResolverFirewallConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `aws_glue_registry`
 
-Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry).
+Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry).
 
 # `glueRegistry` Submodule <a name="`glueRegistry` Submodule" id="@cdktf/provider-aws.glueRegistry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registr
 
 ### GlueRegistry <a name="GlueRegistry" id="@cdktf/provider-aws.glueRegistry.GlueRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry aws_glue_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry aws_glue_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.Initializer"></a>
 
@@ -693,11 +693,11 @@ new GlueRegistryConfig {
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#description GlueRegistry#description}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#id GlueRegistry#id}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#tags GlueRegistry#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.registryName">RegistryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#description GlueRegistry#description}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#id GlueRegistry#id}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#tags GlueRegistry#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}. |
 
 ---
 
@@ -779,7 +779,7 @@ public string RegistryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}.
 
 ---
 
@@ -791,7 +791,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#description GlueRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#description GlueRegistry#description}.
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#id GlueRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#id GlueRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -818,7 +818,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#tags GlueRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#tags GlueRegistry#tags}.
 
 ---
 
@@ -830,7 +830,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}.
 
 ---
 

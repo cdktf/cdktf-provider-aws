@@ -1,6 +1,6 @@
 # `data_aws_kms_custom_key_store`
 
-Refer to the Terraform Registory for docs: [`data_aws_kms_custom_key_store`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store).
+Refer to the Terraform Registory for docs: [`data_aws_kms_custom_key_store`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store).
 
 # `dataAwsKmsCustomKeyStore` Submodule <a name="`dataAwsKmsCustomKeyStore` Submodule" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_kms_custom_key_store`](htt
 
 ### DataAwsKmsCustomKeyStore <a name="DataAwsKmsCustomKeyStore" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store aws_kms_custom_key_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStore.Initializer"></a>
 
@@ -651,9 +651,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmscustomkeystore"
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.customKeyStoreId">CustomKeyStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#custom_key_store_id DataAwsKmsCustomKeyStore#custom_key_store_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.customKeyStoreName">CustomKeyStoreName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#custom_key_store_name DataAwsKmsCustomKeyStore#custom_key_store_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#id DataAwsKmsCustomKeyStore#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.customKeyStoreId">CustomKeyStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#custom_key_store_id DataAwsKmsCustomKeyStore#custom_key_store_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.customKeyStoreName">CustomKeyStoreName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#custom_key_store_name DataAwsKmsCustomKeyStore#custom_key_store_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsCustomKeyStore.DataAwsKmsCustomKeyStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#id DataAwsKmsCustomKeyStore#id}. |
 
 ---
 
@@ -735,7 +735,7 @@ CustomKeyStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#custom_key_store_id DataAwsKmsCustomKeyStore#custom_key_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#custom_key_store_id DataAwsKmsCustomKeyStore#custom_key_store_id}.
 
 ---
 
@@ -747,7 +747,7 @@ CustomKeyStoreName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#custom_key_store_name DataAwsKmsCustomKeyStore#custom_key_store_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#custom_key_store_name DataAwsKmsCustomKeyStore#custom_key_store_name}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/kms_custom_key_store#id DataAwsKmsCustomKeyStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/kms_custom_key_store#id DataAwsKmsCustomKeyStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

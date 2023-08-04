@@ -1,6 +1,6 @@
 # `aws_scheduler_schedule_group`
 
-Refer to the Terraform Registory for docs: [`aws_scheduler_schedule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group).
+Refer to the Terraform Registory for docs: [`aws_scheduler_schedule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group).
 
 # `schedulerScheduleGroup` Submodule <a name="`schedulerScheduleGroup` Submodule" id="@cdktf/provider-aws.schedulerScheduleGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_scheduler_schedule_group`](http
 
 ### SchedulerScheduleGroup <a name="SchedulerScheduleGroup" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group aws_scheduler_schedule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group aws_scheduler_schedule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup.Initializer"></a>
 
@@ -776,11 +776,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schedulerschedulegroup"
 | <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#id SchedulerScheduleGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#name SchedulerScheduleGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#name_prefix SchedulerScheduleGroup#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#tags SchedulerScheduleGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#tags_all SchedulerScheduleGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#id SchedulerScheduleGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#name SchedulerScheduleGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#name_prefix SchedulerScheduleGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#tags SchedulerScheduleGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#tags_all SchedulerScheduleGroup#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts">SchedulerScheduleGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -863,7 +863,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#id SchedulerScheduleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#id SchedulerScheduleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -878,7 +878,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#name SchedulerScheduleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#name SchedulerScheduleGroup#name}.
 
 ---
 
@@ -890,7 +890,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#name_prefix SchedulerScheduleGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#name_prefix SchedulerScheduleGroup#name_prefix}.
 
 ---
 
@@ -902,7 +902,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#tags SchedulerScheduleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#tags SchedulerScheduleGroup#tags}.
 
 ---
 
@@ -914,7 +914,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#tags_all SchedulerScheduleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#tags_all SchedulerScheduleGroup#tags_all}.
 
 ---
 
@@ -928,7 +928,7 @@ Timeouts SchedulerScheduleGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#timeouts SchedulerScheduleGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#timeouts SchedulerScheduleGroup#timeouts}
 
 ---
 
@@ -949,8 +949,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/schedulerschedulegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#create SchedulerScheduleGroup#create}. |
-| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#delete SchedulerScheduleGroup#delete}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#create SchedulerScheduleGroup#create}. |
+| <code><a href="#@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#delete SchedulerScheduleGroup#delete}. |
 
 ---
 
@@ -962,7 +962,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#create SchedulerScheduleGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#create SchedulerScheduleGroup#create}.
 
 ---
 
@@ -974,7 +974,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/scheduler_schedule_group#delete SchedulerScheduleGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/scheduler_schedule_group#delete SchedulerScheduleGroup#delete}.
 
 ---
 

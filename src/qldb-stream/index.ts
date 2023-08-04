@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktf from 'cdktf';
 
 export interface QldbStreamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#exclusive_end_time QldbStream#exclusive_end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#exclusive_end_time QldbStream#exclusive_end_time}
   */
   readonly exclusiveEndTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#id QldbStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#id QldbStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#inclusive_start_time QldbStream#inclusive_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#inclusive_start_time QldbStream#inclusive_start_time}
   */
   readonly inclusiveStartTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#ledger_name QldbStream#ledger_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#ledger_name QldbStream#ledger_name}
   */
   readonly ledgerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#role_arn QldbStream#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#role_arn QldbStream#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#stream_name QldbStream#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#stream_name QldbStream#stream_name}
   */
   readonly streamName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#tags QldbStream#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#tags QldbStream#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#tags_all QldbStream#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#tags_all QldbStream#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * kinesis_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#kinesis_configuration QldbStream#kinesis_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#kinesis_configuration QldbStream#kinesis_configuration}
   */
   readonly kinesisConfiguration: QldbStreamKinesisConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#timeouts QldbStream#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#timeouts QldbStream#timeouts}
   */
   readonly timeouts?: QldbStreamTimeouts;
 }
 export interface QldbStreamKinesisConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#aggregation_enabled QldbStream#aggregation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#aggregation_enabled QldbStream#aggregation_enabled}
   */
   readonly aggregationEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#stream_arn QldbStream#stream_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#stream_arn QldbStream#stream_arn}
   */
   readonly streamArn: string;
 }
@@ -151,11 +151,11 @@ export class QldbStreamKinesisConfigurationOutputReference extends cdktf.Complex
 }
 export interface QldbStreamTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#create QldbStream#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#create QldbStream#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream#delete QldbStream#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream#delete QldbStream#delete}
   */
   readonly delete?: string;
 }
@@ -253,7 +253,7 @@ export class QldbStreamTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream aws_qldb_stream}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream aws_qldb_stream}
 */
 export class QldbStream extends cdktf.TerraformResource {
 
@@ -267,7 +267,7 @@ export class QldbStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/qldb_stream aws_qldb_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/qldb_stream aws_qldb_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class QldbStream extends cdktf.TerraformResource {
       terraformResourceType: 'aws_qldb_stream',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

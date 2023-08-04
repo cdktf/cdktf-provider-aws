@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}
   */
   readonly eventPattern?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}
   */
   readonly eventSourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}
   */
   readonly retentionDays?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive}
 */
 export class CloudwatchEventArchive extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class CloudwatchEventArchive extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_archive',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

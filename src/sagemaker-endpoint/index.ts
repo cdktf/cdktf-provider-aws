@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#endpoint_config_name SagemakerEndpoint#endpoint_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#endpoint_config_name SagemakerEndpoint#endpoint_config_name}
   */
   readonly endpointConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#id SagemakerEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#id SagemakerEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#name SagemakerEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#name SagemakerEndpoint#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#tags SagemakerEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#tags SagemakerEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#tags_all SagemakerEndpoint#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#tags_all SagemakerEndpoint#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * deployment_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#deployment_config SagemakerEndpoint#deployment_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#deployment_config SagemakerEndpoint#deployment_config}
   */
   readonly deploymentConfig?: SagemakerEndpointDeploymentConfig;
 }
 export interface SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#alarm_name SagemakerEndpoint#alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#alarm_name SagemakerEndpoint#alarm_name}
   */
   readonly alarmName: string;
 }
@@ -140,7 +140,7 @@ export interface SagemakerEndpointDeploymentConfigAutoRollbackConfiguration {
   /**
   * alarms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#alarms SagemakerEndpoint#alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#alarms SagemakerEndpoint#alarms}
   */
   readonly alarms?: SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms[] | cdktf.IResolvable;
 }
@@ -205,11 +205,11 @@ export class SagemakerEndpointDeploymentConfigAutoRollbackConfigurationOutputRef
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
   */
   readonly value: number;
 }
@@ -291,11 +291,11 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
   */
   readonly value: number;
 }
@@ -377,23 +377,23 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds SagemakerEndpoint#wait_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds SagemakerEndpoint#wait_interval_in_seconds}
   */
   readonly waitIntervalInSeconds: number;
   /**
   * canary_size block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#canary_size SagemakerEndpoint#canary_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#canary_size SagemakerEndpoint#canary_size}
   */
   readonly canarySize?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize;
   /**
   * linear_step_size block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#linear_step_size SagemakerEndpoint#linear_step_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#linear_step_size SagemakerEndpoint#linear_step_size}
   */
   readonly linearStepSize?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize;
 }
@@ -521,17 +521,17 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutin
 }
 export interface SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds SagemakerEndpoint#maximum_execution_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds SagemakerEndpoint#maximum_execution_timeout_in_seconds}
   */
   readonly maximumExecutionTimeoutInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#termination_wait_in_seconds SagemakerEndpoint#termination_wait_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#termination_wait_in_seconds SagemakerEndpoint#termination_wait_in_seconds}
   */
   readonly terminationWaitInSeconds?: number;
   /**
   * traffic_routing_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#traffic_routing_configuration SagemakerEndpoint#traffic_routing_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#traffic_routing_configuration SagemakerEndpoint#traffic_routing_configuration}
   */
   readonly trafficRoutingConfiguration: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration;
 }
@@ -637,19 +637,341 @@ export class SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReferen
     return this._trafficRoutingConfiguration.internalValue;
   }
 }
+export interface SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
+  */
+  readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
+  */
+  readonly value: number;
+}
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeToTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#type SagemakerEndpoint#type}
+  */
+  readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#value SagemakerEndpoint#value}
+  */
+  readonly value: number;
+}
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeToTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
+export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface SagemakerEndpointDeploymentConfigRollingUpdatePolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#maximum_execution_timeout_in_seconds SagemakerEndpoint#maximum_execution_timeout_in_seconds}
+  */
+  readonly maximumExecutionTimeoutInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#wait_interval_in_seconds SagemakerEndpoint#wait_interval_in_seconds}
+  */
+  readonly waitIntervalInSeconds: number;
+  /**
+  * maximum_batch_size block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#maximum_batch_size SagemakerEndpoint#maximum_batch_size}
+  */
+  readonly maximumBatchSize: SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize;
+  /**
+  * rollback_maximum_batch_size block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#rollback_maximum_batch_size SagemakerEndpoint#rollback_maximum_batch_size}
+  */
+  readonly rollbackMaximumBatchSize?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize;
+}
+
+export function sagemakerEndpointDeploymentConfigRollingUpdatePolicyToTerraform(struct?: SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference | SagemakerEndpointDeploymentConfigRollingUpdatePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    maximum_execution_timeout_in_seconds: cdktf.numberToTerraform(struct!.maximumExecutionTimeoutInSeconds),
+    wait_interval_in_seconds: cdktf.numberToTerraform(struct!.waitIntervalInSeconds),
+    maximum_batch_size: sagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeToTerraform(struct!.maximumBatchSize),
+    rollback_maximum_batch_size: sagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeToTerraform(struct!.rollbackMaximumBatchSize),
+  }
+}
+
+export class SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SagemakerEndpointDeploymentConfigRollingUpdatePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximumExecutionTimeoutInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumExecutionTimeoutInSeconds = this._maximumExecutionTimeoutInSeconds;
+    }
+    if (this._waitIntervalInSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.waitIntervalInSeconds = this._waitIntervalInSeconds;
+    }
+    if (this._maximumBatchSize?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumBatchSize = this._maximumBatchSize?.internalValue;
+    }
+    if (this._rollbackMaximumBatchSize?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rollbackMaximumBatchSize = this._rollbackMaximumBatchSize?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maximumExecutionTimeoutInSeconds = undefined;
+      this._waitIntervalInSeconds = undefined;
+      this._maximumBatchSize.internalValue = undefined;
+      this._rollbackMaximumBatchSize.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maximumExecutionTimeoutInSeconds = value.maximumExecutionTimeoutInSeconds;
+      this._waitIntervalInSeconds = value.waitIntervalInSeconds;
+      this._maximumBatchSize.internalValue = value.maximumBatchSize;
+      this._rollbackMaximumBatchSize.internalValue = value.rollbackMaximumBatchSize;
+    }
+  }
+
+  // maximum_execution_timeout_in_seconds - computed: false, optional: true, required: false
+  private _maximumExecutionTimeoutInSeconds?: number; 
+  public get maximumExecutionTimeoutInSeconds() {
+    return this.getNumberAttribute('maximum_execution_timeout_in_seconds');
+  }
+  public set maximumExecutionTimeoutInSeconds(value: number) {
+    this._maximumExecutionTimeoutInSeconds = value;
+  }
+  public resetMaximumExecutionTimeoutInSeconds() {
+    this._maximumExecutionTimeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumExecutionTimeoutInSecondsInput() {
+    return this._maximumExecutionTimeoutInSeconds;
+  }
+
+  // wait_interval_in_seconds - computed: false, optional: false, required: true
+  private _waitIntervalInSeconds?: number; 
+  public get waitIntervalInSeconds() {
+    return this.getNumberAttribute('wait_interval_in_seconds');
+  }
+  public set waitIntervalInSeconds(value: number) {
+    this._waitIntervalInSeconds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitIntervalInSecondsInput() {
+    return this._waitIntervalInSeconds;
+  }
+
+  // maximum_batch_size - computed: false, optional: false, required: true
+  private _maximumBatchSize = new SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSizeOutputReference(this, "maximum_batch_size");
+  public get maximumBatchSize() {
+    return this._maximumBatchSize;
+  }
+  public putMaximumBatchSize(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicyMaximumBatchSize) {
+    this._maximumBatchSize.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumBatchSizeInput() {
+    return this._maximumBatchSize.internalValue;
+  }
+
+  // rollback_maximum_batch_size - computed: false, optional: true, required: false
+  private _rollbackMaximumBatchSize = new SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSizeOutputReference(this, "rollback_maximum_batch_size");
+  public get rollbackMaximumBatchSize() {
+    return this._rollbackMaximumBatchSize;
+  }
+  public putRollbackMaximumBatchSize(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize) {
+    this._rollbackMaximumBatchSize.internalValue = value;
+  }
+  public resetRollbackMaximumBatchSize() {
+    this._rollbackMaximumBatchSize.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rollbackMaximumBatchSizeInput() {
+    return this._rollbackMaximumBatchSize.internalValue;
+  }
+}
 export interface SagemakerEndpointDeploymentConfig {
   /**
   * auto_rollback_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#auto_rollback_configuration SagemakerEndpoint#auto_rollback_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#auto_rollback_configuration SagemakerEndpoint#auto_rollback_configuration}
   */
   readonly autoRollbackConfiguration?: SagemakerEndpointDeploymentConfigAutoRollbackConfiguration;
   /**
   * blue_green_update_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint#blue_green_update_policy SagemakerEndpoint#blue_green_update_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#blue_green_update_policy SagemakerEndpoint#blue_green_update_policy}
   */
-  readonly blueGreenUpdatePolicy: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy;
+  readonly blueGreenUpdatePolicy?: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy;
+  /**
+  * rolling_update_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint#rolling_update_policy SagemakerEndpoint#rolling_update_policy}
+  */
+  readonly rollingUpdatePolicy?: SagemakerEndpointDeploymentConfigRollingUpdatePolicy;
 }
 
 export function sagemakerEndpointDeploymentConfigToTerraform(struct?: SagemakerEndpointDeploymentConfigOutputReference | SagemakerEndpointDeploymentConfig): any {
@@ -660,6 +982,7 @@ export function sagemakerEndpointDeploymentConfigToTerraform(struct?: SagemakerE
   return {
     auto_rollback_configuration: sagemakerEndpointDeploymentConfigAutoRollbackConfigurationToTerraform(struct!.autoRollbackConfiguration),
     blue_green_update_policy: sagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyToTerraform(struct!.blueGreenUpdatePolicy),
+    rolling_update_policy: sagemakerEndpointDeploymentConfigRollingUpdatePolicyToTerraform(struct!.rollingUpdatePolicy),
   }
 }
 
@@ -685,6 +1008,10 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.blueGreenUpdatePolicy = this._blueGreenUpdatePolicy?.internalValue;
     }
+    if (this._rollingUpdatePolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rollingUpdatePolicy = this._rollingUpdatePolicy?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -693,11 +1020,13 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
       this.isEmptyObject = false;
       this._autoRollbackConfiguration.internalValue = undefined;
       this._blueGreenUpdatePolicy.internalValue = undefined;
+      this._rollingUpdatePolicy.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._autoRollbackConfiguration.internalValue = value.autoRollbackConfiguration;
       this._blueGreenUpdatePolicy.internalValue = value.blueGreenUpdatePolicy;
+      this._rollingUpdatePolicy.internalValue = value.rollingUpdatePolicy;
     }
   }
 
@@ -717,7 +1046,7 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
     return this._autoRollbackConfiguration.internalValue;
   }
 
-  // blue_green_update_policy - computed: false, optional: false, required: true
+  // blue_green_update_policy - computed: false, optional: true, required: false
   private _blueGreenUpdatePolicy = new SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyOutputReference(this, "blue_green_update_policy");
   public get blueGreenUpdatePolicy() {
     return this._blueGreenUpdatePolicy;
@@ -725,14 +1054,33 @@ export class SagemakerEndpointDeploymentConfigOutputReference extends cdktf.Comp
   public putBlueGreenUpdatePolicy(value: SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy) {
     this._blueGreenUpdatePolicy.internalValue = value;
   }
+  public resetBlueGreenUpdatePolicy() {
+    this._blueGreenUpdatePolicy.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get blueGreenUpdatePolicyInput() {
     return this._blueGreenUpdatePolicy.internalValue;
   }
+
+  // rolling_update_policy - computed: false, optional: true, required: false
+  private _rollingUpdatePolicy = new SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference(this, "rolling_update_policy");
+  public get rollingUpdatePolicy() {
+    return this._rollingUpdatePolicy;
+  }
+  public putRollingUpdatePolicy(value: SagemakerEndpointDeploymentConfigRollingUpdatePolicy) {
+    this._rollingUpdatePolicy.internalValue = value;
+  }
+  public resetRollingUpdatePolicy() {
+    this._rollingUpdatePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rollingUpdatePolicyInput() {
+    return this._rollingUpdatePolicy.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint}
 */
 export class SagemakerEndpoint extends cdktf.TerraformResource {
 
@@ -746,7 +1094,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -757,7 +1105,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
