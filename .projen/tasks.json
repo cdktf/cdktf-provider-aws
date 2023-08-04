@@ -332,25 +332,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='jsii-docgen,jsii-rosetta,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='jsii-docgen,jsii-rosetta,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='jsii-docgen,jsii-rosetta,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='jsii-docgen,jsii-rosetta,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='jsii-docgen,jsii-rosetta,node-fetch'"
+          "exec": "npm-check-updates --upgrade --target=minor --filter=@actions/core,@cdktf/provider-project,@types/node,cdktf-cli,cdktf,constructs,dot-prop,jsii-diff,jsii-pacmak,jsii,npm-check-updates,projen,standard-version,typescript"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @actions/core @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii node-fetch npm-check-updates projen standard-version typescript cdktf constructs"
+          "exec": "yarn upgrade @actions/core @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii-diff jsii-pacmak jsii npm-check-updates projen standard-version typescript"
         },
         {
           "exec": "npx projen"
