@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 dmsreplicationinstance.NewDmsReplicationInstance(scope Construct, id *string, config DmsReplicationInstanceConfig) DmsReplicationInstance
 ```
@@ -395,7 +395,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ dmsreplicationinstance.DmsReplicationInstance_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 dmsreplicationinstance.DmsReplicationInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 &dmsreplicationinstance.DmsReplicationInstanceConfig {
 	Connection: interface{},
@@ -1095,7 +1095,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
 	ReplicationSubnetGroupId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.dmsReplicationInstance.DmsReplicationInstanceTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 &dmsreplicationinstance.DmsReplicationInstanceTimeouts {
 	Create: *string,
@@ -1490,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsreplicationinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsreplicationinstance"
 
 dmsreplicationinstance.NewDmsReplicationInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsReplicationInstanceTimeoutsOutputReference
 ```
