@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDbInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#id DataAwsDbInstances#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#tags DataAwsDbInstances#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#filter DataAwsDbInstances#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#filter DataAwsDbInstances#filter}
   */
   readonly filter?: DataAwsDbInstancesFilter[] | cdktf.IResolvable;
 }
 export interface DataAwsDbInstancesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#name DataAwsDbInstances#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances#values DataAwsDbInstances#values}
   */
   readonly values: string[];
 }
@@ -146,7 +145,7 @@ export class DataAwsDbInstancesFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances}
 */
 export class DataAwsDbInstances extends cdktf.TerraformDataSource {
 
@@ -160,7 +159,7 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +170,7 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_db_instances',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -183,6 +182,7 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._tags = config.tags;
     this._filter.internalValue = config.filter;
   }
 
@@ -216,6 +216,22 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
     return this.getListAttribute('instance_identifiers');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // filter - computed: false, optional: true, required: false
   private _filter = new DataAwsDbInstancesFilterList(this, "filter", true);
   public get filter() {
@@ -239,6 +255,7 @@ export class DataAwsDbInstances extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsDbInstancesFilterToTerraform, true)(this._filter.internalValue),
     };
   }

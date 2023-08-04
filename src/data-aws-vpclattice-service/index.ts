@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service
+// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsVpclatticeServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service#id DataAwsVpclatticeService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service#name DataAwsVpclatticeService#name}
   */
-  readonly serviceIdentifier: string;
+  readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service#service_identifier DataAwsVpclatticeService#service_identifier}
+  */
+  readonly serviceIdentifier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service#tags DataAwsVpclatticeService#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -99,7 +98,7 @@ export class DataAwsVpclatticeServiceDnsEntryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service aws_vpclattice_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service aws_vpclattice_service}
 */
 export class DataAwsVpclatticeService extends cdktf.TerraformDataSource {
 
@@ -113,18 +112,18 @@ export class DataAwsVpclatticeService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAwsVpclatticeServiceConfig
+  * @param options DataAwsVpclatticeServiceConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataAwsVpclatticeServiceConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsVpclatticeServiceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_vpclattice_service',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -136,6 +135,7 @@ export class DataAwsVpclatticeService extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._name = config.name;
     this._serviceIdentifier = config.serviceIdentifier;
     this._tags = config.tags;
   }
@@ -186,18 +186,32 @@ export class DataAwsVpclatticeService extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
 
-  // service_identifier - computed: false, optional: false, required: true
+  // service_identifier - computed: true, optional: true, required: false
   private _serviceIdentifier?: string; 
   public get serviceIdentifier() {
     return this.getStringAttribute('service_identifier');
   }
   public set serviceIdentifier(value: string) {
     this._serviceIdentifier = value;
+  }
+  public resetServiceIdentifier() {
+    this._serviceIdentifier = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get serviceIdentifierInput() {
@@ -232,6 +246,7 @@ export class DataAwsVpclatticeService extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
       service_identifier: cdktf.stringToTerraform(this._serviceIdentifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };

@@ -1512,6 +1512,7 @@ The following submodules are available:
 - [sagemakerMonitoringSchedule](./sagemakerMonitoringSchedule.go.md)
 - [sagemakerNotebookInstance](./sagemakerNotebookInstance.go.md)
 - [sagemakerNotebookInstanceLifecycleConfiguration](./sagemakerNotebookInstanceLifecycleConfiguration.go.md)
+- [sagemakerPipeline](./sagemakerPipeline.go.md)
 - [sagemakerProject](./sagemakerProject.go.md)
 - [sagemakerServicecatalogPortfolioStatus](./sagemakerServicecatalogPortfolioStatus.go.md)
 - [sagemakerSpace](./sagemakerSpace.go.md)

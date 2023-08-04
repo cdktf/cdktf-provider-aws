@@ -1,6 +1,6 @@
 # `data_aws_networkmanager_global_network`
 
-Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_network`](https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network).
+Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_network`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network).
 
 # `dataAwsNetworkmanagerGlobalNetwork` Submodule <a name="`dataAwsNetworkmanagerGlobalNetwork` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_networkmanager_global_netw
 
 ### DataAwsNetworkmanagerGlobalNetwork <a name="DataAwsNetworkmanagerGlobalNetwork" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network aws_networkmanager_global_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetwork.Initializer"></a>
 
@@ -611,9 +611,9 @@ const dataAwsNetworkmanagerGlobalNetworkConfig: dataAwsNetworkmanagerGlobalNetwo
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#global_network_id DataAwsNetworkmanagerGlobalNetwork#global_network_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#id DataAwsNetworkmanagerGlobalNetwork#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#tags DataAwsNetworkmanagerGlobalNetwork#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.globalNetworkId">globalNetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#global_network_id DataAwsNetworkmanagerGlobalNetwork#global_network_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#id DataAwsNetworkmanagerGlobalNetwork#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetwork.DataAwsNetworkmanagerGlobalNetworkConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#tags DataAwsNetworkmanagerGlobalNetwork#tags}. |
 
 ---
 
@@ -695,7 +695,7 @@ public readonly globalNetworkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#global_network_id DataAwsNetworkmanagerGlobalNetwork#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#global_network_id DataAwsNetworkmanagerGlobalNetwork#global_network_id}.
 
 ---
 
@@ -707,7 +707,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#id DataAwsNetworkmanagerGlobalNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#id DataAwsNetworkmanagerGlobalNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -722,7 +722,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/networkmanager_global_network#tags DataAwsNetworkmanagerGlobalNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/networkmanager_global_network#tags DataAwsNetworkmanagerGlobalNetwork#tags}.
 
 ---
 

@@ -1512,6 +1512,7 @@ The following submodules are available:
 - [sagemakerMonitoringSchedule](./sagemakerMonitoringSchedule.csharp.md)
 - [sagemakerNotebookInstance](./sagemakerNotebookInstance.csharp.md)
 - [sagemakerNotebookInstanceLifecycleConfiguration](./sagemakerNotebookInstanceLifecycleConfiguration.csharp.md)
+- [sagemakerPipeline](./sagemakerPipeline.csharp.md)
 - [sagemakerProject](./sagemakerProject.csharp.md)
 - [sagemakerServicecatalogPortfolioStatus](./sagemakerServicecatalogPortfolioStatus.csharp.md)
 - [sagemakerSpace](./sagemakerSpace.csharp.md)
