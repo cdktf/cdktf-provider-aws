@@ -1,6 +1,6 @@
 # `aws_quicksight_ingestion`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_ingestion`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion).
+Refer to the Terraform Registory for docs: [`aws_quicksight_ingestion`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion).
 
 # `quicksightIngestion` Submodule <a name="`quicksightIngestion` Submodule" id="@cdktf/provider-aws.quicksightIngestion"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_ingestion`](https://
 
 ### QuicksightIngestion <a name="QuicksightIngestion" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
 
 quicksightingestion.NewQuicksightIngestion(scope Construct, id *string, config QuicksightIngestionConfig) QuicksightIngestion
 ```
@@ -277,7 +277,7 @@ func ResetAwsAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ quicksightingestion.QuicksightIngestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
 
 quicksightingestion.QuicksightIngestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightingestion"
 
 &quicksightingestion.QuicksightIngestionConfig {
 	Connection: interface{},
@@ -671,10 +671,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightingestion"
 | <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.dataSetId">DataSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.ingestionId">IngestionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.ingestionType">IngestionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}. |
-| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.dataSetId">DataSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.ingestionId">IngestionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.ingestionType">IngestionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightIngestion.QuicksightIngestionConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}. |
 
 ---
 
@@ -756,7 +756,7 @@ DataSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}.
 
 ---
 
@@ -768,7 +768,7 @@ IngestionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}.
 
 ---
 
@@ -780,7 +780,7 @@ IngestionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}.
 
 ---
 
@@ -792,7 +792,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}.
 
 ---
 

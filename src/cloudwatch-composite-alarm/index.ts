@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,168 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchCompositeAlarmConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#actions_enabled CloudwatchCompositeAlarm#actions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#actions_enabled CloudwatchCompositeAlarm#actions_enabled}
   */
   readonly actionsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#alarm_actions CloudwatchCompositeAlarm#alarm_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#alarm_actions CloudwatchCompositeAlarm#alarm_actions}
   */
   readonly alarmActions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#alarm_description CloudwatchCompositeAlarm#alarm_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#alarm_description CloudwatchCompositeAlarm#alarm_description}
   */
   readonly alarmDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#alarm_name CloudwatchCompositeAlarm#alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#alarm_name CloudwatchCompositeAlarm#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#alarm_rule CloudwatchCompositeAlarm#alarm_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#alarm_rule CloudwatchCompositeAlarm#alarm_rule}
   */
   readonly alarmRule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#id CloudwatchCompositeAlarm#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#id CloudwatchCompositeAlarm#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#insufficient_data_actions CloudwatchCompositeAlarm#insufficient_data_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#insufficient_data_actions CloudwatchCompositeAlarm#insufficient_data_actions}
   */
   readonly insufficientDataActions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#ok_actions CloudwatchCompositeAlarm#ok_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#ok_actions CloudwatchCompositeAlarm#ok_actions}
   */
   readonly okActions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#tags CloudwatchCompositeAlarm#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#tags CloudwatchCompositeAlarm#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm#tags_all CloudwatchCompositeAlarm#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#tags_all CloudwatchCompositeAlarm#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * actions_suppressor block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#actions_suppressor CloudwatchCompositeAlarm#actions_suppressor}
+  */
+  readonly actionsSuppressor?: CloudwatchCompositeAlarmActionsSuppressor;
+}
+export interface CloudwatchCompositeAlarmActionsSuppressor {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#alarm CloudwatchCompositeAlarm#alarm}
+  */
+  readonly alarm: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#extension_period CloudwatchCompositeAlarm#extension_period}
+  */
+  readonly extensionPeriod: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm#wait_period CloudwatchCompositeAlarm#wait_period}
+  */
+  readonly waitPeriod: number;
+}
+
+export function cloudwatchCompositeAlarmActionsSuppressorToTerraform(struct?: CloudwatchCompositeAlarmActionsSuppressorOutputReference | CloudwatchCompositeAlarmActionsSuppressor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alarm: cdktf.stringToTerraform(struct!.alarm),
+    extension_period: cdktf.numberToTerraform(struct!.extensionPeriod),
+    wait_period: cdktf.numberToTerraform(struct!.waitPeriod),
+  }
+}
+
+export class CloudwatchCompositeAlarmActionsSuppressorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudwatchCompositeAlarmActionsSuppressor | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alarm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alarm = this._alarm;
+    }
+    if (this._extensionPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extensionPeriod = this._extensionPeriod;
+    }
+    if (this._waitPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.waitPeriod = this._waitPeriod;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudwatchCompositeAlarmActionsSuppressor | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alarm = undefined;
+      this._extensionPeriod = undefined;
+      this._waitPeriod = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alarm = value.alarm;
+      this._extensionPeriod = value.extensionPeriod;
+      this._waitPeriod = value.waitPeriod;
+    }
+  }
+
+  // alarm - computed: false, optional: false, required: true
+  private _alarm?: string; 
+  public get alarm() {
+    return this.getStringAttribute('alarm');
+  }
+  public set alarm(value: string) {
+    this._alarm = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmInput() {
+    return this._alarm;
+  }
+
+  // extension_period - computed: false, optional: false, required: true
+  private _extensionPeriod?: number; 
+  public get extensionPeriod() {
+    return this.getNumberAttribute('extension_period');
+  }
+  public set extensionPeriod(value: number) {
+    this._extensionPeriod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extensionPeriodInput() {
+    return this._extensionPeriod;
+  }
+
+  // wait_period - computed: false, optional: false, required: true
+  private _waitPeriod?: number; 
+  public get waitPeriod() {
+    return this.getNumberAttribute('wait_period');
+  }
+  public set waitPeriod(value: number) {
+    this._waitPeriod = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitPeriodInput() {
+    return this._waitPeriod;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}
 */
 export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
 
@@ -72,7 +183,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +194,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_composite_alarm',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -104,6 +215,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
     this._okActions = config.okActions;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._actionsSuppressor.internalValue = config.actionsSuppressor;
   }
 
   // ==========
@@ -269,6 +381,22 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // actions_suppressor - computed: false, optional: true, required: false
+  private _actionsSuppressor = new CloudwatchCompositeAlarmActionsSuppressorOutputReference(this, "actions_suppressor");
+  public get actionsSuppressor() {
+    return this._actionsSuppressor;
+  }
+  public putActionsSuppressor(value: CloudwatchCompositeAlarmActionsSuppressor) {
+    this._actionsSuppressor.internalValue = value;
+  }
+  public resetActionsSuppressor() {
+    this._actionsSuppressor.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionsSuppressorInput() {
+    return this._actionsSuppressor.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -285,6 +413,7 @@ export class CloudwatchCompositeAlarm extends cdktf.TerraformResource {
       ok_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._okActions),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      actions_suppressor: cloudwatchCompositeAlarmActionsSuppressorToTerraform(this._actionsSuppressor.internalValue),
     };
   }
 }

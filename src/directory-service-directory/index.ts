@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +8,94 @@ import * as cdktf from 'cdktf';
 
 export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#alias DirectoryServiceDirectory#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#description DirectoryServiceDirectory#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#desired_number_of_domain_controllers DirectoryServiceDirectory#desired_number_of_domain_controllers}
   */
   readonly desiredNumberOfDomainControllers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#edition DirectoryServiceDirectory#edition}
   */
   readonly edition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#enable_sso DirectoryServiceDirectory#enable_sso}
   */
   readonly enableSso?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#id DirectoryServiceDirectory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#name DirectoryServiceDirectory#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#password DirectoryServiceDirectory#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#short_name DirectoryServiceDirectory#short_name}
   */
   readonly shortName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#size DirectoryServiceDirectory#size}
   */
   readonly size?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#tags DirectoryServiceDirectory#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#tags_all DirectoryServiceDirectory#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#type DirectoryServiceDirectory#type}
   */
   readonly type?: string;
   /**
   * connect_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#connect_settings DirectoryServiceDirectory#connect_settings}
   */
   readonly connectSettings?: DirectoryServiceDirectoryConnectSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#timeouts DirectoryServiceDirectory#timeouts}
   */
   readonly timeouts?: DirectoryServiceDirectoryTimeouts;
   /**
   * vpc_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#vpc_settings DirectoryServiceDirectory#vpc_settings}
   */
   readonly vpcSettings?: DirectoryServiceDirectoryVpcSettings;
 }
 export interface DirectoryServiceDirectoryConnectSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#customer_dns_ips DirectoryServiceDirectory#customer_dns_ips}
   */
   readonly customerDnsIps: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#customer_username DirectoryServiceDirectory#customer_username}
   */
   readonly customerUsername: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -232,15 +227,15 @@ export class DirectoryServiceDirectoryConnectSettingsOutputReference extends cdk
 }
 export interface DirectoryServiceDirectoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#create DirectoryServiceDirectory#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#delete DirectoryServiceDirectory#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#update DirectoryServiceDirectory#update}
   */
   readonly update?: string;
 }
@@ -361,11 +356,11 @@ export class DirectoryServiceDirectoryTimeoutsOutputReference extends cdktf.Comp
 }
 export interface DirectoryServiceDirectoryVpcSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#subnet_ids DirectoryServiceDirectory#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory#vpc_id DirectoryServiceDirectory#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -452,7 +447,7 @@ export class DirectoryServiceDirectoryVpcSettingsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory aws_directory_service_directory}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory aws_directory_service_directory}
 */
 export class DirectoryServiceDirectory extends cdktf.TerraformResource {
 
@@ -466,7 +461,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -477,7 +472,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_directory',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

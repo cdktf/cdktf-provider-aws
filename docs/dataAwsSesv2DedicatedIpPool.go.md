@@ -1,6 +1,6 @@
 # `data_aws_sesv2_dedicated_ip_pool`
 
-Refer to the Terraform Registory for docs: [`data_aws_sesv2_dedicated_ip_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool).
+Refer to the Terraform Registory for docs: [`data_aws_sesv2_dedicated_ip_pool`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool).
 
 # `dataAwsSesv2DedicatedIpPool` Submodule <a name="`dataAwsSesv2DedicatedIpPool` Submodule" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_sesv2_dedicated_ip_pool`](
 
 ### DataAwsSesv2DedicatedIpPool <a name="DataAwsSesv2DedicatedIpPool" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.NewDataAwsSesv2DedicatedIpPool(scope Construct, id *string, config DataAwsSesv2DedicatedIpPoolConfig) DataAwsSesv2DedicatedIpPool
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPool_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPool_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 &dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPoolConfig {
 	Connection: interface{},
@@ -633,9 +633,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippo
 | <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.poolName">PoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#pool_name DataAwsSesv2DedicatedIpPool#pool_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#id DataAwsSesv2DedicatedIpPool#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#tags DataAwsSesv2DedicatedIpPool#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.poolName">PoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#pool_name DataAwsSesv2DedicatedIpPool#pool_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#id DataAwsSesv2DedicatedIpPool#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#tags DataAwsSesv2DedicatedIpPool#tags}. |
 
 ---
 
@@ -717,7 +717,7 @@ PoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#pool_name DataAwsSesv2DedicatedIpPool#pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#pool_name DataAwsSesv2DedicatedIpPool#pool_name}.
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#id DataAwsSesv2DedicatedIpPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#id DataAwsSesv2DedicatedIpPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/sesv2_dedicated_ip_pool#tags DataAwsSesv2DedicatedIpPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/sesv2_dedicated_ip_pool#tags DataAwsSesv2DedicatedIpPool#tags}.
 
 ---
 
@@ -753,7 +753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 &dataawssesv2dedicatedippool.DataAwsSesv2DedicatedIpPoolDedicatedIps {
 
@@ -768,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.NewDataAwsSesv2DedicatedIpPoolDedicatedIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2DedicatedIpPoolDedicatedIpsList
 ```
@@ -900,7 +900,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSesv2DedicatedIpPool.DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssesv2dedicatedippool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssesv2dedicatedippool"
 
 dataawssesv2dedicatedippool.NewDataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2DedicatedIpPoolDedicatedIpsOutputReference
 ```

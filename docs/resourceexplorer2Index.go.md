@@ -1,6 +1,6 @@
 # `aws_resourceexplorer2_index`
 
-Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_index`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index).
+Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_index`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index).
 
 # `resourceexplorer2Index` Submodule <a name="`resourceexplorer2Index` Submodule" id="@cdktf/provider-aws.resourceexplorer2Index"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_resourceexplorer2_index`](https
 
 ### Resourceexplorer2Index <a name="Resourceexplorer2Index" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index aws_resourceexplorer2_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 resourceexplorer2index.NewResourceexplorer2Index(scope Construct, id *string, config Resourceexplorer2IndexConfig) Resourceexplorer2Index
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 resourceexplorer2index.Resourceexplorer2Index_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 resourceexplorer2index.Resourceexplorer2Index_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ resourceexplorer2index.Resourceexplorer2Index_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 resourceexplorer2index.Resourceexplorer2Index_IsTerraformResource(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 &resourceexplorer2index.Resourceexplorer2IndexConfig {
 	Connection: interface{},
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
 	Provisioners: *[]interface{},
 	Type: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.resourceexplorer2Index.Resourceexplorer2IndexTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts,
 }
 ```
 
@@ -668,8 +668,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}. |
-| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}. |
+| <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}. |
 | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts">Resourceexplorer2IndexTimeouts</a></code> | timeouts block. |
 
 ---
@@ -752,7 +752,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#type Resourceexplorer2Index#type}.
 
 ---
 
@@ -764,7 +764,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#tags Resourceexplorer2Index#tags}.
 
 ---
 
@@ -778,7 +778,7 @@ Timeouts Resourceexplorer2IndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#timeouts Resourceexplorer2Index#timeouts}
 
 ---
 
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 &resourceexplorer2index.Resourceexplorer2IndexTimeouts {
 	Create: *string,
@@ -816,7 +816,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#create Resourceexplorer2Index#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#create Resourceexplorer2Index#create}
 
 ---
 
@@ -830,7 +830,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#delete Resourceexplorer2Index#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#delete Resourceexplorer2Index#delete}
 
 ---
 
@@ -844,7 +844,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/resourceexplorer2_index#update Resourceexplorer2Index#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/resourceexplorer2_index#update Resourceexplorer2Index#update}
 
 ---
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/resourceexplorer2index"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/resourceexplorer2index"
 
 resourceexplorer2index.NewResourceexplorer2IndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Resourceexplorer2IndexTimeoutsOutputReference
 ```

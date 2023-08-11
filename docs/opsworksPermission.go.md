@@ -1,6 +1,6 @@
 # `aws_opsworks_permission`
 
-Refer to the Terraform Registory for docs: [`aws_opsworks_permission`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission).
+Refer to the Terraform Registory for docs: [`aws_opsworks_permission`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission).
 
 # `opsworksPermission` Submodule <a name="`opsworksPermission` Submodule" id="@cdktf/provider-aws.opsworksPermission"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_opsworks_permission`](https://r
 
 ### OpsworksPermission <a name="OpsworksPermission" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermission"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission aws_opsworks_permission}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission aws_opsworks_permission}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkspermission"
 
 opsworkspermission.NewOpsworksPermission(scope Construct, id *string, config OpsworksPermissionConfig) OpsworksPermission
 ```
@@ -298,7 +298,7 @@ func ResetLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkspermission"
 
 opsworkspermission.OpsworksPermission_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkspermission"
 
 opsworkspermission.OpsworksPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ opsworkspermission.OpsworksPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkspermission"
 
 opsworkspermission.OpsworksPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworkspermission"
 
 &opsworkspermission.OpsworksPermissionConfig {
 	Connection: interface{},
@@ -705,12 +705,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworkspermission"
 | <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#stack_id OpsworksPermission#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.userArn">UserArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#user_arn OpsworksPermission#user_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.allowSsh">AllowSsh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#allow_ssh OpsworksPermission#allow_ssh}. |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.allowSudo">AllowSudo</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#allow_sudo OpsworksPermission#allow_sudo}. |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#id OpsworksPermission#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#level OpsworksPermission#level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#stack_id OpsworksPermission#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.userArn">UserArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#user_arn OpsworksPermission#user_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.allowSsh">AllowSsh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#allow_ssh OpsworksPermission#allow_ssh}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.allowSudo">AllowSudo</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#allow_sudo OpsworksPermission#allow_sudo}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#id OpsworksPermission#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksPermission.OpsworksPermissionConfig.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#level OpsworksPermission#level}. |
 
 ---
 
@@ -792,7 +792,7 @@ StackId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#stack_id OpsworksPermission#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#stack_id OpsworksPermission#stack_id}.
 
 ---
 
@@ -804,7 +804,7 @@ UserArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#user_arn OpsworksPermission#user_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#user_arn OpsworksPermission#user_arn}.
 
 ---
 
@@ -816,7 +816,7 @@ AllowSsh interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#allow_ssh OpsworksPermission#allow_ssh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#allow_ssh OpsworksPermission#allow_ssh}.
 
 ---
 
@@ -828,7 +828,7 @@ AllowSudo interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#allow_sudo OpsworksPermission#allow_sudo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#allow_sudo OpsworksPermission#allow_sudo}.
 
 ---
 
@@ -840,7 +840,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#id OpsworksPermission#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#id OpsworksPermission#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -855,7 +855,7 @@ Level *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/opsworks_permission#level OpsworksPermission#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/opsworks_permission#level OpsworksPermission#level}.
 
 ---
 

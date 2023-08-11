@@ -1,6 +1,6 @@
 # `data_aws_api_gateway_vpc_link`
 
-Refer to the Terraform Registory for docs: [`data_aws_api_gateway_vpc_link`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link).
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_vpc_link`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link).
 
 # `dataAwsApiGatewayVpcLink` Submodule <a name="`dataAwsApiGatewayVpcLink` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_api_gateway_vpc_link`](htt
 
 ### DataAwsApiGatewayVpcLink <a name="DataAwsApiGatewayVpcLink" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayvpclink"
 
 dataawsapigatewayvpclink.NewDataAwsApiGatewayVpcLink(scope Construct, id *string, config DataAwsApiGatewayVpcLinkConfig) DataAwsApiGatewayVpcLink
 ```
@@ -277,7 +277,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayvpclink"
 
 dataawsapigatewayvpclink.DataAwsApiGatewayVpcLink_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayvpclink"
 
 dataawsapigatewayvpclink.DataAwsApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsapigatewayvpclink.DataAwsApiGatewayVpcLink_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayvpclink"
 
 dataawsapigatewayvpclink.DataAwsApiGatewayVpcLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayvpclink"
 
 &dataawsapigatewayvpclink.DataAwsApiGatewayVpcLinkConfig {
 	Connection: interface{},
@@ -625,8 +625,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayvpclink"
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}. |
 
 ---
 
@@ -708,7 +708,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}.
 
 ---
 
@@ -720,7 +720,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}.
 
 ---
 

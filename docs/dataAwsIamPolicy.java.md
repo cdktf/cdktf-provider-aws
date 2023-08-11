@@ -1,6 +1,6 @@
 # `data_aws_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy).
+Refer to the Terraform Registory for docs: [`data_aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy).
 
 # `dataAwsIamPolicy` Submodule <a name="`dataAwsIamPolicy` Submodule" id="@cdktf/provider-aws.dataAwsIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_policy`](https://regis
 
 ### DataAwsIamPolicy <a name="DataAwsIamPolicy" id="@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy aws_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy aws_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer"></a>
 
@@ -46,11 +46,11 @@ DataAwsIamPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.pathPrefix">pathPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.pathPrefix">pathPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
 
 ---
 
@@ -822,11 +822,11 @@ DataAwsIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.pathPrefix">pathPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.pathPrefix">pathPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}. |
 
 ---
 
@@ -908,7 +908,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#arn DataAwsIamPolicy#arn}.
 
 ---
 
@@ -920,7 +920,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#id DataAwsIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +935,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#name DataAwsIamPolicy#name}.
 
 ---
 
@@ -947,7 +947,7 @@ public java.lang.String getPathPrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#path_prefix DataAwsIamPolicy#path_prefix}.
 
 ---
 
@@ -959,7 +959,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_policy#tags DataAwsIamPolicy#tags}.
 
 ---
 
