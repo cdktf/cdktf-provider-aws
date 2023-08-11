@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogstream"
 
 cloudwatchlogstream.NewCloudwatchLogStream(scope Construct, id *string, config CloudwatchLogStreamConfig) CloudwatchLogStream
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ cloudwatchlogstream.CloudwatchLogStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogstream"
 
 cloudwatchlogstream.CloudwatchLogStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchlogstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogstream"
 
 &cloudwatchlogstream.CloudwatchLogStreamConfig {
 	Connection: interface{},

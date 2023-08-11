@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/amilaunchpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/amilaunchpermission"
 
 amilaunchpermission.NewAmiLaunchPermission(scope Construct, id *string, config AmiLaunchPermissionConfig) AmiLaunchPermission
 ```
@@ -305,7 +305,7 @@ func ResetOrganizationArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/amilaunchpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/amilaunchpermission"
 
 amilaunchpermission.AmiLaunchPermission_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/amilaunchpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/amilaunchpermission"
 
 amilaunchpermission.AmiLaunchPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ amilaunchpermission.AmiLaunchPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/amilaunchpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/amilaunchpermission"
 
 amilaunchpermission.AmiLaunchPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/amilaunchpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/amilaunchpermission"
 
 &amilaunchpermission.AmiLaunchPermissionConfig {
 	Connection: interface{},

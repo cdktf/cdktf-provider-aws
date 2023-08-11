@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionconfirmation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxconnectionconfirmation"
 
 dxconnectionconfirmation.NewDxConnectionConfirmation(scope Construct, id *string, config DxConnectionConfirmationConfig) DxConnectionConfirmation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionconfirmation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxconnectionconfirmation"
 
 dxconnectionconfirmation.DxConnectionConfirmation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionconfirmation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxconnectionconfirmation"
 
 dxconnectionconfirmation.DxConnectionConfirmation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dxconnectionconfirmation.DxConnectionConfirmation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionconfirmation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxconnectionconfirmation"
 
 dxconnectionconfirmation.DxConnectionConfirmation_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dxconnectionconfirmation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxconnectionconfirmation"
 
 &dxconnectionconfirmation.DxConnectionConfirmationConfig {
 	Connection: interface{},

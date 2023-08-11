@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 quicksightaccountsubscription.NewQuicksightAccountSubscription(scope Construct, id *string, config QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription
 ```
@@ -374,7 +374,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 quicksightaccountsubscription.QuicksightAccountSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 quicksightaccountsubscription.QuicksightAccountSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ quicksightaccountsubscription.QuicksightAccountSubscription_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 quicksightaccountsubscription.QuicksightAccountSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 &quicksightaccountsubscription.QuicksightAccountSubscriptionConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription
 	LastName: *string,
 	ReaderGroup: *[]*string,
 	Realm: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightAccountSubscription.QuicksightAccountSubscriptionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.quicksightAccountSubscription.QuicksightAccountSubscriptionTimeouts,
 }
 ```
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 &quicksightaccountsubscription.QuicksightAccountSubscriptionTimeouts {
 	Create: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightAccountSubscription.QuicksightAccountSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightaccountsubscription"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/quicksightaccountsubscription"
 
 quicksightaccountsubscription.NewQuicksightAccountSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAccountSubscriptionTimeoutsOutputReference
 ```
