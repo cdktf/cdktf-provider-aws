@@ -1,6 +1,6 @@
 # `data_aws_location_geofence_collection`
 
-Refer to the Terraform Registory for docs: [`data_aws_location_geofence_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection).
+Refer to the Terraform Registory for docs: [`data_aws_location_geofence_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection).
 
 # `dataAwsLocationGeofenceCollection` Submodule <a name="`dataAwsLocationGeofenceCollection` Submodule" id="@cdktf/provider-aws.dataAwsLocationGeofenceCollection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_location_geofence_collecti
 
 ### DataAwsLocationGeofenceCollection <a name="DataAwsLocationGeofenceCollection" id="@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection aws_location_geofence_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection aws_location_geofence_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer"></a>
 
@@ -45,10 +45,10 @@ DataAwsLocationGeofenceCollection.Builder.create(Construct scope, java.lang.Stri
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.collectionName">collectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.collectionName">collectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}.
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}.
 
 ---
 
@@ -775,10 +775,10 @@ DataAwsLocationGeofenceCollectionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.collectionName">collectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.collectionName">collectionName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollectionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}. |
 
 ---
 
@@ -860,7 +860,7 @@ public java.lang.String getCollectionName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#collection_name DataAwsLocationGeofenceCollection#collection_name}.
 
 ---
 
@@ -872,7 +872,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#id DataAwsLocationGeofenceCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -887,7 +887,7 @@ public java.lang.String getKmsKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#kms_key_id DataAwsLocationGeofenceCollection#kms_key_id}.
 
 ---
 
@@ -899,7 +899,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_geofence_collection#tags DataAwsLocationGeofenceCollection#tags}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_iot_role_alias`
 
-Refer to the Terraform Registory for docs: [`aws_iot_role_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias).
+Refer to the Terraform Registory for docs: [`aws_iot_role_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias).
 
 # `iotRoleAlias` Submodule <a name="`iotRoleAlias` Submodule" id="@cdktf/provider-aws.iotRoleAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iot_role_alias`](https://regist
 
 ### IotRoleAlias <a name="IotRoleAlias" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias aws_iot_role_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias aws_iot_role_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotRoleAlias.IotRoleAlias.Initializer"></a>
 
@@ -656,10 +656,10 @@ new IotRoleAliasConfig {
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.alias">Alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.credentialDuration">CredentialDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
-| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.alias">Alias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.roleArn">RoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.credentialDuration">CredentialDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}. |
+| <code><a href="#@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#id IotRoleAlias#id}. |
 
 ---
 
@@ -741,7 +741,7 @@ public string Alias { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#alias IotRoleAlias#alias}.
 
 ---
 
@@ -753,7 +753,7 @@ public string RoleArn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#role_arn IotRoleAlias#role_arn}.
 
 ---
 
@@ -765,7 +765,7 @@ public double CredentialDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#credential_duration IotRoleAlias#credential_duration}.
 
 ---
 
@@ -777,7 +777,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_role_alias#id IotRoleAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iot_role_alias#id IotRoleAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

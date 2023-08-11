@@ -1,6 +1,6 @@
 # `aws_redshift_hsm_client_certificate`
 
-Refer to the Terraform Registory for docs: [`aws_redshift_hsm_client_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate).
+Refer to the Terraform Registory for docs: [`aws_redshift_hsm_client_certificate`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate).
 
 # `redshiftHsmClientCertificate` Submodule <a name="`redshiftHsmClientCertificate` Submodule" id="@cdktf/provider-aws.redshiftHsmClientCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_redshift_hsm_client_certificate
 
 ### RedshiftHsmClientCertificate <a name="RedshiftHsmClientCertificate" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate aws_redshift_hsm_client_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate aws_redshift_hsm_client_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificate.Initializer"></a>
 
@@ -662,10 +662,10 @@ const redshiftHsmClientCertificateConfig: redshiftHsmClientCertificate.RedshiftH
 | <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.hsmClientCertificateIdentifier">hsmClientCertificateIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#hsm_client_certificate_identifier RedshiftHsmClientCertificate#hsm_client_certificate_identifier}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#id RedshiftHsmClientCertificate#id}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#tags RedshiftHsmClientCertificate#tags}. |
-| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#tags_all RedshiftHsmClientCertificate#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.hsmClientCertificateIdentifier">hsmClientCertificateIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#hsm_client_certificate_identifier RedshiftHsmClientCertificate#hsm_client_certificate_identifier}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#id RedshiftHsmClientCertificate#id}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#tags RedshiftHsmClientCertificate#tags}. |
+| <code><a href="#@cdktf/provider-aws.redshiftHsmClientCertificate.RedshiftHsmClientCertificateConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#tags_all RedshiftHsmClientCertificate#tags_all}. |
 
 ---
 
@@ -747,7 +747,7 @@ public readonly hsmClientCertificateIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#hsm_client_certificate_identifier RedshiftHsmClientCertificate#hsm_client_certificate_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#hsm_client_certificate_identifier RedshiftHsmClientCertificate#hsm_client_certificate_identifier}.
 
 ---
 
@@ -759,7 +759,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#id RedshiftHsmClientCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#id RedshiftHsmClientCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#tags RedshiftHsmClientCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#tags RedshiftHsmClientCertificate#tags}.
 
 ---
 
@@ -786,7 +786,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/redshift_hsm_client_certificate#tags_all RedshiftHsmClientCertificate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/redshift_hsm_client_certificate#tags_all RedshiftHsmClientCertificate#tags_all}.
 
 ---
 

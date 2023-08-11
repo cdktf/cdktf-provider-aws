@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/mskconnect_worker_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/mskconnect_worker_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsMskconnectWorkerConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/mskconnect_worker_configuration#id DataAwsMskconnectWorkerConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/mskconnect_worker_configuration#id DataAwsMskconnectWorkerConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/mskconnect_worker_configuration#name DataAwsMskconnectWorkerConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/mskconnect_worker_configuration#name DataAwsMskconnectWorkerConfiguration#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/mskconnect_worker_configuration aws_mskconnect_worker_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/mskconnect_worker_configuration aws_mskconnect_worker_configuration}
 */
 export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataAwsMskconnectWorkerConfiguration extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_mskconnect_worker_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

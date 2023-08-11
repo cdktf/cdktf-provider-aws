@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,92 +13,92 @@ import * as cdktf from 'cdktf';
 
 export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}
   */
   readonly administrationRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}
   */
   readonly callAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}
   */
   readonly capabilities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}
   */
   readonly executionRoleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}
   */
   readonly permissionModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}
   */
   readonly templateBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}
   */
   readonly templateUrl?: string;
   /**
   * auto_deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
   */
   readonly autoDeployment?: CloudformationStackSetAutoDeployment;
   /**
   * managed_execution block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
   */
   readonly managedExecution?: CloudformationStackSetManagedExecution;
   /**
   * operation_preferences block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
   */
   readonly operationPreferences?: CloudformationStackSetOperationPreferences;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
   */
   readonly timeouts?: CloudformationStackSetTimeouts;
 }
 export interface CloudformationStackSetAutoDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#enabled CloudformationStackSet#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#retain_stacks_on_account_removal CloudformationStackSet#retain_stacks_on_account_removal}
   */
   readonly retainStacksOnAccountRemoval?: boolean | cdktf.IResolvable;
 }
@@ -186,7 +186,7 @@ export class CloudformationStackSetAutoDeploymentOutputReference extends cdktf.C
 }
 export interface CloudformationStackSetManagedExecution {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#active CloudformationStackSet#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
 }
@@ -251,27 +251,27 @@ export class CloudformationStackSetManagedExecutionOutputReference extends cdktf
 }
 export interface CloudformationStackSetOperationPreferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#failure_tolerance_count CloudformationStackSet#failure_tolerance_count}
   */
   readonly failureToleranceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#failure_tolerance_percentage CloudformationStackSet#failure_tolerance_percentage}
   */
   readonly failureTolerancePercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#max_concurrent_count CloudformationStackSet#max_concurrent_count}
   */
   readonly maxConcurrentCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#max_concurrent_percentage CloudformationStackSet#max_concurrent_percentage}
   */
   readonly maxConcurrentPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#region_concurrency_type CloudformationStackSet#region_concurrency_type}
   */
   readonly regionConcurrencyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#region_order CloudformationStackSet#region_order}
   */
   readonly regionOrder?: string[];
 }
@@ -451,7 +451,7 @@ export class CloudformationStackSetOperationPreferencesOutputReference extends c
 }
 export interface CloudformationStackSetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set#update CloudformationStackSet#update}
   */
   readonly update?: string;
 }
@@ -526,7 +526,7 @@ export class CloudformationStackSetTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}
 */
 export class CloudformationStackSet extends cdktf.TerraformResource {
 
@@ -540,7 +540,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -551,7 +551,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudformation_stack_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

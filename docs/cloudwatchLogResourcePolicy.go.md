@@ -1,6 +1,6 @@
 # `aws_cloudwatch_log_resource_policy`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_resource_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy).
 
 # `cloudwatchLogResourcePolicy` Submodule <a name="`cloudwatchLogResourcePolicy` Submodule" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_resource_policy`
 
 ### CloudwatchLogResourcePolicy <a name="CloudwatchLogResourcePolicy" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy aws_cloudwatch_log_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudwatchlogresourcepoli
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyDocument">PolicyDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyDocument">PolicyDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogResourcePolicy.CloudwatchLogResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ PolicyDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#policy_document CloudwatchLogResourcePolicy#policy_document}.
 
 ---
 
@@ -711,7 +711,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#policy_name CloudwatchLogResourcePolicy#policy_name}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_log_resource_policy#id CloudwatchLogResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

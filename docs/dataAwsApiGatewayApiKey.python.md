@@ -1,6 +1,6 @@
 # `data_aws_api_gateway_api_key`
 
-Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key).
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key).
 
 # `dataAwsApiGatewayApiKey` Submodule <a name="`dataAwsApiGatewayApiKey` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](http
 
 ### DataAwsApiGatewayApiKey <a name="DataAwsApiGatewayApiKey" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey(
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
 
 ---
 
@@ -742,8 +742,8 @@ dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
 
 ---
 
@@ -825,7 +825,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -840,7 +840,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
 
 ---
 

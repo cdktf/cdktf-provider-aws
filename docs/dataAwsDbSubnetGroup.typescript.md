@@ -1,6 +1,6 @@
 # `data_aws_db_subnet_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_db_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group).
+Refer to the Terraform Registory for docs: [`data_aws_db_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group).
 
 # `dataAwsDbSubnetGroup` Submodule <a name="`dataAwsDbSubnetGroup` Submodule" id="@cdktf/provider-aws.dataAwsDbSubnetGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_db_subnet_group`](https://
 
 ### DataAwsDbSubnetGroup <a name="DataAwsDbSubnetGroup" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group aws_db_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group aws_db_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroup.Initializer"></a>
 
@@ -626,8 +626,8 @@ const dataAwsDbSubnetGroupConfig: dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfi
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbSubnetGroup.DataAwsDbSubnetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}. |
 
 ---
 
@@ -709,7 +709,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group#name DataAwsDbSubnetGroup#name}.
 
 ---
 
@@ -721,7 +721,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/db_subnet_group#id DataAwsDbSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

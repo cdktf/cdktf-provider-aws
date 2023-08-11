@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface BackupFrameworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#description BackupFramework#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#description BackupFramework#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#id BackupFramework#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#id BackupFramework#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#name BackupFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#name BackupFramework#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#tags BackupFramework#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#tags BackupFramework#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#tags_all BackupFramework#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#control BackupFramework#control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#control BackupFramework#control}
   */
   readonly control: BackupFrameworkControl[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#timeouts BackupFramework#timeouts}
   */
   readonly timeouts?: BackupFrameworkTimeouts;
 }
 export interface BackupFrameworkControlInputParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#name BackupFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#name BackupFramework#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#value BackupFramework#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#value BackupFramework#value}
   */
   readonly value?: string;
 }
@@ -174,15 +174,15 @@ export class BackupFrameworkControlInputParameterList extends cdktf.ComplexList 
 }
 export interface BackupFrameworkControlScope {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#compliance_resource_ids BackupFramework#compliance_resource_ids}
   */
   readonly complianceResourceIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#compliance_resource_types BackupFramework#compliance_resource_types}
   */
   readonly complianceResourceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#tags BackupFramework#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#tags BackupFramework#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -293,19 +293,19 @@ export class BackupFrameworkControlScopeOutputReference extends cdktf.ComplexObj
 }
 export interface BackupFrameworkControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#name BackupFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#name BackupFramework#name}
   */
   readonly name: string;
   /**
   * input_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#input_parameter BackupFramework#input_parameter}
   */
   readonly inputParameter?: BackupFrameworkControlInputParameter[] | cdktf.IResolvable;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#scope BackupFramework#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#scope BackupFramework#scope}
   */
   readonly scope?: BackupFrameworkControlScope;
 }
@@ -445,15 +445,15 @@ export class BackupFrameworkControlList extends cdktf.ComplexList {
 }
 export interface BackupFrameworkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#create BackupFramework#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#create BackupFramework#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#delete BackupFramework#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#delete BackupFramework#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework#update BackupFramework#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework#update BackupFramework#update}
   */
   readonly update?: string;
 }
@@ -574,7 +574,7 @@ export class BackupFrameworkTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework aws_backup_framework}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework aws_backup_framework}
 */
 export class BackupFramework extends cdktf.TerraformResource {
 
@@ -588,7 +588,7 @@ export class BackupFramework extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/backup_framework aws_backup_framework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/backup_framework aws_backup_framework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -599,7 +599,7 @@ export class BackupFramework extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_framework',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

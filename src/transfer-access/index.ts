@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access
+// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface TransferAccessConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#external_id TransferAccess#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#external_id TransferAccess#external_id}
   */
   readonly externalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#home_directory TransferAccess#home_directory}
   */
   readonly homeDirectory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#home_directory_type TransferAccess#home_directory_type}
   */
   readonly homeDirectoryType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#id TransferAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#id TransferAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#policy TransferAccess#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#policy TransferAccess#policy}
   */
   readonly policy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#role TransferAccess#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#role TransferAccess#role}
   */
   readonly role?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#server_id TransferAccess#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#server_id TransferAccess#server_id}
   */
   readonly serverId: string;
   /**
   * home_directory_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#home_directory_mappings TransferAccess#home_directory_mappings}
   */
   readonly homeDirectoryMappings?: TransferAccessHomeDirectoryMappings[] | cdktf.IResolvable;
   /**
   * posix_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#posix_profile TransferAccess#posix_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#posix_profile TransferAccess#posix_profile}
   */
   readonly posixProfile?: TransferAccessPosixProfile;
 }
 export interface TransferAccessHomeDirectoryMappings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#entry TransferAccess#entry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#entry TransferAccess#entry}
   */
   readonly entry: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#target TransferAccess#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#target TransferAccess#target}
   */
   readonly target: string;
 }
@@ -176,15 +176,15 @@ export class TransferAccessHomeDirectoryMappingsList extends cdktf.ComplexList {
 }
 export interface TransferAccessPosixProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#gid TransferAccess#gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#gid TransferAccess#gid}
   */
   readonly gid: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#secondary_gids TransferAccess#secondary_gids}
   */
   readonly secondaryGids?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access#uid TransferAccess#uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access#uid TransferAccess#uid}
   */
   readonly uid: number;
 }
@@ -289,7 +289,7 @@ export class TransferAccessPosixProfileOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access aws_transfer_access}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access aws_transfer_access}
 */
 export class TransferAccess extends cdktf.TerraformResource {
 
@@ -303,7 +303,7 @@ export class TransferAccess extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_access aws_transfer_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_access aws_transfer_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +314,7 @@ export class TransferAccess extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_access',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_elb_attachment`
 
-Refer to the Terraform Registory for docs: [`aws_elb_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment).
+Refer to the Terraform Registory for docs: [`aws_elb_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment).
 
 # `elbAttachment` Submodule <a name="`elbAttachment` Submodule" id="@cdktf/provider-aws.elbAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_elb_attachment`](https://regist
 
 ### ElbAttachment <a name="ElbAttachment" id="@cdktf/provider-aws.elbAttachment.ElbAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment aws_elb_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment aws_elb_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer"></a>
 
@@ -42,9 +42,9 @@ elbAttachment.ElbAttachment(
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.elb">elb</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#elb ElbAttachment#elb}. |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#instance ElbAttachment#instance}. |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#id ElbAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.elb">elb</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#elb ElbAttachment#elb}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#instance ElbAttachment#instance}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#id ElbAttachment#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#elb ElbAttachment#elb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#elb ElbAttachment#elb}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#instance ElbAttachment#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#instance ElbAttachment#instance}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#id ElbAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#id ElbAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -731,9 +731,9 @@ elbAttachment.ElbAttachmentConfig(
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.elb">elb</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#elb ElbAttachment#elb}. |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#instance ElbAttachment#instance}. |
-| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#id ElbAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.elb">elb</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#elb ElbAttachment#elb}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.instance">instance</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#instance ElbAttachment#instance}. |
+| <code><a href="#@cdktf/provider-aws.elbAttachment.ElbAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#id ElbAttachment#id}. |
 
 ---
 
@@ -815,7 +815,7 @@ elb: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#elb ElbAttachment#elb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#elb ElbAttachment#elb}.
 
 ---
 
@@ -827,7 +827,7 @@ instance: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#instance ElbAttachment#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#instance ElbAttachment#instance}.
 
 ---
 
@@ -839,7 +839,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/elb_attachment#id ElbAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elb_attachment#id ElbAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

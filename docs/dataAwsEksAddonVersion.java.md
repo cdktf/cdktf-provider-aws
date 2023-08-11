@@ -1,6 +1,6 @@
 # `data_aws_eks_addon_version`
 
-Refer to the Terraform Registory for docs: [`data_aws_eks_addon_version`](https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version).
+Refer to the Terraform Registory for docs: [`data_aws_eks_addon_version`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version).
 
 # `dataAwsEksAddonVersion` Submodule <a name="`dataAwsEksAddonVersion` Submodule" id="@cdktf/provider-aws.dataAwsEksAddonVersion"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_eks_addon_version`](https:
 
 ### DataAwsEksAddonVersion <a name="DataAwsEksAddonVersion" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version aws_eks_addon_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version aws_eks_addon_version}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer"></a>
 
@@ -46,10 +46,10 @@ DataAwsEksAddonVersion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.addonName">addonName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.kubernetesVersion">kubernetesVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.addonName">addonName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.kubernetesVersion">kubernetesVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer.parameter.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}. |
 
 ---
 
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}.
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}.
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -144,7 +144,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}.
 
 ---
 
@@ -737,10 +737,10 @@ DataAwsEksAddonVersionConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.addonName">addonName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.kubernetesVersion">kubernetesVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.addonName">addonName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.kubernetesVersion">kubernetesVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.property.mostRecent">mostRecent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}. |
 
 ---
 
@@ -822,7 +822,7 @@ public java.lang.String getAddonName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#addon_name DataAwsEksAddonVersion#addon_name}.
 
 ---
 
@@ -834,7 +834,7 @@ public java.lang.String getKubernetesVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#kubernetes_version DataAwsEksAddonVersion#kubernetes_version}.
 
 ---
 
@@ -846,7 +846,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#id DataAwsEksAddonVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -861,7 +861,7 @@ public java.lang.Object getMostRecent();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/eks_addon_version#most_recent DataAwsEksAddonVersion#most_recent}.
 
 ---
 
