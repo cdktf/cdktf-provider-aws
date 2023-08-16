@@ -4275,10 +4275,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.72.12:
-  version "0.72.12"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.12.tgz#8e04e50658dd578c2c3fd2492fe99a20cd311600"
-  integrity sha512-kYXLrYkYfk+VbVd9wTTA5aW37kC4iQzV4RLl2vPqSAfJpOiqyKwJHhY6PIF8VgugGahCIXbBCVVHR8FVTcaEnQ==
+projen@^0.72.13:
+  version "0.72.13"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.13.tgz#f645eb8699159c5bd7309b5f68f8935d3e459b13"
+  integrity sha512-k0d/w5W+C4d7rqfh+aB4/0h4oNXyG2zlBGYrghrYZUo0YaxdIrHMjn+PiBOq2HWeNMnNemEqe/kFc2bix4tp6w==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5254,9 +5254,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230814"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230814.tgz#cc35a445e0a9044da5ffb275797c6b9a258a96e4"
-  integrity sha512-ztAo8S7pDTqodkSIPPdh4mL5T7+//1xfOP17O2yFW3dx3u/87MG4qsiZ5HIOoV0L9Kkr/fFw5bqGXHcDT/Nclg==
+  version "5.3.0-dev.20230815"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230815.tgz#290cf6828530783e40518bc85e98fecf9ab0e280"
+  integrity sha512-AB4arWte1oMsTpFUSnkhgLOzWRR6SLMtQ4WjDl+I0mDC3nh0UH5SEJtwjSt7lYIg/xylgXduCFEDoM1Vvv3uPg==
 
 typescript@~5.1.6:
   version "5.1.6"
@@ -5665,6 +5665,6 @@ zod@^1.11.17:
   integrity sha512-UzIwO92D0dSFwIRyyqAfRXICITLjF0IP8tRbEK/un7adirMssWZx8xF/1hZNE7t61knWZ+lhEuUvxlu2MO8qqA==
 
 zod@^3.21.4:
-  version "3.22.0"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.0.tgz#2478211a9bf477eb2d7d2ce031b5f8ff0d596407"
-  integrity sha512-y5KZY/ssf5n7hCGDGGtcJO/EBJEm5Pa+QQvFBeyMOtnFYOSflalxIFFvdaYevPhePcmcKC4aTbFkCcXN7D0O8Q==
+  version "3.22.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.1.tgz#815f850baf933fef96c1061322dbe579b1a80c27"
+  integrity sha512-+qUhAMl414+Elh+fRNtpU+byrwjDFOS1N7NioLY+tSlcADTx4TkCUua/hxJvxwDXcV4397/nZ420jy4n4+3WUg==
