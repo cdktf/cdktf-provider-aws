@@ -1,6 +1,6 @@
 # `data_aws_ssm_document`
 
-Refer to the Terraform Registory for docs: [`data_aws_ssm_document`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document).
+Refer to the Terraform Registory for docs: [`data_aws_ssm_document`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document).
 
 # `dataAwsSsmDocument` Submodule <a name="`dataAwsSsmDocument` Submodule" id="@cdktf/provider-aws.dataAwsSsmDocument"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_ssm_document`](https://reg
 
 ### DataAwsSsmDocument <a name="DataAwsSsmDocument" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document aws_ssm_document}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document aws_ssm_document}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer"></a>
 
@@ -45,10 +45,10 @@ DataAwsSsmDocument.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentVersion">documentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.documentVersion">documentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -764,10 +764,10 @@ DataAwsSsmDocumentConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">documentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentFormat">documentFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.documentVersion">documentVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocumentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}. |
 
 ---
 
@@ -849,7 +849,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#name DataAwsSsmDocument#name}.
 
 ---
 
@@ -861,7 +861,7 @@ public java.lang.String getDocumentFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_format DataAwsSsmDocument#document_format}.
 
 ---
 
@@ -873,7 +873,7 @@ public java.lang.String getDocumentVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#document_version DataAwsSsmDocument#document_version}.
 
 ---
 
@@ -885,7 +885,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_document#id DataAwsSsmDocument#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

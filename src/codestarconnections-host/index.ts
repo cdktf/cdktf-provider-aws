@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface CodestarconnectionsHostConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#id CodestarconnectionsHost#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#name CodestarconnectionsHost#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#provider_endpoint CodestarconnectionsHost#provider_endpoint}
   */
   readonly providerEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#provider_type CodestarconnectionsHost#provider_type}
   */
   readonly providerType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#timeouts CodestarconnectionsHost#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#timeouts CodestarconnectionsHost#timeouts}
   */
   readonly timeouts?: CodestarconnectionsHostTimeouts;
   /**
   * vpc_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#vpc_configuration CodestarconnectionsHost#vpc_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#vpc_configuration CodestarconnectionsHost#vpc_configuration}
   */
   readonly vpcConfiguration?: CodestarconnectionsHostVpcConfiguration;
 }
 export interface CodestarconnectionsHostTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#create CodestarconnectionsHost#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#delete CodestarconnectionsHost#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#update CodestarconnectionsHost#update}
   */
   readonly update?: string;
 }
@@ -175,19 +170,19 @@ export class CodestarconnectionsHostTimeoutsOutputReference extends cdktf.Comple
 }
 export interface CodestarconnectionsHostVpcConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#security_group_ids CodestarconnectionsHost#security_group_ids}
   */
   readonly securityGroupIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#subnet_ids CodestarconnectionsHost#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#tls_certificate CodestarconnectionsHost#tls_certificate}
   */
   readonly tlsCertificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host#vpc_id CodestarconnectionsHost#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -312,7 +307,7 @@ export class CodestarconnectionsHostVpcConfigurationOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host aws_codestarconnections_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host aws_codestarconnections_host}
 */
 export class CodestarconnectionsHost extends cdktf.TerraformResource {
 
@@ -326,7 +321,7 @@ export class CodestarconnectionsHost extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -337,7 +332,7 @@ export class CodestarconnectionsHost extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codestarconnections_host',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

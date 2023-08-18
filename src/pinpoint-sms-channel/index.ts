@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface PinpointSmsChannelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}
   */
   readonly senderId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}
   */
   readonly shortCode?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel}
 */
 export class PinpointSmsChannel extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class PinpointSmsChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/pinpoint_sms_channel aws_pinpoint_sms_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class PinpointSmsChannel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_pinpoint_sms_channel',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

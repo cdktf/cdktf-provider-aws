@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/route53_cidr_collection
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_cidr_collection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface Route53CidrCollectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_cidr_collection#name Route53CidrCollection#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection}
 */
 export class Route53CidrCollection extends cdktf.TerraformResource {
 
@@ -33,7 +28,7 @@ export class Route53CidrCollection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_cidr_collection aws_route53_cidr_collection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -44,7 +39,7 @@ export class Route53CidrCollection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_cidr_collection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_imagebuilder_image`
 
-Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_image`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image).
+Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_image`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image).
 
 # `dataAwsImagebuilderImage` Submodule <a name="`dataAwsImagebuilderImage` Submodule" id="@cdktf/provider-aws.dataAwsImagebuilderImage"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_image`](https
 
 ### DataAwsImagebuilderImage <a name="DataAwsImagebuilderImage" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImage(scope Construct, id *string, config DataAwsImagebuilderImageConfig) DataAwsImagebuilderImage
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.DataAwsImagebuilderImage_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.DataAwsImagebuilderImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsimagebuilderimage.DataAwsImagebuilderImage_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.DataAwsImagebuilderImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 &dataawsimagebuilderimage.DataAwsImagebuilderImageConfig {
 	Connection: interface{},
@@ -743,9 +743,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#arn DataAwsImagebuilderImage#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#id DataAwsImagebuilderImage#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#tags DataAwsImagebuilderImage#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#arn DataAwsImagebuilderImage#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#id DataAwsImagebuilderImage#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#tags DataAwsImagebuilderImage#tags}. |
 
 ---
 
@@ -827,7 +827,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#arn DataAwsImagebuilderImage#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#arn DataAwsImagebuilderImage#arn}.
 
 ---
 
@@ -839,7 +839,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#id DataAwsImagebuilderImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#id DataAwsImagebuilderImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +854,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image#tags DataAwsImagebuilderImage#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image#tags DataAwsImagebuilderImage#tags}.
 
 ---
 
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 &dataawsimagebuilderimage.DataAwsImagebuilderImageImageTestsConfiguration {
 
@@ -876,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 &dataawsimagebuilderimage.DataAwsImagebuilderImageOutputResources {
 
@@ -889,7 +889,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 &dataawsimagebuilderimage.DataAwsImagebuilderImageOutputResourcesAmis {
 
@@ -902,7 +902,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 &dataawsimagebuilderimage.DataAwsImagebuilderImageOutputResourcesContainers {
 
@@ -917,7 +917,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageImageTestsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImageImageTestsConfigurationList
 ```
@@ -1049,7 +1049,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageImageTestsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImageImageTestsConfigurationOutputReference
 ```
@@ -1338,7 +1338,7 @@ func InternalValue() DataAwsImagebuilderImageImageTestsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesAmisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImageOutputResourcesAmisList
 ```
@@ -1470,7 +1470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesAmisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImageOutputResourcesAmisOutputReference
 ```
@@ -1792,7 +1792,7 @@ func InternalValue() DataAwsImagebuilderImageOutputResourcesAmis
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImageOutputResourcesContainersList
 ```
@@ -1924,7 +1924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImageOutputResourcesContainersOutputReference
 ```
@@ -2213,7 +2213,7 @@ func InternalValue() DataAwsImagebuilderImageOutputResourcesContainers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsImagebuilderImageOutputResourcesList
 ```
@@ -2345,7 +2345,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuilderimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuilderimage"
 
 dataawsimagebuilderimage.NewDataAwsImagebuilderImageOutputResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsImagebuilderImageOutputResourcesOutputReference
 ```

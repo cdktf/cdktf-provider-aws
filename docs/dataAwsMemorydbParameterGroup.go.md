@@ -1,6 +1,6 @@
 # `data_aws_memorydb_parameter_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_memorydb_parameter_group`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group).
+Refer to the Terraform Registory for docs: [`data_aws_memorydb_parameter_group`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group).
 
 # `dataAwsMemorydbParameterGroup` Submodule <a name="`dataAwsMemorydbParameterGroup` Submodule" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_memorydb_parameter_group`]
 
 ### DataAwsMemorydbParameterGroup <a name="DataAwsMemorydbParameterGroup" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group aws_memorydb_parameter_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroup(scope Construct, id *string, config DataAwsMemorydbParameterGroupConfig) DataAwsMemorydbParameterGroup
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 &dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroupConfig {
 	Connection: interface{},
@@ -644,9 +644,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparameterg
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#name DataAwsMemorydbParameterGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#id DataAwsMemorydbParameterGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#tags DataAwsMemorydbParameterGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#name DataAwsMemorydbParameterGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#id DataAwsMemorydbParameterGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#tags DataAwsMemorydbParameterGroup#tags}. |
 
 ---
 
@@ -728,7 +728,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#name DataAwsMemorydbParameterGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#name DataAwsMemorydbParameterGroup#name}.
 
 ---
 
@@ -740,7 +740,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#id DataAwsMemorydbParameterGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#id DataAwsMemorydbParameterGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/memorydb_parameter_group#tags DataAwsMemorydbParameterGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/memorydb_parameter_group#tags DataAwsMemorydbParameterGroup#tags}.
 
 ---
 
@@ -764,7 +764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 &dataawsmemorydbparametergroup.DataAwsMemorydbParameterGroupParameter {
 
@@ -779,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparameterg
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMemorydbParameterGroupParameterList
 ```
@@ -911,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbparametergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbparametergroup"
 
 dataawsmemorydbparametergroup.NewDataAwsMemorydbParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMemorydbParameterGroupParameterOutputReference
 ```

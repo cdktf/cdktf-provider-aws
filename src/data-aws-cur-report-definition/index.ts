@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/cur_report_definition
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/cur_report_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsCurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}
   */
   readonly reportName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/cur_report_definition aws_cur_report_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/cur_report_definition aws_cur_report_definition}
 */
 export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
 
@@ -40,7 +35,7 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_cur_report_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_iam_account_alias`
 
-Refer to the Terraform Registory for docs: [`aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias).
+Refer to the Terraform Registory for docs: [`aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias).
 
 # `iamAccountAlias` Submodule <a name="`iamAccountAlias` Submodule" id="@cdktf/provider-aws.iamAccountAlias"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_iam_account_alias`](https://reg
 
 ### IamAccountAlias <a name="IamAccountAlias" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias aws_iam_account_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias aws_iam_account_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountalias"
 
 iamaccountalias.NewIamAccountAlias(scope Construct, id *string, config IamAccountAliasConfig) IamAccountAlias
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountalias"
 
 iamaccountalias.IamAccountAlias_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountalias"
 
 iamaccountalias.IamAccountAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ iamaccountalias.IamAccountAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountalias"
 
 iamaccountalias.IamAccountAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamaccountalias"
 
 &iamaccountalias.IamAccountAliasConfig {
 	Connection: interface{},
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamaccountalias"
 | <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.accountAlias">AccountAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}. |
-| <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias#id IamAccountAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.accountAlias">AccountAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}. |
+| <code><a href="#@cdktf/provider-aws.iamAccountAlias.IamAccountAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias#id IamAccountAlias#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ AccountAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias#account_alias IamAccountAlias#account_alias}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_account_alias#id IamAccountAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_account_alias#id IamAccountAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

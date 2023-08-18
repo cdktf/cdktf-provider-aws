@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,159 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline#arn DataAwsImagebuilderImagePipeline#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline#arn DataAwsImagebuilderImagePipeline#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline#id DataAwsImagebuilderImagePipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline#id DataAwsImagebuilderImagePipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline#tags DataAwsImagebuilderImagePipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline#tags DataAwsImagebuilderImagePipeline#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration {
+}
+
+export function dataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationToTerraform(struct?: DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // container_tags - computed: true, optional: false, required: false
+  public get containerTags() {
+    return cdktf.Fn.tolist(this.getListAttribute('container_tags'));
+  }
+
+  // repository_name - computed: true, optional: false, required: false
+  public get repositoryName() {
+    return this.getStringAttribute('repository_name');
+  }
+}
+
+export class DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationOutputReference {
+    return new DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsImagebuilderImagePipelineImageScanningConfiguration {
+}
+
+export function dataAwsImagebuilderImagePipelineImageScanningConfigurationToTerraform(struct?: DataAwsImagebuilderImagePipelineImageScanningConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsImagebuilderImagePipelineImageScanningConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsImagebuilderImagePipelineImageScanningConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsImagebuilderImagePipelineImageScanningConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ecr_configuration - computed: true, optional: false, required: false
+  private _ecrConfiguration = new DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationList(this, "ecr_configuration", false);
+  public get ecrConfiguration() {
+    return this._ecrConfiguration;
+  }
+
+  // image_scanning_enabled - computed: true, optional: false, required: false
+  public get imageScanningEnabled() {
+    return this.getBooleanAttribute('image_scanning_enabled');
+  }
+}
+
+export class DataAwsImagebuilderImagePipelineImageScanningConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsImagebuilderImagePipelineImageScanningConfigurationOutputReference {
+    return new DataAwsImagebuilderImagePipelineImageScanningConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsImagebuilderImagePipelineImageTestsConfiguration {
 }
@@ -168,7 +302,7 @@ export class DataAwsImagebuilderImagePipelineScheduleList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}
 */
 export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource {
 
@@ -182,7 +316,7 @@ export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +327,7 @@ export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource 
       terraformResourceType: 'aws_imagebuilder_image_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -285,6 +419,12 @@ export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource 
   // image_recipe_arn - computed: true, optional: false, required: false
   public get imageRecipeArn() {
     return this.getStringAttribute('image_recipe_arn');
+  }
+
+  // image_scanning_configuration - computed: true, optional: false, required: false
+  private _imageScanningConfiguration = new DataAwsImagebuilderImagePipelineImageScanningConfigurationList(this, "image_scanning_configuration", false);
+  public get imageScanningConfiguration() {
+    return this._imageScanningConfiguration;
   }
 
   // image_tests_configuration - computed: true, optional: false, required: false

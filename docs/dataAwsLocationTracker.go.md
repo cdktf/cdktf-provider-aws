@@ -1,6 +1,6 @@
 # `data_aws_location_tracker`
 
-Refer to the Terraform Registory for docs: [`data_aws_location_tracker`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker).
+Refer to the Terraform Registory for docs: [`data_aws_location_tracker`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker).
 
 # `dataAwsLocationTracker` Submodule <a name="`dataAwsLocationTracker` Submodule" id="@cdktf/provider-aws.dataAwsLocationTracker"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_location_tracker`](https:/
 
 ### DataAwsLocationTracker <a name="DataAwsLocationTracker" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker aws_location_tracker}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker aws_location_tracker}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtracker"
 
 dataawslocationtracker.NewDataAwsLocationTracker(scope Construct, id *string, config DataAwsLocationTrackerConfig) DataAwsLocationTracker
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtracker"
 
 dataawslocationtracker.DataAwsLocationTracker_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtracker"
 
 dataawslocationtracker.DataAwsLocationTracker_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawslocationtracker.DataAwsLocationTracker_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTracker.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtracker"
 
 dataawslocationtracker.DataAwsLocationTracker_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslocationtracker"
 
 &dataawslocationtracker.DataAwsLocationTrackerConfig {
 	Connection: interface{},
@@ -666,9 +666,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslocationtracker"
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.trackerName">TrackerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#tracker_name DataAwsLocationTracker#tracker_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#id DataAwsLocationTracker#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#tags DataAwsLocationTracker#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.trackerName">TrackerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#tracker_name DataAwsLocationTracker#tracker_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#id DataAwsLocationTracker#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLocationTracker.DataAwsLocationTrackerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#tags DataAwsLocationTracker#tags}. |
 
 ---
 
@@ -750,7 +750,7 @@ TrackerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#tracker_name DataAwsLocationTracker#tracker_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#tracker_name DataAwsLocationTracker#tracker_name}.
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#id DataAwsLocationTracker#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#id DataAwsLocationTracker#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -777,7 +777,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/location_tracker#tags DataAwsLocationTracker#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/location_tracker#tags DataAwsLocationTracker#tags}.
 
 ---
 

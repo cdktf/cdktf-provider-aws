@@ -1,6 +1,6 @@
 # `aws_location_route_calculator`
 
-Refer to the Terraform Registory for docs: [`aws_location_route_calculator`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator).
+Refer to the Terraform Registory for docs: [`aws_location_route_calculator`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator).
 
 # `locationRouteCalculator` Submodule <a name="`locationRouteCalculator` Submodule" id="@cdktf/provider-aws.locationRouteCalculator"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_location_route_calculator`](htt
 
 ### LocationRouteCalculator <a name="LocationRouteCalculator" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator aws_location_route_calculator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator aws_location_route_calculator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 locationroutecalculator.NewLocationRouteCalculator(scope Construct, id *string, config LocationRouteCalculatorConfig) LocationRouteCalculator
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ locationroutecalculator.LocationRouteCalculator_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 locationroutecalculator.LocationRouteCalculator_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 &locationroutecalculator.LocationRouteCalculatorConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.locationRouteCalculator.LocationRouteCalculatorTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.locationRouteCalculator.LocationRouteCalculatorTimeouts,
 }
 ```
 
@@ -781,12 +781,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
 | <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.calculatorName">CalculatorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#calculator_name LocationRouteCalculator#calculator_name}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#data_source LocationRouteCalculator#data_source}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#description LocationRouteCalculator#description}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#id LocationRouteCalculator#id}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#tags LocationRouteCalculator#tags}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#tags_all LocationRouteCalculator#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.calculatorName">CalculatorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#calculator_name LocationRouteCalculator#calculator_name}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.dataSource">DataSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#data_source LocationRouteCalculator#data_source}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#description LocationRouteCalculator#description}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#id LocationRouteCalculator#id}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#tags LocationRouteCalculator#tags}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#tags_all LocationRouteCalculator#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts">LocationRouteCalculatorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -869,7 +869,7 @@ CalculatorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#calculator_name LocationRouteCalculator#calculator_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#calculator_name LocationRouteCalculator#calculator_name}.
 
 ---
 
@@ -881,7 +881,7 @@ DataSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#data_source LocationRouteCalculator#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#data_source LocationRouteCalculator#data_source}.
 
 ---
 
@@ -893,7 +893,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#description LocationRouteCalculator#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#description LocationRouteCalculator#description}.
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#id LocationRouteCalculator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#id LocationRouteCalculator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,7 +920,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#tags LocationRouteCalculator#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#tags LocationRouteCalculator#tags}.
 
 ---
 
@@ -932,7 +932,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#tags_all LocationRouteCalculator#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#tags_all LocationRouteCalculator#tags_all}.
 
 ---
 
@@ -946,7 +946,7 @@ Timeouts LocationRouteCalculatorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#timeouts LocationRouteCalculator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#timeouts LocationRouteCalculator#timeouts}
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 &locationroutecalculator.LocationRouteCalculatorTimeouts {
 	Create: *string,
@@ -968,9 +968,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#create LocationRouteCalculator#create}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#delete LocationRouteCalculator#delete}. |
-| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#update LocationRouteCalculator#update}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#create LocationRouteCalculator#create}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#delete LocationRouteCalculator#delete}. |
+| <code><a href="#@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#update LocationRouteCalculator#update}. |
 
 ---
 
@@ -982,7 +982,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#create LocationRouteCalculator#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#create LocationRouteCalculator#create}.
 
 ---
 
@@ -994,7 +994,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#delete LocationRouteCalculator#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#delete LocationRouteCalculator#delete}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/location_route_calculator#update LocationRouteCalculator#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/location_route_calculator#update LocationRouteCalculator#update}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/locationroutecalculator"
 
 locationroutecalculator.NewLocationRouteCalculatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LocationRouteCalculatorTimeoutsOutputReference
 ```
