@@ -1,6 +1,6 @@
 # `data_aws_iam_account_alias`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_account_alias).
+Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_account_alias).
 
 # `dataAwsIamAccountAlias` Submodule <a name="`dataAwsIamAccountAlias` Submodule" id="@cdktf/provider-aws.dataAwsIamAccountAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https:
 
 ### DataAwsIamAccountAlias <a name="DataAwsIamAccountAlias" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_account_alias aws_iam_account_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_account_alias aws_iam_account_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.Initializer"></a>
 
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsiamaccountalias"
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

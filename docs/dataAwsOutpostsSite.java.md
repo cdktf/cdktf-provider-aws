@@ -1,6 +1,6 @@
 # `data_aws_outposts_site`
 
-Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site).
+Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site).
 
 # `dataAwsOutpostsSite` Submodule <a name="`dataAwsOutpostsSite` Submodule" id="@cdktf/provider-aws.dataAwsOutpostsSite"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_outposts_site`](https://re
 
 ### DataAwsOutpostsSite <a name="DataAwsOutpostsSite" id="@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site aws_outposts_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site aws_outposts_site}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataAwsOutpostsSite.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
 
 ---
 
@@ -680,8 +680,8 @@ DataAwsOutpostsSiteConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}. |
 
 ---
 
@@ -763,7 +763,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#id DataAwsOutpostsSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/outposts_site#name DataAwsOutpostsSite#name}.
 
 ---
 

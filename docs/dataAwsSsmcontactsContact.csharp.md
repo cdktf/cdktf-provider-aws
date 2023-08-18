@@ -1,6 +1,6 @@
 # `data_aws_ssmcontacts_contact`
 
-Refer to the Terraform Registory for docs: [`data_aws_ssmcontacts_contact`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact).
+Refer to the Terraform Registory for docs: [`data_aws_ssmcontacts_contact`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact).
 
 # `dataAwsSsmcontactsContact` Submodule <a name="`dataAwsSsmcontactsContact` Submodule" id="@cdktf/provider-aws.dataAwsSsmcontactsContact"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_ssmcontacts_contact`](http
 
 ### DataAwsSsmcontactsContact <a name="DataAwsSsmcontactsContact" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact aws_ssmcontacts_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact aws_ssmcontacts_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer"></a>
 
@@ -633,9 +633,9 @@ new DataAwsSsmcontactsContactConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}. |
 
 ---
 
@@ -717,7 +717,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#arn DataAwsSsmcontactsContact#arn}.
 
 ---
 
@@ -729,7 +729,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#id DataAwsSsmcontactsContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssmcontacts_contact#tags DataAwsSsmcontactsContact#tags}.
 
 ---
 

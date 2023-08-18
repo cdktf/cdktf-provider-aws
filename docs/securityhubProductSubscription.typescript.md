@@ -1,6 +1,6 @@
 # `aws_securityhub_product_subscription`
 
-Refer to the Terraform Registory for docs: [`aws_securityhub_product_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription).
+Refer to the Terraform Registory for docs: [`aws_securityhub_product_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription).
 
 # `securityhubProductSubscription` Submodule <a name="`securityhubProductSubscription` Submodule" id="@cdktf/provider-aws.securityhubProductSubscription"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_securityhub_product_subscriptio
 
 ### SecurityhubProductSubscription <a name="SecurityhubProductSubscription" id="@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription.Initializer"></a>
 
@@ -593,8 +593,8 @@ const securityhubProductSubscriptionConfig: securityhubProductSubscription.Secur
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.productArn">productArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
-| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.productArn">productArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}. |
 
 ---
 
@@ -676,7 +676,7 @@ public readonly productArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription#product_arn SecurityhubProductSubscription#product_arn}.
 
 ---
 
@@ -688,7 +688,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/securityhub_product_subscription#id SecurityhubProductSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
