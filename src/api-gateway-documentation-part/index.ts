@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_documentation_part
 // generated from terraform resource schema
 

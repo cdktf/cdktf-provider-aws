@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollection(scope Construct, id *string, config OpensearchserverlessCollectionConfig) OpensearchserverlessCollection
 ```
@@ -311,7 +311,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 opensearchserverlesscollection.OpensearchserverlessCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollectio
 	Name: *string,
 	Description: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts,
 	Type: *string,
 }
 ```
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 &opensearchserverlesscollection.OpensearchserverlessCollectionTimeouts {
 	Create: *string,
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessCollection.OpensearchserverlessCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchserverlesscollection"
 
 opensearchserverlesscollection.NewOpensearchserverlessCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchserverlessCollectionTimeoutsOutputReference
 ```
