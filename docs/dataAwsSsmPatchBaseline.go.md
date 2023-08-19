@@ -1,6 +1,6 @@
 # `data_aws_ssm_patch_baseline`
 
-Refer to the Terraform Registory for docs: [`data_aws_ssm_patch_baseline`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline).
+Refer to the Terraform Registory for docs: [`data_aws_ssm_patch_baseline`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline).
 
 # `dataAwsSsmPatchBaseline` Submodule <a name="`dataAwsSsmPatchBaseline` Submodule" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_ssm_patch_baseline`](https
 
 ### DataAwsSsmPatchBaseline <a name="DataAwsSsmPatchBaseline" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaseline(scope Construct, id *string, config DataAwsSsmPatchBaselineConfig) DataAwsSsmPatchBaseline
 ```
@@ -298,7 +298,7 @@ func ResetOperatingSystem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.DataAwsSsmPatchBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.DataAwsSsmPatchBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsssmpatchbaseline.DataAwsSsmPatchBaseline_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.DataAwsSsmPatchBaseline_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -741,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 &dataawsssmpatchbaseline.DataAwsSsmPatchBaselineApprovalRule {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRulePatchFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 &dataawsssmpatchbaseline.DataAwsSsmPatchBaselineApprovalRulePatchFilter {
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 &dataawsssmpatchbaseline.DataAwsSsmPatchBaselineConfig {
 	Connection: interface{},
@@ -796,11 +796,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#owner DataAwsSsmPatchBaseline#owner}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.defaultBaseline">DefaultBaseline</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#default_baseline DataAwsSsmPatchBaseline#default_baseline}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#id DataAwsSsmPatchBaseline#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#name_prefix DataAwsSsmPatchBaseline#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.operatingSystem">OperatingSystem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#operating_system DataAwsSsmPatchBaseline#operating_system}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#owner DataAwsSsmPatchBaseline#owner}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.defaultBaseline">DefaultBaseline</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#default_baseline DataAwsSsmPatchBaseline#default_baseline}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#id DataAwsSsmPatchBaseline#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#name_prefix DataAwsSsmPatchBaseline#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineConfig.property.operatingSystem">OperatingSystem</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#operating_system DataAwsSsmPatchBaseline#operating_system}. |
 
 ---
 
@@ -882,7 +882,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#owner DataAwsSsmPatchBaseline#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#owner DataAwsSsmPatchBaseline#owner}.
 
 ---
 
@@ -894,7 +894,7 @@ DefaultBaseline interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#default_baseline DataAwsSsmPatchBaseline#default_baseline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#default_baseline DataAwsSsmPatchBaseline#default_baseline}.
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#id DataAwsSsmPatchBaseline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#id DataAwsSsmPatchBaseline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#name_prefix DataAwsSsmPatchBaseline#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#name_prefix DataAwsSsmPatchBaseline#name_prefix}.
 
 ---
 
@@ -933,7 +933,7 @@ OperatingSystem *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ssm_patch_baseline#operating_system DataAwsSsmPatchBaseline#operating_system}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ssm_patch_baseline#operating_system DataAwsSsmPatchBaseline#operating_system}.
 
 ---
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 &dataawsssmpatchbaseline.DataAwsSsmPatchBaselineGlobalFilter {
 
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 &dataawsssmpatchbaseline.DataAwsSsmPatchBaselineSource {
 
@@ -970,7 +970,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineApprovalRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmPatchBaselineApprovalRuleList
 ```
@@ -1102,7 +1102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineApprovalRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmPatchBaselineApprovalRuleOutputReference
 ```
@@ -1424,7 +1424,7 @@ func InternalValue() DataAwsSsmPatchBaselineApprovalRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRulePatchFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineApprovalRulePatchFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmPatchBaselineApprovalRulePatchFilterList
 ```
@@ -1556,7 +1556,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmPatchBaselineApprovalRulePatchFilterOutputReference
 ```
@@ -1845,7 +1845,7 @@ func InternalValue() DataAwsSsmPatchBaselineApprovalRulePatchFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineGlobalFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmPatchBaselineGlobalFilterList
 ```
@@ -1977,7 +1977,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineGlobalFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineGlobalFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmPatchBaselineGlobalFilterOutputReference
 ```
@@ -2266,7 +2266,7 @@ func InternalValue() DataAwsSsmPatchBaselineGlobalFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmPatchBaselineSourceList
 ```
@@ -2398,7 +2398,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsssmpatchbaseline"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmpatchbaseline"
 
 dataawsssmpatchbaseline.NewDataAwsSsmPatchBaselineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmPatchBaselineSourceOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#delete_protection NetworkfirewallFirewall#delete_protection}
   */
   readonly deleteProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#description NetworkfirewallFirewall#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#firewall_policy_arn NetworkfirewallFirewall#firewall_policy_arn}
   */
   readonly firewallPolicyArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}
   */
   readonly firewallPolicyChangeProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#id NetworkfirewallFirewall#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#name NetworkfirewallFirewall#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}
   */
   readonly subnetChangeProtection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#tags NetworkfirewallFirewall#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#tags_all NetworkfirewallFirewall#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#vpc_id NetworkfirewallFirewall#vpc_id}
   */
   readonly vpcId: string;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#encryption_configuration NetworkfirewallFirewall#encryption_configuration}
   */
   readonly encryptionConfiguration?: NetworkfirewallFirewallEncryptionConfiguration;
   /**
   * subnet_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#subnet_mapping NetworkfirewallFirewall#subnet_mapping}
   */
   readonly subnetMapping: NetworkfirewallFirewallSubnetMapping[] | cdktf.IResolvable;
 }
@@ -274,11 +269,11 @@ export class NetworkfirewallFirewallFirewallStatusList extends cdktf.ComplexList
 }
 export interface NetworkfirewallFirewallEncryptionConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#key_id NetworkfirewallFirewall#key_id}
   */
   readonly keyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#type NetworkfirewallFirewall#type}
   */
   readonly type: string;
 }
@@ -363,11 +358,11 @@ export class NetworkfirewallFirewallEncryptionConfigurationOutputReference exten
 }
 export interface NetworkfirewallFirewallSubnetMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#ip_address_type NetworkfirewallFirewall#ip_address_type}
   */
   readonly ipAddressType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall#subnet_id NetworkfirewallFirewall#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -484,7 +479,7 @@ export class NetworkfirewallFirewallSubnetMappingList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}
 */
 export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
@@ -498,7 +493,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -509,7 +504,7 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkfirewall_firewall',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.0',
+        providerVersion: '5.13.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

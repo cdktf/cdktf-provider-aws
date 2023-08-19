@@ -1,6 +1,6 @@
 # `data_aws_iam_session_context`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context).
+Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context).
 
 # `dataAwsIamSessionContext` Submodule <a name="`dataAwsIamSessionContext` Submodule" id="@cdktf/provider-aws.dataAwsIamSessionContext"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](http
 
 ### DataAwsIamSessionContext <a name="DataAwsIamSessionContext" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context aws_iam_session_context}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context aws_iam_session_context}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer"></a>
 
@@ -614,8 +614,8 @@ new DataAwsIamSessionContextConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">Arn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string Arn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `aws_network_acl_association`
 
-Refer to the Terraform Registory for docs: [`aws_network_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association).
+Refer to the Terraform Registory for docs: [`aws_network_acl_association`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association).
 
 # `networkAclAssociation` Submodule <a name="`networkAclAssociation` Submodule" id="@cdktf/provider-aws.networkAclAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_network_acl_association`](https
 
 ### NetworkAclAssociation <a name="NetworkAclAssociation" id="@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association aws_network_acl_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association aws_network_acl_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation.Initializer"></a>
 
@@ -604,9 +604,9 @@ const networkAclAssociationConfig: networkAclAssociation.NetworkAclAssociationCo
 | <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.networkAclId">networkAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}. |
-| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#id NetworkAclAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.networkAclId">networkAclId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}. |
+| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}. |
+| <code><a href="#@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#id NetworkAclAssociation#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ public readonly networkAclId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}.
 
 ---
 
@@ -700,7 +700,7 @@ public readonly subnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}.
 
 ---
 
@@ -712,7 +712,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/network_acl_association#id NetworkAclAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/network_acl_association#id NetworkAclAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

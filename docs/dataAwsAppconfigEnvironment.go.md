@@ -1,6 +1,6 @@
 # `data_aws_appconfig_environment`
 
-Refer to the Terraform Registory for docs: [`data_aws_appconfig_environment`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment).
+Refer to the Terraform Registory for docs: [`data_aws_appconfig_environment`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment).
 
 # `dataAwsAppconfigEnvironment` Submodule <a name="`dataAwsAppconfigEnvironment` Submodule" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_appconfig_environment`](ht
 
 ### DataAwsAppconfigEnvironment <a name="DataAwsAppconfigEnvironment" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment aws_appconfig_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment aws_appconfig_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironment(scope Construct, id *string, config DataAwsAppconfigEnvironmentConfig) DataAwsAppconfigEnvironment
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 &dataawsappconfigenvironment.DataAwsAppconfigEnvironmentConfig {
 	Connection: interface{},
@@ -678,10 +678,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironme
 | <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}. |
 
 ---
 
@@ -763,7 +763,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#application_id DataAwsAppconfigEnvironment#application_id}.
 
 ---
 
@@ -775,7 +775,7 @@ EnvironmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#environment_id DataAwsAppconfigEnvironment#environment_id}.
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#id DataAwsAppconfigEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appconfig_environment#tags DataAwsAppconfigEnvironment#tags}.
 
 ---
 
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 &dataawsappconfigenvironment.DataAwsAppconfigEnvironmentMonitor {
 
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironme
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironmentMonitorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppconfigEnvironmentMonitorList
 ```
@@ -958,7 +958,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironmentMonitorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppconfigEnvironmentMonitorOutputReference
 ```

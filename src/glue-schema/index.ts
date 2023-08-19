@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface GlueSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#compatibility GlueSchema#compatibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#compatibility GlueSchema#compatibility}
   */
   readonly compatibility: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#data_format GlueSchema#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#data_format GlueSchema#data_format}
   */
   readonly dataFormat: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#description GlueSchema#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#description GlueSchema#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#id GlueSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#id GlueSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#registry_arn GlueSchema#registry_arn}
   */
   readonly registryArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#schema_definition GlueSchema#schema_definition}
   */
   readonly schemaDefinition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#schema_name GlueSchema#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#schema_name GlueSchema#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#tags GlueSchema#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#tags GlueSchema#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema#tags_all GlueSchema#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema#tags_all GlueSchema#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema aws_glue_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema aws_glue_schema}
 */
 export class GlueSchema extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class GlueSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/glue_schema aws_glue_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/glue_schema aws_glue_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class GlueSchema extends cdktf.TerraformResource {
       terraformResourceType: 'aws_glue_schema',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.0',
+        providerVersion: '5.13.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

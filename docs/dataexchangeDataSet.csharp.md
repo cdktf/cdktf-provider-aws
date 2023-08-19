@@ -1,6 +1,6 @@
 # `aws_dataexchange_data_set`
 
-Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set).
+Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set).
 
 # `dataexchangeDataSet` Submodule <a name="`dataexchangeDataSet` Submodule" id="@cdktf/provider-aws.dataexchangeDataSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_dataexchange_data_set`](https:/
 
 ### DataexchangeDataSet <a name="DataexchangeDataSet" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set aws_dataexchange_data_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSet.Initializer"></a>
 
@@ -709,12 +709,12 @@ new DataexchangeDataSetConfig {
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">AssetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.assetType">AssetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataexchangeDataSet.DataexchangeDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}. |
 
 ---
 
@@ -796,7 +796,7 @@ public string AssetType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#asset_type DataexchangeDataSet#asset_type}.
 
 ---
 
@@ -808,7 +808,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#description DataexchangeDataSet#description}.
 
 ---
 
@@ -820,7 +820,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#name DataexchangeDataSet#name}.
 
 ---
 
@@ -832,7 +832,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#id DataexchangeDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#tags DataexchangeDataSet#tags}.
 
 ---
 
@@ -859,7 +859,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dataexchange_data_set#tags_all DataexchangeDataSet#tags_all}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_cloudwatch_event_bus_policy`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_bus_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_bus_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy).
 
 # `cloudwatchEventBusPolicy` Submodule <a name="`cloudwatchEventBusPolicy` Submodule" id="@cdktf/provider-aws.cloudwatchEventBusPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_bus_policy`](h
 
 ### CloudwatchEventBusPolicy <a name="CloudwatchEventBusPolicy" id="@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicy.Initializer"></a>
 
@@ -611,9 +611,9 @@ const cloudwatchEventBusPolicyConfig: cloudwatchEventBusPolicy.CloudwatchEventBu
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.eventBusName">eventBusName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.eventBusName">eventBusName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventBusPolicy.CloudwatchEventBusPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}. |
 
 ---
 
@@ -695,7 +695,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}.
 
 ---
 
@@ -707,7 +707,7 @@ public readonly eventBusName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}.
 
 ---
 
@@ -719,7 +719,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

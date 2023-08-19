@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#authentication CodepipelineWebhook#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#authentication CodepipelineWebhook#authentication}
   */
   readonly authentication: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#id CodepipelineWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#id CodepipelineWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#name CodepipelineWebhook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#name CodepipelineWebhook#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#tags CodepipelineWebhook#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#tags CodepipelineWebhook#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#tags_all CodepipelineWebhook#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#tags_all CodepipelineWebhook#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#target_action CodepipelineWebhook#target_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#target_action CodepipelineWebhook#target_action}
   */
   readonly targetAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#target_pipeline CodepipelineWebhook#target_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#target_pipeline CodepipelineWebhook#target_pipeline}
   */
   readonly targetPipeline: string;
   /**
   * authentication_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#authentication_configuration CodepipelineWebhook#authentication_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#authentication_configuration CodepipelineWebhook#authentication_configuration}
   */
   readonly authenticationConfiguration?: CodepipelineWebhookAuthenticationConfiguration;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#filter CodepipelineWebhook#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#filter CodepipelineWebhook#filter}
   */
   readonly filter: CodepipelineWebhookFilter[] | cdktf.IResolvable;
 }
 export interface CodepipelineWebhookAuthenticationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#allowed_ip_range CodepipelineWebhook#allowed_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#allowed_ip_range CodepipelineWebhook#allowed_ip_range}
   */
   readonly allowedIpRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#secret_token CodepipelineWebhook#secret_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#secret_token CodepipelineWebhook#secret_token}
   */
   readonly secretToken?: string;
 }
@@ -150,11 +145,11 @@ export class CodepipelineWebhookAuthenticationConfigurationOutputReference exten
 }
 export interface CodepipelineWebhookFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#json_path CodepipelineWebhook#json_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#json_path CodepipelineWebhook#json_path}
   */
   readonly jsonPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook#match_equals CodepipelineWebhook#match_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook#match_equals CodepipelineWebhook#match_equals}
   */
   readonly matchEquals: string;
 }
@@ -268,7 +263,7 @@ export class CodepipelineWebhookFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook aws_codepipeline_webhook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook aws_codepipeline_webhook}
 */
 export class CodepipelineWebhook extends cdktf.TerraformResource {
 
@@ -282,7 +277,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codepipeline_webhook aws_codepipeline_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +288,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codepipeline_webhook',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.0',
+        providerVersion: '5.13.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

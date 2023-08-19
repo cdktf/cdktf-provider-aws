@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl
+// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface S3BucketAclConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#acl S3BucketAcl#acl}
   */
   readonly acl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#bucket S3BucketAcl#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#expected_bucket_owner S3BucketAcl#expected_bucket_owner}
   */
   readonly expectedBucketOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,28 +29,28 @@ export interface S3BucketAclConfig extends cdktf.TerraformMetaArguments {
   /**
   * access_control_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#access_control_policy S3BucketAcl#access_control_policy}
   */
   readonly accessControlPolicy?: S3BucketAclAccessControlPolicy;
 }
 export interface S3BucketAclAccessControlPolicyGrantGrantee {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#email_address S3BucketAcl#email_address}
   */
   readonly emailAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#type S3BucketAcl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#type S3BucketAcl#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#uri S3BucketAcl#uri}
   */
   readonly uri?: string;
 }
@@ -191,13 +186,13 @@ export class S3BucketAclAccessControlPolicyGrantGranteeOutputReference extends c
 }
 export interface S3BucketAclAccessControlPolicyGrant {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#permission S3BucketAcl#permission}
   */
   readonly permission: string;
   /**
   * grantee block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#grantee S3BucketAcl#grantee}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#grantee S3BucketAcl#grantee}
   */
   readonly grantee?: S3BucketAclAccessControlPolicyGrantGrantee;
 }
@@ -314,11 +309,11 @@ export class S3BucketAclAccessControlPolicyGrantList extends cdktf.ComplexList {
 }
 export interface S3BucketAclAccessControlPolicyOwner {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#display_name S3BucketAcl#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#id S3BucketAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -408,13 +403,13 @@ export interface S3BucketAclAccessControlPolicy {
   /**
   * grant block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#grant S3BucketAcl#grant}
   */
   readonly grant?: S3BucketAclAccessControlPolicyGrant[] | cdktf.IResolvable;
   /**
   * owner block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl#owner S3BucketAcl#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl#owner S3BucketAcl#owner}
   */
   readonly owner: S3BucketAclAccessControlPolicyOwner;
 }
@@ -499,7 +494,7 @@ export class S3BucketAclAccessControlPolicyOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl aws_s3_bucket_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl aws_s3_bucket_acl}
 */
 export class S3BucketAcl extends cdktf.TerraformResource {
 
@@ -513,7 +508,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_acl aws_s3_bucket_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_acl aws_s3_bucket_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -524,7 +519,7 @@ export class S3BucketAcl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3_bucket_acl',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.0',
+        providerVersion: '5.13.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

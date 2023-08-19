@@ -1,6 +1,6 @@
 # `aws_s3_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy).
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy).
 
 # `s3BucketPolicy` Submodule <a name="`s3BucketPolicy` Submodule" id="@cdktf/provider-aws.s3BucketPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_s3_bucket_policy`](https://regi
 
 ### S3BucketPolicy <a name="S3BucketPolicy" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy aws_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy aws_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpolicy"
 
 s3bucketpolicy.NewS3BucketPolicy(scope Construct, id *string, config S3BucketPolicyConfig) S3BucketPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ s3bucketpolicy.S3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpolicy"
 
 &s3bucketpolicy.S3BucketPolicyConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketpolicy"
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.s3BucketPolicy.S3BucketPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}.
 
 ---
 
@@ -711,7 +711,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_policy#id S3BucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

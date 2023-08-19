@@ -1,6 +1,6 @@
 # `aws_memorydb_snapshot`
 
-Refer to the Terraform Registory for docs: [`aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot).
+Refer to the Terraform Registory for docs: [`aws_memorydb_snapshot`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot).
 
 # `memorydbSnapshot` Submodule <a name="`memorydbSnapshot` Submodule" id="@cdktf/provider-aws.memorydbSnapshot"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_memorydb_snapshot`](https://reg
 
 ### MemorydbSnapshot <a name="MemorydbSnapshot" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot aws_memorydb_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot aws_memorydb_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshot(scope Construct, id *string, config MemorydbSnapshotConfig) MemorydbSnapshot
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ memorydbsnapshot.MemorydbSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.MemorydbSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotClusterConfiguration {
 
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
 	NamePrefix: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v16.memorydbSnapshot.MemorydbSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.memorydbSnapshot.MemorydbSnapshotTimeouts,
 }
 ```
 
@@ -831,13 +831,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts">MemorydbSnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -920,7 +920,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#cluster_name MemorydbSnapshot#cluster_name}.
 
 ---
 
@@ -932,7 +932,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#id MemorydbSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#kms_key_arn MemorydbSnapshot#kms_key_arn}.
 
 ---
 
@@ -959,7 +959,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#name MemorydbSnapshot#name}.
 
 ---
 
@@ -971,7 +971,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#name_prefix MemorydbSnapshot#name_prefix}.
 
 ---
 
@@ -983,7 +983,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#tags MemorydbSnapshot#tags}.
 
 ---
 
@@ -995,7 +995,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#tags_all MemorydbSnapshot#tags_all}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Timeouts MemorydbSnapshotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#timeouts MemorydbSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#timeouts MemorydbSnapshot#timeouts}
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 &memorydbsnapshot.MemorydbSnapshotTimeouts {
 	Create: *string,
@@ -1030,8 +1030,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#create MemorydbSnapshot#create}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/memorydb_snapshot#delete MemorydbSnapshot#delete}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotClusterConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MemorydbSnapshotClusterConfigurationList
 ```
@@ -1198,7 +1198,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotClusterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotClusterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MemorydbSnapshotClusterConfigurationOutputReference
 ```
@@ -1608,7 +1608,7 @@ func InternalValue() MemorydbSnapshotClusterConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/memorydbsnapshot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/memorydbsnapshot"
 
 memorydbsnapshot.NewMemorydbSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MemorydbSnapshotTimeoutsOutputReference
 ```

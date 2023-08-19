@@ -1,6 +1,6 @@
 # `aws_api_gateway_resource`
 
-Refer to the Terraform Registory for docs: [`aws_api_gateway_resource`](https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource).
+Refer to the Terraform Registory for docs: [`aws_api_gateway_resource`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource).
 
 # `apiGatewayResource` Submodule <a name="`apiGatewayResource` Submodule" id="@cdktf/provider-aws.apiGatewayResource"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_api_gateway_resource`](https://
 
 ### ApiGatewayResource <a name="ApiGatewayResource" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource aws_api_gateway_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource aws_api_gateway_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.NewApiGatewayResource(scope Construct, id *string, config ApiGatewayResourceConfig) ApiGatewayResource
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ apigatewayresource.ApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 apigatewayresource.ApiGatewayResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayresource"
 
 &apigatewayresource.ApiGatewayResourceConfig {
 	Connection: interface{},
@@ -649,10 +649,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayresource"
 | <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#parent_id ApiGatewayResource#parent_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.pathPart">PathPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#path_part ApiGatewayResource#path_part}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#rest_api_id ApiGatewayResource#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#id ApiGatewayResource#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#parent_id ApiGatewayResource#parent_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.pathPart">PathPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#path_part ApiGatewayResource#path_part}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#rest_api_id ApiGatewayResource#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayResource.ApiGatewayResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#id ApiGatewayResource#id}. |
 
 ---
 
@@ -734,7 +734,7 @@ ParentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#parent_id ApiGatewayResource#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#parent_id ApiGatewayResource#parent_id}.
 
 ---
 
@@ -746,7 +746,7 @@ PathPart *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#path_part ApiGatewayResource#path_part}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#path_part ApiGatewayResource#path_part}.
 
 ---
 
@@ -758,7 +758,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#rest_api_id ApiGatewayResource#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#rest_api_id ApiGatewayResource#rest_api_id}.
 
 ---
 
@@ -770,7 +770,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/api_gateway_resource#id ApiGatewayResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/api_gateway_resource#id ApiGatewayResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
