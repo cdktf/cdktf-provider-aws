@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuildercomponent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.NewDataAwsImagebuilderComponent(scope Construct, id *string, config DataAwsImagebuilderComponentConfig) DataAwsImagebuilderComponent
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuildercomponent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuildercomponent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuildercomponent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuildercomponent"
 
 dataawsimagebuildercomponent.DataAwsImagebuilderComponent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsimagebuildercomponent"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsimagebuildercomponent"
 
 &dataawsimagebuildercomponent.DataAwsImagebuilderComponentConfig {
 	Connection: interface{},

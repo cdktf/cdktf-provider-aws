@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecrets(scope Construct, id *string, config DataAwsKmsSecretsConfig) DataAwsKmsSecrets
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawskmssecrets.DataAwsKmsSecrets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 &dataawskmssecrets.DataAwsKmsSecretsConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 &dataawskmssecrets.DataAwsKmsSecretsSecret {
 	Name: *string,
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecretsSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsSecretsSecretList
 ```
@@ -950,7 +950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecretsSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsSecretsSecretOutputReference
 ```

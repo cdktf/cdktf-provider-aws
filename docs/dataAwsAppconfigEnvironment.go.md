@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironment(scope Construct, id *string, config DataAwsAppconfigEnvironmentConfig) DataAwsAppconfigEnvironment
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.DataAwsAppconfigEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 &dataawsappconfigenvironment.DataAwsAppconfigEnvironmentConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 &dataawsappconfigenvironment.DataAwsAppconfigEnvironmentMonitor {
 
@@ -826,7 +826,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironmentMonitorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppconfigEnvironmentMonitorList
 ```
@@ -958,7 +958,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsappconfigenvironment"
 
 dataawsappconfigenvironment.NewDataAwsAppconfigEnvironmentMonitorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppconfigEnvironmentMonitorOutputReference
 ```

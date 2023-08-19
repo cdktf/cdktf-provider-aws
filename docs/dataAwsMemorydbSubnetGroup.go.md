@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup"
 
 dataawsmemorydbsubnetgroup.NewDataAwsMemorydbSubnetGroup(scope Construct, id *string, config DataAwsMemorydbSubnetGroupConfig) DataAwsMemorydbSubnetGroup
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup"
 
 dataawsmemorydbsubnetgroup.DataAwsMemorydbSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup"
 
 dataawsmemorydbsubnetgroup.DataAwsMemorydbSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsmemorydbsubnetgroup.DataAwsMemorydbSubnetGroup_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup"
 
 dataawsmemorydbsubnetgroup.DataAwsMemorydbSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMemorydbSubnetGroup.DataAwsMemorydbSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmemorydbsubnetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup"
 
 &dataawsmemorydbsubnetgroup.DataAwsMemorydbSubnetGroupConfig {
 	Connection: interface{},
