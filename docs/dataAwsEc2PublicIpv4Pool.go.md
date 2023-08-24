@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4Pool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.NewDataAwsEc2PublicIpv4Pool(scope Construct, id *string, config DataAwsEc2PublicIpv4PoolConfig) DataAwsEc2PublicIpv4Pool
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4Pool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.DataAwsEc2PublicIpv4Pool_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4Pool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.DataAwsEc2PublicIpv4Pool_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsec2publicipv4pool.DataAwsEc2PublicIpv4Pool_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4Pool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.DataAwsEc2PublicIpv4Pool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4PoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 &dataawsec2publicipv4pool.DataAwsEc2PublicIpv4PoolConfig {
 	Connection: interface{},
@@ -775,7 +775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4PoolPoolAddressRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 &dataawsec2publicipv4pool.DataAwsEc2PublicIpv4PoolPoolAddressRanges {
 
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4PoolPoolAddressRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.NewDataAwsEc2PublicIpv4PoolPoolAddressRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2PublicIpv4PoolPoolAddressRangesList
 ```
@@ -922,7 +922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2PublicIpv4Pool.DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2publicipv4pool"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsec2publicipv4pool"
 
 dataawsec2publicipv4pool.NewDataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2PublicIpv4PoolPoolAddressRangesOutputReference
 ```

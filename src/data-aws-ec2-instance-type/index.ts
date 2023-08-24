@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ec2_instance_type
 // generated from terraform resource schema
 

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.NewAppconfigConfigurationProfile(scope Construct, id *string, config AppconfigConfigurationProfileConfig) AppconfigConfigurationProfile
 ```
@@ -332,7 +332,7 @@ func ResetValidator()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.AppconfigConfigurationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.AppconfigConfigurationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ appconfigconfigurationprofile.AppconfigConfigurationProfile_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.AppconfigConfigurationProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -819,7 +819,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 &appconfigconfigurationprofile.AppconfigConfigurationProfileConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 &appconfigconfigurationprofile.AppconfigConfigurationProfileValidator {
 	Type: *string,
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.NewAppconfigConfigurationProfileValidatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppconfigConfigurationProfileValidatorList
 ```
@@ -1257,7 +1257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigconfigurationprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigconfigurationprofile"
 
 appconfigconfigurationprofile.NewAppconfigConfigurationProfileValidatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppconfigConfigurationProfileValidatorOutputReference
 ```

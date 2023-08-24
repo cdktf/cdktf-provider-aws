@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.NewAppconfigHostedConfigurationVersion(scope Construct, id *string, config AppconfigHostedConfigurationVersionConfig) AppconfigHostedConfigurationVersion
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -683,7 +683,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfighostedconfigurationversion"
 
 &appconfighostedconfigurationversion.AppconfigHostedConfigurationVersionConfig {
 	Connection: interface{},

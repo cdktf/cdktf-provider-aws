@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.NewDataAwsSecretsmanagerSecrets(scope Construct, id *string, config DataAwsSecretsmanagerSecretsConfig) DataAwsSecretsmanagerSecrets
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecrets_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 &dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecretsConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 &dataawssecretsmanagersecrets.DataAwsSecretsmanagerSecretsFilter {
 	Name: *string,
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.NewDataAwsSecretsmanagerSecretsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecretsmanagerSecretsFilterList
 ```
@@ -912,7 +912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecretsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagersecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagersecrets"
 
 dataawssecretsmanagersecrets.NewDataAwsSecretsmanagerSecretsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecretsmanagerSecretsFilterOutputReference
 ```
