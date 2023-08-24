@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamvirtualmfadevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamvirtualmfadevice"
 
 iamvirtualmfadevice.NewIamVirtualMfaDevice(scope Construct, id *string, config IamVirtualMfaDeviceConfig) IamVirtualMfaDevice
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamvirtualmfadevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamvirtualmfadevice"
 
 iamvirtualmfadevice.IamVirtualMfaDevice_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamvirtualmfadevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamvirtualmfadevice"
 
 iamvirtualmfadevice.IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ iamvirtualmfadevice.IamVirtualMfaDevice_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamvirtualmfadevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamvirtualmfadevice"
 
 iamvirtualmfadevice.IamVirtualMfaDevice_IsTerraformResource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamvirtualmfadevice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iamvirtualmfadevice"
 
 &iamvirtualmfadevice.IamVirtualMfaDeviceConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticbeanstalksolutionstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalksolutionstack"
 
 dataawselasticbeanstalksolutionstack.NewDataAwsElasticBeanstalkSolutionStack(scope Construct, id *string, config DataAwsElasticBeanstalkSolutionStackConfig) DataAwsElasticBeanstalkSolutionStack
 ```
@@ -284,7 +284,7 @@ func ResetMostRecent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticbeanstalksolutionstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalksolutionstack"
 
 dataawselasticbeanstalksolutionstack.DataAwsElasticBeanstalkSolutionStack_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticbeanstalksolutionstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalksolutionstack"
 
 dataawselasticbeanstalksolutionstack.DataAwsElasticBeanstalkSolutionStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawselasticbeanstalksolutionstack.DataAwsElasticBeanstalkSolutionStack_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStack.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticbeanstalksolutionstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalksolutionstack"
 
 dataawselasticbeanstalksolutionstack.DataAwsElasticBeanstalkSolutionStack_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticBeanstalkSolutionStack.DataAwsElasticBeanstalkSolutionStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticbeanstalksolutionstack"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticbeanstalksolutionstack"
 
 &dataawselasticbeanstalksolutionstack.DataAwsElasticBeanstalkSolutionStackConfig {
 	Connection: interface{},

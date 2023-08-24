@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user
 // generated from terraform resource schema
 
