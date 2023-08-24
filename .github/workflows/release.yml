@@ -339,6 +339,14 @@ jobs:
         run: cd .repo && yarn install --check-files --frozen-lockfile
       - name: Create go artifact
         run: cd .repo && npx projen package:go
+      - name: Setup Copywrite tool
+        uses: hashicorp/setup-copywrite@867a1a2a064a0626db322392806428f7dc59cb3e
+      - name: Copy copywrite hcl file
+        run: cp .copywrite.hcl .repo/dist/go/.copywrite.hcl
+      - name: Add headers using Copywrite tool
+        run: cd .repo/dist/go && copywrite headers
+      - name: Remove copywrite hcl file
+        run: rm -f .repo/dist/go/.copywrite.hcl
       - name: Collect go Artifact
         run: mv .repo/dist dist
       - name: Release
