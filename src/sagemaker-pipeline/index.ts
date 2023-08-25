@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerPipelineConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}
   */
   readonly pipelineDefinition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}
   */
   readonly pipelineDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}
   */
   readonly pipelineDisplayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}
   */
   readonly pipelineName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * parallelism_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#parallelism_configuration SagemakerPipeline#parallelism_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#parallelism_configuration SagemakerPipeline#parallelism_configuration}
   */
   readonly parallelismConfiguration?: SagemakerPipelineParallelismConfiguration;
   /**
   * pipeline_definition_s3_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location SagemakerPipeline#pipeline_definition_s3_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location SagemakerPipeline#pipeline_definition_s3_location}
   */
   readonly pipelineDefinitionS3Location?: SagemakerPipelinePipelineDefinitionS3Location;
 }
 export interface SagemakerPipelineParallelismConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}
   */
   readonly maxParallelExecutionSteps: number;
 }
@@ -124,15 +119,15 @@ export class SagemakerPipelineParallelismConfigurationOutputReference extends cd
 }
 export interface SagemakerPipelinePipelineDefinitionS3Location {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}
   */
   readonly objectKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}
   */
   readonly versionId?: string;
 }
@@ -237,7 +232,7 @@ export class SagemakerPipelinePipelineDefinitionS3LocationOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}
 */
 export class SagemakerPipeline extends cdktf.TerraformResource {
 
@@ -251,7 +246,7 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,7 +257,7 @@ export class SagemakerPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

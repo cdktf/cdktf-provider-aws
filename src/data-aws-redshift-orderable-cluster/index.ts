@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsRedshiftOrderableClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster#cluster_type DataAwsRedshiftOrderableCluster#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster#cluster_type DataAwsRedshiftOrderableCluster#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster#cluster_version DataAwsRedshiftOrderableCluster#cluster_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster#cluster_version DataAwsRedshiftOrderableCluster#cluster_version}
   */
   readonly clusterVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster#id DataAwsRedshiftOrderableCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster#id DataAwsRedshiftOrderableCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster#node_type DataAwsRedshiftOrderableCluster#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster#node_type DataAwsRedshiftOrderableCluster#node_type}
   */
   readonly nodeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster#preferred_node_types DataAwsRedshiftOrderableCluster#preferred_node_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster#preferred_node_types DataAwsRedshiftOrderableCluster#preferred_node_types}
   */
   readonly preferredNodeTypes?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}
 */
 export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
 
@@ -52,7 +47,7 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_redshift_orderable_cluster',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

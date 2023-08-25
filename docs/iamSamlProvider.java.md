@@ -1,6 +1,6 @@
 # `aws_iam_saml_provider`
 
-Refer to the Terraform Registory for docs: [`aws_iam_saml_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider).
+Refer to the Terraform Registory for docs: [`aws_iam_saml_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider).
 
 # `iamSamlProvider` Submodule <a name="`iamSamlProvider` Submodule" id="@cdktf/provider-aws.iamSamlProvider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iam_saml_provider`](https://reg
 
 ### IamSamlProvider <a name="IamSamlProvider" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider aws_iam_saml_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider aws_iam_saml_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer"></a>
 
@@ -46,11 +46,11 @@ IamSamlProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#name IamSamlProvider#name}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.samlMetadataDocument">samlMetadataDocument</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#id IamSamlProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#name IamSamlProvider#name}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.samlMetadataDocument">samlMetadataDocument</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#id IamSamlProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProvider.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#name IamSamlProvider#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#name IamSamlProvider#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#id IamSamlProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#id IamSamlProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}.
 
 ---
 
@@ -808,11 +808,11 @@ IamSamlProviderConfig.builder()
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#name IamSamlProvider#name}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.samlMetadataDocument">samlMetadataDocument</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#id IamSamlProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#name IamSamlProvider#name}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.samlMetadataDocument">samlMetadataDocument</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#id IamSamlProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamSamlProvider.IamSamlProviderConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}. |
 
 ---
 
@@ -894,7 +894,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#name IamSamlProvider#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#name IamSamlProvider#name}.
 
 ---
 
@@ -906,7 +906,7 @@ public java.lang.String getSamlMetadataDocument();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#saml_metadata_document IamSamlProvider#saml_metadata_document}.
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#id IamSamlProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#id IamSamlProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -933,7 +933,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags IamSamlProvider#tags}.
 
 ---
 
@@ -945,7 +945,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/iam_saml_provider#tags_all IamSamlProvider#tags_all}.
 
 ---
 

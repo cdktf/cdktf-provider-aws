@@ -1,6 +1,6 @@
 # `data_aws_pricing_product`
 
-Refer to the Terraform Registory for docs: [`data_aws_pricing_product`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product).
+Refer to the Terraform Registory for docs: [`data_aws_pricing_product`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product).
 
 # `dataAwsPricingProduct` Submodule <a name="`dataAwsPricingProduct` Submodule" id="@cdktf/provider-aws.dataAwsPricingProduct"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_pricing_product`](https://
 
 ### DataAwsPricingProduct <a name="DataAwsPricingProduct" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product aws_pricing_product}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product aws_pricing_product}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer"></a>
 
@@ -43,8 +43,8 @@ dataAwsPricingProduct.DataAwsPricingProduct(
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.filters">filters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters">DataAwsPricingProductFilters</a>]]</code> | filters block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.serviceCode">service_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.serviceCode">service_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,8 +738,8 @@ dataAwsPricingProduct.DataAwsPricingProductConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.filters">filters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters">DataAwsPricingProductFilters</a>]]</code> | filters block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.serviceCode">service_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.serviceCode">service_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}. |
 
 ---
 
@@ -823,7 +823,7 @@ filters: typing.Union[IResolvable, typing.List[DataAwsPricingProductFilters]]
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#filters DataAwsPricingProduct#filters}
 
 ---
 
@@ -835,7 +835,7 @@ service_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#service_code DataAwsPricingProduct#service_code}.
 
 ---
 
@@ -847,7 +847,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#id DataAwsPricingProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,8 +871,8 @@ dataAwsPricingProduct.DataAwsPricingProductFilters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters.property.field">field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#field DataAwsPricingProduct#field}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#value DataAwsPricingProduct#value}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters.property.field">field</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#field DataAwsPricingProduct#field}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#value DataAwsPricingProduct#value}. |
 
 ---
 
@@ -884,7 +884,7 @@ field: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#field DataAwsPricingProduct#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#field DataAwsPricingProduct#field}.
 
 ---
 
@@ -896,7 +896,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/pricing_product#value DataAwsPricingProduct#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/pricing_product#value DataAwsPricingProduct#value}.
 
 ---
 

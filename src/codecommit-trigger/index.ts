@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#id CodecommitTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#id CodecommitTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#repository_name CodecommitTrigger#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#repository_name CodecommitTrigger#repository_name}
   */
   readonly repositoryName: string;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#trigger CodecommitTrigger#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#trigger CodecommitTrigger#trigger}
   */
   readonly trigger: CodecommitTriggerTrigger[] | cdktf.IResolvable;
 }
 export interface CodecommitTriggerTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#branches CodecommitTrigger#branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#branches CodecommitTrigger#branches}
   */
   readonly branches?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#custom_data CodecommitTrigger#custom_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#custom_data CodecommitTrigger#custom_data}
   */
   readonly customData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#destination_arn CodecommitTrigger#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#destination_arn CodecommitTrigger#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#events CodecommitTrigger#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#events CodecommitTrigger#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger#name CodecommitTrigger#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger#name CodecommitTrigger#name}
   */
   readonly name: string;
 }
@@ -228,7 +223,7 @@ export class CodecommitTriggerTriggerList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger aws_codecommit_trigger}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger aws_codecommit_trigger}
 */
 export class CodecommitTrigger extends cdktf.TerraformResource {
 
@@ -242,7 +237,7 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +248,7 @@ export class CodecommitTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codecommit_trigger',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

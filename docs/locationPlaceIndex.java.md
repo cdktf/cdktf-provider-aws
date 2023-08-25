@@ -1,6 +1,6 @@
 # `aws_location_place_index`
 
-Refer to the Terraform Registory for docs: [`aws_location_place_index`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index).
+Refer to the Terraform Registory for docs: [`aws_location_place_index`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index).
 
 # `locationPlaceIndex` Submodule <a name="`locationPlaceIndex` Submodule" id="@cdktf/provider-aws.locationPlaceIndex"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_location_place_index`](https://
 
 ### LocationPlaceIndex <a name="LocationPlaceIndex" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index aws_location_place_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index aws_location_place_index}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer"></a>
 
@@ -48,13 +48,13 @@ LocationPlaceIndex.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.dataSource">dataSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.dataSource">dataSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.dataSourceConfiguration">dataSourceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration">LocationPlaceIndexDataSourceConfiguration</a></code> | data_source_configuration block. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#description LocationPlaceIndex#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#description LocationPlaceIndex#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#id LocationPlaceIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#id LocationPlaceIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
 
 ---
 
@@ -914,13 +914,13 @@ LocationPlaceIndexConfig.builder()
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.indexName">indexName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}. |
 | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.dataSourceConfiguration">dataSourceConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration">LocationPlaceIndexDataSourceConfiguration</a></code> | data_source_configuration block. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#description LocationPlaceIndex#description}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#id LocationPlaceIndex#id}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ public java.lang.String getDataSource();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source LocationPlaceIndex#data_source}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public java.lang.String getIndexName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#index_name LocationPlaceIndex#index_name}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public LocationPlaceIndexDataSourceConfiguration getDataSourceConfiguration();
 
 data_source_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#data_source_configuration LocationPlaceIndex#data_source_configuration}
 
 ---
 
@@ -1040,7 +1040,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#description LocationPlaceIndex#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#description LocationPlaceIndex#description}.
 
 ---
 
@@ -1052,7 +1052,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#id LocationPlaceIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#id LocationPlaceIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1067,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags LocationPlaceIndex#tags}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#tags_all LocationPlaceIndex#tags_all}.
 
 ---
 
@@ -1099,7 +1099,7 @@ LocationPlaceIndexDataSourceConfiguration.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.property.intendedUse">intendedUse</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}. |
+| <code><a href="#@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndexDataSourceConfiguration.property.intendedUse">intendedUse</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}. |
 
 ---
 
@@ -1111,7 +1111,7 @@ public java.lang.String getIntendedUse();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/location_place_index#intended_use LocationPlaceIndex#intended_use}.
 
 ---
 

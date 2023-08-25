@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration#description MskConfiguration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration#description MskConfiguration#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration#id MskConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration#id MskConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration#kafka_versions MskConfiguration#kafka_versions}
   */
   readonly kafkaVersions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration#name MskConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration#name MskConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration#server_properties MskConfiguration#server_properties}
   */
   readonly serverProperties: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration aws_msk_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration aws_msk_configuration}
 */
 export class MskConfiguration extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/msk_configuration aws_msk_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_configuration aws_msk_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_msk_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

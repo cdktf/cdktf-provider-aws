@@ -1,6 +1,6 @@
 # `data_aws_dms_endpoint`
 
-Refer to the Terraform Registory for docs: [`data_aws_dms_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint).
+Refer to the Terraform Registory for docs: [`data_aws_dms_endpoint`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint).
 
 # `dataAwsDmsEndpoint` Submodule <a name="`dataAwsDmsEndpoint` Submodule" id="@cdktf/provider-aws.dataAwsDmsEndpoint"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_dms_endpoint`](https://reg
 
 ### DataAwsDmsEndpoint <a name="DataAwsDmsEndpoint" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint aws_dms_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.Initializer"></a>
 
@@ -70,14 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putElasticsearchSettings">putElasticsearchSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putKafkaSettings">putKafkaSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putMongodbSettings">putMongodbSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetElasticsearchSettings">resetElasticsearchSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetExtraConnectionAttributes">resetExtraConnectionAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetKafkaSettings">resetKafkaSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetMongodbSettings">resetMongodbSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetTags">resetTags</a></code> | *No description.* |
 
 ---
@@ -266,70 +259,10 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `putElasticsearchSettings` <a name="putElasticsearchSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putElasticsearchSettings"></a>
-
-```typescript
-public putElasticsearchSettings(value: IResolvable | DataAwsDmsEndpointElasticsearchSettings[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putElasticsearchSettings.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]
-
----
-
-##### `putKafkaSettings` <a name="putKafkaSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putKafkaSettings"></a>
-
-```typescript
-public putKafkaSettings(value: IResolvable | DataAwsDmsEndpointKafkaSettings[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putKafkaSettings.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]
-
----
-
-##### `putMongodbSettings` <a name="putMongodbSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putMongodbSettings"></a>
-
-```typescript
-public putMongodbSettings(value: IResolvable | DataAwsDmsEndpointMongodbSettings[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.putMongodbSettings.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]
-
----
-
-##### `resetElasticsearchSettings` <a name="resetElasticsearchSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetElasticsearchSettings"></a>
-
-```typescript
-public resetElasticsearchSettings(): void
-```
-
-##### `resetExtraConnectionAttributes` <a name="resetExtraConnectionAttributes" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetExtraConnectionAttributes"></a>
-
-```typescript
-public resetExtraConnectionAttributes(): void
-```
-
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetId"></a>
 
 ```typescript
 public resetId(): void
-```
-
-##### `resetKafkaSettings` <a name="resetKafkaSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetKafkaSettings"></a>
-
-```typescript
-public resetKafkaSettings(): void
-```
-
-##### `resetMongodbSettings` <a name="resetMongodbSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetMongodbSettings"></a>
-
-```typescript
-public resetMongodbSettings(): void
 ```
 
 ##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.resetTags"></a>
@@ -430,6 +363,7 @@ dataAwsDmsEndpoint.DataAwsDmsEndpoint.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.endpointArn">endpointArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.endpointType">endpointType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.engineName">engineName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributes">extraConnectionAttributes</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kafkaSettings">kafkaSettings</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList">DataAwsDmsEndpointKafkaSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kinesisSettings">kinesisSettings</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKinesisSettingsList">DataAwsDmsEndpointKinesisSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kmsKeyArn">kmsKeyArn</a></code> | <code>string</code> | *No description.* |
@@ -445,15 +379,10 @@ dataAwsDmsEndpoint.DataAwsDmsEndpoint.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.serviceAccessRole">serviceAccessRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.sslMode">sslMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.elasticsearchSettingsInput">elasticsearchSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.endpointIdInput">endpointIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributesInput">extraConnectionAttributesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kafkaSettingsInput">kafkaSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.mongodbSettingsInput">mongodbSettingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.endpointId">endpointId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributes">extraConnectionAttributes</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
@@ -641,6 +570,16 @@ public readonly engineName: string;
 
 ---
 
+##### `extraConnectionAttributes`<sup>Required</sup> <a name="extraConnectionAttributes" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributes"></a>
+
+```typescript
+public readonly extraConnectionAttributes: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `kafkaSettings`<sup>Required</sup> <a name="kafkaSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kafkaSettings"></a>
 
 ```typescript
@@ -791,30 +730,10 @@ public readonly username: string;
 
 ---
 
-##### `elasticsearchSettingsInput`<sup>Optional</sup> <a name="elasticsearchSettingsInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.elasticsearchSettingsInput"></a>
-
-```typescript
-public readonly elasticsearchSettingsInput: IResolvable | DataAwsDmsEndpointElasticsearchSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]
-
----
-
 ##### `endpointIdInput`<sup>Optional</sup> <a name="endpointIdInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.endpointIdInput"></a>
 
 ```typescript
 public readonly endpointIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `extraConnectionAttributesInput`<sup>Optional</sup> <a name="extraConnectionAttributesInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributesInput"></a>
-
-```typescript
-public readonly extraConnectionAttributesInput: string;
 ```
 
 - *Type:* string
@@ -828,26 +747,6 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `kafkaSettingsInput`<sup>Optional</sup> <a name="kafkaSettingsInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.kafkaSettingsInput"></a>
-
-```typescript
-public readonly kafkaSettingsInput: IResolvable | DataAwsDmsEndpointKafkaSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]
-
----
-
-##### `mongodbSettingsInput`<sup>Optional</sup> <a name="mongodbSettingsInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.mongodbSettingsInput"></a>
-
-```typescript
-public readonly mongodbSettingsInput: IResolvable | DataAwsDmsEndpointMongodbSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]
 
 ---
 
@@ -865,16 +764,6 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ```typescript
 public readonly endpointId: string;
-```
-
-- *Type:* string
-
----
-
-##### `extraConnectionAttributes`<sup>Required</sup> <a name="extraConnectionAttributes" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.property.extraConnectionAttributes"></a>
-
-```typescript
-public readonly extraConnectionAttributes: string;
 ```
 
 - *Type:* string
@@ -942,13 +831,9 @@ const dataAwsDmsEndpointConfig: dataAwsDmsEndpoint.DataAwsDmsEndpointConfig = { 
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.endpointId">endpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.elasticsearchSettings">elasticsearchSettings</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]</code> | elasticsearch_settings block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.extraConnectionAttributes">extraConnectionAttributes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#extra_connection_attributes DataAwsDmsEndpoint#extra_connection_attributes}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.kafkaSettings">kafkaSettings</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]</code> | kafka_settings block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.mongodbSettings">mongodbSettings</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]</code> | mongodb_settings block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.endpointId">endpointId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}. |
 
 ---
 
@@ -1030,33 +915,7 @@ public readonly endpointId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}.
-
----
-
-##### `elasticsearchSettings`<sup>Optional</sup> <a name="elasticsearchSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.elasticsearchSettings"></a>
-
-```typescript
-public readonly elasticsearchSettings: IResolvable | DataAwsDmsEndpointElasticsearchSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]
-
-elasticsearch_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#elasticsearch_settings DataAwsDmsEndpoint#elasticsearch_settings}
-
----
-
-##### `extraConnectionAttributes`<sup>Optional</sup> <a name="extraConnectionAttributes" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.extraConnectionAttributes"></a>
-
-```typescript
-public readonly extraConnectionAttributes: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#extra_connection_attributes DataAwsDmsEndpoint#extra_connection_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}.
 
 ---
 
@@ -1068,38 +927,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `kafkaSettings`<sup>Optional</sup> <a name="kafkaSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.kafkaSettings"></a>
-
-```typescript
-public readonly kafkaSettings: IResolvable | DataAwsDmsEndpointKafkaSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]
-
-kafka_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#kafka_settings DataAwsDmsEndpoint#kafka_settings}
-
----
-
-##### `mongodbSettings`<sup>Optional</sup> <a name="mongodbSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.property.mongodbSettings"></a>
-
-```typescript
-public readonly mongodbSettings: IResolvable | DataAwsDmsEndpointMongodbSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]
-
-mongodb_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#mongodb_settings DataAwsDmsEndpoint#mongodb_settings}
 
 ---
 
@@ -1111,7 +942,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}.
 
 ---
 
@@ -1125,38 +956,6 @@ import { dataAwsDmsEndpoint } from '@cdktf/provider-aws'
 const dataAwsDmsEndpointElasticsearchSettings: dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings = { ... }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings.property.endpointUri">endpointUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_uri DataAwsDmsEndpoint#endpoint_uri}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings.property.serviceAccessRoleArn">serviceAccessRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#service_access_role_arn DataAwsDmsEndpoint#service_access_role_arn}. |
-
----
-
-##### `endpointUri`<sup>Required</sup> <a name="endpointUri" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings.property.endpointUri"></a>
-
-```typescript
-public readonly endpointUri: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_uri DataAwsDmsEndpoint#endpoint_uri}.
-
----
-
-##### `serviceAccessRoleArn`<sup>Required</sup> <a name="serviceAccessRoleArn" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings.property.serviceAccessRoleArn"></a>
-
-```typescript
-public readonly serviceAccessRoleArn: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#service_access_role_arn DataAwsDmsEndpoint#service_access_role_arn}.
-
----
 
 ### DataAwsDmsEndpointKafkaSettings <a name="DataAwsDmsEndpointKafkaSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings"></a>
 
@@ -1168,25 +967,6 @@ import { dataAwsDmsEndpoint } from '@cdktf/provider-aws'
 const dataAwsDmsEndpointKafkaSettings: dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings = { ... }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings.property.broker">broker</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#broker DataAwsDmsEndpoint#broker}. |
-
----
-
-##### `broker`<sup>Required</sup> <a name="broker" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings.property.broker"></a>
-
-```typescript
-public readonly broker: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#broker DataAwsDmsEndpoint#broker}.
-
----
 
 ### DataAwsDmsEndpointKinesisSettings <a name="DataAwsDmsEndpointKinesisSettings" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKinesisSettings"></a>
 
@@ -1349,7 +1129,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]</code> | *No description.* |
 
 ---
 
@@ -1374,16 +1153,6 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointElasticsearchSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>[]
 
 ---
 
@@ -1616,13 +1385,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUri">endpointUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.errorRetryDuration">errorRetryDuration</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.fullLoadErrorPercentage">fullLoadErrorPercentage</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUriInput">endpointUriInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.serviceAccessRoleArnInput">serviceAccessRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUri">endpointUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.serviceAccessRoleArn">serviceAccessRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a></code> | *No description.* |
 
 ---
 
@@ -1650,6 +1417,16 @@ public readonly fqn: string;
 
 ---
 
+##### `endpointUri`<sup>Required</sup> <a name="endpointUri" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUri"></a>
+
+```typescript
+public readonly endpointUri: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `errorRetryDuration`<sup>Required</sup> <a name="errorRetryDuration" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.errorRetryDuration"></a>
 
 ```typescript
@@ -1670,36 +1447,6 @@ public readonly fullLoadErrorPercentage: number;
 
 ---
 
-##### `endpointUriInput`<sup>Optional</sup> <a name="endpointUriInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUriInput"></a>
-
-```typescript
-public readonly endpointUriInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `serviceAccessRoleArnInput`<sup>Optional</sup> <a name="serviceAccessRoleArnInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.serviceAccessRoleArnInput"></a>
-
-```typescript
-public readonly serviceAccessRoleArnInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `endpointUri`<sup>Required</sup> <a name="endpointUri" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.endpointUri"></a>
-
-```typescript
-public readonly endpointUri: string;
-```
-
-- *Type:* string
-
----
-
 ##### `serviceAccessRoleArn`<sup>Required</sup> <a name="serviceAccessRoleArn" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.serviceAccessRoleArn"></a>
 
 ```typescript
@@ -1713,10 +1460,10 @@ public readonly serviceAccessRoleArn: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointElasticsearchSettings;
+public readonly internalValue: DataAwsDmsEndpointElasticsearchSettings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings">DataAwsDmsEndpointElasticsearchSettings</a>
 
 ---
 
@@ -1825,7 +1572,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]</code> | *No description.* |
 
 ---
 
@@ -1850,16 +1596,6 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointKafkaSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>[]
 
 ---
 
@@ -2092,6 +1828,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.broker">broker</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.includeControlDetails">includeControlDetails</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.includeNullAndEmpty">includeNullAndEmpty</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.includePartitionValue">includePartitionValue</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -2109,9 +1846,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.sslClientKeyArn">sslClientKeyArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.sslClientKeyPassword">sslClientKeyPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.topic">topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.brokerInput">brokerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.broker">broker</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a></code> | *No description.* |
 
 ---
 
@@ -2133,6 +1868,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `broker`<sup>Required</sup> <a name="broker" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.broker"></a>
+
+```typescript
+public readonly broker: string;
 ```
 
 - *Type:* string
@@ -2309,33 +2054,13 @@ public readonly topic: string;
 
 ---
 
-##### `brokerInput`<sup>Optional</sup> <a name="brokerInput" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.brokerInput"></a>
-
-```typescript
-public readonly brokerInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `broker`<sup>Required</sup> <a name="broker" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.broker"></a>
-
-```typescript
-public readonly broker: string;
-```
-
-- *Type:* string
-
----
-
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointKafkaSettings;
+public readonly internalValue: DataAwsDmsEndpointKafkaSettings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings">DataAwsDmsEndpointKafkaSettings</a>
 
 ---
 
@@ -2942,7 +2667,6 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]</code> | *No description.* |
 
 ---
 
@@ -2967,16 +2691,6 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointMongodbSettings[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>[]
 
 ---
 
@@ -3215,7 +2929,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.docsToInvestigate">docsToInvestigate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.extractDocId">extractDocId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.nestingLevel">nestingLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a></code> | *No description.* |
 
 ---
 
@@ -3306,10 +3020,10 @@ public readonly nestingLevel: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: IResolvable | DataAwsDmsEndpointMongodbSettings;
+public readonly internalValue: DataAwsDmsEndpointMongodbSettings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>
+- *Type:* <a href="#@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings">DataAwsDmsEndpointMongodbSettings</a>
 
 ---
 

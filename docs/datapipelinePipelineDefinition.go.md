@@ -1,6 +1,6 @@
 # `aws_datapipeline_pipeline_definition`
 
-Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition).
+Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition).
 
 # `datapipelinePipelineDefinition` Submodule <a name="`datapipelinePipelineDefinition` Submodule" id="@cdktf/provider-aws.datapipelinePipelineDefinition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_datapipeline_pipeline_definitio
 
 ### DatapipelinePipelineDefinition <a name="DatapipelinePipelineDefinition" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition aws_datapipeline_pipeline_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition aws_datapipeline_pipeline_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinition(scope Construct, id *string, config DatapipelinePipelineDefinitionConfig) DatapipelinePipelineDefinition
 ```
@@ -330,7 +330,7 @@ func ResetParameterValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.DatapipelinePipelineDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.DatapipelinePipelineDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ datapipelinepipelinedefinition.DatapipelinePipelineDefinition_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.DatapipelinePipelineDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionConfig {
 	Connection: interface{},
@@ -714,9 +714,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#pipeline_id DatapipelinePipelineDefinition#pipeline_id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#pipeline_id DatapipelinePipelineDefinition#pipeline_id}. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.pipelineObject">PipelineObject</a></code> | <code>interface{}</code> | pipeline_object block. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.parameterObject">ParameterObject</a></code> | <code>interface{}</code> | parameter_object block. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionConfig.property.parameterValue">ParameterValue</a></code> | <code>interface{}</code> | parameter_value block. |
 
@@ -800,7 +800,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#pipeline_id DatapipelinePipelineDefinition#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#pipeline_id DatapipelinePipelineDefinition#pipeline_id}.
 
 ---
 
@@ -814,7 +814,7 @@ PipelineObject interface{}
 
 pipeline_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#pipeline_object DatapipelinePipelineDefinition#pipeline_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#pipeline_object DatapipelinePipelineDefinition#pipeline_object}
 
 ---
 
@@ -826,7 +826,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -843,7 +843,7 @@ ParameterObject interface{}
 
 parameter_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#parameter_object DatapipelinePipelineDefinition#parameter_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#parameter_object DatapipelinePipelineDefinition#parameter_object}
 
 ---
 
@@ -857,7 +857,7 @@ ParameterValue interface{}
 
 parameter_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#parameter_value DatapipelinePipelineDefinition#parameter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#parameter_value DatapipelinePipelineDefinition#parameter_value}
 
 ---
 
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionParameterObject {
 	Id: *string,
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObject.property.attribute">Attribute</a></code> | <code>interface{}</code> | attribute block. |
 
 ---
@@ -891,7 +891,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -908,7 +908,7 @@ Attribute interface{}
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#attribute DatapipelinePipelineDefinition#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#attribute DatapipelinePipelineDefinition#attribute}
 
 ---
 
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionParameterObjectAttribute {
 	Key: *string,
@@ -929,8 +929,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttribute.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
 
 ---
 
@@ -942,7 +942,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}.
 
 ---
 
@@ -954,7 +954,7 @@ StringValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
 
 ---
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionParameterValue {
 	Id: *string,
@@ -975,8 +975,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValue.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
 
 ---
 
@@ -988,7 +988,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1003,7 +1003,7 @@ StringValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionPipelineObject {
 	Id: *string,
@@ -1025,8 +1025,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#name DatapipelinePipelineDefinition#name}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#name DatapipelinePipelineDefinition#name}. |
 | <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObject.property.field">Field</a></code> | <code>interface{}</code> | field block. |
 
 ---
@@ -1039,7 +1039,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#id DatapipelinePipelineDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#name DatapipelinePipelineDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#name DatapipelinePipelineDefinition#name}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Field interface{}
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#field DatapipelinePipelineDefinition#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#field DatapipelinePipelineDefinition#field}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 &datapipelinepipelinedefinition.DatapipelinePipelineDefinitionPipelineObjectField {
 	Key: *string,
@@ -1090,9 +1090,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.refValue">RefValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#ref_value DatapipelinePipelineDefinition#ref_value}. |
-| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.refValue">RefValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#ref_value DatapipelinePipelineDefinition#ref_value}. |
+| <code><a href="#@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectField.property.stringValue">StringValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}. |
 
 ---
 
@@ -1104,7 +1104,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#key DatapipelinePipelineDefinition#key}.
 
 ---
 
@@ -1116,7 +1116,7 @@ RefValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#ref_value DatapipelinePipelineDefinition#ref_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#ref_value DatapipelinePipelineDefinition#ref_value}.
 
 ---
 
@@ -1128,7 +1128,7 @@ StringValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/datapipeline_pipeline_definition#string_value DatapipelinePipelineDefinition#string_value}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterObjectAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatapipelinePipelineDefinitionParameterObjectAttributeList
 ```
@@ -1282,7 +1282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference
 ```
@@ -1593,7 +1593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatapipelinePipelineDefinitionParameterObjectList
 ```
@@ -1736,7 +1736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatapipelinePipelineDefinitionParameterObjectOutputReference
 ```
@@ -2067,7 +2067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatapipelinePipelineDefinitionParameterValueList
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionParameterValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatapipelinePipelineDefinitionParameterValueOutputReference
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionPipelineObjectFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatapipelinePipelineDefinitionPipelineObjectFieldList
 ```
@@ -2664,7 +2664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference
 ```
@@ -3011,7 +3011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionPipelineObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatapipelinePipelineDefinitionPipelineObjectList
 ```
@@ -3154,7 +3154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/datapipelinepipelinedefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datapipelinepipelinedefinition"
 
 datapipelinepipelinedefinition.NewDatapipelinePipelineDefinitionPipelineObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatapipelinePipelineDefinitionPipelineObjectOutputReference
 ```

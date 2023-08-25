@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,248 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsDmsEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#endpoint_id DataAwsDmsEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#extra_connection_attributes DataAwsDmsEndpoint#extra_connection_attributes}
-  */
-  readonly extraConnectionAttributes?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#id DataAwsDmsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint#tags DataAwsDmsEndpoint#tags}
   */
   readonly tags?: { [key: string]: string };
+}
+export interface DataAwsDmsEndpointElasticsearchSettings {
+}
+
+export function dataAwsDmsEndpointElasticsearchSettingsToTerraform(struct?: DataAwsDmsEndpointElasticsearchSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDmsEndpointElasticsearchSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * elasticsearch_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#elasticsearch_settings DataAwsDmsEndpoint#elasticsearch_settings}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  readonly elasticsearchSettings?: DataAwsDmsEndpointElasticsearchSettings[] | cdktf.IResolvable;
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDmsEndpointElasticsearchSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDmsEndpointElasticsearchSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // endpoint_uri - computed: true, optional: false, required: false
+  public get endpointUri() {
+    return this.getStringAttribute('endpoint_uri');
+  }
+
+  // error_retry_duration - computed: true, optional: false, required: false
+  public get errorRetryDuration() {
+    return this.getNumberAttribute('error_retry_duration');
+  }
+
+  // full_load_error_percentage - computed: true, optional: false, required: false
+  public get fullLoadErrorPercentage() {
+    return this.getNumberAttribute('full_load_error_percentage');
+  }
+
+  // service_access_role_arn - computed: true, optional: false, required: false
+  public get serviceAccessRoleArn() {
+    return this.getStringAttribute('service_access_role_arn');
+  }
+}
+
+export class DataAwsDmsEndpointElasticsearchSettingsList extends cdktf.ComplexList {
+
   /**
-  * kafka_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#kafka_settings DataAwsDmsEndpoint#kafka_settings}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  readonly kafkaSettings?: DataAwsDmsEndpointKafkaSettings[] | cdktf.IResolvable;
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
   /**
-  * mongodb_settings block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#mongodb_settings DataAwsDmsEndpoint#mongodb_settings}
+  * @param index the index of the item to return
   */
-  readonly mongodbSettings?: DataAwsDmsEndpointMongodbSettings[] | cdktf.IResolvable;
+  public get(index: number): DataAwsDmsEndpointElasticsearchSettingsOutputReference {
+    return new DataAwsDmsEndpointElasticsearchSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDmsEndpointKafkaSettings {
+}
+
+export function dataAwsDmsEndpointKafkaSettingsToTerraform(struct?: DataAwsDmsEndpointKafkaSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDmsEndpointKafkaSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDmsEndpointKafkaSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // broker - computed: true, optional: false, required: false
+  public get broker() {
+    return this.getStringAttribute('broker');
+  }
+
+  // include_control_details - computed: true, optional: false, required: false
+  public get includeControlDetails() {
+    return this.getBooleanAttribute('include_control_details');
+  }
+
+  // include_null_and_empty - computed: true, optional: false, required: false
+  public get includeNullAndEmpty() {
+    return this.getBooleanAttribute('include_null_and_empty');
+  }
+
+  // include_partition_value - computed: true, optional: false, required: false
+  public get includePartitionValue() {
+    return this.getBooleanAttribute('include_partition_value');
+  }
+
+  // include_table_alter_operations - computed: true, optional: false, required: false
+  public get includeTableAlterOperations() {
+    return this.getBooleanAttribute('include_table_alter_operations');
+  }
+
+  // include_transaction_details - computed: true, optional: false, required: false
+  public get includeTransactionDetails() {
+    return this.getBooleanAttribute('include_transaction_details');
+  }
+
+  // message_format - computed: true, optional: false, required: false
+  public get messageFormat() {
+    return this.getStringAttribute('message_format');
+  }
+
+  // message_max_bytes - computed: true, optional: false, required: false
+  public get messageMaxBytes() {
+    return this.getNumberAttribute('message_max_bytes');
+  }
+
+  // no_hex_prefix - computed: true, optional: false, required: false
+  public get noHexPrefix() {
+    return this.getBooleanAttribute('no_hex_prefix');
+  }
+
+  // partition_include_schema_table - computed: true, optional: false, required: false
+  public get partitionIncludeSchemaTable() {
+    return this.getBooleanAttribute('partition_include_schema_table');
+  }
+
+  // sasl_password - computed: true, optional: false, required: false
+  public get saslPassword() {
+    return this.getStringAttribute('sasl_password');
+  }
+
+  // sasl_username - computed: true, optional: false, required: false
+  public get saslUsername() {
+    return this.getStringAttribute('sasl_username');
+  }
+
+  // security_protocol - computed: true, optional: false, required: false
+  public get securityProtocol() {
+    return this.getStringAttribute('security_protocol');
+  }
+
+  // ssl_ca_certificate_arn - computed: true, optional: false, required: false
+  public get sslCaCertificateArn() {
+    return this.getStringAttribute('ssl_ca_certificate_arn');
+  }
+
+  // ssl_client_certificate_arn - computed: true, optional: false, required: false
+  public get sslClientCertificateArn() {
+    return this.getStringAttribute('ssl_client_certificate_arn');
+  }
+
+  // ssl_client_key_arn - computed: true, optional: false, required: false
+  public get sslClientKeyArn() {
+    return this.getStringAttribute('ssl_client_key_arn');
+  }
+
+  // ssl_client_key_password - computed: true, optional: false, required: false
+  public get sslClientKeyPassword() {
+    return this.getStringAttribute('ssl_client_key_password');
+  }
+
+  // topic - computed: true, optional: false, required: false
+  public get topic() {
+    return this.getStringAttribute('topic');
+  }
+}
+
+export class DataAwsDmsEndpointKafkaSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDmsEndpointKafkaSettingsOutputReference {
+    return new DataAwsDmsEndpointKafkaSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsDmsEndpointKinesisSettings {
 }
@@ -152,6 +353,95 @@ export class DataAwsDmsEndpointKinesisSettingsList extends cdktf.ComplexList {
   */
   public get(index: number): DataAwsDmsEndpointKinesisSettingsOutputReference {
     return new DataAwsDmsEndpointKinesisSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAwsDmsEndpointMongodbSettings {
+}
+
+export function dataAwsDmsEndpointMongodbSettingsToTerraform(struct?: DataAwsDmsEndpointMongodbSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsDmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsDmsEndpointMongodbSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsDmsEndpointMongodbSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // auth_mechanism - computed: true, optional: false, required: false
+  public get authMechanism() {
+    return this.getStringAttribute('auth_mechanism');
+  }
+
+  // auth_source - computed: true, optional: false, required: false
+  public get authSource() {
+    return this.getStringAttribute('auth_source');
+  }
+
+  // auth_type - computed: true, optional: false, required: false
+  public get authType() {
+    return this.getStringAttribute('auth_type');
+  }
+
+  // docs_to_investigate - computed: true, optional: false, required: false
+  public get docsToInvestigate() {
+    return this.getStringAttribute('docs_to_investigate');
+  }
+
+  // extract_doc_id - computed: true, optional: false, required: false
+  public get extractDocId() {
+    return this.getStringAttribute('extract_doc_id');
+  }
+
+  // nesting_level - computed: true, optional: false, required: false
+  public get nestingLevel() {
+    return this.getStringAttribute('nesting_level');
+  }
+}
+
+export class DataAwsDmsEndpointMongodbSettingsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsDmsEndpointMongodbSettingsOutputReference {
+    return new DataAwsDmsEndpointMongodbSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAwsDmsEndpointRedisSettings {
@@ -581,416 +871,9 @@ export class DataAwsDmsEndpointS3SettingsList extends cdktf.ComplexList {
     return new DataAwsDmsEndpointS3SettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAwsDmsEndpointElasticsearchSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#endpoint_uri DataAwsDmsEndpoint#endpoint_uri}
-  */
-  readonly endpointUri: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#service_access_role_arn DataAwsDmsEndpoint#service_access_role_arn}
-  */
-  readonly serviceAccessRoleArn: string;
-}
-
-export function dataAwsDmsEndpointElasticsearchSettingsToTerraform(struct?: DataAwsDmsEndpointElasticsearchSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    endpoint_uri: cdktf.stringToTerraform(struct!.endpointUri),
-    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
-  }
-}
-
-export class DataAwsDmsEndpointElasticsearchSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAwsDmsEndpointElasticsearchSettings | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._endpointUri !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.endpointUri = this._endpointUri;
-    }
-    if (this._serviceAccessRoleArn !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serviceAccessRoleArn = this._serviceAccessRoleArn;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsDmsEndpointElasticsearchSettings | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._endpointUri = undefined;
-      this._serviceAccessRoleArn = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._endpointUri = value.endpointUri;
-      this._serviceAccessRoleArn = value.serviceAccessRoleArn;
-    }
-  }
-
-  // endpoint_uri - computed: false, optional: false, required: true
-  private _endpointUri?: string; 
-  public get endpointUri() {
-    return this.getStringAttribute('endpoint_uri');
-  }
-  public set endpointUri(value: string) {
-    this._endpointUri = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endpointUriInput() {
-    return this._endpointUri;
-  }
-
-  // error_retry_duration - computed: true, optional: false, required: false
-  public get errorRetryDuration() {
-    return this.getNumberAttribute('error_retry_duration');
-  }
-
-  // full_load_error_percentage - computed: true, optional: false, required: false
-  public get fullLoadErrorPercentage() {
-    return this.getNumberAttribute('full_load_error_percentage');
-  }
-
-  // service_access_role_arn - computed: false, optional: false, required: true
-  private _serviceAccessRoleArn?: string; 
-  public get serviceAccessRoleArn() {
-    return this.getStringAttribute('service_access_role_arn');
-  }
-  public set serviceAccessRoleArn(value: string) {
-    this._serviceAccessRoleArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceAccessRoleArnInput() {
-    return this._serviceAccessRoleArn;
-  }
-}
-
-export class DataAwsDmsEndpointElasticsearchSettingsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsDmsEndpointElasticsearchSettings[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAwsDmsEndpointElasticsearchSettingsOutputReference {
-    return new DataAwsDmsEndpointElasticsearchSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAwsDmsEndpointKafkaSettings {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint#broker DataAwsDmsEndpoint#broker}
-  */
-  readonly broker: string;
-}
-
-export function dataAwsDmsEndpointKafkaSettingsToTerraform(struct?: DataAwsDmsEndpointKafkaSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    broker: cdktf.stringToTerraform(struct!.broker),
-  }
-}
-
-export class DataAwsDmsEndpointKafkaSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAwsDmsEndpointKafkaSettings | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._broker !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.broker = this._broker;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsDmsEndpointKafkaSettings | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._broker = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._broker = value.broker;
-    }
-  }
-
-  // broker - computed: false, optional: false, required: true
-  private _broker?: string; 
-  public get broker() {
-    return this.getStringAttribute('broker');
-  }
-  public set broker(value: string) {
-    this._broker = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get brokerInput() {
-    return this._broker;
-  }
-
-  // include_control_details - computed: true, optional: false, required: false
-  public get includeControlDetails() {
-    return this.getBooleanAttribute('include_control_details');
-  }
-
-  // include_null_and_empty - computed: true, optional: false, required: false
-  public get includeNullAndEmpty() {
-    return this.getBooleanAttribute('include_null_and_empty');
-  }
-
-  // include_partition_value - computed: true, optional: false, required: false
-  public get includePartitionValue() {
-    return this.getBooleanAttribute('include_partition_value');
-  }
-
-  // include_table_alter_operations - computed: true, optional: false, required: false
-  public get includeTableAlterOperations() {
-    return this.getBooleanAttribute('include_table_alter_operations');
-  }
-
-  // include_transaction_details - computed: true, optional: false, required: false
-  public get includeTransactionDetails() {
-    return this.getBooleanAttribute('include_transaction_details');
-  }
-
-  // message_format - computed: true, optional: false, required: false
-  public get messageFormat() {
-    return this.getStringAttribute('message_format');
-  }
-
-  // message_max_bytes - computed: true, optional: false, required: false
-  public get messageMaxBytes() {
-    return this.getNumberAttribute('message_max_bytes');
-  }
-
-  // no_hex_prefix - computed: true, optional: false, required: false
-  public get noHexPrefix() {
-    return this.getBooleanAttribute('no_hex_prefix');
-  }
-
-  // partition_include_schema_table - computed: true, optional: false, required: false
-  public get partitionIncludeSchemaTable() {
-    return this.getBooleanAttribute('partition_include_schema_table');
-  }
-
-  // sasl_password - computed: true, optional: false, required: false
-  public get saslPassword() {
-    return this.getStringAttribute('sasl_password');
-  }
-
-  // sasl_username - computed: true, optional: false, required: false
-  public get saslUsername() {
-    return this.getStringAttribute('sasl_username');
-  }
-
-  // security_protocol - computed: true, optional: false, required: false
-  public get securityProtocol() {
-    return this.getStringAttribute('security_protocol');
-  }
-
-  // ssl_ca_certificate_arn - computed: true, optional: false, required: false
-  public get sslCaCertificateArn() {
-    return this.getStringAttribute('ssl_ca_certificate_arn');
-  }
-
-  // ssl_client_certificate_arn - computed: true, optional: false, required: false
-  public get sslClientCertificateArn() {
-    return this.getStringAttribute('ssl_client_certificate_arn');
-  }
-
-  // ssl_client_key_arn - computed: true, optional: false, required: false
-  public get sslClientKeyArn() {
-    return this.getStringAttribute('ssl_client_key_arn');
-  }
-
-  // ssl_client_key_password - computed: true, optional: false, required: false
-  public get sslClientKeyPassword() {
-    return this.getStringAttribute('ssl_client_key_password');
-  }
-
-  // topic - computed: true, optional: false, required: false
-  public get topic() {
-    return this.getStringAttribute('topic');
-  }
-}
-
-export class DataAwsDmsEndpointKafkaSettingsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsDmsEndpointKafkaSettings[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAwsDmsEndpointKafkaSettingsOutputReference {
-    return new DataAwsDmsEndpointKafkaSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAwsDmsEndpointMongodbSettings {
-}
-
-export function dataAwsDmsEndpointMongodbSettingsToTerraform(struct?: DataAwsDmsEndpointMongodbSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class DataAwsDmsEndpointMongodbSettingsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAwsDmsEndpointMongodbSettings | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAwsDmsEndpointMongodbSettings | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-    }
-  }
-
-  // auth_mechanism - computed: true, optional: false, required: false
-  public get authMechanism() {
-    return this.getStringAttribute('auth_mechanism');
-  }
-
-  // auth_source - computed: true, optional: false, required: false
-  public get authSource() {
-    return this.getStringAttribute('auth_source');
-  }
-
-  // auth_type - computed: true, optional: false, required: false
-  public get authType() {
-    return this.getStringAttribute('auth_type');
-  }
-
-  // docs_to_investigate - computed: true, optional: false, required: false
-  public get docsToInvestigate() {
-    return this.getStringAttribute('docs_to_investigate');
-  }
-
-  // extract_doc_id - computed: true, optional: false, required: false
-  public get extractDocId() {
-    return this.getStringAttribute('extract_doc_id');
-  }
-
-  // nesting_level - computed: true, optional: false, required: false
-  public get nestingLevel() {
-    return this.getStringAttribute('nesting_level');
-  }
-}
-
-export class DataAwsDmsEndpointMongodbSettingsList extends cdktf.ComplexList {
-  public internalValue? : DataAwsDmsEndpointMongodbSettings[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAwsDmsEndpointMongodbSettingsOutputReference {
-    return new DataAwsDmsEndpointMongodbSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint aws_dms_endpoint}
 */
 export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
 
@@ -1004,7 +887,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1015,7 +898,7 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_dms_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1027,12 +910,8 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._endpointId = config.endpointId;
-    this._extraConnectionAttributes = config.extraConnectionAttributes;
     this._id = config.id;
     this._tags = config.tags;
-    this._elasticsearchSettings.internalValue = config.elasticsearchSettings;
-    this._kafkaSettings.internalValue = config.kafkaSettings;
-    this._mongodbSettings.internalValue = config.mongodbSettings;
   }
 
   // ==========
@@ -1047,6 +926,12 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // database_name - computed: true, optional: false, required: false
   public get databaseName() {
     return this.getStringAttribute('database_name');
+  }
+
+  // elasticsearch_settings - computed: true, optional: false, required: false
+  private _elasticsearchSettings = new DataAwsDmsEndpointElasticsearchSettingsList(this, "elasticsearch_settings", false);
+  public get elasticsearchSettings() {
+    return this._elasticsearchSettings;
   }
 
   // endpoint_arn - computed: true, optional: false, required: false
@@ -1077,20 +962,9 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
     return this.getStringAttribute('engine_name');
   }
 
-  // extra_connection_attributes - computed: false, optional: true, required: false
-  private _extraConnectionAttributes?: string; 
+  // extra_connection_attributes - computed: true, optional: false, required: false
   public get extraConnectionAttributes() {
     return this.getStringAttribute('extra_connection_attributes');
-  }
-  public set extraConnectionAttributes(value: string) {
-    this._extraConnectionAttributes = value;
-  }
-  public resetExtraConnectionAttributes() {
-    this._extraConnectionAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get extraConnectionAttributesInput() {
-    return this._extraConnectionAttributes;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1109,6 +983,12 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // kafka_settings - computed: true, optional: false, required: false
+  private _kafkaSettings = new DataAwsDmsEndpointKafkaSettingsList(this, "kafka_settings", false);
+  public get kafkaSettings() {
+    return this._kafkaSettings;
+  }
+
   // kinesis_settings - computed: true, optional: false, required: false
   private _kinesisSettings = new DataAwsDmsEndpointKinesisSettingsList(this, "kinesis_settings", false);
   public get kinesisSettings() {
@@ -1118,6 +998,12 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   // kms_key_arn - computed: true, optional: false, required: false
   public get kmsKeyArn() {
     return this.getStringAttribute('kms_key_arn');
+  }
+
+  // mongodb_settings - computed: true, optional: false, required: false
+  private _mongodbSettings = new DataAwsDmsEndpointMongodbSettingsList(this, "mongodb_settings", false);
+  public get mongodbSettings() {
+    return this._mongodbSettings;
   }
 
   // password - computed: true, optional: false, required: false
@@ -1194,54 +1080,6 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
     return this.getStringAttribute('username');
   }
 
-  // elasticsearch_settings - computed: false, optional: true, required: false
-  private _elasticsearchSettings = new DataAwsDmsEndpointElasticsearchSettingsList(this, "elasticsearch_settings", false);
-  public get elasticsearchSettings() {
-    return this._elasticsearchSettings;
-  }
-  public putElasticsearchSettings(value: DataAwsDmsEndpointElasticsearchSettings[] | cdktf.IResolvable) {
-    this._elasticsearchSettings.internalValue = value;
-  }
-  public resetElasticsearchSettings() {
-    this._elasticsearchSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get elasticsearchSettingsInput() {
-    return this._elasticsearchSettings.internalValue;
-  }
-
-  // kafka_settings - computed: false, optional: true, required: false
-  private _kafkaSettings = new DataAwsDmsEndpointKafkaSettingsList(this, "kafka_settings", false);
-  public get kafkaSettings() {
-    return this._kafkaSettings;
-  }
-  public putKafkaSettings(value: DataAwsDmsEndpointKafkaSettings[] | cdktf.IResolvable) {
-    this._kafkaSettings.internalValue = value;
-  }
-  public resetKafkaSettings() {
-    this._kafkaSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kafkaSettingsInput() {
-    return this._kafkaSettings.internalValue;
-  }
-
-  // mongodb_settings - computed: false, optional: true, required: false
-  private _mongodbSettings = new DataAwsDmsEndpointMongodbSettingsList(this, "mongodb_settings", false);
-  public get mongodbSettings() {
-    return this._mongodbSettings;
-  }
-  public putMongodbSettings(value: DataAwsDmsEndpointMongodbSettings[] | cdktf.IResolvable) {
-    this._mongodbSettings.internalValue = value;
-  }
-  public resetMongodbSettings() {
-    this._mongodbSettings.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mongodbSettingsInput() {
-    return this._mongodbSettings.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1249,12 +1087,8 @@ export class DataAwsDmsEndpoint extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_id: cdktf.stringToTerraform(this._endpointId),
-      extra_connection_attributes: cdktf.stringToTerraform(this._extraConnectionAttributes),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      elasticsearch_settings: cdktf.listMapper(dataAwsDmsEndpointElasticsearchSettingsToTerraform, true)(this._elasticsearchSettings.internalValue),
-      kafka_settings: cdktf.listMapper(dataAwsDmsEndpointKafkaSettingsToTerraform, true)(this._kafkaSettings.internalValue),
-      mongodb_settings: cdktf.listMapper(dataAwsDmsEndpointMongodbSettingsToTerraform, true)(this._mongodbSettings.internalValue),
     };
   }
 }

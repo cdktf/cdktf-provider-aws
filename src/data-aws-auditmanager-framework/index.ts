@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAuditmanagerFrameworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework#framework_type DataAwsAuditmanagerFramework#framework_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework#framework_type DataAwsAuditmanagerFramework#framework_type}
   */
   readonly frameworkType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework#name DataAwsAuditmanagerFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework#name DataAwsAuditmanagerFramework#name}
   */
   readonly name: string;
   /**
   * control_sets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework#control_sets DataAwsAuditmanagerFramework#control_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework#control_sets DataAwsAuditmanagerFramework#control_sets}
   */
   readonly controlSets?: DataAwsAuditmanagerFrameworkControlSets[] | cdktf.IResolvable;
 }
@@ -106,7 +101,7 @@ export interface DataAwsAuditmanagerFrameworkControlSets {
   /**
   * controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework#controls DataAwsAuditmanagerFramework#controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework#controls DataAwsAuditmanagerFramework#controls}
   */
   readonly controls?: DataAwsAuditmanagerFrameworkControlSetsControls[] | cdktf.IResolvable;
 }
@@ -213,7 +208,7 @@ export class DataAwsAuditmanagerFrameworkControlSetsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework aws_auditmanager_framework}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework}
 */
 export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
 
@@ -227,7 +222,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/auditmanager_framework aws_auditmanager_framework} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/auditmanager_framework aws_auditmanager_framework} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -238,7 +233,7 @@ export class DataAwsAuditmanagerFramework extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_auditmanager_framework',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

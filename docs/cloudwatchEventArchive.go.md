@@ -1,6 +1,6 @@
 # `aws_cloudwatch_event_archive`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_archive`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_archive`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive).
 
 # `cloudwatchEventArchive` Submodule <a name="`cloudwatchEventArchive` Submodule" id="@cdktf/provider-aws.cloudwatchEventArchive"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_archive`](http
 
 ### CloudwatchEventArchive <a name="CloudwatchEventArchive" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive aws_cloudwatch_event_archive}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.NewCloudwatchEventArchive(scope Construct, id *string, config CloudwatchEventArchiveConfig) CloudwatchEventArchive
 ```
@@ -298,7 +298,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
 
 &cloudwatcheventarchive.CloudwatchEventArchiveConfig {
 	Connection: interface{},
@@ -716,12 +716,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventarchive"
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.eventSourceArn">EventSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.eventPattern">EventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.retentionDays">RetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.eventSourceArn">EventSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.eventPattern">EventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.property.retentionDays">RetentionDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}. |
 
 ---
 
@@ -803,7 +803,7 @@ EventSourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#event_source_arn CloudwatchEventArchive#event_source_arn}.
 
 ---
 
@@ -815,7 +815,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#name CloudwatchEventArchive#name}.
 
 ---
 
@@ -827,7 +827,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#description CloudwatchEventArchive#description}.
 
 ---
 
@@ -839,7 +839,7 @@ EventPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#event_pattern CloudwatchEventArchive#event_pattern}.
 
 ---
 
@@ -851,7 +851,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#id CloudwatchEventArchive#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ RetentionDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_archive#retention_days CloudwatchEventArchive#retention_days}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_caller_identity`
 
-Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/caller_identity).
+Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/caller_identity).
 
 # `dataAwsCallerIdentity` Submodule <a name="`dataAwsCallerIdentity` Submodule" id="@cdktf/provider-aws.dataAwsCallerIdentity"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_caller_identity`](https://
 
 ### DataAwsCallerIdentity <a name="DataAwsCallerIdentity" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/caller_identity aws_caller_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/caller_identity aws_caller_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.NewDataAwsCallerIdentity(scope Construct, id *string, config DataAwsCallerIdentityConfig) DataAwsCallerIdentity
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawscalleridentity.DataAwsCallerIdentity_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 dataawscalleridentity.DataAwsCallerIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscalleridentity"
 
 &dataawscalleridentity.DataAwsCallerIdentityConfig {
 	Connection: interface{},
@@ -580,7 +580,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscalleridentity"
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCallerIdentity.DataAwsCallerIdentityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}. |
 
 ---
 
@@ -662,7 +662,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/caller_identity#id DataAwsCallerIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

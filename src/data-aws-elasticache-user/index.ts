@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#access_string DataAwsElasticacheUser#access_string}
   */
   readonly accessString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#engine DataAwsElasticacheUser#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#id DataAwsElasticacheUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#no_password_required DataAwsElasticacheUser#no_password_required}
   */
   readonly noPasswordRequired?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#passwords DataAwsElasticacheUser#passwords}
   */
   readonly passwords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#user_id DataAwsElasticacheUser#user_id}
   */
   readonly userId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#user_name DataAwsElasticacheUser#user_name}
   */
   readonly userName?: string;
   /**
   * authentication_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
   */
   readonly authenticationMode?: DataAwsElasticacheUserAuthenticationMode[] | cdktf.IResolvable;
 }
 export interface DataAwsElasticacheUserAuthenticationMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#password_count DataAwsElasticacheUser#password_count}
   */
   readonly passwordCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user#type DataAwsElasticacheUser#type}
   */
   readonly type?: string;
 }
@@ -176,7 +171,7 @@ export class DataAwsElasticacheUserAuthenticationModeList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user aws_elasticache_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user aws_elasticache_user}
 */
 export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
 
@@ -190,7 +185,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/elasticache_user aws_elasticache_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/elasticache_user aws_elasticache_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +196,7 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_elasticache_user',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

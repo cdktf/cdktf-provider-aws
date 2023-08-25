@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchInboundConnectionAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter#connection_id OpensearchInboundConnectionAccepter#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter#id OpensearchInboundConnectionAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,17 +21,17 @@ export interface OpensearchInboundConnectionAccepterConfig extends cdktf.Terrafo
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter#timeouts OpensearchInboundConnectionAccepter#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter#timeouts OpensearchInboundConnectionAccepter#timeouts}
   */
   readonly timeouts?: OpensearchInboundConnectionAccepterTimeouts;
 }
 export interface OpensearchInboundConnectionAccepterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter#create OpensearchInboundConnectionAccepter#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter#delete OpensearchInboundConnectionAccepter#delete}
   */
   readonly delete?: string;
 }
@@ -134,7 +129,7 @@ export class OpensearchInboundConnectionAccepterTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter}
 */
 export class OpensearchInboundConnectionAccepter extends cdktf.TerraformResource {
 
@@ -148,7 +143,7 @@ export class OpensearchInboundConnectionAccepter extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/opensearch_inbound_connection_accepter aws_opensearch_inbound_connection_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +154,7 @@ export class OpensearchInboundConnectionAccepter extends cdktf.TerraformResource
       terraformResourceType: 'aws_opensearch_inbound_connection_accepter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

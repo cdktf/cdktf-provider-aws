@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBatchSchedulingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy#arn DataAwsBatchSchedulingPolicy#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy#id DataAwsBatchSchedulingPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy#tags DataAwsBatchSchedulingPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -174,7 +169,7 @@ export class DataAwsBatchSchedulingPolicyFairSharePolicyList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy}
 */
 export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
 
@@ -188,7 +183,7 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/batch_scheduling_policy aws_batch_scheduling_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +194,7 @@ export class DataAwsBatchSchedulingPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_batch_scheduling_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

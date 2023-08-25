@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsNetworkAclsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
   */
   readonly filter?: DataAwsNetworkAclsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
   */
   readonly timeouts?: DataAwsNetworkAclsTimeouts;
 }
 export interface DataAwsNetworkAclsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}
   */
   readonly values: string[];
 }
@@ -160,7 +155,7 @@ export class DataAwsNetworkAclsFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsNetworkAclsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}
   */
   readonly read?: string;
 }
@@ -235,7 +230,7 @@ export class DataAwsNetworkAclsTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls aws_network_acls}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls aws_network_acls}
 */
 export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
 
@@ -249,7 +244,7 @@ export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/network_acls aws_network_acls} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/network_acls aws_network_acls} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -260,7 +255,7 @@ export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_network_acls',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
