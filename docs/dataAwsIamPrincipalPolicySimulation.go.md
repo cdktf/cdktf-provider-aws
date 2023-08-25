@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulation(scope Construct, id *string, config DataAwsIamPrincipalPolicySimulationConfig) DataAwsIamPrincipalPolicySimulation
 ```
@@ -339,7 +339,7 @@ func ResetResourcePolicyJson()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulation_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulation_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulation_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 &dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulationConfig {
 	Connection: interface{},
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 &dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulationContext {
 	Key: *string,
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 &dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulationResults {
 
@@ -1166,7 +1166,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimu
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResultsMatchedStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 &dataawsiamprincipalpolicysimulation.DataAwsIamPrincipalPolicySimulationResultsMatchedStatements {
 
@@ -1181,7 +1181,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationContextList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationContextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPrincipalPolicySimulationContextList
 ```
@@ -1324,7 +1324,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPrincipalPolicySimulationContextOutputReference
 ```
@@ -1657,7 +1657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPrincipalPolicySimulationResultsList
 ```
@@ -1789,7 +1789,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResultsMatchedStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationResultsMatchedStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamPrincipalPolicySimulationResultsMatchedStatementsList
 ```
@@ -1921,7 +1921,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResultsMatchedStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationResultsMatchedStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPrincipalPolicySimulationResultsMatchedStatementsOutputReference
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() DataAwsIamPrincipalPolicySimulationResultsMatchedStatements
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamPrincipalPolicySimulation.DataAwsIamPrincipalPolicySimulationResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamprincipalpolicysimulation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamprincipalpolicysimulation"
 
 dataawsiamprincipalpolicysimulation.NewDataAwsIamPrincipalPolicySimulationResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamPrincipalPolicySimulationResultsOutputReference
 ```

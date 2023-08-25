@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/configaggregateauthorization"
 
 configaggregateauthorization.NewConfigAggregateAuthorization(scope Construct, id *string, config ConfigAggregateAuthorizationConfig) ConfigAggregateAuthorization
 ```
@@ -291,7 +291,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/configaggregateauthorization"
 
 configaggregateauthorization.ConfigAggregateAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configAggregateAuthorization.ConfigAggregateAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configaggregateauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/configaggregateauthorization"
 
 &configaggregateauthorization.ConfigAggregateAuthorizationConfig {
 	Connection: interface{},
