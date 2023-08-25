@@ -1,6 +1,6 @@
 # `aws_key_pair`
 
-Refer to the Terraform Registory for docs: [`aws_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair).
+Refer to the Terraform Registory for docs: [`aws_key_pair`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair).
 
 # `keyPair` Submodule <a name="`keyPair` Submodule" id="@cdktf/provider-aws.keyPair"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_key_pair`](https://registry.ter
 
 ### KeyPair <a name="KeyPair" id="@cdktf/provider-aws.keyPair.KeyPair"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair aws_key_pair}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair aws_key_pair}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyPair.KeyPair.Initializer"></a>
 
@@ -756,12 +756,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/keypair"
 | <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#public_key KeyPair#public_key}. |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#id KeyPair#id}. |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#key_name KeyPair#key_name}. |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.keyNamePrefix">KeyNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#key_name_prefix KeyPair#key_name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#tags KeyPair#tags}. |
-| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#tags_all KeyPair#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#public_key KeyPair#public_key}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#id KeyPair#id}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#key_name KeyPair#key_name}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.keyNamePrefix">KeyNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#key_name_prefix KeyPair#key_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#tags KeyPair#tags}. |
+| <code><a href="#@cdktf/provider-aws.keyPair.KeyPairConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#tags_all KeyPair#tags_all}. |
 
 ---
 
@@ -843,7 +843,7 @@ PublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#public_key KeyPair#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#public_key KeyPair#public_key}.
 
 ---
 
@@ -855,7 +855,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#id KeyPair#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#id KeyPair#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -870,7 +870,7 @@ KeyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#key_name KeyPair#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#key_name KeyPair#key_name}.
 
 ---
 
@@ -882,7 +882,7 @@ KeyNamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#key_name_prefix KeyPair#key_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#key_name_prefix KeyPair#key_name_prefix}.
 
 ---
 
@@ -894,7 +894,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#tags KeyPair#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#tags KeyPair#tags}.
 
 ---
 
@@ -906,7 +906,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/key_pair#tags_all KeyPair#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/key_pair#tags_all KeyPair#tags_all}.
 
 ---
 

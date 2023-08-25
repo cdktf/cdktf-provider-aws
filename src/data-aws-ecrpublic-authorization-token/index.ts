@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ecrpublic_authorization_token
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ecrpublic_authorization_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEcrpublicAuthorizationTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ecrpublic_authorization_token#id DataAwsEcrpublicAuthorizationToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ecrpublic_authorization_token#id DataAwsEcrpublicAuthorizationToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataAwsEcrpublicAuthorizationTokenConfig extends cdktf.Terrafor
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token}
 */
 export class DataAwsEcrpublicAuthorizationToken extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataAwsEcrpublicAuthorizationToken extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ecrpublic_authorization_token aws_ecrpublic_authorization_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -47,7 +47,7 @@ export class DataAwsEcrpublicAuthorizationToken extends cdktf.TerraformDataSourc
       terraformResourceType: 'aws_ecrpublic_authorization_token',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

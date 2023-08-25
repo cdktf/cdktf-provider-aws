@@ -1,6 +1,6 @@
 # `data_aws_partition`
 
-Refer to the Terraform Registory for docs: [`data_aws_partition`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/partition).
+Refer to the Terraform Registory for docs: [`data_aws_partition`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/partition).
 
 # `dataAwsPartition` Submodule <a name="`dataAwsPartition` Submodule" id="@cdktf/provider-aws.dataAwsPartition"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_partition`](https://regist
 
 ### DataAwsPartition <a name="DataAwsPartition" id="@cdktf/provider-aws.dataAwsPartition.DataAwsPartition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/partition aws_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/partition aws_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsPartition.DataAwsPartition.Initializer"></a>
 
@@ -571,7 +571,7 @@ const dataAwsPartitionConfig: dataAwsPartition.DataAwsPartitionConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsPartition.DataAwsPartitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPartition.DataAwsPartitionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsPartition.DataAwsPartitionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsPartition.DataAwsPartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/partition#id DataAwsPartition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsPartition.DataAwsPartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/partition#id DataAwsPartition#id}. |
 
 ---
 
@@ -653,7 +653,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/partition#id DataAwsPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/partition#id DataAwsPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

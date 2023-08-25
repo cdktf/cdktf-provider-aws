@@ -294,8 +294,10 @@ Object.defineProperty(exports, 'dataexchangeRevision', { get: function () { retu
 Object.defineProperty(exports, 'datapipelinePipeline', { get: function () { return require('./datapipeline-pipeline'); } });
 Object.defineProperty(exports, 'datapipelinePipelineDefinition', { get: function () { return require('./datapipeline-pipeline-definition'); } });
 Object.defineProperty(exports, 'datasyncAgent', { get: function () { return require('./datasync-agent'); } });
+Object.defineProperty(exports, 'datasyncLocationAzureBlob', { get: function () { return require('./datasync-location-azure-blob'); } });
 Object.defineProperty(exports, 'datasyncLocationEfs', { get: function () { return require('./datasync-location-efs'); } });
 Object.defineProperty(exports, 'datasyncLocationFsxLustreFileSystem', { get: function () { return require('./datasync-location-fsx-lustre-file-system'); } });
+Object.defineProperty(exports, 'datasyncLocationFsxOntapFileSystem', { get: function () { return require('./datasync-location-fsx-ontap-file-system'); } });
 Object.defineProperty(exports, 'datasyncLocationFsxOpenzfsFileSystem', { get: function () { return require('./datasync-location-fsx-openzfs-file-system'); } });
 Object.defineProperty(exports, 'datasyncLocationFsxWindowsFileSystem', { get: function () { return require('./datasync-location-fsx-windows-file-system'); } });
 Object.defineProperty(exports, 'datasyncLocationHdfs', { get: function () { return require('./datasync-location-hdfs'); } });

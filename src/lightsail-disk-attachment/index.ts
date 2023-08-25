@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment
+// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface LightsailDiskAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment#disk_name LightsailDiskAttachment#disk_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment#disk_name LightsailDiskAttachment#disk_name}
   */
   readonly diskName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment#disk_path LightsailDiskAttachment#disk_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment#disk_path LightsailDiskAttachment#disk_path}
   */
   readonly diskPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment#id LightsailDiskAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment#id LightsailDiskAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment#instance_name LightsailDiskAttachment#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment#instance_name LightsailDiskAttachment#instance_name}
   */
   readonly instanceName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment}
 */
 export class LightsailDiskAttachment extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class LightsailDiskAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_disk_attachment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.13.1',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

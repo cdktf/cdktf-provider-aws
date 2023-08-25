@@ -1,6 +1,6 @@
 # `aws_backup_global_settings`
 
-Refer to the Terraform Registory for docs: [`aws_backup_global_settings`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings).
+Refer to the Terraform Registory for docs: [`aws_backup_global_settings`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings).
 
 # `backupGlobalSettings` Submodule <a name="`backupGlobalSettings` Submodule" id="@cdktf/provider-aws.backupGlobalSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_backup_global_settings`](https:
 
 ### BackupGlobalSettings <a name="BackupGlobalSettings" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings aws_backup_global_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings aws_backup_global_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings.Initializer"></a>
 
@@ -582,8 +582,8 @@ const backupGlobalSettingsConfig: backupGlobalSettings.BackupGlobalSettingsConfi
 | <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.globalSettings">globalSettings</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}. |
-| <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings#id BackupGlobalSettings#id}. |
+| <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.globalSettings">globalSettings</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}. |
+| <code><a href="#@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings#id BackupGlobalSettings#id}. |
 
 ---
 
@@ -665,7 +665,7 @@ public readonly globalSettings: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings#global_settings BackupGlobalSettings#global_settings}.
 
 ---
 
@@ -677,7 +677,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/backup_global_settings#id BackupGlobalSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/backup_global_settings#id BackupGlobalSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

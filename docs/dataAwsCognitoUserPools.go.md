@@ -1,6 +1,6 @@
 # `data_aws_cognito_user_pools`
 
-Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools).
+Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools).
 
 # `dataAwsCognitoUserPools` Submodule <a name="`dataAwsCognitoUserPools` Submodule" id="@cdktf/provider-aws.dataAwsCognitoUserPools"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https
 
 ### DataAwsCognitoUserPools <a name="DataAwsCognitoUserPools" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.Initializer"></a>
 
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscognitouserpools"
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

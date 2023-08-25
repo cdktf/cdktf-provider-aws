@@ -1,6 +1,6 @@
 # `data_aws_dx_location`
 
-Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location).
+Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location).
 
 # `dataAwsDxLocation` Submodule <a name="`dataAwsDxLocation` Submodule" id="@cdktf/provider-aws.dataAwsDxLocation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_dx_location`](https://regi
 
 ### DataAwsDxLocation <a name="DataAwsDxLocation" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location aws_dx_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location aws_dx_location}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocation.Initializer"></a>
 
@@ -604,8 +604,8 @@ const dataAwsDxLocationConfig: dataAwsDxLocation.DataAwsDxLocationConfig = { ...
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">locationCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.locationCode">locationCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxLocation.DataAwsDxLocationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}. |
 
 ---
 
@@ -687,7 +687,7 @@ public readonly locationCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location#location_code DataAwsDxLocation#location_code}.
 
 ---
 
@@ -699,7 +699,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/dx_location#id DataAwsDxLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
