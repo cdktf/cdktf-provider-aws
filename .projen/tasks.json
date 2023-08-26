@@ -143,6 +143,31 @@
         }
       ]
     },
+    "force-release": {
+      "name": "force-release",
+      "description": "Force a release",
+      "env": {
+        "RELEASE": "true",
+        "MIN_MAJOR": "1"
+      },
+      "steps": [
+        {
+          "exec": "rm -fr dist"
+        },
+        {
+          "spawn": "bump"
+        },
+        {
+          "spawn": "build"
+        },
+        {
+          "spawn": "unbump"
+        },
+        {
+          "exec": "git diff --ignore-space-at-eol --exit-code"
+        }
+      ]
+    },
     "install": {
       "name": "install",
       "description": "Install project dependencies and update lockfile (non-frozen)",
