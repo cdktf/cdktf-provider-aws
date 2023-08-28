@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.routeTable.RouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.NewRouteTable(scope Construct, id *string, config RouteTableConfig) RouteTable
 ```
@@ -338,7 +338,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.routeTable.RouteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.RouteTable_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.routeTable.RouteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.RouteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ routetable.RouteTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.routeTable.RouteTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.RouteTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.routeTable.RouteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 &routetable.RouteTableConfig {
 	Connection: interface{},
@@ -775,7 +775,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
 	Route: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.routeTable.RouteTableTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.routeTable.RouteTableTimeouts,
 }
 ```
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.routeTable.RouteTableRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 &routetable.RouteTableRoute {
 	CarrierGatewayId: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.routeTable.RouteTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 &routetable.RouteTableTimeouts {
 	Create: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.routeTable.RouteTableRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.NewRouteTableRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouteTableRouteList
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.routeTable.RouteTableRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.NewRouteTableRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouteTableRouteOutputReference
 ```
@@ -2013,7 +2013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.routeTable.RouteTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/routetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/routetable"
 
 routetable.NewRouteTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RouteTableTimeoutsOutputReference
 ```

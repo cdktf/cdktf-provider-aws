@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppconfigConfigurationProfiles.DataAwsAppconfigConfigurationProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsappconfigconfigurationprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigconfigurationprofiles"
 
 dataawsappconfigconfigurationprofiles.NewDataAwsAppconfigConfigurationProfiles(scope Construct, id *string, config DataAwsAppconfigConfigurationProfilesConfig) DataAwsAppconfigConfigurationProfiles
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppconfigConfigurationProfiles.DataAwsAppconfigConfigurationProfiles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsappconfigconfigurationprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigconfigurationprofiles"
 
 dataawsappconfigconfigurationprofiles.DataAwsAppconfigConfigurationProfiles_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppconfigConfigurationProfiles.DataAwsAppconfigConfigurationProfiles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsappconfigconfigurationprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigconfigurationprofiles"
 
 dataawsappconfigconfigurationprofiles.DataAwsAppconfigConfigurationProfiles_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsappconfigconfigurationprofiles.DataAwsAppconfigConfigurationProfiles_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppconfigConfigurationProfiles.DataAwsAppconfigConfigurationProfiles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsappconfigconfigurationprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigconfigurationprofiles"
 
 dataawsappconfigconfigurationprofiles.DataAwsAppconfigConfigurationProfiles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppconfigConfigurationProfiles.DataAwsAppconfigConfigurationProfilesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsappconfigconfigurationprofiles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappconfigconfigurationprofiles"
 
 &dataawsappconfigconfigurationprofiles.DataAwsAppconfigConfigurationProfilesConfig {
 	Connection: interface{},

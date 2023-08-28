@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrstudiosessionmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudiosessionmapping"
 
 emrstudiosessionmapping.NewEmrStudioSessionMapping(scope Construct, id *string, config EmrStudioSessionMappingConfig) EmrStudioSessionMapping
 ```
@@ -291,7 +291,7 @@ func ResetIdentityName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrstudiosessionmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrstudiosessionmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrstudiosessionmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudiosessionmapping"
 
 emrstudiosessionmapping.EmrStudioSessionMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrstudiosessionmapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudiosessionmapping"
 
 &emrstudiosessionmapping.EmrStudioSessionMappingConfig {
 	Connection: interface{},

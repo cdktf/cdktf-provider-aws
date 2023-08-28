@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelection(scope Construct, id *string, config BackupSelectionConfig) BackupSelection
 ```
@@ -331,7 +331,7 @@ func ResetSelectionTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupSelection.BackupSelection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.BackupSelection_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupSelection.BackupSelection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.BackupSelection_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ backupselection.BackupSelection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupSelection.BackupSelection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.BackupSelection_IsTerraformResource(x interface{}) *bool
 ```
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionCondition {
 	StringEquals: interface{},
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEquals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionConditionStringEquals {
 	Key: *string,
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLike.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionConditionStringLike {
 	Key: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEquals.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionConditionStringNotEquals {
 	Key: *string,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLike.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionConditionStringNotLike {
 	Key: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionConfig {
 	Connection: interface{},
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 &backupselection.BackupSelectionSelectionTag {
 	Key: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionList
 ```
@@ -1444,7 +1444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionConditionOutputReference
 ```
@@ -1879,7 +1879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringEqualsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionStringEqualsList
 ```
@@ -2022,7 +2022,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringEqualsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringEqualsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionConditionStringEqualsOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringLikeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionStringLikeList
 ```
@@ -2476,7 +2476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringLikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringLikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionConditionStringLikeOutputReference
 ```
@@ -2787,7 +2787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringNotEqualsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionStringNotEqualsList
 ```
@@ -2930,7 +2930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotEqualsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringNotEqualsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionConditionStringNotEqualsOutputReference
 ```
@@ -3241,7 +3241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringNotLikeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionConditionStringNotLikeList
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionConditionStringNotLikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionConditionStringNotLikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionConditionStringNotLikeOutputReference
 ```
@@ -3695,7 +3695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionSelectionTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupSelectionSelectionTagList
 ```
@@ -3838,7 +3838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/backupselection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/backupselection"
 
 backupselection.NewBackupSelectionSelectionTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupSelectionSelectionTagOutputReference
 ```

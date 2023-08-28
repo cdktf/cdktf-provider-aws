@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawstransferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstransferserver"
 
 dataawstransferserver.NewDataAwsTransferServer(scope Construct, id *string, config DataAwsTransferServerConfig) DataAwsTransferServer
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawstransferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawstransferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawstransferserver.DataAwsTransferServer_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawstransferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstransferserver"
 
 dataawstransferserver.DataAwsTransferServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsTransferServer.DataAwsTransferServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawstransferserver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawstransferserver"
 
 &dataawstransferserver.DataAwsTransferServerConfig {
 	Connection: interface{},

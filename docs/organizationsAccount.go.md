@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsAccount.OrganizationsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/organizationsaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsaccount"
 
 organizationsaccount.NewOrganizationsAccount(scope Construct, id *string, config OrganizationsAccountConfig) OrganizationsAccount
 ```
@@ -326,7 +326,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.organizationsAccount.OrganizationsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/organizationsaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.organizationsAccount.OrganizationsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/organizationsaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ organizationsaccount.OrganizationsAccount_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.organizationsAccount.OrganizationsAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/organizationsaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsaccount"
 
 organizationsaccount.OrganizationsAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsAccount.OrganizationsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/organizationsaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsaccount"
 
 &organizationsaccount.OrganizationsAccountConfig {
 	Connection: interface{},

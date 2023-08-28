@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/acmpcapermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcapermission"
 
 acmpcapermission.NewAcmpcaPermission(scope Construct, id *string, config AcmpcaPermissionConfig) AcmpcaPermission
 ```
@@ -284,7 +284,7 @@ func ResetSourceAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/acmpcapermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcapermission"
 
 acmpcapermission.AcmpcaPermission_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/acmpcapermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcapermission"
 
 acmpcapermission.AcmpcaPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ acmpcapermission.AcmpcaPermission_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/acmpcapermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcapermission"
 
 acmpcapermission.AcmpcaPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/acmpcapermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/acmpcapermission"
 
 &acmpcapermission.AcmpcaPermissionConfig {
 	Connection: interface{},

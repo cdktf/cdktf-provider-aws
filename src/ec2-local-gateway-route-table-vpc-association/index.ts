@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_local_gateway_route_table_vpc_association
 // generated from terraform resource schema
 

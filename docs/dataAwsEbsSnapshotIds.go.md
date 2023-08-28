@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.NewDataAwsEbsSnapshotIds(scope Construct, id *string, config DataAwsEbsSnapshotIdsConfig) DataAwsEbsSnapshotIds
 ```
@@ -331,7 +331,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.DataAwsEbsSnapshotIds_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.DataAwsEbsSnapshotIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsebssnapshotids.DataAwsEbsSnapshotIds_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.DataAwsEbsSnapshotIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 &dataawsebssnapshotids.DataAwsEbsSnapshotIdsConfig {
 	Connection: interface{},
@@ -689,7 +689,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
 	Id: *string,
 	Owners: *[]*string,
 	RestorableByUserIds: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeouts,
 }
 ```
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 &dataawsebssnapshotids.DataAwsEbsSnapshotIdsFilter {
 	Name: *string,
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 &dataawsebssnapshotids.DataAwsEbsSnapshotIdsTimeouts {
 	Read: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.NewDataAwsEbsSnapshotIdsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEbsSnapshotIdsFilterList
 ```
@@ -1077,7 +1077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.NewDataAwsEbsSnapshotIdsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEbsSnapshotIdsFilterOutputReference
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsebssnapshotids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsebssnapshotids"
 
 dataawsebssnapshotids.NewDataAwsEbsSnapshotIdsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEbsSnapshotIdsTimeoutsOutputReference
 ```

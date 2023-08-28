@@ -16,7 +16,6 @@
     "docgen": "npx projen docgen",
     "eject": "npx projen eject",
     "fetch": "npx projen fetch",
-    "force-release": "npx projen force-release",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
     "package:dotnet": "npx projen package:dotnet",
