@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnactivity"
 
 dataawssfnactivity.NewDataAwsSfnActivity(scope Construct, id *string, config DataAwsSfnActivityConfig) DataAwsSfnActivity
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnactivity"
 
 dataawssfnactivity.DataAwsSfnActivity_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnactivity"
 
 dataawssfnactivity.DataAwsSfnActivity_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawssfnactivity.DataAwsSfnActivity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnactivity"
 
 dataawssfnactivity.DataAwsSfnActivity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSfnActivity.DataAwsSfnActivityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnactivity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnactivity"
 
 &dataawssfnactivity.DataAwsSfnActivityConfig {
 	Connection: interface{},

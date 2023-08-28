@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsivsstreamkey"
 
 dataawsivsstreamkey.NewDataAwsIvsStreamKey(scope Construct, id *string, config DataAwsIvsStreamKeyConfig) DataAwsIvsStreamKey
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsivsstreamkey"
 
 dataawsivsstreamkey.DataAwsIvsStreamKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIvsStreamKey.DataAwsIvsStreamKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsivsstreamkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsivsstreamkey"
 
 &dataawsivsstreamkey.DataAwsIvsStreamKeyConfig {
 	Connection: interface{},
