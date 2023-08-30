@@ -332,7 +332,7 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --filter=@actions/core,@cdktf/provider-project,@types/node,cdktf-cli,cdktf,constructs,dot-prop,jsii-diff,jsii-pacmak,jsii,npm-check-updates,projen,standard-version,typescript"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@actions/core,@cdktf/provider-project,@types/node,cdktf-cli,cdktf,constructs,dot-prop,jsii-diff,jsii-pacmak,jsii,npm-check-updates,projen,standard-version,typescript"
         },
         {
           "exec": "yarn install --check-files"
