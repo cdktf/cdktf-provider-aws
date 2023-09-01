@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.NewDataAwsSfnStateMachineVersions(scope Construct, id *string, config DataAwsSfnStateMachineVersionsConfig) DataAwsSfnStateMachineVersions
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssfnstatemachineversions"
 
 &dataawssfnstatemachineversions.DataAwsSfnStateMachineVersionsConfig {
 	Connection: interface{},

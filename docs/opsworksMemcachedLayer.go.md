@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayer(scope Construct, id *string, config OpsworksMemcachedLayerConfig) OpsworksMemcachedLayer
 ```
@@ -484,7 +484,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ opsworksmemcachedlayer.OpsworksMemcachedLayer_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.OpsworksMemcachedLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1312,7 +1312,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerConfig {
 	Connection: interface{},
@@ -1547,7 +1547,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1562,7 +1562,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerEbsVolume {
 	MountPoint: *string,
@@ -2123,12 +2123,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2187,7 +2187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2303,7 +2303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 &opsworksmemcachedlayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2421,7 +2421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2564,7 +2564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3136,7 +3136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerCloudwatchConfigurationOutputReference
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() OpsworksMemcachedLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMemcachedLayerEbsVolumeList
 ```
@@ -3599,7 +3599,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMemcachedLayerEbsVolumeOutputReference
 ```
@@ -4048,7 +4048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4500,7 +4500,7 @@ func InternalValue() OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4862,7 +4862,7 @@ func InternalValue() OpsworksMemcachedLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmemcachedlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opsworksmemcachedlayer"
 
 opsworksmemcachedlayer.NewOpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference
 ```
