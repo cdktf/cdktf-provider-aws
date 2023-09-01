@@ -1,6 +1,6 @@
 # `aws_msk_cluster_policy`
 
-Refer to the Terraform Registory for docs: [`aws_msk_cluster_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy).
+Refer to the Terraform Registory for docs: [`aws_msk_cluster_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy).
 
 # `mskClusterPolicy` Submodule <a name="`mskClusterPolicy` Submodule" id="@cdktf/provider-aws.mskClusterPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_msk_cluster_policy`](https://re
 
 ### MskClusterPolicy <a name="MskClusterPolicy" id="@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ const mskClusterPolicyConfig: mskClusterPolicy.MskClusterPolicyConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#cluster_arn MskClusterPolicy#cluster_arn}. |
-| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#policy MskClusterPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#id MskClusterPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.clusterArn">clusterArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#cluster_arn MskClusterPolicy#cluster_arn}. |
+| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#policy MskClusterPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.mskClusterPolicy.MskClusterPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#id MskClusterPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly clusterArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#cluster_arn MskClusterPolicy#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#cluster_arn MskClusterPolicy#cluster_arn}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#policy MskClusterPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#policy MskClusterPolicy#policy}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/msk_cluster_policy#id MskClusterPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/msk_cluster_policy#id MskClusterPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
