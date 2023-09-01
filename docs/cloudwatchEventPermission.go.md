@@ -1,6 +1,6 @@
 # `aws_cloudwatch_event_permission`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_permission`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_permission`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission).
 
 # `cloudwatchEventPermission` Submodule <a name="`cloudwatchEventPermission` Submodule" id="@cdktf/provider-aws.cloudwatchEventPermission"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_event_permission`](h
 
 ### CloudwatchEventPermission <a name="CloudwatchEventPermission" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermission(scope Construct, id *string, config CloudwatchEventPermissionConfig) CloudwatchEventPermission
 ```
@@ -311,7 +311,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.CloudwatchEventPermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionCondition {
 	Key: *string,
@@ -701,9 +701,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}. |
 
 ---
 
@@ -715,7 +715,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}.
 
 ---
 
@@ -727,7 +727,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}.
 
 ---
 
@@ -739,7 +739,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}.
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 &cloudwatcheventpermission.CloudwatchEventPermissionConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission
 	Principal: *string,
 	StatementId: *string,
 	Action: *string,
-	Condition: github.com/cdktf/cdktf-provider-aws-go/aws/v17.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
+	Condition: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition,
 	EventBusName: *string,
 	Id: *string,
 }
@@ -778,12 +778,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.statementId">StatementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.statementId">StatementId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition">CloudwatchEventPermissionCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.eventBusName">EventBusName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.eventBusName">EventBusName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}. |
 
 ---
 
@@ -865,7 +865,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}.
 
 ---
 
@@ -877,7 +877,7 @@ StatementId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}.
 
 ---
 
@@ -889,7 +889,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}.
 
 ---
 
@@ -903,7 +903,7 @@ Condition CloudwatchEventPermissionCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#condition CloudwatchEventPermission#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#condition CloudwatchEventPermission#condition}
 
 ---
 
@@ -915,7 +915,7 @@ EventBusName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}.
 
 ---
 
@@ -927,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatcheventpermission"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventpermission"
 
 cloudwatcheventpermission.NewCloudwatchEventPermissionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventPermissionConditionOutputReference
 ```

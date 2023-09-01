@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit
+// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationsOrganizationalUnitConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit#id OrganizationsOrganizationalUnit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit#name OrganizationsOrganizationalUnit#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit#parent_id OrganizationsOrganizationalUnit#parent_id}
   */
   readonly parentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit#tags OrganizationsOrganizationalUnit#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit#tags_all OrganizationsOrganizationalUnit#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
@@ -117,7 +112,7 @@ export class OrganizationsOrganizationalUnitAccountsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit}
 */
 export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
 
@@ -131,7 +126,7 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/organizations_organizational_unit aws_organizations_organizational_unit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +137,7 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
       terraformResourceType: 'aws_organizations_organizational_unit',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

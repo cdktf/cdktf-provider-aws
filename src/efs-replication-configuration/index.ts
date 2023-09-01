@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface EfsReplicationConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#id EfsReplicationConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#id EfsReplicationConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#source_file_system_id EfsReplicationConfiguration#source_file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#source_file_system_id EfsReplicationConfiguration#source_file_system_id}
   */
   readonly sourceFileSystemId: string;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#destination EfsReplicationConfiguration#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#destination EfsReplicationConfiguration#destination}
   */
   readonly destination: EfsReplicationConfigurationDestination;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#timeouts EfsReplicationConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#timeouts EfsReplicationConfiguration#timeouts}
   */
   readonly timeouts?: EfsReplicationConfigurationTimeouts;
 }
 export interface EfsReplicationConfigurationDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#availability_zone_name EfsReplicationConfiguration#availability_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#availability_zone_name EfsReplicationConfiguration#availability_zone_name}
   */
   readonly availabilityZoneName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#kms_key_id EfsReplicationConfiguration#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#kms_key_id EfsReplicationConfiguration#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#region EfsReplicationConfiguration#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#region EfsReplicationConfiguration#region}
   */
   readonly region?: string;
 }
@@ -167,11 +162,11 @@ export class EfsReplicationConfigurationDestinationOutputReference extends cdktf
 }
 export interface EfsReplicationConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#create EfsReplicationConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#create EfsReplicationConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration#delete EfsReplicationConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration#delete EfsReplicationConfiguration#delete}
   */
   readonly delete?: string;
 }
@@ -269,7 +264,7 @@ export class EfsReplicationConfigurationTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration}
 */
 export class EfsReplicationConfiguration extends cdktf.TerraformResource {
 
@@ -283,7 +278,7 @@ export class EfsReplicationConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_replication_configuration aws_efs_replication_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -294,7 +289,7 @@ export class EfsReplicationConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_efs_replication_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

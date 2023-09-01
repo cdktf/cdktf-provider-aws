@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}
   */
   readonly groupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}
   */
   readonly optInStatus: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}
 */
 export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
 
@@ -44,7 +39,7 @@ export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ec2_availability_zone_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

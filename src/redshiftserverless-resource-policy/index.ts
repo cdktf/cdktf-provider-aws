@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftserverlessResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy#id RedshiftserverlessResourcePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy#policy RedshiftserverlessResourcePolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy#resource_arn RedshiftserverlessResourcePolicy#resource_arn}
   */
   readonly resourceArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy}
 */
 export class RedshiftserverlessResourcePolicy extends cdktf.TerraformResource {
 
@@ -44,7 +39,7 @@ export class RedshiftserverlessResourcePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/redshiftserverless_resource_policy aws_redshiftserverless_resource_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +50,7 @@ export class RedshiftserverlessResourcePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftserverless_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

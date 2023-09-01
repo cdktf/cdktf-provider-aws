@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/guardduty_finding_ids
+// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/guardduty_finding_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsGuarddutyFindingIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}
   */
   readonly detectorId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}
 */
 export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
 
@@ -33,7 +28,7 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -44,7 +39,7 @@ export class DataAwsGuarddutyFindingIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_guardduty_finding_ids',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

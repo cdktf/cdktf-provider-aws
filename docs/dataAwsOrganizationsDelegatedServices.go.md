@@ -1,6 +1,6 @@
 # `data_aws_organizations_delegated_services`
 
-Refer to the Terraform Registory for docs: [`data_aws_organizations_delegated_services`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services).
+Refer to the Terraform Registory for docs: [`data_aws_organizations_delegated_services`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services).
 
 # `dataAwsOrganizationsDelegatedServices` Submodule <a name="`dataAwsOrganizationsDelegatedServices` Submodule" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_organizations_delegated_se
 
 ### DataAwsOrganizationsDelegatedServices <a name="DataAwsOrganizationsDelegatedServices" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServices(scope Construct, id *string, config DataAwsOrganizationsDelegatedServicesConfig) DataAwsOrganizationsDelegatedServices
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 &dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServicesConfig {
 	Connection: interface{},
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdeleg
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services#id DataAwsOrganizationsDelegatedServices#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services#id DataAwsOrganizationsDelegatedServices#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services#account_id DataAwsOrganizationsDelegatedServices#account_id}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/organizations_delegated_services#id DataAwsOrganizationsDelegatedServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/organizations_delegated_services#id DataAwsOrganizationsDelegatedServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -688,7 +688,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 &dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServicesDelegatedServices {
 
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdeleg
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServicesDelegatedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsDelegatedServicesDelegatedServicesList
 ```
@@ -835,7 +835,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationsdelegatedservices"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference
 ```

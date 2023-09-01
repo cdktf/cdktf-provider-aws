@@ -1,6 +1,6 @@
 # `data_aws_ssoadmin_instances`
 
-Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_instances`](https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ssoadmin_instances).
+Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_instances`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ssoadmin_instances).
 
 # `dataAwsSsoadminInstances` Submodule <a name="`dataAwsSsoadminInstances` Submodule" id="@cdktf/provider-aws.dataAwsSsoadminInstances"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_instances`](https
 
 ### DataAwsSsoadminInstances <a name="DataAwsSsoadminInstances" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ssoadmin_instances aws_ssoadmin_instances}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstances.Initializer"></a>
 
@@ -569,7 +569,7 @@ new DataAwsSsoadminInstancesConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ssoadmin_instances#id DataAwsSsoadminInstances#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminInstances.DataAwsSsoadminInstancesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ssoadmin_instances#id DataAwsSsoadminInstances#id}. |
 
 ---
 
@@ -651,7 +651,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.14.0/docs/data-sources/ssoadmin_instances#id DataAwsSsoadminInstances#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ssoadmin_instances#id DataAwsSsoadminInstances#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
