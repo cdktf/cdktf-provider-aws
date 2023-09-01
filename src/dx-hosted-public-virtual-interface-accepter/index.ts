@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/dx_hosted_public_virtual_interface_accepter
 // generated from terraform resource schema
 

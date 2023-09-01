@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomain(scope Construct, id *string, config OpensearchDomainConfig) OpensearchDomain
 ```
@@ -572,7 +572,7 @@ func ResetVpcOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.OpensearchDomain_IsConstruct(x interface{}) *bool
 ```
@@ -604,7 +604,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.OpensearchDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -618,7 +618,7 @@ opensearchdomain.OpensearchDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.OpensearchDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -1312,13 +1312,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainAdvancedSecurityOptions {
 	Enabled: interface{},
 	AnonymousAuthEnabled: interface{},
 	InternalUserDatabaseEnabled: interface{},
-	MasterUserOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions,
+	MasterUserOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions,
 }
 ```
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptions {
 	MasterUserArn: *string,
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainAutoTuneOptions {
 	DesiredState: *string,
@@ -1510,11 +1510,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainAutoTuneOptionsMaintenanceSchedule {
 	CronExpressionForRecurrence: *string,
-	Duration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration,
+	Duration: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration,
 	StartAt: *string,
 }
 ```
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration {
 	Unit: *string,
@@ -1618,10 +1618,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainClusterConfig {
-	ColdStorageOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions,
+	ColdStorageOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions,
 	DedicatedMasterCount: *f64,
 	DedicatedMasterEnabled: interface{},
 	DedicatedMasterType: *string,
@@ -1631,7 +1631,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
 	WarmCount: *f64,
 	WarmEnabled: interface{},
 	WarmType: *string,
-	ZoneAwarenessConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig,
+	ZoneAwarenessConfig: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig,
 	ZoneAwarenessEnabled: interface{},
 }
 ```
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainClusterConfigColdStorageOptions {
 	Enabled: interface{},
@@ -1840,7 +1840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainClusterConfigZoneAwarenessConfig {
 	AvailabilityZoneCount: *f64,
@@ -1872,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainCognitoOptions {
 	IdentityPoolId: *string,
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainConfig {
 	Connection: interface{},
@@ -1959,23 +1959,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
 	DomainName: *string,
 	AccessPolicies: *string,
 	AdvancedOptions: *map[string]*string,
-	AdvancedSecurityOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainAdvancedSecurityOptions,
-	AutoTuneOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainAutoTuneOptions,
-	ClusterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainClusterConfig,
-	CognitoOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainCognitoOptions,
-	DomainEndpointOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainDomainEndpointOptions,
-	EbsOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainEbsOptions,
-	EncryptAtRest: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainEncryptAtRest,
+	AdvancedSecurityOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptions,
+	AutoTuneOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainAutoTuneOptions,
+	ClusterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainClusterConfig,
+	CognitoOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainCognitoOptions,
+	DomainEndpointOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainDomainEndpointOptions,
+	EbsOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainEbsOptions,
+	EncryptAtRest: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainEncryptAtRest,
 	EngineVersion: *string,
 	Id: *string,
 	LogPublishingOptions: interface{},
-	NodeToNodeEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainNodeToNodeEncryption,
-	OffPeakWindowOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainOffPeakWindowOptions,
-	SnapshotOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainSnapshotOptions,
+	NodeToNodeEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption,
+	OffPeakWindowOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions,
+	SnapshotOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainSnapshotOptions,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainTimeouts,
-	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainVpcOptions,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainTimeouts,
+	VpcOptions: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainVpcOptions,
 }
 ```
 
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainDomainEndpointOptions {
 	CustomEndpoint: *string,
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainEbsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainEbsOptions {
 	EbsEnabled: interface{},
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainEncryptAtRest {
 	Enabled: interface{},
@@ -2579,7 +2579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainLogPublishingOptions {
 	CloudwatchLogGroupArn: *string,
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainNodeToNodeEncryption {
 	Enabled: interface{},
@@ -2671,11 +2671,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainOffPeakWindowOptions {
 	Enabled: interface{},
-	OffPeakWindow: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindow,
+	OffPeakWindow: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindow,
 }
 ```
 
@@ -2719,10 +2719,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindow {
-	WindowStartTime: github.com/cdktf/cdktf-provider-aws-go/aws/v17.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime,
+	WindowStartTime: github.com/cdktf/cdktf-provider-aws-go/aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime,
 }
 ```
 
@@ -2753,7 +2753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime {
 	Hours: *f64,
@@ -2799,7 +2799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainSnapshotOptions {
 	AutomatedSnapshotStartHour: *f64,
@@ -2831,7 +2831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainTimeouts {
 	Create: *string,
@@ -2891,7 +2891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 &opensearchdomain.OpensearchDomainVpcOptions {
 	SecurityGroupIds: *[]*string,
@@ -2939,7 +2939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference
 ```
@@ -3275,7 +3275,7 @@ func InternalValue() OpensearchDomainAdvancedSecurityOptionsMasterUserOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAdvancedSecurityOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAdvancedSecurityOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainAdvancedSecurityOptionsOutputReference
 ```
@@ -3646,7 +3646,7 @@ func InternalValue() OpensearchDomainAdvancedSecurityOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference
 ```
@@ -3939,7 +3939,7 @@ func InternalValue() OpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAutoTuneOptionsMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchDomainAutoTuneOptionsMaintenanceScheduleList
 ```
@@ -4082,7 +4082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference
 ```
@@ -4428,7 +4428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainAutoTuneOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainAutoTuneOptionsOutputReference
 ```
@@ -4770,7 +4770,7 @@ func InternalValue() OpensearchDomainAutoTuneOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigColdStorageOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainClusterConfigColdStorageOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainClusterConfigColdStorageOptionsOutputReference
 ```
@@ -5048,7 +5048,7 @@ func InternalValue() OpensearchDomainClusterConfigColdStorageOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainClusterConfigOutputReference
 ```
@@ -5671,7 +5671,7 @@ func InternalValue() OpensearchDomainClusterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainClusterConfigZoneAwarenessConfigOutputReference
 ```
@@ -5949,7 +5949,7 @@ func InternalValue() OpensearchDomainClusterConfigZoneAwarenessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainCognitoOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainCognitoOptionsOutputReference
 ```
@@ -6293,7 +6293,7 @@ func InternalValue() OpensearchDomainCognitoOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainDomainEndpointOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainDomainEndpointOptionsOutputReference
 ```
@@ -6687,7 +6687,7 @@ func InternalValue() OpensearchDomainDomainEndpointOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainEbsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainEbsOptionsOutputReference
 ```
@@ -7074,7 +7074,7 @@ func InternalValue() OpensearchDomainEbsOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainEncryptAtRestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainEncryptAtRestOutputReference
 ```
@@ -7374,7 +7374,7 @@ func InternalValue() OpensearchDomainEncryptAtRest
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainLogPublishingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchDomainLogPublishingOptionsList
 ```
@@ -7517,7 +7517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainLogPublishingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchDomainLogPublishingOptionsOutputReference
 ```
@@ -7857,7 +7857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainNodeToNodeEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainNodeToNodeEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainNodeToNodeEncryptionOutputReference
 ```
@@ -8128,7 +8128,7 @@ func InternalValue() OpensearchDomainNodeToNodeEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainOffPeakWindowOptionsOffPeakWindowOutputReference
 ```
@@ -8419,7 +8419,7 @@ func InternalValue() OpensearchDomainOffPeakWindowOptionsOffPeakWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTimeOutputReference
 ```
@@ -8726,7 +8726,7 @@ func InternalValue() OpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStar
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainOffPeakWindowOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainOffPeakWindowOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainOffPeakWindowOptionsOutputReference
 ```
@@ -9046,7 +9046,7 @@ func InternalValue() OpensearchDomainOffPeakWindowOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainSnapshotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainSnapshotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainSnapshotOptionsOutputReference
 ```
@@ -9317,7 +9317,7 @@ func InternalValue() OpensearchDomainSnapshotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainTimeoutsOutputReference
 ```
@@ -9653,7 +9653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchDomain.OpensearchDomainVpcOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opensearchdomain"
 
 opensearchdomain.NewOpensearchDomainVpcOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainVpcOptionsOutputReference
 ```

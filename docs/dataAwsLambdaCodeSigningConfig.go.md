@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.NewDataAwsLambdaCodeSigningConfig(scope Construct, id *string, config DataAwsLambdaCodeSigningConfigConfig) DataAwsLambdaCodeSigningConfig
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfig_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfig_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 &dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfigAllowedPublishers {
 
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningc
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 &dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfigConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 &dataawslambdacodesigningconfig.DataAwsLambdaCodeSigningConfigPolicies {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.NewDataAwsLambdaCodeSigningConfigAllowedPublishersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaCodeSigningConfigAllowedPublishersList
 ```
@@ -892,7 +892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.NewDataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaCodeSigningConfigAllowedPublishersOutputReference
 ```
@@ -1170,7 +1170,7 @@ func InternalValue() DataAwsLambdaCodeSigningConfigAllowedPublishers
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.NewDataAwsLambdaCodeSigningConfigPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaCodeSigningConfigPoliciesList
 ```
@@ -1302,7 +1302,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfigPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdacodesigningconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdacodesigningconfig"
 
 dataawslambdacodesigningconfig.NewDataAwsLambdaCodeSigningConfigPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaCodeSigningConfigPoliciesOutputReference
 ```

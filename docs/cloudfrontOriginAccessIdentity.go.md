@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudfrontoriginaccessidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.NewCloudfrontOriginAccessIdentity(scope Construct, id *string, config CloudfrontOriginAccessIdentityConfig) CloudfrontOriginAccessIdentity
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudfrontoriginaccessidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudfrontoriginaccessidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudfrontoriginaccessidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginaccessidentity"
 
 cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudfrontOriginAccessIdentity.CloudfrontOriginAccessIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudfrontoriginaccessidentity"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudfrontoriginaccessidentity"
 
 &cloudfrontoriginaccessidentity.CloudfrontOriginAccessIdentityConfig {
 	Connection: interface{},
