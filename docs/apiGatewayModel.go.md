@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayModel.ApiGatewayModel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewaymodel"
 
 apigatewaymodel.NewApiGatewayModel(scope Construct, id *string, config ApiGatewayModelConfig) ApiGatewayModel
 ```
@@ -291,7 +291,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayModel.ApiGatewayModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayModel.ApiGatewayModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ apigatewaymodel.ApiGatewayModel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayModel.ApiGatewayModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewaymodel"
 
 apigatewaymodel.ApiGatewayModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayModel.ApiGatewayModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewaymodel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewaymodel"
 
 &apigatewaymodel.ApiGatewayModelConfig {
 	Connection: interface{},
