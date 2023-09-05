@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.NewElasticacheCluster(scope Construct, id *string, config ElasticacheClusterConfig) ElasticacheCluster
 ```
@@ -486,7 +486,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.ElasticacheCluster_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.ElasticacheCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ elasticachecluster.ElasticacheCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.ElasticacheCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1446,7 +1446,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 &elasticachecluster.ElasticacheClusterCacheNodes {
 
@@ -1459,7 +1459,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 &elasticachecluster.ElasticacheClusterConfig {
 	Connection: interface{},
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 &elasticachecluster.ElasticacheClusterLogDeliveryConfiguration {
 	Destination: *string,
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.NewElasticacheClusterCacheNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheClusterCacheNodesList
 ```
@@ -2194,7 +2194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.NewElasticacheClusterCacheNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheClusterCacheNodesOutputReference
 ```
@@ -2516,7 +2516,7 @@ func InternalValue() ElasticacheClusterCacheNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.NewElasticacheClusterLogDeliveryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheClusterLogDeliveryConfigurationList
 ```
@@ -2659,7 +2659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachecluster"
 
 elasticachecluster.NewElasticacheClusterLogDeliveryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheClusterLogDeliveryConfigurationOutputReference
 ```
