@@ -55,9 +55,9 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.22.15":
-  version "7.22.15"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.15.tgz#d34592bfe288a32e741aa0663dbc4829fcd55160"
-  integrity sha512-RWmQ/sklUN9BvGGpCDgSubhHWfAx24XDTDObup4ffvxaYsptOg2P3KG0j+1eWKLxpkX0j0uHxmpq2Z1SP/VhxA==
+  version "7.22.16"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.22.16.tgz#180aead7f247305cce6551bea2720934e2fa2c95"
+  integrity sha512-+gPfKv8UWeKKeJTUxe59+OobVcrYHETCsORl61EmSkmgymguYk/X5bp7GuUIXaFsc6y++v8ZxPsLSSuujqDphA==
 
 "@babel/template@^7.20.7":
   version "7.22.15"
@@ -4356,9 +4356,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.73.8:
-  version "0.73.8"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.8.tgz#aad1e92ee702c7b0152d8c95f1049d097ffb8544"
-  integrity sha512-fIlHL/7jJ6hGtnOwRUC/ieKJ0Ae7gfjILLa9WJLOSZehngX4uZmkXHgS43FWZbZ836kpNODPANN8n+AavXLyAQ==
+  version "0.73.9"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.9.tgz#529080551d04ef8d714a66f4b1389921c79a28a0"
+  integrity sha512-5cN1476ygzCkwpBq/T0P6G84E1uoXb4YCZomU/mb5Hm8cnauGNWTZqGnpDyVhjdJQTUuGBTw8qaPvZHLJq6MpA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5334,9 +5334,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230905"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230905.tgz#b88de602ef4afcc3a80a9c38023df82b7529e42a"
-  integrity sha512-Nl9MoKWN0YYlCvQnw850L4ZgqdmqwVGCi9cAoQDw4PsqRGaWAi9HKizS9xu0q4qgKKsEKetWCZHT8dBtJTGaMg==
+  version "5.3.0-dev.20230906"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230906.tgz#21e0cbf91be7f6002e49bab80611a9ff930135dc"
+  integrity sha512-7dCmQgfQ4i38daoPCCert+rM6gLxBpxRdjncJkHkJV4CWvNZsRX+RVTusojkqGAtW9vqB0+/8iDH6CZ0PDxghg==
 
 typescript@~5.1.6:
   version "5.1.6"
