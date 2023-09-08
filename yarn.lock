@@ -3886,9 +3886,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.13.2"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.13.2.tgz#552e8223d83ae5ae2d48a11ac254cf0b231277b9"
-  integrity sha512-0pQI+k1y0JVwenB2gBc69tXFYfkckSVrNrlcn7TIrZfis4LnfdzakY/LYzZKt/lx37edN2isk3d2Zw4csptu/w==
+  version "16.13.3"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.13.3.tgz#136f0e008b82c34be4b758260c3582214a07527e"
+  integrity sha512-l3FQtm+ZtDwqtK2r27vCuNdtnoDsXzk8D2WczvrAJy2bGPZJvRmuUa/Q9Gv+AbZV0IHSNJD2oHtQqUeqQRhEsw==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
@@ -4356,9 +4356,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.73.8:
-  version "0.73.9"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.9.tgz#529080551d04ef8d714a66f4b1389921c79a28a0"
-  integrity sha512-5cN1476ygzCkwpBq/T0P6G84E1uoXb4YCZomU/mb5Hm8cnauGNWTZqGnpDyVhjdJQTUuGBTw8qaPvZHLJq6MpA==
+  version "0.73.11"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.11.tgz#1589ffe6f257ead8ee89b6b6d4f445c588330958"
+  integrity sha512-T1nrxTsROdXp7CtQvRlbcCYTTucM/7O816xaA3mmmshi+FXt2T0TyeWlxX3F+m48Dfs7cclM90UP3EhGHeK5Yg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5334,9 +5334,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230906"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230906.tgz#21e0cbf91be7f6002e49bab80611a9ff930135dc"
-  integrity sha512-7dCmQgfQ4i38daoPCCert+rM6gLxBpxRdjncJkHkJV4CWvNZsRX+RVTusojkqGAtW9vqB0+/8iDH6CZ0PDxghg==
+  version "5.3.0-dev.20230907"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230907.tgz#286e19386f65eadbea4629f31c396882eb03406e"
+  integrity sha512-8yegC0GyY5ug9184BxLq8fLDt08+g8jRfut0QSraLFoT13c39Z6fVoviDEeqJgbnIGVxzAEiNQLUslpKYCyUsg==
 
 typescript@~5.1.6:
   version "5.1.6"
