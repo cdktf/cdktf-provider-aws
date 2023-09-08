@@ -1,6 +1,6 @@
 # `aws_iot_policy_attachment`
 
-Refer to the Terraform Registory for docs: [`aws_iot_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment).
+Refer to the Terraform Registory for docs: [`aws_iot_policy_attachment`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment).
 
 # `iotPolicyAttachment` Submodule <a name="`iotPolicyAttachment` Submodule" id="@cdktf/provider-aws.iotPolicyAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iot_policy_attachment`](https:/
 
 ### IotPolicyAttachment <a name="IotPolicyAttachment" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachment.Initializer"></a>
 
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicyattachment"
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicyAttachment.IotPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#policy IotPolicyAttachment#policy}.
 
 ---
 
@@ -711,7 +711,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#target IotPolicyAttachment#target}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy_attachment#id IotPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

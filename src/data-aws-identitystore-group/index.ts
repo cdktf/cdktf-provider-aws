@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsIdentitystoreGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#group_id DataAwsIdentitystoreGroup#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#identity_store_id DataAwsIdentitystoreGroup#identity_store_id}
   */
   readonly identityStoreId: string;
   /**
   * alternate_identifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#alternate_identifier DataAwsIdentitystoreGroup#alternate_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#alternate_identifier DataAwsIdentitystoreGroup#alternate_identifier}
   */
   readonly alternateIdentifier?: DataAwsIdentitystoreGroupAlternateIdentifier;
+  /**
+  * filter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#filter DataAwsIdentitystoreGroup#filter}
+  */
+  readonly filter?: DataAwsIdentitystoreGroupFilter;
 }
 export interface DataAwsIdentitystoreGroupExternalIds {
 }
@@ -105,14 +111,14 @@ export class DataAwsIdentitystoreGroupExternalIdsList extends cdktf.ComplexList 
 }
 export interface DataAwsIdentitystoreGroupAlternateIdentifierExternalId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#id DataAwsIdentitystoreGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#issuer DataAwsIdentitystoreGroup#issuer}
   */
   readonly issuer: string;
 }
@@ -194,11 +200,11 @@ export class DataAwsIdentitystoreGroupAlternateIdentifierExternalIdOutputReferen
 }
 export interface DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}
   */
   readonly attributePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}
   */
   readonly attributeValue: string;
 }
@@ -282,13 +288,13 @@ export interface DataAwsIdentitystoreGroupAlternateIdentifier {
   /**
   * external_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
   */
   readonly externalId?: DataAwsIdentitystoreGroupAlternateIdentifierExternalId;
   /**
   * unique_attribute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
   */
   readonly uniqueAttribute?: DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute;
 }
@@ -374,9 +380,95 @@ export class DataAwsIdentitystoreGroupAlternateIdentifierOutputReference extends
     return this._uniqueAttribute.internalValue;
   }
 }
+export interface DataAwsIdentitystoreGroupFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#attribute_path DataAwsIdentitystoreGroup#attribute_path}
+  */
+  readonly attributePath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group#attribute_value DataAwsIdentitystoreGroup#attribute_value}
+  */
+  readonly attributeValue: string;
+}
+
+export function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdentitystoreGroupFilterOutputReference | DataAwsIdentitystoreGroupFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute_path: cdktf.stringToTerraform(struct!.attributePath),
+    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
+  }
+}
+
+export class DataAwsIdentitystoreGroupFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataAwsIdentitystoreGroupFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attributePath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributePath = this._attributePath;
+    }
+    if (this._attributeValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attributeValue = this._attributeValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsIdentitystoreGroupFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._attributePath = undefined;
+      this._attributeValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._attributePath = value.attributePath;
+      this._attributeValue = value.attributeValue;
+    }
+  }
+
+  // attribute_path - computed: false, optional: false, required: true
+  private _attributePath?: string; 
+  public get attributePath() {
+    return this.getStringAttribute('attribute_path');
+  }
+  public set attributePath(value: string) {
+    this._attributePath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributePathInput() {
+    return this._attributePath;
+  }
+
+  // attribute_value - computed: false, optional: false, required: true
+  private _attributeValue?: string; 
+  public get attributeValue() {
+    return this.getStringAttribute('attribute_value');
+  }
+  public set attributeValue(value: string) {
+    this._attributeValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeValueInput() {
+    return this._attributeValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group aws_identitystore_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group aws_identitystore_group}
 */
 export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
 
@@ -390,7 +482,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -401,7 +493,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_identitystore_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -416,6 +508,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._identityStoreId = config.identityStoreId;
     this._alternateIdentifier.internalValue = config.alternateIdentifier;
+    this._filter.internalValue = config.filter;
   }
 
   // ==========
@@ -499,6 +592,22 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
     return this._alternateIdentifier.internalValue;
   }
 
+  // filter - computed: false, optional: true, required: false
+  private _filter = new DataAwsIdentitystoreGroupFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: DataAwsIdentitystoreGroupFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -509,6 +618,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
       alternate_identifier: dataAwsIdentitystoreGroupAlternateIdentifierToTerraform(this._alternateIdentifier.internalValue),
+      filter: dataAwsIdentitystoreGroupFilterToTerraform(this._filter.internalValue),
     };
   }
 }

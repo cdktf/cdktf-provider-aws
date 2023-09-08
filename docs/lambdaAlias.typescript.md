@@ -1,6 +1,6 @@
 # `aws_lambda_alias`
 
-Refer to the Terraform Registory for docs: [`aws_lambda_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias).
+Refer to the Terraform Registory for docs: [`aws_lambda_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias).
 
 # `lambdaAlias` Submodule <a name="`lambdaAlias` Submodule" id="@cdktf/provider-aws.lambdaAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lambda_alias`](https://registry
 
 ### LambdaAlias <a name="LambdaAlias" id="@cdktf/provider-aws.lambdaAlias.LambdaAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias aws_lambda_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias aws_lambda_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaAlias.LambdaAlias.Initializer"></a>
 
@@ -719,11 +719,11 @@ const lambdaAliasConfig: lambdaAlias.LambdaAliasConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">functionVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.functionVersion">functionVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#name LambdaAlias#name}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#description LambdaAlias#description}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#id LambdaAlias#id}. |
 | <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig.property.routingConfig">routingConfig</a></code> | <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfig">LambdaAliasRoutingConfig</a></code> | routing_config block. |
 
 ---
@@ -806,7 +806,7 @@ public readonly functionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#function_name LambdaAlias#function_name}.
 
 ---
 
@@ -818,7 +818,7 @@ public readonly functionVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#function_version LambdaAlias#function_version}.
 
 ---
 
@@ -830,7 +830,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#name LambdaAlias#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#name LambdaAlias#name}.
 
 ---
 
@@ -842,7 +842,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#description LambdaAlias#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#description LambdaAlias#description}.
 
 ---
 
@@ -854,7 +854,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#id LambdaAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#id LambdaAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ public readonly routingConfig: LambdaAliasRoutingConfig;
 
 routing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#routing_config LambdaAlias#routing_config}
 
 ---
 
@@ -889,7 +889,7 @@ const lambdaAliasRoutingConfig: lambdaAlias.LambdaAliasRoutingConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additionalVersionWeights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
+| <code><a href="#@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.property.additionalVersionWeights">additionalVersionWeights</a></code> | <code>{[ key: string ]: number}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}. |
 
 ---
 
@@ -901,7 +901,7 @@ public readonly additionalVersionWeights: {[ key: string ]: number};
 
 - *Type:* {[ key: string ]: number}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
 
 ---
 

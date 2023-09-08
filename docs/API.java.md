@@ -1601,6 +1601,8 @@ The following submodules are available:
 - [sfnActivity](./sfnActivity.java.md)
 - [sfnAlias](./sfnAlias.java.md)
 - [sfnStateMachine](./sfnStateMachine.java.md)
+- [shieldDrtAccessLogBucketAssociation](./shieldDrtAccessLogBucketAssociation.java.md)
+- [shieldDrtAccessRoleArnAssociation](./shieldDrtAccessRoleArnAssociation.java.md)
 - [shieldProtection](./shieldProtection.java.md)
 - [shieldProtectionGroup](./shieldProtectionGroup.java.md)
 - [shieldProtectionHealthCheckAssociation](./shieldProtectionHealthCheckAssociation.java.md)

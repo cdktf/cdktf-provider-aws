@@ -1090,6 +1090,8 @@ Object.defineProperty(exports, 'sesv2EmailIdentityMailFromAttributes', { get: fu
 Object.defineProperty(exports, 'sfnActivity', { get: function () { return require('./sfn-activity'); } });
 Object.defineProperty(exports, 'sfnAlias', { get: function () { return require('./sfn-alias'); } });
 Object.defineProperty(exports, 'sfnStateMachine', { get: function () { return require('./sfn-state-machine'); } });
+Object.defineProperty(exports, 'shieldDrtAccessLogBucketAssociation', { get: function () { return require('./shield-drt-access-log-bucket-association'); } });
+Object.defineProperty(exports, 'shieldDrtAccessRoleArnAssociation', { get: function () { return require('./shield-drt-access-role-arn-association'); } });
 Object.defineProperty(exports, 'shieldProtection', { get: function () { return require('./shield-protection'); } });
 Object.defineProperty(exports, 'shieldProtectionGroup', { get: function () { return require('./shield-protection-group'); } });
 Object.defineProperty(exports, 'shieldProtectionHealthCheckAssociation', { get: function () { return require('./shield-protection-health-check-association'); } });

@@ -1,6 +1,6 @@
 # `aws_transfer_profile`
 
-Refer to the Terraform Registory for docs: [`aws_transfer_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile).
+Refer to the Terraform Registory for docs: [`aws_transfer_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile).
 
 # `transferProfile` Submodule <a name="`transferProfile` Submodule" id="@cdktf/provider-aws.transferProfile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_transfer_profile`](https://regi
 
 ### TransferProfile <a name="TransferProfile" id="@cdktf/provider-aws.transferProfile.TransferProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile aws_transfer_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile aws_transfer_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferProfile.TransferProfile.Initializer"></a>
 
@@ -727,12 +727,12 @@ new TransferProfileConfig {
 | <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.as2Id">As2Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}. |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.profileType">ProfileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}. |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.certificateIds">CertificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}. |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#id TransferProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#tags TransferProfile#tags}. |
-| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.as2Id">As2Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.profileType">ProfileType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.certificateIds">CertificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#id TransferProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#tags TransferProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.transferProfile.TransferProfileConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}. |
 
 ---
 
@@ -814,7 +814,7 @@ public string As2Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#as2_id TransferProfile#as2_id}.
 
 ---
 
@@ -826,7 +826,7 @@ public string ProfileType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#profile_type TransferProfile#profile_type}.
 
 ---
 
@@ -838,7 +838,7 @@ public string[] CertificateIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#certificate_ids TransferProfile#certificate_ids}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#id TransferProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#id TransferProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#tags TransferProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#tags TransferProfile#tags}.
 
 ---
 
@@ -877,7 +877,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile#tags_all TransferProfile#tags_all}.
 
 ---
 

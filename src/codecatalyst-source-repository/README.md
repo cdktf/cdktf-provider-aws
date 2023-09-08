@@ -1,3 +1,3 @@
 # `aws_codecatalyst_source_repository`
 
-Refer to the Terraform Registory for docs: [`aws_codecatalyst_source_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codecatalyst_source_repository).
+Refer to the Terraform Registory for docs: [`aws_codecatalyst_source_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codecatalyst_source_repository).

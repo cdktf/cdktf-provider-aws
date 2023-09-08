@@ -1,3 +1,3 @@
 # `aws_load_balancer_policy`
 
-Refer to the Terraform Registory for docs: [`aws_load_balancer_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/load_balancer_policy).
+Refer to the Terraform Registory for docs: [`aws_load_balancer_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/load_balancer_policy).

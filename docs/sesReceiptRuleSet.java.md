@@ -1,6 +1,6 @@
 # `aws_ses_receipt_rule_set`
 
-Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set).
+Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set).
 
 # `sesReceiptRuleSet` Submodule <a name="`sesReceiptRuleSet` Submodule" id="@cdktf/provider-aws.sesReceiptRuleSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://
 
 ### SesReceiptRuleSet <a name="SesReceiptRuleSet" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer"></a>
 
@@ -43,8 +43,8 @@ SesReceiptRuleSet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.ruleSetName">ruleSetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.ruleSetName">ruleSetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -684,8 +684,8 @@ SesReceiptRuleSetConfig.builder()
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">ruleSetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">ruleSetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
 
 ---
 
@@ -767,7 +767,7 @@ public java.lang.String getRuleSetName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
 
 ---
 
@@ -779,7 +779,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

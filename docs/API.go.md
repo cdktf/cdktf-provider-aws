@@ -1601,6 +1601,8 @@ The following submodules are available:
 - [sfnActivity](./sfnActivity.go.md)
 - [sfnAlias](./sfnAlias.go.md)
 - [sfnStateMachine](./sfnStateMachine.go.md)
+- [shieldDrtAccessLogBucketAssociation](./shieldDrtAccessLogBucketAssociation.go.md)
+- [shieldDrtAccessRoleArnAssociation](./shieldDrtAccessRoleArnAssociation.go.md)
 - [shieldProtection](./shieldProtection.go.md)
 - [shieldProtectionGroup](./shieldProtectionGroup.go.md)
 - [shieldProtectionHealthCheckAssociation](./shieldProtectionHealthCheckAssociation.go.md)

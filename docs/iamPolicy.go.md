@@ -1,6 +1,6 @@
 # `aws_iam_policy`
 
-Refer to the Terraform Registory for docs: [`aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy).
+Refer to the Terraform Registory for docs: [`aws_iam_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy).
 
 # `iamPolicy` Submodule <a name="`iamPolicy` Submodule" id="@cdktf/provider-aws.iamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iam_policy`](https://registry.t
 
 ### IamPolicy <a name="IamPolicy" id="@cdktf/provider-aws.iamPolicy.IamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy aws_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy aws_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamPolicy.IamPolicy.Initializer"></a>
 
@@ -794,14 +794,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iampolicy"
 | <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#policy IamPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#description IamPolicy#description}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#id IamPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#name IamPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#name_prefix IamPolicy#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#path IamPolicy#path}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#tags IamPolicy#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#tags_all IamPolicy#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#policy IamPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#description IamPolicy#description}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#id IamPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#name IamPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#name_prefix IamPolicy#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#path IamPolicy#path}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#tags IamPolicy#tags}. |
+| <code><a href="#@cdktf/provider-aws.iamPolicy.IamPolicyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#tags_all IamPolicy#tags_all}. |
 
 ---
 
@@ -883,7 +883,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#policy IamPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#policy IamPolicy#policy}.
 
 ---
 
@@ -895,7 +895,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#description IamPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#description IamPolicy#description}.
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#id IamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#id IamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#name IamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#name IamPolicy#name}.
 
 ---
 
@@ -934,7 +934,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#name_prefix IamPolicy#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#name_prefix IamPolicy#name_prefix}.
 
 ---
 
@@ -946,7 +946,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#path IamPolicy#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#path IamPolicy#path}.
 
 ---
 
@@ -958,7 +958,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#tags IamPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#tags IamPolicy#tags}.
 
 ---
 
@@ -970,7 +970,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iam_policy#tags_all IamPolicy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_policy#tags_all IamPolicy#tags_all}.
 
 ---
 

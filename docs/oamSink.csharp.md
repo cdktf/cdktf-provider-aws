@@ -1,6 +1,6 @@
 # `aws_oam_sink`
 
-Refer to the Terraform Registory for docs: [`aws_oam_sink`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink).
+Refer to the Terraform Registory for docs: [`aws_oam_sink`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink).
 
 # `oamSink` Submodule <a name="`oamSink` Submodule" id="@cdktf/provider-aws.oamSink"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_oam_sink`](https://registry.ter
 
 ### OamSink <a name="OamSink" id="@cdktf/provider-aws.oamSink.OamSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink aws_oam_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink aws_oam_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.oamSink.OamSink.Initializer"></a>
 
@@ -717,10 +717,10 @@ new OamSinkConfig {
 | <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#name OamSink#name}. |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#id OamSink#id}. |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#tags OamSink#tags}. |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#tags_all OamSink#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#name OamSink#name}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#id OamSink#id}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags OamSink#tags}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags_all OamSink#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.oamSink.OamSinkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts">OamSinkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -803,7 +803,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#name OamSink#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#name OamSink#name}.
 
 ---
 
@@ -815,7 +815,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#id OamSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#id OamSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -830,7 +830,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#tags OamSink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags OamSink#tags}.
 
 ---
 
@@ -842,7 +842,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#tags_all OamSink#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags_all OamSink#tags_all}.
 
 ---
 
@@ -856,7 +856,7 @@ public OamSinkTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#timeouts OamSink#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#timeouts OamSink#timeouts}
 
 ---
 
@@ -878,9 +878,9 @@ new OamSinkTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#create OamSink#create}. |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#delete OamSink#delete}. |
-| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#update OamSink#update}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#create OamSink#create}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#delete OamSink#delete}. |
+| <code><a href="#@cdktf/provider-aws.oamSink.OamSinkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#update OamSink#update}. |
 
 ---
 
@@ -892,7 +892,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#create OamSink#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#create OamSink#create}.
 
 ---
 
@@ -904,7 +904,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#delete OamSink#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#delete OamSink#delete}.
 
 ---
 
@@ -916,7 +916,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/oam_sink#update OamSink#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#update OamSink#update}.
 
 ---
 

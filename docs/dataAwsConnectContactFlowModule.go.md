@@ -1,6 +1,6 @@
 # `data_aws_connect_contact_flow_module`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_contact_flow_module`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module).
+Refer to the Terraform Registory for docs: [`data_aws_connect_contact_flow_module`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module).
 
 # `dataAwsConnectContactFlowModule` Submodule <a name="`dataAwsConnectContactFlowModule` Submodule" id="@cdktf/provider-aws.dataAwsConnectContactFlowModule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_contact_flow_modul
 
 ### DataAwsConnectContactFlowModule <a name="DataAwsConnectContactFlowModule" id="@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module aws_connect_contact_flow_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module aws_connect_contact_flow_module}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule.Initializer"></a>
 
@@ -715,11 +715,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectcontactflow
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#instance_id DataAwsConnectContactFlowModule#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.contactFlowModuleId">ContactFlowModuleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#contact_flow_module_id DataAwsConnectContactFlowModule#contact_flow_module_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#id DataAwsConnectContactFlowModule#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#name DataAwsConnectContactFlowModule#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#tags DataAwsConnectContactFlowModule#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#instance_id DataAwsConnectContactFlowModule#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.contactFlowModuleId">ContactFlowModuleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#contact_flow_module_id DataAwsConnectContactFlowModule#contact_flow_module_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#id DataAwsConnectContactFlowModule#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#name DataAwsConnectContactFlowModule#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#tags DataAwsConnectContactFlowModule#tags}. |
 
 ---
 
@@ -801,7 +801,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#instance_id DataAwsConnectContactFlowModule#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#instance_id DataAwsConnectContactFlowModule#instance_id}.
 
 ---
 
@@ -813,7 +813,7 @@ ContactFlowModuleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#contact_flow_module_id DataAwsConnectContactFlowModule#contact_flow_module_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#contact_flow_module_id DataAwsConnectContactFlowModule#contact_flow_module_id}.
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#id DataAwsConnectContactFlowModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#id DataAwsConnectContactFlowModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -840,7 +840,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#name DataAwsConnectContactFlowModule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#name DataAwsConnectContactFlowModule#name}.
 
 ---
 
@@ -852,7 +852,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_contact_flow_module#tags DataAwsConnectContactFlowModule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_contact_flow_module#tags DataAwsConnectContactFlowModule#tags}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_backup_vault`
 
-Refer to the Terraform Registory for docs: [`data_aws_backup_vault`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault).
+Refer to the Terraform Registory for docs: [`data_aws_backup_vault`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault).
 
 # `dataAwsBackupVault` Submodule <a name="`dataAwsBackupVault` Submodule" id="@cdktf/provider-aws.dataAwsBackupVault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_backup_vault`](https://reg
 
 ### DataAwsBackupVault <a name="DataAwsBackupVault" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault aws_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault aws_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault.Initializer"></a>
 
@@ -633,9 +633,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbackupvault"
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#name DataAwsBackupVault#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#id DataAwsBackupVault#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#name DataAwsBackupVault#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#id DataAwsBackupVault#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVaultConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}. |
 
 ---
 
@@ -717,7 +717,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#name DataAwsBackupVault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#name DataAwsBackupVault#name}.
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#id DataAwsBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#id DataAwsBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/backup_vault#tags DataAwsBackupVault#tags}.
 
 ---
 

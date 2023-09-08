@@ -1,6 +1,6 @@
 # `data_aws_api_gateway_api_key`
 
-Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key).
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key).
 
 # `dataAwsApiGatewayApiKey` Submodule <a name="`dataAwsApiGatewayApiKey` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_api_gateway_api_key`](http
 
 ### DataAwsApiGatewayApiKey <a name="DataAwsApiGatewayApiKey" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.Initializer"></a>
 
@@ -351,6 +351,7 @@ DataAwsApiGatewayApiKey.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.createdDate">CreatedDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.customerId">CustomerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.enabled">Enabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.lastUpdatedDate">LastUpdatedDate</a></code> | <code>string</code> | *No description.* |
@@ -489,6 +490,16 @@ public TerraformProvider Provider { get; }
 
 ```csharp
 public string CreatedDate { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CustomerId`<sup>Required</sup> <a name="CustomerId" id="@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey.property.customerId"></a>
+
+```csharp
+public string CustomerId { get; }
 ```
 
 - *Type:* string
@@ -636,8 +647,8 @@ new DataAwsApiGatewayApiKeyConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}. |
 
 ---
 
@@ -719,7 +730,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key#id DataAwsApiGatewayApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -734,7 +745,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key#tags DataAwsApiGatewayApiKey#tags}.
 
 ---
 

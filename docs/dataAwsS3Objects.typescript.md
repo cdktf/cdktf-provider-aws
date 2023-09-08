@@ -1,6 +1,6 @@
 # `data_aws_s3_objects`
 
-Refer to the Terraform Registory for docs: [`data_aws_s3_objects`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects).
+Refer to the Terraform Registory for docs: [`data_aws_s3_objects`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects).
 
 # `dataAwsS3Objects` Submodule <a name="`dataAwsS3Objects` Submodule" id="@cdktf/provider-aws.dataAwsS3Objects"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_s3_objects`](https://regis
 
 ### DataAwsS3Objects <a name="DataAwsS3Objects" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects aws_s3_objects}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects aws_s3_objects}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetMaxKeys">resetMaxKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetPrefix">resetPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetRequestPayer">resetRequestPayer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetStartAfter">resetStartAfter</a></code> | *No description.* |
 
 ---
@@ -300,6 +301,12 @@ public resetMaxKeys(): void
 public resetPrefix(): void
 ```
 
+##### `resetRequestPayer` <a name="resetRequestPayer" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetRequestPayer"></a>
+
+```typescript
+public resetRequestPayer(): void
+```
+
 ##### `resetStartAfter` <a name="resetStartAfter" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.resetStartAfter"></a>
 
 ```typescript
@@ -395,6 +402,7 @@ dataAwsS3Objects.DataAwsS3Objects.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.commonPrefixes">commonPrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.keys">keys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.owners">owners</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestCharged">requestCharged</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.delimiterInput">delimiterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.encodingTypeInput">encodingTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -402,6 +410,7 @@ dataAwsS3Objects.DataAwsS3Objects.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.maxKeysInput">maxKeysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.prefixInput">prefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestPayerInput">requestPayerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.startAfterInput">startAfterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.delimiter">delimiter</a></code> | <code>string</code> | *No description.* |
@@ -410,6 +419,7 @@ dataAwsS3Objects.DataAwsS3Objects.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.maxKeys">maxKeys</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.prefix">prefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestPayer">requestPayer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.startAfter">startAfter</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -566,6 +576,16 @@ public readonly owners: string[];
 
 ---
 
+##### `requestCharged`<sup>Required</sup> <a name="requestCharged" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestCharged"></a>
+
+```typescript
+public readonly requestCharged: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.bucketInput"></a>
 
 ```typescript
@@ -630,6 +650,16 @@ public readonly maxKeysInput: number;
 
 ```typescript
 public readonly prefixInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestPayerInput`<sup>Optional</sup> <a name="requestPayerInput" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestPayerInput"></a>
+
+```typescript
+public readonly requestPayerInput: string;
 ```
 
 - *Type:* string
@@ -716,6 +746,16 @@ public readonly prefix: string;
 
 ---
 
+##### `requestPayer`<sup>Required</sup> <a name="requestPayer" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.requestPayer"></a>
+
+```typescript
+public readonly requestPayer: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `startAfter`<sup>Required</sup> <a name="startAfter" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3Objects.property.startAfter"></a>
 
 ```typescript
@@ -767,14 +807,15 @@ const dataAwsS3ObjectsConfig: dataAwsS3Objects.DataAwsS3ObjectsConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#bucket DataAwsS3Objects#bucket}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.delimiter">delimiter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#delimiter DataAwsS3Objects#delimiter}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.encodingType">encodingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#encoding_type DataAwsS3Objects#encoding_type}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.fetchOwner">fetchOwner</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#fetch_owner DataAwsS3Objects#fetch_owner}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#id DataAwsS3Objects#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.maxKeys">maxKeys</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#max_keys DataAwsS3Objects#max_keys}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#prefix DataAwsS3Objects#prefix}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.startAfter">startAfter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#start_after DataAwsS3Objects#start_after}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#bucket DataAwsS3Objects#bucket}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.delimiter">delimiter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#delimiter DataAwsS3Objects#delimiter}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.encodingType">encodingType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#encoding_type DataAwsS3Objects#encoding_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.fetchOwner">fetchOwner</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#fetch_owner DataAwsS3Objects#fetch_owner}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#id DataAwsS3Objects#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.maxKeys">maxKeys</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#max_keys DataAwsS3Objects#max_keys}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.prefix">prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#prefix DataAwsS3Objects#prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.requestPayer">requestPayer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#request_payer DataAwsS3Objects#request_payer}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.startAfter">startAfter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#start_after DataAwsS3Objects#start_after}. |
 
 ---
 
@@ -856,7 +897,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#bucket DataAwsS3Objects#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#bucket DataAwsS3Objects#bucket}.
 
 ---
 
@@ -868,7 +909,7 @@ public readonly delimiter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#delimiter DataAwsS3Objects#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#delimiter DataAwsS3Objects#delimiter}.
 
 ---
 
@@ -880,7 +921,7 @@ public readonly encodingType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#encoding_type DataAwsS3Objects#encoding_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#encoding_type DataAwsS3Objects#encoding_type}.
 
 ---
 
@@ -892,7 +933,7 @@ public readonly fetchOwner: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#fetch_owner DataAwsS3Objects#fetch_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#fetch_owner DataAwsS3Objects#fetch_owner}.
 
 ---
 
@@ -904,7 +945,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#id DataAwsS3Objects#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#id DataAwsS3Objects#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +960,7 @@ public readonly maxKeys: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#max_keys DataAwsS3Objects#max_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#max_keys DataAwsS3Objects#max_keys}.
 
 ---
 
@@ -931,7 +972,19 @@ public readonly prefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#prefix DataAwsS3Objects#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#prefix DataAwsS3Objects#prefix}.
+
+---
+
+##### `requestPayer`<sup>Optional</sup> <a name="requestPayer" id="@cdktf/provider-aws.dataAwsS3Objects.DataAwsS3ObjectsConfig.property.requestPayer"></a>
+
+```typescript
+public readonly requestPayer: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#request_payer DataAwsS3Objects#request_payer}.
 
 ---
 
@@ -943,7 +996,7 @@ public readonly startAfter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/s3_objects#start_after DataAwsS3Objects#start_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/s3_objects#start_after DataAwsS3Objects#start_after}.
 
 ---
 

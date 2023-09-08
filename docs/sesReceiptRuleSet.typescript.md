@@ -1,6 +1,6 @@
 # `aws_ses_receipt_rule_set`
 
-Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set).
+Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set).
 
 # `sesReceiptRuleSet` Submodule <a name="`sesReceiptRuleSet` Submodule" id="@cdktf/provider-aws.sesReceiptRuleSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_receipt_rule_set`](https://
 
 ### SesReceiptRuleSet <a name="SesReceiptRuleSet" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer"></a>
 
@@ -593,8 +593,8 @@ const sesReceiptRuleSetConfig: sesReceiptRuleSet.SesReceiptRuleSetConfig = { ...
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">ruleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.ruleSetName">ruleSetName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}. |
 
 ---
 
@@ -676,7 +676,7 @@ public readonly ruleSetName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#rule_set_name SesReceiptRuleSet#rule_set_name}.
 
 ---
 
@@ -688,7 +688,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_receipt_rule_set#id SesReceiptRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

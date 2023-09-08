@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOpensearchDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain#domain_name DataAwsOpensearchDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain#id DataAwsOpensearchDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain#tags DataAwsOpensearchDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * off_peak_window_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain#off_peak_window_options DataAwsOpensearchDomain#off_peak_window_options}
   */
   readonly offPeakWindowOptions?: DataAwsOpensearchDomainOffPeakWindowOptions;
 }
@@ -1010,6 +1010,70 @@ export class DataAwsOpensearchDomainSnapshotOptionsList extends cdktf.ComplexLis
     return new DataAwsOpensearchDomainSnapshotOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsOpensearchDomainSoftwareUpdateOptions {
+}
+
+export function dataAwsOpensearchDomainSoftwareUpdateOptionsToTerraform(struct?: DataAwsOpensearchDomainSoftwareUpdateOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOpensearchDomainSoftwareUpdateOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOpensearchDomainSoftwareUpdateOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // auto_software_update_enabled - computed: true, optional: false, required: false
+  public get autoSoftwareUpdateEnabled() {
+    return this.getBooleanAttribute('auto_software_update_enabled');
+  }
+}
+
+export class DataAwsOpensearchDomainSoftwareUpdateOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference {
+    return new DataAwsOpensearchDomainSoftwareUpdateOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsOpensearchDomainVpcOptions {
 }
 
@@ -1274,7 +1338,7 @@ export class DataAwsOpensearchDomainOffPeakWindowOptionsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain aws_opensearch_domain}
 */
 export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
 
@@ -1288,7 +1352,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1299,7 +1363,7 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_opensearch_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1457,6 +1521,12 @@ export class DataAwsOpensearchDomain extends cdktf.TerraformDataSource {
   private _snapshotOptions = new DataAwsOpensearchDomainSnapshotOptionsList(this, "snapshot_options", false);
   public get snapshotOptions() {
     return this._snapshotOptions;
+  }
+
+  // software_update_options - computed: true, optional: false, required: false
+  private _softwareUpdateOptions = new DataAwsOpensearchDomainSoftwareUpdateOptionsList(this, "software_update_options", false);
+  public get softwareUpdateOptions() {
+    return this._softwareUpdateOptions;
   }
 
   // tags - computed: true, optional: true, required: false

@@ -1,6 +1,6 @@
 # `aws_backup_vault_policy`
 
-Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy).
+Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy).
 
 # `backupVaultPolicy` Submodule <a name="`backupVaultPolicy` Submodule" id="@cdktf/provider-aws.backupVaultPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_backup_vault_policy`](https://r
 
 ### BackupVaultPolicy <a name="BackupVaultPolicy" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer"></a>
 
@@ -44,9 +44,9 @@ BackupVaultPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.backupVaultName">backupVaultName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.backupVaultName">backupVaultName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -717,9 +717,9 @@ BackupVaultPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.backupVaultName">backupVaultName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.backupVaultName">backupVaultName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.backupVaultPolicy.BackupVaultPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}. |
 
 ---
 
@@ -801,7 +801,7 @@ public java.lang.String getBackupVaultName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#backup_vault_name BackupVaultPolicy#backup_vault_name}.
 
 ---
 
@@ -813,7 +813,7 @@ public java.lang.String getPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#policy BackupVaultPolicy#policy}.
 
 ---
 
@@ -825,7 +825,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault_policy#id BackupVaultPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
