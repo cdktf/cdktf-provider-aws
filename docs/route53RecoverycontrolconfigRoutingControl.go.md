@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoverycontrolconfigroutingcontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoverycontrolconfigroutingcontrol"
 
 route53recoverycontrolconfigroutingcontrol.NewRoute53RecoverycontrolconfigRoutingControl(scope Construct, id *string, config Route53RecoverycontrolconfigRoutingControlConfig) Route53RecoverycontrolconfigRoutingControl
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoverycontrolconfigroutingcontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoverycontrolconfigroutingcontrol"
 
 route53recoverycontrolconfigroutingcontrol.Route53RecoverycontrolconfigRoutingControl_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoverycontrolconfigroutingcontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoverycontrolconfigroutingcontrol"
 
 route53recoverycontrolconfigroutingcontrol.Route53RecoverycontrolconfigRoutingControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ route53recoverycontrolconfigroutingcontrol.Route53RecoverycontrolconfigRoutingCo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoverycontrolconfigroutingcontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoverycontrolconfigroutingcontrol"
 
 route53recoverycontrolconfigroutingcontrol.Route53RecoverycontrolconfigRoutingControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53RecoverycontrolconfigRoutingControl.Route53RecoverycontrolconfigRoutingControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/route53recoverycontrolconfigroutingcontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoverycontrolconfigroutingcontrol"
 
 &route53recoverycontrolconfigroutingcontrol.Route53RecoverycontrolconfigRoutingControlConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesreceiptruleset"
 
 sesreceiptruleset.NewSesReceiptRuleSet(scope Construct, id *string, config SesReceiptRuleSetConfig) SesReceiptRuleSet
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ sesreceiptruleset.SesReceiptRuleSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesreceiptruleset"
 
 sesreceiptruleset.SesReceiptRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesReceiptRuleSet.SesReceiptRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sesreceiptruleset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesreceiptruleset"
 
 &sesreceiptruleset.SesReceiptRuleSetConfig {
 	Connection: interface{},

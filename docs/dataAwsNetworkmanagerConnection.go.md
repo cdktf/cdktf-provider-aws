@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerconnection"
 
 dataawsnetworkmanagerconnection.NewDataAwsNetworkmanagerConnection(scope Construct, id *string, config DataAwsNetworkmanagerConnectionConfig) DataAwsNetworkmanagerConnection
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerconnection"
 
 dataawsnetworkmanagerconnection.DataAwsNetworkmanagerConnection_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerconnection"
 
 dataawsnetworkmanagerconnection.DataAwsNetworkmanagerConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsnetworkmanagerconnection.DataAwsNetworkmanagerConnection_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerconnection"
 
 dataawsnetworkmanagerconnection.DataAwsNetworkmanagerConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerConnection.DataAwsNetworkmanagerConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerconnection"
 
 &dataawsnetworkmanagerconnection.DataAwsNetworkmanagerConnectionConfig {
 	Connection: interface{},

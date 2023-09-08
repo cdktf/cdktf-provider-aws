@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.NewConnectPhoneNumber(scope Construct, id *string, config ConnectPhoneNumberConfig) ConnectPhoneNumber
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.ConnectPhoneNumber_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.ConnectPhoneNumber_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ connectphonenumber.ConnectPhoneNumber_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.ConnectPhoneNumber_IsTerraformResource(x interface{}) *bool
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 &connectphonenumber.ConnectPhoneNumberConfig {
 	Connection: interface{},
@@ -819,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
 	Prefix: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.connectPhoneNumber.ConnectPhoneNumberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.connectPhoneNumber.ConnectPhoneNumberTimeouts,
 }
 ```
 
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 &connectphonenumber.ConnectPhoneNumberStatus {
 
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 &connectphonenumber.ConnectPhoneNumberTimeouts {
 	Create: *string,
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.NewConnectPhoneNumberStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectPhoneNumberStatusList
 ```
@@ -1241,7 +1241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.NewConnectPhoneNumberStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectPhoneNumberStatusOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() ConnectPhoneNumberStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/connectphonenumber"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/connectphonenumber"
 
 connectphonenumber.NewConnectPhoneNumberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectPhoneNumberTimeoutsOutputReference
 ```
