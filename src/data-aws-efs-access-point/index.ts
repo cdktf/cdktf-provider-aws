@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point#access_point_id DataAwsEfsAccessPoint#access_point_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point#access_point_id DataAwsEfsAccessPoint#access_point_id}
   */
   readonly accessPointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point#id DataAwsEfsAccessPoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point#id DataAwsEfsAccessPoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point#tags DataAwsEfsAccessPoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point#tags DataAwsEfsAccessPoint#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -248,7 +243,7 @@ export class DataAwsEfsAccessPointRootDirectoryList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point aws_efs_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point aws_efs_access_point}
 */
 export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
 
@@ -262,7 +257,7 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_access_point aws_efs_access_point} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/efs_access_point aws_efs_access_point} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +268,7 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_efs_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

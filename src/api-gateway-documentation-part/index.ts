@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayDocumentationPartConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#id ApiGatewayDocumentationPart#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#id ApiGatewayDocumentationPart#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#properties ApiGatewayDocumentationPart#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#properties ApiGatewayDocumentationPart#properties}
   */
   readonly properties: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#rest_api_id ApiGatewayDocumentationPart#rest_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#rest_api_id ApiGatewayDocumentationPart#rest_api_id}
   */
   readonly restApiId: string;
   /**
   * location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#location ApiGatewayDocumentationPart#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#location ApiGatewayDocumentationPart#location}
   */
   readonly location: ApiGatewayDocumentationPartLocation;
 }
 export interface ApiGatewayDocumentationPartLocation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#method ApiGatewayDocumentationPart#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#method ApiGatewayDocumentationPart#method}
   */
   readonly method?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#name ApiGatewayDocumentationPart#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#name ApiGatewayDocumentationPart#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#path ApiGatewayDocumentationPart#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#path ApiGatewayDocumentationPart#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#status_code ApiGatewayDocumentationPart#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#status_code ApiGatewayDocumentationPart#status_code}
   */
   readonly statusCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part#type ApiGatewayDocumentationPart#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part#type ApiGatewayDocumentationPart#type}
   */
   readonly type: string;
 }
@@ -206,7 +201,7 @@ export class ApiGatewayDocumentationPartLocationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part}
 */
 export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
 
@@ -220,7 +215,7 @@ export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +226,7 @@ export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_documentation_part',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1601,6 +1601,8 @@ The following submodules are available:
 - [sfnActivity](./sfnActivity.python.md)
 - [sfnAlias](./sfnAlias.python.md)
 - [sfnStateMachine](./sfnStateMachine.python.md)
+- [shieldDrtAccessLogBucketAssociation](./shieldDrtAccessLogBucketAssociation.python.md)
+- [shieldDrtAccessRoleArnAssociation](./shieldDrtAccessRoleArnAssociation.python.md)
 - [shieldProtection](./shieldProtection.python.md)
 - [shieldProtectionGroup](./shieldProtectionGroup.python.md)
 - [shieldProtectionHealthCheckAssociation](./shieldProtectionHealthCheckAssociation.python.md)

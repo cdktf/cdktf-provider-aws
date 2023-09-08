@@ -1,6 +1,6 @@
 # `data_aws_opensearchserverless_collection`
 
-Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection).
+Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_collection`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection).
 
 # `dataAwsOpensearchserverlessCollection` Submodule <a name="`dataAwsOpensearchserverlessCollection` Submodule" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_opensearchserverless_colle
 
 ### DataAwsOpensearchserverlessCollection <a name="DataAwsOpensearchserverlessCollection" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.NewDataAwsOpensearchserverlessCollection(scope Construct, id *string, config DataAwsOpensearchserverlessCollectionConfig) DataAwsOpensearchserverlessCollection
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverlesscollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesscollection"
 
 &dataawsopensearchserverlesscollection.DataAwsOpensearchserverlessCollectionConfig {
 	Connection: interface{},
@@ -676,8 +676,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsopensearchserverle
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOpensearchserverlessCollection.DataAwsOpensearchserverlessCollectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}. |
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection#id DataAwsOpensearchserverlessCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearchserverless_collection#name DataAwsOpensearchserverlessCollection#name}.
 
 ---
 

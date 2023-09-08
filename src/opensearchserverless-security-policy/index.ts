@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchserverlessSecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
   */
   readonly policy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}
 */
 export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource {
 
@@ -45,7 +40,7 @@ export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -56,7 +51,7 @@ export class OpensearchserverlessSecurityPolicy extends cdktf.TerraformResource 
       terraformResourceType: 'aws_opensearchserverless_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

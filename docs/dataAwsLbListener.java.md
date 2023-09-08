@@ -1,6 +1,6 @@
 # `data_aws_lb_listener`
 
-Refer to the Terraform Registory for docs: [`data_aws_lb_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener).
+Refer to the Terraform Registory for docs: [`data_aws_lb_listener`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener).
 
 # `dataAwsLbListener` Submodule <a name="`dataAwsLbListener` Submodule" id="@cdktf/provider-aws.dataAwsLbListener"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_lb_listener`](https://regi
 
 ### DataAwsLbListener <a name="DataAwsLbListener" id="@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener aws_lb_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener aws_lb_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer"></a>
 
@@ -47,11 +47,11 @@ DataAwsLbListener.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.loadBalancerArn">loadBalancerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.loadBalancerArn">loadBalancerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
 
 ---
 
@@ -888,11 +888,11 @@ DataAwsLbListenerConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.loadBalancerArn">loadBalancerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.arn">arn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.loadBalancerArn">loadBalancerArn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.port">port</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts">DataAwsLbListenerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -975,7 +975,7 @@ public java.lang.String getArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#arn DataAwsLbListener#arn}.
 
 ---
 
@@ -987,7 +987,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#id DataAwsLbListener#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ public java.lang.String getLoadBalancerArn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#load_balancer_arn DataAwsLbListener#load_balancer_arn}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#port DataAwsLbListener#port}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#tags DataAwsLbListener#tags}.
 
 ---
 
@@ -1040,7 +1040,7 @@ public DataAwsLbListenerTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#timeouts DataAwsLbListener#timeouts}
 
 ---
 
@@ -1156,7 +1156,7 @@ DataAwsLbListenerTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}. |
 
 ---
 
@@ -1168,7 +1168,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lb_listener#read DataAwsLbListener#read}.
 
 ---
 

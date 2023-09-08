@@ -1,6 +1,6 @@
 # `aws_iot_policy`
 
-Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy).
+Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy).
 
 # `iotPolicy` Submodule <a name="`iotPolicy` Submodule" id="@cdktf/provider-aws.iotPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_iot_policy`](https://registry.t
 
 ### IotPolicy <a name="IotPolicy" id="@cdktf/provider-aws.iotPolicy.IotPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy aws_iot_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy aws_iot_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotPolicy.IotPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicy"
 
 iotpolicy.NewIotPolicy(scope Construct, id *string, config IotPolicyConfig) IotPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotPolicy.IotPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicy"
 
 iotpolicy.IotPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotPolicy.IotPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicy"
 
 iotpolicy.IotPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ iotpolicy.IotPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotPolicy.IotPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicy"
 
 iotpolicy.IotPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotPolicy.IotPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotpolicy"
 
 &iotpolicy.IotPolicyConfig {
 	Connection: interface{},
@@ -637,9 +637,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotpolicy"
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#name IotPolicy#name}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#id IotPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#name IotPolicy#name}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#policy IotPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.iotPolicy.IotPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#id IotPolicy#id}. |
 
 ---
 
@@ -721,7 +721,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#name IotPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#name IotPolicy#name}.
 
 ---
 
@@ -733,7 +733,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#policy IotPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#policy IotPolicy#policy}.
 
 ---
 
@@ -745,7 +745,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/iot_policy#id IotPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iot_policy#id IotPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

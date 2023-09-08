@@ -1,6 +1,6 @@
 # `aws_apprunner_connection`
 
-Refer to the Terraform Registory for docs: [`aws_apprunner_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection).
+Refer to the Terraform Registory for docs: [`aws_apprunner_connection`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection).
 
 # `apprunnerConnection` Submodule <a name="`apprunnerConnection` Submodule" id="@cdktf/provider-aws.apprunnerConnection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_apprunner_connection`](https://
 
 ### ApprunnerConnection <a name="ApprunnerConnection" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection aws_apprunner_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection aws_apprunner_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerConnection.ApprunnerConnection.Initializer"></a>
 
@@ -684,11 +684,11 @@ const apprunnerConnectionConfig: apprunnerConnection.ApprunnerConnectionConfig =
 | <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#connection_name ApprunnerConnection#connection_name}. |
-| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.providerType">providerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#provider_type ApprunnerConnection#provider_type}. |
-| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#id ApprunnerConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#tags ApprunnerConnection#tags}. |
-| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#tags_all ApprunnerConnection#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#connection_name ApprunnerConnection#connection_name}. |
+| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.providerType">providerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#provider_type ApprunnerConnection#provider_type}. |
+| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#id ApprunnerConnection#id}. |
+| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#tags ApprunnerConnection#tags}. |
+| <code><a href="#@cdktf/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#tags_all ApprunnerConnection#tags_all}. |
 
 ---
 
@@ -770,7 +770,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#connection_name ApprunnerConnection#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#connection_name ApprunnerConnection#connection_name}.
 
 ---
 
@@ -782,7 +782,7 @@ public readonly providerType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#provider_type ApprunnerConnection#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#provider_type ApprunnerConnection#provider_type}.
 
 ---
 
@@ -794,7 +794,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#id ApprunnerConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#id ApprunnerConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -809,7 +809,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#tags ApprunnerConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#tags ApprunnerConnection#tags}.
 
 ---
 
@@ -821,7 +821,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/apprunner_connection#tags_all ApprunnerConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/apprunner_connection#tags_all ApprunnerConnection#tags_all}.
 
 ---
 

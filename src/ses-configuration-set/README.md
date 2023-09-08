@@ -1,3 +1,3 @@
 # `aws_ses_configuration_set`
 
-Refer to the Terraform Registory for docs: [`aws_ses_configuration_set`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ses_configuration_set).
+Refer to the Terraform Registory for docs: [`aws_ses_configuration_set`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ses_configuration_set).

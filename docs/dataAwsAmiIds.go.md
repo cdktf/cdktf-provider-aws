@@ -1,6 +1,6 @@
 # `data_aws_ami_ids`
 
-Refer to the Terraform Registory for docs: [`data_aws_ami_ids`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids).
+Refer to the Terraform Registory for docs: [`data_aws_ami_ids`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids).
 
 # `dataAwsAmiIds` Submodule <a name="`dataAwsAmiIds` Submodule" id="@cdktf/provider-aws.dataAwsAmiIds"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_ami_ids`](https://registry
 
 ### DataAwsAmiIds <a name="DataAwsAmiIds" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids aws_ami_ids}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids aws_ami_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIds(scope Construct, id *string, config DataAwsAmiIdsConfig) DataAwsAmiIds
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataawsamiids.DataAwsAmiIds_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.DataAwsAmiIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
 	IncludeDeprecated: interface{},
 	NameRegex: *string,
 	SortAscending: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.dataAwsAmiIds.DataAwsAmiIdsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts,
 }
 ```
 
@@ -787,13 +787,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
 | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.owners">Owners</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.executableUsers">ExecutableUsers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.owners">Owners</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.executableUsers">ExecutableUsers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.includeDeprecated">IncludeDeprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.sortAscending">SortAscending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.includeDeprecated">IncludeDeprecated</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.sortAscending">SortAscending</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts">DataAwsAmiIdsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -876,7 +876,7 @@ Owners *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}.
 
 ---
 
@@ -888,7 +888,7 @@ ExecutableUsers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}.
 
 ---
 
@@ -902,7 +902,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ IncludeDeprecated interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}.
 
 ---
 
@@ -941,7 +941,7 @@ NameRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}.
 
 ---
 
@@ -953,7 +953,7 @@ SortAscending interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}.
 
 ---
 
@@ -967,7 +967,7 @@ Timeouts DataAwsAmiIdsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#timeouts DataAwsAmiIds#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#timeouts DataAwsAmiIds#timeouts}
 
 ---
 
@@ -976,7 +976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsFilter {
 	Name: *string,
@@ -988,8 +988,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}.
 
 ---
 
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 &dataawsamiids.DataAwsAmiIdsTimeouts {
 	Read: *string,
@@ -1033,7 +1033,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAmiIdsFilterList
 ```
@@ -1199,7 +1199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAmiIdsFilterOutputReference
 ```
@@ -1510,7 +1510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsamiids"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsamiids"
 
 dataawsamiids.NewDataAwsAmiIdsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAmiIdsTimeoutsOutputReference
 ```

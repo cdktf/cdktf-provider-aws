@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface TranscribeLanguageModelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}
   */
   readonly baseModelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}
   */
   readonly languageCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}
   */
   readonly modelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * input_data_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#input_data_config TranscribeLanguageModel#input_data_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#input_data_config TranscribeLanguageModel#input_data_config}
   */
   readonly inputDataConfig: TranscribeLanguageModelInputDataConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#timeouts TranscribeLanguageModel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#timeouts TranscribeLanguageModel#timeouts}
   */
   readonly timeouts?: TranscribeLanguageModelTimeouts;
 }
 export interface TranscribeLanguageModelInputDataConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}
   */
   readonly dataAccessRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}
   */
   readonly s3Uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}
   */
   readonly tuningDataS3Uri?: string;
 }
@@ -167,7 +162,7 @@ export class TranscribeLanguageModelInputDataConfigOutputReference extends cdktf
 }
 export interface TranscribeLanguageModelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}
   */
   readonly create?: string;
 }
@@ -242,7 +237,7 @@ export class TranscribeLanguageModelTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model aws_transcribe_language_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model aws_transcribe_language_model}
 */
 export class TranscribeLanguageModel extends cdktf.TerraformResource {
 
@@ -256,7 +251,7 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transcribe_language_model aws_transcribe_language_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +262,7 @@ export class TranscribeLanguageModel extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transcribe_language_model',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

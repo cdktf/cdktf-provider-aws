@@ -1,6 +1,6 @@
 # `data_aws_api_gateway_authorizers`
 
-Refer to the Terraform Registory for docs: [`data_aws_api_gateway_authorizers`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers).
+Refer to the Terraform Registory for docs: [`data_aws_api_gateway_authorizers`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers).
 
 # `dataAwsApiGatewayAuthorizers` Submodule <a name="`dataAwsApiGatewayAuthorizers` Submodule" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_api_gateway_authorizers`](
 
 ### DataAwsApiGatewayAuthorizers <a name="DataAwsApiGatewayAuthorizers" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthorizers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizers"
 
 dataawsapigatewayauthorizers.NewDataAwsApiGatewayAuthorizers(scope Construct, id *string, config DataAwsApiGatewayAuthorizersConfig) DataAwsApiGatewayAuthorizers
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthorizers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizers"
 
 dataawsapigatewayauthorizers.DataAwsApiGatewayAuthorizers_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthorizers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizers"
 
 dataawsapigatewayauthorizers.DataAwsApiGatewayAuthorizers_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsapigatewayauthorizers.DataAwsApiGatewayAuthorizers_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthorizers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizers"
 
 dataawsapigatewayauthorizers.DataAwsApiGatewayAuthorizers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthorizers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsapigatewayauthorizers"
 
 &dataawsapigatewayauthorizers.DataAwsApiGatewayAuthorizersConfig {
 	Connection: interface{},
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsapigatewayauthoriz
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers#rest_api_id DataAwsApiGatewayAuthorizers#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers#id DataAwsApiGatewayAuthorizers#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers#rest_api_id DataAwsApiGatewayAuthorizers#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsApiGatewayAuthorizers.DataAwsApiGatewayAuthorizersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers#id DataAwsApiGatewayAuthorizers#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers#rest_api_id DataAwsApiGatewayAuthorizers#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers#rest_api_id DataAwsApiGatewayAuthorizers#rest_api_id}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_authorizers#id DataAwsApiGatewayAuthorizers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_authorizers#id DataAwsApiGatewayAuthorizers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

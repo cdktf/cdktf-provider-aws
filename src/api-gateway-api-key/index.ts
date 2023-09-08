@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface ApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#customer_id ApiGatewayApiKey#customer_id}
+  */
+  readonly customerId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}
 */
 export class ApiGatewayApiKey extends cdktf.TerraformResource {
 
@@ -60,7 +59,7 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +70,7 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'aws_api_gateway_api_key',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -82,6 +81,7 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._customerId = config.customerId;
     this._description = config.description;
     this._enabled = config.enabled;
     this._id = config.id;
@@ -103,6 +103,22 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
   // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
+  }
+
+  // customer_id - computed: false, optional: true, required: false
+  private _customerId?: string; 
+  public get customerId() {
+    return this.getStringAttribute('customer_id');
+  }
+  public set customerId(value: string) {
+    this._customerId = value;
+  }
+  public resetCustomerId() {
+    this._customerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerIdInput() {
+    return this._customerId;
   }
 
   // description - computed: false, optional: true, required: false
@@ -225,6 +241,7 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      customer_id: cdktf.stringToTerraform(this._customerId),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),

@@ -1,6 +1,6 @@
 # `aws_timestreamwrite_database`
 
-Refer to the Terraform Registory for docs: [`aws_timestreamwrite_database`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database).
+Refer to the Terraform Registory for docs: [`aws_timestreamwrite_database`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database).
 
 # `timestreamwriteDatabase` Submodule <a name="`timestreamwriteDatabase` Submodule" id="@cdktf/provider-aws.timestreamwriteDatabase"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_timestreamwrite_database`](http
 
 ### TimestreamwriteDatabase <a name="TimestreamwriteDatabase" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database aws_timestreamwrite_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database aws_timestreamwrite_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
 
 timestreamwritedatabase.NewTimestreamwriteDatabase(scope Construct, id *string, config TimestreamwriteDatabaseConfig) TimestreamwriteDatabase
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
 
 &timestreamwritedatabase.TimestreamwriteDatabaseConfig {
 	Connection: interface{},
@@ -704,11 +704,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 | <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
-| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}. |
 
 ---
 
@@ -790,7 +790,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#database_name TimestreamwriteDatabase#database_name}.
 
 ---
 
@@ -802,7 +802,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#id TimestreamwriteDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -817,7 +817,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#kms_key_id TimestreamwriteDatabase#kms_key_id}.
 
 ---
 
@@ -829,7 +829,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#tags TimestreamwriteDatabase#tags}.
 
 ---
 
@@ -841,7 +841,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/timestreamwrite_database#tags_all TimestreamwriteDatabase#tags_all}.
 
 ---
 

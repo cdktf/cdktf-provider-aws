@@ -1,6 +1,6 @@
 # `aws_servicecatalog_tag_option`
 
-Refer to the Terraform Registory for docs: [`aws_servicecatalog_tag_option`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option).
+Refer to the Terraform Registory for docs: [`aws_servicecatalog_tag_option`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option).
 
 # `servicecatalogTagOption` Submodule <a name="`servicecatalogTagOption` Submodule" id="@cdktf/provider-aws.servicecatalogTagOption"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_servicecatalog_tag_option`](htt
 
 ### ServicecatalogTagOption <a name="ServicecatalogTagOption" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option aws_servicecatalog_tag_option}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption.Initializer"></a>
 
@@ -699,10 +699,10 @@ new ServicecatalogTagOptionConfig {
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.active">Active</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}. |
 | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts">ServicecatalogTagOptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -785,7 +785,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#key ServicecatalogTagOption#key}.
 
 ---
 
@@ -797,7 +797,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#value ServicecatalogTagOption#value}.
 
 ---
 
@@ -809,7 +809,7 @@ public object Active { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#active ServicecatalogTagOption#active}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#id ServicecatalogTagOption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ public ServicecatalogTagOptionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#timeouts ServicecatalogTagOption#timeouts}
 
 ---
 
@@ -861,10 +861,10 @@ new ServicecatalogTagOptionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}. |
-| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}. |
+| <code><a href="#@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}. |
 
 ---
 
@@ -876,7 +876,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#create ServicecatalogTagOption#create}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#delete ServicecatalogTagOption#delete}.
 
 ---
 
@@ -900,7 +900,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#read ServicecatalogTagOption#read}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/servicecatalog_tag_option#update ServicecatalogTagOption#update}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_route53_resolver_dnssec_config`
 
-Refer to the Terraform Registory for docs: [`aws_route53_resolver_dnssec_config`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config).
+Refer to the Terraform Registory for docs: [`aws_route53_resolver_dnssec_config`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config).
 
 # `route53ResolverDnssecConfig` Submodule <a name="`route53ResolverDnssecConfig` Submodule" id="@cdktf/provider-aws.route53ResolverDnssecConfig"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_route53_resolver_dnssec_config`
 
 ### Route53ResolverDnssecConfig <a name="Route53ResolverDnssecConfig" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.NewRoute53ResolverDnssecConfig(scope Construct, id *string, config Route53ResolverDnssecConfigConfig) Route53ResolverDnssecConfig
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 &route53resolverdnssecconfig.Route53ResolverDnssecConfigConfig {
 	Connection: interface{},
@@ -625,8 +625,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverdnssecconf
 | <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config#resource_id Route53ResolverDnssecConfig#resource_id}. |
-| <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config#id Route53ResolverDnssecConfig#id}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config#resource_id Route53ResolverDnssecConfig#resource_id}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config#id Route53ResolverDnssecConfig#id}. |
 
 ---
 
@@ -708,7 +708,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config#resource_id Route53ResolverDnssecConfig#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config#resource_id Route53ResolverDnssecConfig#resource_id}.
 
 ---
 
@@ -720,7 +720,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53_resolver_dnssec_config#id Route53ResolverDnssecConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/route53_resolver_dnssec_config#id Route53ResolverDnssecConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

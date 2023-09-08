@@ -1,6 +1,6 @@
 # `data_aws_networkmanager_link`
 
-Refer to the Terraform Registory for docs: [`data_aws_networkmanager_link`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link).
+Refer to the Terraform Registory for docs: [`data_aws_networkmanager_link`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link).
 
 # `dataAwsNetworkmanagerLink` Submodule <a name="`dataAwsNetworkmanagerLink` Submodule" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_networkmanager_link`](http
 
 ### DataAwsNetworkmanagerLink <a name="DataAwsNetworkmanagerLink" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link aws_networkmanager_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link aws_networkmanager_link}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLink(scope Construct, id *string, config DataAwsNetworkmanagerLinkConfig) DataAwsNetworkmanagerLink
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.DataAwsNetworkmanagerLink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 &dataawsnetworkmanagerlink.DataAwsNetworkmanagerLinkBandwidth {
 
@@ -674,7 +674,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 &dataawsnetworkmanagerlink.DataAwsNetworkmanagerLinkConfig {
 	Connection: interface{},
@@ -702,10 +702,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.linkId">LinkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.globalNetworkId">GlobalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.linkId">LinkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}. |
 
 ---
 
@@ -787,7 +787,7 @@ GlobalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#global_network_id DataAwsNetworkmanagerLink#global_network_id}.
 
 ---
 
@@ -799,7 +799,7 @@ LinkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#link_id DataAwsNetworkmanagerLink#link_id}.
 
 ---
 
@@ -811,7 +811,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#id DataAwsNetworkmanagerLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/networkmanager_link#tags DataAwsNetworkmanagerLink#tags}.
 
 ---
 
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLinkBandwidthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkmanagerLinkBandwidthList
 ```
@@ -969,7 +969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkmanagerlink"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkmanagerlink"
 
 dataawsnetworkmanagerlink.NewDataAwsNetworkmanagerLinkBandwidthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkmanagerLinkBandwidthOutputReference
 ```

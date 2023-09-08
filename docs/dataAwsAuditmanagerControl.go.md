@@ -1,6 +1,6 @@
 # `data_aws_auditmanager_control`
 
-Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control).
+Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control).
 
 # `dataAwsAuditmanagerControl` Submodule <a name="`dataAwsAuditmanagerControl` Submodule" id="@cdktf/provider-aws.dataAwsAuditmanagerControl"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_auditmanager_control`](htt
 
 ### DataAwsAuditmanagerControl <a name="DataAwsAuditmanagerControl" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControl(scope Construct, id *string, config DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl
 ```
@@ -290,7 +290,7 @@ func ResetControlMappingSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.DataAwsAuditmanagerControl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlConfig {
 	Connection: interface{},
@@ -683,8 +683,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontro
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlConfig.property.controlMappingSources">ControlMappingSources</a></code> | <code>interface{}</code> | control_mapping_sources block. |
 
 ---
@@ -767,7 +767,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#name DataAwsAuditmanagerControl#name}.
 
 ---
 
@@ -779,7 +779,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#type DataAwsAuditmanagerControl#type}.
 
 ---
 
@@ -793,7 +793,7 @@ ControlMappingSources interface{}
 
 control_mapping_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#control_mapping_sources DataAwsAuditmanagerControl#control_mapping_sources}
 
 ---
 
@@ -802,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlControlMappingSources {
 	SourceKeyword: interface{},
@@ -827,7 +827,7 @@ SourceKeyword interface{}
 
 source_keyword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/auditmanager_control#source_keyword DataAwsAuditmanagerControl#source_keyword}
 
 ---
 
@@ -836,7 +836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 &dataawsauditmanagercontrol.DataAwsAuditmanagerControlControlMappingSourcesSourceKeyword {
 
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerControlControlMappingSourcesList
 ```
@@ -994,7 +994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerControlControlMappingSourcesOutputReference
 ```
@@ -1380,7 +1380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList
 ```
@@ -1523,7 +1523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsauditmanagercontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsauditmanagercontrol"
 
 dataawsauditmanagercontrol.NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordOutputReference
 ```

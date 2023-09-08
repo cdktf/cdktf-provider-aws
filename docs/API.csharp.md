@@ -1601,6 +1601,8 @@ The following submodules are available:
 - [sfnActivity](./sfnActivity.csharp.md)
 - [sfnAlias](./sfnAlias.csharp.md)
 - [sfnStateMachine](./sfnStateMachine.csharp.md)
+- [shieldDrtAccessLogBucketAssociation](./shieldDrtAccessLogBucketAssociation.csharp.md)
+- [shieldDrtAccessRoleArnAssociation](./shieldDrtAccessRoleArnAssociation.csharp.md)
 - [shieldProtection](./shieldProtection.csharp.md)
 - [shieldProtectionGroup](./shieldProtectionGroup.csharp.md)
 - [shieldProtectionHealthCheckAssociation](./shieldProtectionHealthCheckAssociation.csharp.md)

@@ -1,6 +1,6 @@
 # `aws_sagemaker_workteam`
 
-Refer to the Terraform Registory for docs: [`aws_sagemaker_workteam`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam).
+Refer to the Terraform Registory for docs: [`aws_sagemaker_workteam`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam).
 
 # `sagemakerWorkteam` Submodule <a name="`sagemakerWorkteam` Submodule" id="@cdktf/provider-aws.sagemakerWorkteam"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_sagemaker_workteam`](https://re
 
 ### SagemakerWorkteam <a name="SagemakerWorkteam" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam aws_sagemaker_workteam}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam aws_sagemaker_workteam}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteam(scope Construct, id *string, config SagemakerWorkteamConfig) SagemakerWorkteam
 ```
@@ -324,7 +324,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ sagemakerworkteam.SagemakerWorkteam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.SagemakerWorkteam_IsTerraformResource(x interface{}) *bool
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
 	WorkforceName: *string,
 	WorkteamName: *string,
 	Id: *string,
-	NotificationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration,
+	NotificationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -799,14 +799,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.memberDefinition">MemberDefinition</a></code> | <code>interface{}</code> | member_definition block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.workforceName">WorkforceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.workteamName">WorkteamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#id SagemakerWorkteam#id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.workforceName">WorkforceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.workteamName">WorkteamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#id SagemakerWorkteam#id}. |
 | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.notificationConfiguration">NotificationConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration">SagemakerWorkteamNotificationConfiguration</a></code> | notification_configuration block. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#tags SagemakerWorkteam#tags}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#tags SagemakerWorkteam#tags}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}. |
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#description SagemakerWorkteam#description}.
 
 ---
 
@@ -902,7 +902,7 @@ MemberDefinition interface{}
 
 member_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#member_definition SagemakerWorkteam#member_definition}
 
 ---
 
@@ -914,7 +914,7 @@ WorkforceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#workforce_name SagemakerWorkteam#workforce_name}.
 
 ---
 
@@ -926,7 +926,7 @@ WorkteamName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#workteam_name SagemakerWorkteam#workteam_name}.
 
 ---
 
@@ -938,7 +938,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#id SagemakerWorkteam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#id SagemakerWorkteam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -955,7 +955,7 @@ NotificationConfiguration SagemakerWorkteamNotificationConfiguration
 
 notification_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#notification_configuration SagemakerWorkteam#notification_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#notification_configuration SagemakerWorkteam#notification_configuration}
 
 ---
 
@@ -967,7 +967,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#tags SagemakerWorkteam#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#tags SagemakerWorkteam#tags}.
 
 ---
 
@@ -979,7 +979,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#tags_all SagemakerWorkteam#tags_all}.
 
 ---
 
@@ -988,11 +988,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinition {
-	CognitoMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition,
-	OidcMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition,
+	CognitoMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition,
+	OidcMemberDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition,
 }
 ```
 
@@ -1015,7 +1015,7 @@ CognitoMemberDefinition SagemakerWorkteamMemberDefinitionCognitoMemberDefinition
 
 cognito_member_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#cognito_member_definition SagemakerWorkteam#cognito_member_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#cognito_member_definition SagemakerWorkteam#cognito_member_definition}
 
 ---
 
@@ -1029,7 +1029,7 @@ OidcMemberDefinition SagemakerWorkteamMemberDefinitionOidcMemberDefinition
 
 oidc_member_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#oidc_member_definition SagemakerWorkteam#oidc_member_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#oidc_member_definition SagemakerWorkteam#oidc_member_definition}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition {
 	ClientId: *string,
@@ -1051,9 +1051,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#client_id SagemakerWorkteam#client_id}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#user_group SagemakerWorkteam#user_group}. |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.userPool">UserPool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#user_pool SagemakerWorkteam#user_pool}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#client_id SagemakerWorkteam#client_id}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#user_group SagemakerWorkteam#user_group}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition.property.userPool">UserPool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#user_pool SagemakerWorkteam#user_pool}. |
 
 ---
 
@@ -1065,7 +1065,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#client_id SagemakerWorkteam#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#client_id SagemakerWorkteam#client_id}.
 
 ---
 
@@ -1077,7 +1077,7 @@ UserGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#user_group SagemakerWorkteam#user_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#user_group SagemakerWorkteam#user_group}.
 
 ---
 
@@ -1089,7 +1089,7 @@ UserPool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#user_pool SagemakerWorkteam#user_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#user_pool SagemakerWorkteam#user_pool}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition {
 	Groups: *[]*string,
@@ -1109,7 +1109,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}. |
 
 ---
 
@@ -1121,7 +1121,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#groups SagemakerWorkteam#groups}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 &sagemakerworkteam.SagemakerWorkteamNotificationConfiguration {
 	NotificationTopicArn: *string,
@@ -1141,7 +1141,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration.property.notificationTopicArn">NotificationTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#notification_topic_arn SagemakerWorkteam#notification_topic_arn}. |
+| <code><a href="#@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration.property.notificationTopicArn">NotificationTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#notification_topic_arn SagemakerWorkteam#notification_topic_arn}. |
 
 ---
 
@@ -1153,7 +1153,7 @@ NotificationTopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_workteam#notification_topic_arn SagemakerWorkteam#notification_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_workteam#notification_topic_arn SagemakerWorkteam#notification_topic_arn}.
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference
 ```
@@ -1479,7 +1479,7 @@ func InternalValue() SagemakerWorkteamMemberDefinitionCognitoMemberDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerWorkteamMemberDefinitionList
 ```
@@ -1622,7 +1622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference
 ```
@@ -1893,7 +1893,7 @@ func InternalValue() SagemakerWorkteamMemberDefinitionOidcMemberDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamMemberDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerWorkteamMemberDefinitionOutputReference
 ```
@@ -2244,7 +2244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakerworkteam"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerworkteam"
 
 sagemakerworkteam.NewSagemakerWorkteamNotificationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerWorkteamNotificationConfigurationOutputReference
 ```

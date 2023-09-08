@@ -1601,6 +1601,8 @@ The following submodules are available:
 - [sfnActivity](./sfnActivity.typescript.md)
 - [sfnAlias](./sfnAlias.typescript.md)
 - [sfnStateMachine](./sfnStateMachine.typescript.md)
+- [shieldDrtAccessLogBucketAssociation](./shieldDrtAccessLogBucketAssociation.typescript.md)
+- [shieldDrtAccessRoleArnAssociation](./shieldDrtAccessRoleArnAssociation.typescript.md)
 - [shieldProtection](./shieldProtection.typescript.md)
 - [shieldProtectionGroup](./shieldProtectionGroup.typescript.md)
 - [shieldProtectionHealthCheckAssociation](./shieldProtectionHealthCheckAssociation.typescript.md)

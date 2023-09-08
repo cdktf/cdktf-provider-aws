@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#delete_reports CodebuildReportGroup#delete_reports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#delete_reports CodebuildReportGroup#delete_reports}
   */
   readonly deleteReports?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#id CodebuildReportGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#id CodebuildReportGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#name CodebuildReportGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#name CodebuildReportGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#tags CodebuildReportGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#tags CodebuildReportGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#tags_all CodebuildReportGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#tags_all CodebuildReportGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#type CodebuildReportGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#type CodebuildReportGroup#type}
   */
   readonly type: string;
   /**
   * export_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#export_config CodebuildReportGroup#export_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#export_config CodebuildReportGroup#export_config}
   */
   readonly exportConfig: CodebuildReportGroupExportConfig;
 }
 export interface CodebuildReportGroupExportConfigS3Destination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#bucket CodebuildReportGroup#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#bucket CodebuildReportGroup#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#encryption_disabled CodebuildReportGroup#encryption_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#encryption_disabled CodebuildReportGroup#encryption_disabled}
   */
   readonly encryptionDisabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#encryption_key CodebuildReportGroup#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#encryption_key CodebuildReportGroup#encryption_key}
   */
   readonly encryptionKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#packaging CodebuildReportGroup#packaging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#packaging CodebuildReportGroup#packaging}
   */
   readonly packaging?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#path CodebuildReportGroup#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#path CodebuildReportGroup#path}
   */
   readonly path?: string;
 }
@@ -215,13 +210,13 @@ export class CodebuildReportGroupExportConfigS3DestinationOutputReference extend
 }
 export interface CodebuildReportGroupExportConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#type CodebuildReportGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#type CodebuildReportGroup#type}
   */
   readonly type: string;
   /**
   * s3_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group#s3_destination CodebuildReportGroup#s3_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group#s3_destination CodebuildReportGroup#s3_destination}
   */
   readonly s3Destination?: CodebuildReportGroupExportConfigS3Destination;
 }
@@ -306,7 +301,7 @@ export class CodebuildReportGroupExportConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group aws_codebuild_report_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group aws_codebuild_report_group}
 */
 export class CodebuildReportGroup extends cdktf.TerraformResource {
 
@@ -320,7 +315,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/codebuild_report_group aws_codebuild_report_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/codebuild_report_group aws_codebuild_report_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -331,7 +326,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_codebuild_report_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

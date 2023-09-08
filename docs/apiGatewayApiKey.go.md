@@ -1,6 +1,6 @@
 # `aws_api_gateway_api_key`
 
-Refer to the Terraform Registory for docs: [`aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key).
+Refer to the Terraform Registory for docs: [`aws_api_gateway_api_key`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key).
 
 # `apiGatewayApiKey` Submodule <a name="`apiGatewayApiKey` Submodule" id="@cdktf/provider-aws.apiGatewayApiKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_api_gateway_api_key`](https://r
 
 ### ApiGatewayApiKey <a name="ApiGatewayApiKey" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.NewApiGatewayApiKey(scope Construct, id *string, config ApiGatewayApiKeyConfig) ApiGatewayApiKey
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetCustomerId">ResetCustomerId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetId">ResetId</a></code> | *No description.* |
@@ -263,6 +264,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetCustomerId` <a name="ResetCustomerId" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetCustomerId"></a>
+
+```go
+func ResetCustomerId()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.resetDescription"></a>
 
 ```go
@@ -312,7 +319,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +365,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -390,6 +397,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.createdDate">CreatedDate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.lastUpdatedDate">LastUpdatedDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.customerIdInput">CustomerIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -397,6 +405,7 @@ apigatewayapikey.ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.customerId">CustomerId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -579,6 +588,16 @@ func LastUpdatedDate() *string
 
 ---
 
+##### `CustomerIdInput`<sup>Optional</sup> <a name="CustomerIdInput" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.customerIdInput"></a>
+
+```go
+func CustomerIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.descriptionInput"></a>
 
 ```go
@@ -643,6 +662,16 @@ func TagsInput() *map[string]*string
 
 ```go
 func ValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CustomerId`<sup>Required</sup> <a name="CustomerId" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey.property.customerId"></a>
+
+```go
+func CustomerId() *string
 ```
 
 - *Type:* *string
@@ -744,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayapikey"
 
 &apigatewayapikey.ApiGatewayApiKeyConfig {
 	Connection: interface{},
@@ -755,6 +784,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	CustomerId: *string,
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
@@ -775,13 +805,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/apigatewayapikey"
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.customerId">CustomerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#customer_id ApiGatewayApiKey#customer_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}. |
 
 ---
 
@@ -863,7 +894,19 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#name ApiGatewayApiKey#name}.
+
+---
+
+##### `CustomerId`<sup>Optional</sup> <a name="CustomerId" id="@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKeyConfig.property.customerId"></a>
+
+```go
+CustomerId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#customer_id ApiGatewayApiKey#customer_id}.
 
 ---
 
@@ -875,7 +918,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#description ApiGatewayApiKey#description}.
 
 ---
 
@@ -887,7 +930,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#enabled ApiGatewayApiKey#enabled}.
 
 ---
 
@@ -899,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#id ApiGatewayApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -914,7 +957,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags ApiGatewayApiKey#tags}.
 
 ---
 
@@ -926,7 +969,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#tags_all ApiGatewayApiKey#tags_all}.
 
 ---
 
@@ -938,7 +981,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key#value ApiGatewayApiKey#value}.
 
 ---
 
