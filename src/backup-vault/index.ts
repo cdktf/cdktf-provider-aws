@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface BackupVaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#force_destroy BackupVault#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#id BackupVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#id BackupVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#kms_key_arn BackupVault#kms_key_arn}
   */
   readonly kmsKeyArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#name BackupVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#name BackupVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#tags BackupVault#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#tags BackupVault#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#tags_all BackupVault#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#tags_all BackupVault#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#timeouts BackupVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#timeouts BackupVault#timeouts}
   */
   readonly timeouts?: BackupVaultTimeouts;
 }
 export interface BackupVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault#delete BackupVault#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault#delete BackupVault#delete}
   */
   readonly delete?: string;
 }
@@ -123,7 +123,7 @@ export class BackupVaultTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault aws_backup_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault aws_backup_vault}
 */
 export class BackupVault extends cdktf.TerraformResource {
 
@@ -137,7 +137,7 @@ export class BackupVault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/backup_vault aws_backup_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/backup_vault aws_backup_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +148,7 @@ export class BackupVault extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_vault',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

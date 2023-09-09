@@ -1,6 +1,6 @@
 # `aws_ram_sharing_with_organization`
 
-Refer to the Terraform Registory for docs: [`aws_ram_sharing_with_organization`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization).
+Refer to the Terraform Registory for docs: [`aws_ram_sharing_with_organization`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization).
 
 # `ramSharingWithOrganization` Submodule <a name="`ramSharingWithOrganization` Submodule" id="@cdktf/provider-aws.ramSharingWithOrganization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ram_sharing_with_organization`]
 
 ### RamSharingWithOrganization <a name="RamSharingWithOrganization" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization aws_ram_sharing_with_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer"></a>
 
@@ -40,7 +40,7 @@ ramSharingWithOrganization.RamSharingWithOrganization(
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -665,7 +665,7 @@ ramSharingWithOrganization.RamSharingWithOrganizationConfig(
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ram_sharing_with_organization#id RamSharingWithOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

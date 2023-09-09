@@ -1,6 +1,6 @@
 # `aws_lb_listener_rule`
 
-Refer to the Terraform Registory for docs: [`aws_lb_listener_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule).
+Refer to the Terraform Registory for docs: [`aws_lb_listener_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule).
 
 # `lbListenerRule` Submodule <a name="`lbListenerRule` Submodule" id="@cdktf/provider-aws.lbListenerRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lb_listener_rule`](https://regi
 
 ### LbListenerRule <a name="LbListenerRule" id="@cdktf/provider-aws.lbListenerRule.LbListenerRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule aws_lb_listener_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule aws_lb_listener_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lbListenerRule.LbListenerRule.Initializer"></a>
 
@@ -752,14 +752,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#type LbListenerRule#type}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#type LbListenerRule#type}. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.authenticateCognito">AuthenticateCognito</a></code> | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito">LbListenerRuleActionAuthenticateCognito</a></code> | authenticate_cognito block. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.authenticateOidc">AuthenticateOidc</a></code> | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc">LbListenerRuleActionAuthenticateOidc</a></code> | authenticate_oidc block. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.fixedResponse">FixedResponse</a></code> | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse">LbListenerRuleActionFixedResponse</a></code> | fixed_response block. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.forward">Forward</a></code> | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForward">LbListenerRuleActionForward</a></code> | forward block. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#order LbListenerRule#order}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#order LbListenerRule#order}. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.redirect">Redirect</a></code> | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect">LbListenerRuleActionRedirect</a></code> | redirect block. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#target_group_arn LbListenerRule#target_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleAction.property.targetGroupArn">TargetGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#target_group_arn LbListenerRule#target_group_arn}. |
 
 ---
 
@@ -771,7 +771,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#type LbListenerRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#type LbListenerRule#type}.
 
 ---
 
@@ -785,7 +785,7 @@ AuthenticateCognito LbListenerRuleActionAuthenticateCognito
 
 authenticate_cognito block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authenticate_cognito LbListenerRule#authenticate_cognito}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authenticate_cognito LbListenerRule#authenticate_cognito}
 
 ---
 
@@ -799,7 +799,7 @@ AuthenticateOidc LbListenerRuleActionAuthenticateOidc
 
 authenticate_oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authenticate_oidc LbListenerRule#authenticate_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authenticate_oidc LbListenerRule#authenticate_oidc}
 
 ---
 
@@ -813,7 +813,7 @@ FixedResponse LbListenerRuleActionFixedResponse
 
 fixed_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#fixed_response LbListenerRule#fixed_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#fixed_response LbListenerRule#fixed_response}
 
 ---
 
@@ -827,7 +827,7 @@ Forward LbListenerRuleActionForward
 
 forward block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#forward LbListenerRule#forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#forward LbListenerRule#forward}
 
 ---
 
@@ -839,7 +839,7 @@ Order *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#order LbListenerRule#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#order LbListenerRule#order}.
 
 ---
 
@@ -853,7 +853,7 @@ Redirect LbListenerRuleActionRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#redirect LbListenerRule#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#redirect LbListenerRule#redirect}
 
 ---
 
@@ -865,7 +865,7 @@ TargetGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#target_group_arn LbListenerRule#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#target_group_arn LbListenerRule#target_group_arn}.
 
 ---
 
@@ -892,14 +892,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolArn">UserPoolArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_arn LbListenerRule#user_pool_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolClientId">UserPoolClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_client_id LbListenerRule#user_pool_client_id}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolDomain">UserPoolDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_domain LbListenerRule#user_pool_domain}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#scope LbListenerRule#scope}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolArn">UserPoolArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_arn LbListenerRule#user_pool_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolClientId">UserPoolClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_client_id LbListenerRule#user_pool_client_id}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.userPoolDomain">UserPoolDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_domain LbListenerRule#user_pool_domain}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#scope LbListenerRule#scope}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateCognito.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}. |
 
 ---
 
@@ -911,7 +911,7 @@ UserPoolArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_arn LbListenerRule#user_pool_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_arn LbListenerRule#user_pool_arn}.
 
 ---
 
@@ -923,7 +923,7 @@ UserPoolClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_client_id LbListenerRule#user_pool_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_client_id LbListenerRule#user_pool_client_id}.
 
 ---
 
@@ -935,7 +935,7 @@ UserPoolDomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_pool_domain LbListenerRule#user_pool_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_pool_domain LbListenerRule#user_pool_domain}.
 
 ---
 
@@ -947,7 +947,7 @@ AuthenticationRequestExtraParams *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}.
 
 ---
 
@@ -959,7 +959,7 @@ OnUnauthenticatedRequest *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}.
 
 ---
 
@@ -971,7 +971,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#scope LbListenerRule#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#scope LbListenerRule#scope}.
 
 ---
 
@@ -983,7 +983,7 @@ SessionCookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}.
 
 ---
 
@@ -995,7 +995,7 @@ SessionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}.
 
 ---
 
@@ -1025,17 +1025,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authorization_endpoint LbListenerRule#authorization_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#client_id LbListenerRule#client_id}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#client_secret LbListenerRule#client_secret}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#issuer LbListenerRule#issuer}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#token_endpoint LbListenerRule#token_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_info_endpoint LbListenerRule#user_info_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#scope LbListenerRule#scope}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authorization_endpoint LbListenerRule#authorization_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#client_id LbListenerRule#client_id}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#client_secret LbListenerRule#client_secret}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#issuer LbListenerRule#issuer}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.tokenEndpoint">TokenEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#token_endpoint LbListenerRule#token_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.userInfoEndpoint">UserInfoEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_info_endpoint LbListenerRule#user_info_endpoint}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.authenticationRequestExtraParams">AuthenticationRequestExtraParams</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.onUnauthenticatedRequest">OnUnauthenticatedRequest</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#scope LbListenerRule#scope}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.sessionCookieName">SessionCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionAuthenticateOidc.property.sessionTimeout">SessionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}. |
 
 ---
 
@@ -1047,7 +1047,7 @@ AuthorizationEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authorization_endpoint LbListenerRule#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authorization_endpoint LbListenerRule#authorization_endpoint}.
 
 ---
 
@@ -1059,7 +1059,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#client_id LbListenerRule#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#client_id LbListenerRule#client_id}.
 
 ---
 
@@ -1071,7 +1071,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#client_secret LbListenerRule#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#client_secret LbListenerRule#client_secret}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Issuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#issuer LbListenerRule#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#issuer LbListenerRule#issuer}.
 
 ---
 
@@ -1095,7 +1095,7 @@ TokenEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#token_endpoint LbListenerRule#token_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#token_endpoint LbListenerRule#token_endpoint}.
 
 ---
 
@@ -1107,7 +1107,7 @@ UserInfoEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#user_info_endpoint LbListenerRule#user_info_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#user_info_endpoint LbListenerRule#user_info_endpoint}.
 
 ---
 
@@ -1119,7 +1119,7 @@ AuthenticationRequestExtraParams *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#authentication_request_extra_params LbListenerRule#authentication_request_extra_params}.
 
 ---
 
@@ -1131,7 +1131,7 @@ OnUnauthenticatedRequest *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#on_unauthenticated_request LbListenerRule#on_unauthenticated_request}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#scope LbListenerRule#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#scope LbListenerRule#scope}.
 
 ---
 
@@ -1155,7 +1155,7 @@ SessionCookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_cookie_name LbListenerRule#session_cookie_name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ SessionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#session_timeout LbListenerRule#session_timeout}.
 
 ---
 
@@ -1189,9 +1189,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#content_type LbListenerRule#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.messageBody">MessageBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#message_body LbListenerRule#message_body}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#content_type LbListenerRule#content_type}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.messageBody">MessageBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#message_body LbListenerRule#message_body}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionFixedResponse.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}. |
 
 ---
 
@@ -1203,7 +1203,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#content_type LbListenerRule#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#content_type LbListenerRule#content_type}.
 
 ---
 
@@ -1215,7 +1215,7 @@ MessageBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#message_body LbListenerRule#message_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#message_body LbListenerRule#message_body}.
 
 ---
 
@@ -1227,7 +1227,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}.
 
 ---
 
@@ -1263,7 +1263,7 @@ TargetGroup interface{}
 
 target_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#target_group LbListenerRule#target_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#target_group LbListenerRule#target_group}
 
 ---
 
@@ -1277,7 +1277,7 @@ Stickiness LbListenerRuleActionForwardStickiness
 
 stickiness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#stickiness LbListenerRule#stickiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#stickiness LbListenerRule#stickiness}
 
 ---
 
@@ -1298,8 +1298,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#duration LbListenerRule#duration}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.duration">Duration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#duration LbListenerRule#duration}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardStickiness.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}. |
 
 ---
 
@@ -1311,7 +1311,7 @@ Duration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#duration LbListenerRule#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#duration LbListenerRule#duration}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#enabled LbListenerRule#enabled}.
 
 ---
 
@@ -1344,8 +1344,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#arn LbListenerRule#arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#weight LbListenerRule#weight}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#arn LbListenerRule#arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionForwardTargetGroup.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#weight LbListenerRule#weight}. |
 
 ---
 
@@ -1357,7 +1357,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#arn LbListenerRule#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#arn LbListenerRule#arn}.
 
 ---
 
@@ -1369,7 +1369,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#weight LbListenerRule#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#weight LbListenerRule#weight}.
 
 ---
 
@@ -1394,12 +1394,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#host LbListenerRule#host}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#path LbListenerRule#path}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.port">Port</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#port LbListenerRule#port}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#protocol LbListenerRule#protocol}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#query LbListenerRule#query}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#host LbListenerRule#host}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#path LbListenerRule#path}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.port">Port</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#port LbListenerRule#port}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#protocol LbListenerRule#protocol}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirect.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#query LbListenerRule#query}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#status_code LbListenerRule#status_code}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#host LbListenerRule#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#host LbListenerRule#host}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#path LbListenerRule#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#path LbListenerRule#path}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Port *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#port LbListenerRule#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#port LbListenerRule#port}.
 
 ---
 
@@ -1459,7 +1459,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#protocol LbListenerRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#protocol LbListenerRule#protocol}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#query LbListenerRule#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#query LbListenerRule#query}.
 
 ---
 
@@ -1515,7 +1515,7 @@ HostHeader LbListenerRuleConditionHostHeader
 
 host_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#host_header LbListenerRule#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#host_header LbListenerRule#host_header}
 
 ---
 
@@ -1529,7 +1529,7 @@ HttpHeader LbListenerRuleConditionHttpHeader
 
 http_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#http_header LbListenerRule#http_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#http_header LbListenerRule#http_header}
 
 ---
 
@@ -1543,7 +1543,7 @@ HttpRequestMethod LbListenerRuleConditionHttpRequestMethod
 
 http_request_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#http_request_method LbListenerRule#http_request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#http_request_method LbListenerRule#http_request_method}
 
 ---
 
@@ -1557,7 +1557,7 @@ PathPattern LbListenerRuleConditionPathPattern
 
 path_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#path_pattern LbListenerRule#path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#path_pattern LbListenerRule#path_pattern}
 
 ---
 
@@ -1571,7 +1571,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#query_string LbListenerRule#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#query_string LbListenerRule#query_string}
 
 ---
 
@@ -1585,7 +1585,7 @@ SourceIp LbListenerRuleConditionSourceIp
 
 source_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#source_ip LbListenerRule#source_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#source_ip LbListenerRule#source_ip}
 
 ---
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHostHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 
 ---
 
@@ -1638,8 +1638,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader.property.httpHeaderName">HttpHeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader.property.httpHeaderName">HttpHeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
 
 ---
 
@@ -1651,7 +1651,7 @@ HttpHeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#http_header_name LbListenerRule#http_header_name}.
 
 ---
 
@@ -1663,7 +1663,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 
 ---
 
@@ -1683,7 +1683,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
 
 ---
 
@@ -1695,7 +1695,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 
 ---
 
@@ -1715,7 +1715,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPattern.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPattern.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
 
 ---
 
@@ -1727,7 +1727,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 
 ---
 
@@ -1748,8 +1748,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#value LbListenerRule#value}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#key LbListenerRule#key}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#value LbListenerRule#value}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#key LbListenerRule#key}. |
 
 ---
 
@@ -1761,7 +1761,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#value LbListenerRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#value LbListenerRule#value}.
 
 ---
 
@@ -1773,7 +1773,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#key LbListenerRule#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#key LbListenerRule#key}.
 
 ---
 
@@ -1793,7 +1793,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIp.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionSourceIp.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}. |
 
 ---
 
@@ -1805,7 +1805,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#values LbListenerRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#values LbListenerRule#values}.
 
 ---
 
@@ -1847,11 +1847,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lblistenerrule"
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
 | <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#id LbListenerRule#id}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#priority LbListenerRule#priority}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#tags LbListenerRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#id LbListenerRule#id}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#priority LbListenerRule#priority}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#tags LbListenerRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.lbListenerRule.LbListenerRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}. |
 
 ---
 
@@ -1935,7 +1935,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#action LbListenerRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#action LbListenerRule#action}
 
 ---
 
@@ -1949,7 +1949,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#condition LbListenerRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#condition LbListenerRule#condition}
 
 ---
 
@@ -1961,7 +1961,7 @@ ListenerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#listener_arn LbListenerRule#listener_arn}.
 
 ---
 
@@ -1973,7 +1973,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#id LbListenerRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#id LbListenerRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1988,7 +1988,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#priority LbListenerRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#priority LbListenerRule#priority}.
 
 ---
 
@@ -2000,7 +2000,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#tags LbListenerRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#tags LbListenerRule#tags}.
 
 ---
 
@@ -2012,7 +2012,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lb_listener_rule#tags_all LbListenerRule#tags_all}.
 
 ---
 

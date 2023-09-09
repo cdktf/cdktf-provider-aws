@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface CeAnomalySubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#account_id CeAnomalySubscription#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#account_id CeAnomalySubscription#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#frequency CeAnomalySubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#frequency CeAnomalySubscription#frequency}
   */
   readonly frequency: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#id CeAnomalySubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#id CeAnomalySubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#monitor_arn_list CeAnomalySubscription#monitor_arn_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#monitor_arn_list CeAnomalySubscription#monitor_arn_list}
   */
   readonly monitorArnList: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#name CeAnomalySubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#name CeAnomalySubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags_all CeAnomalySubscription#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags_all CeAnomalySubscription#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * subscriber block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#subscriber CeAnomalySubscription#subscriber}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#subscriber CeAnomalySubscription#subscriber}
   */
   readonly subscriber: CeAnomalySubscriptionSubscriber[] | cdktf.IResolvable;
   /**
   * threshold_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#threshold_expression CeAnomalySubscription#threshold_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#threshold_expression CeAnomalySubscription#threshold_expression}
   */
   readonly thresholdExpression?: CeAnomalySubscriptionThresholdExpression;
 }
 export interface CeAnomalySubscriptionSubscriber {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#address CeAnomalySubscription#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#address CeAnomalySubscription#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#type CeAnomalySubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#type CeAnomalySubscription#type}
   */
   readonly type: string;
 }
@@ -176,15 +176,15 @@ export class CeAnomalySubscriptionSubscriberList extends cdktf.ComplexList {
 }
 export interface CeAnomalySubscriptionThresholdExpressionAndCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -295,15 +295,15 @@ export class CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputRefere
 }
 export interface CeAnomalySubscriptionThresholdExpressionAndDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -414,15 +414,15 @@ export class CeAnomalySubscriptionThresholdExpressionAndDimensionOutputReference
 }
 export interface CeAnomalySubscriptionThresholdExpressionAndTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -535,19 +535,19 @@ export interface CeAnomalySubscriptionThresholdExpressionAnd {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionAndCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionAndDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionAndTags;
 }
@@ -690,15 +690,15 @@ export class CeAnomalySubscriptionThresholdExpressionAndList extends cdktf.Compl
 }
 export interface CeAnomalySubscriptionThresholdExpressionCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -809,15 +809,15 @@ export class CeAnomalySubscriptionThresholdExpressionCostCategoryOutputReference
 }
 export interface CeAnomalySubscriptionThresholdExpressionDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -928,15 +928,15 @@ export class CeAnomalySubscriptionThresholdExpressionDimensionOutputReference ex
 }
 export interface CeAnomalySubscriptionThresholdExpressionNotCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1047,15 +1047,15 @@ export class CeAnomalySubscriptionThresholdExpressionNotCostCategoryOutputRefere
 }
 export interface CeAnomalySubscriptionThresholdExpressionNotDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1166,15 +1166,15 @@ export class CeAnomalySubscriptionThresholdExpressionNotDimensionOutputReference
 }
 export interface CeAnomalySubscriptionThresholdExpressionNotTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1287,19 +1287,19 @@ export interface CeAnomalySubscriptionThresholdExpressionNot {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionNotCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionNotDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionNotTags;
 }
@@ -1410,15 +1410,15 @@ export class CeAnomalySubscriptionThresholdExpressionNotOutputReference extends 
 }
 export interface CeAnomalySubscriptionThresholdExpressionOrCostCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1529,15 +1529,15 @@ export class CeAnomalySubscriptionThresholdExpressionOrCostCategoryOutputReferen
 }
 export interface CeAnomalySubscriptionThresholdExpressionOrDimension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1648,15 +1648,15 @@ export class CeAnomalySubscriptionThresholdExpressionOrDimensionOutputReference 
 }
 export interface CeAnomalySubscriptionThresholdExpressionOrTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -1769,19 +1769,19 @@ export interface CeAnomalySubscriptionThresholdExpressionOr {
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionOrCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionOrDimension;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionOrTags;
 }
@@ -1924,15 +1924,15 @@ export class CeAnomalySubscriptionThresholdExpressionOrList extends cdktf.Comple
 }
 export interface CeAnomalySubscriptionThresholdExpressionTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#key CeAnomalySubscription#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#match_options CeAnomalySubscription#match_options}
   */
   readonly matchOptions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#values CeAnomalySubscription#values}
   */
   readonly values?: string[];
 }
@@ -2045,37 +2045,37 @@ export interface CeAnomalySubscriptionThresholdExpression {
   /**
   * and block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#and CeAnomalySubscription#and}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#and CeAnomalySubscription#and}
   */
   readonly and?: CeAnomalySubscriptionThresholdExpressionAnd[] | cdktf.IResolvable;
   /**
   * cost_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#cost_category CeAnomalySubscription#cost_category}
   */
   readonly costCategory?: CeAnomalySubscriptionThresholdExpressionCostCategory;
   /**
   * dimension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#dimension CeAnomalySubscription#dimension}
   */
   readonly dimension?: CeAnomalySubscriptionThresholdExpressionDimension;
   /**
   * not block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#not CeAnomalySubscription#not}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#not CeAnomalySubscription#not}
   */
   readonly not?: CeAnomalySubscriptionThresholdExpressionNot;
   /**
   * or block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#or CeAnomalySubscription#or}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#or CeAnomalySubscription#or}
   */
   readonly or?: CeAnomalySubscriptionThresholdExpressionOr[] | cdktf.IResolvable;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription#tags CeAnomalySubscription#tags}
   */
   readonly tags?: CeAnomalySubscriptionThresholdExpressionTags;
 }
@@ -2255,7 +2255,7 @@ export class CeAnomalySubscriptionThresholdExpressionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}
 */
 export class CeAnomalySubscription extends cdktf.TerraformResource {
 
@@ -2269,7 +2269,7 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2280,7 +2280,7 @@ export class CeAnomalySubscription extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ce_anomaly_subscription',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

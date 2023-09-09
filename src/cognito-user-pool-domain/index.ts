@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain#certificate_arn CognitoUserPoolDomain#certificate_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain#certificate_arn CognitoUserPoolDomain#certificate_arn}
   */
   readonly certificateArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain#domain CognitoUserPoolDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain#domain CognitoUserPoolDomain#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain#id CognitoUserPoolDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain#id CognitoUserPoolDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain#user_pool_id CognitoUserPoolDomain#user_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain#user_pool_id CognitoUserPoolDomain#user_pool_id}
   */
   readonly userPoolId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}
 */
 export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cognito_user_pool_domain',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface OamSinkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#id OamSink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#id OamSink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#name OamSink#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#name OamSink#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags OamSink#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#tags OamSink#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#tags_all OamSink#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#tags_all OamSink#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#timeouts OamSink#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#timeouts OamSink#timeouts}
   */
   readonly timeouts?: OamSinkTimeouts;
 }
 export interface OamSinkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#create OamSink#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#create OamSink#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#delete OamSink#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#delete OamSink#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink#update OamSink#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink#update OamSink#update}
   */
   readonly update?: string;
 }
@@ -169,7 +169,7 @@ export class OamSinkTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink aws_oam_sink}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink aws_oam_sink}
 */
 export class OamSink extends cdktf.TerraformResource {
 
@@ -183,7 +183,7 @@ export class OamSink extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/oam_sink aws_oam_sink} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/oam_sink aws_oam_sink} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,7 +194,7 @@ export class OamSink extends cdktf.TerraformResource {
       terraformResourceType: 'aws_oam_sink',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

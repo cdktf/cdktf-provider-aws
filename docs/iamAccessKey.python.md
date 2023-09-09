@@ -1,6 +1,6 @@
 # `aws_iam_access_key`
 
-Refer to the Terraform Registory for docs: [`aws_iam_access_key`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key).
+Refer to the Terraform Registory for docs: [`aws_iam_access_key`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key).
 
 # `iamAccessKey` Submodule <a name="`iamAccessKey` Submodule" id="@cdktf/provider-aws.iamAccessKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_iam_access_key`](https://regist
 
 ### IamAccessKey <a name="IamAccessKey" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key aws_iam_access_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key aws_iam_access_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer"></a>
 
@@ -43,10 +43,10 @@ iamAccessKey.IamAccessKey(
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#user IamAccessKey#user}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#id IamAccessKey#id}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.pgpKey">pgp_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#status IamAccessKey#status}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#user IamAccessKey#user}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#id IamAccessKey#id}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.pgpKey">pgp_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKey.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#status IamAccessKey#status}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#user IamAccessKey#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#user IamAccessKey#user}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#id IamAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#id IamAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#status IamAccessKey#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#status IamAccessKey#status}.
 
 ---
 
@@ -844,10 +844,10 @@ iamAccessKey.IamAccessKeyConfig(
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#user IamAccessKey#user}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#id IamAccessKey#id}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.pgpKey">pgp_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}. |
-| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#status IamAccessKey#status}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.user">user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#user IamAccessKey#user}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#id IamAccessKey#id}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.pgpKey">pgp_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}. |
+| <code><a href="#@cdktf/provider-aws.iamAccessKey.IamAccessKeyConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#status IamAccessKey#status}. |
 
 ---
 
@@ -929,7 +929,7 @@ user: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#user IamAccessKey#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#user IamAccessKey#user}.
 
 ---
 
@@ -941,7 +941,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#id IamAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#id IamAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -956,7 +956,7 @@ pgp_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#pgp_key IamAccessKey#pgp_key}.
 
 ---
 
@@ -968,7 +968,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_access_key#status IamAccessKey#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_access_key#status IamAccessKey#status}.
 
 ---
 

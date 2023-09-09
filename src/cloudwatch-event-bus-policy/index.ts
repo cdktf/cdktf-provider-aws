@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventBusPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy#event_bus_name CloudwatchEventBusPolicy#event_bus_name}
   */
   readonly eventBusName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy#id CloudwatchEventBusPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy#policy CloudwatchEventBusPolicy#policy}
   */
   readonly policy: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy}
 */
 export class CloudwatchEventBusPolicy extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class CloudwatchEventBusPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/cloudwatch_event_bus_policy aws_cloudwatch_event_bus_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class CloudwatchEventBusPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_bus_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
