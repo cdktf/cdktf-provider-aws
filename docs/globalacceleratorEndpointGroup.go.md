@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroup(scope Construct, id *string, config GlobalacceleratorEndpointGroupConfig) GlobalacceleratorEndpointGroup
 ```
@@ -386,7 +386,7 @@ func ResetTrafficDialPercentage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.GlobalacceleratorEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.GlobalacceleratorEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ globalacceleratorendpointgroup.GlobalacceleratorEndpointGroup_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.GlobalacceleratorEndpointGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 &globalacceleratorendpointgroup.GlobalacceleratorEndpointGroupConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgrou
 	Id: *string,
 	PortOverride: interface{},
 	ThresholdCount: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts,
 	TrafficDialPercentage: *f64,
 }
 ```
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 &globalacceleratorendpointgroup.GlobalacceleratorEndpointGroupEndpointConfiguration {
 	ClientIpPreservationEnabled: interface{},
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 &globalacceleratorendpointgroup.GlobalacceleratorEndpointGroupPortOverride {
 	EndpointPort: *f64,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 &globalacceleratorendpointgroup.GlobalacceleratorEndpointGroupTimeouts {
 	Create: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroupEndpointConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalacceleratorEndpointGroupEndpointConfigurationList
 ```
@@ -1496,7 +1496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroupEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference
 ```
@@ -1850,7 +1850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroupPortOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalacceleratorEndpointGroupPortOverrideList
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroupPortOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalacceleratorEndpointGroupPortOverrideOutputReference
 ```
@@ -2304,7 +2304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/globalacceleratorendpointgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/globalacceleratorendpointgroup"
 
 globalacceleratorendpointgroup.NewGlobalacceleratorEndpointGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalacceleratorEndpointGroupTimeoutsOutputReference
 ```
