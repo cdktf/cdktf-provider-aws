@@ -1,3 +1,3 @@
 # `aws_neptune_event_subscription`
 
-Refer to the Terraform Registory for docs: [`aws_neptune_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/neptune_event_subscription).
+Refer to the Terraform Registory for docs: [`aws_neptune_event_subscription`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/neptune_event_subscription).

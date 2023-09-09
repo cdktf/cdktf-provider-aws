@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface EfsBackupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy#file_system_id EfsBackupPolicy#file_system_id}
   */
   readonly fileSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy#id EfsBackupPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,13 +21,13 @@ export interface EfsBackupPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * backup_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy#backup_policy EfsBackupPolicy#backup_policy}
   */
   readonly backupPolicy: EfsBackupPolicyBackupPolicy;
 }
 export interface EfsBackupPolicyBackupPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy#status EfsBackupPolicy#status}
   */
   readonly status: string;
 }
@@ -94,7 +89,7 @@ export class EfsBackupPolicyBackupPolicyOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy aws_efs_backup_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy aws_efs_backup_policy}
 */
 export class EfsBackupPolicy extends cdktf.TerraformResource {
 
@@ -108,7 +103,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/efs_backup_policy aws_efs_backup_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/efs_backup_policy aws_efs_backup_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -119,7 +114,7 @@ export class EfsBackupPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_efs_backup_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

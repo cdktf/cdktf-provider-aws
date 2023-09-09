@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface DirectoryServiceTrustConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}
   */
   readonly conditionalForwarderIpAddrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}
   */
   readonly deleteAssociatedConditionalForwarder?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}
   */
   readonly directoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}
   */
   readonly remoteDomainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}
   */
   readonly selectiveAuth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}
   */
   readonly trustDirection: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}
   */
   readonly trustPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}
   */
   readonly trustType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust aws_directory_service_trust}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust aws_directory_service_trust}
 */
 export class DirectoryServiceTrust extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/directory_service_trust aws_directory_service_trust} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class DirectoryServiceTrust extends cdktf.TerraformResource {
       terraformResourceType: 'aws_directory_service_trust',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.0',
+        providerVersion: '5.16.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
