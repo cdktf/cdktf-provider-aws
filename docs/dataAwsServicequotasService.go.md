@@ -1,6 +1,6 @@
 # `data_aws_servicequotas_service`
 
-Refer to the Terraform Registory for docs: [`data_aws_servicequotas_service`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service).
+Refer to the Terraform Registory for docs: [`data_aws_servicequotas_service`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service).
 
 # `dataAwsServicequotasService` Submodule <a name="`dataAwsServicequotasService` Submodule" id="@cdktf/provider-aws.dataAwsServicequotasService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_servicequotas_service`](ht
 
 ### DataAwsServicequotasService <a name="DataAwsServicequotasService" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service aws_servicequotas_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service aws_servicequotas_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasService.Initializer"></a>
 
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsservicequotasservi
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsServicequotasService.DataAwsServicequotasServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service#service_name DataAwsServicequotasService#service_name}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/servicequotas_service#id DataAwsServicequotasService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

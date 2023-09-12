@@ -1,6 +1,6 @@
 # `aws_route53_query_log`
 
-Refer to the Terraform Registory for docs: [`aws_route53_query_log`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log).
+Refer to the Terraform Registory for docs: [`aws_route53_query_log`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log).
 
 # `route53QueryLog` Submodule <a name="`route53QueryLog` Submodule" id="@cdktf/provider-aws.route53QueryLog"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_route53_query_log`](https://reg
 
 ### Route53QueryLog <a name="Route53QueryLog" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log aws_route53_query_log}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log aws_route53_query_log}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.Initializer"></a>
 
@@ -626,9 +626,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53querylog"
 | <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.cloudwatchLogGroupArn">CloudwatchLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#cloudwatch_log_group_arn Route53QueryLog#cloudwatch_log_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#zone_id Route53QueryLog#zone_id}. |
-| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#id Route53QueryLog#id}. |
+| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.cloudwatchLogGroupArn">CloudwatchLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#cloudwatch_log_group_arn Route53QueryLog#cloudwatch_log_group_arn}. |
+| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#zone_id Route53QueryLog#zone_id}. |
+| <code><a href="#@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#id Route53QueryLog#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ CloudwatchLogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#cloudwatch_log_group_arn Route53QueryLog#cloudwatch_log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#cloudwatch_log_group_arn Route53QueryLog#cloudwatch_log_group_arn}.
 
 ---
 
@@ -722,7 +722,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#zone_id Route53QueryLog#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#zone_id Route53QueryLog#zone_id}.
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_query_log#id Route53QueryLog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_query_log#id Route53QueryLog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1168,6 +1168,7 @@ Object.defineProperty(exports, 'transferSshKey', { get: function () { return req
 Object.defineProperty(exports, 'transferTag', { get: function () { return require('./transfer-tag'); } });
 Object.defineProperty(exports, 'transferUser', { get: function () { return require('./transfer-user'); } });
 Object.defineProperty(exports, 'transferWorkflow', { get: function () { return require('./transfer-workflow'); } });
+Object.defineProperty(exports, 'verifiedaccessTrustProvider', { get: function () { return require('./verifiedaccess-trust-provider'); } });
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
 Object.defineProperty(exports, 'vpc', { get: function () { return require('./vpc'); } });
 Object.defineProperty(exports, 'vpcDhcpOptions', { get: function () { return require('./vpc-dhcp-options'); } });
@@ -1334,6 +1335,7 @@ Object.defineProperty(exports, 'dataAwsCodecatalystDevEnvironment', { get: funct
 Object.defineProperty(exports, 'dataAwsCodecommitApprovalRuleTemplate', { get: function () { return require('./data-aws-codecommit-approval-rule-template'); } });
 Object.defineProperty(exports, 'dataAwsCodecommitRepository', { get: function () { return require('./data-aws-codecommit-repository'); } });
 Object.defineProperty(exports, 'dataAwsCodestarconnectionsConnection', { get: function () { return require('./data-aws-codestarconnections-connection'); } });
+Object.defineProperty(exports, 'dataAwsCognitoIdentityPool', { get: function () { return require('./data-aws-cognito-identity-pool'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClient', { get: function () { return require('./data-aws-cognito-user-pool-client'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolClients', { get: function () { return require('./data-aws-cognito-user-pool-clients'); } });
 Object.defineProperty(exports, 'dataAwsCognitoUserPoolSigningCertificate', { get: function () { return require('./data-aws-cognito-user-pool-signing-certificate'); } });
