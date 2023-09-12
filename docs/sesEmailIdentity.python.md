@@ -1,6 +1,6 @@
 # `aws_ses_email_identity`
 
-Refer to the Terraform Registory for docs: [`aws_ses_email_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity).
+Refer to the Terraform Registory for docs: [`aws_ses_email_identity`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity).
 
 # `sesEmailIdentity` Submodule <a name="`sesEmailIdentity` Submodule" id="@cdktf/provider-aws.sesEmailIdentity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_email_identity`](https://re
 
 ### SesEmailIdentity <a name="SesEmailIdentity" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity aws_ses_email_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity aws_ses_email_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer"></a>
 
@@ -41,8 +41,8 @@ sesEmailIdentity.SesEmailIdentity(
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -709,8 +709,8 @@ sesEmailIdentity.SesEmailIdentityConfig(
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
-| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#email SesEmailIdentity#email}. |
+| <code><a href="#@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#id SesEmailIdentity#id}. |
 
 ---
 
@@ -792,7 +792,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#email SesEmailIdentity#email}.
 
 ---
 
@@ -804,7 +804,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_email_identity#id SesEmailIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

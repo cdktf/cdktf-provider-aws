@@ -1,6 +1,6 @@
 # `data_aws_network_acls`
 
-Refer to the Terraform Registory for docs: [`data_aws_network_acls`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls).
+Refer to the Terraform Registory for docs: [`data_aws_network_acls`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls).
 
 # `dataAwsNetworkAcls` Submodule <a name="`dataAwsNetworkAcls` Submodule" id="@cdktf/provider-aws.dataAwsNetworkAcls"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_network_acls`](https://reg
 
 ### DataAwsNetworkAcls <a name="DataAwsNetworkAcls" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls aws_network_acls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls aws_network_acls}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.NewDataAwsNetworkAcls(scope Construct, id *string, config DataAwsNetworkAclsConfig) DataAwsNetworkAcls
 ```
@@ -331,7 +331,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.DataAwsNetworkAcls_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.DataAwsNetworkAcls_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsnetworkacls.DataAwsNetworkAcls_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.DataAwsNetworkAcls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 &dataawsnetworkacls.DataAwsNetworkAclsConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts,
 	VpcId: *string,
 }
 ```
@@ -705,10 +705,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts">DataAwsNetworkAclsTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}. |
 
 ---
 
@@ -792,7 +792,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
 
 ---
 
@@ -804,7 +804,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +819,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
 
 ---
 
@@ -833,7 +833,7 @@ Timeouts DataAwsNetworkAclsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
 
 ---
 
@@ -845,7 +845,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
 
 ---
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 &dataawsnetworkacls.DataAwsNetworkAclsFilter {
 	Name: *string,
@@ -866,8 +866,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}. |
 
 ---
 
@@ -879,7 +879,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#name DataAwsNetworkAcls#name}.
 
 ---
 
@@ -891,7 +891,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#values DataAwsNetworkAcls#values}.
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 &dataawsnetworkacls.DataAwsNetworkAclsTimeouts {
 	Read: *string,
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}. |
 
 ---
 
@@ -923,7 +923,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/network_acls#read DataAwsNetworkAcls#read}.
 
 ---
 
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.NewDataAwsNetworkAclsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkAclsFilterList
 ```
@@ -1077,7 +1077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.NewDataAwsNetworkAclsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNetworkAclsFilterOutputReference
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnetworkacls"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnetworkacls"
 
 dataawsnetworkacls.NewDataAwsNetworkAclsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsNetworkAclsTimeoutsOutputReference
 ```

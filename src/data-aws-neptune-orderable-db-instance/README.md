@@ -1,3 +1,3 @@
 # `data_aws_neptune_orderable_db_instance`
 
-Refer to the Terraform Registory for docs: [`data_aws_neptune_orderable_db_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/neptune_orderable_db_instance).
+Refer to the Terraform Registory for docs: [`data_aws_neptune_orderable_db_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/neptune_orderable_db_instance).

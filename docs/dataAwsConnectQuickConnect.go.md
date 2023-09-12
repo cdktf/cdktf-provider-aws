@@ -1,6 +1,6 @@
 # `data_aws_connect_quick_connect`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect).
+Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect).
 
 # `dataAwsConnectQuickConnect` Submodule <a name="`dataAwsConnectQuickConnect` Submodule" id="@cdktf/provider-aws.dataAwsConnectQuickConnect"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_quick_connect`](ht
 
 ### DataAwsConnectQuickConnect <a name="DataAwsConnectQuickConnect" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnect(scope Construct, id *string, config DataAwsConnectQuickConnectConfig) DataAwsConnectQuickConnect
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectConfig {
 	Connection: interface{},
@@ -693,11 +693,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnec
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.quickConnectId">QuickConnectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.quickConnectId">QuickConnectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}. |
 
 ---
 
@@ -779,7 +779,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}.
 
 ---
 
@@ -791,7 +791,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}.
 
 ---
 
@@ -818,7 +818,7 @@ QuickConnectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}.
 
 ---
 
@@ -830,7 +830,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}.
 
 ---
 
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfig {
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnec
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig {
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnec
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfig {
 
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnec
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfig {
 
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnec
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigList
 ```
@@ -1025,7 +1025,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigOutputReference
 ```
@@ -1336,7 +1336,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList
 ```
@@ -1468,7 +1468,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigQueueConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList
 ```
@@ -1878,7 +1878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference
 ```
@@ -2167,7 +2167,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfigQueueConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigUserConfigList
 ```
@@ -2299,7 +2299,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnectquickconnect"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference
 ```

@@ -1,6 +1,6 @@
 # `data_aws_ssoadmin_permission_set`
 
-Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_permission_set`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set).
+Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_permission_set`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set).
 
 # `dataAwsSsoadminPermissionSet` Submodule <a name="`dataAwsSsoadminPermissionSet` Submodule" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_ssoadmin_permission_set`](
 
 ### DataAwsSsoadminPermissionSet <a name="DataAwsSsoadminPermissionSet" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.NewDataAwsSsoadminPermissionSet(scope Construct, id *string, config DataAwsSsoadminPermissionSetConfig) DataAwsSsoadminPermissionSet
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
 
 dataawsssoadminpermissionset.DataAwsSsoadminPermissionSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermissionset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssoadminpermissionset"
 
 &dataawsssoadminpermissionset.DataAwsSsoadminPermissionSetConfig {
 	Connection: interface{},
@@ -704,11 +704,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssoadminpermission
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#instance_arn DataAwsSsoadminPermissionSet#instance_arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#arn DataAwsSsoadminPermissionSet#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#id DataAwsSsoadminPermissionSet#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#name DataAwsSsoadminPermissionSet#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#tags DataAwsSsoadminPermissionSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.instanceArn">InstanceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#instance_arn DataAwsSsoadminPermissionSet#instance_arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#arn DataAwsSsoadminPermissionSet#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#id DataAwsSsoadminPermissionSet#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#name DataAwsSsoadminPermissionSet#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSsoadminPermissionSet.DataAwsSsoadminPermissionSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#tags DataAwsSsoadminPermissionSet#tags}. |
 
 ---
 
@@ -790,7 +790,7 @@ InstanceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#instance_arn DataAwsSsoadminPermissionSet#instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#instance_arn DataAwsSsoadminPermissionSet#instance_arn}.
 
 ---
 
@@ -802,7 +802,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#arn DataAwsSsoadminPermissionSet#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#arn DataAwsSsoadminPermissionSet#arn}.
 
 ---
 
@@ -814,7 +814,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#id DataAwsSsoadminPermissionSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#id DataAwsSsoadminPermissionSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#name DataAwsSsoadminPermissionSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#name DataAwsSsoadminPermissionSet#name}.
 
 ---
 
@@ -841,7 +841,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ssoadmin_permission_set#tags DataAwsSsoadminPermissionSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/ssoadmin_permission_set#tags DataAwsSsoadminPermissionSet#tags}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_waf_rate_based_rule`
 
-Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule).
+Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule).
 
 # `dataAwsWafRateBasedRule` Submodule <a name="`dataAwsWafRateBasedRule` Submodule" id="@cdktf/provider-aws.dataAwsWafRateBasedRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_waf_rate_based_rule`](http
 
 ### DataAwsWafRateBasedRule <a name="DataAwsWafRateBasedRule" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
 
 dataawswafratebasedrule.NewDataAwsWafRateBasedRule(scope Construct, id *string, config DataAwsWafRateBasedRuleConfig) DataAwsWafRateBasedRule
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
 
 dataawswafratebasedrule.DataAwsWafRateBasedRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafratebasedrule"
 
 &dataawswafratebasedrule.DataAwsWafRateBasedRuleConfig {
 	Connection: interface{},
@@ -570,8 +570,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafratebasedrule"
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafRateBasedRule.DataAwsWafRateBasedRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}. |
 
 ---
 
@@ -653,7 +653,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule#name DataAwsWafRateBasedRule#name}.
 
 ---
 
@@ -665,7 +665,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_rate_based_rule#id DataAwsWafRateBasedRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface Route53ResolverFirewallDomainListConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}
   */
   readonly domains?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}
 */
 export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class Route53ResolverFirewallDomainList extends cdktf.TerraformResource {
       terraformResourceType: 'aws_route53_resolver_firewall_domain_list',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.1',
+        providerVersion: '5.16.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

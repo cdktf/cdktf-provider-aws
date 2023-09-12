@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface IotIndexingConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#id IotIndexingConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#id IotIndexingConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,23 @@ export interface IotIndexingConfigurationConfig extends cdktf.TerraformMetaArgum
   /**
   * thing_group_indexing_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#thing_group_indexing_configuration IotIndexingConfiguration#thing_group_indexing_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#thing_group_indexing_configuration IotIndexingConfiguration#thing_group_indexing_configuration}
   */
   readonly thingGroupIndexingConfiguration?: IotIndexingConfigurationThingGroupIndexingConfiguration;
   /**
   * thing_indexing_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#thing_indexing_configuration IotIndexingConfiguration#thing_indexing_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#thing_indexing_configuration IotIndexingConfiguration#thing_indexing_configuration}
   */
   readonly thingIndexingConfiguration?: IotIndexingConfigurationThingIndexingConfiguration;
 }
 export interface IotIndexingConfigurationThingGroupIndexingConfigurationCustomField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
   */
   readonly type?: string;
 }
@@ -158,11 +153,11 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldL
 }
 export interface IotIndexingConfigurationThingGroupIndexingConfigurationManagedField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
   */
   readonly type?: string;
 }
@@ -282,19 +277,19 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationManagedField
 }
 export interface IotIndexingConfigurationThingGroupIndexingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#thing_group_indexing_mode IotIndexingConfiguration#thing_group_indexing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#thing_group_indexing_mode IotIndexingConfiguration#thing_group_indexing_mode}
   */
   readonly thingGroupIndexingMode: string;
   /**
   * custom_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
   */
   readonly customField?: IotIndexingConfigurationThingGroupIndexingConfigurationCustomField[] | cdktf.IResolvable;
   /**
   * managed_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
   */
   readonly managedField?: IotIndexingConfigurationThingGroupIndexingConfigurationManagedField[] | cdktf.IResolvable;
 }
@@ -402,11 +397,11 @@ export class IotIndexingConfigurationThingGroupIndexingConfigurationOutputRefere
 }
 export interface IotIndexingConfigurationThingIndexingConfigurationCustomField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
   */
   readonly type?: string;
 }
@@ -526,11 +521,11 @@ export class IotIndexingConfigurationThingIndexingConfigurationCustomFieldList e
 }
 export interface IotIndexingConfigurationThingIndexingConfigurationManagedField {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#name IotIndexingConfiguration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#type IotIndexingConfiguration#type}
   */
   readonly type?: string;
 }
@@ -650,31 +645,31 @@ export class IotIndexingConfigurationThingIndexingConfigurationManagedFieldList 
 }
 export interface IotIndexingConfigurationThingIndexingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#device_defender_indexing_mode IotIndexingConfiguration#device_defender_indexing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#device_defender_indexing_mode IotIndexingConfiguration#device_defender_indexing_mode}
   */
   readonly deviceDefenderIndexingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#named_shadow_indexing_mode IotIndexingConfiguration#named_shadow_indexing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#named_shadow_indexing_mode IotIndexingConfiguration#named_shadow_indexing_mode}
   */
   readonly namedShadowIndexingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#thing_connectivity_indexing_mode IotIndexingConfiguration#thing_connectivity_indexing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#thing_connectivity_indexing_mode IotIndexingConfiguration#thing_connectivity_indexing_mode}
   */
   readonly thingConnectivityIndexingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#thing_indexing_mode IotIndexingConfiguration#thing_indexing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#thing_indexing_mode IotIndexingConfiguration#thing_indexing_mode}
   */
   readonly thingIndexingMode: string;
   /**
   * custom_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
   */
   readonly customField?: IotIndexingConfigurationThingIndexingConfigurationCustomField[] | cdktf.IResolvable;
   /**
   * managed_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
   */
   readonly managedField?: IotIndexingConfigurationThingIndexingConfigurationManagedField[] | cdktf.IResolvable;
 }
@@ -851,7 +846,7 @@ export class IotIndexingConfigurationThingIndexingConfigurationOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration}
 */
 export class IotIndexingConfiguration extends cdktf.TerraformResource {
 
@@ -865,7 +860,7 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -876,7 +871,7 @@ export class IotIndexingConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iot_indexing_configuration',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.1',
+        providerVersion: '5.16.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

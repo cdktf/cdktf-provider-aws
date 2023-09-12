@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection
+// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface OpensearchOutboundConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#connection_alias OpensearchOutboundConnection#connection_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#connection_alias OpensearchOutboundConnection#connection_alias}
   */
   readonly connectionAlias: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#id OpensearchOutboundConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#id OpensearchOutboundConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,33 +21,33 @@ export interface OpensearchOutboundConnectionConfig extends cdktf.TerraformMetaA
   /**
   * local_domain_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#local_domain_info OpensearchOutboundConnection#local_domain_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#local_domain_info OpensearchOutboundConnection#local_domain_info}
   */
   readonly localDomainInfo: OpensearchOutboundConnectionLocalDomainInfo;
   /**
   * remote_domain_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#remote_domain_info OpensearchOutboundConnection#remote_domain_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#remote_domain_info OpensearchOutboundConnection#remote_domain_info}
   */
   readonly remoteDomainInfo: OpensearchOutboundConnectionRemoteDomainInfo;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#timeouts OpensearchOutboundConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#timeouts OpensearchOutboundConnection#timeouts}
   */
   readonly timeouts?: OpensearchOutboundConnectionTimeouts;
 }
 export interface OpensearchOutboundConnectionLocalDomainInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#domain_name OpensearchOutboundConnection#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#domain_name OpensearchOutboundConnection#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#owner_id OpensearchOutboundConnection#owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#owner_id OpensearchOutboundConnection#owner_id}
   */
   readonly ownerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#region OpensearchOutboundConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#region OpensearchOutboundConnection#region}
   */
   readonly region: string;
 }
@@ -154,15 +149,15 @@ export class OpensearchOutboundConnectionLocalDomainInfoOutputReference extends 
 }
 export interface OpensearchOutboundConnectionRemoteDomainInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#domain_name OpensearchOutboundConnection#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#domain_name OpensearchOutboundConnection#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#owner_id OpensearchOutboundConnection#owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#owner_id OpensearchOutboundConnection#owner_id}
   */
   readonly ownerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#region OpensearchOutboundConnection#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#region OpensearchOutboundConnection#region}
   */
   readonly region: string;
 }
@@ -264,11 +259,11 @@ export class OpensearchOutboundConnectionRemoteDomainInfoOutputReference extends
 }
 export interface OpensearchOutboundConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#create OpensearchOutboundConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#create OpensearchOutboundConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection#delete OpensearchOutboundConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection#delete OpensearchOutboundConnection#delete}
   */
   readonly delete?: string;
 }
@@ -366,7 +361,7 @@ export class OpensearchOutboundConnectionTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}
 */
 export class OpensearchOutboundConnection extends cdktf.TerraformResource {
 
@@ -380,7 +375,7 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -391,7 +386,7 @@ export class OpensearchOutboundConnection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opensearch_outbound_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.1',
+        providerVersion: '5.16.2',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
