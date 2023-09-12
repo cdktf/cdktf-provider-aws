@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflow(scope Construct, id *string, config TransferWorkflowConfig) TransferWorkflow
 ```
@@ -331,7 +331,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.TransferWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.TransferWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ transferworkflow.TransferWorkflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.TransferWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowConfig {
 	Connection: interface{},
@@ -912,15 +912,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionSteps {
 	Type: *string,
-	CopyStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetails,
-	CustomStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetails,
-	DecryptStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetails,
-	DeleteStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetails,
-	TagStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetails,
+	CopyStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetails,
+	CustomStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetails,
+	DecryptStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetails,
+	DeleteStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetails,
+	TagStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetails,
 }
 ```
 
@@ -1024,10 +1024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsCopyStepDetails {
-	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation,
+	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation,
 	Name: *string,
 	OverwriteExisting: *string,
 	SourceFileLocation: *string,
@@ -1100,11 +1100,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocation {
-	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation,
-	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation,
+	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation,
+	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation,
 }
 ```
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocation {
 	FileSystemId: *string,
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocation {
 	Bucket: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsCustomStepDetails {
 	Name: *string,
@@ -1316,11 +1316,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsDecryptStepDetails {
 	Type: *string,
-	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation,
+	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation,
 	Name: *string,
 	OverwriteExisting: *string,
 	SourceFileLocation: *string,
@@ -1406,11 +1406,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocation {
-	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation,
-	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation,
+	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation,
+	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation,
 }
 ```
 
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation {
 	FileSystemId: *string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocation {
 	Bucket: *string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsDeleteStepDetails {
 	Name: *string,
@@ -1594,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsTagStepDetails {
 	Name: *string,
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTags {
 	Key: *string,
@@ -1702,15 +1702,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowSteps {
 	Type: *string,
-	CopyStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsCopyStepDetails,
-	CustomStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsCustomStepDetails,
-	DecryptStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetails,
-	DeleteStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetails,
-	TagStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsTagStepDetails,
+	CopyStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsCopyStepDetails,
+	CustomStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsCustomStepDetails,
+	DecryptStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsDecryptStepDetails,
+	DeleteStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsDeleteStepDetails,
+	TagStepDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsTagStepDetails,
 }
 ```
 
@@ -1814,10 +1814,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsCopyStepDetails {
-	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocation,
+	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocation,
 	Name: *string,
 	OverwriteExisting: *string,
 	SourceFileLocation: *string,
@@ -1890,11 +1890,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocation {
-	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation,
-	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation,
+	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation,
+	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation,
 }
 ```
 
@@ -1940,7 +1940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocation {
 	FileSystemId: *string,
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocation {
 	Bucket: *string,
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsCustomStepDetails {
 	Name: *string,
@@ -2106,11 +2106,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsDecryptStepDetails {
 	Type: *string,
-	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation,
+	DestinationFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation,
 	Name: *string,
 	OverwriteExisting: *string,
 	SourceFileLocation: *string,
@@ -2196,11 +2196,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocation {
-	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation,
-	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation,
+	EfsFileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation,
+	S3FileLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation,
 }
 ```
 
@@ -2246,7 +2246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocation {
 	FileSystemId: *string,
@@ -2292,7 +2292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocation {
 	Bucket: *string,
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsDeleteStepDetails {
 	Name: *string,
@@ -2384,7 +2384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsTagStepDetails {
 	Name: *string,
@@ -2446,7 +2446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 &transferworkflow.TransferWorkflowStepsTagStepDetailsTags {
 	Key: *string,
@@ -2494,7 +2494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationF
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationOutputReference
 ```
@@ -3134,7 +3134,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationF
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference
 ```
@@ -3441,7 +3441,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsCopyStepDetailsDestinationF
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsCopyStepDetailsOutputReference
 ```
@@ -3819,7 +3819,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsCopyStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference
 ```
@@ -4184,7 +4184,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsCustomStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference
 ```
@@ -4491,7 +4491,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationOutputReference
 ```
@@ -4824,7 +4824,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference
 ```
@@ -5131,7 +5131,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsDecryptStepDetailsDestinati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference
 ```
@@ -5531,7 +5531,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsDecryptStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference
 ```
@@ -5838,7 +5838,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsDeleteStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWorkflowOnExceptionStepsList
 ```
@@ -5981,7 +5981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWorkflowOnExceptionStepsOutputReference
 ```
@@ -6480,7 +6480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 ```
@@ -6829,7 +6829,7 @@ func InternalValue() TransferWorkflowOnExceptionStepsTagStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsTagStepDetailsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWorkflowOnExceptionStepsTagStepDetailsTagsList
 ```
@@ -6972,7 +6972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWorkflowOnExceptionStepsTagStepDetailsTagsOutputReference
 ```
@@ -7283,7 +7283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference
 ```
@@ -7590,7 +7590,7 @@ func InternalValue() TransferWorkflowStepsCopyStepDetailsDestinationFileLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsDestinationFileLocationOutputReference
 ```
@@ -7923,7 +7923,7 @@ func InternalValue() TransferWorkflowStepsCopyStepDetailsDestinationFileLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsDestinationFileLocationS3FileLocationOutputReference
 ```
@@ -8230,7 +8230,7 @@ func InternalValue() TransferWorkflowStepsCopyStepDetailsDestinationFileLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsCopyStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsOutputReference
 ```
@@ -8608,7 +8608,7 @@ func InternalValue() TransferWorkflowStepsCopyStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsCustomStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCustomStepDetailsOutputReference
 ```
@@ -8973,7 +8973,7 @@ func InternalValue() TransferWorkflowStepsCustomStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationEfsFileLocationOutputReference
 ```
@@ -9280,7 +9280,7 @@ func InternalValue() TransferWorkflowStepsDecryptStepDetailsDestinationFileLocat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationOutputReference
 ```
@@ -9613,7 +9613,7 @@ func InternalValue() TransferWorkflowStepsDecryptStepDetailsDestinationFileLocat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsDecryptStepDetailsDestinationFileLocationS3FileLocationOutputReference
 ```
@@ -9920,7 +9920,7 @@ func InternalValue() TransferWorkflowStepsDecryptStepDetailsDestinationFileLocat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDecryptStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsDecryptStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsDecryptStepDetailsOutputReference
 ```
@@ -10320,7 +10320,7 @@ func InternalValue() TransferWorkflowStepsDecryptStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsDeleteStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsDeleteStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsDeleteStepDetailsOutputReference
 ```
@@ -10627,7 +10627,7 @@ func InternalValue() TransferWorkflowStepsDeleteStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWorkflowStepsList
 ```
@@ -10770,7 +10770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWorkflowStepsOutputReference
 ```
@@ -11269,7 +11269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsTagStepDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsTagStepDetailsOutputReference
 ```
@@ -11618,7 +11618,7 @@ func InternalValue() TransferWorkflowStepsTagStepDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsTagStepDetailsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWorkflowStepsTagStepDetailsTagsList
 ```
@@ -11761,7 +11761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/transferworkflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferworkflow"
 
 transferworkflow.NewTransferWorkflowStepsTagStepDetailsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWorkflowStepsTagStepDetailsTagsOutputReference
 ```

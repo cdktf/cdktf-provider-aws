@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 
 timestreamwritedatabase.NewTimestreamwriteDatabase(scope Construct, id *string, config TimestreamwriteDatabaseConfig) TimestreamwriteDatabase
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 
 timestreamwritedatabase.TimestreamwriteDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritedatabase"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/timestreamwritedatabase"
 
 &timestreamwritedatabase.TimestreamwriteDatabaseConfig {
 	Connection: interface{},

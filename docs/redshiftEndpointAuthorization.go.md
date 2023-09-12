@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftendpointauthorization"
 
 redshiftendpointauthorization.NewRedshiftEndpointAuthorization(scope Construct, id *string, config RedshiftEndpointAuthorizationConfig) RedshiftEndpointAuthorization
 ```
@@ -291,7 +291,7 @@ func ResetVpcIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftendpointauthorization"
 
 redshiftendpointauthorization.RedshiftEndpointAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftendpointauthorization"
 
 redshiftendpointauthorization.RedshiftEndpointAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ redshiftendpointauthorization.RedshiftEndpointAuthorization_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftendpointauthorization"
 
 redshiftendpointauthorization.RedshiftEndpointAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftendpointauthorization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftendpointauthorization"
 
 &redshiftendpointauthorization.RedshiftEndpointAuthorizationConfig {
 	Connection: interface{},

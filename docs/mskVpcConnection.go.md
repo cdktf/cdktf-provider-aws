@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mskVpcConnection.MskVpcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskvpcconnection"
 
 mskvpcconnection.NewMskVpcConnection(scope Construct, id *string, config MskVpcConnectionConfig) MskVpcConnection
 ```
@@ -291,7 +291,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mskVpcConnection.MskVpcConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskvpcconnection"
 
 mskvpcconnection.MskVpcConnection_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mskVpcConnection.MskVpcConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskvpcconnection"
 
 mskvpcconnection.MskVpcConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ mskvpcconnection.MskVpcConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mskVpcConnection.MskVpcConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskvpcconnection"
 
 mskvpcconnection.MskVpcConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mskVpcConnection.MskVpcConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskvpcconnection"
 
 &mskvpcconnection.MskVpcConnectionConfig {
 	Connection: interface{},
