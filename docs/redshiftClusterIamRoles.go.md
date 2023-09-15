@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 redshiftclusteriamroles.NewRedshiftClusterIamRoles(scope Construct, id *string, config RedshiftClusterIamRolesConfig) RedshiftClusterIamRoles
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 redshiftclusteriamroles.RedshiftClusterIamRoles_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 redshiftclusteriamroles.RedshiftClusterIamRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ redshiftclusteriamroles.RedshiftClusterIamRoles_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 redshiftclusteriamroles.RedshiftClusterIamRoles_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 &redshiftclusteriamroles.RedshiftClusterIamRolesConfig {
 	Connection: interface{},
@@ -680,7 +680,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
 	DefaultIamRoleArn: *string,
 	IamRoleArns: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts,
 }
 ```
 
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 &redshiftclusteriamroles.RedshiftClusterIamRolesTimeouts {
 	Create: *string,
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftclusteriamroles"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/redshiftclusteriamroles"
 
 redshiftclusteriamroles.NewRedshiftClusterIamRolesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftClusterIamRolesTimeoutsOutputReference
 ```

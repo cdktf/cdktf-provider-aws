@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.NewIamGroupPolicyAttachment(scope Construct, id *string, config IamGroupPolicyAttachmentConfig) IamGroupPolicyAttachment
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iamgrouppolicyattachment"
 
 iamgrouppolicyattachment.IamGroupPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iamgrouppolicyattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iamgrouppolicyattachment"
 
 &iamgrouppolicyattachment.IamGroupPolicyAttachmentConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroup(scope Construct, id *string, config WafregionalRuleGroupConfig) WafregionalRuleGroup
 ```
@@ -311,7 +311,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ wafregionalrulegroup.WafregionalRuleGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -699,10 +699,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupActivatedRule {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v17.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction,
 	Priority: *f64,
 	RuleId: *string,
 	Type: *string,
@@ -775,7 +775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupActivatedRuleAction {
 	Type: *string,
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupConfig {
 	Connection: interface{},
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalRuleGroupActivatedRuleActionOutputReference
 ```
@@ -1271,7 +1271,7 @@ func InternalValue() WafregionalRuleGroupActivatedRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalRuleGroupActivatedRuleList
 ```
@@ -1414,7 +1414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalRuleGroupActivatedRuleOutputReference
 ```
