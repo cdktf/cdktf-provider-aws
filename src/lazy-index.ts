@@ -1090,6 +1090,7 @@ Object.defineProperty(exports, 'sesv2EmailIdentityMailFromAttributes', { get: fu
 Object.defineProperty(exports, 'sfnActivity', { get: function () { return require('./sfn-activity'); } });
 Object.defineProperty(exports, 'sfnAlias', { get: function () { return require('./sfn-alias'); } });
 Object.defineProperty(exports, 'sfnStateMachine', { get: function () { return require('./sfn-state-machine'); } });
+Object.defineProperty(exports, 'shieldApplicationLayerAutomaticResponse', { get: function () { return require('./shield-application-layer-automatic-response'); } });
 Object.defineProperty(exports, 'shieldDrtAccessLogBucketAssociation', { get: function () { return require('./shield-drt-access-log-bucket-association'); } });
 Object.defineProperty(exports, 'shieldDrtAccessRoleArnAssociation', { get: function () { return require('./shield-drt-access-role-arn-association'); } });
 Object.defineProperty(exports, 'shieldProtection', { get: function () { return require('./shield-protection'); } });
@@ -1168,6 +1169,7 @@ Object.defineProperty(exports, 'transferSshKey', { get: function () { return req
 Object.defineProperty(exports, 'transferTag', { get: function () { return require('./transfer-tag'); } });
 Object.defineProperty(exports, 'transferUser', { get: function () { return require('./transfer-user'); } });
 Object.defineProperty(exports, 'transferWorkflow', { get: function () { return require('./transfer-workflow'); } });
+Object.defineProperty(exports, 'verifiedaccessInstance', { get: function () { return require('./verifiedaccess-instance'); } });
 Object.defineProperty(exports, 'verifiedaccessTrustProvider', { get: function () { return require('./verifiedaccess-trust-provider'); } });
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
 Object.defineProperty(exports, 'vpc', { get: function () { return require('./vpc'); } });

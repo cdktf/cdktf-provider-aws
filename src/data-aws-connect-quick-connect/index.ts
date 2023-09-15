@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect
+// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsConnectQuickConnectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect#id DataAwsConnectQuickConnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect#instance_id DataAwsConnectQuickConnect#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect#name DataAwsConnectQuickConnect#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect#quick_connect_id DataAwsConnectQuickConnect#quick_connect_id}
   */
   readonly quickConnectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect#tags DataAwsConnectQuickConnect#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -322,7 +322,7 @@ export class DataAwsConnectQuickConnectQuickConnectConfigList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect aws_connect_quick_connect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect}
 */
 export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
 
@@ -336,7 +336,7 @@ export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -347,7 +347,7 @@ export class DataAwsConnectQuickConnect extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_connect_quick_connect',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.2',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point
+// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface S3ControlMultiRegionAccessPointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#account_id S3ControlMultiRegionAccessPoint#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#account_id S3ControlMultiRegionAccessPoint#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#id S3ControlMultiRegionAccessPoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#id S3ControlMultiRegionAccessPoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,31 +26,31 @@ export interface S3ControlMultiRegionAccessPointConfig extends cdktf.TerraformMe
   /**
   * details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#details S3ControlMultiRegionAccessPoint#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#details S3ControlMultiRegionAccessPoint#details}
   */
   readonly details: S3ControlMultiRegionAccessPointDetails;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#timeouts S3ControlMultiRegionAccessPoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#timeouts S3ControlMultiRegionAccessPoint#timeouts}
   */
   readonly timeouts?: S3ControlMultiRegionAccessPointTimeouts;
 }
 export interface S3ControlMultiRegionAccessPointDetailsPublicAccessBlock {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#block_public_acls S3ControlMultiRegionAccessPoint#block_public_acls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#block_public_acls S3ControlMultiRegionAccessPoint#block_public_acls}
   */
   readonly blockPublicAcls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#block_public_policy S3ControlMultiRegionAccessPoint#block_public_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#block_public_policy S3ControlMultiRegionAccessPoint#block_public_policy}
   */
   readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#ignore_public_acls S3ControlMultiRegionAccessPoint#ignore_public_acls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#ignore_public_acls S3ControlMultiRegionAccessPoint#ignore_public_acls}
   */
   readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#restrict_public_buckets S3ControlMultiRegionAccessPoint#restrict_public_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#restrict_public_buckets S3ControlMultiRegionAccessPoint#restrict_public_buckets}
   */
   readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
 }
@@ -184,9 +184,13 @@ export class S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputRefere
 }
 export interface S3ControlMultiRegionAccessPointDetailsRegion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#bucket S3ControlMultiRegionAccessPoint#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#bucket S3ControlMultiRegionAccessPoint#bucket}
   */
   readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#bucket_account_id S3ControlMultiRegionAccessPoint#bucket_account_id}
+  */
+  readonly bucketAccountId?: string;
 }
 
 export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?: S3ControlMultiRegionAccessPointDetailsRegion | cdktf.IResolvable): any {
@@ -196,6 +200,7 @@ export function s3ControlMultiRegionAccessPointDetailsRegionToTerraform(struct?:
   }
   return {
     bucket: cdktf.stringToTerraform(struct!.bucket),
+    bucket_account_id: cdktf.stringToTerraform(struct!.bucketAccountId),
   }
 }
 
@@ -223,6 +228,10 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
+    if (this._bucketAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketAccountId = this._bucketAccountId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -231,6 +240,7 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._bucket = undefined;
+      this._bucketAccountId = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -240,6 +250,7 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._bucket = value.bucket;
+      this._bucketAccountId = value.bucketAccountId;
     }
   }
 
@@ -254,6 +265,27 @@ export class S3ControlMultiRegionAccessPointDetailsRegionOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket;
+  }
+
+  // bucket_account_id - computed: true, optional: true, required: false
+  private _bucketAccountId?: string; 
+  public get bucketAccountId() {
+    return this.getStringAttribute('bucket_account_id');
+  }
+  public set bucketAccountId(value: string) {
+    this._bucketAccountId = value;
+  }
+  public resetBucketAccountId() {
+    this._bucketAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketAccountIdInput() {
+    return this._bucketAccountId;
+  }
+
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
   }
 }
 
@@ -278,19 +310,19 @@ export class S3ControlMultiRegionAccessPointDetailsRegionList extends cdktf.Comp
 }
 export interface S3ControlMultiRegionAccessPointDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#name S3ControlMultiRegionAccessPoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#name S3ControlMultiRegionAccessPoint#name}
   */
   readonly name: string;
   /**
   * public_access_block block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#public_access_block S3ControlMultiRegionAccessPoint#public_access_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#public_access_block S3ControlMultiRegionAccessPoint#public_access_block}
   */
   readonly publicAccessBlock?: S3ControlMultiRegionAccessPointDetailsPublicAccessBlock;
   /**
   * region block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#region S3ControlMultiRegionAccessPoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#region S3ControlMultiRegionAccessPoint#region}
   */
   readonly region: S3ControlMultiRegionAccessPointDetailsRegion[] | cdktf.IResolvable;
 }
@@ -395,11 +427,11 @@ export class S3ControlMultiRegionAccessPointDetailsOutputReference extends cdktf
 }
 export interface S3ControlMultiRegionAccessPointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#create S3ControlMultiRegionAccessPoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#create S3ControlMultiRegionAccessPoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point#delete S3ControlMultiRegionAccessPoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point#delete S3ControlMultiRegionAccessPoint#delete}
   */
   readonly delete?: string;
 }
@@ -497,7 +529,7 @@ export class S3ControlMultiRegionAccessPointTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point}
 */
 export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
 
@@ -511,7 +543,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3control_multi_region_access_point aws_s3control_multi_region_access_point} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -522,7 +554,7 @@ export class S3ControlMultiRegionAccessPoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3control_multi_region_access_point',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.2',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
