@@ -1,6 +1,6 @@
 # `data_aws_billing_service_account`
 
-Refer to the Terraform Registory for docs: [`data_aws_billing_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/billing_service_account).
+Refer to the Terraform Registory for docs: [`data_aws_billing_service_account`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/billing_service_account).
 
 # `dataAwsBillingServiceAccount` Submodule <a name="`dataAwsBillingServiceAccount` Submodule" id="@cdktf/provider-aws.dataAwsBillingServiceAccount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_billing_service_account`](
 
 ### DataAwsBillingServiceAccount <a name="DataAwsBillingServiceAccount" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/billing_service_account aws_billing_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/billing_service_account aws_billing_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.NewDataAwsBillingServiceAccount(scope Construct, id *string, config DataAwsBillingServiceAccountConfig) DataAwsBillingServiceAccount
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 dataawsbillingserviceaccount.DataAwsBillingServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbillingserviceaccount"
 
 &dataawsbillingserviceaccount.DataAwsBillingServiceAccountConfig {
 	Connection: interface{},
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsbillingserviceacco
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsBillingServiceAccount.DataAwsBillingServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/billing_service_account#id DataAwsBillingServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

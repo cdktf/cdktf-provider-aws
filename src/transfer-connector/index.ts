@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector
+// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +8,76 @@ import * as cdktf from 'cdktf';
 
 export interface TransferConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#access_role TransferConnector#access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#access_role TransferConnector#access_role}
   */
   readonly accessRole: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#id TransferConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#id TransferConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#logging_role TransferConnector#logging_role}
   */
   readonly loggingRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#tags TransferConnector#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#tags TransferConnector#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#tags_all TransferConnector#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#url TransferConnector#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#url TransferConnector#url}
   */
   readonly url: string;
   /**
   * as2_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#as2_config TransferConnector#as2_config}
   */
-  readonly as2Config: TransferConnectorAs2Config;
+  readonly as2Config?: TransferConnectorAs2Config;
+  /**
+  * sftp_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#sftp_config TransferConnector#sftp_config}
+  */
+  readonly sftpConfig?: TransferConnectorSftpConfig;
 }
 export interface TransferConnectorAs2Config {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#compression TransferConnector#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#compression TransferConnector#compression}
   */
   readonly compression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#encryption_algorithm TransferConnector#encryption_algorithm}
   */
   readonly encryptionAlgorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#local_profile_id TransferConnector#local_profile_id}
   */
   readonly localProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#mdn_response TransferConnector#mdn_response}
   */
   readonly mdnResponse: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#mdn_signing_algorithm TransferConnector#mdn_signing_algorithm}
   */
   readonly mdnSigningAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#message_subject TransferConnector#message_subject}
   */
   readonly messageSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#partner_profile_id TransferConnector#partner_profile_id}
   */
   readonly partnerProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#signing_algorithm TransferConnector#signing_algorithm}
   */
   readonly signingAlgorithm: string;
 }
@@ -282,9 +283,101 @@ export class TransferConnectorAs2ConfigOutputReference extends cdktf.ComplexObje
     return this._signingAlgorithm;
   }
 }
+export interface TransferConnectorSftpConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#trusted_host_keys TransferConnector#trusted_host_keys}
+  */
+  readonly trustedHostKeys?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector#user_secret_id TransferConnector#user_secret_id}
+  */
+  readonly userSecretId?: string;
+}
+
+export function transferConnectorSftpConfigToTerraform(struct?: TransferConnectorSftpConfigOutputReference | TransferConnectorSftpConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    trusted_host_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedHostKeys),
+    user_secret_id: cdktf.stringToTerraform(struct!.userSecretId),
+  }
+}
+
+export class TransferConnectorSftpConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TransferConnectorSftpConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._trustedHostKeys !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trustedHostKeys = this._trustedHostKeys;
+    }
+    if (this._userSecretId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userSecretId = this._userSecretId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferConnectorSftpConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._trustedHostKeys = undefined;
+      this._userSecretId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._trustedHostKeys = value.trustedHostKeys;
+      this._userSecretId = value.userSecretId;
+    }
+  }
+
+  // trusted_host_keys - computed: false, optional: true, required: false
+  private _trustedHostKeys?: string[]; 
+  public get trustedHostKeys() {
+    return cdktf.Fn.tolist(this.getListAttribute('trusted_host_keys'));
+  }
+  public set trustedHostKeys(value: string[]) {
+    this._trustedHostKeys = value;
+  }
+  public resetTrustedHostKeys() {
+    this._trustedHostKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustedHostKeysInput() {
+    return this._trustedHostKeys;
+  }
+
+  // user_secret_id - computed: false, optional: true, required: false
+  private _userSecretId?: string; 
+  public get userSecretId() {
+    return this.getStringAttribute('user_secret_id');
+  }
+  public set userSecretId(value: string) {
+    this._userSecretId = value;
+  }
+  public resetUserSecretId() {
+    this._userSecretId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userSecretIdInput() {
+    return this._userSecretId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector aws_transfer_connector}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector aws_transfer_connector}
 */
 export class TransferConnector extends cdktf.TerraformResource {
 
@@ -298,7 +391,7 @@ export class TransferConnector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector aws_transfer_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector aws_transfer_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +402,7 @@ export class TransferConnector extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_connector',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.16.2',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -327,6 +420,7 @@ export class TransferConnector extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._url = config.url;
     this._as2Config.internalValue = config.as2Config;
+    this._sftpConfig.internalValue = config.sftpConfig;
   }
 
   // ==========
@@ -433,7 +527,7 @@ export class TransferConnector extends cdktf.TerraformResource {
     return this._url;
   }
 
-  // as2_config - computed: false, optional: false, required: true
+  // as2_config - computed: false, optional: true, required: false
   private _as2Config = new TransferConnectorAs2ConfigOutputReference(this, "as2_config");
   public get as2Config() {
     return this._as2Config;
@@ -441,9 +535,28 @@ export class TransferConnector extends cdktf.TerraformResource {
   public putAs2Config(value: TransferConnectorAs2Config) {
     this._as2Config.internalValue = value;
   }
+  public resetAs2Config() {
+    this._as2Config.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get as2ConfigInput() {
     return this._as2Config.internalValue;
+  }
+
+  // sftp_config - computed: false, optional: true, required: false
+  private _sftpConfig = new TransferConnectorSftpConfigOutputReference(this, "sftp_config");
+  public get sftpConfig() {
+    return this._sftpConfig;
+  }
+  public putSftpConfig(value: TransferConnectorSftpConfig) {
+    this._sftpConfig.internalValue = value;
+  }
+  public resetSftpConfig() {
+    this._sftpConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sftpConfigInput() {
+    return this._sftpConfig.internalValue;
   }
 
   // =========
@@ -459,6 +572,7 @@ export class TransferConnector extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       as2_config: transferConnectorAs2ConfigToTerraform(this._as2Config.internalValue),
+      sftp_config: transferConnectorSftpConfigToTerraform(this._sftpConfig.internalValue),
     };
   }
 }

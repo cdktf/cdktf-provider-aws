@@ -1,6 +1,6 @@
 # `aws_lightsail_domain_entry`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_domain_entry`](https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry).
+Refer to the Terraform Registory for docs: [`aws_lightsail_domain_entry`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry).
 
 # `lightsailDomainEntry` Submodule <a name="`lightsailDomainEntry` Submodule" id="@cdktf/provider-aws.lightsailDomainEntry"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_domain_entry`](https:
 
 ### LightsailDomainEntry <a name="LightsailDomainEntry" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomainentry"
 
 lightsaildomainentry.NewLightsailDomainEntry(scope Construct, id *string, config LightsailDomainEntryConfig) LightsailDomainEntry
 ```
@@ -284,7 +284,7 @@ func ResetIsAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomainentry"
 
 lightsaildomainentry.LightsailDomainEntry_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomainentry"
 
 lightsaildomainentry.LightsailDomainEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ lightsaildomainentry.LightsailDomainEntry_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomainentry"
 
 lightsaildomainentry.LightsailDomainEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomainentry"
 
 &lightsaildomainentry.LightsailDomainEntryConfig {
 	Connection: interface{},
@@ -691,12 +691,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomainentry"
 | <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#domain_name LightsailDomainEntry#domain_name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#name LightsailDomainEntry#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#target LightsailDomainEntry#target}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#type LightsailDomainEntry#type}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#id LightsailDomainEntry#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.isAlias">IsAlias</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#is_alias LightsailDomainEntry#is_alias}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#domain_name LightsailDomainEntry#domain_name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#name LightsailDomainEntry#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#target LightsailDomainEntry#target}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#type LightsailDomainEntry#type}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#id LightsailDomainEntry#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDomainEntry.LightsailDomainEntryConfig.property.isAlias">IsAlias</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#is_alias LightsailDomainEntry#is_alias}. |
 
 ---
 
@@ -778,7 +778,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#domain_name LightsailDomainEntry#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#domain_name LightsailDomainEntry#domain_name}.
 
 ---
 
@@ -790,7 +790,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#name LightsailDomainEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#name LightsailDomainEntry#name}.
 
 ---
 
@@ -802,7 +802,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#target LightsailDomainEntry#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#target LightsailDomainEntry#target}.
 
 ---
 
@@ -814,7 +814,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#type LightsailDomainEntry#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#type LightsailDomainEntry#type}.
 
 ---
 
@@ -826,7 +826,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#id LightsailDomainEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#id LightsailDomainEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -841,7 +841,7 @@ IsAlias interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lightsail_domain_entry#is_alias LightsailDomainEntry#is_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_domain_entry#is_alias LightsailDomainEntry#is_alias}.
 
 ---
 
