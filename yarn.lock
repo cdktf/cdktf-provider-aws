@@ -40,10 +40,10 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-string-parser/-/helper-string-parser-7.22.5.tgz#533f36457a25814cf1df6488523ad547d784a99f"
   integrity sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==
 
-"@babel/helper-validator-identifier@^7.22.15", "@babel/helper-validator-identifier@^7.22.5":
-  version "7.22.15"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.15.tgz#601fa28e4cc06786c18912dca138cec73b882044"
-  integrity sha512-4E/F9IIEi8WR94324mbDUMo074YTheJmd7eZF5vITTeYchqAi6sYXRLHUVsmkdmY4QjfKTcB2jB7dVP3NaBElQ==
+"@babel/helper-validator-identifier@^7.22.19", "@babel/helper-validator-identifier@^7.22.5":
+  version "7.22.19"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.19.tgz#2f34ab1e445f5b95e2e6edfe50ea2449e610583a"
+  integrity sha512-Tinq7ybnEPFFXhlYOYFiSjespWQk0dq2dRNAiMdRTOYQzEGqnnNyrTxPYHP5r6wGjlF1rFgABdDV0g8EwD6Qbg==
 
 "@babel/highlight@^7.22.13":
   version "7.22.13"
@@ -69,12 +69,12 @@
     "@babel/types" "^7.22.15"
 
 "@babel/types@^7.21.4", "@babel/types@^7.22.15":
-  version "7.22.17"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.22.17.tgz#f753352c4610ffddf9c8bc6823f9ff03e2303eee"
-  integrity sha512-YSQPHLFtQNE5xN9tHuZnzu8vPr61wVTBZdfv1meex1NBosa4iT05k/Jw06ddJugi4bk7The/oSwQGFcksmEJQg==
+  version "7.22.19"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.22.19.tgz#7425343253556916e440e662bb221a93ddb75684"
+  integrity sha512-P7LAw/LbojPzkgp5oznjE6tQEIWbp4PkkfrZDINTro9zgBRtI324/EYsiSI7lhPbpIQ+DCeR2NNmMWANGGfZsg==
   dependencies:
     "@babel/helper-string-parser" "^7.22.5"
-    "@babel/helper-validator-identifier" "^7.22.15"
+    "@babel/helper-validator-identifier" "^7.22.19"
     to-fast-properties "^2.0.0"
 
 "@cdktf/cli-core@0.18.0":
@@ -4368,9 +4368,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.73.8:
-  version "0.73.19"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.19.tgz#74ff85b63669deb618007c402ccf4958976f609a"
-  integrity sha512-Y4VyrzJQ9Q2dMfXrgiFiK8PpGAuYlMCCO9FsKghz5O/zXZQBLjkLevOc8pdIs0Ura/MxS9cckAkeGeiI/0Q0gw==
+  version "0.73.20"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.20.tgz#2d0c65529a57d64c1ffb934e1d6826c94359a356"
+  integrity sha512-lZgTgOG2NQk05BV9+XrBzE3ioWa1U+cy4UX/udNkaAV/9xSfph+cQ1840Ffaq9dPNbkw4cfT5Qj8ODCKExMl2g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4653,9 +4653,9 @@ resolve-alpn@^1.2.0:
   integrity sha512-0a1F4l73/ZFZOakJnQ3FvkJ2+gSTQWz/r2KE5OdDY0TxPm5h4GkqkWWfM47T7HsbnOtcJVEF4epCVy6u7Q3K+g==
 
 resolve@^1.1.6, resolve@^1.10.0:
-  version "1.22.4"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
-  integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
+  version "1.22.5"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.5.tgz#a83c145cf04ffcd19b1f3f5f9e0ae8b9053f0615"
+  integrity sha512-qWhv7PF1V95QPvRoUGHxOtnAlEvlXBylMZcjUR9pAumMmveFtcHJRXGIr+TkjfNJVQypqv2qcDiiars2y1PsSg==
   dependencies:
     is-core-module "^2.13.0"
     path-parse "^1.0.7"
@@ -5355,9 +5355,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230913"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230913.tgz#555e6030ee3f2051cba5b9e21b877faccae9c374"
-  integrity sha512-+1lrLCj/NdyBbWXK3ifRSzmg0pSg2WLDmzeXf1/vTOb84eV/TCJ1i9eOS4c40T3tzDSAOjP39x9/+unUakbuKA==
+  version "5.3.0-dev.20230914"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230914.tgz#5390b75b300ca955be462deb5bced8d138876d17"
+  integrity sha512-fLOsSwW/WYEdqhxDb4iaJ2IkPmxMM6di8p++ey3SlOTaK0sdczIYVl9tlCxkajWOp0UnvBfO6Bxe+g9xxZMypw==
 
 typescript@~5.1.6:
   version "5.1.6"
