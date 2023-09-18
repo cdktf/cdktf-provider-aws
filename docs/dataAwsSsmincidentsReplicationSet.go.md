@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.NewDataAwsSsmincidentsReplicationSet(scope Construct, id *string, config DataAwsSsmincidentsReplicationSetConfig) DataAwsSsmincidentsReplicationSet
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSet_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSet_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 &dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSetConfig {
 	Connection: interface{},
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSetRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 &dataawsssmincidentsreplicationset.DataAwsSsmincidentsReplicationSetRegion {
 
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSetRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.NewDataAwsSsmincidentsReplicationSetRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmincidentsReplicationSetRegionList
 ```
@@ -897,7 +897,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSsmincidentsReplicationSet.DataAwsSsmincidentsReplicationSetRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsssmincidentsreplicationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsssmincidentsreplicationset"
 
 dataawsssmincidentsreplicationset.NewDataAwsSsmincidentsReplicationSetRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmincidentsReplicationSetRegionOutputReference
 ```
