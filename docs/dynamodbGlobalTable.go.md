@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.NewDynamodbGlobalTable(scope Construct, id *string, config DynamodbGlobalTableConfig) DynamodbGlobalTable
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.DynamodbGlobalTable_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dynamodbglobaltable.DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.DynamodbGlobalTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 &dynamodbglobaltable.DynamodbGlobalTableConfig {
 	Connection: interface{},
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
 	Name: *string,
 	Replica: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.dynamodbGlobalTable.DynamodbGlobalTableTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts,
 }
 ```
 
@@ -819,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 &dynamodbglobaltable.DynamodbGlobalTableReplica {
 	RegionName: *string,
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 &dynamodbglobaltable.DynamodbGlobalTableTimeouts {
 	Create: *string,
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.NewDynamodbGlobalTableReplicaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbGlobalTableReplicaList
 ```
@@ -1056,7 +1056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.NewDynamodbGlobalTableReplicaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbGlobalTableReplicaOutputReference
 ```
@@ -1345,7 +1345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dynamodbglobaltable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbglobaltable"
 
 dynamodbglobaltable.NewDynamodbGlobalTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbGlobalTableTimeoutsOutputReference
 ```

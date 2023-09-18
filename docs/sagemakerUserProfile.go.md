@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfile(scope Construct, id *string, config SagemakerUserProfileConfig) SagemakerUserProfile
 ```
@@ -325,7 +325,7 @@ func ResetUserSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ sagemakeruserprofile.SagemakerUserProfile_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
 	SingleSignOnUserValue: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	UserSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettings,
+	UserSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettings,
 }
 ```
 
@@ -987,18 +987,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettings {
 	ExecutionRole: *string,
-	CanvasAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings,
-	JupyterServerAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings,
-	KernelGatewayAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings,
-	RSessionAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings,
-	RStudioServerProAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings,
+	CanvasAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings,
+	JupyterServerAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings,
+	KernelGatewayAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings,
+	RSessionAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings,
+	RStudioServerProAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings,
 	SecurityGroups: *[]*string,
-	SharingSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings,
-	TensorBoardAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings,
+	SharingSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings,
+	TensorBoardAppSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings,
 }
 ```
 
@@ -1145,12 +1145,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettings {
-	ModelRegisterSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings,
-	TimeSeriesForecastingSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings,
-	WorkspaceSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings,
+	ModelRegisterSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings,
+	TimeSeriesForecastingSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings,
+	WorkspaceSettings: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings,
 }
 ```
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings {
 	CrossAccountModelRegisterRoleArn: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings {
 	AmazonForecastRoleArn: *string,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings {
 	S3ArtifactPath: *string,
@@ -1349,11 +1349,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettings {
 	CodeRepository: interface{},
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository {
 	RepositoryUrl: *string,
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -1519,11 +1519,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -1717,11 +1717,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettings {
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec,
 }
 ```
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -1827,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -1901,7 +1901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings {
 	AccessStatus: *string,
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsSharingSettings {
 	NotebookOutputOption: *string,
@@ -2007,10 +2007,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsTensorBoardAppSettings {
-	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v17.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec,
 }
 ```
 
@@ -2041,7 +2041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -2117,7 +2117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference
 ```
@@ -2424,7 +2424,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegis
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference
 ```
@@ -2799,7 +2799,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference
 ```
@@ -3106,7 +3106,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeries
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference
 ```
@@ -3413,7 +3413,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceS
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList
 ```
@@ -3556,7 +3556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference
 ```
@@ -3845,7 +3845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -4210,7 +4210,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterServerAppSettingsDef
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference
 ```
@@ -4572,7 +4572,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterServerAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList
 ```
@@ -4715,7 +4715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference
 ```
@@ -5055,7 +5055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -5420,7 +5420,7 @@ func InternalValue() SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDef
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference
 ```
@@ -5782,7 +5782,7 @@ func InternalValue() SagemakerUserProfileUserSettingsKernelGatewayAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsOutputReference
 ```
@@ -6376,7 +6376,7 @@ func InternalValue() SagemakerUserProfileUserSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList
 ```
@@ -6519,7 +6519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference
 ```
@@ -6859,7 +6859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -7224,7 +7224,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultR
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference
 ```
@@ -7557,7 +7557,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRSessionAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference
 ```
@@ -7864,7 +7864,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRStudioServerProAppSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsSharingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsSharingSettingsOutputReference
 ```
@@ -8200,7 +8200,7 @@ func InternalValue() SagemakerUserProfileUserSettingsSharingSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -8565,7 +8565,7 @@ func InternalValue() SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefau
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/sagemakeruserprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference
 ```

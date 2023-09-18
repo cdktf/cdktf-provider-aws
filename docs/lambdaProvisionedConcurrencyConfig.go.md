@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 lambdaprovisionedconcurrencyconfig.NewLambdaProvisionedConcurrencyConfig(scope Construct, id *string, config LambdaProvisionedConcurrencyConfigConfig) LambdaProvisionedConcurrencyConfig
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfig_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfig_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 &lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfigConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurre
 	Qualifier: *string,
 	Id: *string,
 	SkipDestroy: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts,
 }
 ```
 
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 &lambdaprovisionedconcurrencyconfig.LambdaProvisionedConcurrencyConfigTimeouts {
 	Create: *string,
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaprovisionedconcurrencyconfig"
 
 lambdaprovisionedconcurrencyconfig.NewLambdaProvisionedConcurrencyConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaProvisionedConcurrencyConfigTimeoutsOutputReference
 ```
