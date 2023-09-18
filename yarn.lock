@@ -3258,9 +3258,9 @@ jsii@1.88.0:
     yargs "^16.2.0"
 
 jsii@^5.0.1, jsii@^5.1.10:
-  version "5.2.5"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.2.5.tgz#ce3584e97a9ef98e46bb0de34ca1c502b15077c6"
-  integrity sha512-kVNFvxRJ5gakm8Aiv9x5Yo/w7zAw6seW+zwK7XPzULTYNSQBoWnikIGaRZIHoQtImtbheyQ8AmzRrD9pNocF/g==
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-5.2.6.tgz#e6866a8917e56a65295ac5a03ecc06dd7c560b1c"
+  integrity sha512-Pihj0Qr35AG07wwx1MblUkm9sKUxQ8u5s3eC97XTgizIYmxO8Cx/Cw7DxdaXtjvdLHDWVFT2HpGeOiVhL+IUVQ==
   dependencies:
     "@jsii/check-node" "1.88.0"
     "@jsii/spec" "^1.88.0"
@@ -3897,9 +3897,9 @@ npm-bundled@^3.0.0:
     npm-normalize-package-bin "^3.0.0"
 
 npm-check-updates@^16:
-  version "16.14.3"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.14.3.tgz#c2fdf1fe438a96e6258ceeb38f835024cf55d732"
-  integrity sha512-iviPM0LiTFGUtk+kMtcMVLNeGuSORThj9Cho7GV/Z2l5dMdXFrcgIarMSr6d6f1wYJJBIthuNdJWXZ4NH5VPEg==
+  version "16.14.4"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-16.14.4.tgz#561e97e92079ae4dbab9d9cbeb424d292ca01bae"
+  integrity sha512-PKg1wv3vno75/9qgRLqV2huBO7eukOlW+PmIGl7LPXjElfYTUTWUtaMOdOckImaSj4Uqe46W/zMbMFZQp5dHRQ==
   dependencies:
     chalk "^5.3.0"
     cli-table3 "^0.6.3"
@@ -4368,9 +4368,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.73.8:
-  version "0.73.22"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.22.tgz#535632fb9af03fb21c58920bcf0edcace649f6ad"
-  integrity sha512-OazEG+uJXsyodIECy90NWsIWiUQffAn7Q5f5TigIaztrLlVKMh3Cl17ObHz4CakIuI6gNnUHGvxRIXbpCjzV9A==
+  version "0.73.23"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.23.tgz#419516bcdc335dfd1f97978c29690c1e97c2c60a"
+  integrity sha512-6EADkVbNI0CnGiQ8LnIAsNnCkKU1NO7YmSR/v4Ih/qBOrUMHNTU/fCkqhSb2EcPpP/xapK9Xve4ViwhHqaro+g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5355,9 +5355,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230916"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230916.tgz#b5ba3e64a12b558485527593959ae6d671165aa0"
-  integrity sha512-X8rf5tDJ3BV2qv7AMPWAKI3+DIt1qzDLI5Ahw27IT1iii/IGNeSBTWYDc4pjD0OgSF30q2wFjNeOJyfeOo0IJQ==
+  version "5.3.0-dev.20230917"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230917.tgz#b3d5031c985314eb4fb97ca2b7a909a947346059"
+  integrity sha512-njiSKStDPLFKdkoI/o3vZs9/ywPgQlEvV0SgBQDX/9/c4vg+7N//1X9a0m/6PZpN4BHd8NlK/dRptQ5K4q4k+g==
 
 typescript@~5.1.6:
   version "5.1.6"
