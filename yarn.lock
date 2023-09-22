@@ -4376,9 +4376,9 @@ progress@^2.0.3:
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
 projen@^0.73.24:
-  version "0.73.27"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.27.tgz#f620acf1fc0801506fd4262649227220f465199e"
-  integrity sha512-GHKmZ6LPrbNiyWBGSXS8R8QYOZSqRleerYZpSL3sOfvf1If9kjDgojc68gm2nPQfnrqDQaMEbgsRj7U+bnGnBw==
+  version "0.73.28"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.73.28.tgz#626f07ab556f6329fa734518ca019ba04d168024"
+  integrity sha512-rhfcCB7dSAZR6uTF+C1ziXqw0m3FA+ZE2E3qmRiRxueLABZI42u+oTfYgTPZ1UI/wE71f1K+GoLFL9/oah/cSQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -5363,9 +5363,9 @@ typescript@^3.9.10, typescript@~3.9.10:
   integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 typescript@next:
-  version "5.3.0-dev.20230920"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230920.tgz#2fa74f5eb2cd68bde91fed2668c483c9e05c7c83"
-  integrity sha512-XaiYm7T6bGo+5mbRsmFqujMbNz0BLRCTKXiG7Nuodxz/aB5XJhJ01s/9GOJ/BS2XcxBqMoTbrGf61OdqzYhpxg==
+  version "5.3.0-dev.20230921"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230921.tgz#471132893592478dd2c75d7619b0c5adcb0ad37c"
+  integrity sha512-TZnDMkY/mgooSXJv72Zxr71MvXYUKiH05lekDOB9FaScoHLGNDvqw6IrT6qXx/kD6eJFpW2gadIz1eJQeA/URw==
 
 typescript@~5.1.6:
   version "5.1.6"
