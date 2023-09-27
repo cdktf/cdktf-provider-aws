@@ -1,6 +1,6 @@
 # `data_aws_vpc_peering_connections`
 
-Refer to the Terraform Registory for docs: [`data_aws_vpc_peering_connections`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections).
+Refer to the Terraform Registory for docs: [`data_aws_vpc_peering_connections`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections).
 
 # `dataAwsVpcPeeringConnections` Submodule <a name="`dataAwsVpcPeeringConnections` Submodule" id="@cdktf/provider-aws.dataAwsVpcPeeringConnections"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_vpc_peering_connections`](
 
 ### DataAwsVpcPeeringConnections <a name="DataAwsVpcPeeringConnections" id="@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections aws_vpc_peering_connections}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections aws_vpc_peering_connections}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.Initializer"></a>
 
@@ -675,8 +675,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsvpcpeeringconnecti
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#id DataAwsVpcPeeringConnections#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#tags DataAwsVpcPeeringConnections#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#id DataAwsVpcPeeringConnections#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#tags DataAwsVpcPeeringConnections#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts">DataAwsVpcPeeringConnectionsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -761,7 +761,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#filter DataAwsVpcPeeringConnections#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#filter DataAwsVpcPeeringConnections#filter}
 
 ---
 
@@ -773,7 +773,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#id DataAwsVpcPeeringConnections#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#id DataAwsVpcPeeringConnections#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#tags DataAwsVpcPeeringConnections#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#tags DataAwsVpcPeeringConnections#tags}.
 
 ---
 
@@ -802,7 +802,7 @@ Timeouts DataAwsVpcPeeringConnectionsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#timeouts DataAwsVpcPeeringConnections#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#timeouts DataAwsVpcPeeringConnections#timeouts}
 
 ---
 
@@ -823,8 +823,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsvpcpeeringconnecti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#name DataAwsVpcPeeringConnections#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#values DataAwsVpcPeeringConnections#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#name DataAwsVpcPeeringConnections#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#values DataAwsVpcPeeringConnections#values}. |
 
 ---
 
@@ -836,7 +836,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#name DataAwsVpcPeeringConnections#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#name DataAwsVpcPeeringConnections#name}.
 
 ---
 
@@ -848,7 +848,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#values DataAwsVpcPeeringConnections#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#values DataAwsVpcPeeringConnections#values}.
 
 ---
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsvpcpeeringconnecti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#read DataAwsVpcPeeringConnections#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#read DataAwsVpcPeeringConnections#read}. |
 
 ---
 
@@ -880,7 +880,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/vpc_peering_connections#read DataAwsVpcPeeringConnections#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpc_peering_connections#read DataAwsVpcPeeringConnections#read}.
 
 ---
 

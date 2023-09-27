@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot
+// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,15 @@ import * as cdktf from 'cdktf';
 
 export interface NeptuneClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot#db_cluster_identifier NeptuneClusterSnapshot#db_cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot#db_cluster_identifier NeptuneClusterSnapshot#db_cluster_identifier}
   */
   readonly dbClusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot#db_cluster_snapshot_identifier NeptuneClusterSnapshot#db_cluster_snapshot_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot#db_cluster_snapshot_identifier NeptuneClusterSnapshot#db_cluster_snapshot_identifier}
   */
   readonly dbClusterSnapshotIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot#id NeptuneClusterSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot#id NeptuneClusterSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface NeptuneClusterSnapshotConfig extends cdktf.TerraformMetaArgumen
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot#timeouts NeptuneClusterSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot#timeouts NeptuneClusterSnapshot#timeouts}
   */
   readonly timeouts?: NeptuneClusterSnapshotTimeouts;
 }
 export interface NeptuneClusterSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot#create NeptuneClusterSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot#create NeptuneClusterSnapshot#create}
   */
   readonly create?: string;
 }
@@ -111,7 +111,7 @@ export class NeptuneClusterSnapshotTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot}
 */
 export class NeptuneClusterSnapshot extends cdktf.TerraformResource {
 
@@ -125,7 +125,7 @@ export class NeptuneClusterSnapshot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/neptune_cluster_snapshot aws_neptune_cluster_snapshot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -136,7 +136,7 @@ export class NeptuneClusterSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'aws_neptune_cluster_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

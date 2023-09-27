@@ -1,6 +1,6 @@
 # `data_aws_codecommit_repository`
 
-Refer to the Terraform Registory for docs: [`data_aws_codecommit_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository).
+Refer to the Terraform Registory for docs: [`data_aws_codecommit_repository`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository).
 
 # `dataAwsCodecommitRepository` Submodule <a name="`dataAwsCodecommitRepository` Submodule" id="@cdktf/provider-aws.dataAwsCodecommitRepository"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_codecommit_repository`](ht
 
 ### DataAwsCodecommitRepository <a name="DataAwsCodecommitRepository" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository aws_codecommit_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository aws_codecommit_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepository.Initializer"></a>
 
@@ -614,8 +614,8 @@ new DataAwsCodecommitRepositoryConfig {
 | <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository#repository_name DataAwsCodecommitRepository#repository_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository#id DataAwsCodecommitRepository#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository#repository_name DataAwsCodecommitRepository#repository_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCodecommitRepository.DataAwsCodecommitRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository#id DataAwsCodecommitRepository#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string RepositoryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository#repository_name DataAwsCodecommitRepository#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository#repository_name DataAwsCodecommitRepository#repository_name}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/codecommit_repository#id DataAwsCodecommitRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/codecommit_repository#id DataAwsCodecommitRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

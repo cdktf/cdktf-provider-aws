@@ -1,6 +1,6 @@
 # `data_aws_imagebuilder_components`
 
-Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_components`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components).
+Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_components`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components).
 
 # `dataAwsImagebuilderComponents` Submodule <a name="`dataAwsImagebuilderComponents` Submodule" id="@cdktf/provider-aws.dataAwsImagebuilderComponents"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_imagebuilder_components`](
 
 ### DataAwsImagebuilderComponents <a name="DataAwsImagebuilderComponents" id="@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components aws_imagebuilder_components}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents.Initializer"></a>
 
@@ -643,8 +643,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsimagebuildercompon
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#id DataAwsImagebuilderComponents#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#owner DataAwsImagebuilderComponents#owner}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#id DataAwsImagebuilderComponents#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#owner DataAwsImagebuilderComponents#owner}. |
 
 ---
 
@@ -728,7 +728,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#filter DataAwsImagebuilderComponents#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#filter DataAwsImagebuilderComponents#filter}
 
 ---
 
@@ -740,7 +740,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#id DataAwsImagebuilderComponents#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#id DataAwsImagebuilderComponents#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#owner DataAwsImagebuilderComponents#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#owner DataAwsImagebuilderComponents#owner}.
 
 ---
 
@@ -776,8 +776,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsimagebuildercompon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#name DataAwsImagebuilderComponents#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#values DataAwsImagebuilderComponents#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#name DataAwsImagebuilderComponents#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponentsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#values DataAwsImagebuilderComponents#values}. |
 
 ---
 
@@ -789,7 +789,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#name DataAwsImagebuilderComponents#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#name DataAwsImagebuilderComponents#name}.
 
 ---
 
@@ -801,7 +801,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/imagebuilder_components#values DataAwsImagebuilderComponents#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/imagebuilder_components#values DataAwsImagebuilderComponents#values}.
 
 ---
 

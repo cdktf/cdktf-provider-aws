@@ -1,6 +1,6 @@
 # `aws_waf_xss_match_set`
 
-Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set).
+Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set).
 
 # `wafXssMatchSet` Submodule <a name="`wafXssMatchSet` Submodule" id="@cdktf/provider-aws.wafXssMatchSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_waf_xss_match_set`](https://reg
 
 ### WafXssMatchSet <a name="WafXssMatchSet" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSet.Initializer"></a>
 
@@ -635,8 +635,8 @@ const wafXssMatchSetConfig: wafXssMatchSet.WafXssMatchSetConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetConfig.property.xssMatchTuples">xssMatchTuples</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples">WafXssMatchSetXssMatchTuples</a>[]</code> | xss_match_tuples block. |
 
 ---
@@ -719,7 +719,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}.
 
 ---
 
@@ -731,7 +731,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ public readonly xssMatchTuples: IResolvable | WafXssMatchSetXssMatchTuples[];
 
 xss_match_tuples block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
 
 ---
 
@@ -767,7 +767,7 @@ const wafXssMatchSetXssMatchTuples: wafXssMatchSet.WafXssMatchSetXssMatchTuples 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.fieldToMatch">fieldToMatch</a></code> | <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch">WafXssMatchSetXssMatchTuplesFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.textTransformation">textTransformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuples.property.textTransformation">textTransformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}. |
 
 ---
 
@@ -781,7 +781,7 @@ public readonly fieldToMatch: WafXssMatchSetXssMatchTuplesFieldToMatch;
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
 
 ---
 
@@ -793,7 +793,7 @@ public readonly textTransformation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}.
 
 ---
 
@@ -811,8 +811,8 @@ const wafXssMatchSetXssMatchTuplesFieldToMatch: wafXssMatchSet.WafXssMatchSetXss
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesFieldToMatch.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}. |
 
 ---
 
@@ -824,7 +824,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}.
 
 ---
 
@@ -836,7 +836,7 @@ public readonly data: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}.
 
 ---
 

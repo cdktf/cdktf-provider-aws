@@ -1,6 +1,6 @@
 # `aws_pinpoint_app`
 
-Refer to the Terraform Registory for docs: [`aws_pinpoint_app`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app).
+Refer to the Terraform Registory for docs: [`aws_pinpoint_app`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app).
 
 # `pinpointApp` Submodule <a name="`pinpointApp` Submodule" id="@cdktf/provider-aws.pinpointApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_pinpoint_app`](https://registry
 
 ### PinpointApp <a name="PinpointApp" id="@cdktf/provider-aws.pinpointApp.PinpointApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app aws_pinpoint_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app aws_pinpoint_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.pinpointApp.PinpointApp.Initializer"></a>
 
@@ -821,9 +821,9 @@ new PinpointAppCampaignHook {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.lambdaFunctionName">LambdaFunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#lambda_function_name PinpointApp#lambda_function_name}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#mode PinpointApp#mode}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.webUrl">WebUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#web_url PinpointApp#web_url}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.lambdaFunctionName">LambdaFunctionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#lambda_function_name PinpointApp#lambda_function_name}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.mode">Mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#mode PinpointApp#mode}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook.property.webUrl">WebUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#web_url PinpointApp#web_url}. |
 
 ---
 
@@ -835,7 +835,7 @@ public string LambdaFunctionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#lambda_function_name PinpointApp#lambda_function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#lambda_function_name PinpointApp#lambda_function_name}.
 
 ---
 
@@ -847,7 +847,7 @@ public string Mode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#mode PinpointApp#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#mode PinpointApp#mode}.
 
 ---
 
@@ -859,7 +859,7 @@ public string WebUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#web_url PinpointApp#web_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#web_url PinpointApp#web_url}.
 
 ---
 
@@ -901,13 +901,13 @@ new PinpointAppConfig {
 | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.campaignHook">CampaignHook</a></code> | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHook">PinpointAppCampaignHook</a></code> | campaign_hook block. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#id PinpointApp#id}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#id PinpointApp#id}. |
 | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.limits">Limits</a></code> | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits">PinpointAppLimits</a></code> | limits block. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#name PinpointApp#name}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#name_prefix PinpointApp#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#name PinpointApp#name}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.namePrefix">NamePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#name_prefix PinpointApp#name_prefix}. |
 | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.quietTime">QuietTime</a></code> | <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime">PinpointAppQuietTime</a></code> | quiet_time block. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#tags PinpointApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#tags_all PinpointApp#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#tags PinpointApp#tags}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#tags_all PinpointApp#tags_all}. |
 
 ---
 
@@ -991,7 +991,7 @@ public PinpointAppCampaignHook CampaignHook { get; set; }
 
 campaign_hook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#campaign_hook PinpointApp#campaign_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#campaign_hook PinpointApp#campaign_hook}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#id PinpointApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#id PinpointApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public PinpointAppLimits Limits { get; set; }
 
 limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#limits PinpointApp#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#limits PinpointApp#limits}
 
 ---
 
@@ -1032,7 +1032,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#name PinpointApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#name PinpointApp#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string NamePrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#name_prefix PinpointApp#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#name_prefix PinpointApp#name_prefix}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public PinpointAppQuietTime QuietTime { get; set; }
 
 quiet_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#quiet_time PinpointApp#quiet_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#quiet_time PinpointApp#quiet_time}
 
 ---
 
@@ -1070,7 +1070,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#tags PinpointApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#tags PinpointApp#tags}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#tags_all PinpointApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#tags_all PinpointApp#tags_all}.
 
 ---
 
@@ -1105,10 +1105,10 @@ new PinpointAppLimits {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.daily">Daily</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#daily PinpointApp#daily}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.maximumDuration">MaximumDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#maximum_duration PinpointApp#maximum_duration}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.messagesPerSecond">MessagesPerSecond</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#messages_per_second PinpointApp#messages_per_second}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.total">Total</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#total PinpointApp#total}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.daily">Daily</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#daily PinpointApp#daily}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.maximumDuration">MaximumDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#maximum_duration PinpointApp#maximum_duration}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.messagesPerSecond">MessagesPerSecond</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#messages_per_second PinpointApp#messages_per_second}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppLimits.property.total">Total</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#total PinpointApp#total}. |
 
 ---
 
@@ -1120,7 +1120,7 @@ public double Daily { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#daily PinpointApp#daily}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#daily PinpointApp#daily}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public double MaximumDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#maximum_duration PinpointApp#maximum_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#maximum_duration PinpointApp#maximum_duration}.
 
 ---
 
@@ -1144,7 +1144,7 @@ public double MessagesPerSecond { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#messages_per_second PinpointApp#messages_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#messages_per_second PinpointApp#messages_per_second}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public double Total { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#total PinpointApp#total}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#total PinpointApp#total}.
 
 ---
 
@@ -1177,8 +1177,8 @@ new PinpointAppQuietTime {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime.property.end">End</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#end PinpointApp#end}. |
-| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime.property.start">Start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#start PinpointApp#start}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime.property.end">End</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#end PinpointApp#end}. |
+| <code><a href="#@cdktf/provider-aws.pinpointApp.PinpointAppQuietTime.property.start">Start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#start PinpointApp#start}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ public string End { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#end PinpointApp#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#end PinpointApp#end}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public string Start { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/pinpoint_app#start PinpointApp#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/pinpoint_app#start PinpointApp#start}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface ProxyProtocolPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}
   */
   readonly instancePorts: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}
   */
   readonly loadBalancer: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy}
 */
 export class ProxyProtocolPolicy extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class ProxyProtocolPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_proxy_protocol_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
