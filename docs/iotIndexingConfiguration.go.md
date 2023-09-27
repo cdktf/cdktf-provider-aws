@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfiguration(scope Construct, id *string, config IotIndexingConfigurationConfig) IotIndexingConfiguration
 ```
@@ -317,7 +317,7 @@ func ResetThingIndexingConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ iotindexingconfiguration.IotIndexingConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationConfig {
 	Connection: interface{},
@@ -639,8 +639,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	ThingGroupIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration,
-	ThingIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration,
+	ThingGroupIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration,
+	ThingIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration,
 }
 ```
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration {
 	ThingGroupIndexingMode: *string,
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField {
 	Name: *string,
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField {
 	Name: *string,
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfiguration {
 	ThingIndexingMode: *string,
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField {
 	Name: *string,
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField {
 	Name: *string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList
 ```
@@ -1278,7 +1278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference
 ```
@@ -2071,7 +2071,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference
 ```
@@ -2426,7 +2426,7 @@ func InternalValue() IotIndexingConfigurationThingGroupIndexingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingIndexingConfigurationCustomFieldList
 ```
@@ -2569,7 +2569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationManagedFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingIndexingConfigurationManagedFieldList
 ```
@@ -3037,7 +3037,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference
 ```
@@ -3362,7 +3362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotIndexingConfigurationThingIndexingConfigurationOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbserviceaccount"
 
 dataawselbserviceaccount.NewDataAwsElbServiceAccount(scope Construct, id *string, config DataAwsElbServiceAccountConfig) DataAwsElbServiceAccount
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbserviceaccount"
 
 dataawselbserviceaccount.DataAwsElbServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbserviceaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbserviceaccount"
 
 &dataawselbserviceaccount.DataAwsElbServiceAccountConfig {
 	Connection: interface{},
