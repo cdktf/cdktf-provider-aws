@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.NewChimeVoiceConnectorOrigination(scope Construct, id *string, config ChimeVoiceConnectorOriginationConfig) ChimeVoiceConnectorOrigination
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.ChimeVoiceConnectorOrigination_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.ChimeVoiceConnectorOrigination_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ chimevoiceconnectororigination.ChimeVoiceConnectorOrigination_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOrigination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.ChimeVoiceConnectorOrigination_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 &chimevoiceconnectororigination.ChimeVoiceConnectorOriginationConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 &chimevoiceconnectororigination.ChimeVoiceConnectorOriginationRoute {
 	Host: *string,
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.NewChimeVoiceConnectorOriginationRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimeVoiceConnectorOriginationRouteList
 ```
@@ -1026,7 +1026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorOrigination.ChimeVoiceConnectorOriginationRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectororigination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectororigination"
 
 chimevoiceconnectororigination.NewChimeVoiceConnectorOriginationRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimeVoiceConnectorOriginationRouteOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskkafkaversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskkafkaversion"
 
 dataawsmskkafkaversion.NewDataAwsMskKafkaVersion(scope Construct, id *string, config DataAwsMskKafkaVersionConfig) DataAwsMskKafkaVersion
 ```
@@ -291,7 +291,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskkafkaversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskkafkaversion"
 
 dataawsmskkafkaversion.DataAwsMskKafkaVersion_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskkafkaversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskkafkaversion"
 
 dataawsmskkafkaversion.DataAwsMskKafkaVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawsmskkafkaversion.DataAwsMskKafkaVersion_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskkafkaversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskkafkaversion"
 
 dataawsmskkafkaversion.DataAwsMskKafkaVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskkafkaversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskkafkaversion"
 
 &dataawsmskkafkaversion.DataAwsMskKafkaVersionConfig {
 	Connection: interface{},

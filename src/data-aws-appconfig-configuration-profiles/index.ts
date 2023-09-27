@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/appconfig_configuration_profiles
 // generated from terraform resource schema
 
