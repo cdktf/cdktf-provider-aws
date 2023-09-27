@@ -1,6 +1,6 @@
 # `data_aws_connect_hours_of_operation`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_hours_of_operation`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation).
+Refer to the Terraform Registory for docs: [`data_aws_connect_hours_of_operation`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation).
 
 # `dataAwsConnectHoursOfOperation` Submodule <a name="`dataAwsConnectHoursOfOperation` Submodule" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_hours_of_operation
 
 ### DataAwsConnectHoursOfOperation <a name="DataAwsConnectHoursOfOperation" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation aws_connect_hours_of_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperation(scope Construct, id *string, config DataAwsConnectHoursOfOperationConfig) DataAwsConnectHoursOfOperation
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperation_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperation_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 &dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperationConfig {
 	Connection: interface{},
@@ -704,11 +704,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoper
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#instance_id DataAwsConnectHoursOfOperation#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.hoursOfOperationId">HoursOfOperationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#id DataAwsConnectHoursOfOperation#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#name DataAwsConnectHoursOfOperation#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#instance_id DataAwsConnectHoursOfOperation#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.hoursOfOperationId">HoursOfOperationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#id DataAwsConnectHoursOfOperation#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#name DataAwsConnectHoursOfOperation#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}. |
 
 ---
 
@@ -790,7 +790,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#instance_id DataAwsConnectHoursOfOperation#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#instance_id DataAwsConnectHoursOfOperation#instance_id}.
 
 ---
 
@@ -802,7 +802,7 @@ HoursOfOperationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#hours_of_operation_id DataAwsConnectHoursOfOperation#hours_of_operation_id}.
 
 ---
 
@@ -814,7 +814,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#id DataAwsConnectHoursOfOperation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#id DataAwsConnectHoursOfOperation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#name DataAwsConnectHoursOfOperation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#name DataAwsConnectHoursOfOperation#name}.
 
 ---
 
@@ -841,7 +841,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/connect_hours_of_operation#tags DataAwsConnectHoursOfOperation#tags}.
 
 ---
 
@@ -850,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 &dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperationConfigA {
 
@@ -863,7 +863,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoper
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 &dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperationConfigEndTime {
 
@@ -876,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoper
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 &dataawsconnecthoursofoperation.DataAwsConnectHoursOfOperationConfigStartTime {
 
@@ -891,7 +891,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoper
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectHoursOfOperationConfigAList
 ```
@@ -1023,7 +1023,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectHoursOfOperationConfigAOutputReference
 ```
@@ -1323,7 +1323,7 @@ func InternalValue() DataAwsConnectHoursOfOperationConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigEndTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectHoursOfOperationConfigEndTimeList
 ```
@@ -1455,7 +1455,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigEndTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigEndTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectHoursOfOperationConfigEndTimeOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() DataAwsConnectHoursOfOperationConfigEndTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigStartTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectHoursOfOperationConfigStartTimeList
 ```
@@ -1876,7 +1876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsconnecthoursofoperation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnecthoursofoperation"
 
 dataawsconnecthoursofoperation.NewDataAwsConnectHoursOfOperationConfigStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectHoursOfOperationConfigStartTimeOutputReference
 ```

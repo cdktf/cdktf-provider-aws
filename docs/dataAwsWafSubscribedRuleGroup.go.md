@@ -1,6 +1,6 @@
 # `data_aws_waf_subscribed_rule_group`
 
-Refer to the Terraform Registory for docs: [`data_aws_waf_subscribed_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group).
+Refer to the Terraform Registory for docs: [`data_aws_waf_subscribed_rule_group`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group).
 
 # `dataAwsWafSubscribedRuleGroup` Submodule <a name="`dataAwsWafSubscribedRuleGroup` Submodule" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_waf_subscribed_rule_group`
 
 ### DataAwsWafSubscribedRuleGroup <a name="DataAwsWafSubscribedRuleGroup" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.NewDataAwsWafSubscribedRuleGroup(scope Construct, id *string, config DataAwsWafSubscribedRuleGroupConfig) DataAwsWafSubscribedRuleGroup
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
 
 dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafsubscribedrulegroup"
 
 &dataawswafsubscribedrulegroup.DataAwsWafSubscribedRuleGroupConfig {
 	Connection: interface{},
@@ -607,9 +607,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafsubscribedruleg
 | <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}. |
 
 ---
 
@@ -691,7 +691,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#id DataAwsWafSubscribedRuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -706,7 +706,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#metric_name DataAwsWafSubscribedRuleGroup#metric_name}.
 
 ---
 
@@ -718,7 +718,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/waf_subscribed_rule_group#name DataAwsWafSubscribedRuleGroup#name}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_lightsail_distribution`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_distribution`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution).
+Refer to the Terraform Registory for docs: [`aws_lightsail_distribution`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution).
 
 # `lightsailDistribution` Submodule <a name="`lightsailDistribution` Submodule" id="@cdktf/provider-aws.lightsailDistribution"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_distribution`](https:
 
 ### LightsailDistribution <a name="LightsailDistribution" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution aws_lightsail_distribution}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution aws_lightsail_distribution}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDistribution.LightsailDistribution.Initializer"></a>
 
@@ -1055,7 +1055,7 @@ public string Behavior { get; set; }
 
 The cache behavior for the specified path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#behavior LightsailDistribution#behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#behavior LightsailDistribution#behavior}
 
 ---
 
@@ -1071,7 +1071,7 @@ The path to a directory or file to cached, or not cache.
 
 Use an asterisk symbol to specify wildcard directories (path/to/assets/*), and file types (*.html, *jpg, *js). Directories and file paths are case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#path LightsailDistribution#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#path LightsailDistribution#path}
 
 ---
 
@@ -1119,7 +1119,7 @@ public string AllowedHttpMethods { get; set; }
 
 The HTTP methods that are processed and forwarded to the distribution's origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#allowed_http_methods LightsailDistribution#allowed_http_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#allowed_http_methods LightsailDistribution#allowed_http_methods}
 
 ---
 
@@ -1133,7 +1133,7 @@ public string CachedHttpMethods { get; set; }
 
 The HTTP method responses that are cached by your distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#cached_http_methods LightsailDistribution#cached_http_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#cached_http_methods LightsailDistribution#cached_http_methods}
 
 ---
 
@@ -1147,7 +1147,7 @@ public double DefaultTtl { get; set; }
 
 The default amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the content has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#default_ttl LightsailDistribution#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#default_ttl LightsailDistribution#default_ttl}
 
 ---
 
@@ -1161,7 +1161,7 @@ public LightsailDistributionCacheBehaviorSettingsForwardedCookies ForwardedCooki
 
 forwarded_cookies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#forwarded_cookies LightsailDistribution#forwarded_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#forwarded_cookies LightsailDistribution#forwarded_cookies}
 
 ---
 
@@ -1175,7 +1175,7 @@ public LightsailDistributionCacheBehaviorSettingsForwardedHeaders ForwardedHeade
 
 forwarded_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#forwarded_headers LightsailDistribution#forwarded_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#forwarded_headers LightsailDistribution#forwarded_headers}
 
 ---
 
@@ -1189,7 +1189,7 @@ public LightsailDistributionCacheBehaviorSettingsForwardedQueryStrings Forwarded
 
 forwarded_query_strings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#forwarded_query_strings LightsailDistribution#forwarded_query_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#forwarded_query_strings LightsailDistribution#forwarded_query_strings}
 
 ---
 
@@ -1203,7 +1203,7 @@ public double MaximumTtl { get; set; }
 
 The maximum amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the object has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#maximum_ttl LightsailDistribution#maximum_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#maximum_ttl LightsailDistribution#maximum_ttl}
 
 ---
 
@@ -1217,7 +1217,7 @@ public double MinimumTtl { get; set; }
 
 The minimum amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the object has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#minimum_ttl LightsailDistribution#minimum_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#minimum_ttl LightsailDistribution#minimum_ttl}
 
 ---
 
@@ -1253,7 +1253,7 @@ public string[] CookiesAllowList { get; set; }
 
 The specific cookies to forward to your distribution's origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#cookies_allow_list LightsailDistribution#cookies_allow_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#cookies_allow_list LightsailDistribution#cookies_allow_list}
 
 ---
 
@@ -1267,7 +1267,7 @@ public string Option { get; set; }
 
 Specifies which cookies to forward to the distribution's origin for a cache behavior: all, none, or allow-list to forward only the cookies specified in the cookiesAllowList parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#option LightsailDistribution#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#option LightsailDistribution#option}
 
 ---
 
@@ -1303,7 +1303,7 @@ public string[] HeadersAllowList { get; set; }
 
 The specific headers to forward to your distribution's origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#headers_allow_list LightsailDistribution#headers_allow_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#headers_allow_list LightsailDistribution#headers_allow_list}
 
 ---
 
@@ -1317,7 +1317,7 @@ public string Option { get; set; }
 
 The headers that you want your distribution to forward to your origin and base caching on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#option LightsailDistribution#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#option LightsailDistribution#option}
 
 ---
 
@@ -1353,7 +1353,7 @@ public object Option { get; set; }
 
 Indicates whether the distribution forwards and caches based on query strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#option LightsailDistribution#option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#option LightsailDistribution#option}
 
 ---
 
@@ -1367,7 +1367,7 @@ public string[] QueryStringsAllowedList { get; set; }
 
 The specific query strings that the distribution forwards to the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#query_strings_allowed_list LightsailDistribution#query_strings_allowed_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#query_strings_allowed_list LightsailDistribution#query_strings_allowed_list}
 
 ---
 
@@ -1420,11 +1420,11 @@ new LightsailDistributionConfig {
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.cacheBehavior">CacheBehavior</a></code> | <code>object</code> | cache_behavior block. |
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.cacheBehaviorSettings">CacheBehaviorSettings</a></code> | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionCacheBehaviorSettings">LightsailDistributionCacheBehaviorSettings</a></code> | cache_behavior_settings block. |
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.certificateName">CertificateName</a></code> | <code>string</code> | The name of the SSL/TLS certificate attached to the distribution, if any. |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#id LightsailDistribution#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#id LightsailDistribution#id}. |
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.ipAddressType">IpAddressType</a></code> | <code>string</code> | The IP address type of the distribution. |
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.isEnabled">IsEnabled</a></code> | <code>object</code> | Indicates whether the distribution is enabled. |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#tags LightsailDistribution#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#tags_all LightsailDistribution#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#tags LightsailDistribution#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#tags_all LightsailDistribution#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts">LightsailDistributionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1509,7 +1509,7 @@ public string BundleId { get; set; }
 
 The bundle ID to use for the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#bundle_id LightsailDistribution#bundle_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#bundle_id LightsailDistribution#bundle_id}
 
 ---
 
@@ -1523,7 +1523,7 @@ public LightsailDistributionDefaultCacheBehavior DefaultCacheBehavior { get; set
 
 default_cache_behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#default_cache_behavior LightsailDistribution#default_cache_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#default_cache_behavior LightsailDistribution#default_cache_behavior}
 
 ---
 
@@ -1537,7 +1537,7 @@ public string Name { get; set; }
 
 The name of the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#name LightsailDistribution#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#name LightsailDistribution#name}
 
 ---
 
@@ -1551,7 +1551,7 @@ public LightsailDistributionOrigin Origin { get; set; }
 
 origin block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#origin LightsailDistribution#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#origin LightsailDistribution#origin}
 
 ---
 
@@ -1565,7 +1565,7 @@ public object CacheBehavior { get; set; }
 
 cache_behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#cache_behavior LightsailDistribution#cache_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#cache_behavior LightsailDistribution#cache_behavior}
 
 ---
 
@@ -1579,7 +1579,7 @@ public LightsailDistributionCacheBehaviorSettings CacheBehaviorSettings { get; s
 
 cache_behavior_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#cache_behavior_settings LightsailDistribution#cache_behavior_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#cache_behavior_settings LightsailDistribution#cache_behavior_settings}
 
 ---
 
@@ -1593,7 +1593,7 @@ public string CertificateName { get; set; }
 
 The name of the SSL/TLS certificate attached to the distribution, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#certificate_name LightsailDistribution#certificate_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#certificate_name LightsailDistribution#certificate_name}
 
 ---
 
@@ -1605,7 +1605,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#id LightsailDistribution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#id LightsailDistribution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1622,7 +1622,7 @@ public string IpAddressType { get; set; }
 
 The IP address type of the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#ip_address_type LightsailDistribution#ip_address_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#ip_address_type LightsailDistribution#ip_address_type}
 
 ---
 
@@ -1636,7 +1636,7 @@ public object IsEnabled { get; set; }
 
 Indicates whether the distribution is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#is_enabled LightsailDistribution#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#is_enabled LightsailDistribution#is_enabled}
 
 ---
 
@@ -1648,7 +1648,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#tags LightsailDistribution#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#tags LightsailDistribution#tags}.
 
 ---
 
@@ -1660,7 +1660,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#tags_all LightsailDistribution#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#tags_all LightsailDistribution#tags_all}.
 
 ---
 
@@ -1674,7 +1674,7 @@ public LightsailDistributionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#timeouts LightsailDistribution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#timeouts LightsailDistribution#timeouts}
 
 ---
 
@@ -1708,7 +1708,7 @@ public string Behavior { get; set; }
 
 The cache behavior of the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#behavior LightsailDistribution#behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#behavior LightsailDistribution#behavior}
 
 ---
 
@@ -1759,7 +1759,7 @@ public string Name { get; set; }
 
 The name of the origin resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#name LightsailDistribution#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#name LightsailDistribution#name}
 
 ---
 
@@ -1773,7 +1773,7 @@ public string RegionName { get; set; }
 
 The AWS Region name of the origin resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#region_name LightsailDistribution#region_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#region_name LightsailDistribution#region_name}
 
 ---
 
@@ -1787,7 +1787,7 @@ public string ProtocolPolicy { get; set; }
 
 The protocol that your Amazon Lightsail distribution uses when establishing a connection with your origin to pull content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#protocol_policy LightsailDistribution#protocol_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#protocol_policy LightsailDistribution#protocol_policy}
 
 ---
 
@@ -1809,9 +1809,9 @@ new LightsailDistributionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#create LightsailDistribution#create}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#delete LightsailDistribution#delete}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#update LightsailDistribution#update}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#create LightsailDistribution#create}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#delete LightsailDistribution#delete}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDistribution.LightsailDistributionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#update LightsailDistribution#update}. |
 
 ---
 
@@ -1823,7 +1823,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#create LightsailDistribution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#create LightsailDistribution#create}.
 
 ---
 
@@ -1835,7 +1835,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#delete LightsailDistribution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#delete LightsailDistribution#delete}.
 
 ---
 
@@ -1847,7 +1847,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/lightsail_distribution#update LightsailDistribution#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_distribution#update LightsailDistribution#update}.
 
 ---
 

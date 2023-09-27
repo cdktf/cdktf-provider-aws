@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery
+// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface VpcIpamResourceDiscoveryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * operating_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
   */
   readonly operatingRegions: VpcIpamResourceDiscoveryOperatingRegions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
   */
   readonly timeouts?: VpcIpamResourceDiscoveryTimeouts;
 }
 export interface VpcIpamResourceDiscoveryOperatingRegions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}
   */
   readonly regionName: string;
 }
@@ -140,15 +135,15 @@ export class VpcIpamResourceDiscoveryOperatingRegionsList extends cdktf.ComplexL
 }
 export interface VpcIpamResourceDiscoveryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}
   */
   readonly update?: string;
 }
@@ -269,7 +264,7 @@ export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}
 */
 export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
 
@@ -283,7 +278,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -294,7 +289,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_resource_discovery',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

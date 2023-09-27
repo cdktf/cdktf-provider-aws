@@ -1,6 +1,6 @@
 # `aws_simpledb_domain`
 
-Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/simpledb_domain).
+Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/simpledb_domain).
 
 # `simpledbDomain` Submodule <a name="`simpledbDomain` Submodule" id="@cdktf/provider-aws.simpledbDomain"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_simpledb_domain`](https://regis
 
 ### SimpledbDomain <a name="SimpledbDomain" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/simpledb_domain aws_simpledb_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/simpledb_domain aws_simpledb_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.NewSimpledbDomain(scope Construct, id *string, config SimpledbDomainConfig) SimpledbDomain
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ simpledbdomain.SimpledbDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 simpledbdomain.SimpledbDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/simpledbdomain"
 
 &simpledbdomain.SimpledbDomainConfig {
 	Connection: interface{},
@@ -573,7 +573,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/simpledbdomain"
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/simpledb_domain#name SimpledbDomain#name}. |
+| <code><a href="#@cdktf/provider-aws.simpledbDomain.SimpledbDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/simpledb_domain#name SimpledbDomain#name}. |
 
 ---
 
@@ -655,7 +655,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/simpledb_domain#name SimpledbDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/simpledb_domain#name SimpledbDomain#name}.
 
 ---
 
