@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProduct(scope Construct, id *string, config ServicecatalogProvisionedProductConfig) ServicecatalogProvisionedProduct
 ```
@@ -421,7 +421,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.ServicecatalogProvisionedProduct_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.ServicecatalogProvisionedProduct_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ servicecatalogprovisionedproduct.ServicecatalogProvisionedProduct_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.ServicecatalogProvisionedProduct_IsTerraformResource(x interface{}) *bool
 ```
@@ -1161,7 +1161,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 &servicecatalogprovisionedproduct.ServicecatalogProvisionedProductConfig {
 	Connection: interface{},
@@ -1184,10 +1184,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedprod
 	ProvisioningArtifactName: *string,
 	ProvisioningParameters: interface{},
 	RetainPhysicalResources: interface{},
-	StackSetProvisioningPreferences: github.com/cdktf/cdktf-provider-aws-go/aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences,
+	StackSetProvisioningPreferences: github.com/cdktf/cdktf-provider-aws-go/aws/v17.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeouts,
 }
 ```
 
@@ -1510,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 &servicecatalogprovisionedproduct.ServicecatalogProvisionedProductOutputs {
 
@@ -1523,7 +1523,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedprod
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 &servicecatalogprovisionedproduct.ServicecatalogProvisionedProductProvisioningParameters {
 	Key: *string,
@@ -1583,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 &servicecatalogprovisionedproduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences {
 	Accounts: *[]*string,
@@ -1685,7 +1685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 &servicecatalogprovisionedproduct.ServicecatalogProvisionedProductTimeouts {
 	Create: *string,
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductOutputsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicecatalogProvisionedProductOutputsList
 ```
@@ -1893,7 +1893,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicecatalogProvisionedProductOutputsOutputReference
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() ServicecatalogProvisionedProductOutputs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductProvisioningParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicecatalogProvisionedProductProvisioningParametersList
 ```
@@ -2336,7 +2336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductProvisioningParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicecatalogProvisionedProductProvisioningParametersOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference
 ```
@@ -3106,7 +3106,7 @@ func InternalValue() ServicecatalogProvisionedProductStackSetProvisioningPrefere
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicecatalogprovisionedproduct"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogprovisionedproduct"
 
 servicecatalogprovisionedproduct.NewServicecatalogProvisionedProductTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogProvisionedProductTimeoutsOutputReference
 ```
