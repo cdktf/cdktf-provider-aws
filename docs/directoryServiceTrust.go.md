@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicetrust"
 
 directoryservicetrust.NewDirectoryServiceTrust(scope Construct, id *string, config DirectoryServiceTrustConfig) DirectoryServiceTrust
 ```
@@ -298,7 +298,7 @@ func ResetTrustType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ directoryservicetrust.DirectoryServiceTrust_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -785,7 +785,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/directoryservicetrust"
 
 &directoryservicetrust.DirectoryServiceTrustConfig {
 	Connection: interface{},

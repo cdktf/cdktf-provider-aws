@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetwork(scope Construct, id *string, config NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NetworkmanagerCoreNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts,
 }
 ```
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkEdges {
 
@@ -1083,7 +1083,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkSegments {
 
@@ -1096,7 +1096,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 &networkmanagercorenetwork.NetworkmanagerCoreNetworkTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdgesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkEdgesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerCoreNetworkEdgesList
 ```
@@ -1290,7 +1290,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkEdgesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkEdgesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerCoreNetworkEdgesOutputReference
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() NetworkmanagerCoreNetworkEdges
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkSegmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkmanagerCoreNetworkSegmentsList
 ```
@@ -1722,7 +1722,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkSegmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkmanagerCoreNetworkSegmentsOutputReference
 ```
@@ -2022,7 +2022,7 @@ func InternalValue() NetworkmanagerCoreNetworkSegments
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkmanagercorenetwork"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmanagercorenetwork"
 
 networkmanagercorenetwork.NewNetworkmanagerCoreNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkmanagerCoreNetworkTimeoutsOutputReference
 ```

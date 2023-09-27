@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplication(scope Construct, id *string, config EmrserverlessApplicationConfig) EmrserverlessApplication
 ```
@@ -418,7 +418,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ emrserverlessapplication.EmrserverlessApplication_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.EmrserverlessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -960,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationAutoStartConfiguration {
 	Enabled: interface{},
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationAutoStopConfiguration {
 	Enabled: interface{},
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationConfig {
 	Connection: interface{},
@@ -1052,13 +1052,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
 	ReleaseLabel: *string,
 	Type: *string,
 	Architecture: *string,
-	AutoStartConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration,
-	AutoStopConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration,
+	AutoStartConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration,
+	AutoStopConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration,
 	Id: *string,
-	ImageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationImageConfiguration,
+	ImageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration,
 	InitialCapacity: interface{},
-	MaximumCapacity: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration,
+	MaximumCapacity: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationImageConfiguration {
 	ImageUri: *string,
@@ -1369,11 +1369,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacity {
 	InitialCapacityType: *string,
-	InitialCapacityConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig,
+	InitialCapacityConfig: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig,
 }
 ```
 
@@ -1417,11 +1417,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig {
 	WorkerCount: *f64,
-	WorkerConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration,
+	WorkerConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration,
 }
 ```
 
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration {
 	Cpu: *string,
@@ -1525,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationMaximumCapacity {
 	Cpu: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 &emrserverlessapplication.EmrserverlessApplicationNetworkConfiguration {
 	SecurityGroupIds: *[]*string,
@@ -1633,7 +1633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationAutoStartConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationAutoStartConfigurationOutputReference
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() EmrserverlessApplicationAutoStartConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationAutoStopConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationAutoStopConfigurationOutputReference
 ```
@@ -2218,7 +2218,7 @@ func InternalValue() EmrserverlessApplicationAutoStopConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationImageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationImageConfigurationOutputReference
 ```
@@ -2489,7 +2489,7 @@ func InternalValue() EmrserverlessApplicationImageConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference
 ```
@@ -2802,7 +2802,7 @@ func InternalValue() EmrserverlessApplicationInitialCapacityInitialCapacityConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference
 ```
@@ -3124,7 +3124,7 @@ func InternalValue() EmrserverlessApplicationInitialCapacityInitialCapacityConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrserverlessApplicationInitialCapacityList
 ```
@@ -3267,7 +3267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationInitialCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrserverlessApplicationInitialCapacityOutputReference
 ```
@@ -3598,7 +3598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMaximumCapacityOutputReference
 ```
@@ -3920,7 +3920,7 @@ func InternalValue() EmrserverlessApplicationMaximumCapacity
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/emrserverlessapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrserverlessapplication"
 
 emrserverlessapplication.NewEmrserverlessApplicationNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationNetworkConfigurationOutputReference
 ```

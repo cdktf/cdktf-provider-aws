@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.NewSsmAssociation(scope Construct, id *string, config SsmAssociationConfig) SsmAssociation
 ```
@@ -401,7 +401,7 @@ func ResetWaitForSuccessTimeoutSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.SsmAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.SsmAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ ssmassociation.SsmAssociation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmAssociation.SsmAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.SsmAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -1020,7 +1020,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 &ssmassociation.SsmAssociationConfig {
 	Connection: interface{},
@@ -1040,7 +1040,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
 	InstanceId: *string,
 	MaxConcurrency: *string,
 	MaxErrors: *string,
-	OutputLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v17.ssmAssociation.SsmAssociationOutputLocation,
+	OutputLocation: github.com/cdktf/cdktf-provider-aws-go/aws.ssmAssociation.SsmAssociationOutputLocation,
 	Parameters: *map[string]*string,
 	ScheduleExpression: *string,
 	SyncCompliance: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 &ssmassociation.SsmAssociationOutputLocation {
 	S3BucketName: *string,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 &ssmassociation.SsmAssociationTargets {
 	Key: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.NewSsmAssociationOutputLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmAssociationOutputLocationOutputReference
 ```
@@ -1790,7 +1790,7 @@ func InternalValue() SsmAssociationOutputLocation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.NewSsmAssociationTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmAssociationTargetsList
 ```
@@ -1933,7 +1933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmassociation"
 
 ssmassociation.NewSsmAssociationTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmAssociationTargetsOutputReference
 ```

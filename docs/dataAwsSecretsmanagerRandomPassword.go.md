@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagerrandompassword"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagerrandompassword"
 
 dataawssecretsmanagerrandompassword.NewDataAwsSecretsmanagerRandomPassword(scope Construct, id *string, config DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword
 ```
@@ -340,7 +340,7 @@ func ResetRequireEachIncludedType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagerrandompassword"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagerrandompassword"
 
 dataawssecretsmanagerrandompassword.DataAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagerrandompassword"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagerrandompassword"
 
 dataawssecretsmanagerrandompassword.DataAwsSecretsmanagerRandomPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataawssecretsmanagerrandompassword.DataAwsSecretsmanagerRandomPassword_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagerrandompassword"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagerrandompassword"
 
 dataawssecretsmanagerrandompassword.DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssecretsmanagerrandompassword"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssecretsmanagerrandompassword"
 
 &dataawssecretsmanagerrandompassword.DataAwsSecretsmanagerRandomPasswordConfig {
 	Connection: interface{},
