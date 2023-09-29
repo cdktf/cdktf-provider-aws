@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/securityhub_organization_admin_account
+// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/securityhub_organization_admin_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityhubOrganizationAdminAccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/securityhub_organization_admin_account#admin_account_id SecurityhubOrganizationAdminAccount#admin_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/securityhub_organization_admin_account#admin_account_id SecurityhubOrganizationAdminAccount#admin_account_id}
   */
   readonly adminAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/securityhub_organization_admin_account#id SecurityhubOrganizationAdminAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/securityhub_organization_admin_account#id SecurityhubOrganizationAdminAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface SecurityhubOrganizationAdminAccountConfig extends cdktf.Terrafo
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account}
 */
 export class SecurityhubOrganizationAdminAccount extends cdktf.TerraformResource {
 
@@ -40,7 +35,7 @@ export class SecurityhubOrganizationAdminAccount extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class SecurityhubOrganizationAdminAccount extends cdktf.TerraformResource
       terraformResourceType: 'aws_securityhub_organization_admin_account',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.18.1',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

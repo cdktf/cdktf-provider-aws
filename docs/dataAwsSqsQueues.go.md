@@ -1,6 +1,6 @@
 # `data_aws_sqs_queues`
 
-Refer to the Terraform Registory for docs: [`data_aws_sqs_queues`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues).
+Refer to the Terraform Registory for docs: [`data_aws_sqs_queues`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues).
 
 # `dataAwsSqsQueues` Submodule <a name="`dataAwsSqsQueues` Submodule" id="@cdktf/provider-aws.dataAwsSqsQueues"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_sqs_queues`](https://regis
 
 ### DataAwsSqsQueues <a name="DataAwsSqsQueues" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues aws_sqs_queues}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues aws_sqs_queues}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.NewDataAwsSqsQueues(scope Construct, id *string, config DataAwsSqsQueuesConfig) DataAwsSqsQueues
 ```
@@ -284,7 +284,7 @@ func ResetQueueNamePrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawssqsqueues.DataAwsSqsQueues_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 dataawssqsqueues.DataAwsSqsQueues_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssqsqueues"
 
 &dataawssqsqueues.DataAwsSqsQueuesConfig {
 	Connection: interface{},
@@ -588,8 +588,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawssqsqueues"
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.queueNamePrefix">QueueNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig.property.queueNamePrefix">QueueNamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}. |
 
 ---
 
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues#id DataAwsSqsQueues#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ QueueNamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/sqs_queues#queue_name_prefix DataAwsSqsQueues#queue_name_prefix}.
 
 ---
 

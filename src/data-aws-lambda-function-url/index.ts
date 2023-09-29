@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url
+// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLambdaFunctionUrlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}
   */
   readonly qualifier?: string;
 }
@@ -119,7 +114,7 @@ export class DataAwsLambdaFunctionUrlCorsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url aws_lambda_function_url}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url aws_lambda_function_url}
 */
 export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
 
@@ -133,7 +128,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/lambda_function_url aws_lambda_function_url} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/lambda_function_url aws_lambda_function_url} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +139,7 @@ export class DataAwsLambdaFunctionUrl extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_lambda_function_url',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.18.1',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

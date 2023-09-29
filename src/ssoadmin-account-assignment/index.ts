@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment
+// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface SsoadminAccountAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#id SsoadminAccountAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#id SsoadminAccountAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#instance_arn SsoadminAccountAssignment#instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#instance_arn SsoadminAccountAssignment#instance_arn}
   */
   readonly instanceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#permission_set_arn SsoadminAccountAssignment#permission_set_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#permission_set_arn SsoadminAccountAssignment#permission_set_arn}
   */
   readonly permissionSetArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#principal_id SsoadminAccountAssignment#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#principal_id SsoadminAccountAssignment#principal_id}
   */
   readonly principalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#principal_type SsoadminAccountAssignment#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#principal_type SsoadminAccountAssignment#principal_type}
   */
   readonly principalType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#target_id SsoadminAccountAssignment#target_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#target_id SsoadminAccountAssignment#target_id}
   */
   readonly targetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#target_type SsoadminAccountAssignment#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#target_type SsoadminAccountAssignment#target_type}
   */
   readonly targetType?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#timeouts SsoadminAccountAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#timeouts SsoadminAccountAssignment#timeouts}
   */
   readonly timeouts?: SsoadminAccountAssignmentTimeouts;
 }
 export interface SsoadminAccountAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#create SsoadminAccountAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#create SsoadminAccountAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment#delete SsoadminAccountAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment#delete SsoadminAccountAssignment#delete}
   */
   readonly delete?: string;
 }
@@ -154,7 +149,7 @@ export class SsoadminAccountAssignmentTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}
 */
 export class SsoadminAccountAssignment extends cdktf.TerraformResource {
 
@@ -168,7 +163,7 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +174,7 @@ export class SsoadminAccountAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ssoadmin_account_assignment',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.18.1',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket
+// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface LightsailBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}
   */
   readonly bundleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket#id LightsailBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}
+  */
+  readonly forceDelete?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#id LightsailBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket#name LightsailBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#name LightsailBucket#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket#tags LightsailBucket#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket aws_lightsail_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket aws_lightsail_bucket}
 */
 export class LightsailBucket extends cdktf.TerraformResource {
 
@@ -52,7 +51,7 @@ export class LightsailBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +62,7 @@ export class LightsailBucket extends cdktf.TerraformResource {
       terraformResourceType: 'aws_lightsail_bucket',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.18.1',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -75,6 +74,7 @@ export class LightsailBucket extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._bundleId = config.bundleId;
+    this._forceDelete = config.forceDelete;
     this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
@@ -111,6 +111,22 @@ export class LightsailBucket extends cdktf.TerraformResource {
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
+  }
+
+  // force_delete - computed: false, optional: true, required: false
+  private _forceDelete?: boolean | cdktf.IResolvable; 
+  public get forceDelete() {
+    return this.getBooleanAttribute('force_delete');
+  }
+  public set forceDelete(value: boolean | cdktf.IResolvable) {
+    this._forceDelete = value;
+  }
+  public resetForceDelete() {
+    this._forceDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteInput() {
+    return this._forceDelete;
   }
 
   // id - computed: true, optional: true, required: false
@@ -196,6 +212,7 @@ export class LightsailBucket extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bundle_id: cdktf.stringToTerraform(this._bundleId),
+      force_delete: cdktf.booleanToTerraform(this._forceDelete),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

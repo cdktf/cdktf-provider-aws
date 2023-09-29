@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsSignerSigningProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile#id DataAwsSignerSigningProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile#name DataAwsSignerSigningProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile#tags DataAwsSignerSigningProfile#tags}
   */
   readonly tags?: { [key: string]: string };
 }
@@ -173,7 +168,7 @@ export class DataAwsSignerSigningProfileSignatureValidityPeriodList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile aws_signer_signing_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile}
 */
 export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
 
@@ -187,7 +182,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/signer_signing_profile aws_signer_signing_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +193,7 @@ export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_signer_signing_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.18.1',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

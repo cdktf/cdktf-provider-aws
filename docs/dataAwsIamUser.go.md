@@ -1,6 +1,6 @@
 # `data_aws_iam_user`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_user`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user).
+Refer to the Terraform Registory for docs: [`data_aws_iam_user`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user).
 
 # `dataAwsIamUser` Submodule <a name="`dataAwsIamUser` Submodule" id="@cdktf/provider-aws.dataAwsIamUser"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_user`](https://registr
 
 ### DataAwsIamUser <a name="DataAwsIamUser" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user aws_iam_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user aws_iam_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.NewDataAwsIamUser(scope Construct, id *string, config DataAwsIamUserConfig) DataAwsIamUser
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsiamuser.DataAwsIamUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 dataawsiamuser.DataAwsIamUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamuser"
 
 &dataawsiamuser.DataAwsIamUserConfig {
 	Connection: interface{},
@@ -644,9 +644,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsiamuser"
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#user_name DataAwsIamUser#user_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#id DataAwsIamUser#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#tags DataAwsIamUser#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#user_name DataAwsIamUser#user_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#id DataAwsIamUser#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUser.DataAwsIamUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#tags DataAwsIamUser#tags}. |
 
 ---
 
@@ -728,7 +728,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#user_name DataAwsIamUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#user_name DataAwsIamUser#user_name}.
 
 ---
 
@@ -740,7 +740,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#id DataAwsIamUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#id DataAwsIamUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -755,7 +755,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/iam_user#tags DataAwsIamUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/iam_user#tags DataAwsIamUser#tags}.
 
 ---
 
