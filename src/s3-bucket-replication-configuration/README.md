@@ -1,3 +1,3 @@
 # `aws_s3_bucket_replication_configuration`
 
-Refer to the Terraform Registory for docs: [`aws_s3_bucket_replication_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/s3_bucket_replication_configuration).
+Refer to the Terraform Registory for docs: [`aws_s3_bucket_replication_configuration`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/s3_bucket_replication_configuration).
