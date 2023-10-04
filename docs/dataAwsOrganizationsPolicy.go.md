@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.NewDataAwsOrganizationsPolicy(scope Construct, id *string, config DataAwsOrganizationsPolicyConfig) DataAwsOrganizationsPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 dataawsorganizationspolicy.DataAwsOrganizationsPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsPolicy.DataAwsOrganizationsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsorganizationspolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationspolicy"
 
 &dataawsorganizationspolicy.DataAwsOrganizationsPolicyConfig {
 	Connection: interface{},
