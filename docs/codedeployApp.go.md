@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/codedeployapp"
 
 codedeployapp.NewCodedeployApp(scope Construct, id *string, config CodedeployAppConfig) CodedeployApp
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/codedeployapp"
 
 codedeployapp.CodedeployApp_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/codedeployapp"
 
 codedeployapp.CodedeployApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ codedeployapp.CodedeployApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codedeployApp.CodedeployApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/codedeployapp"
 
 codedeployapp.CodedeployApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployApp.CodedeployAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeployapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/codedeployapp"
 
 &codedeployapp.CodedeployAppConfig {
 	Connection: interface{},
