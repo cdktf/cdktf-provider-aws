@@ -1,3 +1,3 @@
 # `aws_glacier_vault_lock`
 
-Refer to the Terraform Registory for docs: [`aws_glacier_vault_lock`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock).
+Refer to the Terraform Registory for docs: [`aws_glacier_vault_lock`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock).
