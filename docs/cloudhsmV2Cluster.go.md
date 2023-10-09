@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2Cluster(scope Construct, id *string, config CloudhsmV2ClusterConfig) CloudhsmV2Cluster
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterClusterCertificates {
 
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
 	SourceBackupIdentifier: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts,
 }
 ```
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterTimeouts {
 	Create: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterClusterCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudhsmV2ClusterClusterCertificatesList
 ```
@@ -1184,7 +1184,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudhsmV2ClusterClusterCertificatesOutputReference
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() CloudhsmV2ClusterClusterCertificates
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudhsmv2cluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudhsmV2ClusterTimeoutsOutputReference
 ```

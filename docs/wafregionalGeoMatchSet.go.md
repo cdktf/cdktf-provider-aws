@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSet(scope Construct, id *string, config WafregionalGeoMatchSetConfig) WafregionalGeoMatchSet
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.WafregionalGeoMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 &wafregionalgeomatchset.WafregionalGeoMatchSetConfig {
 	Connection: interface{},
@@ -757,7 +757,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 &wafregionalgeomatchset.WafregionalGeoMatchSetGeoMatchConstraint {
 	Type: *string,
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSetGeoMatchConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalGeoMatchSetGeoMatchConstraintList
 ```
@@ -948,7 +948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSetGeoMatchConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/wafregionalgeomatchset"
 
 wafregionalgeomatchset.NewWafregionalGeoMatchSetGeoMatchConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalGeoMatchSetGeoMatchConstraintOutputReference
 ```

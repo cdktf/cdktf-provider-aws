@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomain"
 
 lightsaildomain.NewLightsailDomain(scope Construct, id *string, config LightsailDomainConfig) LightsailDomain
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ lightsaildomain.LightsailDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDomain.LightsailDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomain"
 
 lightsaildomain.LightsailDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDomain.LightsailDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsaildomain"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildomain"
 
 &lightsaildomain.LightsailDomainConfig {
 	Connection: interface{},

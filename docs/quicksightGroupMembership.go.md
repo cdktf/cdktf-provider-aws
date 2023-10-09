@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightgroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroupmembership"
 
 quicksightgroupmembership.NewQuicksightGroupMembership(scope Construct, id *string, config QuicksightGroupMembershipConfig) QuicksightGroupMembership
 ```
@@ -291,7 +291,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightgroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightgroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ quicksightgroupmembership.QuicksightGroupMembership_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightgroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightgroupmembership"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroupmembership"
 
 &quicksightgroupmembership.QuicksightGroupMembershipConfig {
 	Connection: interface{},

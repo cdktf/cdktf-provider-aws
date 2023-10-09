@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.NewDataAwsMskVpcConnection(scope Construct, id *string, config DataAwsMskVpcConnectionConfig) DataAwsMskVpcConnection
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskvpcconnection"
 
 dataawsmskvpcconnection.DataAwsMskVpcConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsMskVpcConnection.DataAwsMskVpcConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsmskvpcconnection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsmskvpcconnection"
 
 &dataawsmskvpcconnection.DataAwsMskVpcConnectionConfig {
 	Connection: interface{},

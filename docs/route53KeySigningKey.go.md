@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53keysigningkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53keysigningkey"
 
 route53keysigningkey.NewRoute53KeySigningKey(scope Construct, id *string, config Route53KeySigningKeyConfig) Route53KeySigningKey
 ```
@@ -284,7 +284,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53keysigningkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53keysigningkey"
 
 route53keysigningkey.Route53KeySigningKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53keysigningkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53keysigningkey"
 
 route53keysigningkey.Route53KeySigningKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ route53keysigningkey.Route53KeySigningKey_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53keysigningkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53keysigningkey"
 
 route53keysigningkey.Route53KeySigningKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53keysigningkey"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53keysigningkey"
 
 &route53keysigningkey.Route53KeySigningKeyConfig {
 	Connection: interface{},
