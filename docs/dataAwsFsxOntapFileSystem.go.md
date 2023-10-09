@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystem(scope Construct, id *string, config DataAwsFsxOntapFileSystemConfig) DataAwsFsxOntapFileSystem
 ```
@@ -277,7 +277,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemDiskIopsConfiguration {
 
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpoints {
 
@@ -912,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsIntercluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpointsIntercluster {
 
@@ -925,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpointsManagement {
 
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemDiskIopsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemDiskIopsConfigurationList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference
 ```
@@ -1361,7 +1361,7 @@ func InternalValue() DataAwsFsxOntapFileSystemDiskIopsConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsInterclusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsInterclusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsInterclusterList
 ```
@@ -1493,7 +1493,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference
 ```
@@ -1782,7 +1782,7 @@ func InternalValue() DataAwsFsxOntapFileSystemEndpointsIntercluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsList
 ```
@@ -1914,7 +1914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsManagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsManagementList
 ```
@@ -2046,7 +2046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsManagementOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() DataAwsFsxOntapFileSystemEndpointsManagement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsfsxontapfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsOutputReference
 ```
