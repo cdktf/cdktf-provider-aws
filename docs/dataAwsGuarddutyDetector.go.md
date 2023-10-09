@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetector(scope Construct, id *string, config DataAwsGuarddutyDetectorConfig) DataAwsGuarddutyDetector
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorConfig {
 	Connection: interface{},
@@ -685,7 +685,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorFeatures {
 
@@ -698,7 +698,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration {
 
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList
 ```
@@ -845,7 +845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference
 ```
@@ -1134,7 +1134,7 @@ func InternalValue() DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGuarddutyDetectorFeaturesList
 ```
@@ -1266,7 +1266,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsguarddutydetector"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGuarddutyDetectorFeaturesOutputReference
 ```
