@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEc2InstanceTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}
   */
   readonly instanceType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
   */
   readonly timeouts?: DataAwsEc2InstanceTypeTimeouts;
 }
@@ -338,7 +333,7 @@ export class DataAwsEc2InstanceTypeInstanceDisksList extends cdktf.ComplexList {
 }
 export interface DataAwsEc2InstanceTypeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}
   */
   readonly read?: string;
 }
@@ -413,7 +408,7 @@ export class DataAwsEc2InstanceTypeTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}
 */
 export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
 
@@ -427,7 +422,7 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -438,7 +433,7 @@ export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ec2_instance_type',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

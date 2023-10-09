@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal#allowed_prefixes DxGatewayAssociationProposal#allowed_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal#allowed_prefixes DxGatewayAssociationProposal#allowed_prefixes}
   */
   readonly allowedPrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal#associated_gateway_id DxGatewayAssociationProposal#associated_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal#associated_gateway_id DxGatewayAssociationProposal#associated_gateway_id}
   */
   readonly associatedGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal#dx_gateway_id DxGatewayAssociationProposal#dx_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal#dx_gateway_id DxGatewayAssociationProposal#dx_gateway_id}
   */
   readonly dxGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal#dx_gateway_owner_account_id DxGatewayAssociationProposal#dx_gateway_owner_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal#dx_gateway_owner_account_id DxGatewayAssociationProposal#dx_gateway_owner_account_id}
   */
   readonly dxGatewayOwnerAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal#id DxGatewayAssociationProposal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal#id DxGatewayAssociationProposal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,7 +33,7 @@ export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaA
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal aws_dx_gateway_association_proposal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal aws_dx_gateway_association_proposal}
 */
 export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
@@ -52,7 +47,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/dx_gateway_association_proposal aws_dx_gateway_association_proposal} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/dx_gateway_association_proposal aws_dx_gateway_association_proposal} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
       terraformResourceType: 'aws_dx_gateway_association_proposal',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

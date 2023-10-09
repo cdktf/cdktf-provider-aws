@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface EksFargateProfileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#cluster_name EksFargateProfile#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#cluster_name EksFargateProfile#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#fargate_profile_name EksFargateProfile#fargate_profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#fargate_profile_name EksFargateProfile#fargate_profile_name}
   */
   readonly fargateProfileName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#id EksFargateProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#id EksFargateProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#pod_execution_role_arn EksFargateProfile#pod_execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#pod_execution_role_arn EksFargateProfile#pod_execution_role_arn}
   */
   readonly podExecutionRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#subnet_ids EksFargateProfile#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#subnet_ids EksFargateProfile#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#tags EksFargateProfile#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#tags EksFargateProfile#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#tags_all EksFargateProfile#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#tags_all EksFargateProfile#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#selector EksFargateProfile#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#selector EksFargateProfile#selector}
   */
   readonly selector: EksFargateProfileSelector[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#timeouts EksFargateProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#timeouts EksFargateProfile#timeouts}
   */
   readonly timeouts?: EksFargateProfileTimeouts;
 }
 export interface EksFargateProfileSelector {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#labels EksFargateProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#labels EksFargateProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#namespace EksFargateProfile#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#namespace EksFargateProfile#namespace}
   */
   readonly namespace: string;
 }
@@ -179,11 +174,11 @@ export class EksFargateProfileSelectorList extends cdktf.ComplexList {
 }
 export interface EksFargateProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#create EksFargateProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#create EksFargateProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile#delete EksFargateProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile#delete EksFargateProfile#delete}
   */
   readonly delete?: string;
 }
@@ -281,7 +276,7 @@ export class EksFargateProfileTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile}
 */
 export class EksFargateProfile extends cdktf.TerraformResource {
 
@@ -295,7 +290,7 @@ export class EksFargateProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -306,7 +301,7 @@ export class EksFargateProfile extends cdktf.TerraformResource {
       terraformResourceType: 'aws_eks_fargate_profile',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `aws_macie2_organization_admin_account`
 
-Refer to the Terraform Registory for docs: [`aws_macie2_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account).
+Refer to the Terraform Registory for docs: [`aws_macie2_organization_admin_account`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account).
 
 # `macie2OrganizationAdminAccount` Submodule <a name="`macie2OrganizationAdminAccount` Submodule" id="@cdktf/provider-aws.macie2OrganizationAdminAccount"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_macie2_organization_admin_accou
 
 ### Macie2OrganizationAdminAccount <a name="Macie2OrganizationAdminAccount" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account aws_macie2_organization_admin_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account aws_macie2_organization_admin_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationadminaccount"
 
 macie2organizationadminaccount.NewMacie2OrganizationAdminAccount(scope Construct, id *string, config Macie2OrganizationAdminAccountConfig) Macie2OrganizationAdminAccount
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2organizationadminaccount"
 
 &macie2organizationadminaccount.Macie2OrganizationAdminAccountConfig {
 	Connection: interface{},
@@ -592,8 +592,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2organizationadminac
 | <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.adminAccountId">AdminAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account#admin_account_id Macie2OrganizationAdminAccount#admin_account_id}. |
-| <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account#id Macie2OrganizationAdminAccount#id}. |
+| <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.adminAccountId">AdminAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account#admin_account_id Macie2OrganizationAdminAccount#admin_account_id}. |
+| <code><a href="#@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account#id Macie2OrganizationAdminAccount#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ AdminAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account#admin_account_id Macie2OrganizationAdminAccount#admin_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account#admin_account_id Macie2OrganizationAdminAccount#admin_account_id}.
 
 ---
 
@@ -687,7 +687,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/macie2_organization_admin_account#id Macie2OrganizationAdminAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/macie2_organization_admin_account#id Macie2OrganizationAdminAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

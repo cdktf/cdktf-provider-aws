@@ -1,6 +1,6 @@
 # `aws_schemas_registry_policy`
 
-Refer to the Terraform Registory for docs: [`aws_schemas_registry_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy).
+Refer to the Terraform Registory for docs: [`aws_schemas_registry_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy).
 
 # `schemasRegistryPolicy` Submodule <a name="`schemasRegistryPolicy` Submodule" id="@cdktf/provider-aws.schemasRegistryPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_schemas_registry_policy`](https
 
 ### SchemasRegistryPolicy <a name="SchemasRegistryPolicy" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasregistrypolicy"
 
 schemasregistrypolicy.NewSchemasRegistryPolicy(scope Construct, id *string, config SchemasRegistryPolicyConfig) SchemasRegistryPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasregistrypolicy"
 
 schemasregistrypolicy.SchemasRegistryPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasregistrypolicy"
 
 schemasregistrypolicy.SchemasRegistryPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ schemasregistrypolicy.SchemasRegistryPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasregistrypolicy"
 
 schemasregistrypolicy.SchemasRegistryPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schemasregistrypolicy"
 
 &schemasregistrypolicy.SchemasRegistryPolicyConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schemasregistrypolicy"
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.registryName">RegistryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}. |
-| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.registryName">RegistryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}. |
+| <code><a href="#@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#policy SchemasRegistryPolicy#policy}.
 
 ---
 
@@ -711,7 +711,7 @@ RegistryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#registry_name SchemasRegistryPolicy#registry_name}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/schemas_registry_policy#id SchemasRegistryPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

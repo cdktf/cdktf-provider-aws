@@ -1,3 +1,3 @@
 # `aws_emrcontainers_virtual_cluster`
 
-Refer to the Terraform Registory for docs: [`aws_emrcontainers_virtual_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/emrcontainers_virtual_cluster).
+Refer to the Terraform Registory for docs: [`aws_emrcontainers_virtual_cluster`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/emrcontainers_virtual_cluster).

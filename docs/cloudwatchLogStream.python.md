@@ -1,6 +1,6 @@
 # `aws_cloudwatch_log_stream`
 
-Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream).
+Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_stream`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream).
 
 # `cloudwatchLogStream` Submodule <a name="`cloudwatchLogStream` Submodule" id="@cdktf/provider-aws.cloudwatchLogStream"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_cloudwatch_log_stream`](https:/
 
 ### CloudwatchLogStream <a name="CloudwatchLogStream" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream aws_cloudwatch_log_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer"></a>
 
@@ -42,9 +42,9 @@ cloudwatchLogStream.CloudwatchLogStream(
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -742,9 +742,9 @@ cloudwatchLogStream.CloudwatchLogStreamConfig(
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
-| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.logGroupName">log_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}. |
 
 ---
 
@@ -826,7 +826,7 @@ log_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#log_group_name CloudwatchLogStream#log_group_name}.
 
 ---
 
@@ -838,7 +838,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#name CloudwatchLogStream#name}.
 
 ---
 
@@ -850,7 +850,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloudwatch_log_stream#id CloudwatchLogStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

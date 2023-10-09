@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#iam_role_arn BackupSelection#iam_role_arn}
   */
   readonly iamRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#id BackupSelection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#id BackupSelection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#name BackupSelection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#name BackupSelection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#not_resources BackupSelection#not_resources}
   */
   readonly notResources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#plan_id BackupSelection#plan_id}
   */
   readonly planId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#resources BackupSelection#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#resources BackupSelection#resources}
   */
   readonly resources?: string[];
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#condition BackupSelection#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#condition BackupSelection#condition}
   */
   readonly condition?: BackupSelectionCondition[] | cdktf.IResolvable;
   /**
   * selection_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#selection_tag BackupSelection#selection_tag}
   */
   readonly selectionTag?: BackupSelectionSelectionTag[] | cdktf.IResolvable;
 }
 export interface BackupSelectionConditionStringEquals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -172,11 +167,11 @@ export class BackupSelectionConditionStringEqualsList extends cdktf.ComplexList 
 }
 export interface BackupSelectionConditionStringLike {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -290,11 +285,11 @@ export class BackupSelectionConditionStringLikeList extends cdktf.ComplexList {
 }
 export interface BackupSelectionConditionStringNotEquals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -408,11 +403,11 @@ export class BackupSelectionConditionStringNotEqualsList extends cdktf.ComplexLi
 }
 export interface BackupSelectionConditionStringNotLike {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -528,25 +523,25 @@ export interface BackupSelectionCondition {
   /**
   * string_equals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#string_equals BackupSelection#string_equals}
   */
   readonly stringEquals?: BackupSelectionConditionStringEquals[] | cdktf.IResolvable;
   /**
   * string_like block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#string_like BackupSelection#string_like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#string_like BackupSelection#string_like}
   */
   readonly stringLike?: BackupSelectionConditionStringLike[] | cdktf.IResolvable;
   /**
   * string_not_equals block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#string_not_equals BackupSelection#string_not_equals}
   */
   readonly stringNotEquals?: BackupSelectionConditionStringNotEquals[] | cdktf.IResolvable;
   /**
   * string_not_like block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#string_not_like BackupSelection#string_not_like}
   */
   readonly stringNotLike?: BackupSelectionConditionStringNotLike[] | cdktf.IResolvable;
 }
@@ -712,15 +707,15 @@ export class BackupSelectionConditionList extends cdktf.ComplexList {
 }
 export interface BackupSelectionSelectionTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#key BackupSelection#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#key BackupSelection#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#type BackupSelection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#type BackupSelection#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection#value BackupSelection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection#value BackupSelection#value}
   */
   readonly value: string;
 }
@@ -854,7 +849,7 @@ export class BackupSelectionSelectionTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection aws_backup_selection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection aws_backup_selection}
 */
 export class BackupSelection extends cdktf.TerraformResource {
 
@@ -868,7 +863,7 @@ export class BackupSelection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/backup_selection aws_backup_selection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/backup_selection aws_backup_selection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -879,7 +874,7 @@ export class BackupSelection extends cdktf.TerraformResource {
       terraformResourceType: 'aws_backup_selection',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

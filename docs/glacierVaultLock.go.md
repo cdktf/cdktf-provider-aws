@@ -1,6 +1,6 @@
 # `aws_glacier_vault_lock`
 
-Refer to the Terraform Registory for docs: [`aws_glacier_vault_lock`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock).
+Refer to the Terraform Registory for docs: [`aws_glacier_vault_lock`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock).
 
 # `glacierVaultLock` Submodule <a name="`glacierVaultLock` Submodule" id="@cdktf/provider-aws.glacierVaultLock"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_glacier_vault_lock`](https://re
 
 ### GlacierVaultLock <a name="GlacierVaultLock" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glaciervaultlock"
 
 glaciervaultlock.NewGlacierVaultLock(scope Construct, id *string, config GlacierVaultLockConfig) GlacierVaultLock
 ```
@@ -284,7 +284,7 @@ func ResetIgnoreDeletionError()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glaciervaultlock"
 
 glaciervaultlock.GlacierVaultLock_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glaciervaultlock"
 
 glaciervaultlock.GlacierVaultLock_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ glaciervaultlock.GlacierVaultLock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glaciervaultlock"
 
 glaciervaultlock.GlacierVaultLock_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glaciervaultlock"
 
 &glaciervaultlock.GlacierVaultLockConfig {
 	Connection: interface{},
@@ -668,11 +668,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/glaciervaultlock"
 | <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.completeLock">CompleteLock</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}. |
-| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}. |
-| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.vaultName">VaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}. |
-| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}. |
-| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.ignoreDeletionError">IgnoreDeletionError</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}. |
+| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.completeLock">CompleteLock</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}. |
+| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}. |
+| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.vaultName">VaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}. |
+| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}. |
+| <code><a href="#@cdktf/provider-aws.glacierVaultLock.GlacierVaultLockConfig.property.ignoreDeletionError">IgnoreDeletionError</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}. |
 
 ---
 
@@ -754,7 +754,7 @@ CompleteLock interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#complete_lock GlacierVaultLock#complete_lock}.
 
 ---
 
@@ -766,7 +766,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#policy GlacierVaultLock#policy}.
 
 ---
 
@@ -778,7 +778,7 @@ VaultName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#vault_name GlacierVaultLock#vault_name}.
 
 ---
 
@@ -790,7 +790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#id GlacierVaultLock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -805,7 +805,7 @@ IgnoreDeletionError interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/glacier_vault_lock#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}.
 
 ---
 

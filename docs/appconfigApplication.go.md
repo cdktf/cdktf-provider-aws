@@ -1,6 +1,6 @@
 # `aws_appconfig_application`
 
-Refer to the Terraform Registory for docs: [`aws_appconfig_application`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application).
+Refer to the Terraform Registory for docs: [`aws_appconfig_application`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application).
 
 # `appconfigApplication` Submodule <a name="`appconfigApplication` Submodule" id="@cdktf/provider-aws.appconfigApplication"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_appconfig_application`](https:/
 
 ### AppconfigApplication <a name="AppconfigApplication" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application aws_appconfig_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application aws_appconfig_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigapplication"
 
 appconfigapplication.NewAppconfigApplication(scope Construct, id *string, config AppconfigApplicationConfig) AppconfigApplication
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ appconfigapplication.AppconfigApplication_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigapplication"
 
 appconfigapplication.AppconfigApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appconfigapplication"
 
 &appconfigapplication.AppconfigApplicationConfig {
 	Connection: interface{},
@@ -693,11 +693,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/appconfigapplication"
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#name AppconfigApplication#name}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#description AppconfigApplication#description}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#id AppconfigApplication#id}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}. |
-| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#name AppconfigApplication#name}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#description AppconfigApplication#description}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#id AppconfigApplication#id}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}. |
+| <code><a href="#@cdktf/provider-aws.appconfigApplication.AppconfigApplicationConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}. |
 
 ---
 
@@ -779,7 +779,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#name AppconfigApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#name AppconfigApplication#name}.
 
 ---
 
@@ -791,7 +791,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#description AppconfigApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#description AppconfigApplication#description}.
 
 ---
 
@@ -803,7 +803,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#id AppconfigApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#id AppconfigApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -818,7 +818,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#tags AppconfigApplication#tags}.
 
 ---
 
@@ -830,7 +830,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/appconfig_application#tags_all AppconfigApplication#tags_all}.
 
 ---
 

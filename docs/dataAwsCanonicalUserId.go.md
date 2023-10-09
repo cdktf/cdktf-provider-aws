@@ -1,6 +1,6 @@
 # `data_aws_canonical_user_id`
 
-Refer to the Terraform Registory for docs: [`data_aws_canonical_user_id`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/canonical_user_id).
+Refer to the Terraform Registory for docs: [`data_aws_canonical_user_id`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/canonical_user_id).
 
 # `dataAwsCanonicalUserId` Submodule <a name="`dataAwsCanonicalUserId` Submodule" id="@cdktf/provider-aws.dataAwsCanonicalUserId"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_canonical_user_id`](https:
 
 ### DataAwsCanonicalUserId <a name="DataAwsCanonicalUserId" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscanonicaluserid"
 
 dataawscanonicaluserid.NewDataAwsCanonicalUserId(scope Construct, id *string, config DataAwsCanonicalUserIdConfig) DataAwsCanonicalUserId
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscanonicaluserid"
 
 dataawscanonicaluserid.DataAwsCanonicalUserId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscanonicaluserid"
 
 &dataawscanonicaluserid.DataAwsCanonicalUserIdConfig {
 	Connection: interface{},
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawscanonicaluserid"
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/canonical_user_id#id DataAwsCanonicalUserId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

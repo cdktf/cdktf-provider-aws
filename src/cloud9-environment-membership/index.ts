@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface Cloud9EnvironmentMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership#environment_id Cloud9EnvironmentMembership#environment_id}
   */
   readonly environmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership#id Cloud9EnvironmentMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership#permissions Cloud9EnvironmentMembership#permissions}
   */
   readonly permissions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership#user_arn Cloud9EnvironmentMembership#user_arn}
   */
   readonly userArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}
 */
 export class Cloud9EnvironmentMembership extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class Cloud9EnvironmentMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class Cloud9EnvironmentMembership extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloud9_environment_membership',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
