@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#executable_users DataAwsAmiIds#executable_users}
   */
   readonly executableUsers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#id DataAwsAmiIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#include_deprecated DataAwsAmiIds#include_deprecated}
   */
   readonly includeDeprecated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#name_regex DataAwsAmiIds#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#owners DataAwsAmiIds#owners}
   */
   readonly owners: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#sort_ascending DataAwsAmiIds#sort_ascending}
   */
   readonly sortAscending?: boolean | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#filter DataAwsAmiIds#filter}
   */
   readonly filter?: DataAwsAmiIdsFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#timeouts DataAwsAmiIds#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#timeouts DataAwsAmiIds#timeouts}
   */
   readonly timeouts?: DataAwsAmiIdsTimeouts;
 }
 export interface DataAwsAmiIdsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#name DataAwsAmiIds#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#values DataAwsAmiIds#values}
   */
   readonly values: string[];
 }
@@ -172,7 +172,7 @@ export class DataAwsAmiIdsFilterList extends cdktf.ComplexList {
 }
 export interface DataAwsAmiIdsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids#read DataAwsAmiIds#read}
   */
   readonly read?: string;
 }
@@ -247,7 +247,7 @@ export class DataAwsAmiIdsTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids aws_ami_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids aws_ami_ids}
 */
 export class DataAwsAmiIds extends cdktf.TerraformDataSource {
 
@@ -261,7 +261,7 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ami_ids aws_ami_ids} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/ami_ids aws_ami_ids} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +272,7 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_ami_ids',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

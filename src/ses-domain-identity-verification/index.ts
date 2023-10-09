@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification#domain SesDomainIdentityVerification#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification#id SesDomainIdentityVerification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,13 +26,13 @@ export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMeta
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification#timeouts SesDomainIdentityVerification#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification#timeouts SesDomainIdentityVerification#timeouts}
   */
   readonly timeouts?: SesDomainIdentityVerificationTimeouts;
 }
 export interface SesDomainIdentityVerificationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification#create SesDomainIdentityVerification#create}
   */
   readonly create?: string;
 }
@@ -107,7 +107,7 @@ export class SesDomainIdentityVerificationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification}
 */
 export class SesDomainIdentityVerification extends cdktf.TerraformResource {
 
@@ -121,7 +121,7 @@ export class SesDomainIdentityVerification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -132,7 +132,7 @@ export class SesDomainIdentityVerification extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ses_domain_identity_verification',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

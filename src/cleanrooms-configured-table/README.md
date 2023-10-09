@@ -1,3 +1,3 @@
 # `aws_cleanrooms_configured_table`
 
-Refer to the Terraform Registory for docs: [`aws_cleanrooms_configured_table`](https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/cleanrooms_configured_table).
+Refer to the Terraform Registory for docs: [`aws_cleanrooms_configured_table`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table).

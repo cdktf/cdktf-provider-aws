@@ -560,6 +560,7 @@ Object.defineProperty(exports, 'grafanaWorkspace', { get: function () { return r
 Object.defineProperty(exports, 'grafanaWorkspaceApiKey', { get: function () { return require('./grafana-workspace-api-key'); } });
 Object.defineProperty(exports, 'grafanaWorkspaceSamlConfiguration', { get: function () { return require('./grafana-workspace-saml-configuration'); } });
 Object.defineProperty(exports, 'guarddutyDetector', { get: function () { return require('./guardduty-detector'); } });
+Object.defineProperty(exports, 'guarddutyDetectorFeature', { get: function () { return require('./guardduty-detector-feature'); } });
 Object.defineProperty(exports, 'guarddutyFilter', { get: function () { return require('./guardduty-filter'); } });
 Object.defineProperty(exports, 'guarddutyInviteAccepter', { get: function () { return require('./guardduty-invite-accepter'); } });
 Object.defineProperty(exports, 'guarddutyIpset', { get: function () { return require('./guardduty-ipset'); } });
@@ -1071,6 +1072,7 @@ Object.defineProperty(exports, 'servicecatalogServiceAction', { get: function ()
 Object.defineProperty(exports, 'servicecatalogTagOption', { get: function () { return require('./servicecatalog-tag-option'); } });
 Object.defineProperty(exports, 'servicecatalogTagOptionResourceAssociation', { get: function () { return require('./servicecatalog-tag-option-resource-association'); } });
 Object.defineProperty(exports, 'servicequotasServiceQuota', { get: function () { return require('./servicequotas-service-quota'); } });
+Object.defineProperty(exports, 'servicequotasTemplate', { get: function () { return require('./servicequotas-template'); } });
 Object.defineProperty(exports, 'sesActiveReceiptRuleSet', { get: function () { return require('./ses-active-receipt-rule-set'); } });
 Object.defineProperty(exports, 'sesConfigurationSet', { get: function () { return require('./ses-configuration-set'); } });
 Object.defineProperty(exports, 'sesDomainDkim', { get: function () { return require('./ses-domain-dkim'); } });
@@ -1085,6 +1087,7 @@ Object.defineProperty(exports, 'sesReceiptFilter', { get: function () { return r
 Object.defineProperty(exports, 'sesReceiptRule', { get: function () { return require('./ses-receipt-rule'); } });
 Object.defineProperty(exports, 'sesReceiptRuleSet', { get: function () { return require('./ses-receipt-rule-set'); } });
 Object.defineProperty(exports, 'sesTemplate', { get: function () { return require('./ses-template'); } });
+Object.defineProperty(exports, 'sesv2AccountVdmAttributes', { get: function () { return require('./sesv2-account-vdm-attributes'); } });
 Object.defineProperty(exports, 'sesv2ConfigurationSet', { get: function () { return require('./sesv2-configuration-set'); } });
 Object.defineProperty(exports, 'sesv2ConfigurationSetEventDestination', { get: function () { return require('./sesv2-configuration-set-event-destination'); } });
 Object.defineProperty(exports, 'sesv2ContactList', { get: function () { return require('./sesv2-contact-list'); } });
@@ -1176,6 +1179,7 @@ Object.defineProperty(exports, 'transferTag', { get: function () { return requir
 Object.defineProperty(exports, 'transferUser', { get: function () { return require('./transfer-user'); } });
 Object.defineProperty(exports, 'transferWorkflow', { get: function () { return require('./transfer-workflow'); } });
 Object.defineProperty(exports, 'verifiedaccessInstance', { get: function () { return require('./verifiedaccess-instance'); } });
+Object.defineProperty(exports, 'verifiedaccessInstanceTrustProviderAttachment', { get: function () { return require('./verifiedaccess-instance-trust-provider-attachment'); } });
 Object.defineProperty(exports, 'verifiedaccessTrustProvider', { get: function () { return require('./verifiedaccess-trust-provider'); } });
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
 Object.defineProperty(exports, 'vpc', { get: function () { return require('./vpc'); } });
