@@ -56,6 +56,7 @@ package-lock.json
 !/LICENSE
 !/.github/ISSUE_TEMPLATE/config.yml
 !/.github/workflows/auto-close-community-issues.yml
+!/.github/workflows/auto-close-community-prs.yml
 !/.github/workflows/lock.yml
 !/.github/workflows/next-cdktf-version-pr.yml
 !/.github/workflows/alert-open-prs.yml
