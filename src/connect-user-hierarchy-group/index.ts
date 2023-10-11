@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface ConnectUserHierarchyGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#id ConnectUserHierarchyGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#instance_id ConnectUserHierarchyGroup#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#name ConnectUserHierarchyGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#parent_group_id ConnectUserHierarchyGroup#parent_group_id}
   */
   readonly parentGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#tags ConnectUserHierarchyGroup#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group#tags_all ConnectUserHierarchyGroup#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
@@ -501,7 +496,7 @@ export class ConnectUserHierarchyGroupHierarchyPathList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}
 */
 export class ConnectUserHierarchyGroup extends cdktf.TerraformResource {
 
@@ -515,7 +510,7 @@ export class ConnectUserHierarchyGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -526,7 +521,7 @@ export class ConnectUserHierarchyGroup extends cdktf.TerraformResource {
       terraformResourceType: 'aws_connect_user_hierarchy_group',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

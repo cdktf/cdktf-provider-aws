@@ -1,6 +1,6 @@
 # `aws_ram_resource_association`
 
-Refer to the Terraform Registory for docs: [`aws_ram_resource_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association).
+Refer to the Terraform Registory for docs: [`aws_ram_resource_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association).
 
 # `ramResourceAssociation` Submodule <a name="`ramResourceAssociation` Submodule" id="@cdktf/provider-aws.ramResourceAssociation"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ram_resource_association`](http
 
 ### RamResourceAssociation <a name="RamResourceAssociation" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association aws_ram_resource_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association aws_ram_resource_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
 
 ramresourceassociation.NewRamResourceAssociation(scope Construct, id *string, config RamResourceAssociationConfig) RamResourceAssociation
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ ramresourceassociation.RamResourceAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
 
 ramresourceassociation.RamResourceAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ramresourceassociation"
 
 &ramresourceassociation.RamResourceAssociationConfig {
 	Connection: interface{},
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ramresourceassociation"
 | <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#resource_arn RamResourceAssociation#resource_arn}. |
-| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.resourceShareArn">ResourceShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#resource_share_arn RamResourceAssociation#resource_share_arn}. |
-| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#id RamResourceAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#resource_arn RamResourceAssociation#resource_arn}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.resourceShareArn">ResourceShareArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#resource_share_arn RamResourceAssociation#resource_share_arn}. |
+| <code><a href="#@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#id RamResourceAssociation#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#resource_arn RamResourceAssociation#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#resource_arn RamResourceAssociation#resource_arn}.
 
 ---
 
@@ -711,7 +711,7 @@ ResourceShareArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#resource_share_arn RamResourceAssociation#resource_share_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#resource_share_arn RamResourceAssociation#resource_share_arn}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ram_resource_association#id RamResourceAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ram_resource_association#id RamResourceAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

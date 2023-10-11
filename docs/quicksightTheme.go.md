@@ -1,6 +1,6 @@
 # `aws_quicksight_theme`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_theme`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme).
+Refer to the Terraform Registory for docs: [`aws_quicksight_theme`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme).
 
 # `quicksightTheme` Submodule <a name="`quicksightTheme` Submodule" id="@cdktf/provider-aws.quicksightTheme"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_theme`](https://regi
 
 ### QuicksightTheme <a name="QuicksightTheme" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme aws_quicksight_theme}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme aws_quicksight_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightTheme(scope Construct, id *string, config QuicksightThemeConfig) QuicksightTheme
 ```
@@ -365,7 +365,7 @@ func ResetVersionDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ quicksighttheme.QuicksightTheme_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightTheme.QuicksightTheme.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.QuicksightTheme_IsTerraformResource(x interface{}) *bool
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfig {
 	Connection: interface{},
@@ -921,12 +921,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 	Name: *string,
 	ThemeId: *string,
 	AwsAccountId: *string,
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfiguration,
 	Id: *string,
 	Permissions: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeTimeouts,
 	VersionDescription: *string,
 }
 ```
@@ -942,17 +942,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.baseThemeId">BaseThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#name QuicksightTheme#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.themeId">ThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.baseThemeId">BaseThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#name QuicksightTheme#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.themeId">ThemeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfiguration">QuicksightThemeConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#id QuicksightTheme#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#id QuicksightTheme#id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tags QuicksightTheme#tags}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tags QuicksightTheme#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts">QuicksightThemeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ BaseThemeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#base_theme_id QuicksightTheme#base_theme_id}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#name QuicksightTheme#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#name QuicksightTheme#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ ThemeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#theme_id QuicksightTheme#theme_id}.
 
 ---
 
@@ -1070,7 +1070,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#aws_account_id QuicksightTheme#aws_account_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Configuration QuicksightThemeConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#configuration QuicksightTheme#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#configuration QuicksightTheme#configuration}
 
 ---
 
@@ -1096,7 +1096,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#id QuicksightTheme#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#id QuicksightTheme#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1113,7 +1113,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#permissions QuicksightTheme#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#permissions QuicksightTheme#permissions}
 
 ---
 
@@ -1125,7 +1125,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tags QuicksightTheme#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tags QuicksightTheme#tags}.
 
 ---
 
@@ -1137,7 +1137,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tags_all QuicksightTheme#tags_all}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Timeouts QuicksightThemeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#timeouts QuicksightTheme#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#timeouts QuicksightTheme#timeouts}
 
 ---
 
@@ -1163,7 +1163,7 @@ VersionDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#version_description QuicksightTheme#version_description}.
 
 ---
 
@@ -1172,13 +1172,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfiguration {
-	DataColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationDataColorPalette,
-	Sheet: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheet,
-	Typography: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationTypography,
-	UiColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationUiColorPalette,
+	DataColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette,
+	Sheet: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheet,
+	Typography: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationTypography,
+	UiColorPalette: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette,
 }
 ```
 
@@ -1203,7 +1203,7 @@ DataColorPalette QuicksightThemeConfigurationDataColorPalette
 
 data_color_palette block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#data_color_palette QuicksightTheme#data_color_palette}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#data_color_palette QuicksightTheme#data_color_palette}
 
 ---
 
@@ -1217,7 +1217,7 @@ Sheet QuicksightThemeConfigurationSheet
 
 sheet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#sheet QuicksightTheme#sheet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#sheet QuicksightTheme#sheet}
 
 ---
 
@@ -1231,7 +1231,7 @@ Typography QuicksightThemeConfigurationTypography
 
 typography block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#typography QuicksightTheme#typography}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#typography QuicksightTheme#typography}
 
 ---
 
@@ -1245,7 +1245,7 @@ UiColorPalette QuicksightThemeConfigurationUiColorPalette
 
 ui_color_palette block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#ui_color_palette QuicksightTheme#ui_color_palette}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#ui_color_palette QuicksightTheme#ui_color_palette}
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationDataColorPalette {
 	Colors: *[]*string,
@@ -1267,9 +1267,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.colors">Colors</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#colors QuicksightTheme#colors}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.emptyFillColor">EmptyFillColor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.minMaxGradient">MinMaxGradient</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.colors">Colors</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#colors QuicksightTheme#colors}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.emptyFillColor">EmptyFillColor</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPalette.property.minMaxGradient">MinMaxGradient</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}. |
 
 ---
 
@@ -1281,7 +1281,7 @@ Colors *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#colors QuicksightTheme#colors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#colors QuicksightTheme#colors}.
 
 ---
 
@@ -1293,7 +1293,7 @@ EmptyFillColor *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#empty_fill_color QuicksightTheme#empty_fill_color}.
 
 ---
 
@@ -1305,7 +1305,7 @@ MinMaxGradient *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#min_max_gradient QuicksightTheme#min_max_gradient}.
 
 ---
 
@@ -1314,11 +1314,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheet {
-	Tile: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheetTile,
-	TileLayout: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout,
+	Tile: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheetTile,
+	TileLayout: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout,
 }
 ```
 
@@ -1341,7 +1341,7 @@ Tile QuicksightThemeConfigurationSheetTile
 
 tile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tile QuicksightTheme#tile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tile QuicksightTheme#tile}
 
 ---
 
@@ -1355,7 +1355,7 @@ TileLayout QuicksightThemeConfigurationSheetTileLayout
 
 tile_layout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#tile_layout QuicksightTheme#tile_layout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#tile_layout QuicksightTheme#tile_layout}
 
 ---
 
@@ -1364,10 +1364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTile {
-	Border: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder,
+	Border: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder,
 }
 ```
 
@@ -1389,7 +1389,7 @@ Border QuicksightThemeConfigurationSheetTileBorder
 
 border block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#border QuicksightTheme#border}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#border QuicksightTheme#border}
 
 ---
 
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileBorder {
 	Show: interface{},
@@ -1409,7 +1409,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorder.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
 
 ---
 
@@ -1421,7 +1421,7 @@ Show interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}.
 
 ---
 
@@ -1430,11 +1430,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayout {
-	Gutter: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter,
-	Margin: github.com/cdktf/cdktf-provider-aws-go/aws/v17.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin,
+	Gutter: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter,
+	Margin: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin,
 }
 ```
 
@@ -1457,7 +1457,7 @@ Gutter QuicksightThemeConfigurationSheetTileLayoutGutter
 
 gutter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#gutter QuicksightTheme#gutter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#gutter QuicksightTheme#gutter}
 
 ---
 
@@ -1471,7 +1471,7 @@ Margin QuicksightThemeConfigurationSheetTileLayoutMargin
 
 margin block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#margin QuicksightTheme#margin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#margin QuicksightTheme#margin}
 
 ---
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayoutGutter {
 	Show: interface{},
@@ -1491,7 +1491,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutter.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
 
 ---
 
@@ -1503,7 +1503,7 @@ Show interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}.
 
 ---
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationSheetTileLayoutMargin {
 	Show: interface{},
@@ -1523,7 +1523,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMargin.property.show">Show</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}. |
 
 ---
 
@@ -1535,7 +1535,7 @@ Show interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#show QuicksightTheme#show}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#show QuicksightTheme#show}.
 
 ---
 
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypography.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationTypography {
 	FontFamilies: interface{},
@@ -1569,7 +1569,7 @@ FontFamilies interface{}
 
 font_families block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#font_families QuicksightTheme#font_families}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#font_families QuicksightTheme#font_families}
 
 ---
 
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamilies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationTypographyFontFamilies {
 	FontFamily: *string,
@@ -1589,7 +1589,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamilies.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamilies.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}. |
 
 ---
 
@@ -1601,7 +1601,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#font_family QuicksightTheme#font_family}.
 
 ---
 
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeConfigurationUiColorPalette {
 	Accent: *string,
@@ -1636,22 +1636,22 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.accent">Accent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#accent QuicksightTheme#accent}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.accentForeground">AccentForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.danger">Danger</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#danger QuicksightTheme#danger}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dangerForeground">DangerForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dimension">Dimension</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dimensionForeground">DimensionForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.measure">Measure</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#measure QuicksightTheme#measure}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.measureForeground">MeasureForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.primaryBackground">PrimaryBackground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.primaryForeground">PrimaryForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.secondaryBackground">SecondaryBackground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.secondaryForeground">SecondaryForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.success">Success</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#success QuicksightTheme#success}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.successForeground">SuccessForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.warning">Warning</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#warning QuicksightTheme#warning}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.warningForeground">WarningForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.accent">Accent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#accent QuicksightTheme#accent}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.accentForeground">AccentForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.danger">Danger</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#danger QuicksightTheme#danger}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dangerForeground">DangerForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dimension">Dimension</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.dimensionForeground">DimensionForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.measure">Measure</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#measure QuicksightTheme#measure}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.measureForeground">MeasureForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.primaryBackground">PrimaryBackground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.primaryForeground">PrimaryForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.secondaryBackground">SecondaryBackground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.secondaryForeground">SecondaryForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.success">Success</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#success QuicksightTheme#success}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.successForeground">SuccessForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.warning">Warning</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#warning QuicksightTheme#warning}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPalette.property.warningForeground">WarningForeground</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}. |
 
 ---
 
@@ -1663,7 +1663,7 @@ Accent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#accent QuicksightTheme#accent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#accent QuicksightTheme#accent}.
 
 ---
 
@@ -1675,7 +1675,7 @@ AccentForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#accent_foreground QuicksightTheme#accent_foreground}.
 
 ---
 
@@ -1687,7 +1687,7 @@ Danger *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#danger QuicksightTheme#danger}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#danger QuicksightTheme#danger}.
 
 ---
 
@@ -1699,7 +1699,7 @@ DangerForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#danger_foreground QuicksightTheme#danger_foreground}.
 
 ---
 
@@ -1711,7 +1711,7 @@ Dimension *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#dimension QuicksightTheme#dimension}.
 
 ---
 
@@ -1723,7 +1723,7 @@ DimensionForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#dimension_foreground QuicksightTheme#dimension_foreground}.
 
 ---
 
@@ -1735,7 +1735,7 @@ Measure *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#measure QuicksightTheme#measure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#measure QuicksightTheme#measure}.
 
 ---
 
@@ -1747,7 +1747,7 @@ MeasureForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#measure_foreground QuicksightTheme#measure_foreground}.
 
 ---
 
@@ -1759,7 +1759,7 @@ PrimaryBackground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#primary_background QuicksightTheme#primary_background}.
 
 ---
 
@@ -1771,7 +1771,7 @@ PrimaryForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#primary_foreground QuicksightTheme#primary_foreground}.
 
 ---
 
@@ -1783,7 +1783,7 @@ SecondaryBackground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#secondary_background QuicksightTheme#secondary_background}.
 
 ---
 
@@ -1795,7 +1795,7 @@ SecondaryForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#secondary_foreground QuicksightTheme#secondary_foreground}.
 
 ---
 
@@ -1807,7 +1807,7 @@ Success *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#success QuicksightTheme#success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#success QuicksightTheme#success}.
 
 ---
 
@@ -1819,7 +1819,7 @@ SuccessForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#success_foreground QuicksightTheme#success_foreground}.
 
 ---
 
@@ -1831,7 +1831,7 @@ Warning *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#warning QuicksightTheme#warning}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#warning QuicksightTheme#warning}.
 
 ---
 
@@ -1843,7 +1843,7 @@ WarningForeground *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#warning_foreground QuicksightTheme#warning_foreground}.
 
 ---
 
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemePermissions {
 	Actions: *[]*string,
@@ -1864,8 +1864,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#actions QuicksightTheme#actions}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#principal QuicksightTheme#principal}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#actions QuicksightTheme#actions}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#principal QuicksightTheme#principal}. |
 
 ---
 
@@ -1877,7 +1877,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#actions QuicksightTheme#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#actions QuicksightTheme#actions}.
 
 ---
 
@@ -1889,7 +1889,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#principal QuicksightTheme#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#principal QuicksightTheme#principal}.
 
 ---
 
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 &quicksighttheme.QuicksightThemeTimeouts {
 	Create: *string,
@@ -1911,9 +1911,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#create QuicksightTheme#create}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#delete QuicksightTheme#delete}. |
-| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#update QuicksightTheme#update}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#create QuicksightTheme#create}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#delete QuicksightTheme#delete}. |
+| <code><a href="#@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#update QuicksightTheme#update}. |
 
 ---
 
@@ -1925,7 +1925,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#create QuicksightTheme#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#create QuicksightTheme#create}.
 
 ---
 
@@ -1937,7 +1937,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#delete QuicksightTheme#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#delete QuicksightTheme#delete}.
 
 ---
 
@@ -1949,7 +1949,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/quicksight_theme#update QuicksightTheme#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/quicksight_theme#update QuicksightTheme#update}.
 
 ---
 
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationDataColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationDataColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationDataColorPaletteOutputReference
 ```
@@ -2296,7 +2296,7 @@ func InternalValue() QuicksightThemeConfigurationDataColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationOutputReference
 ```
@@ -2713,7 +2713,7 @@ func InternalValue() QuicksightThemeConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetOutputReference
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() QuicksightThemeConfigurationSheet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileBorderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileBorderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileBorderOutputReference
 ```
@@ -3324,7 +3324,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileBorder
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutGutterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutGutterOutputReference
 ```
@@ -3602,7 +3602,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayoutGutter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutMarginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutMarginOutputReference
 ```
@@ -3880,7 +3880,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayoutMargin
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileLayoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileLayoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileLayoutOutputReference
 ```
@@ -4213,7 +4213,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTileLayout
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationSheetTileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationSheetTileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationSheetTileOutputReference
 ```
@@ -4504,7 +4504,7 @@ func InternalValue() QuicksightThemeConfigurationSheetTile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyFontFamiliesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightThemeConfigurationTypographyFontFamiliesList
 ```
@@ -4647,7 +4647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyFontFamiliesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyFontFamiliesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightThemeConfigurationTypographyFontFamiliesOutputReference
 ```
@@ -4943,7 +4943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationTypographyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationTypographyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationTypographyOutputReference
 ```
@@ -5234,7 +5234,7 @@ func InternalValue() QuicksightThemeConfigurationTypography
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeConfigurationUiColorPaletteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeConfigurationUiColorPaletteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeConfigurationUiColorPaletteOutputReference
 ```
@@ -5947,7 +5947,7 @@ func InternalValue() QuicksightThemeConfigurationUiColorPalette
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightThemePermissionsList
 ```
@@ -6090,7 +6090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightThemePermissionsOutputReference
 ```
@@ -6401,7 +6401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightTheme.QuicksightThemeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksighttheme"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksighttheme"
 
 quicksighttheme.NewQuicksightThemeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightThemeTimeoutsOutputReference
 ```

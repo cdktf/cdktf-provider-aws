@@ -1,6 +1,6 @@
 # `data_aws_lambda_functions`
 
-Refer to the Terraform Registory for docs: [`data_aws_lambda_functions`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lambda_functions).
+Refer to the Terraform Registory for docs: [`data_aws_lambda_functions`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lambda_functions).
 
 # `dataAwsLambdaFunctions` Submodule <a name="`dataAwsLambdaFunctions` Submodule" id="@cdktf/provider-aws.dataAwsLambdaFunctions"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_lambda_functions`](https:/
 
 ### DataAwsLambdaFunctions <a name="DataAwsLambdaFunctions" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lambda_functions aws_lambda_functions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lambda_functions aws_lambda_functions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
 
 dataawslambdafunctions.NewDataAwsLambdaFunctions(scope Construct, id *string, config DataAwsLambdaFunctionsConfig) DataAwsLambdaFunctions
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
 
 &dataawslambdafunctions.DataAwsLambdaFunctionsConfig {
 	Connection: interface{},
@@ -569,7 +569,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawslambdafunctions"
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lambda_functions#id DataAwsLambdaFunctions#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lambda_functions#id DataAwsLambdaFunctions#id}. |
 
 ---
 
@@ -651,7 +651,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lambda_functions#id DataAwsLambdaFunctions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lambda_functions#id DataAwsLambdaFunctions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

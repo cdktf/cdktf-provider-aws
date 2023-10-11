@@ -1,6 +1,6 @@
 # `aws_lightsail_bucket`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_bucket`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket).
+Refer to the Terraform Registory for docs: [`aws_lightsail_bucket`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket).
 
 # `lightsailBucket` Submodule <a name="`lightsailBucket` Submodule" id="@cdktf/provider-aws.lightsailBucket"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_bucket`](https://regi
 
 ### LightsailBucket <a name="LightsailBucket" id="@cdktf/provider-aws.lightsailBucket.LightsailBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket aws_lightsail_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailBucket.LightsailBucket.Initializer"></a>
 
@@ -771,12 +771,12 @@ new LightsailBucketConfig {
 | <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.bundleId">BundleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#name LightsailBucket#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}. |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#id LightsailBucket#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.bundleId">BundleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#name LightsailBucket#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#id LightsailBucket#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#tags LightsailBucket#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailBucket.LightsailBucketConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}. |
 
 ---
 
@@ -858,7 +858,7 @@ public string BundleId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#bundle_id LightsailBucket#bundle_id}.
 
 ---
 
@@ -870,7 +870,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#name LightsailBucket#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#name LightsailBucket#name}.
 
 ---
 
@@ -882,7 +882,7 @@ public object ForceDelete { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#force_delete LightsailBucket#force_delete}.
 
 ---
 
@@ -894,7 +894,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#id LightsailBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#id LightsailBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -909,7 +909,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#tags LightsailBucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#tags LightsailBucket#tags}.
 
 ---
 
@@ -921,7 +921,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_bucket#tags_all LightsailBucket#tags_all}.
 
 ---
 

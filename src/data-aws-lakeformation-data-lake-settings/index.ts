@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lakeformation_data_lake_settings
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lakeformation_data_lake_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLakeformationDataLakeSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lakeformation_data_lake_settings#catalog_id DataAwsLakeformationDataLakeSettings#catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lakeformation_data_lake_settings#catalog_id DataAwsLakeformationDataLakeSettings#catalog_id}
   */
   readonly catalogId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lakeformation_data_lake_settings#id DataAwsLakeformationDataLakeSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lakeformation_data_lake_settings#id DataAwsLakeformationDataLakeSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +159,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}
 */
 export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSource {
 
@@ -178,7 +173,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +184,7 @@ export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSou
       terraformResourceType: 'aws_lakeformation_data_lake_settings',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_eks_clusters`
 
-Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters).
+Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters).
 
 # `dataAwsEksClusters` Submodule <a name="`dataAwsEksClusters` Submodule" id="@cdktf/provider-aws.dataAwsEksClusters"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_eks_clusters`](https://reg
 
 ### DataAwsEksClusters <a name="DataAwsEksClusters" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters aws_eks_clusters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters aws_eks_clusters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataAwsEksClusters.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -629,7 +629,7 @@ DataAwsEksClustersConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}. |
 
 ---
 
@@ -711,7 +711,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/eks_clusters#id DataAwsEksClusters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

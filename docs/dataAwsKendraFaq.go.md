@@ -1,6 +1,6 @@
 # `data_aws_kendra_faq`
 
-Refer to the Terraform Registory for docs: [`data_aws_kendra_faq`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq).
+Refer to the Terraform Registory for docs: [`data_aws_kendra_faq`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq).
 
 # `dataAwsKendraFaq` Submodule <a name="`dataAwsKendraFaq` Submodule" id="@cdktf/provider-aws.dataAwsKendraFaq"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_kendra_faq`](https://regis
 
 ### DataAwsKendraFaq <a name="DataAwsKendraFaq" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq aws_kendra_faq}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq aws_kendra_faq}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaq(scope Construct, id *string, config DataAwsKendraFaqConfig) DataAwsKendraFaq
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawskendrafaq.DataAwsKendraFaq_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaq.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.DataAwsKendraFaq_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 &dataawskendrafaq.DataAwsKendraFaqConfig {
 	Connection: interface{},
@@ -744,10 +744,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.faqId">FaqId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.faqId">FaqId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.indexId">IndexId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}. |
 
 ---
 
@@ -829,7 +829,7 @@ FaqId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#faq_id DataAwsKendraFaq#faq_id}.
 
 ---
 
@@ -841,7 +841,7 @@ IndexId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#index_id DataAwsKendraFaq#index_id}.
 
 ---
 
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#id DataAwsKendraFaq#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -868,7 +868,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/kendra_faq#tags DataAwsKendraFaq#tags}.
 
 ---
 
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 &dataawskendrafaq.DataAwsKendraFaqS3Path {
 
@@ -892,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaqS3PathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKendraFaqS3PathList
 ```
@@ -1024,7 +1024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawskendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskendrafaq"
 
 dataawskendrafaq.NewDataAwsKendraFaqS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKendraFaqS3PathOutputReference
 ```

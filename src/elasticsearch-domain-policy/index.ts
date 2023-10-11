@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface ElasticsearchDomainPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#access_policies ElasticsearchDomainPolicy#access_policies}
   */
   readonly accessPolicies: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#domain_name ElasticsearchDomainPolicy#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#id ElasticsearchDomainPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,17 +25,17 @@ export interface ElasticsearchDomainPolicyConfig extends cdktf.TerraformMetaArgu
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#timeouts ElasticsearchDomainPolicy#timeouts}
   */
   readonly timeouts?: ElasticsearchDomainPolicyTimeouts;
 }
 export interface ElasticsearchDomainPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#delete ElasticsearchDomainPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy#update ElasticsearchDomainPolicy#update}
   */
   readonly update?: string;
 }
@@ -138,7 +133,7 @@ export class ElasticsearchDomainPolicyTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy}
 */
 export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
 
@@ -152,7 +147,7 @@ export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elasticsearch_domain_policy aws_elasticsearch_domain_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +158,7 @@ export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'aws_elasticsearch_domain_policy',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

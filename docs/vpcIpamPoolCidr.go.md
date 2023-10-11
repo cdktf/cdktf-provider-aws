@@ -1,6 +1,6 @@
 # `aws_vpc_ipam_pool_cidr`
 
-Refer to the Terraform Registory for docs: [`aws_vpc_ipam_pool_cidr`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr).
+Refer to the Terraform Registory for docs: [`aws_vpc_ipam_pool_cidr`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr).
 
 # `vpcIpamPoolCidr` Submodule <a name="`vpcIpamPoolCidr` Submodule" id="@cdktf/provider-aws.vpcIpamPoolCidr"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_vpc_ipam_pool_cidr`](https://re
 
 ### VpcIpamPoolCidr <a name="VpcIpamPoolCidr" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidr(scope Construct, id *string, config VpcIpamPoolCidrConfig) VpcIpamPoolCidr
 ```
@@ -331,7 +331,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.VpcIpamPoolCidr_IsTerraformResource(x interface{}) *bool
 ```
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrCidrAuthorizationContext {
 	Message: *string,
@@ -731,8 +731,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}. |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.property.signature">Signature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.property.message">Message</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext.property.signature">Signature</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}. |
 
 ---
 
@@ -744,7 +744,7 @@ Message *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#message VpcIpamPoolCidr#message}.
 
 ---
 
@@ -756,7 +756,7 @@ Signature *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#signature VpcIpamPoolCidr#signature}.
 
 ---
 
@@ -765,7 +765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrConfig {
 	Connection: interface{},
@@ -777,10 +777,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
 	Provisioners: *[]interface{},
 	IpamPoolId: *string,
 	Cidr: *string,
-	CidrAuthorizationContext: github.com/cdktf/cdktf-provider-aws-go/aws/v17.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext,
+	CidrAuthorizationContext: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext,
 	Id: *string,
 	NetmaskLength: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts,
 }
 ```
 
@@ -795,11 +795,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
 | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}. |
 | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.cidrAuthorizationContext">CidrAuthorizationContext</a></code> | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext">VpcIpamPoolCidrCidrAuthorizationContext</a></code> | cidr_authorization_context block. |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#id VpcIpamPoolCidr#id}. |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.netmaskLength">NetmaskLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#netmask_length VpcIpamPoolCidr#netmask_length}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#id VpcIpamPoolCidr#id}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.netmaskLength">NetmaskLength</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#netmask_length VpcIpamPoolCidr#netmask_length}. |
 | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts">VpcIpamPoolCidrTimeouts</a></code> | timeouts block. |
 
 ---
@@ -882,7 +882,7 @@ IpamPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}.
 
 ---
 
@@ -894,7 +894,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#cidr VpcIpamPoolCidr#cidr}.
 
 ---
 
@@ -908,7 +908,7 @@ CidrAuthorizationContext VpcIpamPoolCidrCidrAuthorizationContext
 
 cidr_authorization_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
 
 ---
 
@@ -920,7 +920,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#id VpcIpamPoolCidr#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#id VpcIpamPoolCidr#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +935,7 @@ NetmaskLength *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#netmask_length VpcIpamPoolCidr#netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#netmask_length VpcIpamPoolCidr#netmask_length}.
 
 ---
 
@@ -949,7 +949,7 @@ Timeouts VpcIpamPoolCidrTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#timeouts VpcIpamPoolCidr#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#timeouts VpcIpamPoolCidr#timeouts}
 
 ---
 
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 &vpcipampoolcidr.VpcIpamPoolCidrTimeouts {
 	Create: *string,
@@ -970,8 +970,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#create VpcIpamPoolCidr#create}. |
-| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#delete VpcIpamPoolCidr#delete}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#create VpcIpamPoolCidr#create}. |
+| <code><a href="#@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#delete VpcIpamPoolCidr#delete}. |
 
 ---
 
@@ -983,7 +983,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#create VpcIpamPoolCidr#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#create VpcIpamPoolCidr#create}.
 
 ---
 
@@ -995,7 +995,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/vpc_ipam_pool_cidr#delete VpcIpamPoolCidr#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/vpc_ipam_pool_cidr#delete VpcIpamPoolCidr#delete}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidrCidrAuthorizationContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamPoolCidrCidrAuthorizationContextOutputReference
 ```
@@ -1313,7 +1313,7 @@ func InternalValue() VpcIpamPoolCidrCidrAuthorizationContext
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/vpcipampoolcidr"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpcipampoolcidr"
 
 vpcipampoolcidr.NewVpcIpamPoolCidrTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcIpamPoolCidrTimeoutsOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/api_gateway_vpc_link
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/api_gateway_vpc_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsApiGatewayVpcLinkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/api_gateway_vpc_link#name DataAwsApiGatewayVpcLink#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/api_gateway_vpc_link#tags DataAwsApiGatewayVpcLink#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link}
 */
 export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
 
@@ -37,7 +32,7 @@ export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/api_gateway_vpc_link aws_api_gateway_vpc_link} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +43,7 @@ export class DataAwsApiGatewayVpcLink extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_api_gateway_vpc_link',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

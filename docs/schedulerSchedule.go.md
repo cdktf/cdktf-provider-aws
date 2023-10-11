@@ -1,6 +1,6 @@
 # `aws_scheduler_schedule`
 
-Refer to the Terraform Registory for docs: [`aws_scheduler_schedule`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule).
+Refer to the Terraform Registory for docs: [`aws_scheduler_schedule`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule).
 
 # `schedulerSchedule` Submodule <a name="`schedulerSchedule` Submodule" id="@cdktf/provider-aws.schedulerSchedule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_scheduler_schedule`](https://re
 
 ### SchedulerSchedule <a name="SchedulerSchedule" id="@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule aws_scheduler_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerSchedule(scope Construct, id *string, config SchedulerScheduleConfig) SchedulerSchedule
 ```
@@ -366,7 +366,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ schedulerschedule.SchedulerSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleConfig {
 	Connection: interface{},
@@ -918,9 +918,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FlexibleTimeWindow: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow,
+	FlexibleTimeWindow: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow,
 	ScheduleExpression: *string,
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTarget,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTarget,
 	Description: *string,
 	EndDate: *string,
 	GroupName: *string,
@@ -946,18 +946,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.flexibleTimeWindow">FlexibleTimeWindow</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow">SchedulerScheduleFlexibleTimeWindow</a></code> | flexible_time_window block. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#schedule_expression SchedulerSchedule#schedule_expression}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#schedule_expression SchedulerSchedule#schedule_expression}. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.target">Target</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget">SchedulerScheduleTarget</a></code> | target block. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#description SchedulerSchedule#description}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.endDate">EndDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#end_date SchedulerSchedule#end_date}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#group_name SchedulerSchedule#group_name}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#id SchedulerSchedule#id}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#kms_key_arn SchedulerSchedule#kms_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name SchedulerSchedule#name}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name_prefix SchedulerSchedule#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.scheduleExpressionTimezone">ScheduleExpressionTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#schedule_expression_timezone SchedulerSchedule#schedule_expression_timezone}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.startDate">StartDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#start_date SchedulerSchedule#start_date}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#state SchedulerSchedule#state}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#description SchedulerSchedule#description}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.endDate">EndDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#end_date SchedulerSchedule#end_date}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#group_name SchedulerSchedule#group_name}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#id SchedulerSchedule#id}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#kms_key_arn SchedulerSchedule#kms_key_arn}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name SchedulerSchedule#name}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name_prefix SchedulerSchedule#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.scheduleExpressionTimezone">ScheduleExpressionTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#schedule_expression_timezone SchedulerSchedule#schedule_expression_timezone}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.startDate">StartDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#start_date SchedulerSchedule#start_date}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#state SchedulerSchedule#state}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ FlexibleTimeWindow SchedulerScheduleFlexibleTimeWindow
 
 flexible_time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#flexible_time_window SchedulerSchedule#flexible_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#flexible_time_window SchedulerSchedule#flexible_time_window}
 
 ---
 
@@ -1053,7 +1053,7 @@ ScheduleExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#schedule_expression SchedulerSchedule#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#schedule_expression SchedulerSchedule#schedule_expression}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Target SchedulerScheduleTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#target SchedulerSchedule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#target SchedulerSchedule#target}
 
 ---
 
@@ -1079,7 +1079,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#description SchedulerSchedule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#description SchedulerSchedule#description}.
 
 ---
 
@@ -1091,7 +1091,7 @@ EndDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#end_date SchedulerSchedule#end_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#end_date SchedulerSchedule#end_date}.
 
 ---
 
@@ -1103,7 +1103,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#group_name SchedulerSchedule#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#group_name SchedulerSchedule#group_name}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#id SchedulerSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#id SchedulerSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1130,7 +1130,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#kms_key_arn SchedulerSchedule#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#kms_key_arn SchedulerSchedule#kms_key_arn}.
 
 ---
 
@@ -1142,7 +1142,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name SchedulerSchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name SchedulerSchedule#name}.
 
 ---
 
@@ -1154,7 +1154,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name_prefix SchedulerSchedule#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name_prefix SchedulerSchedule#name_prefix}.
 
 ---
 
@@ -1166,7 +1166,7 @@ ScheduleExpressionTimezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#schedule_expression_timezone SchedulerSchedule#schedule_expression_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#schedule_expression_timezone SchedulerSchedule#schedule_expression_timezone}.
 
 ---
 
@@ -1178,7 +1178,7 @@ StartDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#start_date SchedulerSchedule#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#start_date SchedulerSchedule#start_date}.
 
 ---
 
@@ -1190,7 +1190,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#state SchedulerSchedule#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#state SchedulerSchedule#state}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleFlexibleTimeWindow {
 	Mode: *string,
@@ -1211,8 +1211,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#mode SchedulerSchedule#mode}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.property.maximumWindowInMinutes">MaximumWindowInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_window_in_minutes SchedulerSchedule#maximum_window_in_minutes}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#mode SchedulerSchedule#mode}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.property.maximumWindowInMinutes">MaximumWindowInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_window_in_minutes SchedulerSchedule#maximum_window_in_minutes}. |
 
 ---
 
@@ -1224,7 +1224,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#mode SchedulerSchedule#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#mode SchedulerSchedule#mode}.
 
 ---
 
@@ -1236,7 +1236,7 @@ MaximumWindowInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_window_in_minutes SchedulerSchedule#maximum_window_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_window_in_minutes SchedulerSchedule#maximum_window_in_minutes}.
 
 ---
 
@@ -1245,19 +1245,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTarget {
 	Arn: *string,
 	RoleArn: *string,
-	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig,
-	EcsParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetEcsParameters,
-	EventbridgeParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters,
+	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig,
+	EcsParameters: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters,
+	EventbridgeParameters: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters,
 	Input: *string,
-	KinesisParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetKinesisParameters,
-	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetRetryPolicy,
-	SagemakerPipelineParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters,
-	SqsParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetSqsParameters,
+	KinesisParameters: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters,
+	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy,
+	SagemakerPipelineParameters: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters,
+	SqsParameters: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters,
 }
 ```
 
@@ -1265,12 +1265,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#role_arn SchedulerSchedule#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#role_arn SchedulerSchedule#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig">SchedulerScheduleTargetDeadLetterConfig</a></code> | dead_letter_config block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.ecsParameters">EcsParameters</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters">SchedulerScheduleTargetEcsParameters</a></code> | ecs_parameters block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.eventbridgeParameters">EventbridgeParameters</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters">SchedulerScheduleTargetEventbridgeParameters</a></code> | eventbridge_parameters block. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.input">Input</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#input SchedulerSchedule#input}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.input">Input</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#input SchedulerSchedule#input}. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.kinesisParameters">KinesisParameters</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters">SchedulerScheduleTargetKinesisParameters</a></code> | kinesis_parameters block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy">SchedulerScheduleTargetRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget.property.sagemakerPipelineParameters">SagemakerPipelineParameters</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters">SchedulerScheduleTargetSagemakerPipelineParameters</a></code> | sagemaker_pipeline_parameters block. |
@@ -1286,7 +1286,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}.
 
 ---
 
@@ -1298,7 +1298,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#role_arn SchedulerSchedule#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#role_arn SchedulerSchedule#role_arn}.
 
 ---
 
@@ -1312,7 +1312,7 @@ DeadLetterConfig SchedulerScheduleTargetDeadLetterConfig
 
 dead_letter_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#dead_letter_config SchedulerSchedule#dead_letter_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#dead_letter_config SchedulerSchedule#dead_letter_config}
 
 ---
 
@@ -1326,7 +1326,7 @@ EcsParameters SchedulerScheduleTargetEcsParameters
 
 ecs_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#ecs_parameters SchedulerSchedule#ecs_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#ecs_parameters SchedulerSchedule#ecs_parameters}
 
 ---
 
@@ -1340,7 +1340,7 @@ EventbridgeParameters SchedulerScheduleTargetEventbridgeParameters
 
 eventbridge_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#eventbridge_parameters SchedulerSchedule#eventbridge_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#eventbridge_parameters SchedulerSchedule#eventbridge_parameters}
 
 ---
 
@@ -1352,7 +1352,7 @@ Input *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#input SchedulerSchedule#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#input SchedulerSchedule#input}.
 
 ---
 
@@ -1366,7 +1366,7 @@ KinesisParameters SchedulerScheduleTargetKinesisParameters
 
 kinesis_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#kinesis_parameters SchedulerSchedule#kinesis_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#kinesis_parameters SchedulerSchedule#kinesis_parameters}
 
 ---
 
@@ -1380,7 +1380,7 @@ RetryPolicy SchedulerScheduleTargetRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#retry_policy SchedulerSchedule#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#retry_policy SchedulerSchedule#retry_policy}
 
 ---
 
@@ -1394,7 +1394,7 @@ SagemakerPipelineParameters SchedulerScheduleTargetSagemakerPipelineParameters
 
 sagemaker_pipeline_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#sagemaker_pipeline_parameters SchedulerSchedule#sagemaker_pipeline_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#sagemaker_pipeline_parameters SchedulerSchedule#sagemaker_pipeline_parameters}
 
 ---
 
@@ -1408,7 +1408,7 @@ SqsParameters SchedulerScheduleTargetSqsParameters
 
 sqs_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#sqs_parameters SchedulerSchedule#sqs_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#sqs_parameters SchedulerSchedule#sqs_parameters}
 
 ---
 
@@ -1417,7 +1417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetDeadLetterConfig {
 	Arn: *string,
@@ -1428,7 +1428,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}. |
 
 ---
 
@@ -1440,7 +1440,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#arn SchedulerSchedule#arn}.
 
 ---
 
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParameters {
 	TaskDefinitionArn: *string,
@@ -1458,7 +1458,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 	EnableExecuteCommand: interface{},
 	Group: *string,
 	LaunchType: *string,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v17.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration,
 	PlacementConstraints: interface{},
 	PlacementStrategy: interface{},
 	PlatformVersion: *string,
@@ -1473,20 +1473,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.taskDefinitionArn">TaskDefinitionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#task_definition_arn SchedulerSchedule#task_definition_arn}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.taskDefinitionArn">TaskDefinitionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#task_definition_arn SchedulerSchedule#task_definition_arn}. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.capacityProviderStrategy">CapacityProviderStrategy</a></code> | <code>interface{}</code> | capacity_provider_strategy block. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#enable_ecs_managed_tags SchedulerSchedule#enable_ecs_managed_tags}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#enable_execute_command SchedulerSchedule#enable_execute_command}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#group SchedulerSchedule#group}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#launch_type SchedulerSchedule#launch_type}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.enableEcsManagedTags">EnableEcsManagedTags</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#enable_ecs_managed_tags SchedulerSchedule#enable_ecs_managed_tags}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.enableExecuteCommand">EnableExecuteCommand</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#enable_execute_command SchedulerSchedule#enable_execute_command}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#group SchedulerSchedule#group}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.launchType">LaunchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#launch_type SchedulerSchedule#launch_type}. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.networkConfiguration">NetworkConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration">SchedulerScheduleTargetEcsParametersNetworkConfiguration</a></code> | network_configuration block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.placementConstraints">PlacementConstraints</a></code> | <code>interface{}</code> | placement_constraints block. |
 | <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.placementStrategy">PlacementStrategy</a></code> | <code>interface{}</code> | placement_strategy block. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#platform_version SchedulerSchedule#platform_version}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#propagate_tags SchedulerSchedule#propagate_tags}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.referenceId">ReferenceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#reference_id SchedulerSchedule#reference_id}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#tags SchedulerSchedule#tags}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.taskCount">TaskCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#task_count SchedulerSchedule#task_count}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.platformVersion">PlatformVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#platform_version SchedulerSchedule#platform_version}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.propagateTags">PropagateTags</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#propagate_tags SchedulerSchedule#propagate_tags}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.referenceId">ReferenceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#reference_id SchedulerSchedule#reference_id}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#tags SchedulerSchedule#tags}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.property.taskCount">TaskCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#task_count SchedulerSchedule#task_count}. |
 
 ---
 
@@ -1498,7 +1498,7 @@ TaskDefinitionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#task_definition_arn SchedulerSchedule#task_definition_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#task_definition_arn SchedulerSchedule#task_definition_arn}.
 
 ---
 
@@ -1512,7 +1512,7 @@ CapacityProviderStrategy interface{}
 
 capacity_provider_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#capacity_provider_strategy SchedulerSchedule#capacity_provider_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#capacity_provider_strategy SchedulerSchedule#capacity_provider_strategy}
 
 ---
 
@@ -1524,7 +1524,7 @@ EnableEcsManagedTags interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#enable_ecs_managed_tags SchedulerSchedule#enable_ecs_managed_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#enable_ecs_managed_tags SchedulerSchedule#enable_ecs_managed_tags}.
 
 ---
 
@@ -1536,7 +1536,7 @@ EnableExecuteCommand interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#enable_execute_command SchedulerSchedule#enable_execute_command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#enable_execute_command SchedulerSchedule#enable_execute_command}.
 
 ---
 
@@ -1548,7 +1548,7 @@ Group *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#group SchedulerSchedule#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#group SchedulerSchedule#group}.
 
 ---
 
@@ -1560,7 +1560,7 @@ LaunchType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#launch_type SchedulerSchedule#launch_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#launch_type SchedulerSchedule#launch_type}.
 
 ---
 
@@ -1574,7 +1574,7 @@ NetworkConfiguration SchedulerScheduleTargetEcsParametersNetworkConfiguration
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#network_configuration SchedulerSchedule#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#network_configuration SchedulerSchedule#network_configuration}
 
 ---
 
@@ -1588,7 +1588,7 @@ PlacementConstraints interface{}
 
 placement_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#placement_constraints SchedulerSchedule#placement_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#placement_constraints SchedulerSchedule#placement_constraints}
 
 ---
 
@@ -1602,7 +1602,7 @@ PlacementStrategy interface{}
 
 placement_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#placement_strategy SchedulerSchedule#placement_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#placement_strategy SchedulerSchedule#placement_strategy}
 
 ---
 
@@ -1614,7 +1614,7 @@ PlatformVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#platform_version SchedulerSchedule#platform_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#platform_version SchedulerSchedule#platform_version}.
 
 ---
 
@@ -1626,7 +1626,7 @@ PropagateTags *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#propagate_tags SchedulerSchedule#propagate_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#propagate_tags SchedulerSchedule#propagate_tags}.
 
 ---
 
@@ -1638,7 +1638,7 @@ ReferenceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#reference_id SchedulerSchedule#reference_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#reference_id SchedulerSchedule#reference_id}.
 
 ---
 
@@ -1650,7 +1650,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#tags SchedulerSchedule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#tags SchedulerSchedule#tags}.
 
 ---
 
@@ -1662,7 +1662,7 @@ TaskCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#task_count SchedulerSchedule#task_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#task_count SchedulerSchedule#task_count}.
 
 ---
 
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1684,9 +1684,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#capacity_provider SchedulerSchedule#capacity_provider}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#base SchedulerSchedule#base}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#weight SchedulerSchedule#weight}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.capacityProvider">CapacityProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#capacity_provider SchedulerSchedule#capacity_provider}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.base">Base</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#base SchedulerSchedule#base}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#weight SchedulerSchedule#weight}. |
 
 ---
 
@@ -1698,7 +1698,7 @@ CapacityProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#capacity_provider SchedulerSchedule#capacity_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#capacity_provider SchedulerSchedule#capacity_provider}.
 
 ---
 
@@ -1710,7 +1710,7 @@ Base *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#base SchedulerSchedule#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#base SchedulerSchedule#base}.
 
 ---
 
@@ -1722,7 +1722,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#weight SchedulerSchedule#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#weight SchedulerSchedule#weight}.
 
 ---
 
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration {
 	Subnets: *[]*string,
@@ -1744,9 +1744,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#subnets SchedulerSchedule#subnets}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#assign_public_ip SchedulerSchedule#assign_public_ip}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#security_groups SchedulerSchedule#security_groups}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#subnets SchedulerSchedule#subnets}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.assignPublicIp">AssignPublicIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#assign_public_ip SchedulerSchedule#assign_public_ip}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#security_groups SchedulerSchedule#security_groups}. |
 
 ---
 
@@ -1758,7 +1758,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#subnets SchedulerSchedule#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#subnets SchedulerSchedule#subnets}.
 
 ---
 
@@ -1770,7 +1770,7 @@ AssignPublicIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#assign_public_ip SchedulerSchedule#assign_public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#assign_public_ip SchedulerSchedule#assign_public_ip}.
 
 ---
 
@@ -1782,7 +1782,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#security_groups SchedulerSchedule#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#security_groups SchedulerSchedule#security_groups}.
 
 ---
 
@@ -1791,7 +1791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersPlacementConstraints {
 	Type: *string,
@@ -1803,8 +1803,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#type SchedulerSchedule#type}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#expression SchedulerSchedule#expression}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#type SchedulerSchedule#type}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#expression SchedulerSchedule#expression}. |
 
 ---
 
@@ -1816,7 +1816,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#type SchedulerSchedule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#type SchedulerSchedule#type}.
 
 ---
 
@@ -1828,7 +1828,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#expression SchedulerSchedule#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#expression SchedulerSchedule#expression}.
 
 ---
 
@@ -1837,7 +1837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersPlacementStrategy {
 	Type: *string,
@@ -1849,8 +1849,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#type SchedulerSchedule#type}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#field SchedulerSchedule#field}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#type SchedulerSchedule#type}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#field SchedulerSchedule#field}. |
 
 ---
 
@@ -1862,7 +1862,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#type SchedulerSchedule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#type SchedulerSchedule#type}.
 
 ---
 
@@ -1874,7 +1874,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#field SchedulerSchedule#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#field SchedulerSchedule#field}.
 
 ---
 
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEventbridgeParameters {
 	DetailType: *string,
@@ -1895,8 +1895,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.property.detailType">DetailType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#detail_type SchedulerSchedule#detail_type}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#source SchedulerSchedule#source}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.property.detailType">DetailType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#detail_type SchedulerSchedule#detail_type}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#source SchedulerSchedule#source}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ DetailType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#detail_type SchedulerSchedule#detail_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#detail_type SchedulerSchedule#detail_type}.
 
 ---
 
@@ -1920,7 +1920,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#source SchedulerSchedule#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#source SchedulerSchedule#source}.
 
 ---
 
@@ -1929,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetKinesisParameters {
 	PartitionKey: *string,
@@ -1940,7 +1940,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters.property.partitionKey">PartitionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#partition_key SchedulerSchedule#partition_key}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters.property.partitionKey">PartitionKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#partition_key SchedulerSchedule#partition_key}. |
 
 ---
 
@@ -1952,7 +1952,7 @@ PartitionKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#partition_key SchedulerSchedule#partition_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#partition_key SchedulerSchedule#partition_key}.
 
 ---
 
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetRetryPolicy {
 	MaximumEventAgeInSeconds: *f64,
@@ -1973,8 +1973,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.property.maximumEventAgeInSeconds">MaximumEventAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_event_age_in_seconds SchedulerSchedule#maximum_event_age_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_retry_attempts SchedulerSchedule#maximum_retry_attempts}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.property.maximumEventAgeInSeconds">MaximumEventAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_event_age_in_seconds SchedulerSchedule#maximum_event_age_in_seconds}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_retry_attempts SchedulerSchedule#maximum_retry_attempts}. |
 
 ---
 
@@ -1986,7 +1986,7 @@ MaximumEventAgeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_event_age_in_seconds SchedulerSchedule#maximum_event_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_event_age_in_seconds SchedulerSchedule#maximum_event_age_in_seconds}.
 
 ---
 
@@ -1998,7 +1998,7 @@ MaximumRetryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#maximum_retry_attempts SchedulerSchedule#maximum_retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#maximum_retry_attempts SchedulerSchedule#maximum_retry_attempts}.
 
 ---
 
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSagemakerPipelineParameters {
 	PipelineParameter: interface{},
@@ -2032,7 +2032,7 @@ PipelineParameter interface{}
 
 pipeline_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#pipeline_parameter SchedulerSchedule#pipeline_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#pipeline_parameter SchedulerSchedule#pipeline_parameter}
 
 ---
 
@@ -2041,7 +2041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter {
 	Name: *string,
@@ -2053,8 +2053,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name SchedulerSchedule#name}. |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#value SchedulerSchedule#value}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name SchedulerSchedule#name}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#value SchedulerSchedule#value}. |
 
 ---
 
@@ -2066,7 +2066,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#name SchedulerSchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#name SchedulerSchedule#name}.
 
 ---
 
@@ -2078,7 +2078,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#value SchedulerSchedule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#value SchedulerSchedule#value}.
 
 ---
 
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSqsParameters {
 	MessageGroupId: *string,
@@ -2098,7 +2098,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters.property.messageGroupId">MessageGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#message_group_id SchedulerSchedule#message_group_id}. |
+| <code><a href="#@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters.property.messageGroupId">MessageGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#message_group_id SchedulerSchedule#message_group_id}. |
 
 ---
 
@@ -2110,7 +2110,7 @@ MessageGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/scheduler_schedule#message_group_id SchedulerSchedule#message_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/scheduler_schedule#message_group_id SchedulerSchedule#message_group_id}.
 
 ---
 
@@ -2121,7 +2121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleFlexibleTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleFlexibleTimeWindowOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() SchedulerScheduleFlexibleTimeWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetDeadLetterConfigOutputReference
 ```
@@ -2692,7 +2692,7 @@ func InternalValue() SchedulerScheduleTargetDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList
 ```
@@ -2835,7 +2835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 ```
@@ -3182,7 +3182,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference
 ```
@@ -3511,7 +3511,7 @@ func InternalValue() SchedulerScheduleTargetEcsParametersNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEcsParametersOutputReference
 ```
@@ -4211,7 +4211,7 @@ func InternalValue() SchedulerScheduleTargetEcsParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersPlacementConstraintsList
 ```
@@ -4354,7 +4354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference
 ```
@@ -4672,7 +4672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersPlacementStrategyList
 ```
@@ -4815,7 +4815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference
 ```
@@ -5133,7 +5133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEventbridgeParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEventbridgeParametersOutputReference
 ```
@@ -5426,7 +5426,7 @@ func InternalValue() SchedulerScheduleTargetEventbridgeParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetKinesisParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetKinesisParametersOutputReference
 ```
@@ -5697,7 +5697,7 @@ func InternalValue() SchedulerScheduleTargetKinesisParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetOutputReference
 ```
@@ -6313,7 +6313,7 @@ func InternalValue() SchedulerScheduleTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetRetryPolicyOutputReference
 ```
@@ -6620,7 +6620,7 @@ func InternalValue() SchedulerScheduleTargetRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetSagemakerPipelineParametersOutputReference
 ```
@@ -6911,7 +6911,7 @@ func InternalValue() SchedulerScheduleTargetSagemakerPipelineParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList
 ```
@@ -7054,7 +7054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference
 ```
@@ -7365,7 +7365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/schedulerschedule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSqsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetSqsParametersOutputReference
 ```

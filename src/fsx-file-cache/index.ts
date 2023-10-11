@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface FsxFileCacheConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#copy_tags_to_data_repository_associations FsxFileCache#copy_tags_to_data_repository_associations}
   */
   readonly copyTagsToDataRepositoryAssociations?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#file_cache_type FsxFileCache#file_cache_type}
   */
   readonly fileCacheType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#file_cache_type_version FsxFileCache#file_cache_type_version}
   */
   readonly fileCacheTypeVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#id FsxFileCache#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#id FsxFileCache#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#kms_key_id FsxFileCache#kms_key_id}
   */
   readonly kmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#security_group_ids FsxFileCache#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}
   */
   readonly storageCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#subnet_ids FsxFileCache#subnet_ids}
   */
   readonly subnetIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#tags_all FsxFileCache#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * data_repository_association block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#data_repository_association FsxFileCache#data_repository_association}
   */
   readonly dataRepositoryAssociation?: FsxFileCacheDataRepositoryAssociation[] | cdktf.IResolvable;
   /**
   * lustre_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#lustre_configuration FsxFileCache#lustre_configuration}
   */
   readonly lustreConfiguration?: FsxFileCacheLustreConfiguration[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#timeouts FsxFileCache#timeouts}
   */
   readonly timeouts?: FsxFileCacheTimeouts;
 }
 export interface FsxFileCacheDataRepositoryAssociationNfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#dns_ips FsxFileCache#dns_ips}
   */
   readonly dnsIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#version FsxFileCache#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#version FsxFileCache#version}
   */
   readonly version: string;
 }
@@ -197,25 +192,25 @@ export class FsxFileCacheDataRepositoryAssociationNfsList extends cdktf.ComplexL
 }
 export interface FsxFileCacheDataRepositoryAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#data_repository_path FsxFileCache#data_repository_path}
   */
   readonly dataRepositoryPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#data_repository_subdirectories FsxFileCache#data_repository_subdirectories}
   */
   readonly dataRepositorySubdirectories?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#file_cache_path FsxFileCache#file_cache_path}
   */
   readonly fileCachePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#tags FsxFileCache#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#tags FsxFileCache#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * nfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#nfs FsxFileCache#nfs}
   */
   readonly nfs?: FsxFileCacheDataRepositoryAssociationNfs[] | cdktf.IResolvable;
 }
@@ -497,7 +492,7 @@ export class FsxFileCacheLustreConfigurationLogConfigurationList extends cdktf.C
 }
 export interface FsxFileCacheLustreConfigurationMetadataConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}
   */
   readonly storageCapacity: number;
 }
@@ -591,21 +586,21 @@ export class FsxFileCacheLustreConfigurationMetadataConfigurationList extends cd
 }
 export interface FsxFileCacheLustreConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#deployment_type FsxFileCache#deployment_type}
   */
   readonly deploymentType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#per_unit_storage_throughput FsxFileCache#per_unit_storage_throughput}
   */
   readonly perUnitStorageThroughput: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#weekly_maintenance_start_time FsxFileCache#weekly_maintenance_start_time}
   */
   readonly weeklyMaintenanceStartTime?: string;
   /**
   * metadata_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#metadata_configuration FsxFileCache#metadata_configuration}
   */
   readonly metadataConfiguration: FsxFileCacheLustreConfigurationMetadataConfiguration[] | cdktf.IResolvable;
 }
@@ -773,15 +768,15 @@ export class FsxFileCacheLustreConfigurationList extends cdktf.ComplexList {
 }
 export interface FsxFileCacheTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#create FsxFileCache#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#create FsxFileCache#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#delete FsxFileCache#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#delete FsxFileCache#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache#update FsxFileCache#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache#update FsxFileCache#update}
   */
   readonly update?: string;
 }
@@ -902,7 +897,7 @@ export class FsxFileCacheTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache aws_fsx_file_cache}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache aws_fsx_file_cache}
 */
 export class FsxFileCache extends cdktf.TerraformResource {
 
@@ -916,7 +911,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -927,7 +922,7 @@ export class FsxFileCache extends cdktf.TerraformResource {
       terraformResourceType: 'aws_fsx_file_cache',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

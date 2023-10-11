@@ -1,6 +1,6 @@
 # `aws_waf_regex_pattern_set`
 
-Refer to the Terraform Registory for docs: [`aws_waf_regex_pattern_set`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set).
+Refer to the Terraform Registory for docs: [`aws_waf_regex_pattern_set`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set).
 
 # `wafRegexPatternSet` Submodule <a name="`wafRegexPatternSet` Submodule" id="@cdktf/provider-aws.wafRegexPatternSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_waf_regex_pattern_set`](https:/
 
 ### WafRegexPatternSet <a name="WafRegexPatternSet" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set aws_waf_regex_pattern_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set aws_waf_regex_pattern_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer"></a>
 
@@ -42,9 +42,9 @@ wafRegexPatternSet.WafRegexPatternSet(
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.regexPatternStrings">regex_pattern_strings</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSet.Initializer.parameter.regexPatternStrings">regex_pattern_strings</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
 
 ---
 
@@ -749,9 +749,9 @@ wafRegexPatternSet.WafRegexPatternSetConfig(
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}. |
-| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.regexPatternStrings">regex_pattern_strings</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafRegexPatternSet.WafRegexPatternSetConfig.property.regexPatternStrings">regex_pattern_strings</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}. |
 
 ---
 
@@ -833,7 +833,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#name WafRegexPatternSet#name}.
 
 ---
 
@@ -845,7 +845,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#id WafRegexPatternSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ regex_pattern_strings: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_regex_pattern_set#regex_pattern_strings WafRegexPatternSet#regex_pattern_strings}.
 
 ---
 

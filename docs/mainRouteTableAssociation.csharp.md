@@ -1,6 +1,6 @@
 # `aws_main_route_table_association`
 
-Refer to the Terraform Registory for docs: [`aws_main_route_table_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association).
+Refer to the Terraform Registory for docs: [`aws_main_route_table_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association).
 
 # `mainRouteTableAssociation` Submodule <a name="`mainRouteTableAssociation` Submodule" id="@cdktf/provider-aws.mainRouteTableAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_main_route_table_association`](
 
 ### MainRouteTableAssociation <a name="MainRouteTableAssociation" id="@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association aws_main_route_table_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association aws_main_route_table_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation.Initializer"></a>
 
@@ -669,9 +669,9 @@ new MainRouteTableAssociationConfig {
 | <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.routeTableId">RouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}. |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.routeTableId">RouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}. |
 | <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts">MainRouteTableAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -754,7 +754,7 @@ public string RouteTableId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#route_table_id MainRouteTableAssociation#route_table_id}.
 
 ---
 
@@ -766,7 +766,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#vpc_id MainRouteTableAssociation#vpc_id}.
 
 ---
 
@@ -778,7 +778,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#id MainRouteTableAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -795,7 +795,7 @@ public MainRouteTableAssociationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#timeouts MainRouteTableAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#timeouts MainRouteTableAssociation#timeouts}
 
 ---
 
@@ -817,9 +817,9 @@ new MainRouteTableAssociationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}. |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}. |
-| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}. |
+| <code><a href="#@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}. |
 
 ---
 
@@ -831,7 +831,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#create MainRouteTableAssociation#create}.
 
 ---
 
@@ -843,7 +843,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#delete MainRouteTableAssociation#delete}.
 
 ---
 
@@ -855,7 +855,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/main_route_table_association#update MainRouteTableAssociation#update}.
 
 ---
 

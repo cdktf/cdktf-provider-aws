@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ebs_encryption_by_default
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ebs_encryption_by_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ebs_encryption_by_default#enabled EbsEncryptionByDefault#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ebs_encryption_by_default#id EbsEncryptionByDefault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}
 */
 export class EbsEncryptionByDefault extends cdktf.TerraformResource {
 
@@ -40,7 +35,7 @@ export class EbsEncryptionByDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class EbsEncryptionByDefault extends cdktf.TerraformResource {
       terraformResourceType: 'aws_ebs_encryption_by_default',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
