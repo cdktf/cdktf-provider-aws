@@ -1,6 +1,6 @@
 # `aws_shield_drt_access_role_arn_association`
 
-Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association).
+Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_association`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association).
 
 # `shieldDrtAccessRoleArnAssociation` Submodule <a name="`shieldDrtAccessRoleArnAssociation` Submodule" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_shield_drt_access_role_arn_asso
 
 ### ShieldDrtAccessRoleArnAssociation <a name="ShieldDrtAccessRoleArnAssociation" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociation.Initializer"></a>
 
@@ -616,7 +616,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/shielddrtaccessrolearnass
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}. |
+| <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}. |
 | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.shieldDrtAccessRoleArnAssociation.ShieldDrtAccessRoleArnAssociationTimeouts">ShieldDrtAccessRoleArnAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -699,7 +699,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#role_arn ShieldDrtAccessRoleArnAssociation#role_arn}.
 
 ---
 
@@ -713,7 +713,7 @@ Timeouts ShieldDrtAccessRoleArnAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#timeouts ShieldDrtAccessRoleArnAssociation#timeouts}
 
 ---
 
@@ -751,7 +751,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#create ShieldDrtAccessRoleArnAssociation#create}
 
 ---
 
@@ -765,7 +765,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#delete ShieldDrtAccessRoleArnAssociation#delete}
 
 ---
 
@@ -779,7 +779,7 @@ Read *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/shield_drt_access_role_arn_association#read ShieldDrtAccessRoleArnAssociation#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/shield_drt_access_role_arn_association#read ShieldDrtAccessRoleArnAssociation#read}
 
 ---
 

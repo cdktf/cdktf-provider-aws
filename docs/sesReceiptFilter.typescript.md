@@ -1,6 +1,6 @@
 # `aws_ses_receipt_filter`
 
-Refer to the Terraform Registory for docs: [`aws_ses_receipt_filter`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter).
+Refer to the Terraform Registory for docs: [`aws_ses_receipt_filter`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter).
 
 # `sesReceiptFilter` Submodule <a name="`sesReceiptFilter` Submodule" id="@cdktf/provider-aws.sesReceiptFilter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_ses_receipt_filter`](https://re
 
 ### SesReceiptFilter <a name="SesReceiptFilter" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter aws_ses_receipt_filter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter aws_ses_receipt_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilter.Initializer"></a>
 
@@ -637,10 +637,10 @@ const sesReceiptFilterConfig: sesReceiptFilter.SesReceiptFilterConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#cidr SesReceiptFilter#cidr}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#name SesReceiptFilter#name}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#policy SesReceiptFilter#policy}. |
-| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#id SesReceiptFilter#id}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#cidr SesReceiptFilter#cidr}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#name SesReceiptFilter#name}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#policy SesReceiptFilter#policy}. |
+| <code><a href="#@cdktf/provider-aws.sesReceiptFilter.SesReceiptFilterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#id SesReceiptFilter#id}. |
 
 ---
 
@@ -722,7 +722,7 @@ public readonly cidr: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#cidr SesReceiptFilter#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#cidr SesReceiptFilter#cidr}.
 
 ---
 
@@ -734,7 +734,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#name SesReceiptFilter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#name SesReceiptFilter#name}.
 
 ---
 
@@ -746,7 +746,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#policy SesReceiptFilter#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#policy SesReceiptFilter#policy}.
 
 ---
 
@@ -758,7 +758,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/ses_receipt_filter#id SesReceiptFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ses_receipt_filter#id SesReceiptFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

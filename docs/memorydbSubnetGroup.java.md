@@ -1,6 +1,6 @@
 # `aws_memorydb_subnet_group`
 
-Refer to the Terraform Registory for docs: [`aws_memorydb_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group).
+Refer to the Terraform Registory for docs: [`aws_memorydb_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group).
 
 # `memorydbSubnetGroup` Submodule <a name="`memorydbSubnetGroup` Submodule" id="@cdktf/provider-aws.memorydbSubnetGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_memorydb_subnet_group`](https:/
 
 ### MemorydbSubnetGroup <a name="MemorydbSubnetGroup" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group aws_memorydb_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer"></a>
 
@@ -48,13 +48,13 @@ MemorydbSubnetGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup.Initializer.parameter.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}.
 
 ---
 
@@ -895,13 +895,13 @@ MemorydbSubnetGroupConfig.builder()
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.subnetIds">subnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.namePrefix">namePrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig.property.tagsAll">tagsAll</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}. |
 
 ---
 
@@ -983,7 +983,7 @@ public java.util.List<java.lang.String> getSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#subnet_ids MemorydbSubnetGroup#subnet_ids}.
 
 ---
 
@@ -995,7 +995,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#description MemorydbSubnetGroup#description}.
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#id MemorydbSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name MemorydbSubnetGroup#name}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getNamePrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#name_prefix MemorydbSubnetGroup#name_prefix}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags MemorydbSubnetGroup#tags}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTagsAll();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/memorydb_subnet_group#tags_all MemorydbSubnetGroup#tags_all}.
 
 ---
 

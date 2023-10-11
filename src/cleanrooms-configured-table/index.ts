@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface CleanroomsConfiguredTableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#allowed_columns CleanroomsConfiguredTable#allowed_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#allowed_columns CleanroomsConfiguredTable#allowed_columns}
   */
   readonly allowedColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#analysis_method CleanroomsConfiguredTable#analysis_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#analysis_method CleanroomsConfiguredTable#analysis_method}
   */
   readonly analysisMethod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#description CleanroomsConfiguredTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#description CleanroomsConfiguredTable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#id CleanroomsConfiguredTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#id CleanroomsConfiguredTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#name CleanroomsConfiguredTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#name CleanroomsConfiguredTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#tags CleanroomsConfiguredTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#tags CleanroomsConfiguredTable#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#tags_all CleanroomsConfiguredTable#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#tags_all CleanroomsConfiguredTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * table_reference block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#table_reference CleanroomsConfiguredTable#table_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#table_reference CleanroomsConfiguredTable#table_reference}
   */
   readonly tableReference: CleanroomsConfiguredTableTableReference;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#timeouts CleanroomsConfiguredTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#timeouts CleanroomsConfiguredTable#timeouts}
   */
   readonly timeouts?: CleanroomsConfiguredTableTimeouts;
 }
 export interface CleanroomsConfiguredTableTableReference {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#database_name CleanroomsConfiguredTable#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#database_name CleanroomsConfiguredTable#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#table_name CleanroomsConfiguredTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#table_name CleanroomsConfiguredTable#table_name}
   */
   readonly tableName: string;
 }
@@ -144,15 +144,15 @@ export class CleanroomsConfiguredTableTableReferenceOutputReference extends cdkt
 }
 export interface CleanroomsConfiguredTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#create CleanroomsConfiguredTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#create CleanroomsConfiguredTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#delete CleanroomsConfiguredTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#delete CleanroomsConfiguredTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table#update CleanroomsConfiguredTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table#update CleanroomsConfiguredTable#update}
   */
   readonly update?: string;
 }
@@ -273,7 +273,7 @@ export class CleanroomsConfiguredTableTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table}
 */
 export class CleanroomsConfiguredTable extends cdktf.TerraformResource {
 
@@ -287,7 +287,7 @@ export class CleanroomsConfiguredTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cleanrooms_configured_table aws_cleanrooms_configured_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class CleanroomsConfiguredTable extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cleanrooms_configured_table',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

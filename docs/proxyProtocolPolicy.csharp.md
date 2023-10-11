@@ -1,6 +1,6 @@
 # `aws_proxy_protocol_policy`
 
-Refer to the Terraform Registory for docs: [`aws_proxy_protocol_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy).
+Refer to the Terraform Registory for docs: [`aws_proxy_protocol_policy`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy).
 
 # `proxyProtocolPolicy` Submodule <a name="`proxyProtocolPolicy` Submodule" id="@cdktf/provider-aws.proxyProtocolPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_proxy_protocol_policy`](https:/
 
 ### ProxyProtocolPolicy <a name="ProxyProtocolPolicy" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy aws_proxy_protocol_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ new ProxyProtocolPolicyConfig {
 | <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.instancePorts">InstancePorts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}. |
-| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}. |
+| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.instancePorts">InstancePorts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}. |
+| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public string[] InstancePorts { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#instance_ports ProxyProtocolPolicy#instance_ports}.
 
 ---
 
@@ -711,7 +711,7 @@ public string LoadBalancer { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#load_balancer ProxyProtocolPolicy#load_balancer}.
 
 ---
 
@@ -723,7 +723,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/proxy_protocol_policy#id ProxyProtocolPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

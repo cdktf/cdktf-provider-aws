@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set
+// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsQuicksightDataSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#aws_account_id DataAwsQuicksightDataSet#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#aws_account_id DataAwsQuicksightDataSet#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#data_set_id DataAwsQuicksightDataSet#data_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#data_set_id DataAwsQuicksightDataSet#data_set_id}
   */
   readonly dataSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#id DataAwsQuicksightDataSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#id DataAwsQuicksightDataSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#tags DataAwsQuicksightDataSet#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#tags DataAwsQuicksightDataSet#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#tags_all DataAwsQuicksightDataSet#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#tags_all DataAwsQuicksightDataSet#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * column_level_permission_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set#column_level_permission_rules DataAwsQuicksightDataSet#column_level_permission_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set#column_level_permission_rules DataAwsQuicksightDataSet#column_level_permission_rules}
   */
   readonly columnLevelPermissionRules?: DataAwsQuicksightDataSetColumnLevelPermissionRules[] | cdktf.IResolvable;
 }
@@ -2481,7 +2481,7 @@ export class DataAwsQuicksightDataSetColumnLevelPermissionRulesList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set}
 */
 export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
 
@@ -2495,7 +2495,7 @@ export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2506,7 +2506,7 @@ export class DataAwsQuicksightDataSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_quicksight_data_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.0',
+        providerVersion: '5.20.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_aws_qldb_ledger`
 
-Refer to the Terraform Registory for docs: [`data_aws_qldb_ledger`](https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger).
+Refer to the Terraform Registory for docs: [`data_aws_qldb_ledger`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger).
 
 # `dataAwsQldbLedger` Submodule <a name="`dataAwsQldbLedger` Submodule" id="@cdktf/provider-aws.dataAwsQldbLedger"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_qldb_ledger`](https://regi
 
 ### DataAwsQldbLedger <a name="DataAwsQldbLedger" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger aws_qldb_ledger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger aws_qldb_ledger}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer"></a>
 
@@ -42,9 +42,9 @@ dataAwsQldbLedger.DataAwsQldbLedger(
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}.
 
 ---
 
@@ -760,9 +760,9 @@ dataAwsQldbLedger.DataAwsQldbLedgerConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}. |
 
 ---
 
@@ -844,7 +844,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#name DataAwsQldbLedger#name}.
 
 ---
 
@@ -856,7 +856,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#id DataAwsQldbLedger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/qldb_ledger#tags DataAwsQldbLedger#tags}.
 
 ---
 
