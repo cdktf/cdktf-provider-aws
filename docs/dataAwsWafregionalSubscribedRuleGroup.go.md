@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafregionalsubscribedrulegroup"
 
 dataawswafregionalsubscribedrulegroup.NewDataAwsWafregionalSubscribedRuleGroup(scope Construct, id *string, config DataAwsWafregionalSubscribedRuleGroupConfig) DataAwsWafregionalSubscribedRuleGroup
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafregionalsubscribedrulegroup"
 
 dataawswafregionalsubscribedrulegroup.DataAwsWafregionalSubscribedRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafregionalsubscribedrulegroup"
 
 dataawswafregionalsubscribedrulegroup.DataAwsWafregionalSubscribedRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataawswafregionalsubscribedrulegroup.DataAwsWafregionalSubscribedRuleGroup_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafregionalsubscribedrulegroup"
 
 dataawswafregionalsubscribedrulegroup.DataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafregionalSubscribedRuleGroup.DataAwsWafregionalSubscribedRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafregionalsubscribedrulegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafregionalsubscribedrulegroup"
 
 &dataawswafregionalsubscribedrulegroup.DataAwsWafregionalSubscribedRuleGroupConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafwebacl"
 
 dataawswafwebacl.NewDataAwsWafWebAcl(scope Construct, id *string, config DataAwsWafWebAclConfig) DataAwsWafWebAcl
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawswafwebacl.DataAwsWafWebAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAcl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafwebacl"
 
 dataawswafwebacl.DataAwsWafWebAcl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsWafWebAcl.DataAwsWafWebAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawswafwebacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawswafwebacl"
 
 &dataawswafwebacl.DataAwsWafWebAclConfig {
 	Connection: interface{},

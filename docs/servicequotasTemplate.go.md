@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotastemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicequotastemplate"
 
 servicequotastemplate.NewServicequotasTemplate(scope Construct, id *string, config ServicequotasTemplateConfig) ServicequotasTemplate
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotastemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotastemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ servicequotastemplate.ServicequotasTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotastemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/servicequotastemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicequotastemplate"
 
 &servicequotastemplate.ServicequotasTemplateConfig {
 	Connection: interface{},

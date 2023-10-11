@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.NewSsmDocument(scope Construct, id *string, config SsmDocumentConfig) SsmDocument
 ```
@@ -339,7 +339,7 @@ func ResetVersionName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.SsmDocument_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.SsmDocument_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ ssmdocument.SsmDocument_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmDocument.SsmDocument.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.SsmDocument_IsTerraformResource(x interface{}) *bool
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 &ssmdocument.SsmDocumentAttachmentsSource {
 	Key: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 &ssmdocument.SsmDocumentConfig {
 	Connection: interface{},
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 &ssmdocument.SsmDocumentParameter {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.NewSsmDocumentAttachmentsSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmDocumentAttachmentsSourceList
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentAttachmentsSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.NewSsmDocumentAttachmentsSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmDocumentAttachmentsSourceOutputReference
 ```
@@ -1788,7 +1788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.NewSsmDocumentParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmDocumentParameterList
 ```
@@ -1920,7 +1920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmDocument.SsmDocumentParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmdocument"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/ssmdocument"
 
 ssmdocument.NewSsmDocumentParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmDocumentParameterOutputReference
 ```
