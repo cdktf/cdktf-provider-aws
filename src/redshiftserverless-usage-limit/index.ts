@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface RedshiftserverlessUsageLimitConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#amount RedshiftserverlessUsageLimit#amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#amount RedshiftserverlessUsageLimit#amount}
   */
   readonly amount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#breach_action RedshiftserverlessUsageLimit#breach_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#breach_action RedshiftserverlessUsageLimit#breach_action}
   */
   readonly breachAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#id RedshiftserverlessUsageLimit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#id RedshiftserverlessUsageLimit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#period RedshiftserverlessUsageLimit#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#period RedshiftserverlessUsageLimit#period}
   */
   readonly period?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#resource_arn RedshiftserverlessUsageLimit#resource_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#resource_arn RedshiftserverlessUsageLimit#resource_arn}
   */
   readonly resourceArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit#usage_type RedshiftserverlessUsageLimit#usage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit#usage_type RedshiftserverlessUsageLimit#usage_type}
   */
   readonly usageType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit}
 */
 export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/redshiftserverless_usage_limit aws_redshiftserverless_usage_limit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class RedshiftserverlessUsageLimit extends cdktf.TerraformResource {
       terraformResourceType: 'aws_redshiftserverless_usage_limit',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

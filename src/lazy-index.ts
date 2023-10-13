@@ -404,6 +404,7 @@ Object.defineProperty(exports, 'ec2ClientVpnNetworkAssociation', { get: function
 Object.defineProperty(exports, 'ec2ClientVpnRoute', { get: function () { return require('./ec2-client-vpn-route'); } });
 Object.defineProperty(exports, 'ec2Fleet', { get: function () { return require('./ec2-fleet'); } });
 Object.defineProperty(exports, 'ec2Host', { get: function () { return require('./ec2-host'); } });
+Object.defineProperty(exports, 'ec2ImageBlockPublicAccess', { get: function () { return require('./ec2-image-block-public-access'); } });
 Object.defineProperty(exports, 'ec2InstanceConnectEndpoint', { get: function () { return require('./ec2-instance-connect-endpoint'); } });
 Object.defineProperty(exports, 'ec2InstanceState', { get: function () { return require('./ec2-instance-state'); } });
 Object.defineProperty(exports, 'ec2LocalGatewayRoute', { get: function () { return require('./ec2-local-gateway-route'); } });
@@ -567,6 +568,7 @@ Object.defineProperty(exports, 'guarddutyIpset', { get: function () { return req
 Object.defineProperty(exports, 'guarddutyMember', { get: function () { return require('./guardduty-member'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationAdminAccount', { get: function () { return require('./guardduty-organization-admin-account'); } });
 Object.defineProperty(exports, 'guarddutyOrganizationConfiguration', { get: function () { return require('./guardduty-organization-configuration'); } });
+Object.defineProperty(exports, 'guarddutyOrganizationConfigurationFeature', { get: function () { return require('./guardduty-organization-configuration-feature'); } });
 Object.defineProperty(exports, 'guarddutyPublishingDestination', { get: function () { return require('./guardduty-publishing-destination'); } });
 Object.defineProperty(exports, 'guarddutyThreatintelset', { get: function () { return require('./guardduty-threatintelset'); } });
 Object.defineProperty(exports, 'iamAccessKey', { get: function () { return require('./iam-access-key'); } });
@@ -1073,6 +1075,7 @@ Object.defineProperty(exports, 'servicecatalogTagOption', { get: function () { r
 Object.defineProperty(exports, 'servicecatalogTagOptionResourceAssociation', { get: function () { return require('./servicecatalog-tag-option-resource-association'); } });
 Object.defineProperty(exports, 'servicequotasServiceQuota', { get: function () { return require('./servicequotas-service-quota'); } });
 Object.defineProperty(exports, 'servicequotasTemplate', { get: function () { return require('./servicequotas-template'); } });
+Object.defineProperty(exports, 'servicequotasTemplateAssociation', { get: function () { return require('./servicequotas-template-association'); } });
 Object.defineProperty(exports, 'sesActiveReceiptRuleSet', { get: function () { return require('./ses-active-receipt-rule-set'); } });
 Object.defineProperty(exports, 'sesConfigurationSet', { get: function () { return require('./ses-configuration-set'); } });
 Object.defineProperty(exports, 'sesDomainDkim', { get: function () { return require('./ses-domain-dkim'); } });
@@ -1178,7 +1181,9 @@ Object.defineProperty(exports, 'transferSshKey', { get: function () { return req
 Object.defineProperty(exports, 'transferTag', { get: function () { return require('./transfer-tag'); } });
 Object.defineProperty(exports, 'transferUser', { get: function () { return require('./transfer-user'); } });
 Object.defineProperty(exports, 'transferWorkflow', { get: function () { return require('./transfer-workflow'); } });
+Object.defineProperty(exports, 'verifiedaccessGroup', { get: function () { return require('./verifiedaccess-group'); } });
 Object.defineProperty(exports, 'verifiedaccessInstance', { get: function () { return require('./verifiedaccess-instance'); } });
+Object.defineProperty(exports, 'verifiedaccessInstanceLoggingConfiguration', { get: function () { return require('./verifiedaccess-instance-logging-configuration'); } });
 Object.defineProperty(exports, 'verifiedaccessInstanceTrustProviderAttachment', { get: function () { return require('./verifiedaccess-instance-trust-provider-attachment'); } });
 Object.defineProperty(exports, 'verifiedaccessTrustProvider', { get: function () { return require('./verifiedaccess-trust-provider'); } });
 Object.defineProperty(exports, 'volumeAttachment', { get: function () { return require('./volume-attachment'); } });
@@ -1715,6 +1720,7 @@ Object.defineProperty(exports, 'dataAwsServicecatalogProduct', { get: function (
 Object.defineProperty(exports, 'dataAwsServicecatalogProvisioningArtifacts', { get: function () { return require('./data-aws-servicecatalog-provisioning-artifacts'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasService', { get: function () { return require('./data-aws-servicequotas-service'); } });
 Object.defineProperty(exports, 'dataAwsServicequotasServiceQuota', { get: function () { return require('./data-aws-servicequotas-service-quota'); } });
+Object.defineProperty(exports, 'dataAwsServicequotasTemplates', { get: function () { return require('./data-aws-servicequotas-templates'); } });
 Object.defineProperty(exports, 'dataAwsSesActiveReceiptRuleSet', { get: function () { return require('./data-aws-ses-active-receipt-rule-set'); } });
 Object.defineProperty(exports, 'dataAwsSesDomainIdentity', { get: function () { return require('./data-aws-ses-domain-identity'); } });
 Object.defineProperty(exports, 'dataAwsSesEmailIdentity', { get: function () { return require('./data-aws-ses-email-identity'); } });

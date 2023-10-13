@@ -1,6 +1,6 @@
 # `data_aws_iam_users`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_users`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users).
+Refer to the Terraform Registory for docs: [`data_aws_iam_users`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users).
 
 # `dataAwsIamUsers` Submodule <a name="`dataAwsIamUsers` Submodule" id="@cdktf/provider-aws.dataAwsIamUsers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_users`](https://regist
 
 ### DataAwsIamUsers <a name="DataAwsIamUsers" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users aws_iam_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users aws_iam_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsers.Initializer"></a>
 
@@ -618,9 +618,9 @@ const dataAwsIamUsersConfig: dataAwsIamUsers.DataAwsIamUsersConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#id DataAwsIamUsers#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.pathPrefix">pathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.nameRegex">nameRegex</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamUsers.DataAwsIamUsersConfig.property.pathPrefix">pathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}. |
 
 ---
 
@@ -702,7 +702,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#id DataAwsIamUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -717,7 +717,7 @@ public readonly nameRegex: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}.
 
 ---
 
@@ -729,7 +729,7 @@ public readonly pathPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}.
 
 ---
 

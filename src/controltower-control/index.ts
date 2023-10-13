@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface ControltowerControlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#control_identifier ControltowerControl#control_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#control_identifier ControltowerControl#control_identifier}
   */
   readonly controlIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#id ControltowerControl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#id ControltowerControl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#target_identifier ControltowerControl#target_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#target_identifier ControltowerControl#target_identifier}
   */
   readonly targetIdentifier: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#timeouts ControltowerControl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#timeouts ControltowerControl#timeouts}
   */
   readonly timeouts?: ControltowerControlTimeouts;
 }
 export interface ControltowerControlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#create ControltowerControl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#create ControltowerControl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control#delete ControltowerControl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control#delete ControltowerControl#delete}
   */
   readonly delete?: string;
 }
@@ -138,7 +138,7 @@ export class ControltowerControlTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control aws_controltower_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control aws_controltower_control}
 */
 export class ControltowerControl extends cdktf.TerraformResource {
 
@@ -152,7 +152,7 @@ export class ControltowerControl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/controltower_control aws_controltower_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/controltower_control aws_controltower_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +163,7 @@ export class ControltowerControl extends cdktf.TerraformResource {
       terraformResourceType: 'aws_controltower_control',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

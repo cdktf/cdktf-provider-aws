@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#description CloudwatchEventEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#description CloudwatchEventEndpoint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#id CloudwatchEventEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#id CloudwatchEventEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#name CloudwatchEventEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#name CloudwatchEventEndpoint#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#role_arn CloudwatchEventEndpoint#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#role_arn CloudwatchEventEndpoint#role_arn}
   */
   readonly roleArn?: string;
   /**
   * event_bus block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#event_bus CloudwatchEventEndpoint#event_bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#event_bus CloudwatchEventEndpoint#event_bus}
   */
   readonly eventBus: CloudwatchEventEndpointEventBus[] | cdktf.IResolvable;
   /**
   * replication_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#replication_config CloudwatchEventEndpoint#replication_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#replication_config CloudwatchEventEndpoint#replication_config}
   */
   readonly replicationConfig?: CloudwatchEventEndpointReplicationConfig;
   /**
   * routing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#routing_config CloudwatchEventEndpoint#routing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#routing_config CloudwatchEventEndpoint#routing_config}
   */
   readonly routingConfig: CloudwatchEventEndpointRoutingConfig;
 }
 export interface CloudwatchEventEndpointEventBus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#event_bus_arn CloudwatchEventEndpoint#event_bus_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#event_bus_arn CloudwatchEventEndpoint#event_bus_arn}
   */
   readonly eventBusArn: string;
 }
@@ -146,7 +146,7 @@ export class CloudwatchEventEndpointEventBusList extends cdktf.ComplexList {
 }
 export interface CloudwatchEventEndpointReplicationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#state CloudwatchEventEndpoint#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#state CloudwatchEventEndpoint#state}
   */
   readonly state?: string;
 }
@@ -211,7 +211,7 @@ export class CloudwatchEventEndpointReplicationConfigOutputReference extends cdk
 }
 export interface CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#health_check CloudwatchEventEndpoint#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#health_check CloudwatchEventEndpoint#health_check}
   */
   readonly healthCheck?: string;
 }
@@ -276,7 +276,7 @@ export class CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputRefe
 }
 export interface CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#route CloudwatchEventEndpoint#route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#route CloudwatchEventEndpoint#route}
   */
   readonly route?: string;
 }
@@ -343,13 +343,13 @@ export interface CloudwatchEventEndpointRoutingConfigFailoverConfig {
   /**
   * primary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#primary CloudwatchEventEndpoint#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#primary CloudwatchEventEndpoint#primary}
   */
   readonly primary: CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary;
   /**
   * secondary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#secondary CloudwatchEventEndpoint#secondary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#secondary CloudwatchEventEndpoint#secondary}
   */
   readonly secondary: CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary;
 }
@@ -433,7 +433,7 @@ export interface CloudwatchEventEndpointRoutingConfig {
   /**
   * failover_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint#failover_config CloudwatchEventEndpoint#failover_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#failover_config CloudwatchEventEndpoint#failover_config}
   */
   readonly failoverConfig: CloudwatchEventEndpointRoutingConfigFailoverConfig;
 }
@@ -495,7 +495,7 @@ export class CloudwatchEventEndpointRoutingConfigOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint}
 */
 export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
 
@@ -509,7 +509,7 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -520,7 +520,7 @@ export class CloudwatchEventEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

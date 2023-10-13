@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktf from 'cdktf';
 
 export interface WafXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#id WafXssMatchSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#name WafXssMatchSet#name}
   */
   readonly name: string;
   /**
   * xss_match_tuples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#xss_match_tuples WafXssMatchSet#xss_match_tuples}
   */
   readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[] | cdktf.IResolvable;
 }
 export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#data WafXssMatchSet#data}
   */
   readonly data?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#type WafXssMatchSet#type}
   */
   readonly type: string;
 }
@@ -121,13 +121,13 @@ export class WafXssMatchSetXssMatchTuplesFieldToMatchOutputReference extends cdk
 }
 export interface WafXssMatchSetXssMatchTuples {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#text_transformation WafXssMatchSet#text_transformation}
   */
   readonly textTransformation: string;
   /**
   * field_to_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set#field_to_match WafXssMatchSet#field_to_match}
   */
   readonly fieldToMatch: WafXssMatchSetXssMatchTuplesFieldToMatch;
 }
@@ -241,7 +241,7 @@ export class WafXssMatchSetXssMatchTuplesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set aws_waf_xss_match_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set}
 */
 export class WafXssMatchSet extends cdktf.TerraformResource {
 
@@ -255,7 +255,7 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class WafXssMatchSet extends cdktf.TerraformResource {
       terraformResourceType: 'aws_waf_xss_match_set',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

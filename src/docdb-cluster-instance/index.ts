@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,94 @@ import * as cdktf from 'cdktf';
 
 export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}
   */
   readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}
   */
   readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}
   */
   readonly caCertIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}
   */
   readonly clusterIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}
+  */
+  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}
   */
   readonly enablePerformanceInsights?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}
   */
   readonly engine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}
   */
   readonly identifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}
   */
   readonly identifierPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}
   */
   readonly instanceClass: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}
   */
   readonly performanceInsightsKmsKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}
   */
   readonly preferredMaintenanceWindow?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}
   */
   readonly promotionTier?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
   */
   readonly timeouts?: DocdbClusterInstanceTimeouts;
 }
 export interface DocdbClusterInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}
   */
   readonly update?: string;
 }
@@ -217,7 +221,7 @@ export class DocdbClusterInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}
 */
 export class DocdbClusterInstance extends cdktf.TerraformResource {
 
@@ -231,7 +235,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +246,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_docdb_cluster_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -258,6 +262,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._caCertIdentifier = config.caCertIdentifier;
     this._clusterIdentifier = config.clusterIdentifier;
+    this._copyTagsToSnapshot = config.copyTagsToSnapshot;
     this._enablePerformanceInsights = config.enablePerformanceInsights;
     this._engine = config.engine;
     this._id = config.id;
@@ -276,7 +281,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // apply_immediately - computed: true, optional: true, required: false
+  // apply_immediately - computed: false, optional: true, required: false
   private _applyImmediately?: boolean | cdktf.IResolvable; 
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
@@ -358,6 +363,22 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
     return this._clusterIdentifier;
   }
 
+  // copy_tags_to_snapshot - computed: false, optional: true, required: false
+  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable; 
+  public get copyTagsToSnapshot() {
+    return this.getBooleanAttribute('copy_tags_to_snapshot');
+  }
+  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable) {
+    this._copyTagsToSnapshot = value;
+  }
+  public resetCopyTagsToSnapshot() {
+    this._copyTagsToSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyTagsToSnapshotInput() {
+    return this._copyTagsToSnapshot;
+  }
+
   // db_subnet_group_name - computed: true, optional: false, required: false
   public get dbSubnetGroupName() {
     return this.getStringAttribute('db_subnet_group_name');
@@ -368,7 +389,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('dbi_resource_id');
   }
 
-  // enable_performance_insights - computed: true, optional: true, required: false
+  // enable_performance_insights - computed: false, optional: true, required: false
   private _enablePerformanceInsights?: boolean | cdktf.IResolvable; 
   public get enablePerformanceInsights() {
     return this.getBooleanAttribute('enable_performance_insights');
@@ -608,6 +629,7 @@ export class DocdbClusterInstance extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       enable_performance_insights: cdktf.booleanToTerraform(this._enablePerformanceInsights),
       engine: cdktf.stringToTerraform(this._engine),
       id: cdktf.stringToTerraform(this._id),

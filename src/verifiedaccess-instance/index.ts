@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance#description VerifiedaccessInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#description VerifiedaccessInstance#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance#id VerifiedaccessInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#fips_enabled VerifiedaccessInstance#fips_enabled}
+  */
+  readonly fipsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#id VerifiedaccessInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance#tags VerifiedaccessInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#tags VerifiedaccessInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance#tags_all VerifiedaccessInstance#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#tags_all VerifiedaccessInstance#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
@@ -118,7 +122,7 @@ export class VerifiedaccessInstanceVerifiedAccessTrustProvidersList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}
 */
 export class VerifiedaccessInstance extends cdktf.TerraformResource {
 
@@ -132,7 +136,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +147,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -155,6 +159,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._fipsEnabled = config.fipsEnabled;
     this._id = config.id;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -183,6 +188,22 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // fips_enabled - computed: false, optional: true, required: false
+  private _fipsEnabled?: boolean | cdktf.IResolvable; 
+  public get fipsEnabled() {
+    return this.getBooleanAttribute('fips_enabled');
+  }
+  public set fipsEnabled(value: boolean | cdktf.IResolvable) {
+    this._fipsEnabled = value;
+  }
+  public resetFipsEnabled() {
+    this._fipsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fipsEnabledInput() {
+    return this._fipsEnabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -251,6 +272,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      fips_enabled: cdktf.booleanToTerraform(this._fipsEnabled),
       id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
