@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupplan"
 
 dataawsbackupplan.NewDataAwsBackupPlan(scope Construct, id *string, config DataAwsBackupPlanConfig) DataAwsBackupPlan
 ```
@@ -284,7 +284,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawsbackupplan.DataAwsBackupPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupplan"
 
 dataawsbackupplan.DataAwsBackupPlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupPlan.DataAwsBackupPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbackupplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsbackupplan"
 
 &dataawsbackupplan.DataAwsBackupPlanConfig {
 	Connection: interface{},

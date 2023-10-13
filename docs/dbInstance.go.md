@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstance(scope Construct, id *string, config DbInstanceConfig) DbInstance
 ```
@@ -763,7 +763,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbInstance.DbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.DbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -795,7 +795,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.DbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ dbinstance.DbInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.DbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -2537,7 +2537,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceBlueGreenUpdate {
 	Enabled: interface{},
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceConfig {
 	Connection: interface{},
@@ -2588,7 +2588,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 	BackupRetentionPeriod: *f64,
 	BackupTarget: *string,
 	BackupWindow: *string,
-	BlueGreenUpdate: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceBlueGreenUpdate,
+	BlueGreenUpdate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceBlueGreenUpdate,
 	CaCertIdentifier: *string,
 	CharacterSetName: *string,
 	CopyTagsToSnapshot: interface{},
@@ -2630,8 +2630,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 	PubliclyAccessible: interface{},
 	ReplicaMode: *string,
 	ReplicateSourceDb: *string,
-	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceRestoreToPointInTime,
-	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceS3Import,
+	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceRestoreToPointInTime,
+	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceS3Import,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	StorageEncrypted: interface{},
@@ -2639,7 +2639,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceTimeouts,
 	Timezone: *string,
 	Username: *string,
 	VpcSecurityGroupIds: *[]*string,
@@ -3578,7 +3578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceListenerEndpoint {
 
@@ -3591,7 +3591,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceMasterUserSecret {
 
@@ -3604,7 +3604,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceRestoreToPointInTime {
 	RestoreTime: *string,
@@ -3692,7 +3692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceS3Import {
 	BucketName: *string,
@@ -3780,7 +3780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 &dbinstance.DbInstanceTimeouts {
 	Create: *string,
@@ -3842,7 +3842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceBlueGreenUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceBlueGreenUpdateOutputReference
 ```
@@ -4120,7 +4120,7 @@ func InternalValue() DbInstanceBlueGreenUpdate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceListenerEndpointList
 ```
@@ -4252,7 +4252,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceListenerEndpointOutputReference
 ```
@@ -4552,7 +4552,7 @@ func InternalValue() DbInstanceListenerEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceMasterUserSecretList
 ```
@@ -4684,7 +4684,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceMasterUserSecretOutputReference
 ```
@@ -4984,7 +4984,7 @@ func InternalValue() DbInstanceMasterUserSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceRestoreToPointInTimeOutputReference
 ```
@@ -5378,7 +5378,7 @@ func InternalValue() DbInstanceRestoreToPointInTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceS3ImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceS3ImportOutputReference
 ```
@@ -5744,7 +5744,7 @@ func InternalValue() DbInstanceS3Import
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 
 dbinstance.NewDbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceTimeoutsOutputReference
 ```
