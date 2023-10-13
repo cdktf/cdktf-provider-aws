@@ -45,12 +45,13 @@ jobs:
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         uses: peter-evans/create-pull-request@284f54f989303d2699d373481a0cfa13ad5a6666
         with:
-          commit-message: "chore: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
+          commit-message: "fix: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
           branch: auto/provider-upgrade
-          title: "chore: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
-          body: This PR upgrades provider to version ${{ steps.new_version.outputs.value }}
+          title: "fix: upgrade provider from `${{ steps.current_version.outputs.value }}` to version `${{ steps.new_version.outputs.value }}`"
+          body: This PR upgrades the underlying Terraform provider to version ${{ steps.new_version.outputs.value }}
           labels: automerge
           token: ${{ secrets.GH_TOKEN }}
           delete-branch: true
           committer: team-tf-cdk <github-team-tf-cdk@hashicorp.com>
           author: Team Terraform CDK <github-team-tf-cdk@hashicorp.com>
+          signoff: true

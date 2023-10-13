@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.NewDataAwsNatGateways(scope Construct, id *string, config DataAwsNatGatewaysConfig) DataAwsNatGateways
 ```
@@ -331,7 +331,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.DataAwsNatGateways_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.DataAwsNatGateways_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsnatgateways.DataAwsNatGateways_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGateways.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.DataAwsNatGateways_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 &dataawsnatgateways.DataAwsNatGatewaysConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.dataAwsNatGateways.DataAwsNatGatewaysTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsNatGateways.DataAwsNatGatewaysTimeouts,
 	VpcId: *string,
 }
 ```
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 &dataawsnatgateways.DataAwsNatGatewaysFilter {
 	Name: *string,
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 &dataawsnatgateways.DataAwsNatGatewaysTimeouts {
 	Read: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.NewDataAwsNatGatewaysFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNatGatewaysFilterList
 ```
@@ -1077,7 +1077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.NewDataAwsNatGatewaysFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsNatGatewaysFilterOutputReference
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsNatGateways.DataAwsNatGatewaysTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsnatgateways"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsnatgateways"
 
 dataawsnatgateways.NewDataAwsNatGatewaysTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsNatGatewaysTimeoutsOutputReference
 ```

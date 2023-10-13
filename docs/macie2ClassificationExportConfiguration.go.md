@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 macie2classificationexportconfiguration.NewMacie2ClassificationExportConfiguration(scope Construct, id *string, config Macie2ClassificationExportConfigurationConfig) Macie2ClassificationExportConfiguration
 ```
@@ -297,7 +297,7 @@ func ResetS3Destination()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 macie2classificationexportconfiguration.Macie2ClassificationExportConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 macie2classificationexportconfiguration.Macie2ClassificationExportConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ macie2classificationexportconfiguration.Macie2ClassificationExportConfiguration_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 macie2classificationexportconfiguration.Macie2ClassificationExportConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 &macie2classificationexportconfiguration.Macie2ClassificationExportConfigurationConfig {
 	Connection: interface{},
@@ -597,7 +597,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexpor
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v17.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3Destination,
+	S3Destination: github.com/cdktf/cdktf-provider-aws-go/aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3Destination,
 }
 ```
 
@@ -721,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 &macie2classificationexportconfiguration.Macie2ClassificationExportConfigurationS3Destination {
 	BucketName: *string,
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/macie2classificationexportconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/macie2classificationexportconfiguration"
 
 macie2classificationexportconfiguration.NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2ClassificationExportConfigurationS3DestinationOutputReference
 ```
