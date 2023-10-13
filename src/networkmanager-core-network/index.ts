@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkmanagerCoreNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#base_policy_region NetworkmanagerCoreNetwork#base_policy_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#base_policy_document NetworkmanagerCoreNetwork#base_policy_document}
+  */
+  readonly basePolicyDocument?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#base_policy_region NetworkmanagerCoreNetwork#base_policy_region}
   */
   readonly basePolicyRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#base_policy_regions NetworkmanagerCoreNetwork#base_policy_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#base_policy_regions NetworkmanagerCoreNetwork#base_policy_regions}
   */
   readonly basePolicyRegions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#create_base_policy NetworkmanagerCoreNetwork#create_base_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#create_base_policy NetworkmanagerCoreNetwork#create_base_policy}
   */
   readonly createBasePolicy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#description NetworkmanagerCoreNetwork#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#description NetworkmanagerCoreNetwork#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#global_network_id NetworkmanagerCoreNetwork#global_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#global_network_id NetworkmanagerCoreNetwork#global_network_id}
   */
   readonly globalNetworkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#id NetworkmanagerCoreNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#id NetworkmanagerCoreNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#tags NetworkmanagerCoreNetwork#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#tags NetworkmanagerCoreNetwork#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#tags_all NetworkmanagerCoreNetwork#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#tags_all NetworkmanagerCoreNetwork#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#timeouts NetworkmanagerCoreNetwork#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#timeouts NetworkmanagerCoreNetwork#timeouts}
   */
   readonly timeouts?: NetworkmanagerCoreNetworkTimeouts;
 }
@@ -204,15 +203,15 @@ export class NetworkmanagerCoreNetworkSegmentsList extends cdktf.ComplexList {
 }
 export interface NetworkmanagerCoreNetworkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#create NetworkmanagerCoreNetwork#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#create NetworkmanagerCoreNetwork#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#delete NetworkmanagerCoreNetwork#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#delete NetworkmanagerCoreNetwork#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network#update NetworkmanagerCoreNetwork#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network#update NetworkmanagerCoreNetwork#update}
   */
   readonly update?: string;
 }
@@ -333,7 +332,7 @@ export class NetworkmanagerCoreNetworkTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}
 */
 export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
 
@@ -347,7 +346,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -358,7 +357,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_networkmanager_core_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -369,6 +368,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._basePolicyDocument = config.basePolicyDocument;
     this._basePolicyRegion = config.basePolicyRegion;
     this._basePolicyRegions = config.basePolicyRegions;
     this._createBasePolicy = config.createBasePolicy;
@@ -387,6 +387,22 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // base_policy_document - computed: false, optional: true, required: false
+  private _basePolicyDocument?: string; 
+  public get basePolicyDocument() {
+    return this.getStringAttribute('base_policy_document');
+  }
+  public set basePolicyDocument(value: string) {
+    this._basePolicyDocument = value;
+  }
+  public resetBasePolicyDocument() {
+    this._basePolicyDocument = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get basePolicyDocumentInput() {
+    return this._basePolicyDocument;
   }
 
   // base_policy_region - computed: false, optional: true, required: false
@@ -558,6 +574,7 @@ export class NetworkmanagerCoreNetwork extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      base_policy_document: cdktf.stringToTerraform(this._basePolicyDocument),
       base_policy_region: cdktf.stringToTerraform(this._basePolicyRegion),
       base_policy_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._basePolicyRegions),
       create_base_policy: cdktf.booleanToTerraform(this._createBasePolicy),

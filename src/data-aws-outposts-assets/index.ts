@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets
+// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOutpostsAssetsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets#arn DataAwsOutpostsAssets#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets#arn DataAwsOutpostsAssets#arn}
   */
   readonly arn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets#host_id_filter DataAwsOutpostsAssets#host_id_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets#host_id_filter DataAwsOutpostsAssets#host_id_filter}
   */
   readonly hostIdFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets#id DataAwsOutpostsAssets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets#id DataAwsOutpostsAssets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets#status_id_filter DataAwsOutpostsAssets#status_id_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets#status_id_filter DataAwsOutpostsAssets#status_id_filter}
   */
   readonly statusIdFilter?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets aws_outposts_assets}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets aws_outposts_assets}
 */
 export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
 
@@ -48,7 +43,7 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/outposts_assets aws_outposts_assets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_assets aws_outposts_assets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DataAwsOutpostsAssets extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_outposts_assets',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.20.1',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

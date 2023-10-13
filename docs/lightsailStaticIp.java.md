@@ -1,6 +1,6 @@
 # `aws_lightsail_static_ip`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip).
+Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip).
 
 # `lightsailStaticIp` Submodule <a name="`lightsailStaticIp` Submodule" id="@cdktf/provider-aws.lightsailStaticIp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_static_ip`](https://r
 
 ### LightsailStaticIp <a name="LightsailStaticIp" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip aws_lightsail_static_ip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip aws_lightsail_static_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer"></a>
 
@@ -43,8 +43,8 @@ LightsailStaticIp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -706,8 +706,8 @@ LightsailStaticIpConfig.builder()
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIpConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}. |
 
 ---
 
@@ -789,7 +789,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#name LightsailStaticIp#name}.
 
 ---
 
@@ -801,7 +801,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_static_ip#id LightsailStaticIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

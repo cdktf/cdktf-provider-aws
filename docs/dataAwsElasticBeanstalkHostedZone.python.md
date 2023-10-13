@@ -1,6 +1,6 @@
 # `data_aws_elastic_beanstalk_hosted_zone`
 
-Refer to the Terraform Registory for docs: [`data_aws_elastic_beanstalk_hosted_zone`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone).
+Refer to the Terraform Registory for docs: [`data_aws_elastic_beanstalk_hosted_zone`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone).
 
 # `dataAwsElasticBeanstalkHostedZone` Submodule <a name="`dataAwsElasticBeanstalkHostedZone` Submodule" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_elastic_beanstalk_hosted_z
 
 ### DataAwsElasticBeanstalkHostedZone <a name="DataAwsElasticBeanstalkHostedZone" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone aws_elastic_beanstalk_hosted_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone aws_elastic_beanstalk_hosted_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone(
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
 
 ---
 
@@ -683,8 +683,8 @@ dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZoneConfig.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}. |
 
 ---
 
@@ -766,7 +766,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#id DataAwsElasticBeanstalkHostedZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -781,7 +781,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#region DataAwsElasticBeanstalkHostedZone#region}.
 
 ---
 

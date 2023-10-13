@@ -1,3 +1,3 @@
 # `aws_elastictranscoder_pipeline`
 
-Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/elastictranscoder_pipeline).
+Refer to the Terraform Registory for docs: [`aws_elastictranscoder_pipeline`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/elastictranscoder_pipeline).
