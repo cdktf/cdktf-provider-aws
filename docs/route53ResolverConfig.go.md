@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverConfig.Route53ResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverconfig"
 
 route53resolverconfig.NewRoute53ResolverConfig(scope Construct, id *string, config Route53ResolverConfigConfig) Route53ResolverConfig
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53ResolverConfig.Route53ResolverConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverconfig"
 
 route53resolverconfig.Route53ResolverConfig_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53ResolverConfig.Route53ResolverConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverconfig"
 
 route53resolverconfig.Route53ResolverConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ route53resolverconfig.Route53ResolverConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53ResolverConfig.Route53ResolverConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverconfig"
 
 route53resolverconfig.Route53ResolverConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverConfig.Route53ResolverConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53resolverconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverconfig"
 
 &route53resolverconfig.Route53ResolverConfigConfig {
 	Connection: interface{},

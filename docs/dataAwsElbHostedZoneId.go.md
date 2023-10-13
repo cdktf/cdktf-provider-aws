@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbhostedzoneid"
 
 dataawselbhostedzoneid.NewDataAwsElbHostedZoneId(scope Construct, id *string, config DataAwsElbHostedZoneIdConfig) DataAwsElbHostedZoneId
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbhostedzoneid"
 
 dataawselbhostedzoneid.DataAwsElbHostedZoneId_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbhostedzoneid"
 
 dataawselbhostedzoneid.DataAwsElbHostedZoneId_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataawselbhostedzoneid.DataAwsElbHostedZoneId_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbhostedzoneid"
 
 dataawselbhostedzoneid.DataAwsElbHostedZoneId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawselbhostedzoneid"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselbhostedzoneid"
 
 &dataawselbhostedzoneid.DataAwsElbHostedZoneIdConfig {
 	Connection: interface{},
