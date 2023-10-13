@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBot(scope Construct, id *string, config LexBotConfig) LexBot
 ```
@@ -406,7 +406,7 @@ func ResetVoiceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lexBot.LexBot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.LexBot_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.LexBot_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ lexbot.LexBot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.LexBot_IsTerraformResource(x interface{}) *bool
 ```
@@ -1080,7 +1080,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotAbortStatement {
 	Message: interface{},
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotAbortStatementMessage {
 	Content: *string,
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotClarificationPrompt {
 	MaxAttempts: *f64,
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotClarificationPromptMessage {
 	Content: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotConfig {
 	Connection: interface{},
@@ -1320,11 +1320,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AbortStatement: github.com/cdktf/cdktf-provider-aws-go/aws.lexBot.LexBotAbortStatement,
+	AbortStatement: github.com/cdktf/cdktf-provider-aws-go/aws/v17.lexBot.LexBotAbortStatement,
 	ChildDirected: interface{},
 	Intent: interface{},
 	Name: *string,
-	ClarificationPrompt: github.com/cdktf/cdktf-provider-aws-go/aws.lexBot.LexBotClarificationPrompt,
+	ClarificationPrompt: github.com/cdktf/cdktf-provider-aws-go/aws/v17.lexBot.LexBotClarificationPrompt,
 	CreateVersion: interface{},
 	Description: *string,
 	DetectSentiment: interface{},
@@ -1334,7 +1334,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
 	Locale: *string,
 	NluIntentConfidenceThreshold: *f64,
 	ProcessBehavior: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lexBot.LexBotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v17.lexBot.LexBotTimeouts,
 	VoiceId: *string,
 }
 ```
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotIntent {
 	IntentName: *string,
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 &lexbot.LexBotTimeouts {
 	Create: *string,
@@ -1755,7 +1755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotAbortStatementMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotAbortStatementMessageList
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotAbortStatementMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexBotAbortStatementMessageOutputReference
 ```
@@ -2238,7 +2238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotAbortStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotAbortStatementOutputReference
 ```
@@ -2551,7 +2551,7 @@ func InternalValue() LexBotAbortStatement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotClarificationPromptMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotClarificationPromptMessageList
 ```
@@ -2694,7 +2694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotClarificationPromptMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexBotClarificationPromptMessageOutputReference
 ```
@@ -3034,7 +3034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotClarificationPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotClarificationPromptOutputReference
 ```
@@ -3369,7 +3369,7 @@ func InternalValue() LexBotClarificationPrompt
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotIntentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotIntentList
 ```
@@ -3512,7 +3512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotIntentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexBotIntentOutputReference
 ```
@@ -3823,7 +3823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/lexbot"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/lexbot"
 
 lexbot.NewLexBotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotTimeoutsOutputReference
 ```

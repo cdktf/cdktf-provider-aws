@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectortermination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectortermination"
 
 chimevoiceconnectortermination.NewChimeVoiceConnectorTermination(scope Construct, id *string, config ChimeVoiceConnectorTerminationConfig) ChimeVoiceConnectorTermination
 ```
@@ -298,7 +298,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectortermination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectortermination"
 
 chimevoiceconnectortermination.ChimeVoiceConnectorTermination_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectortermination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectortermination"
 
 chimevoiceconnectortermination.ChimeVoiceConnectorTermination_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ chimevoiceconnectortermination.ChimeVoiceConnectorTermination_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectortermination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectortermination"
 
 chimevoiceconnectortermination.ChimeVoiceConnectorTermination_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTerminationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectortermination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/chimevoiceconnectortermination"
 
 &chimevoiceconnectortermination.ChimeVoiceConnectorTerminationConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.NewVerifiedaccessInstanceTrustProviderAttachment(scope Construct, id *string, config VerifiedaccessInstanceTrustProviderAttachmentConfig) VerifiedaccessInstanceTrustProviderAttachment
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProvide
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessinstancetrustproviderattachment"
 
 verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessInstanceTrustProviderAttachment.VerifiedaccessInstanceTrustProviderAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/verifiedaccessinstancetrustproviderattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessinstancetrustproviderattachment"
 
 &verifiedaccessinstancetrustproviderattachment.VerifiedaccessInstanceTrustProviderAttachmentConfig {
 	Connection: interface{},
