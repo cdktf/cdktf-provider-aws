@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessgroup"
 
 verifiedaccessgroup.NewVerifiedaccessGroup(scope Construct, id *string, config VerifiedaccessGroupConfig) VerifiedaccessGroup
 ```
@@ -305,7 +305,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ verifiedaccessgroup.VerifiedaccessGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.verifiedaccessGroup.VerifiedaccessGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessgroup"
 
 verifiedaccessgroup.VerifiedaccessGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.verifiedaccessGroup.VerifiedaccessGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/verifiedaccessgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/verifiedaccessgroup"
 
 &verifiedaccessgroup.VerifiedaccessGroupConfig {
 	Connection: interface{},

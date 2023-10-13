@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxgateway"
 
 dataawsdxgateway.NewDataAwsDxGateway(scope Construct, id *string, config DataAwsDxGatewayConfig) DataAwsDxGateway
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxgateway"
 
 dataawsdxgateway.DataAwsDxGateway_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxgateway"
 
 dataawsdxgateway.DataAwsDxGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataawsdxgateway.DataAwsDxGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxgateway"
 
 dataawsdxgateway.DataAwsDxGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxgateway"
 
 &dataawsdxgateway.DataAwsDxGatewayConfig {
 	Connection: interface{},
