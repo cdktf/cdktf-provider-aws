@@ -135,6 +135,20 @@ export class OpensearchPackage extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_opensearch_package";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a OpensearchPackage resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the OpensearchPackage to import
+  * @param importFromId The id of the existing OpensearchPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opensearch_package#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the OpensearchPackage to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearch_package", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

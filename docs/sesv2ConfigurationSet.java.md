@@ -229,6 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -238,7 +239,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.putDeliveryOptions">putDeliveryOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.putReputationOptions">putReputationOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.putSendingOptions">putSendingOptions</a></code> | *No description.* |
@@ -320,6 +323,22 @@ public java.lang.Object toTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.getAnyMapAttribute"></a>
 
@@ -429,6 +448,25 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.interpolationForAttribute"></a>
 
 ```java
@@ -438,6 +476,31 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -574,6 +637,7 @@ public void resetVdmOptions()
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a Sesv2ConfigurationSet resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -634,6 +698,50 @@ Sesv2ConfigurationSet.isTerraformResource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.sesv2_configuration_set.Sesv2ConfigurationSet;
+
+Sesv2ConfigurationSet.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),Sesv2ConfigurationSet.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a Sesv2ConfigurationSet resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the Sesv2ConfigurationSet to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing Sesv2ConfigurationSet that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sesv2_configuration_set#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the Sesv2ConfigurationSet to import is found.
 
 ---
 

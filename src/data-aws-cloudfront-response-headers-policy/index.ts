@@ -1250,6 +1250,20 @@ export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataS
   // =================
   public static readonly tfResourceType = "aws_cloudfront_response_headers_policy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsCloudfrontResponseHeadersPolicy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsCloudfrontResponseHeadersPolicy to import
+  * @param importFromId The id of the existing DataAwsCloudfrontResponseHeadersPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/cloudfront_response_headers_policy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsCloudfrontResponseHeadersPolicy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cloudfront_response_headers_policy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

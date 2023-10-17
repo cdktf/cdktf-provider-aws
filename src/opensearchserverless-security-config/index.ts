@@ -189,6 +189,20 @@ export class OpensearchserverlessSecurityConfig extends cdktf.TerraformResource 
   // =================
   public static readonly tfResourceType = "aws_opensearchserverless_security_config";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a OpensearchserverlessSecurityConfig resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the OpensearchserverlessSecurityConfig to import
+  * @param importFromId The id of the existing OpensearchserverlessSecurityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opensearchserverless_security_config#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the OpensearchserverlessSecurityConfig to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opensearchserverless_security_config", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

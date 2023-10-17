@@ -155,6 +155,20 @@ export class DataAwsFsxOntapStorageVirtualMachines extends cdktf.TerraformDataSo
   // =================
   public static readonly tfResourceType = "aws_fsx_ontap_storage_virtual_machines";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsFsxOntapStorageVirtualMachines resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsFsxOntapStorageVirtualMachines to import
+  * @param importFromId The id of the existing DataAwsFsxOntapStorageVirtualMachines that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/fsx_ontap_storage_virtual_machines#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsFsxOntapStorageVirtualMachines to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fsx_ontap_storage_virtual_machines", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

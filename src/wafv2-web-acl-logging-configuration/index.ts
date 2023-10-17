@@ -901,6 +901,20 @@ export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_wafv2_web_acl_logging_configuration";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Wafv2WebAclLoggingConfiguration resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Wafv2WebAclLoggingConfiguration to import
+  * @param importFromId The id of the existing Wafv2WebAclLoggingConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/wafv2_web_acl_logging_configuration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Wafv2WebAclLoggingConfiguration to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_wafv2_web_acl_logging_configuration", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

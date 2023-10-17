@@ -167,6 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -176,7 +177,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.resetSourceAccount">resetSourceAccount</a></code> | *No description.* |
 
@@ -245,6 +248,22 @@ public java.lang.Object toTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.getAnyMapAttribute"></a>
 
@@ -354,6 +373,25 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.interpolationForAttribute"></a>
 
 ```java
@@ -363,6 +401,31 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -385,6 +448,7 @@ public void resetSourceAccount()
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AcmpcaPermission resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -445,6 +509,50 @@ AcmpcaPermission.isTerraformResource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.acmpca_permission.AcmpcaPermission;
+
+AcmpcaPermission.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),AcmpcaPermission.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a AcmpcaPermission resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the AcmpcaPermission to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing AcmpcaPermission that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/acmpca_permission#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the AcmpcaPermission to import is found.
 
 ---
 

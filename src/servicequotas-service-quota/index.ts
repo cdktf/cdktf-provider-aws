@@ -202,6 +202,20 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_servicequotas_service_quota";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ServicequotasServiceQuota resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ServicequotasServiceQuota to import
+  * @param importFromId The id of the existing ServicequotasServiceQuota that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/servicequotas_service_quota#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ServicequotasServiceQuota to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_servicequotas_service_quota", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

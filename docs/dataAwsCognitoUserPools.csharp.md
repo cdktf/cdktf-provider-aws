@@ -271,6 +271,7 @@ private void ResetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsCognitoUserPools resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ DataAwsCognitoUserPools.IsTerraformDataSource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+DataAwsCognitoUserPools.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataAwsCognitoUserPools resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsCognitoUserPools to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsCognitoUserPools that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/cognito_user_pools#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsCognitoUserPools to import is found.
 
 ---
 

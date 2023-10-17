@@ -271,6 +271,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsVpclatticeResourcePolicy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformDataS
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport"></a>
+
+```typescript
+import { dataAwsVpclatticeResourcePolicy } from '@cdktf/provider-aws'
+
+dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataAwsVpclatticeResourcePolicy resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsVpclatticeResourcePolicy to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsVpclatticeResourcePolicy that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/vpclattice_resource_policy#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsVpclatticeResourcePolicy.DataAwsVpclatticeResourcePolicy.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsVpclatticeResourcePolicy to import is found.
 
 ---
 

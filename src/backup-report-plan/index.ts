@@ -372,6 +372,20 @@ export class BackupReportPlan extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_backup_report_plan";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a BackupReportPlan resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the BackupReportPlan to import
+  * @param importFromId The id of the existing BackupReportPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the BackupReportPlan to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_report_plan", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

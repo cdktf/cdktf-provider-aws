@@ -242,6 +242,20 @@ export class SsoadminCustomerManagedPolicyAttachment extends cdktf.TerraformReso
   // =================
   public static readonly tfResourceType = "aws_ssoadmin_customer_managed_policy_attachment";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a SsoadminCustomerManagedPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the SsoadminCustomerManagedPolicyAttachment to import
+  * @param importFromId The id of the existing SsoadminCustomerManagedPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ssoadmin_customer_managed_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the SsoadminCustomerManagedPolicyAttachment to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ssoadmin_customer_managed_policy_attachment", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

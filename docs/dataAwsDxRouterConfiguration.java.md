@@ -358,6 +358,7 @@ public void resetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsDxRouterConfiguration resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -418,6 +419,50 @@ DataAwsDxRouterConfiguration.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.data_aws_dx_router_configuration.DataAwsDxRouterConfiguration;
+
+DataAwsDxRouterConfiguration.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataAwsDxRouterConfiguration.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataAwsDxRouterConfiguration resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataAwsDxRouterConfiguration to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataAwsDxRouterConfiguration that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/dx_router_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsDxRouterConfiguration to import is found.
 
 ---
 
@@ -1208,7 +1253,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.platform">platform</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.routerTypeIdentifier">routerTypeIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.software">software</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.softwareAttribute">softwareAttribute</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.vendor">vendor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.xsltTemplateName">xsltTemplateName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.xsltTemplateNameForMacSec">xsltTemplateNameForMacSec</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1260,10 +1305,10 @@ public java.lang.String getRouterTypeIdentifier();
 
 ---
 
-##### `software`<sup>Required</sup> <a name="software" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.software"></a>
+##### `softwareAttribute`<sup>Required</sup> <a name="softwareAttribute" id="@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference.property.softwareAttribute"></a>
 
 ```java
-public java.lang.String getSoftware();
+public java.lang.String getSoftwareAttribute();
 ```
 
 - *Type:* java.lang.String

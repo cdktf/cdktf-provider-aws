@@ -155,6 +155,20 @@ export class DataAwsRdsClusters extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_rds_clusters";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsRdsClusters resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsRdsClusters to import
+  * @param importFromId The id of the existing DataAwsRdsClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/rds_clusters#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsRdsClusters to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_rds_clusters", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

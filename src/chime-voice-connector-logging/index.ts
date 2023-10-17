@@ -43,6 +43,20 @@ export class ChimeVoiceConnectorLogging extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_chime_voice_connector_logging";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ChimeVoiceConnectorLogging resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ChimeVoiceConnectorLogging to import
+  * @param importFromId The id of the existing ChimeVoiceConnectorLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/chime_voice_connector_logging#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ChimeVoiceConnectorLogging to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_chime_voice_connector_logging", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

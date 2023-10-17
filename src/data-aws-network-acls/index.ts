@@ -244,6 +244,20 @@ export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_network_acls";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsNetworkAcls resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsNetworkAcls to import
+  * @param importFromId The id of the existing DataAwsNetworkAcls that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/network_acls#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsNetworkAcls to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_network_acls", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

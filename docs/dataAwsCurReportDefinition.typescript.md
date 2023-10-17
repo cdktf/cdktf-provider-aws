@@ -271,6 +271,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsCurReportDefinition resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformDataSource(x: a
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport"></a>
+
+```typescript
+import { dataAwsCurReportDefinition } from '@cdktf/provider-aws'
+
+dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataAwsCurReportDefinition resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsCurReportDefinition to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsCurReportDefinition that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsCurReportDefinition to import is found.
 
 ---
 

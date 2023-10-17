@@ -299,6 +299,7 @@ private void ResetSiteId()
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsOutpostsOutposts resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -359,6 +360,50 @@ DataAwsOutpostsOutposts.IsTerraformDataSource(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Aws;
+
+DataAwsOutpostsOutposts.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataAwsOutpostsOutposts resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsOutpostsOutposts to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsOutpostsOutposts that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/outposts_outposts#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsOutpostsOutposts to import is found.
 
 ---
 

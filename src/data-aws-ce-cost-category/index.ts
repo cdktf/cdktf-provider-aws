@@ -1552,6 +1552,20 @@ export class DataAwsCeCostCategory extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_ce_cost_category";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsCeCostCategory resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsCeCostCategory to import
+  * @param importFromId The id of the existing DataAwsCeCostCategory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsCeCostCategory to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ce_cost_category", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

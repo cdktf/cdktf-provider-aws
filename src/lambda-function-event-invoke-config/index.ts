@@ -273,6 +273,20 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_lambda_function_event_invoke_config";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LambdaFunctionEventInvokeConfig resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LambdaFunctionEventInvokeConfig to import
+  * @param importFromId The id of the existing LambdaFunctionEventInvokeConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lambda_function_event_invoke_config#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LambdaFunctionEventInvokeConfig to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lambda_function_event_invoke_config", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

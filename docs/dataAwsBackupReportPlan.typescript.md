@@ -278,6 +278,7 @@ public resetTags(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsBackupReportPlan resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -338,6 +339,50 @@ dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformDataSource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport"></a>
+
+```typescript
+import { dataAwsBackupReportPlan } from '@cdktf/provider-aws'
+
+dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataAwsBackupReportPlan resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsBackupReportPlan to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsBackupReportPlan that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/backup_report_plan#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsBackupReportPlan to import is found.
 
 ---
 

@@ -355,6 +355,7 @@ public void resetRegion()
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsElasticBeanstalkHostedZone resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -415,6 +416,50 @@ DataAwsElasticBeanstalkHostedZone.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.data_aws_elastic_beanstalk_hosted_zone.DataAwsElasticBeanstalkHostedZone;
+
+DataAwsElasticBeanstalkHostedZone.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataAwsElasticBeanstalkHostedZone.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataAwsElasticBeanstalkHostedZone resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataAwsElasticBeanstalkHostedZone to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataAwsElasticBeanstalkHostedZone that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elastic_beanstalk_hosted_zone#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsElasticBeanstalkHostedZone.DataAwsElasticBeanstalkHostedZone.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsElasticBeanstalkHostedZone to import is found.
 
 ---
 

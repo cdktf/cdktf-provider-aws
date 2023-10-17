@@ -365,6 +365,7 @@ public void resetVersion()
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsLexIntent resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -425,6 +426,50 @@ DataAwsLexIntent.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.data_aws_lex_intent.DataAwsLexIntent;
+
+DataAwsLexIntent.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataAwsLexIntent.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataAwsLexIntent resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataAwsLexIntent to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataAwsLexIntent that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/lex_intent#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsLexIntent to import is found.
 
 ---
 

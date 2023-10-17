@@ -263,6 +263,20 @@ export class ConnectPhoneNumber extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_connect_phone_number";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ConnectPhoneNumber resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ConnectPhoneNumber to import
+  * @param importFromId The id of the existing ConnectPhoneNumber that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/connect_phone_number#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ConnectPhoneNumber to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_connect_phone_number", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

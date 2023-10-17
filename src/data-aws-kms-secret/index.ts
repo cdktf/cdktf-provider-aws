@@ -209,6 +209,20 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_kms_secret";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsKmsSecret resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsKmsSecret to import
+  * @param importFromId The id of the existing DataAwsKmsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/kms_secret#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsKmsSecret to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_kms_secret", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

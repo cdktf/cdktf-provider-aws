@@ -35,6 +35,20 @@ export class IamSecurityTokenServicePreferences extends cdktf.TerraformResource 
   // =================
   public static readonly tfResourceType = "aws_iam_security_token_service_preferences";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a IamSecurityTokenServicePreferences resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the IamSecurityTokenServicePreferences to import
+  * @param importFromId The id of the existing IamSecurityTokenServicePreferences that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iam_security_token_service_preferences#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the IamSecurityTokenServicePreferences to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_iam_security_token_service_preferences", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

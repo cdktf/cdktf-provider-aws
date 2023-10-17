@@ -357,6 +357,20 @@ export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_api_gateway_method_settings";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ApiGatewayMethodSettings resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ApiGatewayMethodSettings to import
+  * @param importFromId The id of the existing ApiGatewayMethodSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_method_settings#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ApiGatewayMethodSettings to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_method_settings", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

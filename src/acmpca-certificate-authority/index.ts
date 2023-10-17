@@ -1011,6 +1011,20 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_acmpca_certificate_authority";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AcmpcaCertificateAuthority resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AcmpcaCertificateAuthority to import
+  * @param importFromId The id of the existing AcmpcaCertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/acmpca_certificate_authority#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AcmpcaCertificateAuthority to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_acmpca_certificate_authority", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

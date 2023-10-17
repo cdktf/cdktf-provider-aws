@@ -145,6 +145,20 @@ export class ApprunnerVpcIngressConnection extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_apprunner_vpc_ingress_connection";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ApprunnerVpcIngressConnection resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ApprunnerVpcIngressConnection to import
+  * @param importFromId The id of the existing ApprunnerVpcIngressConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apprunner_vpc_ingress_connection#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ApprunnerVpcIngressConnection to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apprunner_vpc_ingress_connection", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

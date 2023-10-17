@@ -179,6 +179,20 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_ebs_snapshot_copy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a EbsSnapshotCopy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the EbsSnapshotCopy to import
+  * @param importFromId The id of the existing EbsSnapshotCopy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ebs_snapshot_copy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the EbsSnapshotCopy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_ebs_snapshot_copy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

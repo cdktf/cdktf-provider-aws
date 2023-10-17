@@ -464,6 +464,20 @@ export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_elasticsearch_domain_saml_options";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ElasticsearchDomainSamlOptions resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ElasticsearchDomainSamlOptions to import
+  * @param importFromId The id of the existing ElasticsearchDomainSamlOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/elasticsearch_domain_saml_options#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ElasticsearchDomainSamlOptions to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_elasticsearch_domain_saml_options", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

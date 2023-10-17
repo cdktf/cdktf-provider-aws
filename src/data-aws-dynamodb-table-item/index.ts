@@ -47,6 +47,20 @@ export class DataAwsDynamodbTableItem extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_dynamodb_table_item";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsDynamodbTableItem resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsDynamodbTableItem to import
+  * @param importFromId The id of the existing DataAwsDynamodbTableItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/dynamodb_table_item#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsDynamodbTableItem to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_dynamodb_table_item", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

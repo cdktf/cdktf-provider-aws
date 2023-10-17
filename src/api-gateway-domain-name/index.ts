@@ -242,6 +242,20 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_api_gateway_domain_name";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ApiGatewayDomainName resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ApiGatewayDomainName to import
+  * @param importFromId The id of the existing ApiGatewayDomainName that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_domain_name#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ApiGatewayDomainName to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_api_gateway_domain_name", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -43,6 +43,20 @@ export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_load_balancer_backend_server_policy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LoadBalancerBackendServerPolicy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LoadBalancerBackendServerPolicy to import
+  * @param importFromId The id of the existing LoadBalancerBackendServerPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/load_balancer_backend_server_policy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LoadBalancerBackendServerPolicy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_load_balancer_backend_server_policy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

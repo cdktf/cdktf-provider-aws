@@ -43,6 +43,20 @@ export class EgressOnlyInternetGateway extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_egress_only_internet_gateway";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a EgressOnlyInternetGateway resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the EgressOnlyInternetGateway to import
+  * @param importFromId The id of the existing EgressOnlyInternetGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/egress_only_internet_gateway#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the EgressOnlyInternetGateway to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_egress_only_internet_gateway", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -2229,6 +2229,20 @@ export class LbListenerRule extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_lb_listener_rule";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LbListenerRule resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LbListenerRule to import
+  * @param importFromId The id of the existing LbListenerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lb_listener_rule#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LbListenerRule to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lb_listener_rule", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

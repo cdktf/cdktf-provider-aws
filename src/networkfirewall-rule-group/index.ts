@@ -3229,6 +3229,20 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_networkfirewall_rule_group";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a NetworkfirewallRuleGroup resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the NetworkfirewallRuleGroup to import
+  * @param importFromId The id of the existing NetworkfirewallRuleGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkfirewall_rule_group#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the NetworkfirewallRuleGroup to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_networkfirewall_rule_group", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

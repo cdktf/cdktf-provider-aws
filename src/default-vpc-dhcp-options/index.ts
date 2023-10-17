@@ -43,6 +43,20 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_default_vpc_dhcp_options";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DefaultVpcDhcpOptions resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DefaultVpcDhcpOptions to import
+  * @param importFromId The id of the existing DefaultVpcDhcpOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/default_vpc_dhcp_options#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DefaultVpcDhcpOptions to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_default_vpc_dhcp_options", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

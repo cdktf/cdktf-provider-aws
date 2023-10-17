@@ -35,6 +35,20 @@ export class DataAwsSqsQueues extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_sqs_queues";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsSqsQueues resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsSqsQueues to import
+  * @param importFromId The id of the existing DataAwsSqsQueues that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/sqs_queues#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsSqsQueues to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_sqs_queues", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -322,6 +322,20 @@ export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_db_proxy_default_target_group";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DbProxyDefaultTargetGroup resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DbProxyDefaultTargetGroup to import
+  * @param importFromId The id of the existing DbProxyDefaultTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/db_proxy_default_target_group#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DbProxyDefaultTargetGroup to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_db_proxy_default_target_group", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -238,6 +238,20 @@ export class NeptuneClusterInstance extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_neptune_cluster_instance";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a NeptuneClusterInstance resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the NeptuneClusterInstance to import
+  * @param importFromId The id of the existing NeptuneClusterInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/neptune_cluster_instance#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the NeptuneClusterInstance to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_neptune_cluster_instance", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

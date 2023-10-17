@@ -167,6 +167,20 @@ export class DataAwsRoute53ResolverQueryLogConfig extends cdktf.TerraformDataSou
   // =================
   public static readonly tfResourceType = "aws_route53_resolver_query_log_config";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsRoute53ResolverQueryLogConfig resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsRoute53ResolverQueryLogConfig to import
+  * @param importFromId The id of the existing DataAwsRoute53ResolverQueryLogConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/route53_resolver_query_log_config#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsRoute53ResolverQueryLogConfig to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_route53_resolver_query_log_config", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

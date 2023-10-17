@@ -257,6 +257,20 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_efs_access_point";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsEfsAccessPoint resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsEfsAccessPoint to import
+  * @param importFromId The id of the existing DataAwsEfsAccessPoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/efs_access_point#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsEfsAccessPoint to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_efs_access_point", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

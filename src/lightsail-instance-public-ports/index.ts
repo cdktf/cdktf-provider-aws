@@ -264,6 +264,20 @@ export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "aws_lightsail_instance_public_ports";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LightsailInstancePublicPorts resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LightsailInstancePublicPorts to import
+  * @param importFromId The id of the existing LightsailInstancePublicPorts that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lightsail_instance_public_ports#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LightsailInstancePublicPorts to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_lightsail_instance_public_ports", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

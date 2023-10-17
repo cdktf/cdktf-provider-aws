@@ -35,6 +35,20 @@ export class DataAwsCognitoUserPoolSigningCertificate extends cdktf.TerraformDat
   // =================
   public static readonly tfResourceType = "aws_cognito_user_pool_signing_certificate";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsCognitoUserPoolSigningCertificate resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsCognitoUserPoolSigningCertificate to import
+  * @param importFromId The id of the existing DataAwsCognitoUserPoolSigningCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/cognito_user_pool_signing_certificate#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsCognitoUserPoolSigningCertificate to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_cognito_user_pool_signing_certificate", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

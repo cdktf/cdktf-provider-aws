@@ -307,6 +307,20 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_alb_target_group";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsAlbTargetGroup resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsAlbTargetGroup to import
+  * @param importFromId The id of the existing DataAwsAlbTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/alb_target_group#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsAlbTargetGroup to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_alb_target_group", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

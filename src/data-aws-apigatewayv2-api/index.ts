@@ -128,6 +128,20 @@ export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "aws_apigatewayv2_api";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataAwsApigatewayv2Api resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataAwsApigatewayv2Api to import
+  * @param importFromId The id of the existing DataAwsApigatewayv2Api that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/apigatewayv2_api#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAwsApigatewayv2Api to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_api", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
