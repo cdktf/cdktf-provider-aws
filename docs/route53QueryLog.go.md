@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 route53querylog.NewRoute53QueryLog(scope Construct, id *string, config Route53QueryLogConfig) Route53QueryLog
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 route53querylog.Route53QueryLog_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 route53querylog.Route53QueryLog_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ route53querylog.Route53QueryLog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 route53querylog.Route53QueryLog_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ route53querylog.Route53QueryLog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 route53querylog.Route53QueryLog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53QueryLog.Route53QueryLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53querylog"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53querylog"
 
 &route53querylog.Route53QueryLogConfig {
 	Connection: interface{},

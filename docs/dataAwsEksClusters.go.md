@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.NewDataAwsEksClusters(scope Construct, id *string, config DataAwsEksClustersConfig) DataAwsEksClusters
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawseksclusters.DataAwsEksClusters_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawseksclusters.DataAwsEksClusters_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 dataawseksclusters.DataAwsEksClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEksClusters.DataAwsEksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseksclusters"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseksclusters"
 
 &dataawseksclusters.DataAwsEksClustersConfig {
 	Connection: interface{},
