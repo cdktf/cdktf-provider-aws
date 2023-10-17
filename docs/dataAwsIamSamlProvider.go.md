@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 dataawsiamsamlprovider.NewDataAwsIamSamlProvider(scope Construct, id *string, config DataAwsIamSamlProviderConfig) DataAwsIamSamlProvider
 ```
@@ -285,7 +285,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 dataawsiamsamlprovider.DataAwsIamSamlProvider_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 dataawsiamsamlprovider.DataAwsIamSamlProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsiamsamlprovider.DataAwsIamSamlProvider_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 dataawsiamsamlprovider.DataAwsIamSamlProvider_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsiamsamlprovider.DataAwsIamSamlProvider_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 dataawsiamsamlprovider.DataAwsIamSamlProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsamlprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsamlprovider"
 
 &dataawsiamsamlprovider.DataAwsIamSamlProviderConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTarget(scope Construct, id *string, config CloudwatchEventTargetConfig) CloudwatchEventTarget
 ```
@@ -594,7 +594,7 @@ func ResetTargetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.CloudwatchEventTarget_IsConstruct(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.CloudwatchEventTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ cloudwatcheventtarget.CloudwatchEventTarget_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.CloudwatchEventTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ cloudwatcheventtarget.CloudwatchEventTarget_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.CloudwatchEventTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1301,7 +1301,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetBatchTarget {
 	JobDefinition: *string,
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetConfig {
 	Connection: interface{},
@@ -1387,22 +1387,22 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
 	Provisioners: *[]interface{},
 	Arn: *string,
 	Rule: *string,
-	BatchTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTarget,
-	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfig,
-	EcsTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTarget,
+	BatchTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetBatchTarget,
+	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfig,
+	EcsTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetEcsTarget,
 	EventBusName: *string,
-	HttpTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTarget,
+	HttpTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetHttpTarget,
 	Id: *string,
 	Input: *string,
 	InputPath: *string,
-	InputTransformer: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformer,
-	KinesisTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTarget,
-	RedshiftTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTarget,
-	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicy,
+	InputTransformer: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetInputTransformer,
+	KinesisTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetKinesisTarget,
+	RedshiftTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTarget,
+	RetryPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicy,
 	RoleArn: *string,
 	RunCommandTargets: interface{},
-	SagemakerPipelineTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTarget,
-	SqsTarget: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTarget,
+	SagemakerPipelineTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTarget,
+	SqsTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetSqsTarget,
 	TargetId: *string,
 }
 ```
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetDeadLetterConfig {
 	Arn: *string,
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetEcsTarget {
 	TaskDefinitionArn: *string,
@@ -1809,7 +1809,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
 	EnableExecuteCommand: interface{},
 	Group: *string,
 	LaunchType: *string,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfiguration,
 	OrderedPlacementStrategy: interface{},
 	PlacementConstraint: interface{},
 	PlatformVersion: *string,
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -2068,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetEcsTargetNetworkConfiguration {
 	Subnets: *[]*string,
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOrderedPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetEcsTargetOrderedPlacementStrategy {
 	Type: *string,
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetEcsTargetPlacementConstraint {
 	Type: *string,
@@ -2220,7 +2220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetHttpTarget {
 	HeaderParameters: *map[string]*string,
@@ -2280,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetInputTransformer {
 	InputTemplate: *string,
@@ -2326,7 +2326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetKinesisTarget {
 	PartitionKeyPath: *string,
@@ -2358,7 +2358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetRedshiftTarget {
 	Database: *string,
@@ -2460,7 +2460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetRetryPolicy {
 	MaximumEventAgeInSeconds: *f64,
@@ -2506,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetRunCommandTargets {
 	Key: *string,
@@ -2552,7 +2552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetSagemakerPipelineTarget {
 	PipelineParameterList: interface{},
@@ -2586,7 +2586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStruct {
 	Name: *string,
@@ -2632,7 +2632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 &cloudwatcheventtarget.CloudwatchEventTargetSqsTarget {
 	MessageGroupId: *string,
@@ -2666,7 +2666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetBatchTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetBatchTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetBatchTargetOutputReference
 ```
@@ -3017,7 +3017,7 @@ func InternalValue() CloudwatchEventTargetBatchTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetDeadLetterConfigOutputReference
 ```
@@ -3295,7 +3295,7 @@ func InternalValue() CloudwatchEventTargetDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventTargetEcsTargetCapacityProviderStrategyList
 ```
@@ -3438,7 +3438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetCapacityProviderStrategyOutputReference
 ```
@@ -3785,7 +3785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference
 ```
@@ -4114,7 +4114,7 @@ func InternalValue() CloudwatchEventTargetEcsTargetNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOrderedPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetOrderedPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventTargetEcsTargetOrderedPlacementStrategyList
 ```
@@ -4257,7 +4257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetOrderedPlacementStrategyOutputReference
 ```
@@ -4575,7 +4575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetEcsTargetOutputReference
 ```
@@ -5246,7 +5246,7 @@ func InternalValue() CloudwatchEventTargetEcsTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetPlacementConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventTargetEcsTargetPlacementConstraintList
 ```
@@ -5389,7 +5389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference
 ```
@@ -5707,7 +5707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetHttpTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetHttpTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetHttpTargetOutputReference
 ```
@@ -6043,7 +6043,7 @@ func InternalValue() CloudwatchEventTargetHttpTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetInputTransformerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetInputTransformerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetInputTransformerOutputReference
 ```
@@ -6343,7 +6343,7 @@ func InternalValue() CloudwatchEventTargetInputTransformer
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetKinesisTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetKinesisTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetKinesisTargetOutputReference
 ```
@@ -6621,7 +6621,7 @@ func InternalValue() CloudwatchEventTargetKinesisTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetRedshiftTargetOutputReference
 ```
@@ -7037,7 +7037,7 @@ func InternalValue() CloudwatchEventTargetRedshiftTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetRetryPolicyOutputReference
 ```
@@ -7344,7 +7344,7 @@ func InternalValue() CloudwatchEventTargetRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetRunCommandTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventTargetRunCommandTargetsList
 ```
@@ -7487,7 +7487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRunCommandTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetRunCommandTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventTargetRunCommandTargetsOutputReference
 ```
@@ -7798,7 +7798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetSagemakerPipelineTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetSagemakerPipelineTargetOutputReference
 ```
@@ -8089,7 +8089,7 @@ func InternalValue() CloudwatchEventTargetSagemakerPipelineTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList
 ```
@@ -8232,7 +8232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructOutputReference
 ```
@@ -8543,7 +8543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetSqsTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventtarget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventtarget"
 
 cloudwatcheventtarget.NewCloudwatchEventTargetSqsTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetSqsTargetOutputReference
 ```
