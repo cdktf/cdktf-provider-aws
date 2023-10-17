@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesDomainDkim.SesDomainDkim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomaindkim"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomaindkim"
 
 sesdomaindkim.NewSesDomainDkim(scope Construct, id *string, config SesDomainDkimConfig) SesDomainDkim
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesDomainDkim.SesDomainDkim.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomaindkim"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesDomainDkim.SesDomainDkim.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomaindkim"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ sesdomaindkim.SesDomainDkim_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesDomainDkim.SesDomainDkim.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomaindkim"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomaindkim"
 
 sesdomaindkim.SesDomainDkim_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesDomainDkim.SesDomainDkimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesdomaindkim"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesdomaindkim"
 
 &sesdomaindkim.SesDomainDkimConfig {
 	Connection: interface{},

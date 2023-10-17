@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.NewElasticacheReplicationGroup(scope Construct, id *string, config ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup
 ```
@@ -548,7 +548,7 @@ func ResetUserGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.ElasticacheReplicationGroup_IsConstruct(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.ElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ elasticachereplicationgroup.ElasticacheReplicationGroup_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.ElasticacheReplicationGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -1684,7 +1684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 &elasticachereplicationgroup.ElasticacheReplicationGroupConfig {
 	Connection: interface{},
@@ -1728,7 +1728,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgro
 	SubnetGroupName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts,
 	TransitEncryptionEnabled: interface{},
 	UserGroupIds: *[]*string,
 }
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 &elasticachereplicationgroup.ElasticacheReplicationGroupLogDeliveryConfiguration {
 	Destination: *string,
@@ -2385,7 +2385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 &elasticachereplicationgroup.ElasticacheReplicationGroupTimeouts {
 	Create: *string,
@@ -2447,7 +2447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.NewElasticacheReplicationGroupLogDeliveryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheReplicationGroupLogDeliveryConfigurationList
 ```
@@ -2590,7 +2590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.NewElasticacheReplicationGroupLogDeliveryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference
 ```
@@ -2945,7 +2945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticachereplicationgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereplicationgroup"
 
 elasticachereplicationgroup.NewElasticacheReplicationGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheReplicationGroupTimeoutsOutputReference
 ```

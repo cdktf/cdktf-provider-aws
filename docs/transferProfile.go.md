@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferProfile.TransferProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferprofile"
 
 transferprofile.NewTransferProfile(scope Construct, id *string, config TransferProfileConfig) TransferProfile
 ```
@@ -298,7 +298,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferProfile.TransferProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferprofile"
 
 transferprofile.TransferProfile_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferProfile.TransferProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferprofile"
 
 transferprofile.TransferProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ transferprofile.TransferProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferProfile.TransferProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferprofile"
 
 transferprofile.TransferProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferProfile.TransferProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferprofile"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferprofile"
 
 &transferprofile.TransferProfileConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGateway(scope Construct, id *string, config DataAwsCustomerGatewayConfig) DataAwsCustomerGateway
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
 }
 ```
 
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayFilter {
 	Name: *string,
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayTimeouts {
 	Read: *string,
@@ -946,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCustomerGatewayFilterList
 ```
@@ -1089,7 +1089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCustomerGatewayFilterOutputReference
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCustomerGatewayTimeoutsOutputReference
 ```
