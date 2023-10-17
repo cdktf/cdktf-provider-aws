@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 datasynclocationobjectstorage.NewDatasyncLocationObjectStorage(scope Construct, id *string, config DatasyncLocationObjectStorageConfig) DatasyncLocationObjectStorage
 ```
@@ -395,7 +395,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 datasynclocationobjectstorage.DatasyncLocationObjectStorage_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 datasynclocationobjectstorage.DatasyncLocationObjectStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ datasynclocationobjectstorage.DatasyncLocationObjectStorage_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 datasynclocationobjectstorage.DatasyncLocationObjectStorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ datasynclocationobjectstorage.DatasyncLocationObjectStorage_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 datasynclocationobjectstorage.DatasyncLocationObjectStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/datasynclocationobjectstorage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/datasynclocationobjectstorage"
 
 &datasynclocationobjectstorage.DatasyncLocationObjectStorageConfig {
 	Connection: interface{},
