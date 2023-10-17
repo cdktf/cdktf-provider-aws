@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayer(scope Construct, id *string, config OpsworksEcsClusterLayerConfig) OpsworksEcsClusterLayer
 ```
@@ -477,7 +477,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.OpsworksEcsClusterLayer_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.OpsworksEcsClusterLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ opsworksecsclusterlayer.OpsworksEcsClusterLayer_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.OpsworksEcsClusterLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1305,7 +1305,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1525,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerConfig {
 	Connection: interface{},
@@ -1540,7 +1540,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1555,7 +1555,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -2000,7 +2000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerEbsVolume {
 	MountPoint: *string,
@@ -2116,12 +2116,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2180,7 +2180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2296,7 +2296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 &opsworksecsclusterlayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2414,7 +2414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3129,7 +3129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() OpsworksEcsClusterLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksEcsClusterLayerEbsVolumeList
 ```
@@ -3592,7 +3592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksEcsClusterLayerEbsVolumeOutputReference
 ```
@@ -4041,7 +4041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4493,7 +4493,7 @@ func InternalValue() OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4855,7 +4855,7 @@ func InternalValue() OpsworksEcsClusterLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksecsclusterlayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksecsclusterlayer"
 
 opsworksecsclusterlayer.NewOpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference
 ```
