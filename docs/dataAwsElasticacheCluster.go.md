@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.NewDataAwsElasticacheCluster(scope Construct, id *string, config DataAwsElasticacheClusterConfig) DataAwsElasticacheCluster
 ```
@@ -278,13 +278,14 @@ func ResetTags()
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsElasticacheCluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.DataAwsElasticacheCluster_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.DataAwsElasticacheCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ dataawselasticachecluster.DataAwsElasticacheCluster_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.DataAwsElasticacheCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ dataawselasticachecluster.DataAwsElasticacheCluster_IsTerraformDataSource(x inte
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
+
+dataawselasticachecluster.DataAwsElasticacheCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsElasticacheCluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsElasticacheCluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsElasticacheCluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elasticache_cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheCluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsElasticacheCluster to import is found.
 
 ---
 
@@ -815,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 &dataawselasticachecluster.DataAwsElasticacheClusterCacheNodes {
 
@@ -828,7 +873,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 &dataawselasticachecluster.DataAwsElasticacheClusterConfig {
 	Connection: interface{},
@@ -975,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 &dataawselasticachecluster.DataAwsElasticacheClusterLogDeliveryConfiguration {
 
@@ -990,7 +1035,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.NewDataAwsElasticacheClusterCacheNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticacheClusterCacheNodesList
 ```
@@ -1122,7 +1167,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterCacheNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.NewDataAwsElasticacheClusterCacheNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticacheClusterCacheNodesOutputReference
 ```
@@ -1444,7 +1489,7 @@ func InternalValue() DataAwsElasticacheClusterCacheNodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.NewDataAwsElasticacheClusterLogDeliveryConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticacheClusterLogDeliveryConfigurationList
 ```
@@ -1576,7 +1621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsElasticacheCluster.DataAwsElasticacheClusterLogDeliveryConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawselasticachecluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawselasticachecluster"
 
 dataawselasticachecluster.NewDataAwsElasticacheClusterLogDeliveryConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticacheClusterLogDeliveryConfigurationOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMapping(scope Construct, id *string, config LambdaEventSourceMappingConfig) LambdaEventSourceMapping
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.putAmazonManagedKafkaEventSourceConfig">PutAmazonManagedKafkaEventSourceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.putDestinationConfig">PutDestinationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.putDocumentDbEventSourceConfig">PutDocumentDbEventSourceConfig</a></code> | *No description.* |
@@ -167,6 +170,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.getAnyMapAttribute"></a>
 
@@ -276,6 +295,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.interpolationForAttribute"></a>
 
 ```go
@@ -285,6 +322,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -529,13 +590,14 @@ func ResetTumblingWindowInSeconds()
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LambdaEventSourceMapping resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +629,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +643,7 @@ lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,6 +651,50 @@ lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformResource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
+
+lambdaeventsourcemapping.LambdaEventSourceMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a LambdaEventSourceMapping resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the LambdaEventSourceMapping to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing LambdaEventSourceMapping that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the LambdaEventSourceMapping to import is found.
 
 ---
 
@@ -1374,7 +1480,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
 	ConsumerGroupId: *string,
@@ -1406,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingConfig {
 	Connection: interface{},
@@ -1417,14 +1523,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	FunctionName: *string,
-	AmazonManagedKafkaEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig,
+	AmazonManagedKafkaEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig,
 	BatchSize: *f64,
 	BisectBatchOnFunctionError: interface{},
-	DestinationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig,
-	DocumentDbEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig,
+	DestinationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig,
+	DocumentDbEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig,
 	Enabled: interface{},
 	EventSourceArn: *string,
-	FilterCriteria: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria,
+	FilterCriteria: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria,
 	FunctionResponseTypes: *[]*string,
 	Id: *string,
 	MaximumBatchingWindowInSeconds: *f64,
@@ -1432,9 +1538,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
 	MaximumRetryAttempts: *f64,
 	ParallelizationFactor: *f64,
 	Queues: *[]*string,
-	ScalingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig,
-	SelfManagedEventSource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource,
-	SelfManagedKafkaEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig,
+	ScalingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig,
+	SelfManagedEventSource: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource,
+	SelfManagedKafkaEventSourceConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig,
 	SourceAccessConfiguration: interface{},
 	StartingPosition: *string,
 	StartingPositionTimestamp: *string,
@@ -1863,10 +1969,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDestinationConfig {
-	OnFailure: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure,
+	OnFailure: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure,
 }
 ```
 
@@ -1897,7 +2003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDestinationConfigOnFailure {
 	DestinationArn: *string,
@@ -1929,7 +2035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDocumentDbEventSourceConfig {
 	DatabaseName: *string,
@@ -1989,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingFilterCriteria {
 	Filter: interface{},
@@ -2023,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingFilterCriteriaFilter {
 	Pattern: *string,
@@ -2055,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingScalingConfig {
 	MaximumConcurrency: *f64,
@@ -2087,7 +2193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedEventSource {
 	Endpoints: *map[string]*string,
@@ -2119,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
 	ConsumerGroupId: *string,
@@ -2151,7 +2257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSourceAccessConfiguration {
 	Type: *string,
@@ -2199,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
 ```
@@ -2477,7 +2583,7 @@ func InternalValue() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDestinationConfigOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDestinationConfigOnFailureOutputReference
 ```
@@ -2748,7 +2854,7 @@ func InternalValue() LambdaEventSourceMappingDestinationConfigOnFailure
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDestinationConfigOutputReference
 ```
@@ -3039,7 +3145,7 @@ func InternalValue() LambdaEventSourceMappingDestinationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference
 ```
@@ -3368,7 +3474,7 @@ func InternalValue() LambdaEventSourceMappingDocumentDbEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingFilterCriteriaFilterList
 ```
@@ -3511,7 +3617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingFilterCriteriaFilterOutputReference
 ```
@@ -3807,7 +3913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingFilterCriteriaOutputReference
 ```
@@ -4098,7 +4204,7 @@ func InternalValue() LambdaEventSourceMappingFilterCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingScalingConfigOutputReference
 ```
@@ -4376,7 +4482,7 @@ func InternalValue() LambdaEventSourceMappingScalingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedEventSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 ```
@@ -4647,7 +4753,7 @@ func InternalValue() LambdaEventSourceMappingSelfManagedEventSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
 ```
@@ -4925,7 +5031,7 @@ func InternalValue() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSourceAccessConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingSourceAccessConfigurationList
 ```
@@ -5068,7 +5174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaeventsourcemapping"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSourceAccessConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingSourceAccessConfigurationOutputReference
 ```

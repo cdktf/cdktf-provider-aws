@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/fis_experiment_template
 // generated from terraform resource schema
 
@@ -1521,6 +1516,20 @@ export class FisExperimentTemplate extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_fis_experiment_template";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a FisExperimentTemplate resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the FisExperimentTemplate to import
+  * @param importFromId The id of the existing FisExperimentTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/fis_experiment_template#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the FisExperimentTemplate to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_fis_experiment_template", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

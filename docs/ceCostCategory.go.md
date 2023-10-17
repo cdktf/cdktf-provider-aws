@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategory(scope Construct, id *string, config CeCostCategoryConfig) CeCostCategory
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.putRule">PutRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.putSplitChargeRule">PutSplitChargeRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.resetDefaultValue">ResetDefaultValue</a></code> | *No description.* |
@@ -144,6 +147,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.getAnyMapAttribute"></a>
 
@@ -253,6 +272,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.interpolationForAttribute"></a>
 
 ```go
@@ -262,6 +299,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -332,13 +393,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CeCostCategory resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.CeCostCategory_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.CeCostCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +446,7 @@ cecostcategory.CeCostCategory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.CeCostCategory_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,6 +454,50 @@ cecostcategory.CeCostCategory_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
+
+cecostcategory.CeCostCategory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a CeCostCategory resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the CeCostCategory to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing CeCostCategory that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ce_cost_category#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ceCostCategory.CeCostCategory.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the CeCostCategory to import is found.
 
 ---
 
@@ -803,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryConfig {
 	Connection: interface{},
@@ -1038,11 +1144,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRule {
-	InheritedValue: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleInheritedValue,
-	Rule: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRule,
+	InheritedValue: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleInheritedValue,
+	Rule: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRule,
 	Type: *string,
 	Value: *string,
 }
@@ -1116,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleInheritedValue {
 	DimensionKey: *string,
@@ -1162,15 +1268,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRule {
 	And: interface{},
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleDimension,
-	Not: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleNot,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleDimension,
+	Not: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleNot,
 	Or: interface{},
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleTags,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleTags,
 }
 ```
 
@@ -1276,12 +1382,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAnd {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleAndDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleAndTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleAndTags,
 }
 ```
 
@@ -1342,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndCostCategory {
 	Key: *string,
@@ -1402,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndDimension {
 	Key: *string,
@@ -1462,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleAndTags {
 	Key: *string,
@@ -1522,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleCostCategory {
 	Key: *string,
@@ -1582,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleDimension {
 	Key: *string,
@@ -1642,12 +1748,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNot {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleNotDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleNotTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleNotTags,
 }
 ```
 
@@ -1708,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotCostCategory {
 	Key: *string,
@@ -1768,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotDimension {
 	Key: *string,
@@ -1828,7 +1934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleNotTags {
 	Key: *string,
@@ -1888,12 +1994,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOr {
-	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory,
-	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleOrDimension,
-	Tags: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ceCostCategory.CeCostCategoryRuleRuleOrTags,
+	CostCategory: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory,
+	Dimension: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension,
+	Tags: github.com/cdktf/cdktf-provider-aws-go/aws.ceCostCategory.CeCostCategoryRuleRuleOrTags,
 }
 ```
 
@@ -1954,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrCostCategory {
 	Key: *string,
@@ -2014,7 +2120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrDimension {
 	Key: *string,
@@ -2074,7 +2180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleOrTags {
 	Key: *string,
@@ -2134,7 +2240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategoryRuleRuleTags {
 	Key: *string,
@@ -2194,7 +2300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategorySplitChargeRule {
 	Method: *string,
@@ -2270,7 +2376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 &cecostcategory.CeCostCategorySplitChargeRuleParameter {
 	Type: *string,
@@ -2318,7 +2424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleInheritedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleInheritedValueOutputReference
 ```
@@ -2625,7 +2731,7 @@ func InternalValue() CeCostCategoryRuleInheritedValue
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleList
 ```
@@ -2768,7 +2874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleOutputReference
 ```
@@ -3177,7 +3283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndCostCategoryOutputReference
 ```
@@ -3513,7 +3619,7 @@ func InternalValue() CeCostCategoryRuleRuleAndCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndDimensionOutputReference
 ```
@@ -3849,7 +3955,7 @@ func InternalValue() CeCostCategoryRuleRuleAndDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleAndList
 ```
@@ -3992,7 +4098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleAndOutputReference
 ```
@@ -4385,7 +4491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleAndTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleAndTagsOutputReference
 ```
@@ -4721,7 +4827,7 @@ func InternalValue() CeCostCategoryRuleRuleAndTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleCostCategoryOutputReference
 ```
@@ -5057,7 +5163,7 @@ func InternalValue() CeCostCategoryRuleRuleCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleDimensionOutputReference
 ```
@@ -5393,7 +5499,7 @@ func InternalValue() CeCostCategoryRuleRuleDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotCostCategoryOutputReference
 ```
@@ -5729,7 +5835,7 @@ func InternalValue() CeCostCategoryRuleRuleNotCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotDimensionOutputReference
 ```
@@ -6065,7 +6171,7 @@ func InternalValue() CeCostCategoryRuleRuleNotDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotOutputReference
 ```
@@ -6440,7 +6546,7 @@ func InternalValue() CeCostCategoryRuleRuleNot
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleNotTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleNotTagsOutputReference
 ```
@@ -6776,7 +6882,7 @@ func InternalValue() CeCostCategoryRuleRuleNotTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrCostCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrCostCategoryOutputReference
 ```
@@ -7112,7 +7218,7 @@ func InternalValue() CeCostCategoryRuleRuleOrCostCategory
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrDimensionOutputReference
 ```
@@ -7448,7 +7554,7 @@ func InternalValue() CeCostCategoryRuleRuleOrDimension
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategoryRuleRuleOrList
 ```
@@ -7591,7 +7697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategoryRuleRuleOrOutputReference
 ```
@@ -7984,7 +8090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOrTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOrTagsOutputReference
 ```
@@ -8320,7 +8426,7 @@ func InternalValue() CeCostCategoryRuleRuleOrTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleOutputReference
 ```
@@ -8821,7 +8927,7 @@ func InternalValue() CeCostCategoryRuleRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategoryRuleRuleTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CeCostCategoryRuleRuleTagsOutputReference
 ```
@@ -9157,7 +9263,7 @@ func InternalValue() CeCostCategoryRuleRuleTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategorySplitChargeRuleList
 ```
@@ -9300,7 +9406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategorySplitChargeRuleOutputReference
 ```
@@ -9675,7 +9781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CeCostCategorySplitChargeRuleParameterList
 ```
@@ -9818,7 +9924,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostcategory"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cecostcategory"
 
 cecostcategory.NewCeCostCategorySplitChargeRuleParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CeCostCategorySplitChargeRuleParameterOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opsworks_static_web_layer
 // generated from terraform resource schema
 
@@ -1414,6 +1409,20 @@ export class OpsworksStaticWebLayer extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_opsworks_static_web_layer";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a OpsworksStaticWebLayer resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the OpsworksStaticWebLayer to import
+  * @param importFromId The id of the existing OpsworksStaticWebLayer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opsworks_static_web_layer#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the OpsworksStaticWebLayer to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_opsworks_static_web_layer", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

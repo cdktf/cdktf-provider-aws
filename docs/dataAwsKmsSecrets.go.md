@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecrets(scope Construct, id *string, config DataAwsKmsSecretsConfig) DataAwsKmsSecrets
 ```
@@ -284,13 +284,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsKmsSecrets resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +337,7 @@ dataawskmssecrets.DataAwsKmsSecrets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.DataAwsKmsSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -344,6 +345,50 @@ dataawskmssecrets.DataAwsKmsSecrets_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
+
+dataawskmssecrets.DataAwsKmsSecrets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsKmsSecrets resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsKmsSecrets to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsKmsSecrets that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/kms_secrets#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsKmsSecrets to import is found.
 
 ---
 
@@ -568,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 &dataawskmssecrets.DataAwsKmsSecretsConfig {
 	Connection: interface{},
@@ -703,7 +748,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 &dataawskmssecrets.DataAwsKmsSecretsSecret {
 	Name: *string,
@@ -807,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecretsSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsKmsSecretsSecretList
 ```
@@ -950,7 +995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawskmssecrets"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawskmssecrets"
 
 dataawskmssecrets.NewDataAwsKmsSecretsSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsKmsSecretsSecretOutputReference
 ```

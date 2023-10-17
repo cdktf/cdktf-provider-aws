@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTask(scope Construct, id *string, config SsmMaintenanceWindowTaskConfig) SsmMaintenanceWindowTask
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.putTargets">PutTargets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.putTaskInvocationParameters">PutTaskInvocationParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.resetCutoffBehavior">ResetCutoffBehavior</a></code> | *No description.* |
@@ -148,6 +151,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.getAnyMapAttribute"></a>
 
@@ -257,6 +276,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.interpolationForAttribute"></a>
 
 ```go
@@ -266,6 +303,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -360,13 +421,14 @@ func ResetTaskInvocationParameters()
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a SsmMaintenanceWindowTask resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.SsmMaintenanceWindowTask_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.SsmMaintenanceWindowTask_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +474,7 @@ ssmmaintenancewindowtask.SsmMaintenanceWindowTask_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.SsmMaintenanceWindowTask_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,6 +482,50 @@ ssmmaintenancewindowtask.SsmMaintenanceWindowTask_IsTerraformResource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
+
+ssmmaintenancewindowtask.SsmMaintenanceWindowTask_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a SsmMaintenanceWindowTask resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the SsmMaintenanceWindowTask to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing SsmMaintenanceWindowTask that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ssm_maintenance_window_task#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTask.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the SsmMaintenanceWindowTask to import is found.
 
 ---
 
@@ -919,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskConfig {
 	Connection: interface{},
@@ -941,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
 	Priority: *f64,
 	ServiceRoleArn: *string,
 	Targets: interface{},
-	TaskInvocationParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParameters,
+	TaskInvocationParameters: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParameters,
 }
 ```
 
@@ -1210,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTargets {
 	Key: *string,
@@ -1256,13 +1362,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParameters {
-	AutomationParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters,
-	LambdaParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters,
-	RunCommandParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters,
-	StepFunctionsParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters,
+	AutomationParameters: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters,
+	LambdaParameters: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters,
+	RunCommandParameters: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters,
+	StepFunctionsParameters: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters,
 }
 ```
 
@@ -1338,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
 	DocumentVersion: *string,
@@ -1386,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter {
 	Name: *string,
@@ -1432,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters {
 	ClientContext: *string,
@@ -1492,15 +1598,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
-	CloudwatchConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig,
+	CloudwatchConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig,
 	Comment: *string,
 	DocumentHash: *string,
 	DocumentHashType: *string,
 	DocumentVersion: *string,
-	NotificationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig,
+	NotificationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig,
 	OutputS3Bucket: *string,
 	OutputS3KeyPrefix: *string,
 	Parameter: interface{},
@@ -1670,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig {
 	CloudwatchLogGroupName: *string,
@@ -1716,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
 	NotificationArn: *string,
@@ -1776,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter {
 	Name: *string,
@@ -1822,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 &ssmmaintenancewindowtask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
 	Input: *string,
@@ -1870,7 +1976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmMaintenanceWindowTaskTargetsList
 ```
@@ -2013,7 +2119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmMaintenanceWindowTaskTargetsOutputReference
 ```
@@ -2324,7 +2430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersOutputReference
 ```
@@ -2644,7 +2750,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParametersAutomationP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterList
 ```
@@ -2787,7 +2893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterOutputReference
 ```
@@ -3098,7 +3204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersOutputReference
 ```
@@ -3434,7 +3540,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParam
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference
 ```
@@ -3851,7 +3957,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigOutputReference
 ```
@@ -4158,7 +4264,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference
 ```
@@ -4494,7 +4600,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersOutputReference
 ```
@@ -5101,7 +5207,7 @@ func InternalValue() SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList
 ```
@@ -5244,7 +5350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterOutputReference
 ```
@@ -5555,7 +5661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ssmmaintenancewindowtask"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssmmaintenancewindowtask"
 
 ssmmaintenancewindowtask.NewSsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersOutputReference
 ```

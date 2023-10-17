@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.NewDataAwsAppmeshMesh(scope Construct, id *string, config DataAwsAppmeshMeshConfig) DataAwsAppmeshMesh
 ```
@@ -285,13 +285,14 @@ func ResetTags()
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsAppmeshMesh resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.DataAwsAppmeshMesh_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.DataAwsAppmeshMesh_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +338,7 @@ dataawsappmeshmesh.DataAwsAppmeshMesh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.DataAwsAppmeshMesh_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,6 +346,50 @@ dataawsappmeshmesh.DataAwsAppmeshMesh_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
+
+dataawsappmeshmesh.DataAwsAppmeshMesh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsAppmeshMesh resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsAppmeshMesh to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsAppmeshMesh that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/appmesh_mesh#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsAppmeshMesh to import is found.
 
 ---
 
@@ -657,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 &dataawsappmeshmesh.DataAwsAppmeshMeshConfig {
 	Connection: interface{},
@@ -818,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 &dataawsappmeshmesh.DataAwsAppmeshMeshSpec {
 
@@ -831,7 +876,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 &dataawsappmeshmesh.DataAwsAppmeshMeshSpecEgressFilter {
 
@@ -846,7 +891,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.NewDataAwsAppmeshMeshSpecEgressFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshMeshSpecEgressFilterList
 ```
@@ -978,7 +1023,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.NewDataAwsAppmeshMeshSpecEgressFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshMeshSpecEgressFilterOutputReference
 ```
@@ -1256,7 +1301,7 @@ func InternalValue() DataAwsAppmeshMeshSpecEgressFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.NewDataAwsAppmeshMeshSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshMeshSpecList
 ```
@@ -1388,7 +1433,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsappmeshmesh"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsappmeshmesh"
 
 dataawsappmeshmesh.NewDataAwsAppmeshMeshSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshMeshSpecOutputReference
 ```

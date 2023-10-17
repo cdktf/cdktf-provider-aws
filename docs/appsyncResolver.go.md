@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolver(scope Construct, id *string, config AppsyncResolverConfig) AppsyncResolver
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.putCachingConfig">PutCachingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.putPipelineConfig">PutPipelineConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.putRuntime">PutRuntime</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -393,13 +454,14 @@ func ResetSyncConfig()
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AppsyncResolver resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +507,7 @@ appsyncresolver.AppsyncResolver_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,6 +515,50 @@ appsyncresolver.AppsyncResolver_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
+
+appsyncresolver.AppsyncResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AppsyncResolver resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AppsyncResolver to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AppsyncResolver that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appsync_resolver#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolver.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AppsyncResolver to import is found.
 
 ---
 
@@ -963,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverCachingConfig {
 	CachingKeys: *[]*string,
@@ -1009,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverConfig {
 	Connection: interface{},
@@ -1022,17 +1128,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
 	ApiId: *string,
 	Field: *string,
 	Type: *string,
-	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverCachingConfig,
+	CachingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverCachingConfig,
 	Code: *string,
 	DataSource: *string,
 	Id: *string,
 	Kind: *string,
 	MaxBatchSize: *f64,
-	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverPipelineConfig,
+	PipelineConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverPipelineConfig,
 	RequestTemplate: *string,
 	ResponseTemplate: *string,
-	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverRuntime,
-	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverSyncConfig,
+	Runtime: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverRuntime,
+	SyncConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverSyncConfig,
 }
 ```
 
@@ -1318,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverPipelineConfig {
 	Functions: *[]*string,
@@ -1350,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverRuntime {
 	Name: *string,
@@ -1396,12 +1502,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfig {
 	ConflictDetection: *string,
 	ConflictHandler: *string,
-	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
+	LambdaConflictHandlerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig,
 }
 ```
 
@@ -1458,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 &appsyncresolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig {
 	LambdaConflictHandlerArn: *string,
@@ -1492,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverCachingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverCachingConfigOutputReference
 ```
@@ -1799,7 +1905,7 @@ func InternalValue() AppsyncResolverCachingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverPipelineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverPipelineConfigOutputReference
 ```
@@ -2077,7 +2183,7 @@ func InternalValue() AppsyncResolverPipelineConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverRuntimeOutputReference
 ```
@@ -2370,7 +2476,7 @@ func InternalValue() AppsyncResolverRuntime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference
 ```
@@ -2648,7 +2754,7 @@ func InternalValue() AppsyncResolverSyncConfigLambdaConflictHandlerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsyncresolver"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appsyncresolver"
 
 appsyncresolver.NewAppsyncResolverSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppsyncResolverSyncConfigOutputReference
 ```

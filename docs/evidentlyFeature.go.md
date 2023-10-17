@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeature(scope Construct, id *string, config EvidentlyFeatureConfig) EvidentlyFeature
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.putVariations">PutVariations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.resetDefaultVariation">ResetDefaultVariation</a></code> | *No description.* |
@@ -146,6 +149,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.getAnyMapAttribute"></a>
 
@@ -255,6 +274,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.interpolationForAttribute"></a>
 
 ```go
@@ -264,6 +301,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -346,13 +407,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a EvidentlyFeature resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.EvidentlyFeature_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.EvidentlyFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +460,7 @@ evidentlyfeature.EvidentlyFeature_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.EvidentlyFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,6 +468,50 @@ evidentlyfeature.EvidentlyFeature_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
+
+evidentlyfeature.EvidentlyFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a EvidentlyFeature resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the EvidentlyFeature to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing EvidentlyFeature that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/evidently_feature#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the EvidentlyFeature to import is found.
 
 ---
 
@@ -905,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 &evidentlyfeature.EvidentlyFeatureConfig {
 	Connection: interface{},
@@ -925,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.evidentlyFeature.EvidentlyFeatureTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.evidentlyFeature.EvidentlyFeatureTimeouts,
 }
 ```
 
@@ -1168,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 &evidentlyfeature.EvidentlyFeatureEvaluationRules {
 
@@ -1181,7 +1287,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 &evidentlyfeature.EvidentlyFeatureTimeouts {
 	Create: *string,
@@ -1241,11 +1347,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 &evidentlyfeature.EvidentlyFeatureVariations {
 	Name: *string,
-	Value: github.com/cdktf/cdktf-provider-aws-go/aws/v18.evidentlyFeature.EvidentlyFeatureVariationsValue,
+	Value: github.com/cdktf/cdktf-provider-aws-go/aws.evidentlyFeature.EvidentlyFeatureVariationsValue,
 }
 ```
 
@@ -1289,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 &evidentlyfeature.EvidentlyFeatureVariationsValue {
 	BoolValue: *string,
@@ -1365,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureEvaluationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyFeatureEvaluationRulesList
 ```
@@ -1497,7 +1603,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureEvaluationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyFeatureEvaluationRulesOutputReference
 ```
@@ -1786,7 +1892,7 @@ func InternalValue() EvidentlyFeatureEvaluationRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvidentlyFeatureTimeoutsOutputReference
 ```
@@ -2122,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureVariationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvidentlyFeatureVariationsList
 ```
@@ -2265,7 +2371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureVariationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvidentlyFeatureVariationsOutputReference
 ```
@@ -2589,7 +2695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/evidentlyfeature"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/evidentlyfeature"
 
 evidentlyfeature.NewEvidentlyFeatureVariationsValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvidentlyFeatureVariationsValueOutputReference
 ```

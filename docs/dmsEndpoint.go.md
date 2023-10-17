@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpoint(scope Construct, id *string, config DmsEndpointConfig) DmsEndpoint
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.putElasticsearchSettings">PutElasticsearchSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.putKafkaSettings">PutKafkaSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.putKinesisSettings">PutKinesisSettings</a></code> | *No description.* |
@@ -167,6 +170,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.getAnyMapAttribute"></a>
 
@@ -276,6 +295,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.interpolationForAttribute"></a>
 
 ```go
@@ -285,6 +322,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -529,13 +590,14 @@ func ResetUsername()
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DmsEndpoint resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.DmsEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +629,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.DmsEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +643,7 @@ dmsendpoint.DmsEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.DmsEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,6 +651,50 @@ dmsendpoint.DmsEndpoint_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
+
+dmsendpoint.DmsEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DmsEndpoint resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DmsEndpoint to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DmsEndpoint that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dms_endpoint#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpoint.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DmsEndpoint to import is found.
 
 ---
 
@@ -1363,7 +1469,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointConfig {
 	Connection: interface{},
@@ -1378,18 +1484,18 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
 	EngineName: *string,
 	CertificateArn: *string,
 	DatabaseName: *string,
-	ElasticsearchSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointElasticsearchSettings,
+	ElasticsearchSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointElasticsearchSettings,
 	ExtraConnectionAttributes: *string,
 	Id: *string,
-	KafkaSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointKafkaSettings,
-	KinesisSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointKinesisSettings,
+	KafkaSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointKafkaSettings,
+	KinesisSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointKinesisSettings,
 	KmsKeyArn: *string,
-	MongodbSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointMongodbSettings,
+	MongodbSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointMongodbSettings,
 	Password: *string,
 	Port: *f64,
-	RedisSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointRedisSettings,
-	RedshiftSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointRedshiftSettings,
-	S3Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointS3Settings,
+	RedisSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointRedisSettings,
+	RedshiftSettings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointRedshiftSettings,
+	S3Settings: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointS3Settings,
 	SecretsManagerAccessRoleArn: *string,
 	SecretsManagerArn: *string,
 	ServerName: *string,
@@ -1397,7 +1503,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
 	SslMode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dmsEndpoint.DmsEndpointTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dmsEndpoint.DmsEndpointTimeouts,
 	Username: *string,
 }
 ```
@@ -1848,7 +1954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointElasticsearchSettings {
 	EndpointUri: *string,
@@ -1922,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointKafkaSettings {
 	Broker: *string,
@@ -2192,7 +2298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointKinesisSettings {
 	IncludeControlDetails: interface{},
@@ -2336,7 +2442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointMongodbSettings {
 	AuthMechanism: *string,
@@ -2438,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointRedisSettings {
 	AuthType: *string,
@@ -2554,7 +2660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointRedshiftSettings {
 	BucketFolder: *string,
@@ -2642,7 +2748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointS3Settings {
 	AddColumnName: interface{},
@@ -3192,7 +3298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 &dmsendpoint.DmsEndpointTimeouts {
 	Create: *string,
@@ -3240,7 +3346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointElasticsearchSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointElasticsearchSettingsOutputReference
 ```
@@ -3591,7 +3697,7 @@ func InternalValue() DmsEndpointElasticsearchSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointKafkaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointKafkaSettingsOutputReference
 ```
@@ -4355,7 +4461,7 @@ func InternalValue() DmsEndpointKafkaSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointKinesisSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointKinesisSettingsOutputReference
 ```
@@ -4865,7 +4971,7 @@ func InternalValue() DmsEndpointKinesisSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointMongodbSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointMongodbSettingsOutputReference
 ```
@@ -5288,7 +5394,7 @@ func InternalValue() DmsEndpointMongodbSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointRedisSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointRedisSettingsOutputReference
 ```
@@ -5719,7 +5825,7 @@ func InternalValue() DmsEndpointRedisSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointRedshiftSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointRedshiftSettingsOutputReference
 ```
@@ -6113,7 +6219,7 @@ func InternalValue() DmsEndpointRedshiftSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointS3SettingsOutputReference
 ```
@@ -7464,7 +7570,7 @@ func InternalValue() DmsEndpointS3Settings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dmsendpoint"
 
 dmsendpoint.NewDmsEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsEndpointTimeoutsOutputReference
 ```

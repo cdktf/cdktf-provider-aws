@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructure(scope Construct, id *string, config ConnectUserHierarchyStructureConfig) ConnectUserHierarchyStructure
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.putHierarchyStructure">PutHierarchyStructure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.resetId">ResetId</a></code> | *No description.* |
 
@@ -138,6 +141,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.getAnyMapAttribute"></a>
 
@@ -247,6 +266,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.interpolationForAttribute"></a>
 
 ```go
@@ -256,6 +293,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -284,13 +345,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ConnectUserHierarchyStructure resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.ConnectUserHierarchyStructure_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.ConnectUserHierarchyStructure_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +398,7 @@ connectuserhierarchystructure.ConnectUserHierarchyStructure_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.ConnectUserHierarchyStructure_IsTerraformResource(x interface{}) *bool
 ```
@@ -344,6 +406,50 @@ connectuserhierarchystructure.ConnectUserHierarchyStructure_IsTerraformResource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
+
+connectuserhierarchystructure.ConnectUserHierarchyStructure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ConnectUserHierarchyStructure resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ConnectUserHierarchyStructure to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ConnectUserHierarchyStructure that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ConnectUserHierarchyStructure to import is found.
 
 ---
 
@@ -601,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureConfig {
 	Connection: interface{},
@@ -611,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystruc
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	HierarchyStructure: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure,
+	HierarchyStructure: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure,
 	InstanceId: *string,
 	Id: *string,
 }
@@ -750,14 +856,14 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructure {
-	LevelFive: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive,
-	LevelFour: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour,
-	LevelOne: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne,
-	LevelThree: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree,
-	LevelTwo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo,
+	LevelFive: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive,
+	LevelFour: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour,
+	LevelOne: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne,
+	LevelThree: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree,
+	LevelTwo: github.com/cdktf/cdktf-provider-aws-go/aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo,
 }
 ```
 
@@ -848,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructureLevelFive {
 	Name: *string,
@@ -880,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructureLevelFour {
 	Name: *string,
@@ -912,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructureLevelOne {
 	Name: *string,
@@ -944,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructureLevelThree {
 	Name: *string,
@@ -976,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 &connectuserhierarchystructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwo {
 	Name: *string,
@@ -1010,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureLevelFiveOutputReference
 ```
@@ -1303,7 +1409,7 @@ func InternalValue() ConnectUserHierarchyStructureHierarchyStructureLevelFive
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureLevelFourOutputReference
 ```
@@ -1596,7 +1702,7 @@ func InternalValue() ConnectUserHierarchyStructureHierarchyStructureLevelFour
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureLevelOneOutputReference
 ```
@@ -1889,7 +1995,7 @@ func InternalValue() ConnectUserHierarchyStructureHierarchyStructureLevelOne
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureLevelThreeOutputReference
 ```
@@ -2182,7 +2288,7 @@ func InternalValue() ConnectUserHierarchyStructureHierarchyStructureLevelThree
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureLevelTwoOutputReference
 ```
@@ -2475,7 +2581,7 @@ func InternalValue() ConnectUserHierarchyStructureHierarchyStructureLevelTwo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructureHierarchyStructureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/connectuserhierarchystructure"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/connectuserhierarchystructure"
 
 connectuserhierarchystructure.NewConnectUserHierarchyStructureHierarchyStructureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectUserHierarchyStructureHierarchyStructureOutputReference
 ```

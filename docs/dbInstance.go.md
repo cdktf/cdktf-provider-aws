@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstance(scope Construct, id *string, config DbInstanceConfig) DbInstance
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate">PutBlueGreenUpdate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime">PutRestoreToPointInTime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putS3Import">PutS3Import</a></code> | *No description.* |
@@ -204,6 +207,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getAnyMapAttribute"></a>
 
 ```go
@@ -312,6 +331,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute"></a>
 
 ```go
@@ -321,6 +358,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -757,13 +818,14 @@ func ResetVpcSecurityGroupIds()
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DbInstance resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbInstance.DbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.DbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -795,7 +857,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.DbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -809,7 +871,7 @@ dbinstance.DbInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.DbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -817,6 +879,50 @@ dbinstance.DbInstance_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
+
+dbinstance.DbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DbInstance resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DbInstance to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DbInstance that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/db_instance#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DbInstance to import is found.
 
 ---
 
@@ -2537,7 +2643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceBlueGreenUpdate {
 	Enabled: interface{},
@@ -2569,7 +2675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceConfig {
 	Connection: interface{},
@@ -2588,7 +2694,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 	BackupRetentionPeriod: *f64,
 	BackupTarget: *string,
 	BackupWindow: *string,
-	BlueGreenUpdate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceBlueGreenUpdate,
+	BlueGreenUpdate: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceBlueGreenUpdate,
 	CaCertIdentifier: *string,
 	CharacterSetName: *string,
 	CopyTagsToSnapshot: interface{},
@@ -2630,8 +2736,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 	PubliclyAccessible: interface{},
 	ReplicaMode: *string,
 	ReplicateSourceDb: *string,
-	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceRestoreToPointInTime,
-	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceS3Import,
+	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceRestoreToPointInTime,
+	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceS3Import,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	StorageEncrypted: interface{},
@@ -2639,7 +2745,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dbInstance.DbInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dbInstance.DbInstanceTimeouts,
 	Timezone: *string,
 	Username: *string,
 	VpcSecurityGroupIds: *[]*string,
@@ -3578,7 +3684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceListenerEndpoint {
 
@@ -3591,7 +3697,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceMasterUserSecret {
 
@@ -3604,7 +3710,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceRestoreToPointInTime {
 	RestoreTime: *string,
@@ -3692,7 +3798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceS3Import {
 	BucketName: *string,
@@ -3780,7 +3886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 &dbinstance.DbInstanceTimeouts {
 	Create: *string,
@@ -3842,7 +3948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceBlueGreenUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceBlueGreenUpdateOutputReference
 ```
@@ -4120,7 +4226,7 @@ func InternalValue() DbInstanceBlueGreenUpdate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceListenerEndpointList
 ```
@@ -4252,7 +4358,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceListenerEndpointOutputReference
 ```
@@ -4552,7 +4658,7 @@ func InternalValue() DbInstanceListenerEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceMasterUserSecretList
 ```
@@ -4684,7 +4790,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceMasterUserSecretOutputReference
 ```
@@ -4984,7 +5090,7 @@ func InternalValue() DbInstanceMasterUserSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceRestoreToPointInTimeOutputReference
 ```
@@ -5378,7 +5484,7 @@ func InternalValue() DbInstanceRestoreToPointInTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceS3ImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceS3ImportOutputReference
 ```
@@ -5744,7 +5850,7 @@ func InternalValue() DbInstanceS3Import
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dbinstance"
 
 dbinstance.NewDbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceTimeoutsOutputReference
 ```

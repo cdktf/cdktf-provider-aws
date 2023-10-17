@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxCluster(scope Construct, id *string, config FinspaceKxClusterConfig) FinspaceKxCluster
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.putAutoScalingConfiguration">PutAutoScalingConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.putCacheStorageConfigurations">PutCacheStorageConfigurations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.putCapacityConfiguration">PutCapacityConfiguration</a></code> | *No description.* |
@@ -158,6 +161,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.getAnyMapAttribute"></a>
 
@@ -267,6 +286,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.interpolationForAttribute"></a>
 
 ```go
@@ -276,6 +313,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -466,13 +527,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a FinspaceKxCluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +580,7 @@ finspacekxcluster.FinspaceKxCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,6 +588,50 @@ finspacekxcluster.FinspaceKxCluster_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
+
+finspacekxcluster.FinspaceKxCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a FinspaceKxCluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the FinspaceKxCluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing FinspaceKxCluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/finspace_kx_cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the FinspaceKxCluster to import is found.
 
 ---
 
@@ -1234,7 +1340,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterAutoScalingConfiguration {
 	AutoScalingMetric: *string,
@@ -1336,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCacheStorageConfigurations {
 	Size: *f64,
@@ -1382,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCapacityConfiguration {
 	NodeCount: *f64,
@@ -1428,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCode {
 	S3Bucket: *string,
@@ -1488,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterConfig {
 	Connection: interface{},
@@ -1499,26 +1605,26 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AzMode: *string,
-	CapacityConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration,
+	CapacityConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration,
 	EnvironmentId: *string,
 	Name: *string,
 	ReleaseLabel: *string,
 	Type: *string,
-	VpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterVpcConfiguration,
-	AutoScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration,
+	VpcConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration,
+	AutoScalingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration,
 	AvailabilityZoneId: *string,
 	CacheStorageConfigurations: interface{},
-	Code: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterCode,
+	Code: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterCode,
 	CommandLineArguments: *map[string]*string,
 	Database: interface{},
 	Description: *string,
 	ExecutionRole: *string,
 	Id: *string,
 	InitializationScript: *string,
-	SavedownStorageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration,
+	SavedownStorageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.finspaceKxCluster.FinspaceKxClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.finspaceKxCluster.FinspaceKxClusterTimeouts,
 }
 ```
 
@@ -1903,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterDatabase {
 	DatabaseName: *string,
@@ -1965,7 +2071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterDatabaseCacheConfigurations {
 	CacheType: *string,
@@ -2011,7 +2117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterSavedownStorageConfiguration {
 	Size: *f64,
@@ -2057,7 +2163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterTimeouts {
 	Create: *string,
@@ -2117,7 +2223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterVpcConfiguration {
 	IpAddressType: *string,
@@ -2193,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterAutoScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterAutoScalingConfigurationOutputReference
 ```
@@ -2574,7 +2680,7 @@ func InternalValue() FinspaceKxClusterAutoScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCacheStorageConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterCacheStorageConfigurationsList
 ```
@@ -2717,7 +2823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCacheStorageConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterCacheStorageConfigurationsOutputReference
 ```
@@ -3028,7 +3134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCapacityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterCapacityConfigurationOutputReference
 ```
@@ -3321,7 +3427,7 @@ func InternalValue() FinspaceKxClusterCapacityConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterCodeOutputReference
 ```
@@ -3643,7 +3749,7 @@ func InternalValue() FinspaceKxClusterCode
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseCacheConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterDatabaseCacheConfigurationsList
 ```
@@ -3786,7 +3892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseCacheConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterDatabaseCacheConfigurationsOutputReference
 ```
@@ -4104,7 +4210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterDatabaseList
 ```
@@ -4247,7 +4353,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterDatabaseOutputReference
 ```
@@ -4607,7 +4713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterSavedownStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterSavedownStorageConfigurationOutputReference
 ```
@@ -4900,7 +5006,7 @@ func InternalValue() FinspaceKxClusterSavedownStorageConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterTimeoutsOutputReference
 ```
@@ -5236,7 +5342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterVpcConfigurationOutputReference
 ```

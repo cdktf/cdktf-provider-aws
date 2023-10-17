@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGateway(scope Construct, id *string, config StoragegatewayGatewayConfig) StoragegatewayGateway
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.putMaintenanceStartTime">PutMaintenanceStartTime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.putSmbActiveDirectorySettings">PutSmbActiveDirectorySettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -157,6 +160,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.getAnyMapAttribute"></a>
 
@@ -266,6 +285,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.interpolationForAttribute"></a>
 
 ```go
@@ -275,6 +312,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -429,13 +490,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a StoragegatewayGateway resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.StoragegatewayGateway_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.StoragegatewayGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +543,7 @@ storagegatewaygateway.StoragegatewayGateway_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.StoragegatewayGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -489,6 +551,50 @@ storagegatewaygateway.StoragegatewayGateway_IsTerraformResource(x interface{}) *
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
+
+storagegatewaygateway.StoragegatewayGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a StoragegatewayGateway resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the StoragegatewayGateway to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing StoragegatewayGateway that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/storagegateway_gateway#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the StoragegatewayGateway to import is found.
 
 ---
 
@@ -1186,7 +1292,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 &storagegatewaygateway.StoragegatewayGatewayConfig {
 	Connection: interface{},
@@ -1206,16 +1312,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
 	GatewayType: *string,
 	GatewayVpcEndpoint: *string,
 	Id: *string,
-	MaintenanceStartTime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime,
+	MaintenanceStartTime: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime,
 	MediumChangerType: *string,
-	SmbActiveDirectorySettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings,
+	SmbActiveDirectorySettings: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings,
 	SmbFileShareVisibility: interface{},
 	SmbGuestPassword: *string,
 	SmbSecurityStrategy: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TapeDriveType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.storagegatewayGateway.StoragegatewayGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.storagegatewayGateway.StoragegatewayGatewayTimeouts,
 }
 ```
 
@@ -1577,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 &storagegatewaygateway.StoragegatewayGatewayGatewayNetworkInterface {
 
@@ -1590,7 +1696,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 &storagegatewaygateway.StoragegatewayGatewayMaintenanceStartTime {
 	HourOfDay: *f64,
@@ -1664,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 &storagegatewaygateway.StoragegatewayGatewaySmbActiveDirectorySettings {
 	DomainName: *string,
@@ -1766,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 &storagegatewaygateway.StoragegatewayGatewayTimeouts {
 	Create: *string,
@@ -1800,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGatewayGatewayNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StoragegatewayGatewayGatewayNetworkInterfaceList
 ```
@@ -1932,7 +2038,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGatewayGatewayNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StoragegatewayGatewayGatewayNetworkInterfaceOutputReference
 ```
@@ -2210,7 +2316,7 @@ func InternalValue() StoragegatewayGatewayGatewayNetworkInterface
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGatewayMaintenanceStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayGatewayMaintenanceStartTimeOutputReference
 ```
@@ -2568,7 +2674,7 @@ func InternalValue() StoragegatewayGatewayMaintenanceStartTime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference
 ```
@@ -2981,7 +3087,7 @@ func InternalValue() StoragegatewayGatewaySmbActiveDirectorySettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/storagegatewaygateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/storagegatewaygateway"
 
 storagegatewaygateway.NewStoragegatewayGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayGatewayTimeoutsOutputReference
 ```

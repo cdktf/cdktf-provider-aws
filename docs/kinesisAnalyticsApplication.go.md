@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplication(scope Construct, id *string, config KinesisAnalyticsApplicationConfig) KinesisAnalyticsApplication
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.putCloudwatchLoggingOptions">PutCloudwatchLoggingOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.putInputs">PutInputs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.putOutputs">PutOutputs</a></code> | *No description.* |
@@ -150,6 +153,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.getAnyMapAttribute"></a>
 
@@ -259,6 +278,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.interpolationForAttribute"></a>
 
 ```go
@@ -268,6 +305,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -386,13 +447,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a KinesisAnalyticsApplication resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +500,7 @@ kinesisanalyticsapplication.KinesisAnalyticsApplication_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.KinesisAnalyticsApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,6 +508,50 @@ kinesisanalyticsapplication.KinesisAnalyticsApplication_IsTerraformResource(x in
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
+
+kinesisanalyticsapplication.KinesisAnalyticsApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a KinesisAnalyticsApplication resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the KinesisAnalyticsApplication to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing KinesisAnalyticsApplication that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/kinesis_analytics_application#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the KinesisAnalyticsApplication to import is found.
 
 ---
 
@@ -934,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationCloudwatchLoggingOptions {
 	LogStreamArn: *string,
@@ -980,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationConfig {
 	Connection: interface{},
@@ -991,13 +1097,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplicati
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptions,
+	CloudwatchLoggingOptions: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptions,
 	Code: *string,
 	Description: *string,
 	Id: *string,
-	Inputs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputs,
+	Inputs: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputs,
 	Outputs: interface{},
-	ReferenceDataSources: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSources,
+	ReferenceDataSources: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSources,
 	StartApplication: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1247,15 +1353,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputs {
 	NamePrefix: *string,
-	Schema: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchema,
-	KinesisFirehose: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehose,
-	KinesisStream: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisStream,
-	Parallelism: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelism,
-	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfiguration,
+	Schema: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchema,
+	KinesisFirehose: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehose,
+	KinesisStream: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisStream,
+	Parallelism: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelism,
+	ProcessingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfiguration,
 	StartingPositionConfiguration: interface{},
 }
 ```
@@ -1375,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsKinesisFirehose {
 	ResourceArn: *string,
@@ -1421,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsKinesisStream {
 	ResourceArn: *string,
@@ -1467,7 +1573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelism.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsParallelism {
 	Count: *f64,
@@ -1499,10 +1605,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsProcessingConfiguration {
-	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfigurationLambda,
+	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfigurationLambda,
 }
 ```
 
@@ -1533,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfigurationLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsProcessingConfigurationLambda {
 	ResourceArn: *string,
@@ -1579,11 +1685,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchema {
 	RecordColumns: interface{},
-	RecordFormat: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormat,
+	RecordFormat: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormat,
 	RecordEncoding: *string,
 }
 ```
@@ -1643,7 +1749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchemaRecordColumns {
 	Name: *string,
@@ -1703,10 +1809,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchemaRecordFormat {
-	MappingParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters,
+	MappingParameters: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters,
 }
 ```
 
@@ -1737,11 +1843,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters {
-	Csv: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv,
-	Json: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson,
+	Csv: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv,
+	Json: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson,
 }
 ```
 
@@ -1787,7 +1893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv {
 	RecordColumnDelimiter: *string,
@@ -1833,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson {
 	RecordRowPath: *string,
@@ -1865,7 +1971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationInputsStartingPositionConfiguration {
 	StartingPosition: *string,
@@ -1897,14 +2003,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationOutputs {
 	Name: *string,
-	Schema: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsSchema,
-	KinesisFirehose: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisFirehose,
-	KinesisStream: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStream,
-	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsLambda,
+	Schema: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsSchema,
+	KinesisFirehose: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisFirehose,
+	KinesisStream: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStream,
+	Lambda: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsLambda,
 }
 ```
 
@@ -1993,7 +2099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationOutputsKinesisFirehose {
 	ResourceArn: *string,
@@ -2039,7 +2145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationOutputsKinesisStream {
 	ResourceArn: *string,
@@ -2085,7 +2191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationOutputsLambda {
 	ResourceArn: *string,
@@ -2131,7 +2237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationOutputsSchema {
 	RecordFormatType: *string,
@@ -2163,11 +2269,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSources {
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3,
-	Schema: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchema,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3,
+	Schema: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchema,
 	TableName: *string,
 }
 ```
@@ -2227,7 +2333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesS3 {
 	BucketArn: *string,
@@ -2287,11 +2393,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchema {
 	RecordColumns: interface{},
-	RecordFormat: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat,
+	RecordFormat: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat,
 	RecordEncoding: *string,
 }
 ```
@@ -2351,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns {
 	Name: *string,
@@ -2411,10 +2517,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
-	MappingParameters: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters,
+	MappingParameters: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters,
 }
 ```
 
@@ -2445,11 +2551,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {
-	Csv: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv,
-	Json: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson,
+	Csv: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv,
+	Json: github.com/cdktf/cdktf-provider-aws-go/aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson,
 }
 ```
 
@@ -2495,7 +2601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
 	RecordColumnDelimiter: *string,
@@ -2541,7 +2647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 &kinesisanalyticsapplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson {
 	RecordRowPath: *string,
@@ -2575,7 +2681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationCloudwatchLoggingOptionsOutputReference
 ```
@@ -2879,7 +2985,7 @@ func InternalValue() KinesisAnalyticsApplicationCloudwatchLoggingOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsKinesisFirehoseOutputReference
 ```
@@ -3172,7 +3278,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsKinesisFirehose
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsKinesisStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsKinesisStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsKinesisStreamOutputReference
 ```
@@ -3465,7 +3571,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsKinesisStream
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsOutputReference
 ```
@@ -4003,7 +4109,7 @@ func InternalValue() KinesisAnalyticsApplicationInputs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsParallelismOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsParallelismOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsParallelismOutputReference
 ```
@@ -4281,7 +4387,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsParallelism
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsProcessingConfigurationLambdaOutputReference
 ```
@@ -4574,7 +4680,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsProcessingConfigurationLam
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsProcessingConfigurationOutputReference
 ```
@@ -4858,7 +4964,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsProcessingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaOutputReference
 ```
@@ -5206,7 +5312,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationInputsSchemaRecordColumnsList
 ```
@@ -5349,7 +5455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAnalyticsApplicationInputsSchemaRecordColumnsOutputReference
 ```
@@ -5689,7 +5795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference
 ```
@@ -5982,7 +6088,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonOutputReference
 ```
@@ -6253,7 +6359,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference
 ```
@@ -6586,7 +6692,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingP
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationInputsSchemaRecordFormatOutputReference
 ```
@@ -6888,7 +6994,7 @@ func InternalValue() KinesisAnalyticsApplicationInputsSchemaRecordFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationInputsStartingPositionConfigurationList
 ```
@@ -7031,7 +7137,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAnalyticsApplicationInputsStartingPositionConfigurationOutputReference
 ```
@@ -7327,7 +7433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsKinesisFirehoseOutputReference
 ```
@@ -7620,7 +7726,7 @@ func InternalValue() KinesisAnalyticsApplicationOutputsKinesisFirehose
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference
 ```
@@ -7913,7 +8019,7 @@ func InternalValue() KinesisAnalyticsApplicationOutputsKinesisStream
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsLambdaOutputReference
 ```
@@ -8206,7 +8312,7 @@ func InternalValue() KinesisAnalyticsApplicationOutputsLambda
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationOutputsList
 ```
@@ -8349,7 +8455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAnalyticsApplicationOutputsOutputReference
 ```
@@ -8810,7 +8916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationOutputsSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsSchemaOutputReference
 ```
@@ -9081,7 +9187,7 @@ func InternalValue() KinesisAnalyticsApplicationOutputsSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesOutputReference
 ```
@@ -9433,7 +9539,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference
 ```
@@ -9748,7 +9854,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSourcesS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesSchemaOutputReference
 ```
@@ -10096,7 +10202,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSourcesSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsList
 ```
@@ -10239,7 +10345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsOutputReference
 ```
@@ -10579,7 +10685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvOutputReference
 ```
@@ -10872,7 +10978,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonOutputReference
 ```
@@ -11143,7 +11249,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersOutputReference
 ```
@@ -11476,7 +11582,7 @@ func InternalValue() KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kinesisanalyticsapplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kinesisanalyticsapplication"
 
 kinesisanalyticsapplication.NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference
 ```

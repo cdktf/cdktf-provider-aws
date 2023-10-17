@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRule(scope Construct, id *string, config VpclatticeListenerRuleConfig) VpclatticeListenerRule
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.putAction">PutAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.putMatch">PutMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -143,6 +146,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.getAnyMapAttribute"></a>
 
@@ -252,6 +271,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.interpolationForAttribute"></a>
 
 ```go
@@ -261,6 +298,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -331,13 +392,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpclatticeListenerRule resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +445,7 @@ vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -391,6 +453,50 @@ vpclatticelistenerrule.VpclatticeListenerRule_IsTerraformResource(x interface{})
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
+
+vpclatticelistenerrule.VpclatticeListenerRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a VpclatticeListenerRule resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the VpclatticeListenerRule to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing VpclatticeListenerRule that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpclattice_listener_rule#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRule.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the VpclatticeListenerRule to import is found.
 
 ---
 
@@ -824,11 +930,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleAction {
-	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse,
-	Forward: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleActionForward,
+	FixedResponse: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse,
+	Forward: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForward,
 }
 ```
 
@@ -874,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionFixedResponse {
 	StatusCode: *f64,
@@ -906,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionForward {
 	TargetGroups: interface{},
@@ -940,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleActionForwardTargetGroups {
 	TargetGroupIdentifier: *string,
@@ -986,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleConfig {
 	Connection: interface{},
@@ -996,16 +1102,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleAction,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleAction,
 	ListenerIdentifier: *string,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleMatch,
 	Name: *string,
 	Priority: *f64,
 	ServiceIdentifier: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts,
 }
 ```
 
@@ -1237,10 +1343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatch {
-	HttpMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch,
+	HttpMatch: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch,
 }
 ```
 
@@ -1271,12 +1377,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatch {
 	HeaderMatches: interface{},
 	Method: *string,
-	PathMatch: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch,
+	PathMatch: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch,
 }
 ```
 
@@ -1335,10 +1441,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchHeaderMatches {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch,
 	Name: *string,
 	CaseSensitive: interface{},
 }
@@ -1397,7 +1503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch {
 	Contains: *string,
@@ -1457,10 +1563,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchPathMatch {
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch,
 	CaseSensitive: interface{},
 }
 ```
@@ -1505,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatch {
 	Exact: *string,
@@ -1551,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 &vpclatticelistenerrule.VpclatticeListenerRuleTimeouts {
 	Create: *string,
@@ -1613,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionFixedResponseOutputReference
 ```
@@ -1884,7 +1990,7 @@ func InternalValue() VpclatticeListenerRuleActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionForwardOutputReference
 ```
@@ -2168,7 +2274,7 @@ func InternalValue() VpclatticeListenerRuleActionForward
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardTargetGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerRuleActionForwardTargetGroupsList
 ```
@@ -2311,7 +2417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionForwardTargetGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionForwardTargetGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerRuleActionForwardTargetGroupsOutputReference
 ```
@@ -2629,7 +2735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleActionOutputReference
 ```
@@ -2962,7 +3068,7 @@ func InternalValue() VpclatticeListenerRuleAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList
 ```
@@ -3105,7 +3211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatchOutputReference
 ```
@@ -3441,7 +3547,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchHeaderMatchesMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpclatticeListenerRuleMatchHttpMatchHeaderMatchesOutputReference
 ```
@@ -3794,7 +3900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchOutputReference
 ```
@@ -4156,7 +4262,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchPathMatchMatchOutputReference
 ```
@@ -4463,7 +4569,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchPathMatchMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchHttpMatchPathMatchOutputReference
 ```
@@ -4776,7 +4882,7 @@ func InternalValue() VpclatticeListenerRuleMatchHttpMatchPathMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleMatchOutputReference
 ```
@@ -5067,7 +5173,7 @@ func InternalValue() VpclatticeListenerRuleMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeListenerRule.VpclatticeListenerRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticelistenerrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticelistenerrule"
 
 vpclatticelistenerrule.NewVpclatticeListenerRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeListenerRuleTimeoutsOutputReference
 ```

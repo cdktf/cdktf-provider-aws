@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociation(scope Construct, id *string, config CodegurureviewerRepositoryAssociationConfig) CodegurureviewerRepositoryAssociation
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.putKmsKeyDetails">PutKmsKeyDetails</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.putRepository">PutRepository</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -144,6 +147,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.getAnyMapAttribute"></a>
 
@@ -253,6 +272,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.interpolationForAttribute"></a>
 
 ```go
@@ -262,6 +299,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -338,13 +399,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CodegurureviewerRepositoryAssociation resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +452,7 @@ codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -398,6 +460,50 @@ codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_IsTe
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
+
+codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a CodegurureviewerRepositoryAssociation resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the CodegurureviewerRepositoryAssociation to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing CodegurureviewerRepositoryAssociation that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/codegurureviewer_repository_association#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociation.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the CodegurureviewerRepositoryAssociation to import is found.
 
 ---
 
@@ -820,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationConfig {
 	Connection: interface{},
@@ -830,12 +936,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositor
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Repository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepository,
+	Repository: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepository,
 	Id: *string,
-	KmsKeyDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationKmsKeyDetails,
+	KmsKeyDetails: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationKmsKeyDetails,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationTimeouts,
 }
 ```
 
@@ -1015,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationKmsKeyDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationKmsKeyDetails {
 	EncryptionOption: *string,
@@ -1061,13 +1167,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationRepository {
-	Bitbucket: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryBitbucket,
-	Codecommit: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryCodecommit,
-	GithubEnterpriseServer: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer,
-	S3Bucket: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryS3Bucket,
+	Bitbucket: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryBitbucket,
+	Codecommit: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryCodecommit,
+	GithubEnterpriseServer: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer,
+	S3Bucket: github.com/cdktf/cdktf-provider-aws-go/aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryS3Bucket,
 }
 ```
 
@@ -1143,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryBitbucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationRepositoryBitbucket {
 	ConnectionArn: *string,
@@ -1203,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryCodecommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationRepositoryCodecommit {
 	Name: *string,
@@ -1235,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServer {
 	ConnectionArn: *string,
@@ -1295,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryS3Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationRepositoryS3Bucket {
 	BucketName: *string,
@@ -1341,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationS3RepositoryDetails {
 
@@ -1354,7 +1460,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositor
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifacts {
 
@@ -1367,7 +1473,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositor
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 &codegurureviewerrepositoryassociation.CodegurureviewerRepositoryAssociationTimeouts {
 	Create: *string,
@@ -1429,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationKmsKeyDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationKmsKeyDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationKmsKeyDetailsOutputReference
 ```
@@ -1736,7 +1842,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationKmsKeyDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryBitbucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationRepositoryBitbucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationRepositoryBitbucketOutputReference
 ```
@@ -2051,7 +2157,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationRepositoryBitbucket
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryCodecommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationRepositoryCodecommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationRepositoryCodecommitOutputReference
 ```
@@ -2322,7 +2428,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationRepositoryCodecommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationRepositoryGithubEnterpriseServerOutputReference
 ```
@@ -2637,7 +2743,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationRepositoryGithubEnterp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationRepositoryOutputReference
 ```
@@ -3054,7 +3160,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationRepository
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationRepositoryS3BucketOutputReference
 ```
@@ -3347,7 +3453,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationRepositoryS3Bucket
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsList
 ```
@@ -3479,7 +3585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodegurureviewerRepositoryAssociationS3RepositoryDetailsCodeArtifactsOutputReference
 ```
@@ -3768,7 +3874,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationS3RepositoryDetailsCod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationS3RepositoryDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodegurureviewerRepositoryAssociationS3RepositoryDetailsList
 ```
@@ -3900,7 +4006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationS3RepositoryDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationS3RepositoryDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodegurureviewerRepositoryAssociationS3RepositoryDetailsOutputReference
 ```
@@ -4189,7 +4295,7 @@ func InternalValue() CodegurureviewerRepositoryAssociationS3RepositoryDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codegurureviewerRepositoryAssociation.CodegurureviewerRepositoryAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codegurureviewerrepositoryassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codegurureviewerrepositoryassociation"
 
 codegurureviewerrepositoryassociation.NewCodegurureviewerRepositoryAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodegurureviewerRepositoryAssociationTimeoutsOutputReference
 ```

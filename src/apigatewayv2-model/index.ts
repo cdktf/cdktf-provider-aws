@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apigatewayv2_model
 // generated from terraform resource schema
 
@@ -50,6 +45,20 @@ export class Apigatewayv2Model extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_apigatewayv2_model";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Apigatewayv2Model resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Apigatewayv2Model to import
+  * @param importFromId The id of the existing Apigatewayv2Model that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apigatewayv2_model#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Apigatewayv2Model to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_apigatewayv2_model", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifier(scope Construct, id *string, config ComprehendDocumentClassifierConfig) ComprehendDocumentClassifier
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.putInputDataConfig">PutInputDataConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.putOutputDataConfig">PutOutputDataConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -393,13 +454,14 @@ func ResetVpcConfig()
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ComprehendDocumentClassifier resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.ComprehendDocumentClassifier_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.ComprehendDocumentClassifier_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +507,7 @@ comprehenddocumentclassifier.ComprehendDocumentClassifier_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.ComprehendDocumentClassifier_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,6 +515,50 @@ comprehenddocumentclassifier.ComprehendDocumentClassifier_IsTerraformResource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
+
+comprehenddocumentclassifier.ComprehendDocumentClassifier_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ComprehendDocumentClassifier resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ComprehendDocumentClassifier to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ComprehendDocumentClassifier that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/comprehend_document_classifier#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ComprehendDocumentClassifier to import is found.
 
 ---
 
@@ -985,7 +1091,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierConfig {
 	Connection: interface{},
@@ -996,20 +1102,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassif
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DataAccessRoleArn: *string,
-	InputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig,
+	InputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig,
 	LanguageCode: *string,
 	Name: *string,
 	Id: *string,
 	Mode: *string,
 	ModelKmsKeyId: *string,
-	OutputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig,
+	OutputDataConfig: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts,
 	VersionName: *string,
 	VersionNamePrefix: *string,
 	VolumeKmsKeyId: *string,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig,
 }
 ```
 
@@ -1308,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierInputDataConfig {
 	AugmentedManifests: interface{},
@@ -1398,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests {
 	AttributeNames: *[]*string,
@@ -1500,7 +1606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierOutputDataConfig {
 	S3Uri: *string,
@@ -1546,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierTimeouts {
 	Create: *string,
@@ -1606,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 &comprehenddocumentclassifier.ComprehendDocumentClassifierVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -1654,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList
 ```
@@ -1797,7 +1903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference
 ```
@@ -2224,7 +2330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierInputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierInputDataConfigOutputReference
 ```
@@ -2631,7 +2737,7 @@ func InternalValue() ComprehendDocumentClassifierInputDataConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierOutputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierOutputDataConfigOutputReference
 ```
@@ -2942,7 +3048,7 @@ func InternalValue() ComprehendDocumentClassifierOutputDataConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierTimeoutsOutputReference
 ```
@@ -3278,7 +3384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/comprehenddocumentclassifier"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/comprehenddocumentclassifier"
 
 comprehenddocumentclassifier.NewComprehendDocumentClassifierVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierVpcConfigOutputReference
 ```

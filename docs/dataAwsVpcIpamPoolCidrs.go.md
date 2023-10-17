@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrs(scope Construct, id *string, config DataAwsVpcIpamPoolCidrsConfig) DataAwsVpcIpamPoolCidrs
 ```
@@ -311,13 +311,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsVpcIpamPoolCidrs resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +364,7 @@ dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,6 +372,50 @@ dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
+
+dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsVpcIpamPoolCidrs resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsVpcIpamPoolCidrs to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsVpcIpamPoolCidrs that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/vpc_ipam_pool_cidrs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrs.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsVpcIpamPoolCidrs to import is found.
 
 ---
 
@@ -639,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 &dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrsConfig {
 	Connection: interface{},
@@ -652,7 +697,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
 	IpamPoolId: *string,
 	Filter: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsTimeouts,
 }
 ```
 
@@ -804,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 &dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrsFilter {
 	Name: *string,
@@ -850,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsIpamPoolCidrs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 &dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrsIpamPoolCidrs {
 
@@ -863,7 +908,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 &dataawsvpcipampoolcidrs.DataAwsVpcIpamPoolCidrsTimeouts {
 	Read: *string,
@@ -897,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamPoolCidrsFilterList
 ```
@@ -1040,7 +1085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamPoolCidrsFilterOutputReference
 ```
@@ -1351,7 +1396,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsIpamPoolCidrsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrsIpamPoolCidrsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcIpamPoolCidrsIpamPoolCidrsList
 ```
@@ -1483,7 +1528,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcIpamPoolCidrsIpamPoolCidrsOutputReference
 ```
@@ -1772,7 +1817,7 @@ func InternalValue() DataAwsVpcIpamPoolCidrsIpamPoolCidrs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpcIpamPoolCidrs.DataAwsVpcIpamPoolCidrsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsvpcipampoolcidrs"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpcipampoolcidrs"
 
 dataawsvpcipampoolcidrs.NewDataAwsVpcIpamPoolCidrsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcIpamPoolCidrsTimeoutsOutputReference
 ```

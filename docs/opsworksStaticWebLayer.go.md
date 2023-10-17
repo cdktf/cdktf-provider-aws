@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayer(scope Construct, id *string, config OpsworksStaticWebLayerConfig) OpsworksStaticWebLayer
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.putCloudwatchConfiguration">PutCloudwatchConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.putEbsVolume">PutEbsVolume</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.putLoadBasedAutoScaling">PutLoadBasedAutoScaling</a></code> | *No description.* |
@@ -163,6 +166,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.getAnyMapAttribute"></a>
 
@@ -272,6 +291,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.interpolationForAttribute"></a>
 
 ```go
@@ -281,6 +318,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -471,13 +532,14 @@ func ResetUseEbsOptimizedInstances()
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a OpsworksStaticWebLayer resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.OpsworksStaticWebLayer_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.OpsworksStaticWebLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +585,7 @@ opsworksstaticweblayer.OpsworksStaticWebLayer_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.OpsworksStaticWebLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -531,6 +593,50 @@ opsworksstaticweblayer.OpsworksStaticWebLayer_IsTerraformResource(x interface{})
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
+
+opsworksstaticweblayer.OpsworksStaticWebLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a OpsworksStaticWebLayer resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the OpsworksStaticWebLayer to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing OpsworksStaticWebLayer that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opsworks_static_web_layer#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the OpsworksStaticWebLayer to import is found.
 
 ---
 
@@ -1283,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1331,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1503,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerConfig {
 	Connection: interface{},
@@ -1517,7 +1623,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1532,7 +1638,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -1964,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerEbsVolume {
 	MountPoint: *string,
@@ -2080,12 +2186,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2144,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2260,7 +2366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 &opsworksstaticweblayer.OpsworksStaticWebLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2378,7 +2484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2521,7 +2627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksStaticWebLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3093,7 +3199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStaticWebLayerCloudwatchConfigurationOutputReference
 ```
@@ -3413,7 +3519,7 @@ func InternalValue() OpsworksStaticWebLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksStaticWebLayerEbsVolumeList
 ```
@@ -3556,7 +3662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksStaticWebLayerEbsVolumeOutputReference
 ```
@@ -4005,7 +4111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStaticWebLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4457,7 +4563,7 @@ func InternalValue() OpsworksStaticWebLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4819,7 +4925,7 @@ func InternalValue() OpsworksStaticWebLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksstaticweblayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksstaticweblayer"
 
 opsworksstaticweblayer.NewOpsworksStaticWebLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksStaticWebLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

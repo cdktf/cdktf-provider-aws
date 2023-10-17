@@ -127,6 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -136,7 +137,9 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -204,6 +207,22 @@ public java.lang.Object toTerraform()
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.getAnyMapAttribute"></a>
 
@@ -313,6 +332,25 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.interpolationForAttribute"></a>
 
 ```java
@@ -322,6 +360,31 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* java.lang.String
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -338,6 +401,7 @@ public void resetId()
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a RamSharingWithOrganization resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -398,6 +462,50 @@ RamSharingWithOrganization.isTerraformResource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformResource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.aws.ram_sharing_with_organization.RamSharingWithOrganization;
+
+RamSharingWithOrganization.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),RamSharingWithOrganization.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a RamSharingWithOrganization resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the RamSharingWithOrganization to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing RamSharingWithOrganization that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ram_sharing_with_organization#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the RamSharingWithOrganization to import is found.
 
 ---
 

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfiguration(scope Construct, id *string, config IotIndexingConfigurationConfig) IotIndexingConfiguration
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.putThingGroupIndexingConfiguration">PutThingGroupIndexingConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.putThingIndexingConfiguration">PutThingIndexingConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.resetId">ResetId</a></code> | *No description.* |
@@ -141,6 +144,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.getAnyMapAttribute"></a>
 
@@ -250,6 +269,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.interpolationForAttribute"></a>
 
 ```go
@@ -259,6 +296,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -311,13 +372,14 @@ func ResetThingIndexingConfiguration()
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a IotIndexingConfiguration resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +425,7 @@ iotindexingconfiguration.IotIndexingConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.IotIndexingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -371,6 +433,50 @@ iotindexingconfiguration.IotIndexingConfiguration_IsTerraformResource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
+
+iotindexingconfiguration.IotIndexingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a IotIndexingConfiguration resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the IotIndexingConfiguration to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing IotIndexingConfiguration that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iot_indexing_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the IotIndexingConfiguration to import is found.
 
 ---
 
@@ -628,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationConfig {
 	Connection: interface{},
@@ -639,8 +745,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	ThingGroupIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration,
-	ThingIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration,
+	ThingGroupIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration,
+	ThingIndexingConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration,
 }
 ```
 
@@ -779,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration {
 	ThingGroupIndexingMode: *string,
@@ -843,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField {
 	Name: *string,
@@ -889,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField {
 	Name: *string,
@@ -935,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfiguration {
 	ThingIndexingMode: *string,
@@ -1041,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField {
 	Name: *string,
@@ -1087,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 &iotindexingconfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField {
 	Name: *string,
@@ -1135,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList
 ```
@@ -1278,7 +1384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference
 ```
@@ -1603,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList
 ```
@@ -1746,7 +1852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference
 ```
@@ -2071,7 +2177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingGroupIndexingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference
 ```
@@ -2426,7 +2532,7 @@ func InternalValue() IotIndexingConfigurationThingGroupIndexingConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingIndexingConfigurationCustomFieldList
 ```
@@ -2569,7 +2675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference
 ```
@@ -2894,7 +3000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationManagedFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotIndexingConfigurationThingIndexingConfigurationManagedFieldList
 ```
@@ -3037,7 +3143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference
 ```
@@ -3362,7 +3468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotindexingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotindexingconfiguration"
 
 iotindexingconfiguration.NewIotIndexingConfigurationThingIndexingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotIndexingConfigurationThingIndexingConfigurationOutputReference
 ```
