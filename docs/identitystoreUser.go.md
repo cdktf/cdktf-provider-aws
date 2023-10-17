@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUser(scope Construct, id *string, config IdentitystoreUserConfig) IdentitystoreUser
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.putAddresses">PutAddresses</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.putEmails">PutEmails</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.putName">PutName</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -393,13 +454,14 @@ func ResetUserType()
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a IdentitystoreUser resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.IdentitystoreUser_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.IdentitystoreUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +507,7 @@ identitystoreuser.IdentitystoreUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.IdentitystoreUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,6 +515,50 @@ identitystoreuser.IdentitystoreUser_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
+
+identitystoreuser.IdentitystoreUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a IdentitystoreUser resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the IdentitystoreUser to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing IdentitystoreUser that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/identitystore_user#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUser.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the IdentitystoreUser to import is found.
 
 ---
 
@@ -996,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserAddresses {
 	Country: *string,
@@ -1126,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserConfig {
 	Connection: interface{},
@@ -1138,14 +1244,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	IdentityStoreId: *string,
-	Name: github.com/cdktf/cdktf-provider-aws-go/aws/v18.identitystoreUser.IdentitystoreUserName,
+	Name: github.com/cdktf/cdktf-provider-aws-go/aws.identitystoreUser.IdentitystoreUserName,
 	UserName: *string,
-	Addresses: github.com/cdktf/cdktf-provider-aws-go/aws/v18.identitystoreUser.IdentitystoreUserAddresses,
-	Emails: github.com/cdktf/cdktf-provider-aws-go/aws/v18.identitystoreUser.IdentitystoreUserEmails,
+	Addresses: github.com/cdktf/cdktf-provider-aws-go/aws.identitystoreUser.IdentitystoreUserAddresses,
+	Emails: github.com/cdktf/cdktf-provider-aws-go/aws.identitystoreUser.IdentitystoreUserEmails,
 	Id: *string,
 	Locale: *string,
 	Nickname: *string,
-	PhoneNumbers: github.com/cdktf/cdktf-provider-aws-go/aws/v18.identitystoreUser.IdentitystoreUserPhoneNumbers,
+	PhoneNumbers: github.com/cdktf/cdktf-provider-aws-go/aws.identitystoreUser.IdentitystoreUserPhoneNumbers,
 	PreferredLanguage: *string,
 	ProfileUrl: *string,
 	Timezone: *string,
@@ -1449,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserEmails {
 	Primary: interface{},
@@ -1509,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserExternalIds {
 
@@ -1522,7 +1628,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserName {
 	FamilyName: *string,
@@ -1624,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 &identitystoreuser.IdentitystoreUserPhoneNumbers {
 	Primary: interface{},
@@ -1686,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentitystoreUserAddressesOutputReference
 ```
@@ -2167,7 +2273,7 @@ func InternalValue() IdentitystoreUserAddresses
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserEmailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentitystoreUserEmailsOutputReference
 ```
@@ -2503,7 +2609,7 @@ func InternalValue() IdentitystoreUserEmails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentitystoreUserExternalIdsList
 ```
@@ -2635,7 +2741,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentitystoreUserExternalIdsOutputReference
 ```
@@ -2924,7 +3030,7 @@ func InternalValue() IdentitystoreUserExternalIds
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentitystoreUserNameOutputReference
 ```
@@ -3333,7 +3439,7 @@ func InternalValue() IdentitystoreUserName
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/identitystoreuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/identitystoreuser"
 
 identitystoreuser.NewIdentitystoreUserPhoneNumbersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentitystoreUserPhoneNumbersOutputReference
 ```

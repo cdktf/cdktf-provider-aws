@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.NewDataAwsRoute53ResolverFirewallRules(scope Construct, id *string, config DataAwsRoute53ResolverFirewallRulesConfig) DataAwsRoute53ResolverFirewallRules
 ```
@@ -285,13 +285,14 @@ func ResetPriority()
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsRoute53ResolverFirewallRules resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +338,7 @@ dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,6 +346,50 @@ dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_IsTerraf
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
+
+dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsRoute53ResolverFirewallRules resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsRoute53ResolverFirewallRules to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsRoute53ResolverFirewallRules that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/route53_resolver_firewall_rules#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRules.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsRoute53ResolverFirewallRules to import is found.
 
 ---
 
@@ -613,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 &dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRulesConfig {
 	Connection: interface{},
@@ -774,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 &dataawsroute53resolverfirewallrules.DataAwsRoute53ResolverFirewallRulesFirewallRules {
 
@@ -789,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfir
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.NewDataAwsRoute53ResolverFirewallRulesFirewallRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53ResolverFirewallRulesFirewallRulesList
 ```
@@ -921,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverfirewallrules"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverfirewallrules"
 
 dataawsroute53resolverfirewallrules.NewDataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference
 ```

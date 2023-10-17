@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/account_primary_contact
 // generated from terraform resource schema
 
@@ -82,6 +77,20 @@ export class AccountPrimaryContact extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_account_primary_contact";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AccountPrimaryContact resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AccountPrimaryContact to import
+  * @param importFromId The id of the existing AccountPrimaryContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/account_primary_contact#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AccountPrimaryContact to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_account_primary_contact", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

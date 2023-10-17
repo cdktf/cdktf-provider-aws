@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfiguration(scope Construct, id *string, config S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putErrorDocument">PutErrorDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putIndexDocument">PutIndexDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putRedirectAllRequestsTo">PutRedirectAllRequestsTo</a></code> | *No description.* |
@@ -147,6 +150,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.getAnyMapAttribute"></a>
 
@@ -256,6 +275,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.interpolationForAttribute"></a>
 
 ```go
@@ -265,6 +302,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -365,13 +426,14 @@ func ResetRoutingRules()
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a S3BucketWebsiteConfiguration resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +479,7 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -425,6 +487,50 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
+
+s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a S3BucketWebsiteConfiguration resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the S3BucketWebsiteConfiguration to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing S3BucketWebsiteConfiguration that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the S3BucketWebsiteConfiguration to import is found.
 
 ---
 
@@ -814,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationConfig {
 	Connection: interface{},
@@ -825,11 +931,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfigurat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	ErrorDocument: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
+	ErrorDocument: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
 	ExpectedBucketOwner: *string,
 	Id: *string,
-	IndexDocument: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
-	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
+	IndexDocument: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
+	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
 	RoutingRule: interface{},
 	RoutingRules: *string,
 }
@@ -1039,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationErrorDocument {
 	Key: *string,
@@ -1071,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationIndexDocument {
 	Suffix: *string,
@@ -1103,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo {
 	HostName: *string,
@@ -1149,11 +1255,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRule {
-	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
-	Condition: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
+	Redirect: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
+	Condition: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
 }
 ```
 
@@ -1199,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition {
 	HttpErrorCodeReturnedEquals: *string,
@@ -1245,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect {
 	HostName: *string,
@@ -1335,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationErrorDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationErrorDocumentOutputReference
 ```
@@ -1606,7 +1712,7 @@ func InternalValue() S3BucketWebsiteConfigurationErrorDocument
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationIndexDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationIndexDocumentOutputReference
 ```
@@ -1877,7 +1983,7 @@ func InternalValue() S3BucketWebsiteConfigurationIndexDocument
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
 ```
@@ -2177,7 +2283,7 @@ func InternalValue() S3BucketWebsiteConfigurationRedirectAllRequestsTo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference
 ```
@@ -2484,7 +2590,7 @@ func InternalValue() S3BucketWebsiteConfigurationRoutingRuleCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketWebsiteConfigurationRoutingRuleList
 ```
@@ -2627,7 +2733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketWebsiteConfigurationRoutingRuleOutputReference
 ```
@@ -2971,7 +3077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference
 ```

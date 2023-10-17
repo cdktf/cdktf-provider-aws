@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/location_geofence_collection
 // generated from terraform resource schema
 
@@ -185,6 +180,20 @@ export class LocationGeofenceCollection extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_location_geofence_collection";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LocationGeofenceCollection resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LocationGeofenceCollection to import
+  * @param importFromId The id of the existing LocationGeofenceCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/location_geofence_collection#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LocationGeofenceCollection to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_location_geofence_collection", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

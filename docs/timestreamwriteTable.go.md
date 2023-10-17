@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTable(scope Construct, id *string, config TimestreamwriteTableConfig) TimestreamwriteTable
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putMagneticStoreWriteProperties">PutMagneticStoreWriteProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putRetentionProperties">PutRetentionProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.putSchema">PutSchema</a></code> | *No description.* |
@@ -145,6 +148,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.getAnyMapAttribute"></a>
 
@@ -254,6 +273,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.interpolationForAttribute"></a>
 
 ```go
@@ -263,6 +300,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -345,13 +406,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TimestreamwriteTable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.TimestreamwriteTable_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.TimestreamwriteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +459,7 @@ timestreamwritetable.TimestreamwriteTable_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.TimestreamwriteTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -405,6 +467,50 @@ timestreamwritetable.TimestreamwriteTable_IsTerraformResource(x interface{}) *bo
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
+
+timestreamwritetable.TimestreamwriteTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a TimestreamwriteTable resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the TimestreamwriteTable to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing TimestreamwriteTable that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/timestreamwrite_table#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTable.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the TimestreamwriteTable to import is found.
 
 ---
 
@@ -783,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableConfig {
 	Connection: interface{},
@@ -796,9 +902,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
 	DatabaseName: *string,
 	TableName: *string,
 	Id: *string,
-	MagneticStoreWriteProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties,
-	RetentionProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableRetentionProperties,
-	Schema: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableSchema,
+	MagneticStoreWriteProperties: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties,
+	RetentionProperties: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties,
+	Schema: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableSchema,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1006,11 +1112,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWriteProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableMagneticStoreWriteProperties {
 	EnableMagneticStoreWrites: interface{},
-	MagneticStoreRejectedDataLocation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation,
+	MagneticStoreRejectedDataLocation: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation,
 }
 ```
 
@@ -1054,10 +1160,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocation {
-	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration,
+	S3Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration,
 }
 ```
 
@@ -1088,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3Configuration {
 	BucketName: *string,
@@ -1162,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableRetentionProperties {
 	MagneticStoreRetentionPeriodInDays: *f64,
@@ -1208,10 +1314,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableSchema {
-	CompositePartitionKey: github.com/cdktf/cdktf-provider-aws-go/aws/v18.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey,
+	CompositePartitionKey: github.com/cdktf/cdktf-provider-aws-go/aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey,
 }
 ```
 
@@ -1242,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 &timestreamwritetable.TimestreamwriteTableSchemaCompositePartitionKey {
 	Type: *string,
@@ -1304,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference
 ```
@@ -1595,7 +1701,7 @@ func InternalValue() TimestreamwriteTableMagneticStoreWritePropertiesMagneticSto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationS3ConfigurationOutputReference
 ```
@@ -1960,7 +2066,7 @@ func InternalValue() TimestreamwriteTableMagneticStoreWritePropertiesMagneticSto
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableMagneticStoreWritePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableMagneticStoreWritePropertiesOutputReference
 ```
@@ -2280,7 +2386,7 @@ func InternalValue() TimestreamwriteTableMagneticStoreWriteProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableRetentionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableRetentionPropertiesOutputReference
 ```
@@ -2573,7 +2679,7 @@ func InternalValue() TimestreamwriteTableRetentionProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaCompositePartitionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableSchemaCompositePartitionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableSchemaCompositePartitionKeyOutputReference
 ```
@@ -2902,7 +3008,7 @@ func InternalValue() TimestreamwriteTableSchemaCompositePartitionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/timestreamwritetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/timestreamwritetable"
 
 timestreamwritetable.NewTimestreamwriteTableSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TimestreamwriteTableSchemaOutputReference
 ```

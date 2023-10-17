@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpoint(scope Construct, id *string, config CloudwatchEventEndpointConfig) CloudwatchEventEndpoint
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.putEventBus">PutEventBus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.putReplicationConfig">PutReplicationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.putRoutingConfig">PutRoutingConfig</a></code> | *No description.* |
@@ -143,6 +146,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.getAnyMapAttribute"></a>
 
@@ -252,6 +271,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.interpolationForAttribute"></a>
 
 ```go
@@ -261,6 +298,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -331,13 +392,14 @@ func ResetRoleArn()
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CloudwatchEventEndpoint resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.CloudwatchEventEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.CloudwatchEventEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +445,7 @@ cloudwatcheventendpoint.CloudwatchEventEndpoint_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.CloudwatchEventEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -391,6 +453,50 @@ cloudwatcheventendpoint.CloudwatchEventEndpoint_IsTerraformResource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
+
+cloudwatcheventendpoint.CloudwatchEventEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a CloudwatchEventEndpoint resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the CloudwatchEventEndpoint to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing CloudwatchEventEndpoint that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/cloudwatch_event_endpoint#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpoint.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the CloudwatchEventEndpoint to import is found.
 
 ---
 
@@ -758,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointConfig {
 	Connection: interface{},
@@ -770,10 +876,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
 	Provisioners: *[]interface{},
 	EventBus: interface{},
 	Name: *string,
-	RoutingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfig,
+	RoutingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfig,
 	Description: *string,
 	Id: *string,
-	ReplicationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventEndpoint.CloudwatchEventEndpointReplicationConfig,
+	ReplicationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventEndpoint.CloudwatchEventEndpointReplicationConfig,
 	RoleArn: *string,
 }
 ```
@@ -967,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointEventBus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointEventBus {
 	EventBusArn: *string,
@@ -999,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointReplicationConfig {
 	State: *string,
@@ -1031,10 +1137,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointRoutingConfig {
-	FailoverConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfig,
+	FailoverConfig: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfig,
 }
 ```
 
@@ -1065,11 +1171,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointRoutingConfigFailoverConfig {
-	Primary: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary,
-	Secondary: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary,
+	Primary: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary,
+	Secondary: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary,
 }
 ```
 
@@ -1115,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary {
 	HealthCheck: *string,
@@ -1147,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 &cloudwatcheventendpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary {
 	Route: *string,
@@ -1181,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointEventBusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointEventBusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventEndpointEventBusList
 ```
@@ -1324,7 +1430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointEventBusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointEventBusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventEndpointEventBusOutputReference
 ```
@@ -1613,7 +1719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointReplicationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointReplicationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventEndpointReplicationConfigOutputReference
 ```
@@ -1891,7 +1997,7 @@ func InternalValue() CloudwatchEventEndpointReplicationConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventEndpointRoutingConfigFailoverConfigOutputReference
 ```
@@ -2210,7 +2316,7 @@ func InternalValue() CloudwatchEventEndpointRoutingConfigFailoverConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventEndpointRoutingConfigFailoverConfigPrimaryOutputReference
 ```
@@ -2488,7 +2594,7 @@ func InternalValue() CloudwatchEventEndpointRoutingConfigFailoverConfigPrimary
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventEndpointRoutingConfigFailoverConfigSecondaryOutputReference
 ```
@@ -2766,7 +2872,7 @@ func InternalValue() CloudwatchEventEndpointRoutingConfigFailoverConfigSecondary
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventEndpoint.CloudwatchEventEndpointRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventendpoint"
 
 cloudwatcheventendpoint.NewCloudwatchEventEndpointRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventEndpointRoutingConfigOutputReference
 ```

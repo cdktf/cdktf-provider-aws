@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfiguration(scope Construct, id *string, config LaunchConfigurationConfig) LaunchConfiguration
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.putEbsBlockDevice">PutEbsBlockDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.putEphemeralBlockDevice">PutEphemeralBlockDevice</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.putMetadataOptions">PutMetadataOptions</a></code> | *No description.* |
@@ -157,6 +160,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.getAnyMapAttribute"></a>
 
@@ -266,6 +285,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.interpolationForAttribute"></a>
 
 ```go
@@ -275,6 +312,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -435,13 +496,14 @@ func ResetUserDataBase64()
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LaunchConfiguration resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +549,7 @@ launchconfiguration.LaunchConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,6 +557,50 @@ launchconfiguration.LaunchConfiguration_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
+
+launchconfiguration.LaunchConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a LaunchConfiguration resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the LaunchConfiguration to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing LaunchConfiguration that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/launch_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.launchConfiguration.LaunchConfiguration.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the LaunchConfiguration to import is found.
 
 ---
 
@@ -1115,7 +1221,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationConfig {
 	Connection: interface{},
@@ -1135,11 +1241,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
 	IamInstanceProfile: *string,
 	Id: *string,
 	KeyName: *string,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchConfiguration.LaunchConfigurationMetadataOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchConfiguration.LaunchConfigurationMetadataOptions,
 	Name: *string,
 	NamePrefix: *string,
 	PlacementTenancy: *string,
-	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchConfiguration.LaunchConfigurationRootBlockDevice,
+	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws.launchConfiguration.LaunchConfigurationRootBlockDevice,
 	SecurityGroups: *[]*string,
 	SpotPrice: *string,
 	UserData: *string,
@@ -1494,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEbsBlockDevice {
 	DeviceName: *string,
@@ -1638,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationEphemeralBlockDevice {
 	DeviceName: *string,
@@ -1698,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationMetadataOptions {
 	HttpEndpoint: *string,
@@ -1758,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 &launchconfiguration.LaunchConfigurationRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -1862,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEbsBlockDeviceList
 ```
@@ -2005,7 +2111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEbsBlockDeviceOutputReference
 ```
@@ -2526,7 +2632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchConfigurationEphemeralBlockDeviceList
 ```
@@ -2669,7 +2775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchConfigurationEphemeralBlockDeviceOutputReference
 ```
@@ -3016,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationMetadataOptionsOutputReference
 ```
@@ -3352,7 +3458,7 @@ func InternalValue() LaunchConfigurationMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchconfiguration"
 
 launchconfiguration.NewLaunchConfigurationRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchConfigurationRootBlockDeviceOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayer(scope Construct, id *string, config OpsworksPhpAppLayerConfig) OpsworksPhpAppLayer
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.putCloudwatchConfiguration">PutCloudwatchConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.putEbsVolume">PutEbsVolume</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.putLoadBasedAutoScaling">PutLoadBasedAutoScaling</a></code> | *No description.* |
@@ -163,6 +166,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.getAnyMapAttribute"></a>
 
@@ -272,6 +291,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.interpolationForAttribute"></a>
 
 ```go
@@ -281,6 +318,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -471,13 +532,14 @@ func ResetUseEbsOptimizedInstances()
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a OpsworksPhpAppLayer resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.OpsworksPhpAppLayer_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +585,7 @@ opsworksphpapplayer.OpsworksPhpAppLayer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.OpsworksPhpAppLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -531,6 +593,50 @@ opsworksphpapplayer.OpsworksPhpAppLayer_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
+
+opsworksphpapplayer.OpsworksPhpAppLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a OpsworksPhpAppLayer resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the OpsworksPhpAppLayer to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing OpsworksPhpAppLayer that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/opsworks_php_app_layer#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the OpsworksPhpAppLayer to import is found.
 
 ---
 
@@ -1283,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1331,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1503,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerConfig {
 	Connection: interface{},
@@ -1517,7 +1623,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1532,7 +1638,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScaling,
 	Name: *string,
 	SystemPackages: *[]*string,
 	Tags: *map[string]*string,
@@ -1964,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerEbsVolume {
 	MountPoint: *string,
@@ -2080,12 +2186,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2144,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2260,7 +2366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 &opsworksphpapplayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2378,7 +2484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2521,7 +2627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3093,7 +3199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksPhpAppLayerCloudwatchConfigurationOutputReference
 ```
@@ -3413,7 +3519,7 @@ func InternalValue() OpsworksPhpAppLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksPhpAppLayerEbsVolumeList
 ```
@@ -3556,7 +3662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksPhpAppLayerEbsVolumeOutputReference
 ```
@@ -4005,7 +4111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4457,7 +4563,7 @@ func InternalValue() OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference
 ```
@@ -4819,7 +4925,7 @@ func InternalValue() OpsworksPhpAppLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksphpapplayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksphpapplayer"
 
 opsworksphpapplayer.NewOpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

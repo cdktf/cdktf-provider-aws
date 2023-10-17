@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudget(scope Construct, id *string, config BudgetsBudgetConfig) BudgetsBudget
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.putAutoAdjustData">PutAutoAdjustData</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.putCostFilter">PutCostFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.putCostTypes">PutCostTypes</a></code> | *No description.* |
@@ -154,6 +157,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.getAnyMapAttribute"></a>
 
@@ -263,6 +282,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.interpolationForAttribute"></a>
 
 ```go
@@ -272,6 +309,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -420,13 +481,14 @@ func ResetTimePeriodStart()
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a BudgetsBudget resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +534,7 @@ budgetsbudget.BudgetsBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,6 +542,50 @@ budgetsbudget.BudgetsBudget_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
+
+budgetsbudget.BudgetsBudget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a BudgetsBudget resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the BudgetsBudget to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing BudgetsBudget that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/budgets_budget#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudget.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the BudgetsBudget to import is found.
 
 ---
 
@@ -1012,11 +1118,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustData {
 	AutoAdjustType: *string,
-	HistoricalOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
+	HistoricalOptions: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions,
 }
 ```
 
@@ -1060,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetAutoAdjustDataHistoricalOptions {
 	BudgetAdjustmentPeriod: *f64,
@@ -1092,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetConfig {
 	Connection: interface{},
@@ -1105,9 +1211,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
 	BudgetType: *string,
 	TimeUnit: *string,
 	AccountId: *string,
-	AutoAdjustData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.budgetsBudget.BudgetsBudgetAutoAdjustData,
+	AutoAdjustData: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetAutoAdjustData,
 	CostFilter: interface{},
-	CostTypes: github.com/cdktf/cdktf-provider-aws-go/aws/v18.budgetsBudget.BudgetsBudgetCostTypes,
+	CostTypes: github.com/cdktf/cdktf-provider-aws-go/aws.budgetsBudget.BudgetsBudgetCostTypes,
 	Id: *string,
 	LimitAmount: *string,
 	LimitUnit: *string,
@@ -1417,7 +1523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostFilter {
 	Name: *string,
@@ -1463,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetCostTypes {
 	IncludeCredit: interface{},
@@ -1635,7 +1741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetNotification {
 	ComparisonOperator: *string,
@@ -1737,7 +1843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 &budgetsbudget.BudgetsBudgetPlannedLimit {
 	Amount: *string,
@@ -1799,7 +1905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataHistoricalOptionsOutputReference
 ```
@@ -2081,7 +2187,7 @@ func InternalValue() BudgetsBudgetAutoAdjustDataHistoricalOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetAutoAdjustDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetAutoAdjustDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetAutoAdjustDataOutputReference
 ```
@@ -2405,7 +2511,7 @@ func InternalValue() BudgetsBudgetAutoAdjustData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetCostFilterList
 ```
@@ -2548,7 +2654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetCostFilterOutputReference
 ```
@@ -2859,7 +2965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetCostTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BudgetsBudgetCostTypesOutputReference
 ```
@@ -3427,7 +3533,7 @@ func InternalValue() BudgetsBudgetCostTypes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetNotificationList
 ```
@@ -3570,7 +3676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetNotificationOutputReference
 ```
@@ -3983,7 +4089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BudgetsBudgetPlannedLimitList
 ```
@@ -4126,7 +4232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/budgetsbudget"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/budgetsbudget"
 
 budgetsbudget.NewBudgetsBudgetPlannedLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BudgetsBudgetPlannedLimitOutputReference
 ```

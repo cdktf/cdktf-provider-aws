@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.Instance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstance(scope Construct, id *string, config InstanceConfig) Instance
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.instance.Instance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putCapacityReservationSpecification">PutCapacityReservationSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putCpuOptions">PutCpuOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.putCreditSpecification">PutCreditSpecification</a></code> | *No description.* |
@@ -200,6 +203,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.instance.Instance.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.instance.Instance.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.instance.Instance.getAnyMapAttribute"></a>
 
 ```go
@@ -308,6 +327,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.instance.Instance.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.instance.Instance.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.instance.Instance.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.instance.Instance.interpolationForAttribute"></a>
 
 ```go
@@ -317,6 +354,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.instance.Instance.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.instance.Instance.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.instance.Instance.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.instance.Instance.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -789,13 +850,14 @@ func ResetVpcSecurityGroupIds()
 | <code><a href="#@cdktf/provider-aws.instance.Instance.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.instance.Instance.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.instance.Instance.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Instance resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.instance.Instance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.Instance_IsConstruct(x interface{}) *bool
 ```
@@ -827,7 +889,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.instance.Instance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.Instance_IsTerraformElement(x interface{}) *bool
 ```
@@ -841,7 +903,7 @@ instance.Instance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.instance.Instance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.Instance_IsTerraformResource(x interface{}) *bool
 ```
@@ -849,6 +911,50 @@ instance.Instance_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.instance.Instance.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.instance.Instance.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
+
+instance.Instance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a Instance resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.instance.Instance.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.instance.Instance.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the Instance to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.instance.Instance.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing Instance that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/instance#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.instance.Instance.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the Instance to import is found.
 
 ---
 
@@ -2228,11 +2334,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceCapacityReservationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceCapacityReservationSpecification {
 	CapacityReservationPreference: *string,
-	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget,
+	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget,
 }
 ```
 
@@ -2276,7 +2382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceCapacityReservationSpecificationCapacityReservationTarget {
 	CapacityReservationId: *string,
@@ -2322,7 +2428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceConfig {
 	Connection: interface{},
@@ -2335,16 +2441,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
 	Ami: *string,
 	AssociatePublicIpAddress: interface{},
 	AvailabilityZone: *string,
-	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceCapacityReservationSpecification,
+	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceCapacityReservationSpecification,
 	CpuCoreCount: *f64,
-	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceCpuOptions,
+	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceCpuOptions,
 	CpuThreadsPerCore: *f64,
-	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceCreditSpecification,
+	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceCreditSpecification,
 	DisableApiStop: interface{},
 	DisableApiTermination: interface{},
 	EbsBlockDevice: interface{},
 	EbsOptimized: interface{},
-	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceEnclaveOptions,
+	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceEnclaveOptions,
 	EphemeralBlockDevice: interface{},
 	FetchPasswordData: interface{},
 	Hibernation: interface{},
@@ -2353,21 +2459,21 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
 	IamInstanceProfile: *string,
 	Id: *string,
 	InstanceInitiatedShutdownBehavior: *string,
-	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceInstanceMarketOptions,
+	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceInstanceMarketOptions,
 	InstanceType: *string,
 	Ipv6AddressCount: *f64,
 	Ipv6Addresses: *[]*string,
 	KeyName: *string,
-	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceLaunchTemplate,
-	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceMaintenanceOptions,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceMetadataOptions,
+	LaunchTemplate: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceLaunchTemplate,
+	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceMaintenanceOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceMetadataOptions,
 	Monitoring: interface{},
 	NetworkInterface: interface{},
 	PlacementGroup: *string,
 	PlacementPartitionNumber: *f64,
-	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstancePrivateDnsNameOptions,
+	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstancePrivateDnsNameOptions,
 	PrivateIp: *string,
-	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceRootBlockDevice,
+	RootBlockDevice: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceRootBlockDevice,
 	SecondaryPrivateIps: *[]*string,
 	SecurityGroups: *[]*string,
 	SourceDestCheck: interface{},
@@ -2375,7 +2481,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Tenancy: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceTimeouts,
 	UserData: *string,
 	UserDataBase64: *string,
 	UserDataReplaceOnChange: interface{},
@@ -3141,7 +3247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceCpuOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceCpuOptions {
 	AmdSevSnp: *string,
@@ -3201,7 +3307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceCreditSpecification {
 	CpuCredits: *string,
@@ -3233,7 +3339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceEbsBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceEbsBlockDevice {
 	DeviceName: *string,
@@ -3391,7 +3497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceEnclaveOptions {
 	Enabled: interface{},
@@ -3423,7 +3529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceEphemeralBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceEphemeralBlockDevice {
 	DeviceName: *string,
@@ -3483,11 +3589,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceInstanceMarketOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceInstanceMarketOptions {
 	MarketType: *string,
-	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.instance.InstanceInstanceMarketOptionsSpotOptions,
+	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws.instance.InstanceInstanceMarketOptionsSpotOptions,
 }
 ```
 
@@ -3531,7 +3637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceInstanceMarketOptionsSpotOptions {
 	InstanceInterruptionBehavior: *string,
@@ -3605,7 +3711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceLaunchTemplate {
 	Id: *string,
@@ -3668,7 +3774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceMaintenanceOptions {
 	AutoRecovery: *string,
@@ -3700,7 +3806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceMetadataOptions {
 	HttpEndpoint: *string,
@@ -3788,7 +3894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceNetworkInterface {
 	DeviceIndex: *f64,
@@ -3862,7 +3968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstancePrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstancePrivateDnsNameOptions {
 	EnableResourceNameDnsAaaaRecord: interface{},
@@ -3922,7 +4028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceRootBlockDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceRootBlockDevice {
 	DeleteOnTermination: interface{},
@@ -4052,7 +4158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.instance.InstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 &instance.InstanceTimeouts {
 	Create: *string,
@@ -4114,7 +4220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceCapacityReservationSpecificationCapacityReservationTargetOutputReference
 ```
@@ -4421,7 +4527,7 @@ func InternalValue() InstanceCapacityReservationSpecificationCapacityReservation
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceCapacityReservationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceCapacityReservationSpecificationOutputReference
 ```
@@ -4741,7 +4847,7 @@ func InternalValue() InstanceCapacityReservationSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceCpuOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceCpuOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceCpuOptionsOutputReference
 ```
@@ -5077,7 +5183,7 @@ func InternalValue() InstanceCpuOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceCreditSpecificationOutputReference
 ```
@@ -5355,7 +5461,7 @@ func InternalValue() InstanceCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceEbsBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceEbsBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstanceEbsBlockDeviceList
 ```
@@ -5498,7 +5604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceEbsBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstanceEbsBlockDeviceOutputReference
 ```
@@ -6059,7 +6165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceEnclaveOptionsOutputReference
 ```
@@ -6337,7 +6443,7 @@ func InternalValue() InstanceEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceEphemeralBlockDeviceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstanceEphemeralBlockDeviceList
 ```
@@ -6480,7 +6586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceEphemeralBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstanceEphemeralBlockDeviceOutputReference
 ```
@@ -6827,7 +6933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceInstanceMarketOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceInstanceMarketOptionsOutputReference
 ```
@@ -7147,7 +7253,7 @@ func InternalValue() InstanceInstanceMarketOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceInstanceMarketOptionsSpotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceInstanceMarketOptionsSpotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceInstanceMarketOptionsSpotOptionsOutputReference
 ```
@@ -7512,7 +7618,7 @@ func InternalValue() InstanceInstanceMarketOptionsSpotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceLaunchTemplateOutputReference
 ```
@@ -7848,7 +7954,7 @@ func InternalValue() InstanceLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceMaintenanceOptionsOutputReference
 ```
@@ -8126,7 +8232,7 @@ func InternalValue() InstanceMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceMetadataOptionsOutputReference
 ```
@@ -8520,7 +8626,7 @@ func InternalValue() InstanceMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InstanceNetworkInterfaceList
 ```
@@ -8663,7 +8769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InstanceNetworkInterfaceOutputReference
 ```
@@ -9032,7 +9138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstancePrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstancePrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstancePrivateDnsNameOptionsOutputReference
 ```
@@ -9368,7 +9474,7 @@ func InternalValue() InstancePrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceRootBlockDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceRootBlockDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceRootBlockDeviceOutputReference
 ```
@@ -9871,7 +9977,7 @@ func InternalValue() InstanceRootBlockDevice
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.instance.InstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/instance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/instance"
 
 instance.NewInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InstanceTimeoutsOutputReference
 ```

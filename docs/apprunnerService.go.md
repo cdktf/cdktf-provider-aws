@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerService(scope Construct, id *string, config ApprunnerServiceConfig) ApprunnerService
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.putEncryptionConfiguration">PutEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.putHealthCheckConfiguration">PutHealthCheckConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.putInstanceConfiguration">PutInstanceConfiguration</a></code> | *No description.* |
@@ -151,6 +154,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.getAnyMapAttribute"></a>
 
@@ -260,6 +279,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.interpolationForAttribute"></a>
 
 ```go
@@ -269,6 +306,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -405,13 +466,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ApprunnerService resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.ApprunnerService_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.ApprunnerService_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +519,7 @@ apprunnerservice.ApprunnerService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.ApprunnerService_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,6 +527,50 @@ apprunnerservice.ApprunnerService_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
+
+apprunnerservice.ApprunnerService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ApprunnerService resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ApprunnerService to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ApprunnerService that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apprunner_service#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apprunnerService.ApprunnerService.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ApprunnerService to import is found.
 
 ---
 
@@ -942,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceConfig {
 	Connection: interface{},
@@ -953,14 +1059,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ServiceName: *string,
-	SourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfiguration,
+	SourceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfiguration,
 	AutoScalingConfigurationArn: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceEncryptionConfiguration,
-	HealthCheckConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceHealthCheckConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceEncryptionConfiguration,
+	HealthCheckConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceHealthCheckConfiguration,
 	Id: *string,
-	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceInstanceConfiguration,
-	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceNetworkConfiguration,
-	ObservabilityConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceObservabilityConfiguration,
+	InstanceConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceInstanceConfiguration,
+	NetworkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceNetworkConfiguration,
+	ObservabilityConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceObservabilityConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1213,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceEncryptionConfiguration {
 	KmsKey: *string,
@@ -1245,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceHealthCheckConfiguration {
 	HealthyThreshold: *f64,
@@ -1347,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceInstanceConfiguration {
 	Cpu: *string,
@@ -1407,11 +1513,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceNetworkConfiguration {
-	EgressConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration,
-	IngressConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration,
+	EgressConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration,
+	IngressConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration,
 }
 ```
 
@@ -1457,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceNetworkConfigurationEgressConfiguration {
 	EgressType: *string,
@@ -1503,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceNetworkConfigurationIngressConfiguration {
 	IsPubliclyAccessible: interface{},
@@ -1535,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceObservabilityConfiguration {
 	ObservabilityEnabled: interface{},
@@ -1581,13 +1687,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfiguration {
-	AuthenticationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration,
+	AuthenticationConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration,
 	AutoDeploymentsEnabled: interface{},
-	CodeRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository,
-	ImageRepository: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository,
+	CodeRepository: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository,
+	ImageRepository: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository,
 }
 ```
 
@@ -1661,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationAuthenticationConfiguration {
 	AccessRoleArn: *string,
@@ -1707,12 +1813,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationCodeRepository {
 	RepositoryUrl: *string,
-	SourceCodeVersion: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion,
-	CodeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration,
+	SourceCodeVersion: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion,
+	CodeConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration,
 }
 ```
 
@@ -1771,11 +1877,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration {
 	ConfigurationSource: *string,
-	CodeConfigurationValues: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues,
+	CodeConfigurationValues: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues,
 }
 ```
 
@@ -1819,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValues {
 	Runtime: *string,
@@ -1921,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion {
 	Type: *string,
@@ -1967,12 +2073,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationImageRepository {
 	ImageIdentifier: *string,
 	ImageRepositoryType: *string,
-	ImageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration,
+	ImageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration,
 }
 ```
 
@@ -2029,7 +2135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 &apprunnerservice.ApprunnerServiceSourceConfigurationImageRepositoryImageConfiguration {
 	Port: *string,
@@ -2105,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceEncryptionConfigurationOutputReference
 ```
@@ -2376,7 +2482,7 @@ func InternalValue() ApprunnerServiceEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceHealthCheckConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceHealthCheckConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceHealthCheckConfigurationOutputReference
 ```
@@ -2799,7 +2905,7 @@ func InternalValue() ApprunnerServiceHealthCheckConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceInstanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceInstanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceInstanceConfigurationOutputReference
 ```
@@ -3135,7 +3241,7 @@ func InternalValue() ApprunnerServiceInstanceConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference
 ```
@@ -3442,7 +3548,7 @@ func InternalValue() ApprunnerServiceNetworkConfigurationEgressConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference
 ```
@@ -3720,7 +3826,7 @@ func InternalValue() ApprunnerServiceNetworkConfigurationIngressConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceNetworkConfigurationOutputReference
 ```
@@ -4053,7 +4159,7 @@ func InternalValue() ApprunnerServiceNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceObservabilityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceObservabilityConfigurationOutputReference
 ```
@@ -4353,7 +4459,7 @@ func InternalValue() ApprunnerServiceObservabilityConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationAuthenticationConfigurationOutputReference
 ```
@@ -4660,7 +4766,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationAuthenticationConfigurat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference
 ```
@@ -5076,7 +5182,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationOutputReference
 ```
@@ -5389,7 +5495,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationCodeRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference
 ```
@@ -5737,7 +5843,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationCodeRepository
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference
 ```
@@ -6030,7 +6136,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationCodeRepositorySourceCode
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference
 ```
@@ -6395,7 +6501,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationImageRepositoryImageConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationImageRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationImageRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationImageRepositoryOutputReference
 ```
@@ -6730,7 +6836,7 @@ func InternalValue() ApprunnerServiceSourceConfigurationImageRepository
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apprunnerService.ApprunnerServiceSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apprunnerservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apprunnerservice"
 
 apprunnerservice.NewApprunnerServiceSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerServiceSourceConfigurationOutputReference
 ```

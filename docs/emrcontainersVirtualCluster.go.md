@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualCluster(scope Construct, id *string, config EmrcontainersVirtualClusterConfig) EmrcontainersVirtualCluster
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.putContainerProvider">PutContainerProvider</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.resetId">ResetId</a></code> | *No description.* |
@@ -142,6 +145,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.interpolationForAttribute"></a>
 
 ```go
@@ -260,6 +297,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -318,13 +379,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a EmrcontainersVirtualCluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +432,7 @@ emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -378,6 +440,50 @@ emrcontainersvirtualcluster.EmrcontainersVirtualCluster_IsTerraformResource(x in
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
+
+emrcontainersvirtualcluster.EmrcontainersVirtualCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a EmrcontainersVirtualCluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the EmrcontainersVirtualCluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing EmrcontainersVirtualCluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/emrcontainers_virtual_cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the EmrcontainersVirtualCluster to import is found.
 
 ---
 
@@ -712,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterConfig {
 	Connection: interface{},
@@ -722,12 +828,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualclust
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ContainerProvider: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider,
+	ContainerProvider: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider,
 	Name: *string,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts,
 }
 ```
 
@@ -905,11 +1011,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProvider {
 	Id: *string,
-	Info: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo,
+	Info: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo,
 	Type: *string,
 }
 ```
@@ -970,10 +1076,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProviderInfo {
-	EksInfo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo,
+	EksInfo: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo,
 }
 ```
 
@@ -1004,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfo {
 	Namespace: *string,
@@ -1036,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 &emrcontainersvirtualcluster.EmrcontainersVirtualClusterTimeouts {
 	Delete: *string,
@@ -1070,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderInfoEksInfoOutputReference
 ```
@@ -1348,7 +1454,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProviderInfoEksInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderInfoOutputReference
 ```
@@ -1632,7 +1738,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProviderInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterContainerProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterContainerProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterContainerProviderOutputReference
 ```
@@ -1960,7 +2066,7 @@ func InternalValue() EmrcontainersVirtualClusterContainerProvider
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersvirtualcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersvirtualcluster"
 
 emrcontainersvirtualcluster.NewEmrcontainersVirtualClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersVirtualClusterTimeoutsOutputReference
 ```

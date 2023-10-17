@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplate(scope Construct, id *string, config EmrcontainersJobTemplateConfig) EmrcontainersJobTemplate
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.putJobTemplateData">PutJobTemplateData</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.resetId">ResetId</a></code> | *No description.* |
@@ -143,6 +146,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.getAnyMapAttribute"></a>
 
@@ -252,6 +271,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.interpolationForAttribute"></a>
 
 ```go
@@ -261,6 +298,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -325,13 +386,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a EmrcontainersJobTemplate resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.EmrcontainersJobTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.EmrcontainersJobTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +439,7 @@ emrcontainersjobtemplate.EmrcontainersJobTemplate_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.EmrcontainersJobTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -385,6 +447,50 @@ emrcontainersjobtemplate.EmrcontainersJobTemplate_IsTerraformResource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
+
+emrcontainersjobtemplate.EmrcontainersJobTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a EmrcontainersJobTemplate resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the EmrcontainersJobTemplate to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing EmrcontainersJobTemplate that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/emrcontainers_job_template#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplate.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the EmrcontainersJobTemplate to import is found.
 
 ---
 
@@ -741,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateConfig {
 	Connection: interface{},
@@ -751,13 +857,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	JobTemplateData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateData,
+	JobTemplateData: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateData,
 	Name: *string,
 	Id: *string,
 	KmsKeyArn: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateTimeouts,
 }
 ```
 
@@ -948,13 +1054,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateData {
 	ExecutionRoleArn: *string,
-	JobDriver: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriver,
+	JobDriver: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriver,
 	ReleaseLabel: *string,
-	ConfigurationOverrides: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides,
+	ConfigurationOverrides: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides,
 	JobTags: *map[string]*string,
 }
 ```
@@ -1040,11 +1146,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverrides {
 	ApplicationConfiguration: interface{},
-	MonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfiguration,
+	MonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfiguration,
 }
 ```
 
@@ -1090,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfiguration {
 	Classification: *string,
@@ -1152,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurations {
 	Classification: *string,
@@ -1198,12 +1304,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfiguration {
-	CloudWatchMonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration,
+	CloudWatchMonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration,
 	PersistentAppUi: *string,
-	S3MonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration,
+	S3MonitoringConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration,
 }
 ```
 
@@ -1262,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfiguration {
 	LogGroupName: *string,
@@ -1308,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration {
 	LogUri: *string,
@@ -1340,11 +1446,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataJobDriver {
-	SparkSqlJobDriver: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriver,
-	SparkSubmitJobDriver: github.com/cdktf/cdktf-provider-aws-go/aws/v18.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriver,
+	SparkSqlJobDriver: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriver,
+	SparkSubmitJobDriver: github.com/cdktf/cdktf-provider-aws-go/aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriver,
 }
 ```
 
@@ -1390,7 +1496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriver {
 	EntryPoint: *string,
@@ -1436,7 +1542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriver {
 	EntryPoint: *string,
@@ -1496,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 &emrcontainersjobtemplate.EmrcontainersJobTemplateTimeouts {
 	Delete: *string,
@@ -1530,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsList
 ```
@@ -1673,7 +1779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationConfigurationsOutputReference
 ```
@@ -1998,7 +2104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationList
 ```
@@ -2141,7 +2247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesApplicationConfigurationOutputReference
 ```
@@ -2501,7 +2607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationCloudWatchMonitoringConfigurationOutputReference
 ```
@@ -2801,7 +2907,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataConfigurationOverrid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationOutputReference
 ```
@@ -3163,7 +3269,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataConfigurationOverrid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfigurationOutputReference
 ```
@@ -3434,7 +3540,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataConfigurationOverrid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataConfigurationOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesOutputReference
 ```
@@ -3767,7 +3873,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataConfigurationOverrid
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataJobDriverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataJobDriverOutputReference
 ```
@@ -4100,7 +4206,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataJobDriver
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJobDriverOutputReference
 ```
@@ -4407,7 +4513,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSqlJob
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmitJobDriverOutputReference
 ```
@@ -4736,7 +4842,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateDataJobDriverSparkSubmit
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateJobTemplateDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateJobTemplateDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateJobTemplateDataOutputReference
 ```
@@ -5135,7 +5241,7 @@ func InternalValue() EmrcontainersJobTemplateJobTemplateData
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrcontainersJobTemplate.EmrcontainersJobTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrcontainersjobtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/emrcontainersjobtemplate"
 
 emrcontainersjobtemplate.NewEmrcontainersJobTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmrcontainersJobTemplateTimeoutsOutputReference
 ```

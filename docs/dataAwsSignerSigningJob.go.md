@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJob(scope Construct, id *string, config DataAwsSignerSigningJobConfig) DataAwsSignerSigningJob
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsSignerSigningJob resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.DataAwsSignerSigningJob_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.DataAwsSignerSigningJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ dataawssignersigningjob.DataAwsSignerSigningJob_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.DataAwsSignerSigningJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ dataawssignersigningjob.DataAwsSignerSigningJob_IsTerraformDataSource(x interfac
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
+
+dataawssignersigningjob.DataAwsSignerSigningJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsSignerSigningJob resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsSignerSigningJob to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsSignerSigningJob that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/signer_signing_job#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsSignerSigningJob to import is found.
 
 ---
 
@@ -709,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobConfig {
 	Connection: interface{},
@@ -842,7 +887,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobRevocationRecord {
 
@@ -855,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobSignedObject {
 
@@ -868,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobSignedObjectS3 {
 
@@ -881,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobSource {
 
@@ -894,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 &dataawssignersigningjob.DataAwsSignerSigningJobSourceS3 {
 
@@ -909,7 +954,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobRevocationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningJobRevocationRecordList
 ```
@@ -1041,7 +1086,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobRevocationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningJobRevocationRecordOutputReference
 ```
@@ -1341,7 +1386,7 @@ func InternalValue() DataAwsSignerSigningJobRevocationRecord
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSignedObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningJobSignedObjectList
 ```
@@ -1473,7 +1518,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSignedObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningJobSignedObjectOutputReference
 ```
@@ -1751,7 +1796,7 @@ func InternalValue() DataAwsSignerSigningJobSignedObject
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSignedObjectS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningJobSignedObjectS3List
 ```
@@ -1883,7 +1928,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSignedObjectS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningJobSignedObjectS3OutputReference
 ```
@@ -2172,7 +2217,7 @@ func InternalValue() DataAwsSignerSigningJobSignedObjectS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningJobSourceList
 ```
@@ -2304,7 +2349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningJobSourceOutputReference
 ```
@@ -2582,7 +2627,7 @@ func InternalValue() DataAwsSignerSigningJobSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSourceS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSignerSigningJobSourceS3List
 ```
@@ -2714,7 +2759,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawssignersigningjob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawssignersigningjob"
 
 dataawssignersigningjob.NewDataAwsSignerSigningJobSourceS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSignerSigningJobSourceS3OutputReference
 ```

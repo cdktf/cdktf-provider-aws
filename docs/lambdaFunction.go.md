@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunction(scope Construct, id *string, config LambdaFunctionConfig) LambdaFunction
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.putDeadLetterConfig">PutDeadLetterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.putEnvironment">PutEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.putEphemeralStorage">PutEphemeralStorage</a></code> | *No description.* |
@@ -179,6 +182,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.getAnyMapAttribute"></a>
 
 ```go
@@ -287,6 +306,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.interpolationForAttribute"></a>
 
 ```go
@@ -296,6 +333,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -612,13 +673,14 @@ func ResetVpcConfig()
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LambdaFunction resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.LambdaFunction_IsConstruct(x interface{}) *bool
 ```
@@ -650,7 +712,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.LambdaFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -664,7 +726,7 @@ lambdafunction.LambdaFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.LambdaFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -672,6 +734,50 @@ lambdafunction.LambdaFunction_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
+
+lambdafunction.LambdaFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a LambdaFunction resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the LambdaFunction to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing LambdaFunction that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/lambda_function#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaFunction.LambdaFunction.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the LambdaFunction to import is found.
 
 ---
 
@@ -1732,7 +1838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionConfig {
 	Connection: interface{},
@@ -1746,15 +1852,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
 	Role: *string,
 	Architectures: *[]*string,
 	CodeSigningConfigArn: *string,
-	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionDeadLetterConfig,
+	DeadLetterConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionDeadLetterConfig,
 	Description: *string,
-	Environment: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionEnvironment,
-	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionEphemeralStorage,
+	Environment: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionEnvironment,
+	EphemeralStorage: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionEphemeralStorage,
 	Filename: *string,
-	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionFileSystemConfig,
+	FileSystemConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionFileSystemConfig,
 	Handler: *string,
 	Id: *string,
-	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionImageConfig,
+	ImageConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionImageConfig,
 	ImageUri: *string,
 	KmsKeyArn: *string,
 	Layers: *[]*string,
@@ -1769,14 +1875,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
 	S3Key: *string,
 	S3ObjectVersion: *string,
 	SkipDestroy: interface{},
-	SnapStart: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionSnapStart,
+	SnapStart: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionSnapStart,
 	SourceCodeHash: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Timeout: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionTimeouts,
-	TracingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionTracingConfig,
-	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.lambdaFunction.LambdaFunctionVpcConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionTimeouts,
+	TracingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionTracingConfig,
+	VpcConfig: github.com/cdktf/cdktf-provider-aws-go/aws.lambdaFunction.LambdaFunctionVpcConfig,
 }
 ```
 
@@ -2345,7 +2451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionDeadLetterConfig {
 	TargetArn: *string,
@@ -2377,7 +2483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionEnvironment {
 	Variables: *map[string]*string,
@@ -2409,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionEphemeralStorage {
 	Size: *f64,
@@ -2441,7 +2547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionFileSystemConfig {
 	Arn: *string,
@@ -2487,7 +2593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionImageConfig {
 	Command: *[]*string,
@@ -2547,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionSnapStart {
 	ApplyOn: *string,
@@ -2579,7 +2685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionTimeouts {
 	Create: *string,
@@ -2639,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionTracingConfig {
 	Mode: *string,
@@ -2671,7 +2777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 &lambdafunction.LambdaFunctionVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -2719,7 +2825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionDeadLetterConfigOutputReference
 ```
@@ -2990,7 +3096,7 @@ func InternalValue() LambdaFunctionDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionEnvironmentOutputReference
 ```
@@ -3268,7 +3374,7 @@ func InternalValue() LambdaFunctionEnvironment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionEphemeralStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionEphemeralStorageOutputReference
 ```
@@ -3546,7 +3652,7 @@ func InternalValue() LambdaFunctionEphemeralStorage
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionFileSystemConfigOutputReference
 ```
@@ -3839,7 +3945,7 @@ func InternalValue() LambdaFunctionFileSystemConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionImageConfigOutputReference
 ```
@@ -4175,7 +4281,7 @@ func InternalValue() LambdaFunctionImageConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionSnapStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionSnapStartOutputReference
 ```
@@ -4457,7 +4563,7 @@ func InternalValue() LambdaFunctionSnapStart
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionTimeoutsOutputReference
 ```
@@ -4793,7 +4899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionTracingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionTracingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionTracingConfigOutputReference
 ```
@@ -5064,7 +5170,7 @@ func InternalValue() LambdaFunctionTracingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaFunction.LambdaFunctionVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdafunction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lambdafunction"
 
 lambdafunction.NewLambdaFunctionVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaFunctionVpcConfigOutputReference
 ```

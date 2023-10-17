@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.NewDataAwsEcrpublicAuthorizationToken(scope Construct, id *string, config DataAwsEcrpublicAuthorizationTokenConfig) DataAwsEcrpublicAuthorizationToken
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsEcrpublicAuthorizationToken resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_IsTerrafor
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
+
+dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsEcrpublicAuthorizationToken resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsEcrpublicAuthorizationToken to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsEcrpublicAuthorizationToken that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ecrpublic_authorization_token#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationToken.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsEcrpublicAuthorizationToken to import is found.
 
 ---
 
@@ -566,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcrpublicAuthorizationToken.DataAwsEcrpublicAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrpublicauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrpublicauthorizationtoken"
 
 &dataawsecrpublicauthorizationtoken.DataAwsEcrpublicAuthorizationTokenConfig {
 	Connection: interface{},

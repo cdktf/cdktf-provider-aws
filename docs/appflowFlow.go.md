@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlow(scope Construct, id *string, config AppflowFlowConfig) AppflowFlow
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.putDestinationFlowConfig">PutDestinationFlowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.putSourceFlowConfig">PutSourceFlowConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.putTask">PutTask</a></code> | *No description.* |
@@ -145,6 +148,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.getAnyMapAttribute"></a>
 
@@ -254,6 +273,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.interpolationForAttribute"></a>
 
 ```go
@@ -263,6 +300,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -351,13 +412,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AppflowFlow resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.AppflowFlow_IsConstruct(x interface{}) *bool
 ```
@@ -389,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.AppflowFlow_IsTerraformElement(x interface{}) *bool
 ```
@@ -403,7 +465,7 @@ appflowflow.AppflowFlow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.AppflowFlow_IsTerraformResource(x interface{}) *bool
 ```
@@ -411,6 +473,50 @@ appflowflow.AppflowFlow_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
+
+appflowflow.AppflowFlow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AppflowFlow resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AppflowFlow to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AppflowFlow that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appflow_flow#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appflowFlow.AppflowFlow.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AppflowFlow to import is found.
 
 ---
 
@@ -833,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowConfig {
 	Connection: interface{},
@@ -845,9 +951,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
 	Provisioners: *[]interface{},
 	DestinationFlowConfig: interface{},
 	Name: *string,
-	SourceFlowConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfig,
+	SourceFlowConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfig,
 	Task: interface{},
-	TriggerConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowTriggerConfig,
+	TriggerConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowTriggerConfig,
 	Description: *string,
 	Id: *string,
 	KmsArn: *string,
@@ -1086,11 +1192,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfig {
 	ConnectorType: *string,
-	DestinationConnectorProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties,
+	DestinationConnectorProperties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties,
 	ApiVersion: *string,
 	ConnectorProfileName: *string,
 }
@@ -1162,22 +1268,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorProperties {
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector,
-	CustomerProfiles: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles,
-	EventBridge: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge,
-	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode,
-	LookoutMetrics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo,
-	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData,
-	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake,
-	Upsolver: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector,
+	CustomerProfiles: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles,
+	EventBridge: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge,
+	Honeycode: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode,
+	LookoutMetrics: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo,
+	Redshift: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData,
+	Snowflake: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake,
+	Upsolver: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk,
 }
 ```
 
@@ -1388,12 +1494,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnector {
 	EntityName: *string,
 	CustomProperties: *map[string]*string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig,
 	IdFieldNames: *[]*string,
 	WriteOperationType: *string,
 }
@@ -1478,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig {
 	BucketName: *string,
@@ -1538,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles {
 	DomainName: *string,
@@ -1584,11 +1690,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridge {
 	Object: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig,
 }
 ```
 
@@ -1632,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig {
 	BucketName: *string,
@@ -1692,11 +1798,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycode {
 	Object: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig,
 }
 ```
 
@@ -1740,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig {
 	BucketName: *string,
@@ -1800,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics {
 
@@ -1813,11 +1919,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketo {
 	Object: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig,
 }
 ```
 
@@ -1861,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig {
 	BucketName: *string,
@@ -1921,13 +2027,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshift {
 	IntermediateBucketName: *string,
 	Object: *string,
 	BucketPrefix: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig,
 }
 ```
 
@@ -1997,7 +2103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig {
 	BucketName: *string,
@@ -2057,12 +2163,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3 {
 	BucketName: *string,
 	BucketPrefix: *string,
-	S3OutputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig,
+	S3OutputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig,
 }
 ```
 
@@ -2119,12 +2225,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig {
-	AggregationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig,
+	AggregationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig,
 	FileType: *string,
-	PrefixConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig,
+	PrefixConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig,
 	PreserveSourceDataTyping: interface{},
 }
 ```
@@ -2197,7 +2303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig {
 	AggregationType: *string,
@@ -2229,7 +2335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig {
 	PrefixFormat: *string,
@@ -2275,11 +2381,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforce {
 	Object: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig,
 	IdFieldNames: *[]*string,
 	WriteOperationType: *string,
 }
@@ -2351,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig {
 	BucketName: *string,
@@ -2411,13 +2517,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoData {
 	ObjectPath: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig,
 	IdFieldNames: *[]*string,
-	SuccessResponseHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig,
+	SuccessResponseHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig,
 	WriteOperationType: *string,
 }
 ```
@@ -2503,7 +2609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig {
 	BucketName: *string,
@@ -2563,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig {
 	BucketName: *string,
@@ -2609,13 +2715,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflake {
 	IntermediateBucketName: *string,
 	Object: *string,
 	BucketPrefix: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig,
 }
 ```
 
@@ -2685,7 +2791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig {
 	BucketName: *string,
@@ -2745,11 +2851,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolver {
 	BucketName: *string,
-	S3OutputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig,
+	S3OutputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig,
 	BucketPrefix: *string,
 }
 ```
@@ -2807,11 +2913,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig {
-	PrefixConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig,
-	AggregationConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig,
+	PrefixConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig,
+	AggregationConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig,
 	FileType: *string,
 }
 ```
@@ -2871,7 +2977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig {
 	AggregationType: *string,
@@ -2903,7 +3009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig {
 	PrefixType: *string,
@@ -2949,11 +3055,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendesk {
 	Object: *string,
-	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig,
+	ErrorHandlingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig,
 	IdFieldNames: *[]*string,
 	WriteOperationType: *string,
 }
@@ -3025,7 +3131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig {
 	BucketName: *string,
@@ -3085,14 +3191,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfig {
 	ConnectorType: *string,
-	SourceConnectorProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties,
+	SourceConnectorProperties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties,
 	ApiVersion: *string,
 	ConnectorProfileName: *string,
-	IncrementalPullConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig,
+	IncrementalPullConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig,
 }
 ```
 
@@ -3177,7 +3283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigIncrementalPullConfig {
 	DatetimeTypeFieldName: *string,
@@ -3209,25 +3315,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorProperties {
-	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude,
-	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector,
-	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog,
-	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace,
-	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics,
-	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus,
-	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo,
-	S3: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3,
-	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce,
-	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData,
-	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow,
-	Singular: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular,
-	Slack: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack,
-	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro,
-	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva,
-	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk,
+	Amplitude: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude,
+	CustomConnector: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector,
+	Datadog: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog,
+	Dynatrace: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace,
+	GoogleAnalytics: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics,
+	InforNexus: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus,
+	Marketo: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo,
+	S3: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3,
+	Salesforce: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce,
+	SapoData: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData,
+	ServiceNow: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow,
+	Singular: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular,
+	Slack: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack,
+	Trendmicro: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro,
+	Veeva: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva,
+	Zendesk: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk,
 }
 ```
 
@@ -3483,7 +3589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitude {
 	Object: *string,
@@ -3515,7 +3621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnector {
 	EntityName: *string,
@@ -3561,7 +3667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog {
 	Object: *string,
@@ -3593,7 +3699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatrace {
 	Object: *string,
@@ -3625,7 +3731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics {
 	Object: *string,
@@ -3657,7 +3763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexus {
 	Object: *string,
@@ -3689,7 +3795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo {
 	Object: *string,
@@ -3721,12 +3827,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3 {
 	BucketName: *string,
 	BucketPrefix: *string,
-	S3InputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig,
+	S3InputFormatConfig: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig,
 }
 ```
 
@@ -3783,7 +3889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig {
 	S3InputFileType: *string,
@@ -3815,7 +3921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforce {
 	Object: *string,
@@ -3875,7 +3981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoData {
 	ObjectPath: *string,
@@ -3907,7 +4013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNow {
 	Object: *string,
@@ -3939,7 +4045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingular {
 	Object: *string,
@@ -3971,7 +4077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack {
 	Object: *string,
@@ -4003,7 +4109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro {
 	Object: *string,
@@ -4035,7 +4141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva {
 	Object: *string,
@@ -4123,7 +4229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk {
 	Object: *string,
@@ -4155,7 +4261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowTask {
 	SourceFields: *[]*string,
@@ -4245,7 +4351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowTaskConnectorOperator {
 	Amplitude: *string,
@@ -4487,11 +4593,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowTriggerConfig {
 	TriggerType: *string,
-	TriggerProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowTriggerConfigTriggerProperties,
+	TriggerProperties: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties,
 }
 ```
 
@@ -4535,10 +4641,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowTriggerConfigTriggerProperties {
-	Scheduled: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled,
+	Scheduled: github.com/cdktf/cdktf-provider-aws-go/aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled,
 }
 ```
 
@@ -4569,7 +4675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 &appflowflow.AppflowFlowTriggerConfigTriggerPropertiesScheduled {
 	ScheduleExpression: *string,
@@ -4687,7 +4793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfigOutputReference
 ```
@@ -5023,7 +5129,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorOutputReference
 ```
@@ -5423,7 +5529,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesCustomerProfilesOutputReference
 ```
@@ -5723,7 +5829,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfigOutputReference
 ```
@@ -6059,7 +6165,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesEventBridgeOutputReference
 ```
@@ -6372,7 +6478,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfigOutputReference
 ```
@@ -6708,7 +6814,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesHoneycodeOutputReference
 ```
@@ -7021,7 +7127,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesLookoutMetricsOutputReference
 ```
@@ -7270,7 +7376,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfigOutputReference
 ```
@@ -7606,7 +7712,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoOutputReference
 ```
@@ -7919,7 +8025,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference
 ```
@@ -8714,7 +8820,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfigOutputReference
 ```
@@ -9050,7 +9156,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference
 ```
@@ -9414,7 +9520,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference
 ```
@@ -9756,7 +9862,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference
 ```
@@ -10034,7 +10140,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference
 ```
@@ -10425,7 +10531,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference
 ```
@@ -10732,7 +10838,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfigOutputReference
 ```
@@ -11068,7 +11174,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSalesforceOutputReference
 ```
@@ -11439,7 +11545,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfigOutputReference
 ```
@@ -11775,7 +11881,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference
 ```
@@ -12188,7 +12294,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfigOutputReference
 ```
@@ -12495,7 +12601,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfigOutputReference
 ```
@@ -12831,7 +12937,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSnowflakeOutputReference
 ```
@@ -13195,7 +13301,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference
 ```
@@ -13530,7 +13636,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfigOutputReference
 ```
@@ -13808,7 +13914,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigOutputReference
 ```
@@ -14163,7 +14269,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference
 ```
@@ -14463,7 +14569,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfigOutputReference
 ```
@@ -14799,7 +14905,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesZendeskOutputReference
 ```
@@ -15170,7 +15276,7 @@ func InternalValue() AppflowFlowDestinationFlowConfigDestinationConnectorPropert
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppflowFlowDestinationFlowConfigList
 ```
@@ -15313,7 +15419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowDestinationFlowConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppflowFlowDestinationFlowConfigOutputReference
 ```
@@ -15695,7 +15801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigIncrementalPullConfigOutputReference
 ```
@@ -15973,7 +16079,7 @@ func InternalValue() AppflowFlowSourceFlowConfigIncrementalPullConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigOutputReference
 ```
@@ -16379,7 +16485,7 @@ func InternalValue() AppflowFlowSourceFlowConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference
 ```
@@ -16650,7 +16756,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomConnectorOutputReference
 ```
@@ -16950,7 +17056,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesCustomC
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadogOutputReference
 ```
@@ -17221,7 +17327,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesDatadog
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatraceOutputReference
 ```
@@ -17492,7 +17598,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesDynatra
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalyticsOutputReference
 ```
@@ -17763,7 +17869,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNexusOutputReference
 ```
@@ -18034,7 +18140,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesInforNe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketoOutputReference
 ```
@@ -18305,7 +18411,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesMarketo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesOutputReference
 ```
@@ -19226,7 +19332,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3OutputReference
 ```
@@ -19568,7 +19674,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfigOutputReference
 ```
@@ -19846,7 +19952,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesS3S3Inp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesforceOutputReference
 ```
@@ -20175,7 +20281,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSalesfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDataOutputReference
 ```
@@ -20446,7 +20552,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSapoDat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesServiceNowOutputReference
 ```
@@ -20717,7 +20823,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingularOutputReference
 ```
@@ -20988,7 +21094,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSingula
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlackOutputReference
 ```
@@ -21259,7 +21365,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesSlack
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicroOutputReference
 ```
@@ -21530,7 +21636,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeevaOutputReference
 ```
@@ -21917,7 +22023,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesVeeva
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference
 ```
@@ -22188,7 +22294,7 @@ func InternalValue() AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendesk
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTaskConnectorOperatorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppflowFlowTaskConnectorOperatorList
 ```
@@ -22331,7 +22437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTaskConnectorOperatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppflowFlowTaskConnectorOperatorOutputReference
 ```
@@ -23062,7 +23168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppflowFlowTaskList
 ```
@@ -23205,7 +23311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppflowFlowTaskOutputReference
 ```
@@ -23616,7 +23722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTriggerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowTriggerConfigOutputReference
 ```
@@ -23929,7 +24035,7 @@ func InternalValue() AppflowFlowTriggerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTriggerConfigTriggerPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowTriggerConfigTriggerPropertiesOutputReference
 ```
@@ -24220,7 +24326,7 @@ func InternalValue() AppflowFlowTriggerConfigTriggerProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appflowflow"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appflowflow"
 
 appflowflow.NewAppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppflowFlowTriggerConfigTriggerPropertiesScheduledOutputReference
 ```

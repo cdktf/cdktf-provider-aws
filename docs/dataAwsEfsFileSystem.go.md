@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.NewDataAwsEfsFileSystem(scope Construct, id *string, config DataAwsEfsFileSystemConfig) DataAwsEfsFileSystem
 ```
@@ -292,13 +292,14 @@ func ResetTags()
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsEfsFileSystem resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.DataAwsEfsFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.DataAwsEfsFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +345,7 @@ dataawsefsfilesystem.DataAwsEfsFileSystem_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,6 +353,50 @@ dataawsefsfilesystem.DataAwsEfsFileSystem_IsTerraformDataSource(x interface{}) *
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
+
+dataawsefsfilesystem.DataAwsEfsFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsEfsFileSystem resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsEfsFileSystem to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsEfsFileSystem that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/efs_file_system#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystem.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsEfsFileSystem to import is found.
 
 ---
 
@@ -741,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 &dataawsefsfilesystem.DataAwsEfsFileSystemConfig {
 	Connection: interface{},
@@ -902,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 &dataawsefsfilesystem.DataAwsEfsFileSystemLifecyclePolicy {
 
@@ -917,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.NewDataAwsEfsFileSystemLifecyclePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEfsFileSystemLifecyclePolicyList
 ```
@@ -1049,7 +1094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEfsFileSystem.DataAwsEfsFileSystemLifecyclePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsefsfilesystem"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsefsfilesystem"
 
 dataawsefsfilesystem.NewDataAwsEfsFileSystemLifecyclePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEfsFileSystemLifecyclePolicyOutputReference
 ```

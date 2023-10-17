@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.NewDataAwsCloudfrontRealtimeLogConfig(scope Construct, id *string, config DataAwsCloudfrontRealtimeLogConfigConfig) DataAwsCloudfrontRealtimeLogConfig
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsCloudfrontRealtimeLogConfig resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_IsTerrafor
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
+
+dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsCloudfrontRealtimeLogConfig resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsCloudfrontRealtimeLogConfig to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsCloudfrontRealtimeLogConfig that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/cloudfront_realtime_log_config#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfig.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsCloudfrontRealtimeLogConfig to import is found.
 
 ---
 
@@ -588,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 &dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfigConfig {
 	Connection: interface{},
@@ -721,7 +766,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 &dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfigEndpoint {
 
@@ -734,7 +779,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtime
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 &dataawscloudfrontrealtimelogconfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
 
@@ -749,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtime
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigList
 ```
@@ -881,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference
 ```
@@ -1170,7 +1215,7 @@ func InternalValue() DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.NewDataAwsCloudfrontRealtimeLogConfigEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudfrontRealtimeLogConfigEndpointList
 ```
@@ -1302,7 +1347,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscloudfrontrealtimelogconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudfrontrealtimelogconfig"
 
 dataawscloudfrontrealtimelogconfig.NewDataAwsCloudfrontRealtimeLogConfigEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudfrontRealtimeLogConfigEndpointOutputReference
 ```

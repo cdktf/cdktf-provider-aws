@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.NewKendraFaq(scope Construct, id *string, config KendraFaqConfig) KendraFaq
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.putS3Path">PutS3Path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetDescription">ResetDescription</a></code> | *No description.* |
@@ -145,6 +148,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute"></a>
 
@@ -254,6 +273,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute"></a>
 
 ```go
@@ -263,6 +300,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -339,13 +400,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a KendraFaq resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.KendraFaq_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.KendraFaq_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +453,7 @@ kendrafaq.KendraFaq_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.KendraFaq_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,6 +461,50 @@ kendrafaq.KendraFaq_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
+
+kendrafaq.KendraFaq_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a KendraFaq resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the KendraFaq to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing KendraFaq that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/kendra_faq#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the KendraFaq to import is found.
 
 ---
 
@@ -898,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 &kendrafaq.KendraFaqConfig {
 	Connection: interface{},
@@ -911,14 +1017,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
 	IndexId: *string,
 	Name: *string,
 	RoleArn: *string,
-	S3Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraFaq.KendraFaqS3Path,
+	S3Path: github.com/cdktf/cdktf-provider-aws-go/aws.kendraFaq.KendraFaqS3Path,
 	Description: *string,
 	FileFormat: *string,
 	Id: *string,
 	LanguageCode: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.kendraFaq.KendraFaqTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.kendraFaq.KendraFaqTimeouts,
 }
 ```
 
@@ -1161,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 &kendrafaq.KendraFaqS3Path {
 	Bucket: *string,
@@ -1207,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 &kendrafaq.KendraFaqTimeouts {
 	Create: *string,
@@ -1255,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.NewKendraFaqS3PathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraFaqS3PathOutputReference
 ```
@@ -1548,7 +1654,7 @@ func InternalValue() KendraFaqS3Path
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/kendrafaq"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/kendrafaq"
 
 kendrafaq.NewKendraFaqTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KendraFaqTimeoutsOutputReference
 ```

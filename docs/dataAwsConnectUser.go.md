@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUser(scope Construct, id *string, config DataAwsConnectUserConfig) DataAwsConnectUser
 ```
@@ -292,13 +292,14 @@ func ResetUserId()
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsConnectUser resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +345,7 @@ dataawsconnectuser.DataAwsConnectUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.DataAwsConnectUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,6 +353,50 @@ dataawsconnectuser.DataAwsConnectUser_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
+
+dataawsconnectuser.DataAwsConnectUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsConnectUser resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsConnectUser to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsConnectUser that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/connect_user#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUser.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsConnectUser to import is found.
 
 ---
 
@@ -708,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserConfig {
 	Connection: interface{},
@@ -883,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserIdentityInfo {
 
@@ -896,7 +941,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 &dataawsconnectuser.DataAwsConnectUserPhoneConfig {
 
@@ -911,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserIdentityInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectUserIdentityInfoList
 ```
@@ -1043,7 +1088,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserIdentityInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserIdentityInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectUserIdentityInfoOutputReference
 ```
@@ -1343,7 +1388,7 @@ func InternalValue() DataAwsConnectUserIdentityInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectUserPhoneConfigList
 ```
@@ -1475,7 +1520,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUser.DataAwsConnectUserPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsconnectuser"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsconnectuser"
 
 dataawsconnectuser.NewDataAwsConnectUserPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectUserPhoneConfigOutputReference
 ```

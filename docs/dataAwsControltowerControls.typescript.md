@@ -271,6 +271,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsControltowerControls resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource(x:
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport"></a>
+
+```typescript
+import { dataAwsControltowerControls } from '@cdktf/provider-aws'
+
+dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataAwsControltowerControls resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataAwsControltowerControls to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataAwsControltowerControls that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/controltower_controls#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsControltowerControls to import is found.
 
 ---
 

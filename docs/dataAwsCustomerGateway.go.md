@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGateway(scope Construct, id *string, config DataAwsCustomerGatewayConfig) DataAwsCustomerGateway
 ```
@@ -318,13 +318,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsCustomerGateway resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +371,7 @@ dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,6 +379,50 @@ dataawscustomergateway.DataAwsCustomerGateway_IsTerraformDataSource(x interface{
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
+
+dataawscustomergateway.DataAwsCustomerGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsCustomerGateway resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsCustomerGateway to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsCustomerGateway that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/customer_gateway#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsCustomerGateway to import is found.
 
 ---
 
@@ -701,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayConfig {
 	Connection: interface{},
@@ -714,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
 }
 ```
 
@@ -866,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayFilter {
 	Name: *string,
@@ -912,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayTimeouts {
 	Read: *string,
@@ -946,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCustomerGatewayFilterList
 ```
@@ -1089,7 +1134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCustomerGatewayFilterOutputReference
 ```
@@ -1400,7 +1445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscustomergateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCustomerGatewayTimeoutsOutputReference
 ```

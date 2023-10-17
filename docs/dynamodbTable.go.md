@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTable(scope Construct, id *string, config DynamodbTableConfig) DynamodbTable
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.putAttribute">PutAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.putGlobalSecondaryIndex">PutGlobalSecondaryIndex</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.putImportTable">PutImportTable</a></code> | *No description.* |
@@ -169,6 +172,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.getAnyMapAttribute"></a>
 
@@ -278,6 +297,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.interpolationForAttribute"></a>
 
 ```go
@@ -287,6 +324,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -549,13 +610,14 @@ func ResetWriteCapacity()
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DynamodbTable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.DynamodbTable_IsConstruct(x interface{}) *bool
 ```
@@ -587,7 +649,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.DynamodbTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -601,7 +663,7 @@ dynamodbtable.DynamodbTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.DynamodbTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -609,6 +671,50 @@ dynamodbtable.DynamodbTable_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
+
+dynamodbtable.DynamodbTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DynamodbTable resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DynamodbTable to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DynamodbTable that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbTable.DynamodbTable.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DynamodbTable to import is found.
 
 ---
 
@@ -1383,7 +1489,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableAttribute {
 	Name: *string,
@@ -1429,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableConfig {
 	Connection: interface{},
@@ -1446,23 +1552,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
 	GlobalSecondaryIndex: interface{},
 	HashKey: *string,
 	Id: *string,
-	ImportTable: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableImportTable,
+	ImportTable: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableImportTable,
 	LocalSecondaryIndex: interface{},
-	PointInTimeRecovery: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTablePointInTimeRecovery,
+	PointInTimeRecovery: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTablePointInTimeRecovery,
 	RangeKey: *string,
 	ReadCapacity: *f64,
 	Replica: interface{},
 	RestoreDateTime: *string,
 	RestoreSourceName: *string,
 	RestoreToLatestTime: interface{},
-	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableServerSideEncryption,
+	ServerSideEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableServerSideEncryption,
 	StreamEnabled: interface{},
 	StreamViewType: *string,
 	TableClass: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableTimeouts,
-	Ttl: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableTtl,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableTimeouts,
+	Ttl: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableTtl,
 	WriteCapacity: *f64,
 }
 ```
@@ -1902,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableGlobalSecondaryIndex {
 	HashKey: *string,
@@ -2018,13 +2124,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableImportTable {
 	InputFormat: *string,
-	S3BucketSource: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableImportTableS3BucketSource,
+	S3BucketSource: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableImportTableS3BucketSource,
 	InputCompressionType: *string,
-	InputFormatOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableImportTableInputFormatOptions,
+	InputFormatOptions: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableImportTableInputFormatOptions,
 }
 ```
 
@@ -2096,10 +2202,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableImportTableInputFormatOptions {
-	Csv: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv,
+	Csv: github.com/cdktf/cdktf-provider-aws-go/aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv,
 }
 ```
 
@@ -2130,7 +2236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableImportTableInputFormatOptionsCsv {
 	Delimiter: *string,
@@ -2176,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableImportTableS3BucketSource {
 	Bucket: *string,
@@ -2236,7 +2342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableLocalSecondaryIndex {
 	Name: *string,
@@ -2310,7 +2416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTablePointInTimeRecovery {
 	Enabled: interface{},
@@ -2342,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableReplica {
 	RegionName: *string,
@@ -2416,7 +2522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableServerSideEncryption {
 	Enabled: interface{},
@@ -2462,7 +2568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableTimeouts {
 	Create: *string,
@@ -2522,7 +2628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 &dynamodbtable.DynamodbTableTtl {
 	AttributeName: *string,
@@ -2570,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbTableAttributeList
 ```
@@ -2713,7 +2819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbTableAttributeOutputReference
 ```
@@ -3024,7 +3130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableGlobalSecondaryIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbTableGlobalSecondaryIndexList
 ```
@@ -3167,7 +3273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableGlobalSecondaryIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbTableGlobalSecondaryIndexOutputReference
 ```
@@ -3616,7 +3722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableImportTableInputFormatOptionsCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableImportTableInputFormatOptionsCsvOutputReference
 ```
@@ -3923,7 +4029,7 @@ func InternalValue() DynamodbTableImportTableInputFormatOptionsCsv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableImportTableInputFormatOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableImportTableInputFormatOptionsOutputReference
 ```
@@ -4214,7 +4320,7 @@ func InternalValue() DynamodbTableImportTableInputFormatOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableImportTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableImportTableOutputReference
 ```
@@ -4591,7 +4697,7 @@ func InternalValue() DynamodbTableImportTable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableImportTableS3BucketSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableImportTableS3BucketSourceOutputReference
 ```
@@ -4920,7 +5026,7 @@ func InternalValue() DynamodbTableImportTableS3BucketSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableLocalSecondaryIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbTableLocalSecondaryIndexList
 ```
@@ -5063,7 +5169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableLocalSecondaryIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbTableLocalSecondaryIndexOutputReference
 ```
@@ -5425,7 +5531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTablePointInTimeRecoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTablePointInTimeRecoveryOutputReference
 ```
@@ -5696,7 +5802,7 @@ func InternalValue() DynamodbTablePointInTimeRecovery
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableReplicaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbTableReplicaList
 ```
@@ -5839,7 +5945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableReplicaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbTableReplicaOutputReference
 ```
@@ -6248,7 +6354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableServerSideEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableServerSideEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableServerSideEncryptionOutputReference
 ```
@@ -6548,7 +6654,7 @@ func InternalValue() DynamodbTableServerSideEncryption
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableTimeoutsOutputReference
 ```
@@ -6884,7 +6990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTable.DynamodbTableTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dynamodbtable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dynamodbtable"
 
 dynamodbtable.NewDynamodbTableTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableTtlOutputReference
 ```

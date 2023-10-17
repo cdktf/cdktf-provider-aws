@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplate(scope Construct, id *string, config LaunchTemplateConfig) LaunchTemplate
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.putBlockDeviceMappings">PutBlockDeviceMappings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.putCapacityReservationSpecification">PutCapacityReservationSpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.putCpuOptions">PutCpuOptions</a></code> | *No description.* |
@@ -195,6 +198,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.getAnyMapAttribute"></a>
 
 ```go
@@ -303,6 +322,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.interpolationForAttribute"></a>
 
 ```go
@@ -312,6 +349,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -784,13 +845,14 @@ func ResetVpcSecurityGroupIds()
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LaunchTemplate resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -822,7 +884,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -836,7 +898,7 @@ launchtemplate.LaunchTemplate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.LaunchTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -844,6 +906,50 @@ launchtemplate.LaunchTemplate_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
+
+launchtemplate.LaunchTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a LaunchTemplate resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the LaunchTemplate to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing LaunchTemplate that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/launch_template#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.launchTemplate.LaunchTemplate.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the LaunchTemplate to import is found.
 
 ---
 
@@ -1915,11 +2021,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateBlockDeviceMappings {
 	DeviceName: *string,
-	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs,
+	Ebs: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs,
 	NoDevice: *string,
 	VirtualName: *string,
 }
@@ -1991,7 +2097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateBlockDeviceMappingsEbs {
 	DeleteOnTermination: *string,
@@ -2121,11 +2227,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCapacityReservationSpecification {
 	CapacityReservationPreference: *string,
-	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget,
+	CapacityReservationTarget: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget,
 }
 ```
 
@@ -2169,7 +2275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
 	CapacityReservationId: *string,
@@ -2215,7 +2321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateConfig {
 	Connection: interface{},
@@ -2226,36 +2332,36 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BlockDeviceMappings: interface{},
-	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateCapacityReservationSpecification,
-	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateCpuOptions,
-	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateCreditSpecification,
+	CapacityReservationSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCapacityReservationSpecification,
+	CpuOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCpuOptions,
+	CreditSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateCreditSpecification,
 	DefaultVersion: *f64,
 	Description: *string,
 	DisableApiStop: interface{},
 	DisableApiTermination: interface{},
 	EbsOptimized: *string,
 	ElasticGpuSpecifications: interface{},
-	ElasticInferenceAccelerator: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateElasticInferenceAccelerator,
-	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateEnclaveOptions,
-	HibernationOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateHibernationOptions,
-	IamInstanceProfile: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateIamInstanceProfile,
+	ElasticInferenceAccelerator: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator,
+	EnclaveOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateEnclaveOptions,
+	HibernationOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateHibernationOptions,
+	IamInstanceProfile: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateIamInstanceProfile,
 	Id: *string,
 	ImageId: *string,
 	InstanceInitiatedShutdownBehavior: *string,
-	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceMarketOptions,
-	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirements,
+	InstanceMarketOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceMarketOptions,
+	InstanceRequirements: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirements,
 	InstanceType: *string,
 	KernelId: *string,
 	KeyName: *string,
 	LicenseSpecification: interface{},
-	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateMaintenanceOptions,
-	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateMetadataOptions,
-	Monitoring: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateMonitoring,
+	MaintenanceOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMaintenanceOptions,
+	MetadataOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMetadataOptions,
+	Monitoring: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateMonitoring,
 	Name: *string,
 	NamePrefix: *string,
 	NetworkInterfaces: interface{},
-	Placement: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplatePlacement,
-	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplatePrivateDnsNameOptions,
+	Placement: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplatePlacement,
+	PrivateDnsNameOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions,
 	RamDiskId: *string,
 	SecurityGroupNames: *[]*string,
 	Tags: *map[string]*string,
@@ -2904,7 +3010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCpuOptions {
 	AmdSevSnp: *string,
@@ -2964,7 +3070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateCreditSpecification {
 	CpuCredits: *string,
@@ -2996,7 +3102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateElasticGpuSpecifications {
 	Type: *string,
@@ -3028,7 +3134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateElasticInferenceAccelerator {
 	Type: *string,
@@ -3060,7 +3166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateEnclaveOptions {
 	Enabled: interface{},
@@ -3092,7 +3198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateHibernationOptions {
 	Configured: interface{},
@@ -3124,7 +3230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateIamInstanceProfile {
 	Arn: *string,
@@ -3170,11 +3276,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceMarketOptions {
 	MarketType: *string,
-	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions,
+	SpotOptions: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions,
 }
 ```
 
@@ -3218,7 +3324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceMarketOptionsSpotOptions {
 	BlockDurationMinutes: *f64,
@@ -3306,32 +3412,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirements {
-	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib,
-	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount,
-	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount,
+	MemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib,
+	VcpuCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount,
+	AcceleratorCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount,
 	AcceleratorManufacturers: *[]*string,
 	AcceleratorNames: *[]*string,
-	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
+	AcceleratorTotalMemoryMib: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib,
 	AcceleratorTypes: *[]*string,
 	AllowedInstanceTypes: *[]*string,
 	BareMetal: *string,
-	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
+	BaselineEbsBandwidthMbps: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps,
 	BurstablePerformance: *string,
 	CpuManufacturers: *[]*string,
 	ExcludedInstanceTypes: *[]*string,
 	InstanceGenerations: *[]*string,
 	LocalStorage: *string,
 	LocalStorageTypes: *[]*string,
-	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
-	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
-	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount,
+	MemoryGibPerVcpu: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu,
+	NetworkBandwidthGbps: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps,
+	NetworkInterfaceCount: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount,
 	OnDemandMaxPricePercentageOverLowestPrice: *f64,
 	RequireHibernateSupport: interface{},
 	SpotMaxPricePercentageOverLowestPrice: *f64,
-	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws/v18.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb,
+	TotalLocalStorageGb: github.com/cdktf/cdktf-provider-aws-go/aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb,
 }
 ```
 
@@ -3664,7 +3770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsAcceleratorCount {
 	Max: *f64,
@@ -3710,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib {
 	Max: *f64,
@@ -3756,7 +3862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps {
 	Max: *f64,
@@ -3802,7 +3908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu {
 	Max: *f64,
@@ -3848,7 +3954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsMemoryMib {
 	Min: *f64,
@@ -3894,7 +4000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
 	Max: *f64,
@@ -3940,7 +4046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount {
 	Max: *f64,
@@ -3986,7 +4092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb {
 	Max: *f64,
@@ -4032,7 +4138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateInstanceRequirementsVcpuCount {
 	Min: *f64,
@@ -4078,7 +4184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateLicenseSpecification {
 	LicenseConfigurationArn: *string,
@@ -4110,7 +4216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMaintenanceOptions {
 	AutoRecovery: *string,
@@ -4142,7 +4248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMetadataOptions {
 	HttpEndpoint: *string,
@@ -4230,7 +4336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateMonitoring {
 	Enabled: interface{},
@@ -4262,7 +4368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateNetworkInterfaces {
 	AssociateCarrierIpAddress: *string,
@@ -4546,7 +4652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplatePlacement {
 	Affinity: *string,
@@ -4676,7 +4782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplatePrivateDnsNameOptions {
 	EnableResourceNameDnsAaaaRecord: interface{},
@@ -4736,7 +4842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 &launchtemplate.LaunchTemplateTagSpecifications {
 	ResourceType: *string,
@@ -4784,7 +4890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsEbsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateBlockDeviceMappingsEbsOutputReference
 ```
@@ -5265,7 +5371,7 @@ func InternalValue() LaunchTemplateBlockDeviceMappingsEbs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateBlockDeviceMappingsList
 ```
@@ -5408,7 +5514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateBlockDeviceMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateBlockDeviceMappingsOutputReference
 ```
@@ -5804,7 +5910,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference
 ```
@@ -6111,7 +6217,7 @@ func InternalValue() LaunchTemplateCapacityReservationSpecificationCapacityReser
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCapacityReservationSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCapacityReservationSpecificationOutputReference
 ```
@@ -6431,7 +6537,7 @@ func InternalValue() LaunchTemplateCapacityReservationSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCpuOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCpuOptionsOutputReference
 ```
@@ -6767,7 +6873,7 @@ func InternalValue() LaunchTemplateCpuOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateCreditSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateCreditSpecificationOutputReference
 ```
@@ -7045,7 +7151,7 @@ func InternalValue() LaunchTemplateCreditSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticGpuSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateElasticGpuSpecificationsList
 ```
@@ -7188,7 +7294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticGpuSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateElasticGpuSpecificationsOutputReference
 ```
@@ -7477,7 +7583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateElasticInferenceAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateElasticInferenceAcceleratorOutputReference
 ```
@@ -7748,7 +7854,7 @@ func InternalValue() LaunchTemplateElasticInferenceAccelerator
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateEnclaveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateEnclaveOptionsOutputReference
 ```
@@ -8026,7 +8132,7 @@ func InternalValue() LaunchTemplateEnclaveOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateHibernationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateHibernationOptionsOutputReference
 ```
@@ -8297,7 +8403,7 @@ func InternalValue() LaunchTemplateHibernationOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateIamInstanceProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateIamInstanceProfileOutputReference
 ```
@@ -8604,7 +8710,7 @@ func InternalValue() LaunchTemplateIamInstanceProfile
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceMarketOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceMarketOptionsOutputReference
 ```
@@ -8924,7 +9030,7 @@ func InternalValue() LaunchTemplateInstanceMarketOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference
 ```
@@ -9318,7 +9424,7 @@ func InternalValue() LaunchTemplateInstanceMarketOptionsSpotOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -9625,7 +9731,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsAcceleratorCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -9932,7 +10038,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -10239,7 +10345,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -10546,7 +10652,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsMemoryMibOutputReference
 ```
@@ -10846,7 +10952,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsMemoryMib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -11153,7 +11259,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -11460,7 +11566,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsNetworkInterfaceCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsOutputReference
 ```
@@ -12479,7 +12585,7 @@ func InternalValue() LaunchTemplateInstanceRequirements
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -12786,7 +12892,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsTotalLocalStorageGb
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateInstanceRequirementsVcpuCountOutputReference
 ```
@@ -13086,7 +13192,7 @@ func InternalValue() LaunchTemplateInstanceRequirementsVcpuCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateLicenseSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateLicenseSpecificationList
 ```
@@ -13229,7 +13335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateLicenseSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateLicenseSpecificationOutputReference
 ```
@@ -13518,7 +13624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMaintenanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMaintenanceOptionsOutputReference
 ```
@@ -13796,7 +13902,7 @@ func InternalValue() LaunchTemplateMaintenanceOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMetadataOptionsOutputReference
 ```
@@ -14190,7 +14296,7 @@ func InternalValue() LaunchTemplateMetadataOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplateMonitoringOutputReference
 ```
@@ -14468,7 +14574,7 @@ func InternalValue() LaunchTemplateMonitoring
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateNetworkInterfacesList
 ```
@@ -14611,7 +14717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateNetworkInterfacesOutputReference
 ```
@@ -15429,7 +15535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplatePlacementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplatePlacementOutputReference
 ```
@@ -15910,7 +16016,7 @@ func InternalValue() LaunchTemplatePlacement
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplatePrivateDnsNameOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LaunchTemplatePrivateDnsNameOptionsOutputReference
 ```
@@ -16246,7 +16352,7 @@ func InternalValue() LaunchTemplatePrivateDnsNameOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateTagSpecificationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LaunchTemplateTagSpecificationsList
 ```
@@ -16389,7 +16495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/launchtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/launchtemplate"
 
 launchtemplate.NewLaunchTemplateTagSpecificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LaunchTemplateTagSpecificationsOutputReference
 ```

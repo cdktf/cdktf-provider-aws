@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.NewVpclatticeTargetGroup(scope Construct, id *string, config VpclatticeTargetGroupConfig) VpclatticeTargetGroup
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.putConfig">PutConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.resetConfig">ResetConfig</a></code> | *No description.* |
@@ -143,6 +146,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.getAnyMapAttribute"></a>
 
@@ -252,6 +271,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.interpolationForAttribute"></a>
 
 ```go
@@ -261,6 +298,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -325,13 +386,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpclatticeTargetGroup resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.VpclatticeTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.VpclatticeTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +439,7 @@ vpclatticetargetgroup.VpclatticeTargetGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.VpclatticeTargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -385,6 +447,50 @@ vpclatticetargetgroup.VpclatticeTargetGroup_IsTerraformResource(x interface{}) *
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
+
+vpclatticetargetgroup.VpclatticeTargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a VpclatticeTargetGroup resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the VpclatticeTargetGroup to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing VpclatticeTargetGroup that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpclattice_target_group#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroup.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the VpclatticeTargetGroup to import is found.
 
 ---
 
@@ -752,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 &vpclatticetargetgroup.VpclatticeTargetGroupConfig {
 	Connection: interface{},
@@ -764,11 +870,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Type: *string,
-	Config: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroup.VpclatticeTargetGroupConfigA,
+	Config: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigA,
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroup.VpclatticeTargetGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroup.VpclatticeTargetGroupTimeouts,
 }
 ```
 
@@ -959,10 +1065,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 &vpclatticetargetgroup.VpclatticeTargetGroupConfigA {
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheck,
 	IpAddressType: *string,
 	LambdaEventStructureVersion: *string,
 	Port: *f64,
@@ -1077,14 +1183,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 &vpclatticetargetgroup.VpclatticeTargetGroupConfigHealthCheck {
 	Enabled: interface{},
 	HealthCheckIntervalSeconds: *f64,
 	HealthCheckTimeoutSeconds: *f64,
 	HealthyThresholdCount: *f64,
-	Matcher: github.com/cdktf/cdktf-provider-aws-go/aws/v18.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheckMatcher,
+	Matcher: github.com/cdktf/cdktf-provider-aws-go/aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheckMatcher,
 	Path: *string,
 	Port: *f64,
 	Protocol: *string,
@@ -1237,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheckMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 &vpclatticetargetgroup.VpclatticeTargetGroupConfigHealthCheckMatcher {
 	Value: *string,
@@ -1269,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 &vpclatticetargetgroup.VpclatticeTargetGroupTimeouts {
 	Create: *string,
@@ -1331,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.NewVpclatticeTargetGroupConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupConfigAOutputReference
 ```
@@ -1796,7 +1902,7 @@ func InternalValue() VpclatticeTargetGroupConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.NewVpclatticeTargetGroupConfigHealthCheckMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupConfigHealthCheckMatcherOutputReference
 ```
@@ -2074,7 +2180,7 @@ func InternalValue() VpclatticeTargetGroupConfigHealthCheckMatcher
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupConfigHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.NewVpclatticeTargetGroupConfigHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupConfigHealthCheckOutputReference
 ```
@@ -2626,7 +2732,7 @@ func InternalValue() VpclatticeTargetGroupConfigHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeTargetGroup.VpclatticeTargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/vpclatticetargetgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/vpclatticetargetgroup"
 
 vpclatticetargetgroup.NewVpclatticeTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeTargetGroupTimeoutsOutputReference
 ```

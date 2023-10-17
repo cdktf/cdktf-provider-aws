@@ -187,6 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUser.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
@@ -196,7 +197,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUser.importFrom">import_from</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUser.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.resetPath">reset_path</a></code> | *No description.* |
@@ -274,6 +277,24 @@ def to_terraform() -> typing.Any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.iamUser.IamUser.addMoveTarget"></a>
+
+```python
+def add_move_target(
+  move_target: str
+) -> None
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.iamUser.IamUser.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.iamUser.IamUser.getAnyMapAttribute"></a>
 
@@ -401,6 +422,27 @@ def get_string_map_attribute(
 
 ---
 
+##### `import_from` <a name="import_from" id="@cdktf/provider-aws.iamUser.IamUser.importFrom"></a>
+
+```python
+def import_from(
+  id: str,
+  provider: TerraformProvider = None
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamUser.IamUser.importFrom.parameter.id"></a>
+
+- *Type:* str
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamUser.IamUser.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.iamUser.IamUser.interpolationForAttribute"></a>
 
 ```python
@@ -412,6 +454,33 @@ def interpolation_for_attribute(
 ###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamUser.IamUser.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
+
+---
+
+##### `move_to` <a name="move_to" id="@cdktf/provider-aws.iamUser.IamUser.moveTo"></a>
+
+```python
+def move_to(
+  move_target: str,
+  index: typing.Union[str, typing.Union[int, float]] = None
+) -> None
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.iamUser.IamUser.moveTo.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.iamUser.IamUser.moveTo.parameter.index"></a>
+
+- *Type:* typing.Union[str, typing.Union[int, float]]
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -458,6 +527,7 @@ def reset_tags_all() -> None
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iamUser.IamUser.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a IamUser resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -524,6 +594,55 @@ iamUser.IamUser.is_terraform_resource(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.iamUser.IamUser.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_aws import iam_user
+
+iamUser.IamUser.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a IamUser resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the IamUser to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing IamUser that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iam_user#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamUser.IamUser.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the IamUser to import is found.
 
 ---
 

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRule(scope Construct, id *string, config ConfigConfigRuleConfig) ConfigConfigRule
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope">PutScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource">PutSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetDescription">ResetDescription</a></code> | *No description.* |
@@ -145,6 +148,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute"></a>
 
@@ -254,6 +273,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute"></a>
 
 ```go
@@ -263,6 +300,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -339,13 +400,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.ConfigConfigRule_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.ConfigConfigRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +453,7 @@ configconfigrule.ConfigConfigRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.ConfigConfigRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,6 +461,50 @@ configconfigrule.ConfigConfigRule_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
+
+configconfigrule.ConfigConfigRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ConfigConfigRule to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ConfigConfigRule that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ConfigConfigRule to import is found.
 
 ---
 
@@ -810,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 &configconfigrule.ConfigConfigRuleConfig {
 	Connection: interface{},
@@ -821,12 +927,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Source: github.com/cdktf/cdktf-provider-aws-go/aws/v18.configConfigRule.ConfigConfigRuleSource,
+	Source: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigRule.ConfigConfigRuleSource,
 	Description: *string,
 	Id: *string,
 	InputParameters: *string,
 	MaximumExecutionFrequency: *string,
-	Scope: github.com/cdktf/cdktf-provider-aws-go/aws/v18.configConfigRule.ConfigConfigRuleScope,
+	Scope: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigRule.ConfigConfigRuleScope,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1045,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 &configconfigrule.ConfigConfigRuleScope {
 	ComplianceResourceId: *string,
@@ -1119,11 +1225,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 &configconfigrule.ConfigConfigRuleSource {
 	Owner: *string,
-	CustomPolicyDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v18.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails,
+	CustomPolicyDetails: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails,
 	SourceDetail: interface{},
 	SourceIdentifier: *string,
 }
@@ -1197,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 &configconfigrule.ConfigConfigRuleSourceCustomPolicyDetails {
 	PolicyRuntime: *string,
@@ -1257,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 &configconfigrule.ConfigConfigRuleSourceSourceDetail {
 	EventSource: *string,
@@ -1319,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRuleScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigRuleScopeOutputReference
 ```
@@ -1684,7 +1790,7 @@ func InternalValue() ConfigConfigRuleScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRuleSourceCustomPolicyDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigRuleSourceCustomPolicyDetailsOutputReference
 ```
@@ -2006,7 +2112,7 @@ func InternalValue() ConfigConfigRuleSourceCustomPolicyDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRuleSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigRuleSourceOutputReference
 ```
@@ -2390,7 +2496,7 @@ func InternalValue() ConfigConfigRuleSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRuleSourceSourceDetailList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConfigRuleSourceSourceDetailList
 ```
@@ -2533,7 +2639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configconfigrule"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigrule"
 
 configconfigrule.NewConfigConfigRuleSourceSourceDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConfigRuleSourceSourceDetailOutputReference
 ```

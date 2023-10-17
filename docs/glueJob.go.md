@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.NewGlueJob(scope Construct, id *string, config GlueJobConfig) GlueJob
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.putCommand">PutCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.putExecutionProperty">PutExecutionProperty</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.putNotificationProperty">PutNotificationProperty</a></code> | *No description.* |
@@ -156,6 +159,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.glueJob.GlueJob.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.glueJob.GlueJob.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.glueJob.GlueJob.getAnyMapAttribute"></a>
 
@@ -265,6 +284,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.glueJob.GlueJob.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueJob.GlueJob.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueJob.GlueJob.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.glueJob.GlueJob.interpolationForAttribute"></a>
 
 ```go
@@ -274,6 +311,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.glueJob.GlueJob.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.glueJob.GlueJob.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.glueJob.GlueJob.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.glueJob.GlueJob.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -422,13 +483,14 @@ func ResetWorkerType()
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a GlueJob resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueJob.GlueJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.GlueJob_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueJob.GlueJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +536,7 @@ gluejob.GlueJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueJob.GlueJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -482,6 +544,50 @@ gluejob.GlueJob_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.glueJob.GlueJob.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
+
+gluejob.GlueJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a GlueJob resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the GlueJob to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing GlueJob that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/glue_job#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueJob.GlueJob.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the GlueJob to import is found.
 
 ---
 
@@ -1124,7 +1230,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobCommand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 &gluejob.GlueJobCommand {
 	ScriptLocation: *string,
@@ -1198,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 &gluejob.GlueJobConfig {
 	Connection: interface{},
@@ -1208,20 +1314,20 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Command: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueJob.GlueJobCommand,
+	Command: github.com/cdktf/cdktf-provider-aws-go/aws.glueJob.GlueJobCommand,
 	Name: *string,
 	RoleArn: *string,
 	Connections: *[]*string,
 	DefaultArguments: *map[string]*string,
 	Description: *string,
 	ExecutionClass: *string,
-	ExecutionProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueJob.GlueJobExecutionProperty,
+	ExecutionProperty: github.com/cdktf/cdktf-provider-aws-go/aws.glueJob.GlueJobExecutionProperty,
 	GlueVersion: *string,
 	Id: *string,
 	MaxCapacity: *f64,
 	MaxRetries: *f64,
 	NonOverridableArguments: *map[string]*string,
-	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueJob.GlueJobNotificationProperty,
+	NotificationProperty: github.com/cdktf/cdktf-provider-aws-go/aws.glueJob.GlueJobNotificationProperty,
 	NumberOfWorkers: *f64,
 	SecurityConfiguration: *string,
 	Tags: *map[string]*string,
@@ -1589,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobExecutionProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 &gluejob.GlueJobExecutionProperty {
 	MaxConcurrentRuns: *f64,
@@ -1621,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueJob.GlueJobNotificationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 &gluejob.GlueJobNotificationProperty {
 	NotifyDelayAfter: *f64,
@@ -1655,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.NewGlueJobCommandOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobCommandOutputReference
 ```
@@ -2013,7 +2119,7 @@ func InternalValue() GlueJobCommand
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.NewGlueJobExecutionPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobExecutionPropertyOutputReference
 ```
@@ -2291,7 +2397,7 @@ func InternalValue() GlueJobExecutionProperty
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluejob"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/gluejob"
 
 gluejob.NewGlueJobNotificationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueJobNotificationPropertyOutputReference
 ```

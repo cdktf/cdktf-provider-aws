@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationA(scope Construct, id *string, config S3BucketReplicationConfigurationAConfig) S3BucketReplicationConfigurationA
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.putRule">PutRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.resetToken">ResetToken</a></code> | *No description.* |
@@ -139,6 +142,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.getAnyMapAttribute"></a>
 
@@ -248,6 +267,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.interpolationForAttribute"></a>
 
 ```go
@@ -257,6 +294,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -291,13 +352,14 @@ func ResetToken()
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a S3BucketReplicationConfigurationA resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +405,7 @@ s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformEl
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformResource(x interface{}) *bool
 ```
@@ -351,6 +413,50 @@ s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformRe
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
+
+s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a S3BucketReplicationConfigurationA resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the S3BucketReplicationConfigurationA to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing S3BucketReplicationConfigurationA that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/s3_bucket_replication_configuration#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the S3BucketReplicationConfigurationA to import is found.
 
 ---
 
@@ -652,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationAConfig {
 	Connection: interface{},
@@ -829,18 +935,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRule {
-	Destination: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination,
+	Destination: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination,
 	Status: *string,
-	DeleteMarkerReplication: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication,
-	ExistingObjectReplication: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication,
-	Filter: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter,
+	DeleteMarkerReplication: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication,
+	ExistingObjectReplication: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication,
+	Filter: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter,
 	Id: *string,
 	Prefix: *string,
 	Priority: *f64,
-	SourceSelectionCriteria: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria,
+	SourceSelectionCriteria: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria,
 }
 ```
 
@@ -986,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication {
 	Status: *string,
@@ -1018,15 +1124,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestination {
 	Bucket: *string,
-	AccessControlTranslation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation,
+	AccessControlTranslation: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation,
 	Account: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration,
-	Metrics: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics,
-	ReplicationTime: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration,
+	Metrics: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics,
+	ReplicationTime: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime,
 	StorageClass: *string,
 }
 ```
@@ -1142,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
 	Owner: *string,
@@ -1174,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration {
 	ReplicaKmsKeyId: *string,
@@ -1206,11 +1312,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics {
 	Status: *string,
-	EventThreshold: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold,
+	EventThreshold: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold,
 }
 ```
 
@@ -1254,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold {
 	Minutes: *f64,
@@ -1286,11 +1392,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime {
 	Status: *string,
-	Time: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime,
+	Time: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime,
 }
 ```
 
@@ -1334,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime {
 	Minutes: *f64,
@@ -1366,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication {
 	Status: *string,
@@ -1398,12 +1504,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilter {
-	And: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd,
+	And: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd,
 	Prefix: *string,
-	Tag: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag,
+	Tag: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag,
 }
 ```
 
@@ -1462,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilterAnd {
 	Prefix: *string,
@@ -1508,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilterTag {
 	Key: *string,
@@ -1554,11 +1660,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria {
-	ReplicaModifications: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications,
-	SseKmsEncryptedObjects: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects,
+	ReplicaModifications: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications,
+	SseKmsEncryptedObjects: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects,
 }
 ```
 
@@ -1604,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications {
 	Status: *string,
@@ -1636,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
 	Status: *string,
@@ -1670,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference
 ```
@@ -1941,7 +2047,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDeleteMarkerReplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference
 ```
@@ -2212,7 +2318,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationAccessContro
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference
 ```
@@ -2483,7 +2589,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationEncryptionCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference
 ```
@@ -2754,7 +2860,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationMetricsEvent
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference
 ```
@@ -3067,7 +3173,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationMetrics
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationOutputReference
 ```
@@ -3564,7 +3670,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference
 ```
@@ -3870,7 +3976,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationReplicationT
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference
 ```
@@ -4141,7 +4247,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationReplicationT
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference
 ```
@@ -4412,7 +4518,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleExistingObjectReplicati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterAndOutputReference
 ```
@@ -4719,7 +4825,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilterAnd
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterOutputReference
 ```
@@ -5081,7 +5187,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterTagOutputReference
 ```
@@ -5374,7 +5480,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilterTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketReplicationConfigurationRuleList
 ```
@@ -5517,7 +5623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketReplicationConfigurationRuleOutputReference
 ```
@@ -6096,7 +6202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference
 ```
@@ -6429,7 +6535,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleSourceSelectionCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference
 ```
@@ -6700,7 +6806,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleSourceSelectionCriteria
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketreplicationconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference
 ```

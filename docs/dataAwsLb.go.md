@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLb(scope Construct, id *string, config DataAwsLbConfig) DataAwsLb
 ```
@@ -312,13 +312,14 @@ func ResetTimeouts()
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsLb resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.DataAwsLb_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.DataAwsLb_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +365,7 @@ dataawslb.DataAwsLb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.DataAwsLb_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,6 +373,50 @@ dataawslb.DataAwsLb_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
+
+dataawslb.DataAwsLb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsLb resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsLb to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsLb that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsLb.DataAwsLb.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsLb to import is found.
 
 ---
 
@@ -904,7 +949,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 &dataawslb.DataAwsLbAccessLogs {
 
@@ -917,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 &dataawslb.DataAwsLbConfig {
 	Connection: interface{},
@@ -931,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
 	Id: *string,
 	Name: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsLb.DataAwsLbTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsLb.DataAwsLbTimeouts,
 }
 ```
 
@@ -1094,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 &dataawslb.DataAwsLbSubnetMapping {
 
@@ -1107,7 +1152,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 &dataawslb.DataAwsLbTimeouts {
 	Read: *string,
@@ -1141,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLbAccessLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbAccessLogsList
 ```
@@ -1273,7 +1318,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbAccessLogsOutputReference
 ```
@@ -1573,7 +1618,7 @@ func InternalValue() DataAwsLbAccessLogs
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLbSubnetMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLbSubnetMappingList
 ```
@@ -1705,7 +1750,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLbSubnetMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLbSubnetMappingOutputReference
 ```
@@ -2027,7 +2072,7 @@ func InternalValue() DataAwsLbSubnetMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLb.DataAwsLbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslb"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslb"
 
 dataawslb.NewDataAwsLbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLbTimeoutsOutputReference
 ```

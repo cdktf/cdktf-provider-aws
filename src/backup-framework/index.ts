@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/backup_framework
 // generated from terraform resource schema
 
@@ -582,6 +577,20 @@ export class BackupFramework extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_backup_framework";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a BackupFramework resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the BackupFramework to import
+  * @param importFromId The id of the existing BackupFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/backup_framework#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the BackupFramework to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_backup_framework", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

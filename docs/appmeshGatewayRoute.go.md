@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRoute(scope Construct, id *string, config AppmeshGatewayRouteConfig) AppmeshGatewayRoute
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.putSpec">PutSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.resetMeshOwner">ResetMeshOwner</a></code> | *No description.* |
@@ -141,6 +144,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.getAnyMapAttribute"></a>
 
@@ -250,6 +269,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.interpolationForAttribute"></a>
 
 ```go
@@ -259,6 +296,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -305,13 +366,14 @@ func ResetTagsAll()
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AppmeshGatewayRoute resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.AppmeshGatewayRoute_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.AppmeshGatewayRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +419,7 @@ appmeshgatewayroute.AppmeshGatewayRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.AppmeshGatewayRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -365,6 +427,50 @@ appmeshgatewayroute.AppmeshGatewayRoute_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
+
+appmeshgatewayroute.AppmeshGatewayRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a AppmeshGatewayRoute resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the AppmeshGatewayRoute to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing AppmeshGatewayRoute that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appmesh_gateway_route#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the AppmeshGatewayRoute to import is found.
 
 ---
 
@@ -776,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteConfig {
 	Connection: interface{},
@@ -788,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
 	Provisioners: *[]interface{},
 	MeshName: *string,
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpec,
+	Spec: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpec,
 	VirtualGatewayName: *string,
 	Id: *string,
 	MeshOwner: *string,
@@ -995,12 +1101,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpec {
-	GrpcRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRoute,
-	Http2Route: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2Route,
-	HttpRoute: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRoute,
+	GrpcRoute: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRoute,
+	Http2Route: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2Route,
+	HttpRoute: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRoute,
 	Priority: *f64,
 }
 ```
@@ -1075,11 +1181,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecGrpcRoute {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatch,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatch,
 }
 ```
 
@@ -1125,10 +1231,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecGrpcRouteAction {
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTarget,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTarget,
 }
 ```
 
@@ -1159,10 +1265,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecGrpcRouteActionTarget {
-	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService,
+	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService,
 	Port: *f64,
 }
 ```
@@ -1207,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService {
 	VirtualServiceName: *string,
@@ -1239,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecGrpcRouteMatch {
 	ServiceName: *string,
@@ -1285,11 +1391,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2Route {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatch,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatch,
 }
 ```
 
@@ -1335,11 +1441,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteAction {
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTarget,
-	Rewrite: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTarget,
+	Rewrite: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite,
 }
 ```
 
@@ -1385,12 +1491,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite {
-	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePath,
-	Prefix: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix,
+	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePath,
+	Prefix: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix,
 }
 ```
 
@@ -1451,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname {
 	DefaultTargetHostname: *string,
@@ -1483,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePath {
 	Exact: *string,
@@ -1515,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix {
 	DefaultPrefix: *string,
@@ -1561,10 +1667,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionTarget {
-	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService,
+	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService,
 	Port: *f64,
 }
 ```
@@ -1609,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService {
 	VirtualServiceName: *string,
@@ -1641,12 +1747,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatch {
 	Header: interface{},
-	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchPath,
+	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchPath,
 	Port: *f64,
 	Prefix: *string,
 	QueryParameter: interface{},
@@ -1751,12 +1857,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchHeader {
 	Name: *string,
 	Invert: interface{},
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch,
 }
 ```
 
@@ -1813,12 +1919,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch {
 	Exact: *string,
 	Prefix: *string,
-	Range: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange,
+	Range: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange,
 	Regex: *string,
 	Suffix: *string,
 }
@@ -1903,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange {
 	End: *f64,
@@ -1949,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname {
 	Exact: *string,
@@ -1995,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchPath {
 	Exact: *string,
@@ -2041,11 +2147,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter {
 	Name: *string,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch,
 }
 ```
 
@@ -2089,7 +2195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch {
 	Exact: *string,
@@ -2121,11 +2227,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRoute {
-	Action: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteAction,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatch,
+	Action: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteAction,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatch,
 }
 ```
 
@@ -2171,11 +2277,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteAction {
-	Target: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTarget,
-	Rewrite: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewrite,
+	Target: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTarget,
+	Rewrite: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewrite,
 }
 ```
 
@@ -2221,12 +2327,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionRewrite {
-	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePath,
-	Prefix: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix,
+	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePath,
+	Prefix: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix,
 }
 ```
 
@@ -2287,7 +2393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname {
 	DefaultTargetHostname: *string,
@@ -2319,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionRewritePath {
 	Exact: *string,
@@ -2351,7 +2457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix {
 	DefaultPrefix: *string,
@@ -2397,10 +2503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionTarget {
-	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService,
+	VirtualService: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService,
 	Port: *f64,
 }
 ```
@@ -2445,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService {
 	VirtualServiceName: *string,
@@ -2477,12 +2583,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatch {
 	Header: interface{},
-	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostname,
-	Path: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchPath,
+	Hostname: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostname,
+	Path: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchPath,
 	Port: *f64,
 	Prefix: *string,
 	QueryParameter: interface{},
@@ -2587,12 +2693,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchHeader {
 	Name: *string,
 	Invert: interface{},
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch,
 }
 ```
 
@@ -2649,12 +2755,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch {
 	Exact: *string,
 	Prefix: *string,
-	Range: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange,
+	Range: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange,
 	Regex: *string,
 	Suffix: *string,
 }
@@ -2739,7 +2845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange {
 	End: *f64,
@@ -2785,7 +2891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchHostname {
 	Exact: *string,
@@ -2831,7 +2937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchPath {
 	Exact: *string,
@@ -2877,11 +2983,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameter {
 	Name: *string,
-	Match: github.com/cdktf/cdktf-provider-aws-go/aws/v18.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch,
+	Match: github.com/cdktf/cdktf-provider-aws-go/aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch,
 }
 ```
 
@@ -2925,7 +3031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 &appmeshgatewayroute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch {
 	Exact: *string,
@@ -2959,7 +3065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecGrpcRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecGrpcRouteActionOutputReference
 ```
@@ -3243,7 +3349,7 @@ func InternalValue() AppmeshGatewayRouteSpecGrpcRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference
 ```
@@ -3556,7 +3662,7 @@ func InternalValue() AppmeshGatewayRouteSpecGrpcRouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference
 ```
@@ -3827,7 +3933,7 @@ func InternalValue() AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecGrpcRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference
 ```
@@ -4127,7 +4233,7 @@ func InternalValue() AppmeshGatewayRouteSpecGrpcRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecGrpcRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecGrpcRouteOutputReference
 ```
@@ -4446,7 +4552,7 @@ func InternalValue() AppmeshGatewayRouteSpecGrpcRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionOutputReference
 ```
@@ -4772,7 +4878,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference
 ```
@@ -5043,7 +5149,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference
 ```
@@ -5418,7 +5524,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionRewrite
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference
 ```
@@ -5689,7 +5795,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionRewritePath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference
 ```
@@ -5996,7 +6102,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference
 ```
@@ -6309,7 +6415,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference
 ```
@@ -6580,7 +6686,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshGatewayRouteSpecHttp2RouteMatchHeaderList
 ```
@@ -6723,7 +6829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchOutputReference
 ```
@@ -7130,7 +7236,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRangeOutputReference
 ```
@@ -7423,7 +7529,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatchHeaderMatchRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshGatewayRouteSpecHttp2RouteMatchHeaderOutputReference
 ```
@@ -7783,7 +7889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference
 ```
@@ -8090,7 +8196,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatchHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference
 ```
@@ -8565,7 +8671,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchPathOutputReference
 ```
@@ -8872,7 +8978,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterList
 ```
@@ -9015,7 +9121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatchOutputReference
 ```
@@ -9293,7 +9399,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameterOutputReference
 ```
@@ -9624,7 +9730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttp2RouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttp2RouteOutputReference
 ```
@@ -9943,7 +10049,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttp2Route
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionOutputReference
 ```
@@ -10269,7 +10375,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference
 ```
@@ -10540,7 +10646,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference
 ```
@@ -10915,7 +11021,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionRewrite
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionRewritePathOutputReference
 ```
@@ -11186,7 +11292,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionRewritePath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference
 ```
@@ -11493,7 +11599,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference
 ```
@@ -11806,7 +11912,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference
 ```
@@ -12077,7 +12183,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshGatewayRouteSpecHttpRouteMatchHeaderList
 ```
@@ -12220,7 +12326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchOutputReference
 ```
@@ -12627,7 +12733,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRangeOutputReference
 ```
@@ -12920,7 +13026,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatchHeaderMatchRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshGatewayRouteSpecHttpRouteMatchHeaderOutputReference
 ```
@@ -13280,7 +13386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference
 ```
@@ -13587,7 +13693,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatchHostname
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchOutputReference
 ```
@@ -14062,7 +14168,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference
 ```
@@ -14369,7 +14475,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList
 ```
@@ -14512,7 +14618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchOutputReference
 ```
@@ -14790,7 +14896,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterOutputReference
 ```
@@ -15121,7 +15227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteOutputReference
 ```
@@ -15440,7 +15546,7 @@ func InternalValue() AppmeshGatewayRouteSpecHttpRoute
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/appmeshgatewayroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appmeshgatewayroute"
 
 appmeshgatewayroute.NewAppmeshGatewayRouteSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecOutputReference
 ```

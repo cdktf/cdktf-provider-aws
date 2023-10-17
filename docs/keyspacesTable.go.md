@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTable(scope Construct, id *string, config KeyspacesTableConfig) KeyspacesTable
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.putCapacitySpecification">PutCapacitySpecification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.putClientSideTimestamps">PutClientSideTimestamps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.putComment">PutComment</a></code> | *No description.* |
@@ -155,6 +158,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.getAnyMapAttribute"></a>
 
@@ -264,6 +283,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.interpolationForAttribute"></a>
 
 ```go
@@ -273,6 +310,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -445,13 +506,14 @@ func ResetTtl()
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a KeyspacesTable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.KeyspacesTable_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.KeyspacesTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +559,7 @@ keyspacestable.KeyspacesTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.KeyspacesTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,6 +567,50 @@ keyspacestable.KeyspacesTable_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
+
+keyspacestable.KeyspacesTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a KeyspacesTable resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the KeyspacesTable to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing KeyspacesTable that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/keyspaces_table#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTable.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the KeyspacesTable to import is found.
 
 ---
 
@@ -1015,7 +1121,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableCapacitySpecification {
 	ReadCapacityUnits: *f64,
@@ -1075,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableClientSideTimestamps {
 	Status: *string,
@@ -1107,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableComment {
 	Message: *string,
@@ -1139,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableConfig {
 	Connection: interface{},
@@ -1150,19 +1256,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	KeyspaceName: *string,
-	SchemaDefinition: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableSchemaDefinition,
+	SchemaDefinition: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableSchemaDefinition,
 	TableName: *string,
-	CapacitySpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableCapacitySpecification,
-	ClientSideTimestamps: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableClientSideTimestamps,
-	Comment: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableComment,
+	CapacitySpecification: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableCapacitySpecification,
+	ClientSideTimestamps: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableClientSideTimestamps,
+	Comment: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableComment,
 	DefaultTimeToLive: *f64,
-	EncryptionSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableEncryptionSpecification,
+	EncryptionSpecification: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableEncryptionSpecification,
 	Id: *string,
-	PointInTimeRecovery: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTablePointInTimeRecovery,
+	PointInTimeRecovery: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTablePointInTimeRecovery,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableTimeouts,
-	Ttl: github.com/cdktf/cdktf-provider-aws-go/aws/v18.keyspacesTable.KeyspacesTableTtl,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableTimeouts,
+	Ttl: github.com/cdktf/cdktf-provider-aws-go/aws.keyspacesTable.KeyspacesTableTtl,
 }
 ```
 
@@ -1456,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableEncryptionSpecification {
 	KmsKeyIdentifier: *string,
@@ -1502,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTablePointInTimeRecovery {
 	Status: *string,
@@ -1534,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableSchemaDefinition {
 	Column: interface{},
@@ -1616,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableSchemaDefinitionClusteringKey {
 	Name: *string,
@@ -1662,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableSchemaDefinitionColumn {
 	Name: *string,
@@ -1708,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableSchemaDefinitionPartitionKey {
 	Name: *string,
@@ -1740,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableSchemaDefinitionStaticColumn {
 	Name: *string,
@@ -1772,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableTimeouts {
 	Create: *string,
@@ -1832,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 &keyspacestable.KeyspacesTableTtl {
 	Status: *string,
@@ -1866,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableCapacitySpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableCapacitySpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableCapacitySpecificationOutputReference
 ```
@@ -2202,7 +2308,7 @@ func InternalValue() KeyspacesTableCapacitySpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestampsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableClientSideTimestampsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableClientSideTimestampsOutputReference
 ```
@@ -2473,7 +2579,7 @@ func InternalValue() KeyspacesTableClientSideTimestamps
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableCommentOutputReference
 ```
@@ -2751,7 +2857,7 @@ func InternalValue() KeyspacesTableComment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableEncryptionSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableEncryptionSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableEncryptionSpecificationOutputReference
 ```
@@ -3058,7 +3164,7 @@ func InternalValue() KeyspacesTableEncryptionSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTablePointInTimeRecoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTablePointInTimeRecoveryOutputReference
 ```
@@ -3336,7 +3442,7 @@ func InternalValue() KeyspacesTablePointInTimeRecovery
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionClusteringKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyspacesTableSchemaDefinitionClusteringKeyList
 ```
@@ -3479,7 +3585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionClusteringKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionClusteringKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyspacesTableSchemaDefinitionClusteringKeyOutputReference
 ```
@@ -3790,7 +3896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyspacesTableSchemaDefinitionColumnList
 ```
@@ -3933,7 +4039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyspacesTableSchemaDefinitionColumnOutputReference
 ```
@@ -4244,7 +4350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableSchemaDefinitionOutputReference
 ```
@@ -4647,7 +4753,7 @@ func InternalValue() KeyspacesTableSchemaDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionPartitionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyspacesTableSchemaDefinitionPartitionKeyList
 ```
@@ -4790,7 +4896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionPartitionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyspacesTableSchemaDefinitionPartitionKeyOutputReference
 ```
@@ -5079,7 +5185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionStaticColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyspacesTableSchemaDefinitionStaticColumnList
 ```
@@ -5222,7 +5328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableSchemaDefinitionStaticColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyspacesTableSchemaDefinitionStaticColumnOutputReference
 ```
@@ -5511,7 +5617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableTimeoutsOutputReference
 ```
@@ -5847,7 +5953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.keyspacesTable.KeyspacesTableTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspacestable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/keyspacestable"
 
 keyspacestable.NewKeyspacesTableTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyspacesTableTtlOutputReference
 ```

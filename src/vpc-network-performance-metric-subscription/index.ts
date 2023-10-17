@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpc_network_performance_metric_subscription
 // generated from terraform resource schema
 
@@ -46,6 +41,20 @@ export class VpcNetworkPerformanceMetricSubscription extends cdktf.TerraformReso
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_vpc_network_performance_metric_subscription";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a VpcNetworkPerformanceMetricSubscription resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the VpcNetworkPerformanceMetricSubscription to import
+  * @param importFromId The id of the existing VpcNetworkPerformanceMetricSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpc_network_performance_metric_subscription#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the VpcNetworkPerformanceMetricSubscription to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_vpc_network_performance_metric_subscription", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

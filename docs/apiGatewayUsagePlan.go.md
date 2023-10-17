@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlan(scope Construct, id *string, config ApiGatewayUsagePlanConfig) ApiGatewayUsagePlan
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.putApiStages">PutApiStages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.putQuotaSettings">PutQuotaSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.putThrottleSettings">PutThrottleSettings</a></code> | *No description.* |
@@ -147,6 +150,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.getAnyMapAttribute"></a>
 
@@ -256,6 +275,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.interpolationForAttribute"></a>
 
 ```go
@@ -265,6 +302,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -359,13 +420,14 @@ func ResetThrottleSettings()
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ApiGatewayUsagePlan resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +473,7 @@ apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,6 +481,50 @@ apigatewayusageplan.ApiGatewayUsagePlan_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
+
+apigatewayusageplan.ApiGatewayUsagePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ApiGatewayUsagePlan resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ApiGatewayUsagePlan to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ApiGatewayUsagePlan that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_usage_plan#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ApiGatewayUsagePlan to import is found.
 
 ---
 
@@ -819,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanApiStages {
 	ApiId: *string,
@@ -881,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottle.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanApiStagesThrottle {
 	Path: *string,
@@ -941,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanConfig {
 	Connection: interface{},
@@ -956,10 +1062,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
 	Description: *string,
 	Id: *string,
 	ProductCode: *string,
-	QuotaSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings,
+	QuotaSettings: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ThrottleSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings,
+	ThrottleSettings: github.com/cdktf/cdktf-provider-aws-go/aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings,
 }
 ```
 
@@ -1178,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanQuotaSettings {
 	Limit: *f64,
@@ -1238,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 &apigatewayusageplan.ApiGatewayUsagePlanThrottleSettings {
 	BurstLimit: *f64,
@@ -1286,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayUsagePlanApiStagesList
 ```
@@ -1429,7 +1535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesOutputReference
 ```
@@ -1782,7 +1888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesThrottleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiGatewayUsagePlanApiStagesThrottleList
 ```
@@ -1925,7 +2031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanApiStagesThrottleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiGatewayUsagePlanApiStagesThrottleOutputReference
 ```
@@ -2272,7 +2378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanQuotaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayUsagePlanQuotaSettingsOutputReference
 ```
@@ -2594,7 +2700,7 @@ func InternalValue() ApiGatewayUsagePlanQuotaSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayusageplan"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayusageplan"
 
 apigatewayusageplan.NewApiGatewayUsagePlanThrottleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiGatewayUsagePlanThrottleSettingsOutputReference
 ```

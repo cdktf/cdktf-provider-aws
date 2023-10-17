@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
 
 dataawsroute53delegationset.NewDataAwsRoute53DelegationSet(scope Construct, id *string, config DataAwsRoute53DelegationSetConfig) DataAwsRoute53DelegationSet
 ```
@@ -264,13 +264,14 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsRoute53DelegationSet resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
 
 dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -324,6 +325,50 @@ dataawsroute53delegationset.DataAwsRoute53DelegationSet_IsTerraformDataSource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
+
+dataawsroute53delegationset.DataAwsRoute53DelegationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataAwsRoute53DelegationSet resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataAwsRoute53DelegationSet to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataAwsRoute53DelegationSet that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/route53_delegation_set#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataAwsRoute53DelegationSet to import is found.
 
 ---
 
@@ -548,7 +593,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53delegationset"
 
 &dataawsroute53delegationset.DataAwsRoute53DelegationSetConfig {
 	Connection: interface{},

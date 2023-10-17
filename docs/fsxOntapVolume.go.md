@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolume(scope Construct, id *string, config FsxOntapVolumeConfig) FsxOntapVolume
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.putSnaplockConfiguration">PutSnaplockConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.putTieringPolicy">PutTieringPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -154,6 +157,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.getAnyMapAttribute"></a>
 
@@ -263,6 +282,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.interpolationForAttribute"></a>
 
 ```go
@@ -272,6 +309,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -408,13 +469,14 @@ func ResetVolumeType()
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a FsxOntapVolume resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +522,7 @@ fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -468,6 +530,50 @@ fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
+
+fsxontapvolume.FsxOntapVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a FsxOntapVolume resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the FsxOntapVolume to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing FsxOntapVolume that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/fsx_ontap_volume#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the FsxOntapVolume to import is found.
 
 ---
 
@@ -1099,7 +1205,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeConfig {
 	Connection: interface{},
@@ -1119,13 +1225,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 	OntapVolumeType: *string,
 	SecurityStyle: *string,
 	SkipFinalBackup: interface{},
-	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
+	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
 	SnapshotPolicy: *string,
 	StorageEfficiencyEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTimeouts,
+	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTimeouts,
 	VolumeType: *string,
 }
 ```
@@ -1462,14 +1568,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfiguration {
 	SnaplockType: *string,
 	AuditLogVolume: interface{},
-	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
+	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
 	PrivilegedDelete: *string,
-	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
+	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
 	VolumeAppendModeEnabled: interface{},
 }
 ```
@@ -1568,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod {
 	Type: *string,
@@ -1614,12 +1720,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod {
-	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
-	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
-	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
+	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
+	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
+	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
 }
 ```
 
@@ -1680,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention {
 	Type: *string,
@@ -1726,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention {
 	Type: *string,
@@ -1772,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention {
 	Type: *string,
@@ -1818,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTieringPolicy {
 	CoolingPeriod: *f64,
@@ -1864,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTimeouts {
 	Create: *string,
@@ -1926,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference
 ```
@@ -2233,7 +2339,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationAutocommitPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationOutputReference
 ```
@@ -2675,7 +2781,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference
 ```
@@ -2982,7 +3088,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference
 ```
@@ -3289,7 +3395,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference
 ```
@@ -3596,7 +3702,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference
 ```
@@ -3971,7 +4077,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTieringPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTieringPolicyOutputReference
 ```
@@ -4278,7 +4384,7 @@ func InternalValue() FsxOntapVolumeTieringPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTimeoutsOutputReference
 ```

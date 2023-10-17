@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfig(scope Construct, id *string, config CodedeployDeploymentConfigConfig) CodedeployDeploymentConfig
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.putMinimumHealthyHosts">PutMinimumHealthyHosts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.putTrafficRoutingConfig">PutTrafficRoutingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.resetComputePlatform">ResetComputePlatform</a></code> | *No description.* |
@@ -142,6 +145,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.getAnyMapAttribute"></a>
 
@@ -251,6 +270,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.interpolationForAttribute"></a>
 
 ```go
@@ -260,6 +297,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -318,13 +379,14 @@ func ResetTrafficRoutingConfig()
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CodedeployDeploymentConfig resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +432,7 @@ codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -378,6 +440,50 @@ codedeploydeploymentconfig.CodedeployDeploymentConfig_IsTerraformResource(x inte
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
+
+codedeploydeploymentconfig.CodedeployDeploymentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a CodedeployDeploymentConfig resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the CodedeployDeploymentConfig to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing CodedeployDeploymentConfig that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/codedeploy_deployment_config#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfig.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the CodedeployDeploymentConfig to import is found.
 
 ---
 
@@ -690,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigConfig {
 	Connection: interface{},
@@ -703,8 +809,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfi
 	DeploymentConfigName: *string,
 	ComputePlatform: *string,
 	Id: *string,
-	MinimumHealthyHosts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts,
-	TrafficRoutingConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig,
+	MinimumHealthyHosts: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts,
+	TrafficRoutingConfig: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig,
 }
 ```
 
@@ -869,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigMinimumHealthyHosts {
 	Type: *string,
@@ -915,11 +1021,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfig {
-	TimeBasedCanary: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary,
-	TimeBasedLinear: github.com/cdktf/cdktf-provider-aws-go/aws/v18.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear,
+	TimeBasedCanary: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary,
+	TimeBasedLinear: github.com/cdktf/cdktf-provider-aws-go/aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear,
 	Type: *string,
 }
 ```
@@ -979,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
 	Interval: *f64,
@@ -1025,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 &codedeploydeploymentconfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
 	Interval: *f64,
@@ -1073,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigMinimumHealthyHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigMinimumHealthyHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigMinimumHealthyHostsOutputReference
 ```
@@ -1380,7 +1486,7 @@ func InternalValue() CodedeployDeploymentConfigMinimumHealthyHosts
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 ```
@@ -1742,7 +1848,7 @@ func InternalValue() CodedeployDeploymentConfigTrafficRoutingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryOutputReference
 ```
@@ -2049,7 +2155,7 @@ func InternalValue() CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCana
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/codedeploydeploymentconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codedeploydeploymentconfig"
 
 codedeploydeploymentconfig.NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference
 ```

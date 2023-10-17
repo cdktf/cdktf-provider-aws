@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/medialive_multiplex_program
 // generated from terraform resource schema
 
@@ -608,6 +603,20 @@ export class MedialiveMultiplexProgram extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_medialive_multiplex_program";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a MedialiveMultiplexProgram resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the MedialiveMultiplexProgram to import
+  * @param importFromId The id of the existing MedialiveMultiplexProgram that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/medialive_multiplex_program#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the MedialiveMultiplexProgram to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_medialive_multiplex_program", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

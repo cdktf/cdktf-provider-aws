@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/securityhub_invite_accepter
 // generated from terraform resource schema
 
@@ -34,6 +29,20 @@ export class SecurityhubInviteAccepter extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "aws_securityhub_invite_accepter";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a SecurityhubInviteAccepter resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the SecurityhubInviteAccepter to import
+  * @param importFromId The id of the existing SecurityhubInviteAccepter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/securityhub_invite_accepter#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the SecurityhubInviteAccepter to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "aws_securityhub_invite_accepter", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
