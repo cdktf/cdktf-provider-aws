@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 dataawsdbeventcategories.NewDataAwsDbEventCategories(scope Construct, id *string, config DataAwsDbEventCategoriesConfig) DataAwsDbEventCategories
 ```
@@ -285,7 +285,7 @@ func ResetSourceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 
 &dataawsdbeventcategories.DataAwsDbEventCategoriesConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfiguration(scope Construct, id *string, config GlueSecurityConfigurationConfig) GlueSecurityConfiguration
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration,
 	Name: *string,
 	Id: *string,
 }
@@ -856,12 +856,12 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfiguration {
-	CloudwatchEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption,
-	JobBookmarksEncryption: github.com/cdktf/cdktf-provider-aws-go/aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption,
-	S3Encryption: github.com/cdktf/cdktf-provider-aws-go/aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption,
+	CloudwatchEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption,
+	JobBookmarksEncryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption,
+	S3Encryption: github.com/cdktf/cdktf-provider-aws-go/aws/v18.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption,
 }
 ```
 
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
 	CloudwatchEncryptionMode: *string,
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
 	JobBookmarksEncryptionMode: *string,
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption {
 	KmsKeyArn: *string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfigurationCloudwatchE
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference
 ```
@@ -1676,7 +1676,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfigurationJobBookmark
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationOutputReference
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/gluesecurityconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference
 ```
