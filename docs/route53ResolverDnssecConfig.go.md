@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.NewRoute53ResolverDnssecConfig(scope Construct, id *string, config Route53ResolverDnssecConfigConfig) Route53ResolverDnssecConfig
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ route53resolverdnssecconfig.Route53ResolverDnssecConfig_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 route53resolverdnssecconfig.Route53ResolverDnssecConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverdnssecconfig"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverdnssecconfig"
 
 &route53resolverdnssecconfig.Route53ResolverDnssecConfigConfig {
 	Connection: interface{},
