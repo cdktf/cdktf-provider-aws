@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    if: github.event.pull_request.author_association != 'OWNER' && github.event.pull_request.author_association != 'MEMBER' && github.event.pull_request.author_association != 'COLLABORATOR'
+    if: github.event.pull_request.user.login != 'team-tf-cdk' && !contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR", "CONTRIBUTOR"]'), github.event.pull_request.author_association)
     steps:
       - name: Checkout
         uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
       - name: Auto-close PRs by non-collaborators
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh pr close ${{ github.event.pull_request.number }} --delete-branch --comment "Hi there! 👋 We appreciate your interest, but this is probably not the right place. All the code in this repository is auto-generated using [cdktf-provider-project](https://github.com/cdktf/cdktf-provider-project) and [cdktf-repository-manager](https://github.com/cdktf/cdktf-repository-manager) from the source [Terraform provider](https://github.com/terraform-providers/terraform-provider-aws). If there are problems, they should be addressed in one of those 3 repositories, not here, as any changes here will just get overwritten the next time there is an update upstream. Please open a new issue or PR in one of those repos. In the meantime, I'll auto-close this. Thanks!"
+        run: gh pr close ${{ github.event.pull_request.number }} --comment "Hi there! 👋 We appreciate your interest, but this is probably not the right place. All the code in this repository is auto-generated using [cdktf-provider-project](https://github.com/cdktf/cdktf-provider-project) and [cdktf-repository-manager](https://github.com/cdktf/cdktf-repository-manager) from the source [Terraform provider](https://github.com/terraform-providers/terraform-provider-aws). If there are problems, they should be addressed in one of those 3 repositories, not here, as any changes here will just get overwritten the next time there is an update upstream. Please open a new issue or PR in one of those repos. In the meantime, I'll auto-close this. Thanks!"
       - name: Add labels
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.NewRoute53CidrCollection(scope Construct, id *string, config Route53CidrCollectionConfig) Route53CidrCollection
 ```
@@ -332,7 +332,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ route53cidrcollection.Route53CidrCollection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ route53cidrcollection.Route53CidrCollection_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 route53cidrcollection.Route53CidrCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53CidrCollection.Route53CidrCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53cidrcollection"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53cidrcollection"
 
 &route53cidrcollection.Route53CidrCollectionConfig {
 	Connection: interface{},
