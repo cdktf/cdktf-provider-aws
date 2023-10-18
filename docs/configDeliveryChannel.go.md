@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.NewConfigDeliveryChannel(scope Construct, id *string, config ConfigDeliveryChannelConfig) ConfigDeliveryChannel
 ```
@@ -387,7 +387,7 @@ func ResetSnsTopicArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.ConfigDeliveryChannel_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.ConfigDeliveryChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ configdeliverychannel.ConfigDeliveryChannel_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.ConfigDeliveryChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ configdeliverychannel.ConfigDeliveryChannel_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.ConfigDeliveryChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 &configdeliverychannel.ConfigDeliveryChannelConfig {
 	Connection: interface{},
@@ -845,7 +845,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
 	Name: *string,
 	S3KeyPrefix: *string,
 	S3KmsKeyArn: *string,
-	SnapshotDeliveryProperties: github.com/cdktf/cdktf-provider-aws-go/aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties,
+	SnapshotDeliveryProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties,
 	SnsTopicArn: *string,
 }
 ```
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 &configdeliverychannel.ConfigDeliveryChannelSnapshotDeliveryProperties {
 	DeliveryFrequency: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/configdeliverychannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/configdeliverychannel"
 
 configdeliverychannel.NewConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference
 ```

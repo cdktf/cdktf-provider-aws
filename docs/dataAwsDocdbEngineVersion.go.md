@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.NewDataAwsDocdbEngineVersion(scope Construct, id *string, config DataAwsDocdbEngineVersionConfig) DataAwsDocdbEngineVersion
 ```
@@ -306,7 +306,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ dataawsdocdbengineversion.DataAwsDocdbEngineVersion_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 dataawsdocdbengineversion.DataAwsDocdbEngineVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDocdbEngineVersion.DataAwsDocdbEngineVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdocdbengineversion"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdocdbengineversion"
 
 &dataawsdocdbengineversion.DataAwsDocdbEngineVersionConfig {
 	Connection: interface{},

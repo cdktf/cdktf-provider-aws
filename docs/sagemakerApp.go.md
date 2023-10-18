@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerApp.SagemakerApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.NewSagemakerApp(scope Construct, id *string, config SagemakerAppConfig) SagemakerApp
 ```
@@ -387,7 +387,7 @@ func ResetUserProfileName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerApp.SagemakerApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.SagemakerApp_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerApp.SagemakerApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.SagemakerApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ sagemakerapp.SagemakerApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerApp.SagemakerApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.SagemakerApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ sagemakerapp.SagemakerApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerApp.SagemakerApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.SagemakerApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerApp.SagemakerAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 &sagemakerapp.SagemakerAppConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
 	AppType: *string,
 	DomainId: *string,
 	Id: *string,
-	ResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerApp.SagemakerAppResourceSpec,
+	ResourceSpec: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerApp.SagemakerAppResourceSpec,
 	SpaceName: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 &sagemakerapp.SagemakerAppResourceSpec {
 	InstanceType: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerApp.SagemakerAppResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerapp"
 
 sagemakerapp.NewSagemakerAppResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerAppResourceSpecOutputReference
 ```

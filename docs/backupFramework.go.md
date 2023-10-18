@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFramework(scope Construct, id *string, config BackupFrameworkConfig) BackupFramework
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.backupFramework.BackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.BackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.backupFramework.BackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.BackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ backupframework.BackupFramework_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.backupFramework.BackupFramework.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.BackupFramework_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ backupframework.BackupFramework_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.backupFramework.BackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.BackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 &backupframework.BackupFrameworkConfig {
 	Connection: interface{},
@@ -896,7 +896,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.backupFramework.BackupFrameworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.backupFramework.BackupFrameworkTimeouts,
 }
 ```
 
@@ -1087,12 +1087,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 &backupframework.BackupFrameworkControl {
 	Name: *string,
 	InputParameter: interface{},
-	Scope: github.com/cdktf/cdktf-provider-aws-go/aws.backupFramework.BackupFrameworkControlScope,
+	Scope: github.com/cdktf/cdktf-provider-aws-go/aws/v18.backupFramework.BackupFrameworkControlScope,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 &backupframework.BackupFrameworkControlInputParameter {
 	Name: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 &backupframework.BackupFrameworkControlScope {
 	ComplianceResourceIds: *[]*string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 &backupframework.BackupFrameworkTimeouts {
 	Create: *string,
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupFrameworkControlInputParameterList
 ```
@@ -1462,7 +1462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupFrameworkControlInputParameterOutputReference
 ```
@@ -1787,7 +1787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupFrameworkControlList
 ```
@@ -1930,7 +1930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupFrameworkControlOutputReference
 ```
@@ -2303,7 +2303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupFrameworkControlScopeOutputReference
 ```
@@ -2639,7 +2639,7 @@ func InternalValue() BackupFrameworkControlScope
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/backupframework"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/backupframework"
 
 backupframework.NewBackupFrameworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupFrameworkTimeoutsOutputReference
 ```

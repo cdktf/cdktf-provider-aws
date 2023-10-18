@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerProject.SagemakerProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.NewSagemakerProject(scope Construct, id *string, config SagemakerProjectConfig) SagemakerProject
 ```
@@ -373,7 +373,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerProject.SagemakerProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.SagemakerProject_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerProject.SagemakerProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.SagemakerProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ sagemakerproject.SagemakerProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerProject.SagemakerProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.SagemakerProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ sagemakerproject.SagemakerProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerProject.SagemakerProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.SagemakerProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 &sagemakerproject.SagemakerProjectConfig {
 	Connection: interface{},
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ProjectName: *string,
-	ServiceCatalogProvisioningDetails: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetails,
+	ServiceCatalogProvisioningDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v18.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetails,
 	Id: *string,
 	ProjectDescription: *string,
 	Tags: *map[string]*string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 &sagemakerproject.SagemakerProjectServiceCatalogProvisioningDetails {
 	ProductId: *string,
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 &sagemakerproject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter {
 	Key: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.NewSagemakerProjectServiceCatalogProvisioningDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerProjectServiceCatalogProvisioningDetailsOutputReference
 ```
@@ -1502,7 +1502,7 @@ func InternalValue() SagemakerProjectServiceCatalogProvisioningDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList
 ```
@@ -1645,7 +1645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakerproject"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sagemakerproject"
 
 sagemakerproject.NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference
 ```
