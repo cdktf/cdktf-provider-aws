@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@actions/core": "^1.1.0",
-    "@cdktf/provider-project": "^0.2.95",
+    "@cdktf/provider-project": "^0.3.0",
     "@types/node": "^18",
     "cdktf": "^0.19.0",
     "cdktf-cli": "^0.19.0",
@@ -58,7 +58,7 @@
     "jsii-rosetta": "~5.1.2",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.75.1",
+    "projen": "^0.75.2",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
