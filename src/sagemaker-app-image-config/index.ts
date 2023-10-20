@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config
+// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface SagemakerAppImageConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#app_image_config_name SagemakerAppImageConfig#app_image_config_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#app_image_config_name SagemakerAppImageConfig#app_image_config_name}
   */
   readonly appImageConfigName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#id SagemakerAppImageConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#id SagemakerAppImageConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#tags SagemakerAppImageConfig#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#tags SagemakerAppImageConfig#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#tags_all SagemakerAppImageConfig#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#tags_all SagemakerAppImageConfig#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * kernel_gateway_image_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#kernel_gateway_image_config SagemakerAppImageConfig#kernel_gateway_image_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#kernel_gateway_image_config SagemakerAppImageConfig#kernel_gateway_image_config}
   */
   readonly kernelGatewayImageConfig?: SagemakerAppImageConfigKernelGatewayImageConfig;
 }
 export interface SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#default_gid SagemakerAppImageConfig#default_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#default_gid SagemakerAppImageConfig#default_gid}
   */
   readonly defaultGid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#default_uid SagemakerAppImageConfig#default_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#default_uid SagemakerAppImageConfig#default_uid}
   */
   readonly defaultUid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#mount_path SagemakerAppImageConfig#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#mount_path SagemakerAppImageConfig#mount_path}
   */
   readonly mountPath?: string;
 }
@@ -159,11 +154,11 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutp
 }
 export interface SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#display_name SagemakerAppImageConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#display_name SagemakerAppImageConfig#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#name SagemakerAppImageConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#name SagemakerAppImageConfig#name}
   */
   readonly name: string;
 }
@@ -250,13 +245,13 @@ export interface SagemakerAppImageConfigKernelGatewayImageConfig {
   /**
   * file_system_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#file_system_config SagemakerAppImageConfig#file_system_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#file_system_config SagemakerAppImageConfig#file_system_config}
   */
   readonly fileSystemConfig?: SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig;
   /**
   * kernel_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#kernel_spec SagemakerAppImageConfig#kernel_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#kernel_spec SagemakerAppImageConfig#kernel_spec}
   */
   readonly kernelSpec: SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec;
 }
@@ -341,7 +336,7 @@ export class SagemakerAppImageConfigKernelGatewayImageConfigOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config}
 */
 export class SagemakerAppImageConfig extends cdktf.TerraformResource {
 
@@ -357,7 +352,7 @@ export class SagemakerAppImageConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SagemakerAppImageConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SagemakerAppImageConfig to import
-  * @param importFromId The id of the existing SagemakerAppImageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SagemakerAppImageConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SagemakerAppImageConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -369,7 +364,7 @@ export class SagemakerAppImageConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -380,7 +375,7 @@ export class SagemakerAppImageConfig extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sagemaker_app_image_config',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.21.0',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

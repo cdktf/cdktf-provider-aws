@@ -1,6 +1,6 @@
 # `data_aws_db_event_categories`
 
-Refer to the Terraform Registory for docs: [`data_aws_db_event_categories`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories).
+Refer to the Terraform Registory for docs: [`data_aws_db_event_categories`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories).
 
 # `dataAwsDbEventCategories` Submodule <a name="`dataAwsDbEventCategories` Submodule" id="@cdktf/provider-aws.dataAwsDbEventCategories"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_db_event_categories`](http
 
 ### DataAwsDbEventCategories <a name="DataAwsDbEventCategories" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories aws_db_event_categories}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories aws_db_event_categories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 dataawsdbeventcategories.NewDataAwsDbEventCategories(scope Construct, id *string, config DataAwsDbEventCategoriesConfig) DataAwsDbEventCategories
 ```
@@ -285,7 +285,7 @@ func ResetSourceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsdbeventcategories.DataAwsDbEventCategories_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 dataawsdbeventcategories.DataAwsDbEventCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataAwsDbEventCategories t
 
 The id of the existing DataAwsDbEventCategories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdbeventcategories"
 
 &dataawsdbeventcategories.DataAwsDbEventCategoriesConfig {
 	Connection: interface{},
@@ -633,8 +633,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdbeventcategories"
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories#id DataAwsDbEventCategories#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories#source_type DataAwsDbEventCategories#source_type}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories#id DataAwsDbEventCategories#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategoriesConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories#source_type DataAwsDbEventCategories#source_type}. |
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories#id DataAwsDbEventCategories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories#id DataAwsDbEventCategories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -731,7 +731,7 @@ SourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/db_event_categories#source_type DataAwsDbEventCategories#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/db_event_categories#source_type DataAwsDbEventCategories#source_type}.
 
 ---
 

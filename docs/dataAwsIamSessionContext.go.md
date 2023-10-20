@@ -1,6 +1,6 @@
 # `data_aws_iam_session_context`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context).
+Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context).
 
 # `dataAwsIamSessionContext` Submodule <a name="`dataAwsIamSessionContext` Submodule" id="@cdktf/provider-aws.dataAwsIamSessionContext"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_session_context`](http
 
 ### DataAwsIamSessionContext <a name="DataAwsIamSessionContext" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context aws_iam_session_context}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context aws_iam_session_context}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.NewDataAwsIamSessionContext(scope Construct, id *string, config DataAwsIamSessionContextConfig) DataAwsIamSessionContext
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsiamsessioncontext.DataAwsIamSessionContext_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContext.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 dataawsiamsessioncontext.DataAwsIamSessionContext_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsIamSessionContext t
 
 The id of the existing DataAwsIamSessionContext that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamsessioncontext"
 
 &dataawsiamsessioncontext.DataAwsIamSessionContextConfig {
 	Connection: interface{},
@@ -659,8 +659,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamsessioncontext"
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamSessionContext.DataAwsIamSessionContextConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}. |
 
 ---
 
@@ -742,7 +742,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context#arn DataAwsIamSessionContext#arn}.
 
 ---
 
@@ -754,7 +754,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_session_context#id DataAwsIamSessionContext#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
