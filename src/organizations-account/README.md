@@ -1,3 +1,3 @@
 # `aws_organizations_account`
 
-Refer to the Terraform Registory for docs: [`aws_organizations_account`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/organizations_account).
+Refer to the Terraform Registory for docs: [`aws_organizations_account`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_account).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance
+// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface VerifiedaccessInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#description VerifiedaccessInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#description VerifiedaccessInstance#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#fips_enabled VerifiedaccessInstance#fips_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#fips_enabled VerifiedaccessInstance#fips_enabled}
   */
   readonly fipsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#id VerifiedaccessInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#id VerifiedaccessInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#tags VerifiedaccessInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#tags VerifiedaccessInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#tags_all VerifiedaccessInstance#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#tags_all VerifiedaccessInstance#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
 }
@@ -122,7 +122,7 @@ export class VerifiedaccessInstanceVerifiedAccessTrustProvidersList extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}
 */
 export class VerifiedaccessInstance extends cdktf.TerraformResource {
 
@@ -138,7 +138,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VerifiedaccessInstance resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VerifiedaccessInstance to import
-  * @param importFromId The id of the existing VerifiedaccessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VerifiedaccessInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VerifiedaccessInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +150,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class VerifiedaccessInstance extends cdktf.TerraformResource {
       terraformResourceType: 'aws_verifiedaccess_instance',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.21.0',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

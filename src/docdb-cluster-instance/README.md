@@ -1,3 +1,3 @@
 # `aws_docdb_cluster_instance`
 
-Refer to the Terraform Registory for docs: [`aws_docdb_cluster_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance).
+Refer to the Terraform Registory for docs: [`aws_docdb_cluster_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/docdb_cluster_instance).

@@ -1,3 +1,3 @@
 # `aws_appflow_flow`
 
-Refer to the Terraform Registory for docs: [`aws_appflow_flow`](https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appflow_flow).
+Refer to the Terraform Registory for docs: [`aws_appflow_flow`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/appflow_flow).
