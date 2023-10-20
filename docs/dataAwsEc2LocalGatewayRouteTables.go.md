@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.NewDataAwsEc2LocalGatewayRouteTables(scope Construct, id *string, config DataAwsEc2LocalGatewayRouteTablesConfig) DataAwsEc2LocalGatewayRouteTables
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 &dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTablesConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayrouteta
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesTimeouts,
 }
 ```
 
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 &dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTablesFilter {
 	Name: *string,
@@ -902,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 &dataawsec2localgatewayroutetables.DataAwsEc2LocalGatewayRouteTablesTimeouts {
 	Read: *string,
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.NewDataAwsEc2LocalGatewayRouteTablesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2LocalGatewayRouteTablesFilterList
 ```
@@ -1079,7 +1079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.NewDataAwsEc2LocalGatewayRouteTablesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2LocalGatewayRouteTablesFilterOutputReference
 ```
@@ -1390,7 +1390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2localgatewayroutetables"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2localgatewayroutetables"
 
 dataawsec2localgatewayroutetables.NewDataAwsEc2LocalGatewayRouteTablesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2LocalGatewayRouteTablesTimeoutsOutputReference
 ```

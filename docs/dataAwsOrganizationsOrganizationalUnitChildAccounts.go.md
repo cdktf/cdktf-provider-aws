@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.NewDataAwsOrganizationsOrganizationalUnitChildAccounts(scope Construct, id *string, config DataAwsOrganizationsOrganizationalUnitChildAccountsConfig) DataAwsOrganizationsOrganizationalUnitChildAccounts
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganiza
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganiza
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccounts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 &dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsAccounts {
 
@@ -613,7 +613,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizat
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 &dataawsorganizationsorganizationalunitchildaccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.NewDataAwsOrganizationsOrganizationalUnitChildAccountsAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationalUnitChildAccountsAccountsList
 ```
@@ -880,7 +880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOrganizationsOrganizationalUnitChildAccounts.DataAwsOrganizationsOrganizationalUnitChildAccountsAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsorganizationsorganizationalunitchildaccounts"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsorganizationsorganizationalunitchildaccounts"
 
 dataawsorganizationsorganizationalunitchildaccounts.NewDataAwsOrganizationsOrganizationalUnitChildAccountsAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationalUnitChildAccountsAccountsOutputReference
 ```

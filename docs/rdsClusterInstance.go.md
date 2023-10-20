@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.NewRdsClusterInstance(scope Construct, id *string, config RdsClusterInstanceConfig) RdsClusterInstance
 ```
@@ -513,7 +513,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsConstruct(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ rdsclusterinstance.RdsClusterInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ rdsclusterinstance.RdsClusterInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.RdsClusterInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1495,7 +1495,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 &rdsclusterinstance.RdsClusterInstanceConfig {
 	Connection: interface{},
@@ -1531,7 +1531,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
 	PubliclyAccessible: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.rdsClusterInstance.RdsClusterInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.rdsClusterInstance.RdsClusterInstanceTimeouts,
 }
 ```
 
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 &rdsclusterinstance.RdsClusterInstanceTimeouts {
 	Create: *string,
@@ -2042,7 +2042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/rdsclusterinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/rdsclusterinstance"
 
 rdsclusterinstance.NewRdsClusterInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsClusterInstanceTimeoutsOutputReference
 ```

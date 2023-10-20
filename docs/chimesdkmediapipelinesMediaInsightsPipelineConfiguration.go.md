@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration(scope Construct, id *string, config ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig) ChimesdkmediapipelinesMediaInsightsPipelineConfiguration
 ```
@@ -399,7 +399,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesM
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesM
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig {
 	Connection: interface{},
@@ -877,10 +877,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediain
 	Elements: interface{},
 	Name: *string,
 	ResourceAccessRoleArn: *string,
-	RealTimeAlertConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration,
+	RealTimeAlertConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts,
 }
 ```
 
@@ -1070,18 +1070,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElements {
 	Type: *string,
-	AmazonTranscribeCallAnalyticsProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration,
-	AmazonTranscribeProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration,
-	KinesisDataStreamSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration,
-	LambdaFunctionSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration,
-	S3RecordingSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration,
-	SnsTopicSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration,
-	SqsQueueSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration,
-	VoiceAnalyticsProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration,
+	AmazonTranscribeCallAnalyticsProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration,
+	AmazonTranscribeProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration,
+	KinesisDataStreamSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration,
+	LambdaFunctionSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration,
+	S3RecordingSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration,
+	SnsTopicSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration,
+	SqsQueueSinkConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration,
+	VoiceAnalyticsProcessorConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration,
 }
 ```
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfiguration {
 	LanguageCode: *string,
@@ -1242,7 +1242,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediain
 	LanguageModelName: *string,
 	PartialResultsStability: *string,
 	PiiEntityTypes: *string,
-	PostCallAnalyticsSettings: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings,
+	PostCallAnalyticsSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings,
 	VocabularyFilterMethod: *string,
 	VocabularyFilterName: *string,
 	VocabularyName: *string,
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettings {
 	DataAccessRoleArn: *string,
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfiguration {
 	LanguageCode: *string,
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfiguration {
 	InsightsTarget: *string,
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfiguration {
 	InsightsTarget: *string,
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfiguration {
 	Destination: *string,
@@ -1788,7 +1788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfiguration {
 	InsightsTarget: *string,
@@ -1820,7 +1820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfiguration {
 	InsightsTarget: *string,
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfiguration {
 	SpeakerSearchStatus: *string,
@@ -1898,7 +1898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfiguration {
 	Rules: interface{},
@@ -1946,13 +1946,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRules {
 	Type: *string,
-	IssueDetectionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration,
-	KeywordMatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration,
-	SentimentConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration,
+	IssueDetectionConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration,
+	KeywordMatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration,
+	SentimentConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration,
 }
 ```
 
@@ -2026,7 +2026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfiguration {
 	RuleName: *string,
@@ -2058,7 +2058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfiguration {
 	Keywords: *[]*string,
@@ -2118,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfiguration {
 	RuleName: *string,
@@ -2178,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 &chimesdkmediapipelinesmediainsightspipelineconfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts {
 	Create: *string,
@@ -2240,7 +2240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationOutputReference
 ```
@@ -2872,7 +2872,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeCallAnalyticsProcessorConfigurationPostCallAnalyticsSettingsOutputReference
 ```
@@ -3223,7 +3223,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsAmazonTranscribeProcessorConfigurationOutputReference
 ```
@@ -3813,7 +3813,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsKinesisDataStreamSinkConfigurationOutputReference
 ```
@@ -4084,7 +4084,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsLambdaFunctionSinkConfigurationOutputReference
 ```
@@ -4355,7 +4355,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsList
 ```
@@ -4498,7 +4498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsOutputReference
 ```
@@ -5123,7 +5123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsS3RecordingSinkConfigurationOutputReference
 ```
@@ -5401,7 +5401,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSnsTopicSinkConfigurationOutputReference
 ```
@@ -5672,7 +5672,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsSqsQueueSinkConfigurationOutputReference
 ```
@@ -5943,7 +5943,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationElementsVoiceAnalyticsProcessorConfigurationOutputReference
 ```
@@ -6236,7 +6236,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationEle
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationOutputReference
 ```
@@ -6549,7 +6549,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesIssueDetectionConfigurationOutputReference
 ```
@@ -6820,7 +6820,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesKeywordMatchConfigurationOutputReference
 ```
@@ -7142,7 +7142,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesList
 ```
@@ -7285,7 +7285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesOutputReference
 ```
@@ -7700,7 +7700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRealTimeAlertConfigurationRulesSentimentConfigurationOutputReference
 ```
@@ -8015,7 +8015,7 @@ func InternalValue() ChimesdkmediapipelinesMediaInsightsPipelineConfigurationRea
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimesdkmediapipelinesMediaInsightsPipelineConfiguration.ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/chimesdkmediapipelinesmediainsightspipelineconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimesdkmediapipelinesmediainsightspipelineconfiguration"
 
 chimesdkmediapipelinesmediainsightspipelineconfiguration.NewChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeoutsOutputReference
 ```

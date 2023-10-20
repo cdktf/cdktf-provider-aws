@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 emrstudio.NewEmrStudio(scope Construct, id *string, config EmrStudioConfig) EmrStudio
 ```
@@ -381,7 +381,7 @@ func ResetUserRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.emrStudio.EmrStudio.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 emrstudio.EmrStudio_IsConstruct(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 emrstudio.EmrStudio_IsTerraformElement(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ emrstudio.EmrStudio_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 emrstudio.EmrStudio_IsTerraformResource(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ emrstudio.EmrStudio_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 emrstudio.EmrStudio_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/emrstudio"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/emrstudio"
 
 &emrstudio.EmrStudioConfig {
 	Connection: interface{},

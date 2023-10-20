@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 ec2transitgatewaypeeringattachmentaccepter.NewEc2TransitGatewayPeeringAttachmentAccepter(scope Construct, id *string, config Ec2TransitGatewayPeeringAttachmentAccepterConfig) Ec2TransitGatewayPeeringAttachmentAccepter
 ```
@@ -353,7 +353,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAcc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAcc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewaypeeringattachmentaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewaypeeringattachmentaccepter"
 
 &ec2transitgatewaypeeringattachmentaccepter.Ec2TransitGatewayPeeringAttachmentAccepterConfig {
 	Connection: interface{},
