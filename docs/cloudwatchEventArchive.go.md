@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 cloudwatcheventarchive.NewCloudwatchEventArchive(scope Construct, id *string, config CloudwatchEventArchiveConfig) CloudwatchEventArchive
 ```
@@ -360,7 +360,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ cloudwatcheventarchive.CloudwatchEventArchive_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 cloudwatcheventarchive.CloudwatchEventArchive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatcheventarchive"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatcheventarchive"
 
 &cloudwatcheventarchive.CloudwatchEventArchiveConfig {
 	Connection: interface{},

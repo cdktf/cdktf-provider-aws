@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 autoscalinglifecyclehook.NewAutoscalingLifecycleHook(scope Construct, id *string, config AutoscalingLifecycleHookConfig) AutoscalingLifecycleHook
 ```
@@ -374,7 +374,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 autoscalinglifecyclehook.AutoscalingLifecycleHook_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 autoscalinglifecyclehook.AutoscalingLifecycleHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ autoscalinglifecyclehook.AutoscalingLifecycleHook_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 autoscalinglifecyclehook.AutoscalingLifecycleHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ autoscalinglifecyclehook.AutoscalingLifecycleHook_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 autoscalinglifecyclehook.AutoscalingLifecycleHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/autoscalinglifecyclehook"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/autoscalinglifecyclehook"
 
 &autoscalinglifecyclehook.AutoscalingLifecycleHookConfig {
 	Connection: interface{},

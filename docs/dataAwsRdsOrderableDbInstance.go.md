@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 dataawsrdsorderabledbinstance.NewDataAwsRdsOrderableDbInstance(scope Construct, id *string, config DataAwsRdsOrderableDbInstanceConfig) DataAwsRdsOrderableDbInstance
 ```
@@ -390,7 +390,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1185,7 +1185,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsorderabledbinstance"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsrdsorderabledbinstance"
 
 &dataawsrdsorderabledbinstance.DataAwsRdsOrderableDbInstanceConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 sqsqueuepolicy.NewSqsQueuePolicy(scope Construct, id *string, config SqsQueuePolicyConfig) SqsQueuePolicy
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 sqsqueuepolicy.SqsQueuePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 sqsqueuepolicy.SqsQueuePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ sqsqueuepolicy.SqsQueuePolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 sqsqueuepolicy.SqsQueuePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ sqsqueuepolicy.SqsQueuePolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 sqsqueuepolicy.SqsQueuePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sqsQueuePolicy.SqsQueuePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/sqsqueuepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sqsqueuepolicy"
 
 &sqsqueuepolicy.SqsQueuePolicyConfig {
 	Connection: interface{},

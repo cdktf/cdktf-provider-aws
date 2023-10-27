@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 dataawslambdafunctions.NewDataAwsLambdaFunctions(scope Construct, id *string, config DataAwsLambdaFunctionsConfig) DataAwsLambdaFunctions
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawslambdafunctions.DataAwsLambdaFunctions_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 dataawslambdafunctions.DataAwsLambdaFunctions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +589,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawslambdafunctions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawslambdafunctions"
 
 &dataawslambdafunctions.DataAwsLambdaFunctionsConfig {
 	Connection: interface{},
