@@ -622,6 +622,7 @@ export * as internetGatewayAttachment from './internet-gateway-attachment';
 export * as internetmonitorMonitor from './internetmonitor-monitor';
 export * as iotAuthorizer from './iot-authorizer';
 export * as iotCertificate from './iot-certificate';
+export * as iotDomainConfiguration from './iot-domain-configuration';
 export * as iotIndexingConfiguration from './iot-indexing-configuration';
 export * as iotLoggingOptions from './iot-logging-options';
 export * as iotPolicy from './iot-policy';

@@ -1139,6 +1139,7 @@ The following submodules are available:
 - [internetmonitorMonitor](./internetmonitorMonitor.python.md)
 - [iotAuthorizer](./iotAuthorizer.python.md)
 - [iotCertificate](./iotCertificate.python.md)
+- [iotDomainConfiguration](./iotDomainConfiguration.python.md)
 - [iotIndexingConfiguration](./iotIndexingConfiguration.python.md)
 - [iotLoggingOptions](./iotLoggingOptions.python.md)
 - [iotPolicy](./iotPolicy.python.md)

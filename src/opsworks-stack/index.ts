@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack
+// https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,136 +13,136 @@ import * as cdktf from 'cdktf';
 
 export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#agent_version OpsworksStack#agent_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#agent_version OpsworksStack#agent_version}
   */
   readonly agentVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#berkshelf_version OpsworksStack#berkshelf_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#berkshelf_version OpsworksStack#berkshelf_version}
   */
   readonly berkshelfVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#color OpsworksStack#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#color OpsworksStack#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#configuration_manager_name OpsworksStack#configuration_manager_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#configuration_manager_name OpsworksStack#configuration_manager_name}
   */
   readonly configurationManagerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#configuration_manager_version OpsworksStack#configuration_manager_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#configuration_manager_version OpsworksStack#configuration_manager_version}
   */
   readonly configurationManagerVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#custom_json OpsworksStack#custom_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#custom_json OpsworksStack#custom_json}
   */
   readonly customJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_availability_zone OpsworksStack#default_availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_availability_zone OpsworksStack#default_availability_zone}
   */
   readonly defaultAvailabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_instance_profile_arn OpsworksStack#default_instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_instance_profile_arn OpsworksStack#default_instance_profile_arn}
   */
   readonly defaultInstanceProfileArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_os OpsworksStack#default_os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_os OpsworksStack#default_os}
   */
   readonly defaultOs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_root_device_type OpsworksStack#default_root_device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_root_device_type OpsworksStack#default_root_device_type}
   */
   readonly defaultRootDeviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_ssh_key_name OpsworksStack#default_ssh_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_ssh_key_name OpsworksStack#default_ssh_key_name}
   */
   readonly defaultSshKeyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#default_subnet_id OpsworksStack#default_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#default_subnet_id OpsworksStack#default_subnet_id}
   */
   readonly defaultSubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#hostname_theme OpsworksStack#hostname_theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#hostname_theme OpsworksStack#hostname_theme}
   */
   readonly hostnameTheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#id OpsworksStack#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#id OpsworksStack#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#manage_berkshelf OpsworksStack#manage_berkshelf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#manage_berkshelf OpsworksStack#manage_berkshelf}
   */
   readonly manageBerkshelf?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#name OpsworksStack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#name OpsworksStack#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#region OpsworksStack#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#region OpsworksStack#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#service_role_arn OpsworksStack#service_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#service_role_arn OpsworksStack#service_role_arn}
   */
   readonly serviceRoleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#tags OpsworksStack#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#tags OpsworksStack#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#tags_all OpsworksStack#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#tags_all OpsworksStack#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#use_custom_cookbooks OpsworksStack#use_custom_cookbooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#use_custom_cookbooks OpsworksStack#use_custom_cookbooks}
   */
   readonly useCustomCookbooks?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#use_opsworks_security_groups OpsworksStack#use_opsworks_security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#use_opsworks_security_groups OpsworksStack#use_opsworks_security_groups}
   */
   readonly useOpsworksSecurityGroups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#vpc_id OpsworksStack#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#vpc_id OpsworksStack#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * custom_cookbooks_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#custom_cookbooks_source OpsworksStack#custom_cookbooks_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#custom_cookbooks_source OpsworksStack#custom_cookbooks_source}
   */
   readonly customCookbooksSource?: OpsworksStackCustomCookbooksSource;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#timeouts OpsworksStack#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#timeouts OpsworksStack#timeouts}
   */
   readonly timeouts?: OpsworksStackTimeouts;
 }
 export interface OpsworksStackCustomCookbooksSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#password OpsworksStack#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#password OpsworksStack#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#revision OpsworksStack#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#revision OpsworksStack#revision}
   */
   readonly revision?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#ssh_key OpsworksStack#ssh_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#ssh_key OpsworksStack#ssh_key}
   */
   readonly sshKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#type OpsworksStack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#type OpsworksStack#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#url OpsworksStack#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#url OpsworksStack#url}
   */
   readonly url: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#username OpsworksStack#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#username OpsworksStack#username}
   */
   readonly username?: string;
 }
@@ -316,7 +316,7 @@ export class OpsworksStackCustomCookbooksSourceOutputReference extends cdktf.Com
 }
 export interface OpsworksStackTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#create OpsworksStack#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#create OpsworksStack#create}
   */
   readonly create?: string;
 }
@@ -391,7 +391,7 @@ export class OpsworksStackTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack aws_opsworks_stack}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack aws_opsworks_stack}
 */
 export class OpsworksStack extends cdktf.TerraformResource {
 
@@ -407,7 +407,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OpsworksStack resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpsworksStack to import
-  * @param importFromId The id of the existing OpsworksStack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpsworksStack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpsworksStack to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -419,7 +419,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -430,7 +430,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       terraformResourceType: 'aws_opsworks_stack',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

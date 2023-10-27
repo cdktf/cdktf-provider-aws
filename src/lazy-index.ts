@@ -622,6 +622,7 @@ Object.defineProperty(exports, 'internetGatewayAttachment', { get: function () {
 Object.defineProperty(exports, 'internetmonitorMonitor', { get: function () { return require('./internetmonitor-monitor'); } });
 Object.defineProperty(exports, 'iotAuthorizer', { get: function () { return require('./iot-authorizer'); } });
 Object.defineProperty(exports, 'iotCertificate', { get: function () { return require('./iot-certificate'); } });
+Object.defineProperty(exports, 'iotDomainConfiguration', { get: function () { return require('./iot-domain-configuration'); } });
 Object.defineProperty(exports, 'iotIndexingConfiguration', { get: function () { return require('./iot-indexing-configuration'); } });
 Object.defineProperty(exports, 'iotLoggingOptions', { get: function () { return require('./iot-logging-options'); } });
 Object.defineProperty(exports, 'iotPolicy', { get: function () { return require('./iot-policy'); } });

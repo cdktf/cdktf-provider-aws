@@ -1139,6 +1139,7 @@ The following submodules are available:
 - [internetmonitorMonitor](./internetmonitorMonitor.go.md)
 - [iotAuthorizer](./iotAuthorizer.go.md)
 - [iotCertificate](./iotCertificate.go.md)
+- [iotDomainConfiguration](./iotDomainConfiguration.go.md)
 - [iotIndexingConfiguration](./iotIndexingConfiguration.go.md)
 - [iotLoggingOptions](./iotLoggingOptions.go.md)
 - [iotPolicy](./iotPolicy.go.md)

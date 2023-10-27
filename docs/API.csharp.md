@@ -1139,6 +1139,7 @@ The following submodules are available:
 - [internetmonitorMonitor](./internetmonitorMonitor.csharp.md)
 - [iotAuthorizer](./iotAuthorizer.csharp.md)
 - [iotCertificate](./iotCertificate.csharp.md)
+- [iotDomainConfiguration](./iotDomainConfiguration.csharp.md)
 - [iotIndexingConfiguration](./iotIndexingConfiguration.csharp.md)
 - [iotLoggingOptions](./iotLoggingOptions.csharp.md)
 - [iotPolicy](./iotPolicy.csharp.md)

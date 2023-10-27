@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users
+// https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsIamUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users#id DataAwsIamUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users#name_regex DataAwsIamUsers#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users#path_prefix DataAwsIamUsers#path_prefix}
   */
   readonly pathPrefix?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users aws_iam_users}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users aws_iam_users}
 */
 export class DataAwsIamUsers extends cdktf.TerraformDataSource {
 
@@ -46,7 +46,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsIamUsers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsIamUsers to import
-  * @param importFromId The id of the existing DataAwsIamUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsIamUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsIamUsers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/iam_users aws_iam_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/iam_users aws_iam_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class DataAwsIamUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_iam_users',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

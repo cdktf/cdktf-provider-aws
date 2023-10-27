@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image
+// https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}
   */
   readonly containerRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
   */
   readonly distributionConfigurationArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}
   */
   readonly enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}
   */
   readonly imageRecipeArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
   */
   readonly infrastructureConfigurationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * image_scanning_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#image_scanning_configuration ImagebuilderImage#image_scanning_configuration}
+  */
+  readonly imageScanningConfiguration?: ImagebuilderImageImageScanningConfiguration;
+  /**
   * image_tests_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
   */
   readonly imageTestsConfiguration?: ImagebuilderImageImageTestsConfiguration;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
   */
   readonly timeouts?: ImagebuilderImageTimeouts;
 }
@@ -284,13 +290,199 @@ export class ImagebuilderImageOutputResourcesList extends cdktf.ComplexList {
     return new ImagebuilderImageOutputResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ImagebuilderImageImageScanningConfigurationEcrConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}
+  */
+  readonly containerTags?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}
+  */
+  readonly repositoryName?: string;
+}
+
+export function imagebuilderImageImageScanningConfigurationEcrConfigurationToTerraform(struct?: ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference | ImagebuilderImageImageScanningConfigurationEcrConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    container_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.containerTags),
+    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
+  }
+}
+
+export class ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ImagebuilderImageImageScanningConfigurationEcrConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._containerTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.containerTags = this._containerTags;
+    }
+    if (this._repositoryName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repositoryName = this._repositoryName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImageImageScanningConfigurationEcrConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._containerTags = undefined;
+      this._repositoryName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._containerTags = value.containerTags;
+      this._repositoryName = value.repositoryName;
+    }
+  }
+
+  // container_tags - computed: false, optional: true, required: false
+  private _containerTags?: string[]; 
+  public get containerTags() {
+    return cdktf.Fn.tolist(this.getListAttribute('container_tags'));
+  }
+  public set containerTags(value: string[]) {
+    this._containerTags = value;
+  }
+  public resetContainerTags() {
+    this._containerTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerTagsInput() {
+    return this._containerTags;
+  }
+
+  // repository_name - computed: false, optional: true, required: false
+  private _repositoryName?: string; 
+  public get repositoryName() {
+    return this.getStringAttribute('repository_name');
+  }
+  public set repositoryName(value: string) {
+    this._repositoryName = value;
+  }
+  public resetRepositoryName() {
+    this._repositoryName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName;
+  }
+}
+export interface ImagebuilderImageImageScanningConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}
+  */
+  readonly imageScanningEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * ecr_configuration block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#ecr_configuration ImagebuilderImage#ecr_configuration}
+  */
+  readonly ecrConfiguration?: ImagebuilderImageImageScanningConfigurationEcrConfiguration;
+}
+
+export function imagebuilderImageImageScanningConfigurationToTerraform(struct?: ImagebuilderImageImageScanningConfigurationOutputReference | ImagebuilderImageImageScanningConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    image_scanning_enabled: cdktf.booleanToTerraform(struct!.imageScanningEnabled),
+    ecr_configuration: imagebuilderImageImageScanningConfigurationEcrConfigurationToTerraform(struct!.ecrConfiguration),
+  }
+}
+
+export class ImagebuilderImageImageScanningConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ImagebuilderImageImageScanningConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._imageScanningEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageScanningEnabled = this._imageScanningEnabled;
+    }
+    if (this._ecrConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ecrConfiguration = this._ecrConfiguration?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagebuilderImageImageScanningConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._imageScanningEnabled = undefined;
+      this._ecrConfiguration.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._imageScanningEnabled = value.imageScanningEnabled;
+      this._ecrConfiguration.internalValue = value.ecrConfiguration;
+    }
+  }
+
+  // image_scanning_enabled - computed: false, optional: true, required: false
+  private _imageScanningEnabled?: boolean | cdktf.IResolvable; 
+  public get imageScanningEnabled() {
+    return this.getBooleanAttribute('image_scanning_enabled');
+  }
+  public set imageScanningEnabled(value: boolean | cdktf.IResolvable) {
+    this._imageScanningEnabled = value;
+  }
+  public resetImageScanningEnabled() {
+    this._imageScanningEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageScanningEnabledInput() {
+    return this._imageScanningEnabled;
+  }
+
+  // ecr_configuration - computed: false, optional: true, required: false
+  private _ecrConfiguration = new ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference(this, "ecr_configuration");
+  public get ecrConfiguration() {
+    return this._ecrConfiguration;
+  }
+  public putEcrConfiguration(value: ImagebuilderImageImageScanningConfigurationEcrConfiguration) {
+    this._ecrConfiguration.internalValue = value;
+  }
+  public resetEcrConfiguration() {
+    this._ecrConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecrConfigurationInput() {
+    return this._ecrConfiguration.internalValue;
+  }
+}
 export interface ImagebuilderImageImageTestsConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}
   */
   readonly imageTestsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}
   */
   readonly timeoutMinutes?: number;
 }
@@ -378,7 +570,7 @@ export class ImagebuilderImageImageTestsConfigurationOutputReference extends cdk
 }
 export interface ImagebuilderImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}
   */
   readonly create?: string;
 }
@@ -453,7 +645,7 @@ export class ImagebuilderImageTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image aws_imagebuilder_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image aws_imagebuilder_image}
 */
 export class ImagebuilderImage extends cdktf.TerraformResource {
 
@@ -469,7 +661,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ImagebuilderImage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImagebuilderImage to import
-  * @param importFromId The id of the existing ImagebuilderImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImagebuilderImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImagebuilderImage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -481,7 +673,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -492,7 +684,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
       terraformResourceType: 'aws_imagebuilder_image',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -511,6 +703,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
     this._infrastructureConfigurationArn = config.infrastructureConfigurationArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._imageScanningConfiguration.internalValue = config.imageScanningConfiguration;
     this._imageTestsConfiguration.internalValue = config.imageTestsConfiguration;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -680,6 +873,22 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
     return this.getStringAttribute('version');
   }
 
+  // image_scanning_configuration - computed: false, optional: true, required: false
+  private _imageScanningConfiguration = new ImagebuilderImageImageScanningConfigurationOutputReference(this, "image_scanning_configuration");
+  public get imageScanningConfiguration() {
+    return this._imageScanningConfiguration;
+  }
+  public putImageScanningConfiguration(value: ImagebuilderImageImageScanningConfiguration) {
+    this._imageScanningConfiguration.internalValue = value;
+  }
+  public resetImageScanningConfiguration() {
+    this._imageScanningConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageScanningConfigurationInput() {
+    return this._imageScanningConfiguration.internalValue;
+  }
+
   // image_tests_configuration - computed: false, optional: true, required: false
   private _imageTestsConfiguration = new ImagebuilderImageImageTestsConfigurationOutputReference(this, "image_tests_configuration");
   public get imageTestsConfiguration() {
@@ -726,6 +935,7 @@ export class ImagebuilderImage extends cdktf.TerraformResource {
       infrastructure_configuration_arn: cdktf.stringToTerraform(this._infrastructureConfigurationArn),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      image_scanning_configuration: imagebuilderImageImageScanningConfigurationToTerraform(this._imageScanningConfiguration.internalValue),
       image_tests_configuration: imagebuilderImageImageTestsConfigurationToTerraform(this._imageTestsConfiguration.internalValue),
       timeouts: imagebuilderImageTimeoutsToTerraform(this._timeouts.internalValue),
     };
