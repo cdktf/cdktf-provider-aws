@@ -1,6 +1,6 @@
 # `data_aws_wafregional_web_acl`
 
-Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl).
+Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl).
 
 # `dataAwsWafregionalWebAcl` Submodule <a name="`dataAwsWafregionalWebAcl` Submodule" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_wafregional_web_acl`](http
 
 ### DataAwsWafregionalWebAcl <a name="DataAwsWafregionalWebAcl" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl aws_wafregional_web_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl aws_wafregional_web_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataAwsWafregionalWebAcl.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAcl.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -444,7 +444,7 @@ The construct id used in the generated config for the DataAwsWafregionalWebAcl t
 
 The id of the existing DataAwsWafregionalWebAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,8 +696,8 @@ DataAwsWafregionalWebAclConfig.builder()
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsWafregionalWebAcl.DataAwsWafregionalWebAclConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}. |
 
 ---
 
@@ -779,7 +779,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#name DataAwsWafregionalWebAcl#name}.
 
 ---
 
@@ -791,7 +791,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/wafregional_web_acl#id DataAwsWafregionalWebAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `aws_ec2_transit_gateway`
 
-Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway).
+Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway).
 
 # `ec2TransitGateway` Submodule <a name="`ec2TransitGateway` Submodule" id="@cdktf/provider-aws.ec2TransitGateway"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_ec2_transit_gateway`](https://r
 
 ### Ec2TransitGateway <a name="Ec2TransitGateway" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.NewEc2TransitGateway(scope Construct, id *string, config Ec2TransitGatewayConfig) Ec2TransitGateway
 ```
@@ -436,7 +436,7 @@ func ResetVpnEcmpSupport()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsConstruct(x interface{}) *bool
 ```
@@ -468,7 +468,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -482,7 +482,7 @@ ec2transitgateway.Ec2TransitGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -496,7 +496,7 @@ ec2transitgateway.Ec2TransitGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.Ec2TransitGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -525,7 +525,7 @@ The construct id used in the generated config for the Ec2TransitGateway to impor
 
 The id of the existing Ec2TransitGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 &ec2transitgateway.Ec2TransitGatewayConfig {
 	Connection: interface{},
@@ -1075,7 +1075,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
 	MulticastSupport: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.ec2TransitGateway.Ec2TransitGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ec2TransitGateway.Ec2TransitGatewayTimeouts,
 	TransitGatewayCidrBlocks: *[]*string,
 	VpnEcmpSupport: *string,
 }
@@ -1092,19 +1092,19 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.amazonSideAsn">AmazonSideAsn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#amazon_side_asn Ec2TransitGateway#amazon_side_asn}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.autoAcceptSharedAttachments">AutoAcceptSharedAttachments</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments Ec2TransitGateway#auto_accept_shared_attachments}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.defaultRouteTableAssociation">DefaultRouteTableAssociation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#default_route_table_association Ec2TransitGateway#default_route_table_association}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.defaultRouteTablePropagation">DefaultRouteTablePropagation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#default_route_table_propagation Ec2TransitGateway#default_route_table_propagation}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#description Ec2TransitGateway#description}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.dnsSupport">DnsSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#dns_support Ec2TransitGateway#dns_support}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#id Ec2TransitGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.multicastSupport">MulticastSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#multicast_support Ec2TransitGateway#multicast_support}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#tags Ec2TransitGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#tags_all Ec2TransitGateway#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.amazonSideAsn">AmazonSideAsn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#amazon_side_asn Ec2TransitGateway#amazon_side_asn}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.autoAcceptSharedAttachments">AutoAcceptSharedAttachments</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments Ec2TransitGateway#auto_accept_shared_attachments}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.defaultRouteTableAssociation">DefaultRouteTableAssociation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#default_route_table_association Ec2TransitGateway#default_route_table_association}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.defaultRouteTablePropagation">DefaultRouteTablePropagation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#default_route_table_propagation Ec2TransitGateway#default_route_table_propagation}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#description Ec2TransitGateway#description}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.dnsSupport">DnsSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#dns_support Ec2TransitGateway#dns_support}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#id Ec2TransitGateway#id}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.multicastSupport">MulticastSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#multicast_support Ec2TransitGateway#multicast_support}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#tags Ec2TransitGateway#tags}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#tags_all Ec2TransitGateway#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts">Ec2TransitGatewayTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.transitGatewayCidrBlocks">TransitGatewayCidrBlocks</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks Ec2TransitGateway#transit_gateway_cidr_blocks}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.vpnEcmpSupport">VpnEcmpSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support Ec2TransitGateway#vpn_ecmp_support}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.transitGatewayCidrBlocks">TransitGatewayCidrBlocks</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks Ec2TransitGateway#transit_gateway_cidr_blocks}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayConfig.property.vpnEcmpSupport">VpnEcmpSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support Ec2TransitGateway#vpn_ecmp_support}. |
 
 ---
 
@@ -1186,7 +1186,7 @@ AmazonSideAsn *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#amazon_side_asn Ec2TransitGateway#amazon_side_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#amazon_side_asn Ec2TransitGateway#amazon_side_asn}.
 
 ---
 
@@ -1198,7 +1198,7 @@ AutoAcceptSharedAttachments *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments Ec2TransitGateway#auto_accept_shared_attachments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#auto_accept_shared_attachments Ec2TransitGateway#auto_accept_shared_attachments}.
 
 ---
 
@@ -1210,7 +1210,7 @@ DefaultRouteTableAssociation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#default_route_table_association Ec2TransitGateway#default_route_table_association}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#default_route_table_association Ec2TransitGateway#default_route_table_association}.
 
 ---
 
@@ -1222,7 +1222,7 @@ DefaultRouteTablePropagation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#default_route_table_propagation Ec2TransitGateway#default_route_table_propagation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#default_route_table_propagation Ec2TransitGateway#default_route_table_propagation}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#description Ec2TransitGateway#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#description Ec2TransitGateway#description}.
 
 ---
 
@@ -1246,7 +1246,7 @@ DnsSupport *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#dns_support Ec2TransitGateway#dns_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#dns_support Ec2TransitGateway#dns_support}.
 
 ---
 
@@ -1258,7 +1258,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#id Ec2TransitGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#id Ec2TransitGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1273,7 +1273,7 @@ MulticastSupport *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#multicast_support Ec2TransitGateway#multicast_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#multicast_support Ec2TransitGateway#multicast_support}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#tags Ec2TransitGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#tags Ec2TransitGateway#tags}.
 
 ---
 
@@ -1297,7 +1297,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#tags_all Ec2TransitGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#tags_all Ec2TransitGateway#tags_all}.
 
 ---
 
@@ -1311,7 +1311,7 @@ Timeouts Ec2TransitGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#timeouts Ec2TransitGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#timeouts Ec2TransitGateway#timeouts}
 
 ---
 
@@ -1323,7 +1323,7 @@ TransitGatewayCidrBlocks *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks Ec2TransitGateway#transit_gateway_cidr_blocks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#transit_gateway_cidr_blocks Ec2TransitGateway#transit_gateway_cidr_blocks}.
 
 ---
 
@@ -1335,7 +1335,7 @@ VpnEcmpSupport *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support Ec2TransitGateway#vpn_ecmp_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#vpn_ecmp_support Ec2TransitGateway#vpn_ecmp_support}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 &ec2transitgateway.Ec2TransitGatewayTimeouts {
 	Create: *string,
@@ -1357,9 +1357,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#create Ec2TransitGateway#create}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#delete Ec2TransitGateway#delete}. |
-| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#update Ec2TransitGateway#update}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#create Ec2TransitGateway#create}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#delete Ec2TransitGateway#delete}. |
+| <code><a href="#@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#update Ec2TransitGateway#update}. |
 
 ---
 
@@ -1371,7 +1371,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#create Ec2TransitGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#create Ec2TransitGateway#create}.
 
 ---
 
@@ -1383,7 +1383,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#delete Ec2TransitGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#delete Ec2TransitGateway#delete}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_transit_gateway#update Ec2TransitGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ec2_transit_gateway#update Ec2TransitGateway#update}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgateway"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgateway"
 
 ec2transitgateway.NewEc2TransitGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayTimeoutsOutputReference
 ```

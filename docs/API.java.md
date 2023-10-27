@@ -1139,6 +1139,7 @@ The following submodules are available:
 - [internetmonitorMonitor](./internetmonitorMonitor.java.md)
 - [iotAuthorizer](./iotAuthorizer.java.md)
 - [iotCertificate](./iotCertificate.java.md)
+- [iotDomainConfiguration](./iotDomainConfiguration.java.md)
 - [iotIndexingConfiguration](./iotIndexingConfiguration.java.md)
 - [iotLoggingOptions](./iotLoggingOptions.java.md)
 - [iotPolicy](./iotPolicy.java.md)

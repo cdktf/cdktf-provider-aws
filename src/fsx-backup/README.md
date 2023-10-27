@@ -1,3 +1,3 @@
 # `aws_fsx_backup`
 
-Refer to the Terraform Registory for docs: [`aws_fsx_backup`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_backup).
+Refer to the Terraform Registory for docs: [`aws_fsx_backup`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_backup).

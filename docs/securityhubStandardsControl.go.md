@@ -1,6 +1,6 @@
 # `aws_securityhub_standards_control`
 
-Refer to the Terraform Registory for docs: [`aws_securityhub_standards_control`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control).
+Refer to the Terraform Registory for docs: [`aws_securityhub_standards_control`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control).
 
 # `securityhubStandardsControl` Submodule <a name="`securityhubStandardsControl` Submodule" id="@cdktf/provider-aws.securityhubStandardsControl"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_securityhub_standards_control`]
 
 ### SecurityhubStandardsControl <a name="SecurityhubStandardsControl" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control aws_securityhub_standards_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control aws_securityhub_standards_control}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 securityhubstandardscontrol.NewSecurityhubStandardsControl(scope Construct, id *string, config SecurityhubStandardsControlConfig) SecurityhubStandardsControl
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 securityhubstandardscontrol.SecurityhubStandardsControl_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 securityhubstandardscontrol.SecurityhubStandardsControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ securityhubstandardscontrol.SecurityhubStandardsControl_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 securityhubstandardscontrol.SecurityhubStandardsControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ securityhubstandardscontrol.SecurityhubStandardsControl_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 securityhubstandardscontrol.SecurityhubStandardsControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the SecurityhubStandardsContro
 
 The id of the existing SecurityhubStandardsControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontrol"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/securityhubstandardscontrol"
 
 &securityhubstandardscontrol.SecurityhubStandardsControlConfig {
 	Connection: interface{},
@@ -828,10 +828,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/securityhubstandardscontr
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.controlStatus">ControlStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#control_status SecurityhubStandardsControl#control_status}. |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.standardsControlArn">StandardsControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#standards_control_arn SecurityhubStandardsControl#standards_control_arn}. |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.disabledReason">DisabledReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#disabled_reason SecurityhubStandardsControl#disabled_reason}. |
-| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#id SecurityhubStandardsControl#id}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.controlStatus">ControlStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#control_status SecurityhubStandardsControl#control_status}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.standardsControlArn">StandardsControlArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#standards_control_arn SecurityhubStandardsControl#standards_control_arn}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.disabledReason">DisabledReason</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#disabled_reason SecurityhubStandardsControl#disabled_reason}. |
+| <code><a href="#@cdktf/provider-aws.securityhubStandardsControl.SecurityhubStandardsControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#id SecurityhubStandardsControl#id}. |
 
 ---
 
@@ -913,7 +913,7 @@ ControlStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#control_status SecurityhubStandardsControl#control_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#control_status SecurityhubStandardsControl#control_status}.
 
 ---
 
@@ -925,7 +925,7 @@ StandardsControlArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#standards_control_arn SecurityhubStandardsControl#standards_control_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#standards_control_arn SecurityhubStandardsControl#standards_control_arn}.
 
 ---
 
@@ -937,7 +937,7 @@ DisabledReason *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#disabled_reason SecurityhubStandardsControl#disabled_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#disabled_reason SecurityhubStandardsControl#disabled_reason}.
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_standards_control#id SecurityhubStandardsControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/securityhub_standards_control#id SecurityhubStandardsControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

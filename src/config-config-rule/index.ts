@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule
+// https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +8,167 @@ import * as cdktf from 'cdktf';
 
 export interface ConfigConfigRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#description ConfigConfigRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#description ConfigConfigRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#id ConfigConfigRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#id ConfigConfigRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}
   */
   readonly inputParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}
   */
   readonly maximumExecutionFrequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#name ConfigConfigRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#name ConfigConfigRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * evaluation_mode block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
+  */
+  readonly evaluationMode?: ConfigConfigRuleEvaluationMode[] | cdktf.IResolvable;
+  /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
   */
   readonly scope?: ConfigConfigRuleScope;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
   */
   readonly source: ConfigConfigRuleSource;
 }
+export interface ConfigConfigRuleEvaluationMode {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}
+  */
+  readonly mode?: string;
+}
+
+export function configConfigRuleEvaluationModeToTerraform(struct?: ConfigConfigRuleEvaluationMode | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
+  }
+}
+
+export class ConfigConfigRuleEvaluationModeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ConfigConfigRuleEvaluationMode | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConfigConfigRuleEvaluationMode | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._mode = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._mode = value.mode;
+    }
+  }
+
+  // mode - computed: true, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+}
+
+export class ConfigConfigRuleEvaluationModeList extends cdktf.ComplexList {
+  public internalValue? : ConfigConfigRuleEvaluationMode[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ConfigConfigRuleEvaluationModeOutputReference {
+    return new ConfigConfigRuleEvaluationModeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ConfigConfigRuleScope {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}
   */
   readonly complianceResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}
   */
   readonly complianceResourceTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}
   */
   readonly tagKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}
   */
   readonly tagValue?: string;
 }
@@ -204,15 +302,15 @@ export class ConfigConfigRuleScopeOutputReference extends cdktf.ComplexObject {
 }
 export interface ConfigConfigRuleSourceCustomPolicyDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}
   */
   readonly enableDebugLogDelivery?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}
   */
   readonly policyRuntime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}
   */
   readonly policyText: string;
 }
@@ -317,15 +415,15 @@ export class ConfigConfigRuleSourceCustomPolicyDetailsOutputReference extends cd
 }
 export interface ConfigConfigRuleSourceSourceDetail {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}
   */
   readonly eventSource?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}
   */
   readonly maximumExecutionFrequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}
   */
   readonly messageType?: string;
 }
@@ -468,23 +566,23 @@ export class ConfigConfigRuleSourceSourceDetailList extends cdktf.ComplexList {
 }
 export interface ConfigConfigRuleSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}
   */
   readonly sourceIdentifier?: string;
   /**
   * custom_policy_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
   */
   readonly customPolicyDetails?: ConfigConfigRuleSourceCustomPolicyDetails;
   /**
   * source_detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
   */
   readonly sourceDetail?: ConfigConfigRuleSourceSourceDetail[] | cdktf.IResolvable;
 }
@@ -615,7 +713,7 @@ export class ConfigConfigRuleSourceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule}
 */
 export class ConfigConfigRule extends cdktf.TerraformResource {
 
@@ -631,7 +729,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigConfigRule to import
-  * @param importFromId The id of the existing ConfigConfigRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigConfigRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigConfigRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -643,7 +741,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -654,7 +752,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
       terraformResourceType: 'aws_config_config_rule',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -672,6 +770,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._evaluationMode.internalValue = config.evaluationMode;
     this._scope.internalValue = config.scope;
     this._source.internalValue = config.source;
   }
@@ -799,6 +898,22 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
     return this._tagsAll;
   }
 
+  // evaluation_mode - computed: false, optional: true, required: false
+  private _evaluationMode = new ConfigConfigRuleEvaluationModeList(this, "evaluation_mode", true);
+  public get evaluationMode() {
+    return this._evaluationMode;
+  }
+  public putEvaluationMode(value: ConfigConfigRuleEvaluationMode[] | cdktf.IResolvable) {
+    this._evaluationMode.internalValue = value;
+  }
+  public resetEvaluationMode() {
+    this._evaluationMode.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluationModeInput() {
+    return this._evaluationMode.internalValue;
+  }
+
   // scope - computed: false, optional: true, required: false
   private _scope = new ConfigConfigRuleScopeOutputReference(this, "scope");
   public get scope() {
@@ -841,6 +956,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
+      evaluation_mode: cdktf.listMapper(configConfigRuleEvaluationModeToTerraform, true)(this._evaluationMode.internalValue),
       scope: configConfigRuleScopeToTerraform(this._scope.internalValue),
       source: configConfigRuleSourceToTerraform(this._source.internalValue),
     };

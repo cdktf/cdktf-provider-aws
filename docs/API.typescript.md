@@ -1139,6 +1139,7 @@ The following submodules are available:
 - [internetmonitorMonitor](./internetmonitorMonitor.typescript.md)
 - [iotAuthorizer](./iotAuthorizer.typescript.md)
 - [iotCertificate](./iotCertificate.typescript.md)
+- [iotDomainConfiguration](./iotDomainConfiguration.typescript.md)
 - [iotIndexingConfiguration](./iotIndexingConfiguration.typescript.md)
 - [iotLoggingOptions](./iotLoggingOptions.typescript.md)
 - [iotPolicy](./iotPolicy.typescript.md)

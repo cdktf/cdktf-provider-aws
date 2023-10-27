@@ -1,6 +1,6 @@
 # `aws_route53_resolver_firewall_domain_list`
 
-Refer to the Terraform Registory for docs: [`aws_route53_resolver_firewall_domain_list`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list).
+Refer to the Terraform Registory for docs: [`aws_route53_resolver_firewall_domain_list`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list).
 
 # `route53ResolverFirewallDomainList` Submodule <a name="`route53ResolverFirewallDomainList` Submodule" id="@cdktf/provider-aws.route53ResolverFirewallDomainList"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_route53_resolver_firewall_domai
 
 ### Route53ResolverFirewallDomainList <a name="Route53ResolverFirewallDomainList" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 route53resolverfirewalldomainlist.NewRoute53ResolverFirewallDomainList(scope Construct, id *string, config Route53ResolverFirewallDomainListConfig) Route53ResolverFirewallDomainList
 ```
@@ -360,7 +360,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 route53resolverfirewalldomainlist.Route53ResolverFirewallDomainList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the Route53ResolverFirewallDom
 
 The id of the existing Route53ResolverFirewallDomainList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldomainlist"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/route53resolverfirewalldomainlist"
 
 &route53resolverfirewalldomainlist.Route53ResolverFirewallDomainListConfig {
 	Connection: interface{},
@@ -799,11 +799,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53resolverfirewalldo
 | <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
-| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
-| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
-| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
-| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}. |
+| <code><a href="#@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}. |
 
 ---
 
@@ -885,7 +885,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#name Route53ResolverFirewallDomainList#name}.
 
 ---
 
@@ -897,7 +897,7 @@ Domains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#domains Route53ResolverFirewallDomainList#domains}.
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#id Route53ResolverFirewallDomainList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#tags Route53ResolverFirewallDomainList#tags}.
 
 ---
 
@@ -936,7 +936,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/route53_resolver_firewall_domain_list#tags_all Route53ResolverFirewallDomainList#tags_all}.
 
 ---
 

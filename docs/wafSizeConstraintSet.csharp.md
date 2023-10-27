@@ -1,6 +1,6 @@
 # `aws_waf_size_constraint_set`
 
-Refer to the Terraform Registory for docs: [`aws_waf_size_constraint_set`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set).
+Refer to the Terraform Registory for docs: [`aws_waf_size_constraint_set`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set).
 
 # `wafSizeConstraintSet` Submodule <a name="`wafSizeConstraintSet` Submodule" id="@cdktf/provider-aws.wafSizeConstraintSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_waf_size_constraint_set`](https
 
 ### WafSizeConstraintSet <a name="WafSizeConstraintSet" id="@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the WafSizeConstraintSet to im
 
 The id of the existing WafSizeConstraintSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,8 +752,8 @@ new WafSizeConstraintSetConfig {
 | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#name WafSizeConstraintSet#name}. |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#id WafSizeConstraintSet#id}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#name WafSizeConstraintSet#name}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#id WafSizeConstraintSet#id}. |
 | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig.property.sizeConstraints">SizeConstraints</a></code> | <code>object</code> | size_constraints block. |
 
 ---
@@ -836,7 +836,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#name WafSizeConstraintSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#name WafSizeConstraintSet#name}.
 
 ---
 
@@ -848,7 +848,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#id WafSizeConstraintSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#id WafSizeConstraintSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -865,7 +865,7 @@ public object SizeConstraints { get; set; }
 
 size_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#size_constraints WafSizeConstraintSet#size_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#size_constraints WafSizeConstraintSet#size_constraints}
 
 ---
 
@@ -888,10 +888,10 @@ new WafSizeConstraintSetSizeConstraints {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.comparisonOperator">ComparisonOperator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#comparison_operator WafSizeConstraintSet#comparison_operator}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.comparisonOperator">ComparisonOperator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#comparison_operator WafSizeConstraintSet#comparison_operator}. |
 | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.fieldToMatch">FieldToMatch</a></code> | <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch">WafSizeConstraintSetSizeConstraintsFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#size WafSizeConstraintSet#size}. |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.textTransformation">TextTransformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#text_transformation WafSizeConstraintSet#text_transformation}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#size WafSizeConstraintSet#size}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints.property.textTransformation">TextTransformation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#text_transformation WafSizeConstraintSet#text_transformation}. |
 
 ---
 
@@ -903,7 +903,7 @@ public string ComparisonOperator { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#comparison_operator WafSizeConstraintSet#comparison_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#comparison_operator WafSizeConstraintSet#comparison_operator}.
 
 ---
 
@@ -917,7 +917,7 @@ public WafSizeConstraintSetSizeConstraintsFieldToMatch FieldToMatch { get; set; 
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#field_to_match WafSizeConstraintSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#field_to_match WafSizeConstraintSet#field_to_match}
 
 ---
 
@@ -929,7 +929,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#size WafSizeConstraintSet#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#size WafSizeConstraintSet#size}.
 
 ---
 
@@ -941,7 +941,7 @@ public string TextTransformation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#text_transformation WafSizeConstraintSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#text_transformation WafSizeConstraintSet#text_transformation}.
 
 ---
 
@@ -962,8 +962,8 @@ new WafSizeConstraintSetSizeConstraintsFieldToMatch {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#type WafSizeConstraintSet#type}. |
-| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch.property.data">Data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#data WafSizeConstraintSet#data}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#type WafSizeConstraintSet#type}. |
+| <code><a href="#@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch.property.data">Data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#data WafSizeConstraintSet#data}. |
 
 ---
 
@@ -975,7 +975,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#type WafSizeConstraintSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#type WafSizeConstraintSet#type}.
 
 ---
 
@@ -987,7 +987,7 @@ public string Data { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/waf_size_constraint_set#data WafSizeConstraintSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/waf_size_constraint_set#data WafSizeConstraintSet#data}.
 
 ---
 

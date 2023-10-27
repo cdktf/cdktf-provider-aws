@@ -1,6 +1,6 @@
 # `aws_inspector2_enabler`
 
-Refer to the Terraform Registory for docs: [`aws_inspector2_enabler`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler).
+Refer to the Terraform Registory for docs: [`aws_inspector2_enabler`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler).
 
 # `inspector2Enabler` Submodule <a name="`inspector2Enabler` Submodule" id="@cdktf/provider-aws.inspector2Enabler"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_inspector2_enabler`](https://re
 
 ### Inspector2Enabler <a name="Inspector2Enabler" id="@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer"></a>
 
@@ -43,9 +43,9 @@ inspector2Enabler.Inspector2Enabler(
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.accountIds">account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.accountIds">account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2Enabler.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts">Inspector2EnablerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
 
 ---
 
@@ -465,7 +465,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
 
 ---
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
 
 ---
 
@@ -481,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
 
 ---
 
@@ -611,7 +611,7 @@ The construct id used in the generated config for the Inspector2Enabler to impor
 
 The id of the existing Inspector2Enabler that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,9 +927,9 @@ inspector2Enabler.Inspector2EnablerConfig(
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.accountIds">account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.accountIds">account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.resourceTypes">resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}. |
 | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts">Inspector2EnablerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1012,7 +1012,7 @@ account_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#account_ids Inspector2Enabler#account_ids}.
 
 ---
 
@@ -1024,7 +1024,7 @@ resource_types: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#resource_types Inspector2Enabler#resource_types}.
 
 ---
 
@@ -1036,7 +1036,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#id Inspector2Enabler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ timeouts: Inspector2EnablerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#timeouts Inspector2Enabler#timeouts}
 
 ---
 
@@ -1075,9 +1075,9 @@ inspector2Enabler.Inspector2EnablerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}. |
-| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}. |
+| <code><a href="#@cdktf/provider-aws.inspector2Enabler.Inspector2EnablerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}. |
 
 ---
 
@@ -1089,7 +1089,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#create Inspector2Enabler#create}.
 
 ---
 
@@ -1101,7 +1101,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#delete Inspector2Enabler#delete}.
 
 ---
 
@@ -1113,7 +1113,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/inspector2_enabler#update Inspector2Enabler#update}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `aws_iot_provisioning_template`
 
-Refer to the Terraform Registory for docs: [`aws_iot_provisioning_template`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template).
+Refer to the Terraform Registory for docs: [`aws_iot_provisioning_template`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template).
 
 # `iotProvisioningTemplate` Submodule <a name="`iotProvisioningTemplate` Submodule" id="@cdktf/provider-aws.iotProvisioningTemplate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_iot_provisioning_template`](htt
 
 ### IotProvisioningTemplate <a name="IotProvisioningTemplate" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.NewIotProvisioningTemplate(scope Construct, id *string, config IotProvisioningTemplateConfig) IotProvisioningTemplate
 ```
@@ -394,7 +394,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -454,7 +454,7 @@ iotprovisioningtemplate.IotProvisioningTemplate_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.IotProvisioningTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -483,7 +483,7 @@ The construct id used in the generated config for the IotProvisioningTemplate to
 
 The id of the existing IotProvisioningTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 &iotprovisioningtemplate.IotProvisioningTemplateConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
-	PreProvisioningHook: github.com/cdktf/cdktf-provider-aws-go/aws/v18.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook,
+	PreProvisioningHook: github.com/cdktf/cdktf-provider-aws-go/aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	Type: *string,
@@ -959,16 +959,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 | <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#name IotProvisioningTemplate#name}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.provisioningRoleArn">ProvisioningRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#provisioning_role_arn IotProvisioningTemplate#provisioning_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.templateBody">TemplateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#template_body IotProvisioningTemplate#template_body}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#description IotProvisioningTemplate#description}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#enabled IotProvisioningTemplate#enabled}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#id IotProvisioningTemplate#id}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#name IotProvisioningTemplate#name}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.provisioningRoleArn">ProvisioningRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#provisioning_role_arn IotProvisioningTemplate#provisioning_role_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.templateBody">TemplateBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#template_body IotProvisioningTemplate#template_body}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#description IotProvisioningTemplate#description}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#enabled IotProvisioningTemplate#enabled}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#id IotProvisioningTemplate#id}. |
 | <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.preProvisioningHook">PreProvisioningHook</a></code> | <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook">IotProvisioningTemplatePreProvisioningHook</a></code> | pre_provisioning_hook block. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#tags IotProvisioningTemplate#tags}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#tags_all IotProvisioningTemplate#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#type IotProvisioningTemplate#type}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#tags IotProvisioningTemplate#tags}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#tags_all IotProvisioningTemplate#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#type IotProvisioningTemplate#type}. |
 
 ---
 
@@ -1050,7 +1050,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#name IotProvisioningTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#name IotProvisioningTemplate#name}.
 
 ---
 
@@ -1062,7 +1062,7 @@ ProvisioningRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#provisioning_role_arn IotProvisioningTemplate#provisioning_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#provisioning_role_arn IotProvisioningTemplate#provisioning_role_arn}.
 
 ---
 
@@ -1074,7 +1074,7 @@ TemplateBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#template_body IotProvisioningTemplate#template_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#template_body IotProvisioningTemplate#template_body}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#description IotProvisioningTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#description IotProvisioningTemplate#description}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#enabled IotProvisioningTemplate#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#enabled IotProvisioningTemplate#enabled}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#id IotProvisioningTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#id IotProvisioningTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ PreProvisioningHook IotProvisioningTemplatePreProvisioningHook
 
 pre_provisioning_hook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#pre_provisioning_hook IotProvisioningTemplate#pre_provisioning_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#pre_provisioning_hook IotProvisioningTemplate#pre_provisioning_hook}
 
 ---
 
@@ -1139,7 +1139,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#tags IotProvisioningTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#tags IotProvisioningTemplate#tags}.
 
 ---
 
@@ -1151,7 +1151,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#tags_all IotProvisioningTemplate#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#tags_all IotProvisioningTemplate#tags_all}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#type IotProvisioningTemplate#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#type IotProvisioningTemplate#type}.
 
 ---
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 &iotprovisioningtemplate.IotProvisioningTemplatePreProvisioningHook {
 	TargetArn: *string,
@@ -1184,8 +1184,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#target_arn IotProvisioningTemplate#target_arn}. |
-| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.property.payloadVersion">PayloadVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#payload_version IotProvisioningTemplate#payload_version}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.property.targetArn">TargetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#target_arn IotProvisioningTemplate#target_arn}. |
+| <code><a href="#@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook.property.payloadVersion">PayloadVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#payload_version IotProvisioningTemplate#payload_version}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ TargetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#target_arn IotProvisioningTemplate#target_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#target_arn IotProvisioningTemplate#target_arn}.
 
 ---
 
@@ -1209,7 +1209,7 @@ PayloadVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template#payload_version IotProvisioningTemplate#payload_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/iot_provisioning_template#payload_version IotProvisioningTemplate#payload_version}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotprovisioningtemplate"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotprovisioningtemplate"
 
 iotprovisioningtemplate.NewIotProvisioningTemplatePreProvisioningHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotProvisioningTemplatePreProvisioningHookOutputReference
 ```

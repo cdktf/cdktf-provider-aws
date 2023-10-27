@@ -1,6 +1,6 @@
 # `aws_quicksight_group`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_group`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group).
+Refer to the Terraform Registory for docs: [`aws_quicksight_group`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group).
 
 # `quicksightGroup` Submodule <a name="`quicksightGroup` Submodule" id="@cdktf/provider-aws.quicksightGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_group`](https://regi
 
 ### QuicksightGroup <a name="QuicksightGroup" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group aws_quicksight_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group aws_quicksight_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.NewQuicksightGroup(scope Construct, id *string, config QuicksightGroupConfig) QuicksightGroup
 ```
@@ -360,7 +360,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ quicksightgroup.QuicksightGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ quicksightgroup.QuicksightGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 quicksightgroup.QuicksightGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the QuicksightGroup to import.
 
 The id of the existing QuicksightGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightgroup"
 
 &quicksightgroup.QuicksightGroupConfig {
 	Connection: interface{},
@@ -799,11 +799,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightgroup"
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#description QuicksightGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#id QuicksightGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightGroup.QuicksightGroupConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}. |
 
 ---
 
@@ -885,7 +885,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#group_name QuicksightGroup#group_name}.
 
 ---
 
@@ -897,7 +897,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#aws_account_id QuicksightGroup#aws_account_id}.
 
 ---
 
@@ -909,7 +909,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#description QuicksightGroup#description}.
 
 ---
 
@@ -921,7 +921,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#id QuicksightGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_group#namespace QuicksightGroup#namespace}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_cognito_user_pools`
 
-Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools).
+Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools).
 
 # `dataAwsCognitoUserPools` Submodule <a name="`dataAwsCognitoUserPools` Submodule" id="@cdktf/provider-aws.dataAwsCognitoUserPools"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_cognito_user_pools`](https
 
 ### DataAwsCognitoUserPools <a name="DataAwsCognitoUserPools" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.NewDataAwsCognitoUserPools(scope Construct, id *string, config DataAwsCognitoUserPoolsConfig) DataAwsCognitoUserPools
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawscognitouserpools.DataAwsCognitoUserPools_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 dataawscognitouserpools.DataAwsCognitoUserPools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsCognitoUserPools to
 
 The id of the existing DataAwsCognitoUserPools that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitouserpools"
 
 &dataawscognitouserpools.DataAwsCognitoUserPoolsConfig {
 	Connection: interface{},
@@ -637,8 +637,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscognitouserpools"
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}. |
 
 ---
 
@@ -720,7 +720,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools#name DataAwsCognitoUserPools#name}.
 
 ---
 
@@ -732,7 +732,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cognito_user_pools#id DataAwsCognitoUserPools#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

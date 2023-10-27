@@ -1,6 +1,6 @@
 # `data_aws_eips`
 
-Refer to the Terraform Registory for docs: [`data_aws_eips`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips).
+Refer to the Terraform Registory for docs: [`data_aws_eips`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips).
 
 # `dataAwsEips` Submodule <a name="`dataAwsEips` Submodule" id="@cdktf/provider-aws.dataAwsEips"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_eips`](https://registry.te
 
 ### DataAwsEips <a name="DataAwsEips" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips aws_eips}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips aws_eips}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.NewDataAwsEips(scope Construct, id *string, config DataAwsEipsConfig) DataAwsEips
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.DataAwsEips_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.DataAwsEips_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawseips.DataAwsEips_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.DataAwsEips_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawseips.DataAwsEips_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEips.DataAwsEips.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.DataAwsEips_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAwsEips to import.
 
 The id of the existing DataAwsEips that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 &dataawseips.DataAwsEipsConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
 	Filter: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEips.DataAwsEipsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEips.DataAwsEipsTimeouts,
 }
 ```
 
@@ -731,8 +731,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
 | <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#id DataAwsEips#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#id DataAwsEips#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#tags DataAwsEips#tags}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeouts">DataAwsEipsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -817,7 +817,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#filter DataAwsEips#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#filter DataAwsEips#filter}
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#id DataAwsEips#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#id DataAwsEips#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#tags DataAwsEips#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#tags DataAwsEips#tags}.
 
 ---
 
@@ -858,7 +858,7 @@ Timeouts DataAwsEipsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#timeouts DataAwsEips#timeouts}
 
 ---
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 &dataawseips.DataAwsEipsFilter {
 	Name: *string,
@@ -879,8 +879,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#name DataAwsEips#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#values DataAwsEips#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#name DataAwsEips#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#values DataAwsEips#values}. |
 
 ---
 
@@ -892,7 +892,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#name DataAwsEips#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#name DataAwsEips#name}.
 
 ---
 
@@ -904,7 +904,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#values DataAwsEips#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#values DataAwsEips#values}.
 
 ---
 
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 &dataawseips.DataAwsEipsTimeouts {
 	Read: *string,
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#read DataAwsEips#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#read DataAwsEips#read}. |
 
 ---
 
@@ -936,7 +936,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/eips#read DataAwsEips#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/eips#read DataAwsEips#read}.
 
 ---
 
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.NewDataAwsEipsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEipsFilterList
 ```
@@ -1090,7 +1090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.NewDataAwsEipsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEipsFilterOutputReference
 ```
@@ -1401,7 +1401,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawseips"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawseips"
 
 dataawseips.NewDataAwsEipsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEipsTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `aws_quicksight_data_set`
 
-Refer to the Terraform Registory for docs: [`aws_quicksight_data_set`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set).
+Refer to the Terraform Registory for docs: [`aws_quicksight_data_set`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set).
 
 # `quicksightDataSet` Submodule <a name="`quicksightDataSet` Submodule" id="@cdktf/provider-aws.quicksightDataSet"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_quicksight_data_set`](https://r
 
 ### QuicksightDataSet <a name="QuicksightDataSet" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set aws_quicksight_data_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set aws_quicksight_data_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSet(scope Construct, id *string, config QuicksightDataSetConfig) QuicksightDataSet
 ```
@@ -560,7 +560,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.QuicksightDataSet_IsConstruct(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.QuicksightDataSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ quicksightdataset.QuicksightDataSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.QuicksightDataSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ quicksightdataset.QuicksightDataSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.QuicksightDataSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ The construct id used in the generated config for the QuicksightDataSet to impor
 
 The id of the existing QuicksightDataSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1245,10 +1245,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetColumnGroups {
-	GeoSpatialColumnGroup: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup,
+	GeoSpatialColumnGroup: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup,
 }
 ```
 
@@ -1270,7 +1270,7 @@ GeoSpatialColumnGroup QuicksightDataSetColumnGroupsGeoSpatialColumnGroup
 
 geo_spatial_column_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#geo_spatial_column_group QuicksightDataSet#geo_spatial_column_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#geo_spatial_column_group QuicksightDataSet#geo_spatial_column_group}
 
 ---
 
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup {
 	Columns: *[]*string,
@@ -1292,9 +1292,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#country_code QuicksightDataSet#country_code}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.countryCode">CountryCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#country_code QuicksightDataSet#country_code}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroup.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
 
 ---
 
@@ -1306,7 +1306,7 @@ Columns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
 
 ---
 
@@ -1318,7 +1318,7 @@ CountryCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#country_code QuicksightDataSet#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#country_code QuicksightDataSet#country_code}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetColumnLevelPermissionRules {
 	ColumnNames: *[]*string,
@@ -1351,8 +1351,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_names QuicksightDataSet#column_names}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#principals QuicksightDataSet#principals}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules.property.columnNames">ColumnNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_names QuicksightDataSet#column_names}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRules.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#principals QuicksightDataSet#principals}. |
 
 ---
 
@@ -1364,7 +1364,7 @@ ColumnNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_names QuicksightDataSet#column_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_names QuicksightDataSet#column_names}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Principals *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#principals QuicksightDataSet#principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#principals QuicksightDataSet#principals}.
 
 ---
 
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetConfig {
 	Connection: interface{},
@@ -1401,15 +1401,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 	AwsAccountId: *string,
 	ColumnGroups: interface{},
 	ColumnLevelPermissionRules: interface{},
-	DataSetUsageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration,
+	DataSetUsageConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration,
 	FieldFolders: interface{},
 	Id: *string,
 	LogicalTableMap: interface{},
 	Permissions: interface{},
 	PhysicalTableMap: interface{},
-	RefreshProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRefreshProperties,
-	RowLevelPermissionDataSet: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet,
-	RowLevelPermissionTagConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration,
+	RefreshProperties: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRefreshProperties,
+	RowLevelPermissionDataSet: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet,
+	RowLevelPermissionTagConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1426,23 +1426,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.dataSetId">DataSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_set_id QuicksightDataSet#data_set_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.importMode">ImportMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#import_mode QuicksightDataSet#import_mode}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#aws_account_id QuicksightDataSet#aws_account_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.dataSetId">DataSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_set_id QuicksightDataSet#data_set_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.importMode">ImportMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#import_mode QuicksightDataSet#import_mode}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#aws_account_id QuicksightDataSet#aws_account_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.columnGroups">ColumnGroups</a></code> | <code>interface{}</code> | column_groups block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.columnLevelPermissionRules">ColumnLevelPermissionRules</a></code> | <code>interface{}</code> | column_level_permission_rules block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.dataSetUsageConfiguration">DataSetUsageConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration">QuicksightDataSetDataSetUsageConfiguration</a></code> | data_set_usage_configuration block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.fieldFolders">FieldFolders</a></code> | <code>interface{}</code> | field_folders block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#id QuicksightDataSet#id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#id QuicksightDataSet#id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.logicalTableMap">LogicalTableMap</a></code> | <code>interface{}</code> | logical_table_map block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.physicalTableMap">PhysicalTableMap</a></code> | <code>interface{}</code> | physical_table_map block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.refreshProperties">RefreshProperties</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshProperties">QuicksightDataSetRefreshProperties</a></code> | refresh_properties block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.rowLevelPermissionDataSet">RowLevelPermissionDataSet</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet">QuicksightDataSetRowLevelPermissionDataSet</a></code> | row_level_permission_data_set block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.rowLevelPermissionTagConfiguration">RowLevelPermissionTagConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration">QuicksightDataSetRowLevelPermissionTagConfiguration</a></code> | row_level_permission_tag_configuration block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tags_all QuicksightDataSet#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tags_all QuicksightDataSet#tags_all}. |
 
 ---
 
@@ -1524,7 +1524,7 @@ DataSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_set_id QuicksightDataSet#data_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_set_id QuicksightDataSet#data_set_id}.
 
 ---
 
@@ -1536,7 +1536,7 @@ ImportMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#import_mode QuicksightDataSet#import_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#import_mode QuicksightDataSet#import_mode}.
 
 ---
 
@@ -1548,7 +1548,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -1560,7 +1560,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#aws_account_id QuicksightDataSet#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#aws_account_id QuicksightDataSet#aws_account_id}.
 
 ---
 
@@ -1574,7 +1574,7 @@ ColumnGroups interface{}
 
 column_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_groups QuicksightDataSet#column_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_groups QuicksightDataSet#column_groups}
 
 ---
 
@@ -1588,7 +1588,7 @@ ColumnLevelPermissionRules interface{}
 
 column_level_permission_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_level_permission_rules QuicksightDataSet#column_level_permission_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_level_permission_rules QuicksightDataSet#column_level_permission_rules}
 
 ---
 
@@ -1602,7 +1602,7 @@ DataSetUsageConfiguration QuicksightDataSetDataSetUsageConfiguration
 
 data_set_usage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_set_usage_configuration QuicksightDataSet#data_set_usage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_set_usage_configuration QuicksightDataSet#data_set_usage_configuration}
 
 ---
 
@@ -1616,7 +1616,7 @@ FieldFolders interface{}
 
 field_folders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#field_folders QuicksightDataSet#field_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#field_folders QuicksightDataSet#field_folders}
 
 ---
 
@@ -1628,7 +1628,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#id QuicksightDataSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#id QuicksightDataSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1645,7 +1645,7 @@ LogicalTableMap interface{}
 
 logical_table_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#logical_table_map QuicksightDataSet#logical_table_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#logical_table_map QuicksightDataSet#logical_table_map}
 
 ---
 
@@ -1659,7 +1659,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#permissions QuicksightDataSet#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#permissions QuicksightDataSet#permissions}
 
 ---
 
@@ -1673,7 +1673,7 @@ PhysicalTableMap interface{}
 
 physical_table_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#physical_table_map QuicksightDataSet#physical_table_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#physical_table_map QuicksightDataSet#physical_table_map}
 
 ---
 
@@ -1687,7 +1687,7 @@ RefreshProperties QuicksightDataSetRefreshProperties
 
 refresh_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#refresh_properties QuicksightDataSet#refresh_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#refresh_properties QuicksightDataSet#refresh_properties}
 
 ---
 
@@ -1701,7 +1701,7 @@ RowLevelPermissionDataSet QuicksightDataSetRowLevelPermissionDataSet
 
 row_level_permission_data_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#row_level_permission_data_set QuicksightDataSet#row_level_permission_data_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#row_level_permission_data_set QuicksightDataSet#row_level_permission_data_set}
 
 ---
 
@@ -1715,7 +1715,7 @@ RowLevelPermissionTagConfiguration QuicksightDataSetRowLevelPermissionTagConfigu
 
 row_level_permission_tag_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#row_level_permission_tag_configuration QuicksightDataSet#row_level_permission_tag_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#row_level_permission_tag_configuration QuicksightDataSet#row_level_permission_tag_configuration}
 
 ---
 
@@ -1727,7 +1727,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}.
 
 ---
 
@@ -1739,7 +1739,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tags_all QuicksightDataSet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tags_all QuicksightDataSet#tags_all}.
 
 ---
 
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetDataSetUsageConfiguration {
 	DisableUseAsDirectQuerySource: interface{},
@@ -1760,8 +1760,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration.property.disableUseAsDirectQuerySource">DisableUseAsDirectQuerySource</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#disable_use_as_direct_query_source QuicksightDataSet#disable_use_as_direct_query_source}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration.property.disableUseAsImportedSource">DisableUseAsImportedSource</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#disable_use_as_imported_source QuicksightDataSet#disable_use_as_imported_source}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration.property.disableUseAsDirectQuerySource">DisableUseAsDirectQuerySource</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#disable_use_as_direct_query_source QuicksightDataSet#disable_use_as_direct_query_source}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfiguration.property.disableUseAsImportedSource">DisableUseAsImportedSource</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#disable_use_as_imported_source QuicksightDataSet#disable_use_as_imported_source}. |
 
 ---
 
@@ -1773,7 +1773,7 @@ DisableUseAsDirectQuerySource interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#disable_use_as_direct_query_source QuicksightDataSet#disable_use_as_direct_query_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#disable_use_as_direct_query_source QuicksightDataSet#disable_use_as_direct_query_source}.
 
 ---
 
@@ -1785,7 +1785,7 @@ DisableUseAsImportedSource interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#disable_use_as_imported_source QuicksightDataSet#disable_use_as_imported_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#disable_use_as_imported_source QuicksightDataSet#disable_use_as_imported_source}.
 
 ---
 
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetFieldFolders {
 	FieldFoldersId: *string,
@@ -1807,9 +1807,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.fieldFoldersId">FieldFoldersId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.fieldFoldersId">FieldFoldersId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFolders.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}. |
 
 ---
 
@@ -1821,7 +1821,7 @@ FieldFoldersId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#field_folders_id QuicksightDataSet#field_folders_id}.
 
 ---
 
@@ -1833,7 +1833,7 @@ Columns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}.
 
 ---
 
@@ -1845,7 +1845,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#description QuicksightDataSet#description}.
 
 ---
 
@@ -1854,12 +1854,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMap {
 	Alias: *string,
 	LogicalTableMapId: *string,
-	Source: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapSource,
+	Source: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource,
 	DataTransforms: interface{},
 }
 ```
@@ -1868,8 +1868,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.alias">Alias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#alias QuicksightDataSet#alias}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.logicalTableMapId">LogicalTableMapId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#logical_table_map_id QuicksightDataSet#logical_table_map_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.alias">Alias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#alias QuicksightDataSet#alias}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.logicalTableMapId">LogicalTableMapId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#logical_table_map_id QuicksightDataSet#logical_table_map_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.source">Source</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource">QuicksightDataSetLogicalTableMapSource</a></code> | source block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMap.property.dataTransforms">DataTransforms</a></code> | <code>interface{}</code> | data_transforms block. |
 
@@ -1883,7 +1883,7 @@ Alias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#alias QuicksightDataSet#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#alias QuicksightDataSet#alias}.
 
 ---
 
@@ -1895,7 +1895,7 @@ LogicalTableMapId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#logical_table_map_id QuicksightDataSet#logical_table_map_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#logical_table_map_id QuicksightDataSet#logical_table_map_id}.
 
 ---
 
@@ -1909,7 +1909,7 @@ Source QuicksightDataSetLogicalTableMapSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#source QuicksightDataSet#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#source QuicksightDataSet#source}
 
 ---
 
@@ -1923,7 +1923,7 @@ DataTransforms interface{}
 
 data_transforms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_transforms QuicksightDataSet#data_transforms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_transforms QuicksightDataSet#data_transforms}
 
 ---
 
@@ -1932,16 +1932,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransforms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransforms {
-	CastColumnTypeOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation,
-	CreateColumnsOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation,
-	FilterOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation,
-	ProjectOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation,
-	RenameColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation,
-	TagColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation,
-	UntagColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation,
+	CastColumnTypeOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation,
+	CreateColumnsOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation,
+	FilterOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation,
+	ProjectOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation,
+	RenameColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation,
+	TagColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation,
+	UntagColumnOperation: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation,
 }
 ```
 
@@ -1969,7 +1969,7 @@ CastColumnTypeOperation QuicksightDataSetLogicalTableMapDataTransformsCastColumn
 
 cast_column_type_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#cast_column_type_operation QuicksightDataSet#cast_column_type_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#cast_column_type_operation QuicksightDataSet#cast_column_type_operation}
 
 ---
 
@@ -1983,7 +1983,7 @@ CreateColumnsOperation QuicksightDataSetLogicalTableMapDataTransformsCreateColum
 
 create_columns_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#create_columns_operation QuicksightDataSet#create_columns_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#create_columns_operation QuicksightDataSet#create_columns_operation}
 
 ---
 
@@ -1997,7 +1997,7 @@ FilterOperation QuicksightDataSetLogicalTableMapDataTransformsFilterOperation
 
 filter_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#filter_operation QuicksightDataSet#filter_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#filter_operation QuicksightDataSet#filter_operation}
 
 ---
 
@@ -2011,7 +2011,7 @@ ProjectOperation QuicksightDataSetLogicalTableMapDataTransformsProjectOperation
 
 project_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#project_operation QuicksightDataSet#project_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#project_operation QuicksightDataSet#project_operation}
 
 ---
 
@@ -2025,7 +2025,7 @@ RenameColumnOperation QuicksightDataSetLogicalTableMapDataTransformsRenameColumn
 
 rename_column_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#rename_column_operation QuicksightDataSet#rename_column_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#rename_column_operation QuicksightDataSet#rename_column_operation}
 
 ---
 
@@ -2039,7 +2039,7 @@ TagColumnOperation QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperat
 
 tag_column_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_column_operation QuicksightDataSet#tag_column_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_column_operation QuicksightDataSet#tag_column_operation}
 
 ---
 
@@ -2053,7 +2053,7 @@ UntagColumnOperation QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOp
 
 untag_column_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#untag_column_operation QuicksightDataSet#untag_column_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#untag_column_operation QuicksightDataSet#untag_column_operation}
 
 ---
 
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation {
 	ColumnName: *string,
@@ -2075,9 +2075,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.newColumnType">NewColumnType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#new_column_type QuicksightDataSet#new_column_type}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.newColumnType">NewColumnType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#new_column_type QuicksightDataSet#new_column_type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}. |
 
 ---
 
@@ -2089,7 +2089,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -2101,7 +2101,7 @@ NewColumnType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#new_column_type QuicksightDataSet#new_column_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#new_column_type QuicksightDataSet#new_column_type}.
 
 ---
 
@@ -2113,7 +2113,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}.
 
 ---
 
@@ -2122,7 +2122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperation {
 	Columns: interface{},
@@ -2147,7 +2147,7 @@ Columns interface{}
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
 
 ---
 
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns {
 	ColumnId: *string,
@@ -2169,9 +2169,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.columnId">ColumnId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.columnId">ColumnId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}. |
 
 ---
 
@@ -2183,7 +2183,7 @@ ColumnId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}.
 
 ---
 
@@ -2195,7 +2195,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -2207,7 +2207,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}.
 
 ---
 
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation {
 	ConditionExpression: *string,
@@ -2227,7 +2227,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation.property.conditionExpression">ConditionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#condition_expression QuicksightDataSet#condition_expression}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperation.property.conditionExpression">ConditionExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#condition_expression QuicksightDataSet#condition_expression}. |
 
 ---
 
@@ -2239,7 +2239,7 @@ ConditionExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#condition_expression QuicksightDataSet#condition_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#condition_expression QuicksightDataSet#condition_expression}.
 
 ---
 
@@ -2248,7 +2248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation {
 	ProjectedColumns: *[]*string,
@@ -2259,7 +2259,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation.property.projectedColumns">ProjectedColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperation.property.projectedColumns">ProjectedColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}. |
 
 ---
 
@@ -2271,7 +2271,7 @@ ProjectedColumns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#projected_columns QuicksightDataSet#projected_columns}.
 
 ---
 
@@ -2280,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation {
 	ColumnName: *string,
@@ -2292,8 +2292,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation.property.newColumnName">NewColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#new_column_name QuicksightDataSet#new_column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperation.property.newColumnName">NewColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#new_column_name QuicksightDataSet#new_column_name}. |
 
 ---
 
@@ -2305,7 +2305,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -2317,7 +2317,7 @@ NewColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#new_column_name QuicksightDataSet#new_column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#new_column_name QuicksightDataSet#new_column_name}.
 
 ---
 
@@ -2326,7 +2326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation {
 	ColumnName: *string,
@@ -2338,7 +2338,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperation.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
 
 ---
@@ -2351,7 +2351,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -2365,7 +2365,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tags QuicksightDataSet#tags}
 
 ---
 
@@ -2374,10 +2374,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags {
-	ColumnDescription: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription,
+	ColumnDescription: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription,
 	ColumnGeographicRole: *string,
 }
 ```
@@ -2387,7 +2387,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags.property.columnDescription">ColumnDescription</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription">QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription</a></code> | column_description block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags.property.columnGeographicRole">ColumnGeographicRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_geographic_role QuicksightDataSet#column_geographic_role}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTags.property.columnGeographicRole">ColumnGeographicRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_geographic_role QuicksightDataSet#column_geographic_role}. |
 
 ---
 
@@ -2401,7 +2401,7 @@ ColumnDescription QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperati
 
 column_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_description QuicksightDataSet#column_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_description QuicksightDataSet#column_description}
 
 ---
 
@@ -2413,7 +2413,7 @@ ColumnGeographicRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_geographic_role QuicksightDataSet#column_geographic_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_geographic_role QuicksightDataSet#column_geographic_role}.
 
 ---
 
@@ -2422,7 +2422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription {
 	Text: *string,
@@ -2433,7 +2433,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}. |
 
 ---
 
@@ -2445,7 +2445,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#text QuicksightDataSet#text}.
 
 ---
 
@@ -2454,7 +2454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation {
 	ColumnName: *string,
@@ -2466,8 +2466,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation.property.tagNames">TagNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_names QuicksightDataSet#tag_names}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperation.property.tagNames">TagNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_names QuicksightDataSet#tag_names}. |
 
 ---
 
@@ -2479,7 +2479,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -2491,7 +2491,7 @@ TagNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_names QuicksightDataSet#tag_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_names QuicksightDataSet#tag_names}.
 
 ---
 
@@ -2500,11 +2500,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapSource {
 	DataSetArn: *string,
-	JoinInstruction: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction,
+	JoinInstruction: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction,
 	PhysicalTableId: *string,
 }
 ```
@@ -2513,9 +2513,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_set_arn QuicksightDataSet#data_set_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.property.dataSetArn">DataSetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_set_arn QuicksightDataSet#data_set_arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.property.joinInstruction">JoinInstruction</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction">QuicksightDataSetLogicalTableMapSourceJoinInstruction</a></code> | join_instruction block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.property.physicalTableId">PhysicalTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#physical_table_id QuicksightDataSet#physical_table_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSource.property.physicalTableId">PhysicalTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#physical_table_id QuicksightDataSet#physical_table_id}. |
 
 ---
 
@@ -2527,7 +2527,7 @@ DataSetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_set_arn QuicksightDataSet#data_set_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_set_arn QuicksightDataSet#data_set_arn}.
 
 ---
 
@@ -2541,7 +2541,7 @@ JoinInstruction QuicksightDataSetLogicalTableMapSourceJoinInstruction
 
 join_instruction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#join_instruction QuicksightDataSet#join_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#join_instruction QuicksightDataSet#join_instruction}
 
 ---
 
@@ -2553,7 +2553,7 @@ PhysicalTableId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#physical_table_id QuicksightDataSet#physical_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#physical_table_id QuicksightDataSet#physical_table_id}.
 
 ---
 
@@ -2562,15 +2562,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapSourceJoinInstruction {
 	LeftOperand: *string,
 	OnClause: *string,
 	RightOperand: *string,
 	Type: *string,
-	LeftJoinKeyProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties,
-	RightJoinKeyProperties: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties,
+	LeftJoinKeyProperties: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties,
+	RightJoinKeyProperties: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties,
 }
 ```
 
@@ -2578,10 +2578,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.leftOperand">LeftOperand</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#left_operand QuicksightDataSet#left_operand}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.onClause">OnClause</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#on_clause QuicksightDataSet#on_clause}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.rightOperand">RightOperand</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#right_operand QuicksightDataSet#right_operand}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.leftOperand">LeftOperand</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#left_operand QuicksightDataSet#left_operand}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.onClause">OnClause</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#on_clause QuicksightDataSet#on_clause}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.rightOperand">RightOperand</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#right_operand QuicksightDataSet#right_operand}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.leftJoinKeyProperties">LeftJoinKeyProperties</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties">QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties</a></code> | left_join_key_properties block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstruction.property.rightJoinKeyProperties">RightJoinKeyProperties</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties">QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties</a></code> | right_join_key_properties block. |
 
@@ -2595,7 +2595,7 @@ LeftOperand *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#left_operand QuicksightDataSet#left_operand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#left_operand QuicksightDataSet#left_operand}.
 
 ---
 
@@ -2607,7 +2607,7 @@ OnClause *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#on_clause QuicksightDataSet#on_clause}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#on_clause QuicksightDataSet#on_clause}.
 
 ---
 
@@ -2619,7 +2619,7 @@ RightOperand *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#right_operand QuicksightDataSet#right_operand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#right_operand QuicksightDataSet#right_operand}.
 
 ---
 
@@ -2631,7 +2631,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
 
 ---
 
@@ -2645,7 +2645,7 @@ LeftJoinKeyProperties QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJ
 
 left_join_key_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#left_join_key_properties QuicksightDataSet#left_join_key_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#left_join_key_properties QuicksightDataSet#left_join_key_properties}
 
 ---
 
@@ -2659,7 +2659,7 @@ RightJoinKeyProperties QuicksightDataSetLogicalTableMapSourceJoinInstructionRigh
 
 right_join_key_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#right_join_key_properties QuicksightDataSet#right_join_key_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#right_join_key_properties QuicksightDataSet#right_join_key_properties}
 
 ---
 
@@ -2668,7 +2668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties {
 	UniqueKey: interface{},
@@ -2679,7 +2679,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties.property.uniqueKey">UniqueKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties.property.uniqueKey">UniqueKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}. |
 
 ---
 
@@ -2691,7 +2691,7 @@ UniqueKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
 
 ---
 
@@ -2700,7 +2700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties {
 	UniqueKey: interface{},
@@ -2711,7 +2711,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties.property.uniqueKey">UniqueKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyProperties.property.uniqueKey">UniqueKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}. |
 
 ---
 
@@ -2723,7 +2723,7 @@ UniqueKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
 
 ---
 
@@ -2732,7 +2732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetOutputColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetOutputColumns {
 
@@ -2745,7 +2745,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPermissions {
 	Actions: *[]*string,
@@ -2757,8 +2757,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#actions QuicksightDataSet#actions}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#principal QuicksightDataSet#principal}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#actions QuicksightDataSet#actions}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissions.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#principal QuicksightDataSet#principal}. |
 
 ---
 
@@ -2770,7 +2770,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#actions QuicksightDataSet#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#actions QuicksightDataSet#actions}.
 
 ---
 
@@ -2782,7 +2782,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#principal QuicksightDataSet#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#principal QuicksightDataSet#principal}.
 
 ---
 
@@ -2791,13 +2791,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMap {
 	PhysicalTableMapId: *string,
-	CustomSql: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql,
-	RelationalTable: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable,
-	S3Source: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source,
+	CustomSql: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql,
+	RelationalTable: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable,
+	S3Source: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source,
 }
 ```
 
@@ -2805,7 +2805,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.property.physicalTableMapId">PhysicalTableMapId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#physical_table_map_id QuicksightDataSet#physical_table_map_id}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.property.physicalTableMapId">PhysicalTableMapId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#physical_table_map_id QuicksightDataSet#physical_table_map_id}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.property.customSql">CustomSql</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql">QuicksightDataSetPhysicalTableMapCustomSql</a></code> | custom_sql block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.property.relationalTable">RelationalTable</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable">QuicksightDataSetPhysicalTableMapRelationalTable</a></code> | relational_table block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMap.property.s3Source">S3Source</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source">QuicksightDataSetPhysicalTableMapS3Source</a></code> | s3_source block. |
@@ -2820,7 +2820,7 @@ PhysicalTableMapId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#physical_table_map_id QuicksightDataSet#physical_table_map_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#physical_table_map_id QuicksightDataSet#physical_table_map_id}.
 
 ---
 
@@ -2834,7 +2834,7 @@ CustomSql QuicksightDataSetPhysicalTableMapCustomSql
 
 custom_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#custom_sql QuicksightDataSet#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#custom_sql QuicksightDataSet#custom_sql}
 
 ---
 
@@ -2848,7 +2848,7 @@ RelationalTable QuicksightDataSetPhysicalTableMapRelationalTable
 
 relational_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#relational_table QuicksightDataSet#relational_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#relational_table QuicksightDataSet#relational_table}
 
 ---
 
@@ -2862,7 +2862,7 @@ S3Source QuicksightDataSetPhysicalTableMapS3Source
 
 s3_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#s3_source QuicksightDataSet#s3_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#s3_source QuicksightDataSet#s3_source}
 
 ---
 
@@ -2871,7 +2871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapCustomSql {
 	DataSourceArn: *string,
@@ -2885,9 +2885,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.sqlQuery">SqlQuery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#sql_query QuicksightDataSet#sql_query}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.sqlQuery">SqlQuery</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#sql_query QuicksightDataSet#sql_query}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSql.property.columns">Columns</a></code> | <code>interface{}</code> | columns block. |
 
 ---
@@ -2900,7 +2900,7 @@ DataSourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
 
 ---
 
@@ -2912,7 +2912,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -2924,7 +2924,7 @@ SqlQuery *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#sql_query QuicksightDataSet#sql_query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#sql_query QuicksightDataSet#sql_query}.
 
 ---
 
@@ -2938,7 +2938,7 @@ Columns interface{}
 
 columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#columns QuicksightDataSet#columns}
 
 ---
 
@@ -2947,7 +2947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapCustomSqlColumns {
 	Name: *string,
@@ -2959,8 +2959,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
 
 ---
 
@@ -2972,7 +2972,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -2984,7 +2984,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
 
 ---
 
@@ -2993,7 +2993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapRelationalTable {
 	DataSourceArn: *string,
@@ -3008,11 +3008,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.inputColumns">InputColumns</a></code> | <code>interface{}</code> | input_columns block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#catalog QuicksightDataSet#catalog}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#schema QuicksightDataSet#schema}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#catalog QuicksightDataSet#catalog}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTable.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#schema QuicksightDataSet#schema}. |
 
 ---
 
@@ -3024,7 +3024,7 @@ DataSourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
 
 ---
 
@@ -3038,7 +3038,7 @@ InputColumns interface{}
 
 input_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
 
 ---
 
@@ -3050,7 +3050,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -3062,7 +3062,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#catalog QuicksightDataSet#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#catalog QuicksightDataSet#catalog}.
 
 ---
 
@@ -3074,7 +3074,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#schema QuicksightDataSet#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#schema QuicksightDataSet#schema}.
 
 ---
 
@@ -3083,7 +3083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns {
 	Name: *string,
@@ -3095,8 +3095,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
 
 ---
 
@@ -3108,7 +3108,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -3120,7 +3120,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
 
 ---
 
@@ -3129,12 +3129,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapS3Source {
 	DataSourceArn: *string,
 	InputColumns: interface{},
-	UploadSettings: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings,
+	UploadSettings: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings,
 }
 ```
 
@@ -3142,7 +3142,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source.property.dataSourceArn">DataSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source.property.inputColumns">InputColumns</a></code> | <code>interface{}</code> | input_columns block. |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3Source.property.uploadSettings">UploadSettings</a></code> | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings">QuicksightDataSetPhysicalTableMapS3SourceUploadSettings</a></code> | upload_settings block. |
 
@@ -3156,7 +3156,7 @@ DataSourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#data_source_arn QuicksightDataSet#data_source_arn}.
 
 ---
 
@@ -3170,7 +3170,7 @@ InputColumns interface{}
 
 input_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#input_columns QuicksightDataSet#input_columns}
 
 ---
 
@@ -3184,7 +3184,7 @@ UploadSettings QuicksightDataSetPhysicalTableMapS3SourceUploadSettings
 
 upload_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#upload_settings QuicksightDataSet#upload_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#upload_settings QuicksightDataSet#upload_settings}
 
 ---
 
@@ -3193,7 +3193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapS3SourceInputColumns {
 	Name: *string,
@@ -3205,8 +3205,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumns.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}. |
 
 ---
 
@@ -3218,7 +3218,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#name QuicksightDataSet#name}.
 
 ---
 
@@ -3230,7 +3230,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#type QuicksightDataSet#type}.
 
 ---
 
@@ -3239,7 +3239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings {
 	ContainsHeader: interface{},
@@ -3254,11 +3254,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.containsHeader">ContainsHeader</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#contains_header QuicksightDataSet#contains_header}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#delimiter QuicksightDataSet#delimiter}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.startFromRow">StartFromRow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#start_from_row QuicksightDataSet#start_from_row}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.textQualifier">TextQualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#text_qualifier QuicksightDataSet#text_qualifier}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.containsHeader">ContainsHeader</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#contains_header QuicksightDataSet#contains_header}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#delimiter QuicksightDataSet#delimiter}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.startFromRow">StartFromRow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#start_from_row QuicksightDataSet#start_from_row}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettings.property.textQualifier">TextQualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#text_qualifier QuicksightDataSet#text_qualifier}. |
 
 ---
 
@@ -3270,7 +3270,7 @@ ContainsHeader interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#contains_header QuicksightDataSet#contains_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#contains_header QuicksightDataSet#contains_header}.
 
 ---
 
@@ -3282,7 +3282,7 @@ Delimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#delimiter QuicksightDataSet#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#delimiter QuicksightDataSet#delimiter}.
 
 ---
 
@@ -3294,7 +3294,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format QuicksightDataSet#format}.
 
 ---
 
@@ -3306,7 +3306,7 @@ StartFromRow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#start_from_row QuicksightDataSet#start_from_row}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#start_from_row QuicksightDataSet#start_from_row}.
 
 ---
 
@@ -3318,7 +3318,7 @@ TextQualifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#text_qualifier QuicksightDataSet#text_qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#text_qualifier QuicksightDataSet#text_qualifier}.
 
 ---
 
@@ -3327,10 +3327,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRefreshProperties {
-	RefreshConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfiguration,
+	RefreshConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfiguration,
 }
 ```
 
@@ -3352,7 +3352,7 @@ RefreshConfiguration QuicksightDataSetRefreshPropertiesRefreshConfiguration
 
 refresh_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#refresh_configuration QuicksightDataSet#refresh_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#refresh_configuration QuicksightDataSet#refresh_configuration}
 
 ---
 
@@ -3361,10 +3361,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRefreshPropertiesRefreshConfiguration {
-	IncrementalRefresh: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh,
+	IncrementalRefresh: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh,
 }
 ```
 
@@ -3386,7 +3386,7 @@ IncrementalRefresh QuicksightDataSetRefreshPropertiesRefreshConfigurationIncreme
 
 incremental_refresh block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#incremental_refresh QuicksightDataSet#incremental_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#incremental_refresh QuicksightDataSet#incremental_refresh}
 
 ---
 
@@ -3395,10 +3395,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefresh {
-	LookbackWindow: github.com/cdktf/cdktf-provider-aws-go/aws/v18.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow,
+	LookbackWindow: github.com/cdktf/cdktf-provider-aws-go/aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow,
 }
 ```
 
@@ -3420,7 +3420,7 @@ LookbackWindow QuicksightDataSetRefreshPropertiesRefreshConfigurationIncremental
 
 lookback_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#lookback_window QuicksightDataSet#lookback_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#lookback_window QuicksightDataSet#lookback_window}
 
 ---
 
@@ -3429,7 +3429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow {
 	ColumnName: *string,
@@ -3442,9 +3442,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#size QuicksightDataSet#size}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.sizeUnit">SizeUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#size_unit QuicksightDataSet#size_unit}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#size QuicksightDataSet#size}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindow.property.sizeUnit">SizeUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#size_unit QuicksightDataSet#size_unit}. |
 
 ---
 
@@ -3456,7 +3456,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -3468,7 +3468,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#size QuicksightDataSet#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#size QuicksightDataSet#size}.
 
 ---
 
@@ -3480,7 +3480,7 @@ SizeUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#size_unit QuicksightDataSet#size_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#size_unit QuicksightDataSet#size_unit}.
 
 ---
 
@@ -3489,7 +3489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRowLevelPermissionDataSet {
 	Arn: *string,
@@ -3504,11 +3504,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#arn QuicksightDataSet#arn}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.permissionPolicy">PermissionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#permission_policy QuicksightDataSet#permission_policy}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.formatVersion">FormatVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format_version QuicksightDataSet#format_version}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#namespace QuicksightDataSet#namespace}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#arn QuicksightDataSet#arn}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.permissionPolicy">PermissionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#permission_policy QuicksightDataSet#permission_policy}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.formatVersion">FormatVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format_version QuicksightDataSet#format_version}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#namespace QuicksightDataSet#namespace}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSet.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}. |
 
 ---
 
@@ -3520,7 +3520,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#arn QuicksightDataSet#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#arn QuicksightDataSet#arn}.
 
 ---
 
@@ -3532,7 +3532,7 @@ PermissionPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#permission_policy QuicksightDataSet#permission_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#permission_policy QuicksightDataSet#permission_policy}.
 
 ---
 
@@ -3544,7 +3544,7 @@ FormatVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#format_version QuicksightDataSet#format_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#format_version QuicksightDataSet#format_version}.
 
 ---
 
@@ -3556,7 +3556,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#namespace QuicksightDataSet#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#namespace QuicksightDataSet#namespace}.
 
 ---
 
@@ -3568,7 +3568,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}.
 
 ---
 
@@ -3577,7 +3577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRowLevelPermissionTagConfiguration {
 	TagRules: interface{},
@@ -3590,7 +3590,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration.property.tagRules">TagRules</a></code> | <code>interface{}</code> | tag_rules block. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfiguration.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}. |
 
 ---
 
@@ -3604,7 +3604,7 @@ TagRules interface{}
 
 tag_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_rules QuicksightDataSet#tag_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_rules QuicksightDataSet#tag_rules}
 
 ---
 
@@ -3616,7 +3616,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#status QuicksightDataSet#status}.
 
 ---
 
@@ -3625,7 +3625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 &quicksightdataset.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules {
 	ColumnName: *string,
@@ -3639,10 +3639,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_key QuicksightDataSet#tag_key}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.matchAllValue">MatchAllValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#match_all_value QuicksightDataSet#match_all_value}. |
-| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.tagMultiValueDelimiter">TagMultiValueDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_multi_value_delimiter QuicksightDataSet#tag_multi_value_delimiter}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.columnName">ColumnName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.tagKey">TagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_key QuicksightDataSet#tag_key}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.matchAllValue">MatchAllValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#match_all_value QuicksightDataSet#match_all_value}. |
+| <code><a href="#@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRules.property.tagMultiValueDelimiter">TagMultiValueDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_multi_value_delimiter QuicksightDataSet#tag_multi_value_delimiter}. |
 
 ---
 
@@ -3654,7 +3654,7 @@ ColumnName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 
 ---
 
@@ -3666,7 +3666,7 @@ TagKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_key QuicksightDataSet#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_key QuicksightDataSet#tag_key}.
 
 ---
 
@@ -3678,7 +3678,7 @@ MatchAllValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#match_all_value QuicksightDataSet#match_all_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#match_all_value QuicksightDataSet#match_all_value}.
 
 ---
 
@@ -3690,7 +3690,7 @@ TagMultiValueDelimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/quicksight_data_set#tag_multi_value_delimiter QuicksightDataSet#tag_multi_value_delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/quicksight_data_set#tag_multi_value_delimiter QuicksightDataSet#tag_multi_value_delimiter}.
 
 ---
 
@@ -3701,7 +3701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetColumnGroupsGeoSpatialColumnGroupOutputReference
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() QuicksightDataSetColumnGroupsGeoSpatialColumnGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetColumnGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetColumnGroupsList
 ```
@@ -4159,7 +4159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetColumnGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetColumnGroupsOutputReference
 ```
@@ -4468,7 +4468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetColumnLevelPermissionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetColumnLevelPermissionRulesList
 ```
@@ -4611,7 +4611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetColumnLevelPermissionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetColumnLevelPermissionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetColumnLevelPermissionRulesOutputReference
 ```
@@ -4936,7 +4936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetDataSetUsageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetDataSetUsageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetDataSetUsageConfigurationOutputReference
 ```
@@ -5243,7 +5243,7 @@ func InternalValue() QuicksightDataSetDataSetUsageConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetFieldFoldersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetFieldFoldersList
 ```
@@ -5386,7 +5386,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetFieldFoldersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetFieldFoldersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetFieldFoldersOutputReference
 ```
@@ -5733,7 +5733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperationOutputReference
 ```
@@ -6055,7 +6055,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsCastColumnTyp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsList
 ```
@@ -6198,7 +6198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumnsOutputReference
 ```
@@ -6531,7 +6531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationOutputReference
 ```
@@ -6815,7 +6815,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsCreateColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsFilterOperationOutputReference
 ```
@@ -7086,7 +7086,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsFilterOperati
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetLogicalTableMapDataTransformsList
 ```
@@ -7229,7 +7229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetLogicalTableMapDataTransformsOutputReference
 ```
@@ -7790,7 +7790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsProjectOperationOutputReference
 ```
@@ -8061,7 +8061,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsProjectOperat
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsRenameColumnOperationOutputReference
 ```
@@ -8354,7 +8354,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsRenameColumnO
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationOutputReference
 ```
@@ -8660,7 +8660,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsTagColumnOper
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescriptionOutputReference
 ```
@@ -8938,7 +8938,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsTagColumnOper
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsList
 ```
@@ -9081,7 +9081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsOutputReference
 ```
@@ -9419,7 +9419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOperationOutputReference
 ```
@@ -9712,7 +9712,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapDataTransformsUntagColumnOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetLogicalTableMapList
 ```
@@ -9855,7 +9855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetLogicalTableMapOutputReference
 ```
@@ -10243,7 +10243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyPropertiesOutputReference
 ```
@@ -10521,7 +10521,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJo
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapSourceJoinInstructionOutputReference
 ```
@@ -10942,7 +10942,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapSourceJoinInstruction
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJoinKeyPropertiesOutputReference
 ```
@@ -11220,7 +11220,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapSourceJoinInstructionRightJ
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetLogicalTableMapSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetLogicalTableMapSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetLogicalTableMapSourceOutputReference
 ```
@@ -11569,7 +11569,7 @@ func InternalValue() QuicksightDataSetLogicalTableMapSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetOutputColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetOutputColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetOutputColumnsList
 ```
@@ -11701,7 +11701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetOutputColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetOutputColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetOutputColumnsOutputReference
 ```
@@ -12001,7 +12001,7 @@ func InternalValue() QuicksightDataSetOutputColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetPermissionsList
 ```
@@ -12144,7 +12144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetPermissionsOutputReference
 ```
@@ -12455,7 +12455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapCustomSqlColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetPhysicalTableMapCustomSqlColumnsList
 ```
@@ -12598,7 +12598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetPhysicalTableMapCustomSqlColumnsOutputReference
 ```
@@ -12909,7 +12909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapCustomSqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapCustomSqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetPhysicalTableMapCustomSqlOutputReference
 ```
@@ -13266,7 +13266,7 @@ func InternalValue() QuicksightDataSetPhysicalTableMapCustomSql
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetPhysicalTableMapList
 ```
@@ -13409,7 +13409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetPhysicalTableMapOutputReference
 ```
@@ -13824,7 +13824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList
 ```
@@ -13967,7 +13967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsOutputReference
 ```
@@ -14278,7 +14278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapRelationalTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapRelationalTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetPhysicalTableMapRelationalTableOutputReference
 ```
@@ -14664,7 +14664,7 @@ func InternalValue() QuicksightDataSetPhysicalTableMapRelationalTable
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapS3SourceInputColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetPhysicalTableMapS3SourceInputColumnsList
 ```
@@ -14807,7 +14807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetPhysicalTableMapS3SourceInputColumnsOutputReference
 ```
@@ -15118,7 +15118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapS3SourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetPhysicalTableMapS3SourceOutputReference
 ```
@@ -15459,7 +15459,7 @@ func InternalValue() QuicksightDataSetPhysicalTableMapS3Source
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetPhysicalTableMapS3SourceUploadSettingsOutputReference
 ```
@@ -15853,7 +15853,7 @@ func InternalValue() QuicksightDataSetPhysicalTableMapS3SourceUploadSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRefreshPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRefreshPropertiesOutputReference
 ```
@@ -16137,7 +16137,7 @@ func InternalValue() QuicksightDataSetRefreshProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshLookbackWindowOutputReference
 ```
@@ -16452,7 +16452,7 @@ func InternalValue() QuicksightDataSetRefreshPropertiesRefreshConfigurationIncre
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRefreshPropertiesRefreshConfigurationIncrementalRefreshOutputReference
 ```
@@ -16736,7 +16736,7 @@ func InternalValue() QuicksightDataSetRefreshPropertiesRefreshConfigurationIncre
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRefreshPropertiesRefreshConfigurationOutputReference
 ```
@@ -17020,7 +17020,7 @@ func InternalValue() QuicksightDataSetRefreshPropertiesRefreshConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionDataSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRowLevelPermissionDataSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRowLevelPermissionDataSetOutputReference
 ```
@@ -17400,7 +17400,7 @@ func InternalValue() QuicksightDataSetRowLevelPermissionDataSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRowLevelPermissionTagConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference
 ```
@@ -17713,7 +17713,7 @@ func InternalValue() QuicksightDataSetRowLevelPermissionTagConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesList
 ```
@@ -17856,7 +17856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightDataSet.QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightdataset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightdataset"
 
 quicksightdataset.NewQuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference
 ```

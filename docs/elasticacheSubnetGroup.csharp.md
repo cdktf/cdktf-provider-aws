@@ -1,6 +1,6 @@
 # `aws_elasticache_subnet_group`
 
-Refer to the Terraform Registory for docs: [`aws_elasticache_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group).
+Refer to the Terraform Registory for docs: [`aws_elasticache_subnet_group`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group).
 
 # `elasticacheSubnetGroup` Submodule <a name="`elasticacheSubnetGroup` Submodule" id="@cdktf/provider-aws.elasticacheSubnetGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_elasticache_subnet_group`](http
 
 ### ElasticacheSubnetGroup <a name="ElasticacheSubnetGroup" id="@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the ElasticacheSubnetGroup to 
 
 The id of the existing ElasticacheSubnetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,12 +822,12 @@ new ElasticacheSubnetGroupConfig {
 | <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#name ElasticacheSubnetGroup#name}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#subnet_ids ElasticacheSubnetGroup#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#description ElasticacheSubnetGroup#description}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#id ElasticacheSubnetGroup#id}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#tags ElasticacheSubnetGroup#tags}. |
-| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#tags_all ElasticacheSubnetGroup#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#name ElasticacheSubnetGroup#name}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.subnetIds">SubnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#subnet_ids ElasticacheSubnetGroup#subnet_ids}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#description ElasticacheSubnetGroup#description}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#id ElasticacheSubnetGroup#id}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#tags ElasticacheSubnetGroup#tags}. |
+| <code><a href="#@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroupConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#tags_all ElasticacheSubnetGroup#tags_all}. |
 
 ---
 
@@ -909,7 +909,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#name ElasticacheSubnetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#name ElasticacheSubnetGroup#name}.
 
 ---
 
@@ -921,7 +921,7 @@ public string[] SubnetIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#subnet_ids ElasticacheSubnetGroup#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#subnet_ids ElasticacheSubnetGroup#subnet_ids}.
 
 ---
 
@@ -933,7 +933,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#description ElasticacheSubnetGroup#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#description ElasticacheSubnetGroup#description}.
 
 ---
 
@@ -945,7 +945,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#id ElasticacheSubnetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#id ElasticacheSubnetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#tags ElasticacheSubnetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#tags ElasticacheSubnetGroup#tags}.
 
 ---
 
@@ -972,7 +972,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_subnet_group#tags_all ElasticacheSubnetGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_subnet_group#tags_all ElasticacheSubnetGroup#tags_all}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_aws_connect_user_hierarchy_structure`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_user_hierarchy_structure`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure).
+Refer to the Terraform Registory for docs: [`data_aws_connect_user_hierarchy_structure`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure).
 
 # `dataAwsConnectUserHierarchyStructure` Submodule <a name="`dataAwsConnectUserHierarchyStructure` Submodule" id="@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_user_hierarchy_str
 
 ### DataAwsConnectUserHierarchyStructure <a name="DataAwsConnectUserHierarchyStructure" id="@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure aws_connect_user_hierarchy_structure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -478,7 +478,7 @@ The construct id used in the generated config for the DataAwsConnectUserHierarch
 
 The id of the existing DataAwsConnectUserHierarchyStructure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,8 +737,8 @@ dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig(
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}. |
 
 ---
 
@@ -820,7 +820,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#instance_id DataAwsConnectUserHierarchyStructure#instance_id}.
 
 ---
 
@@ -832,7 +832,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_user_hierarchy_structure#id DataAwsConnectUserHierarchyStructure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

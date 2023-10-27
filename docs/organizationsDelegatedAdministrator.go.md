@@ -1,6 +1,6 @@
 # `aws_organizations_delegated_administrator`
 
-Refer to the Terraform Registory for docs: [`aws_organizations_delegated_administrator`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator).
+Refer to the Terraform Registory for docs: [`aws_organizations_delegated_administrator`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator).
 
 # `organizationsDelegatedAdministrator` Submodule <a name="`organizationsDelegatedAdministrator` Submodule" id="@cdktf/provider-aws.organizationsDelegatedAdministrator"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_organizations_delegated_adminis
 
 ### OrganizationsDelegatedAdministrator <a name="OrganizationsDelegatedAdministrator" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.NewOrganizationsDelegatedAdministrator(scope Construct, id *string, config OrganizationsDelegatedAdministratorConfig) OrganizationsDelegatedAdministrator
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 organizationsdelegatedadministrator.OrganizationsDelegatedAdministrator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the OrganizationsDelegatedAdmi
 
 The id of the existing OrganizationsDelegatedAdministrator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,7 +771,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadministrator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/organizationsdelegatedadministrator"
 
 &organizationsdelegatedadministrator.OrganizationsDelegatedAdministratorConfig {
 	Connection: interface{},
@@ -798,9 +798,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/organizationsdelegatedadm
 | <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#account_id OrganizationsDelegatedAdministrator#account_id}. |
-| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#service_principal OrganizationsDelegatedAdministrator#service_principal}. |
-| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#id OrganizationsDelegatedAdministrator#id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#account_id OrganizationsDelegatedAdministrator#account_id}. |
+| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#service_principal OrganizationsDelegatedAdministrator#service_principal}. |
+| <code><a href="#@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#id OrganizationsDelegatedAdministrator#id}. |
 
 ---
 
@@ -882,7 +882,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#account_id OrganizationsDelegatedAdministrator#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#account_id OrganizationsDelegatedAdministrator#account_id}.
 
 ---
 
@@ -894,7 +894,7 @@ ServicePrincipal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#service_principal OrganizationsDelegatedAdministrator#service_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#service_principal OrganizationsDelegatedAdministrator#service_principal}.
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/organizations_delegated_administrator#id OrganizationsDelegatedAdministrator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/organizations_delegated_administrator#id OrganizationsDelegatedAdministrator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

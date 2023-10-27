@@ -1,6 +1,6 @@
 # `aws_config_config_rule`
 
-Refer to the Terraform Registory for docs: [`aws_config_config_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule).
+Refer to the Terraform Registory for docs: [`aws_config_config_rule`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule).
 
 # `configConfigRule` Submodule <a name="`configConfigRule` Submodule" id="@cdktf/provider-aws.configConfigRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_config_config_rule`](https://re
 
 ### ConfigConfigRule <a name="ConfigConfigRule" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer"></a>
 
@@ -73,9 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode">putEvaluationMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope">putScope</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource">putSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode">resetEvaluationMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetInputParameters">resetInputParameters</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetMaximumExecutionFrequency">resetMaximumExecutionFrequency</a></code> | *No description.* |
@@ -327,6 +329,18 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `putEvaluationMode` <a name="putEvaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode"></a>
+
+```typescript
+public putEvaluationMode(value: IResolvable | ConfigConfigRuleEvaluationMode[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]
+
+---
+
 ##### `putScope` <a name="putScope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope"></a>
 
 ```typescript
@@ -355,6 +369,12 @@ public putSource(value: ConfigConfigRuleSource): void
 
 ```typescript
 public resetDescription(): void
+```
+
+##### `resetEvaluationMode` <a name="resetEvaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode"></a>
+
+```typescript
+public resetEvaluationMode(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetId"></a>
@@ -496,7 +516,7 @@ The construct id used in the generated config for the ConfigConfigRule to import
 
 The id of the existing ConfigConfigRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -527,10 +547,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode">evaluationMode</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId">ruleId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.scope">scope</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference">ConfigConfigRuleScopeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.source">source</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference">ConfigConfigRuleSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput">evaluationModeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.inputParametersInput">inputParametersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequencyInput">maximumExecutionFrequencyInput</a></code> | <code>string</code> | *No description.* |
@@ -701,6 +723,16 @@ public readonly arn: string;
 
 ---
 
+##### `evaluationMode`<sup>Required</sup> <a name="evaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode"></a>
+
+```typescript
+public readonly evaluationMode: ConfigConfigRuleEvaluationModeList;
+```
+
+- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a>
+
+---
+
 ##### `ruleId`<sup>Required</sup> <a name="ruleId" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId"></a>
 
 ```typescript
@@ -738,6 +770,16 @@ public readonly descriptionInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `evaluationModeInput`<sup>Optional</sup> <a name="evaluationModeInput" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput"></a>
+
+```typescript
+public readonly evaluationModeInput: IResolvable | ConfigConfigRuleEvaluationMode[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]
 
 ---
 
@@ -932,15 +974,16 @@ const configConfigRuleConfig: configConfigRule.ConfigConfigRuleConfig = { ... }
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.source">source</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | source block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters">inputParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency">maximumExecutionFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode">evaluationMode</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]</code> | evaluation_mode block. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters">inputParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency">maximumExecutionFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.scope">scope</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | scope block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
 
 ---
 
@@ -1022,7 +1065,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
 
 ---
 
@@ -1036,7 +1079,7 @@ public readonly source: ConfigConfigRuleSource;
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
 
 ---
 
@@ -1048,7 +1091,21 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
+
+---
+
+##### `evaluationMode`<sup>Optional</sup> <a name="evaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode"></a>
+
+```typescript
+public readonly evaluationMode: IResolvable | ConfigConfigRuleEvaluationMode[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]
+
+evaluation_mode block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
 
 ---
 
@@ -1060,7 +1117,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1132,7 @@ public readonly inputParameters: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
 
 ---
 
@@ -1087,7 +1144,7 @@ public readonly maximumExecutionFrequency: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
 
 ---
 
@@ -1101,7 +1158,7 @@ public readonly scope: ConfigConfigRuleScope;
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
 
 ---
 
@@ -1113,7 +1170,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
 
 ---
 
@@ -1125,7 +1182,37 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
+
+---
+
+### ConfigConfigRuleEvaluationMode <a name="ConfigConfigRuleEvaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.Initializer"></a>
+
+```typescript
+import { configConfigRule } from '@cdktf/provider-aws'
+
+const configConfigRuleEvaluationMode: configConfigRule.ConfigConfigRuleEvaluationMode = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}. |
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}.
 
 ---
 
@@ -1143,10 +1230,10 @@ const configConfigRuleScope: configConfigRule.ConfigConfigRuleScope = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId">complianceResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes">complianceResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId">complianceResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes">complianceResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue">tagValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}. |
 
 ---
 
@@ -1158,7 +1245,7 @@ public readonly complianceResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
 
 ---
 
@@ -1170,7 +1257,7 @@ public readonly complianceResourceTypes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
 
 ---
 
@@ -1182,7 +1269,7 @@ public readonly tagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
 
 ---
 
@@ -1194,7 +1281,7 @@ public readonly tagValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
 
 ---
 
@@ -1212,10 +1299,10 @@ const configConfigRuleSource: configConfigRule.ConfigConfigRuleSource = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.customPolicyDetails">customPolicyDetails</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | custom_policy_details block. |
 | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceDetail">sourceDetail</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>[]</code> | source_detail block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier">sourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier">sourceIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}. |
 
 ---
 
@@ -1227,7 +1314,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
 
 ---
 
@@ -1241,7 +1328,7 @@ public readonly customPolicyDetails: ConfigConfigRuleSourceCustomPolicyDetails;
 
 custom_policy_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
 
 ---
 
@@ -1255,7 +1342,7 @@ public readonly sourceDetail: IResolvable | ConfigConfigRuleSourceSourceDetail[]
 
 source_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
 
 ---
 
@@ -1267,7 +1354,7 @@ public readonly sourceIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
 
 ---
 
@@ -1285,9 +1372,9 @@ const configConfigRuleSourceCustomPolicyDetails: configConfigRule.ConfigConfigRu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime">policyRuntime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText">policyText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery">enableDebugLogDelivery</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime">policyRuntime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText">policyText</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery">enableDebugLogDelivery</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}. |
 
 ---
 
@@ -1299,7 +1386,7 @@ public readonly policyRuntime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
 
 ---
 
@@ -1311,7 +1398,7 @@ public readonly policyText: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
 
 ---
 
@@ -1323,7 +1410,7 @@ public readonly enableDebugLogDelivery: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
 
 ---
 
@@ -1341,9 +1428,9 @@ const configConfigRuleSourceSourceDetail: configConfigRule.ConfigConfigRuleSourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource">eventSource</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency">maximumExecutionFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType">messageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource">eventSource</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency">maximumExecutionFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType">messageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}. |
 
 ---
 
@@ -1355,7 +1442,7 @@ public readonly eventSource: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}.
 
 ---
 
@@ -1367,7 +1454,7 @@ public readonly maximumExecutionFrequency: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
 
 ---
 
@@ -1379,11 +1466,450 @@ public readonly messageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ConfigConfigRuleEvaluationModeList <a name="ConfigConfigRuleEvaluationModeList" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer"></a>
+
+```typescript
+import { configConfigRule } from '@cdktf/provider-aws'
+
+new configConfigRule.ConfigConfigRuleEvaluationModeList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get"></a>
+
+```typescript
+public get(index: number): ConfigConfigRuleEvaluationModeOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ConfigConfigRuleEvaluationMode[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>[]
+
+---
+
+
+### ConfigConfigRuleEvaluationModeOutputReference <a name="ConfigConfigRuleEvaluationModeOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer"></a>
+
+```typescript
+import { configConfigRule } from '@cdktf/provider-aws'
+
+new configConfigRule.ConfigConfigRuleEvaluationModeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode">resetMode</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMode` <a name="resetMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode"></a>
+
+```typescript
+public resetMode(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput"></a>
+
+```typescript
+public readonly modeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ConfigConfigRuleEvaluationMode;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>
+
+---
+
 
 ### ConfigConfigRuleScopeOutputReference <a name="ConfigConfigRuleScopeOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference"></a>
 

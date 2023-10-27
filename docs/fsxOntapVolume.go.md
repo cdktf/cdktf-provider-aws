@@ -1,6 +1,6 @@
 # `aws_fsx_ontap_volume`
 
-Refer to the Terraform Registory for docs: [`aws_fsx_ontap_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume).
+Refer to the Terraform Registory for docs: [`aws_fsx_ontap_volume`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume).
 
 # `fsxOntapVolume` Submodule <a name="`fsxOntapVolume` Submodule" id="@cdktf/provider-aws.fsxOntapVolume"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_fsx_ontap_volume`](https://regi
 
 ### FsxOntapVolume <a name="FsxOntapVolume" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolume(scope Construct, id *string, config FsxOntapVolumeConfig) FsxOntapVolume
 ```
@@ -476,7 +476,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ fsxontapvolume.FsxOntapVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ fsxontapvolume.FsxOntapVolume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.FsxOntapVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -565,7 +565,7 @@ The construct id used in the generated config for the FsxOntapVolume to import.
 
 The id of the existing FsxOntapVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1205,7 +1205,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeConfig {
 	Connection: interface{},
@@ -1225,13 +1225,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 	OntapVolumeType: *string,
 	SecurityStyle: *string,
 	SkipFinalBackup: interface{},
-	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
+	SnaplockConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration,
 	SnapshotPolicy: *string,
 	StorageEfficiencyEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeTimeouts,
+	TieringPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeTimeouts,
 	VolumeType: *string,
 }
 ```
@@ -1247,24 +1247,24 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.sizeInMegabytes">SizeInMegabytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.storageVirtualMachineId">StorageVirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.bypassSnaplockEnterpriseRetention">BypassSnaplockEnterpriseRetention</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#bypass_snaplock_enterprise_retention FsxOntapVolume#bypass_snaplock_enterprise_retention}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.copyTagsToBackups">CopyTagsToBackups</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#copy_tags_to_backups FsxOntapVolume#copy_tags_to_backups}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.junctionPath">JunctionPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.ontapVolumeType">OntapVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#ontap_volume_type FsxOntapVolume#ontap_volume_type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.securityStyle">SecurityStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.skipFinalBackup">SkipFinalBackup</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.sizeInMegabytes">SizeInMegabytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.storageVirtualMachineId">StorageVirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.bypassSnaplockEnterpriseRetention">BypassSnaplockEnterpriseRetention</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#bypass_snaplock_enterprise_retention FsxOntapVolume#bypass_snaplock_enterprise_retention}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.copyTagsToBackups">CopyTagsToBackups</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#copy_tags_to_backups FsxOntapVolume#copy_tags_to_backups}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.junctionPath">JunctionPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.ontapVolumeType">OntapVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#ontap_volume_type FsxOntapVolume#ontap_volume_type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.securityStyle">SecurityStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.skipFinalBackup">SkipFinalBackup</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.snaplockConfiguration">SnaplockConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration">FsxOntapVolumeSnaplockConfiguration</a></code> | snaplock_configuration block. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.snapshotPolicy">SnapshotPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#snapshot_policy FsxOntapVolume#snapshot_policy}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.storageEfficiencyEnabled">StorageEfficiencyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.snapshotPolicy">SnapshotPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#snapshot_policy FsxOntapVolume#snapshot_policy}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.storageEfficiencyEnabled">StorageEfficiencyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.tieringPolicy">TieringPolicy</a></code> | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy">FsxOntapVolumeTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts">FsxOntapVolumeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeConfig.property.volumeType">VolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}. |
 
 ---
 
@@ -1346,7 +1346,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}.
 
 ---
 
@@ -1358,7 +1358,7 @@ SizeInMegabytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#size_in_megabytes FsxOntapVolume#size_in_megabytes}.
 
 ---
 
@@ -1370,7 +1370,7 @@ StorageVirtualMachineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#storage_virtual_machine_id FsxOntapVolume#storage_virtual_machine_id}.
 
 ---
 
@@ -1382,7 +1382,7 @@ BypassSnaplockEnterpriseRetention interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#bypass_snaplock_enterprise_retention FsxOntapVolume#bypass_snaplock_enterprise_retention}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#bypass_snaplock_enterprise_retention FsxOntapVolume#bypass_snaplock_enterprise_retention}.
 
 ---
 
@@ -1394,7 +1394,7 @@ CopyTagsToBackups interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#copy_tags_to_backups FsxOntapVolume#copy_tags_to_backups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#copy_tags_to_backups FsxOntapVolume#copy_tags_to_backups}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#id FsxOntapVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1421,7 +1421,7 @@ JunctionPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#junction_path FsxOntapVolume#junction_path}.
 
 ---
 
@@ -1433,7 +1433,7 @@ OntapVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#ontap_volume_type FsxOntapVolume#ontap_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#ontap_volume_type FsxOntapVolume#ontap_volume_type}.
 
 ---
 
@@ -1445,7 +1445,7 @@ SecurityStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#security_style FsxOntapVolume#security_style}.
 
 ---
 
@@ -1457,7 +1457,7 @@ SkipFinalBackup interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#skip_final_backup FsxOntapVolume#skip_final_backup}.
 
 ---
 
@@ -1471,7 +1471,7 @@ SnaplockConfiguration FsxOntapVolumeSnaplockConfiguration
 
 snaplock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#snaplock_configuration FsxOntapVolume#snaplock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#snaplock_configuration FsxOntapVolume#snaplock_configuration}
 
 ---
 
@@ -1483,7 +1483,7 @@ SnapshotPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#snapshot_policy FsxOntapVolume#snapshot_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#snapshot_policy FsxOntapVolume#snapshot_policy}.
 
 ---
 
@@ -1495,7 +1495,7 @@ StorageEfficiencyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#storage_efficiency_enabled FsxOntapVolume#storage_efficiency_enabled}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#tags FsxOntapVolume#tags}.
 
 ---
 
@@ -1519,7 +1519,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#tags_all FsxOntapVolume#tags_all}.
 
 ---
 
@@ -1533,7 +1533,7 @@ TieringPolicy FsxOntapVolumeTieringPolicy
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#tiering_policy FsxOntapVolume#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#tiering_policy FsxOntapVolume#tiering_policy}
 
 ---
 
@@ -1547,7 +1547,7 @@ Timeouts FsxOntapVolumeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#timeouts FsxOntapVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#timeouts FsxOntapVolume#timeouts}
 
 ---
 
@@ -1559,7 +1559,7 @@ VolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#volume_type FsxOntapVolume#volume_type}.
 
 ---
 
@@ -1568,14 +1568,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfiguration {
 	SnaplockType: *string,
 	AuditLogVolume: interface{},
-	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
+	AutocommitPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod,
 	PrivilegedDelete: *string,
-	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
+	RetentionPeriod: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod,
 	VolumeAppendModeEnabled: interface{},
 }
 ```
@@ -1584,12 +1584,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.snaplockType">SnaplockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#snaplock_type FsxOntapVolume#snaplock_type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.auditLogVolume">AuditLogVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#audit_log_volume FsxOntapVolume#audit_log_volume}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.snaplockType">SnaplockType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#snaplock_type FsxOntapVolume#snaplock_type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.auditLogVolume">AuditLogVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#audit_log_volume FsxOntapVolume#audit_log_volume}. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.autocommitPeriod">AutocommitPeriod</a></code> | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod">FsxOntapVolumeSnaplockConfigurationAutocommitPeriod</a></code> | autocommit_period block. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.privilegedDelete">PrivilegedDelete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#privileged_delete FsxOntapVolume#privileged_delete}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.privilegedDelete">PrivilegedDelete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#privileged_delete FsxOntapVolume#privileged_delete}. |
 | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.retentionPeriod">RetentionPeriod</a></code> | <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod">FsxOntapVolumeSnaplockConfigurationRetentionPeriod</a></code> | retention_period block. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.volumeAppendModeEnabled">VolumeAppendModeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#volume_append_mode_enabled FsxOntapVolume#volume_append_mode_enabled}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfiguration.property.volumeAppendModeEnabled">VolumeAppendModeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#volume_append_mode_enabled FsxOntapVolume#volume_append_mode_enabled}. |
 
 ---
 
@@ -1601,7 +1601,7 @@ SnaplockType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#snaplock_type FsxOntapVolume#snaplock_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#snaplock_type FsxOntapVolume#snaplock_type}.
 
 ---
 
@@ -1613,7 +1613,7 @@ AuditLogVolume interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#audit_log_volume FsxOntapVolume#audit_log_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#audit_log_volume FsxOntapVolume#audit_log_volume}.
 
 ---
 
@@ -1627,7 +1627,7 @@ AutocommitPeriod FsxOntapVolumeSnaplockConfigurationAutocommitPeriod
 
 autocommit_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#autocommit_period FsxOntapVolume#autocommit_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#autocommit_period FsxOntapVolume#autocommit_period}
 
 ---
 
@@ -1639,7 +1639,7 @@ PrivilegedDelete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#privileged_delete FsxOntapVolume#privileged_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#privileged_delete FsxOntapVolume#privileged_delete}.
 
 ---
 
@@ -1653,7 +1653,7 @@ RetentionPeriod FsxOntapVolumeSnaplockConfigurationRetentionPeriod
 
 retention_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#retention_period FsxOntapVolume#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#retention_period FsxOntapVolume#retention_period}
 
 ---
 
@@ -1665,7 +1665,7 @@ VolumeAppendModeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#volume_append_mode_enabled FsxOntapVolume#volume_append_mode_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#volume_append_mode_enabled FsxOntapVolume#volume_append_mode_enabled}.
 
 ---
 
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod {
 	Type: *string,
@@ -1686,8 +1686,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriod.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
 
 ---
 
@@ -1699,7 +1699,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
 
 ---
 
@@ -1711,7 +1711,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
 
 ---
 
@@ -1720,12 +1720,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriod {
-	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
-	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
-	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws/v18.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
+	DefaultRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention,
+	MaximumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention,
+	MinimumRetention: github.com/cdktf/cdktf-provider-aws-go/aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention,
 }
 ```
 
@@ -1749,7 +1749,7 @@ DefaultRetention FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetent
 
 default_retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#default_retention FsxOntapVolume#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#default_retention FsxOntapVolume#default_retention}
 
 ---
 
@@ -1763,7 +1763,7 @@ MaximumRetention FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetent
 
 maximum_retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#maximum_retention FsxOntapVolume#maximum_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#maximum_retention FsxOntapVolume#maximum_retention}
 
 ---
 
@@ -1777,7 +1777,7 @@ MinimumRetention FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetent
 
 minimum_retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#minimum_retention FsxOntapVolume#minimum_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#minimum_retention FsxOntapVolume#minimum_retention}
 
 ---
 
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention {
 	Type: *string,
@@ -1798,8 +1798,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
 
 ---
 
@@ -1811,7 +1811,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
 
 ---
 
@@ -1823,7 +1823,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
 
 ---
 
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention {
 	Type: *string,
@@ -1844,8 +1844,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
 
 ---
 
@@ -1857,7 +1857,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
 
 ---
 
@@ -1869,7 +1869,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
 
 ---
 
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention {
 	Type: *string,
@@ -1890,8 +1890,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetention.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}. |
 
 ---
 
@@ -1903,7 +1903,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#type FsxOntapVolume#type}.
 
 ---
 
@@ -1915,7 +1915,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#value FsxOntapVolume#value}.
 
 ---
 
@@ -1924,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTieringPolicy {
 	CoolingPeriod: *f64,
@@ -1936,8 +1936,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.property.coolingPeriod">CoolingPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.property.coolingPeriod">CoolingPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicy.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}. |
 
 ---
 
@@ -1949,7 +1949,7 @@ CoolingPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#cooling_period FsxOntapVolume#cooling_period}.
 
 ---
 
@@ -1961,7 +1961,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#name FsxOntapVolume#name}.
 
 ---
 
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 &fsxontapvolume.FsxOntapVolumeTimeouts {
 	Create: *string,
@@ -1983,9 +1983,9 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}. |
-| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}. |
+| <code><a href="#@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}. |
 
 ---
 
@@ -1997,7 +1997,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#create FsxOntapVolume#create}.
 
 ---
 
@@ -2009,7 +2009,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#delete FsxOntapVolume#delete}.
 
 ---
 
@@ -2021,7 +2021,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/fsx_ontap_volume#update FsxOntapVolume#update}.
 
 ---
 
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationAutocommitPeriodOutputReference
 ```
@@ -2339,7 +2339,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationAutocommitPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationOutputReference
 ```
@@ -2781,7 +2781,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRetentionOutputReference
 ```
@@ -3088,7 +3088,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodDefaultRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRetentionOutputReference
 ```
@@ -3395,7 +3395,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMaximumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRetentionOutputReference
 ```
@@ -3702,7 +3702,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriodMinimumRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeSnaplockConfigurationRetentionPeriodOutputReference
 ```
@@ -4077,7 +4077,7 @@ func InternalValue() FsxOntapVolumeSnaplockConfigurationRetentionPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTieringPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTieringPolicyOutputReference
 ```
@@ -4384,7 +4384,7 @@ func InternalValue() FsxOntapVolumeTieringPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapvolume"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxontapvolume"
 
 fsxontapvolume.NewFsxOntapVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxOntapVolumeTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `aws_guardduty_detector`
 
-Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector).
+Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector).
 
 # `guarddutyDetector` Submodule <a name="`guarddutyDetector` Submodule" id="@cdktf/provider-aws.guarddutyDetector"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_guardduty_detector`](https://re
 
 ### GuarddutyDetector <a name="GuarddutyDetector" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector aws_guardduty_detector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector aws_guardduty_detector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector.Initializer"></a>
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the GuarddutyDetector to impor
 
 The id of the existing GuarddutyDetector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,11 +861,11 @@ new GuarddutyDetectorConfig {
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.datasources">Datasources</a></code> | <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasources">GuarddutyDetectorDatasources</a></code> | datasources block. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}. |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.findingPublishingFrequency">FindingPublishingFrequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}. |
 
 ---
 
@@ -949,7 +949,7 @@ public GuarddutyDetectorDatasources Datasources { get; set; }
 
 datasources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#datasources GuarddutyDetector#datasources}
 
 ---
 
@@ -961,7 +961,7 @@ public object Enable { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -973,7 +973,7 @@ public string FindingPublishingFrequency { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}.
 
 ---
 
@@ -985,7 +985,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#id GuarddutyDetector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1000,7 +1000,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#tags GuarddutyDetector#tags}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#tags_all GuarddutyDetector#tags_all}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public GuarddutyDetectorDatasourcesKubernetes Kubernetes { get; set; }
 
 kubernetes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#kubernetes GuarddutyDetector#kubernetes}
 
 ---
 
@@ -1064,7 +1064,7 @@ public GuarddutyDetectorDatasourcesMalwareProtection MalwareProtection { get; se
 
 malware_protection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#malware_protection GuarddutyDetector#malware_protection}
 
 ---
 
@@ -1078,7 +1078,7 @@ public GuarddutyDetectorDatasourcesS3Logs S3Logs { get; set; }
 
 s3_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#s3_logs GuarddutyDetector#s3_logs}
 
 ---
 
@@ -1112,7 +1112,7 @@ public GuarddutyDetectorDatasourcesKubernetesAuditLogs AuditLogs { get; set; }
 
 audit_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#audit_logs GuarddutyDetector#audit_logs}
 
 ---
 
@@ -1132,7 +1132,7 @@ new GuarddutyDetectorDatasourcesKubernetesAuditLogs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ public object Enable { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings 
 
 scan_ec2_instance_with_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#scan_ec2_instance_with_findings GuarddutyDetector#scan_ec2_instance_with_findings}
 
 ---
 
@@ -1212,7 +1212,7 @@ public GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsE
 
 ebs_volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#ebs_volumes GuarddutyDetector#ebs_volumes}
 
 ---
 
@@ -1232,7 +1232,7 @@ new GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsV
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1244,7 +1244,7 @@ public object Enable { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 
@@ -1264,7 +1264,7 @@ new GuarddutyDetectorDatasourcesS3Logs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
+| <code><a href="#@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs.property.enable">Enable</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}. |
 
 ---
 
@@ -1276,7 +1276,7 @@ public object Enable { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/guardduty_detector#enable GuarddutyDetector#enable}.
 
 ---
 

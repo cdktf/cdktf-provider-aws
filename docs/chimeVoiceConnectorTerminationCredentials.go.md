@@ -1,6 +1,6 @@
 # `aws_chime_voice_connector_termination_credentials`
 
-Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_termination_credentials`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials).
+Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_termination_credentials`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials).
 
 # `chimeVoiceConnectorTerminationCredentials` Submodule <a name="`chimeVoiceConnectorTerminationCredentials` Submodule" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_chime_voice_connector_terminati
 
 ### ChimeVoiceConnectorTerminationCredentials <a name="ChimeVoiceConnectorTerminationCredentials" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.NewChimeVoiceConnectorTerminationCredentials(scope Construct, id *string, config ChimeVoiceConnectorTerminationCredentialsConfig) ChimeVoiceConnectorTerminationCredentials
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredenti
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredenti
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -441,7 +441,7 @@ The construct id used in the generated config for the ChimeVoiceConnectorTermina
 
 The id of the existing ChimeVoiceConnectorTerminationCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 &chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentialsConfig {
 	Connection: interface{},
@@ -735,8 +735,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectortermin
 | <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.credentials">Credentials</a></code> | <code>interface{}</code> | credentials block. |
-| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.voiceConnectorId">VoiceConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}. |
-| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#id ChimeVoiceConnectorTerminationCredentials#id}. |
+| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.voiceConnectorId">VoiceConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}. |
+| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#id ChimeVoiceConnectorTerminationCredentials#id}. |
 
 ---
 
@@ -820,7 +820,7 @@ Credentials interface{}
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#credentials ChimeVoiceConnectorTerminationCredentials#credentials}
 
 ---
 
@@ -832,7 +832,7 @@ VoiceConnectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#voice_connector_id ChimeVoiceConnectorTerminationCredentials#voice_connector_id}.
 
 ---
 
@@ -844,7 +844,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#id ChimeVoiceConnectorTerminationCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#id ChimeVoiceConnectorTerminationCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 &chimevoiceconnectorterminationcredentials.ChimeVoiceConnectorTerminationCredentialsCredentials {
 	Password: *string,
@@ -868,8 +868,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectortermin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#password ChimeVoiceConnectorTerminationCredentials#password}. |
-| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentials.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#username ChimeVoiceConnectorTerminationCredentials#username}. |
+| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#password ChimeVoiceConnectorTerminationCredentials#password}. |
+| <code><a href="#@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentials.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#username ChimeVoiceConnectorTerminationCredentials#username}. |
 
 ---
 
@@ -881,7 +881,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#password ChimeVoiceConnectorTerminationCredentials#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#password ChimeVoiceConnectorTerminationCredentials#password}.
 
 ---
 
@@ -893,7 +893,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/chime_voice_connector_termination_credentials#username ChimeVoiceConnectorTerminationCredentials#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/chime_voice_connector_termination_credentials#username ChimeVoiceConnectorTerminationCredentials#username}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.NewChimeVoiceConnectorTerminationCredentialsCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimeVoiceConnectorTerminationCredentialsCredentialsList
 ```
@@ -1047,7 +1047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorTerminationCredentials.ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/chimevoiceconnectorterminationcredentials"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorterminationcredentials"
 
 chimevoiceconnectorterminationcredentials.NewChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimeVoiceConnectorTerminationCredentialsCredentialsOutputReference
 ```

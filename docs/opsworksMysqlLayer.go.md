@@ -1,6 +1,6 @@
 # `aws_opsworks_mysql_layer`
 
-Refer to the Terraform Registory for docs: [`aws_opsworks_mysql_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer).
+Refer to the Terraform Registory for docs: [`aws_opsworks_mysql_layer`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer).
 
 # `opsworksMysqlLayer` Submodule <a name="`opsworksMysqlLayer` Submodule" id="@cdktf/provider-aws.opsworksMysqlLayer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_opsworks_mysql_layer`](https://
 
 ### OpsworksMysqlLayer <a name="OpsworksMysqlLayer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayer(scope Construct, id *string, config OpsworksMysqlLayerConfig) OpsworksMysqlLayer
 ```
@@ -553,7 +553,7 @@ func ResetUseEbsOptimizedInstances()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsConstruct(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformElement(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ opsworksmysqllayer.OpsworksMysqlLayer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.OpsworksMysqlLayer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ The construct id used in the generated config for the OpsworksMysqlLayer to impo
 
 The id of the existing OpsworksMysqlLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1447,7 +1447,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerCloudwatchConfiguration {
 	Enabled: interface{},
@@ -1459,7 +1459,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#enabled OpsworksMysqlLayer#enabled}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#enabled OpsworksMysqlLayer#enabled}. |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration.property.logStreams">LogStreams</a></code> | <code>interface{}</code> | log_streams block. |
 
 ---
@@ -1472,7 +1472,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#enabled OpsworksMysqlLayer#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#enabled OpsworksMysqlLayer#enabled}.
 
 ---
 
@@ -1486,7 +1486,7 @@ LogStreams interface{}
 
 log_streams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#log_streams OpsworksMysqlLayer#log_streams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#log_streams OpsworksMysqlLayer#log_streams}
 
 ---
 
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams {
 	File: *string,
@@ -1516,17 +1516,17 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#file OpsworksMysqlLayer#file}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#log_group_name OpsworksMysqlLayer#log_group_name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#batch_count OpsworksMysqlLayer#batch_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#batch_size OpsworksMysqlLayer#batch_size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#buffer_duration OpsworksMysqlLayer#buffer_duration}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#datetime_format OpsworksMysqlLayer#datetime_format}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#encoding OpsworksMysqlLayer#encoding}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#file_fingerprint_lines OpsworksMysqlLayer#file_fingerprint_lines}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#initial_position OpsworksMysqlLayer#initial_position}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#multiline_start_pattern OpsworksMysqlLayer#multiline_start_pattern}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#time_zone OpsworksMysqlLayer#time_zone}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.file">File</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#file OpsworksMysqlLayer#file}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#log_group_name OpsworksMysqlLayer#log_group_name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.batchCount">BatchCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#batch_count OpsworksMysqlLayer#batch_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#batch_size OpsworksMysqlLayer#batch_size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.bufferDuration">BufferDuration</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#buffer_duration OpsworksMysqlLayer#buffer_duration}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.datetimeFormat">DatetimeFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#datetime_format OpsworksMysqlLayer#datetime_format}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.encoding">Encoding</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#encoding OpsworksMysqlLayer#encoding}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.fileFingerprintLines">FileFingerprintLines</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#file_fingerprint_lines OpsworksMysqlLayer#file_fingerprint_lines}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.initialPosition">InitialPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#initial_position OpsworksMysqlLayer#initial_position}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.multilineStartPattern">MultilineStartPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#multiline_start_pattern OpsworksMysqlLayer#multiline_start_pattern}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreams.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#time_zone OpsworksMysqlLayer#time_zone}. |
 
 ---
 
@@ -1538,7 +1538,7 @@ File *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#file OpsworksMysqlLayer#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#file OpsworksMysqlLayer#file}.
 
 ---
 
@@ -1550,7 +1550,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#log_group_name OpsworksMysqlLayer#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#log_group_name OpsworksMysqlLayer#log_group_name}.
 
 ---
 
@@ -1562,7 +1562,7 @@ BatchCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#batch_count OpsworksMysqlLayer#batch_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#batch_count OpsworksMysqlLayer#batch_count}.
 
 ---
 
@@ -1574,7 +1574,7 @@ BatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#batch_size OpsworksMysqlLayer#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#batch_size OpsworksMysqlLayer#batch_size}.
 
 ---
 
@@ -1586,7 +1586,7 @@ BufferDuration *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#buffer_duration OpsworksMysqlLayer#buffer_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#buffer_duration OpsworksMysqlLayer#buffer_duration}.
 
 ---
 
@@ -1598,7 +1598,7 @@ DatetimeFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#datetime_format OpsworksMysqlLayer#datetime_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#datetime_format OpsworksMysqlLayer#datetime_format}.
 
 ---
 
@@ -1610,7 +1610,7 @@ Encoding *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#encoding OpsworksMysqlLayer#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#encoding OpsworksMysqlLayer#encoding}.
 
 ---
 
@@ -1622,7 +1622,7 @@ FileFingerprintLines *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#file_fingerprint_lines OpsworksMysqlLayer#file_fingerprint_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#file_fingerprint_lines OpsworksMysqlLayer#file_fingerprint_lines}.
 
 ---
 
@@ -1634,7 +1634,7 @@ InitialPosition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#initial_position OpsworksMysqlLayer#initial_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#initial_position OpsworksMysqlLayer#initial_position}.
 
 ---
 
@@ -1646,7 +1646,7 @@ MultilineStartPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#multiline_start_pattern OpsworksMysqlLayer#multiline_start_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#multiline_start_pattern OpsworksMysqlLayer#multiline_start_pattern}.
 
 ---
 
@@ -1658,7 +1658,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#time_zone OpsworksMysqlLayer#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#time_zone OpsworksMysqlLayer#time_zone}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerConfig {
 	Connection: interface{},
@@ -1681,7 +1681,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 	AutoAssignElasticIps: interface{},
 	AutoAssignPublicIps: interface{},
 	AutoHealing: interface{},
-	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration,
+	CloudwatchConfiguration: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration,
 	CustomConfigureRecipes: *[]*string,
 	CustomDeployRecipes: *[]*string,
 	CustomInstanceProfileArn: *string,
@@ -1696,7 +1696,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 	Id: *string,
 	InstallUpdatesOnBoot: interface{},
 	InstanceShutdownTimeout: *f64,
-	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling,
+	LoadBasedAutoScaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling,
 	Name: *string,
 	RootPassword: *string,
 	RootPasswordOnAllInstances: interface{},
@@ -1718,33 +1718,33 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#stack_id OpsworksMysqlLayer#stack_id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_healing OpsworksMysqlLayer#auto_healing}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.stackId">StackId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#stack_id OpsworksMysqlLayer#stack_id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoAssignElasticIps">AutoAssignElasticIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoAssignPublicIps">AutoAssignPublicIps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.autoHealing">AutoHealing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_healing OpsworksMysqlLayer#auto_healing}. |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.cloudwatchConfiguration">CloudwatchConfiguration</a></code> | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfiguration">OpsworksMysqlLayerCloudwatchConfiguration</a></code> | cloudwatch_configuration block. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_deploy_recipes OpsworksMysqlLayer#custom_deploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_instance_profile_arn OpsworksMysqlLayer#custom_instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_json OpsworksMysqlLayer#custom_json}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_security_group_ids OpsworksMysqlLayer#custom_security_group_ids}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_setup_recipes OpsworksMysqlLayer#custom_setup_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_shutdown_recipes OpsworksMysqlLayer#custom_shutdown_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_undeploy_recipes OpsworksMysqlLayer#custom_undeploy_recipes}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customConfigureRecipes">CustomConfigureRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customDeployRecipes">CustomDeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_deploy_recipes OpsworksMysqlLayer#custom_deploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customInstanceProfileArn">CustomInstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_instance_profile_arn OpsworksMysqlLayer#custom_instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customJson">CustomJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_json OpsworksMysqlLayer#custom_json}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customSecurityGroupIds">CustomSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_security_group_ids OpsworksMysqlLayer#custom_security_group_ids}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customSetupRecipes">CustomSetupRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_setup_recipes OpsworksMysqlLayer#custom_setup_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customShutdownRecipes">CustomShutdownRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_shutdown_recipes OpsworksMysqlLayer#custom_shutdown_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.customUndeployRecipes">CustomUndeployRecipes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_undeploy_recipes OpsworksMysqlLayer#custom_undeploy_recipes}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.drainElbOnShutdown">DrainElbOnShutdown</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}. |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.ebsVolume">EbsVolume</a></code> | <code>interface{}</code> | ebs_volume block. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#id OpsworksMysqlLayer#id}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.elasticLoadBalancer">ElasticLoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#id OpsworksMysqlLayer#id}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.installUpdatesOnBoot">InstallUpdatesOnBoot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.instanceShutdownTimeout">InstanceShutdownTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}. |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.loadBasedAutoScaling">LoadBasedAutoScaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling">OpsworksMysqlLayerLoadBasedAutoScaling</a></code> | load_based_auto_scaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#name OpsworksMysqlLayer#name}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.rootPassword">RootPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#root_password OpsworksMysqlLayer#root_password}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.rootPasswordOnAllInstances">RootPasswordOnAllInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#system_packages OpsworksMysqlLayer#system_packages}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#tags OpsworksMysqlLayer#tags}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#tags_all OpsworksMysqlLayer#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#name OpsworksMysqlLayer#name}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.rootPassword">RootPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#root_password OpsworksMysqlLayer#root_password}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.rootPasswordOnAllInstances">RootPasswordOnAllInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.systemPackages">SystemPackages</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#system_packages OpsworksMysqlLayer#system_packages}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#tags OpsworksMysqlLayer#tags}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#tags_all OpsworksMysqlLayer#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerConfig.property.useEbsOptimizedInstances">UseEbsOptimizedInstances</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}. |
 
 ---
 
@@ -1826,7 +1826,7 @@ StackId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#stack_id OpsworksMysqlLayer#stack_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#stack_id OpsworksMysqlLayer#stack_id}.
 
 ---
 
@@ -1838,7 +1838,7 @@ AutoAssignElasticIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}.
 
 ---
 
@@ -1850,7 +1850,7 @@ AutoAssignPublicIps interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}.
 
 ---
 
@@ -1862,7 +1862,7 @@ AutoHealing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#auto_healing OpsworksMysqlLayer#auto_healing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#auto_healing OpsworksMysqlLayer#auto_healing}.
 
 ---
 
@@ -1876,7 +1876,7 @@ CloudwatchConfiguration OpsworksMysqlLayerCloudwatchConfiguration
 
 cloudwatch_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#cloudwatch_configuration OpsworksMysqlLayer#cloudwatch_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#cloudwatch_configuration OpsworksMysqlLayer#cloudwatch_configuration}
 
 ---
 
@@ -1888,7 +1888,7 @@ CustomConfigureRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}.
 
 ---
 
@@ -1900,7 +1900,7 @@ CustomDeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_deploy_recipes OpsworksMysqlLayer#custom_deploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_deploy_recipes OpsworksMysqlLayer#custom_deploy_recipes}.
 
 ---
 
@@ -1912,7 +1912,7 @@ CustomInstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_instance_profile_arn OpsworksMysqlLayer#custom_instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_instance_profile_arn OpsworksMysqlLayer#custom_instance_profile_arn}.
 
 ---
 
@@ -1924,7 +1924,7 @@ CustomJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_json OpsworksMysqlLayer#custom_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_json OpsworksMysqlLayer#custom_json}.
 
 ---
 
@@ -1936,7 +1936,7 @@ CustomSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_security_group_ids OpsworksMysqlLayer#custom_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_security_group_ids OpsworksMysqlLayer#custom_security_group_ids}.
 
 ---
 
@@ -1948,7 +1948,7 @@ CustomSetupRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_setup_recipes OpsworksMysqlLayer#custom_setup_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_setup_recipes OpsworksMysqlLayer#custom_setup_recipes}.
 
 ---
 
@@ -1960,7 +1960,7 @@ CustomShutdownRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_shutdown_recipes OpsworksMysqlLayer#custom_shutdown_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_shutdown_recipes OpsworksMysqlLayer#custom_shutdown_recipes}.
 
 ---
 
@@ -1972,7 +1972,7 @@ CustomUndeployRecipes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#custom_undeploy_recipes OpsworksMysqlLayer#custom_undeploy_recipes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#custom_undeploy_recipes OpsworksMysqlLayer#custom_undeploy_recipes}.
 
 ---
 
@@ -1984,7 +1984,7 @@ DrainElbOnShutdown interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}.
 
 ---
 
@@ -1998,7 +1998,7 @@ EbsVolume interface{}
 
 ebs_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#ebs_volume OpsworksMysqlLayer#ebs_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#ebs_volume OpsworksMysqlLayer#ebs_volume}
 
 ---
 
@@ -2010,7 +2010,7 @@ ElasticLoadBalancer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}.
 
 ---
 
@@ -2022,7 +2022,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#id OpsworksMysqlLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#id OpsworksMysqlLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2037,7 +2037,7 @@ InstallUpdatesOnBoot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}.
 
 ---
 
@@ -2049,7 +2049,7 @@ InstanceShutdownTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}.
 
 ---
 
@@ -2063,7 +2063,7 @@ LoadBasedAutoScaling OpsworksMysqlLayerLoadBasedAutoScaling
 
 load_based_auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#load_based_auto_scaling OpsworksMysqlLayer#load_based_auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#load_based_auto_scaling OpsworksMysqlLayer#load_based_auto_scaling}
 
 ---
 
@@ -2075,7 +2075,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#name OpsworksMysqlLayer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#name OpsworksMysqlLayer#name}.
 
 ---
 
@@ -2087,7 +2087,7 @@ RootPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#root_password OpsworksMysqlLayer#root_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#root_password OpsworksMysqlLayer#root_password}.
 
 ---
 
@@ -2099,7 +2099,7 @@ RootPasswordOnAllInstances interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}.
 
 ---
 
@@ -2111,7 +2111,7 @@ SystemPackages *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#system_packages OpsworksMysqlLayer#system_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#system_packages OpsworksMysqlLayer#system_packages}.
 
 ---
 
@@ -2123,7 +2123,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#tags OpsworksMysqlLayer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#tags OpsworksMysqlLayer#tags}.
 
 ---
 
@@ -2135,7 +2135,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#tags_all OpsworksMysqlLayer#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#tags_all OpsworksMysqlLayer#tags_all}.
 
 ---
 
@@ -2147,7 +2147,7 @@ UseEbsOptimizedInstances interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}.
 
 ---
 
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerEbsVolume {
 	MountPoint: *string,
@@ -2173,13 +2173,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#mount_point OpsworksMysqlLayer#mount_point}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#number_of_disks OpsworksMysqlLayer#number_of_disks}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#size OpsworksMysqlLayer#size}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#encrypted OpsworksMysqlLayer#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#iops OpsworksMysqlLayer#iops}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#raid_level OpsworksMysqlLayer#raid_level}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#type OpsworksMysqlLayer#type}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.mountPoint">MountPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#mount_point OpsworksMysqlLayer#mount_point}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.numberOfDisks">NumberOfDisks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#number_of_disks OpsworksMysqlLayer#number_of_disks}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#size OpsworksMysqlLayer#size}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#encrypted OpsworksMysqlLayer#encrypted}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#iops OpsworksMysqlLayer#iops}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.raidLevel">RaidLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#raid_level OpsworksMysqlLayer#raid_level}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolume.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#type OpsworksMysqlLayer#type}. |
 
 ---
 
@@ -2191,7 +2191,7 @@ MountPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#mount_point OpsworksMysqlLayer#mount_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#mount_point OpsworksMysqlLayer#mount_point}.
 
 ---
 
@@ -2203,7 +2203,7 @@ NumberOfDisks *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#number_of_disks OpsworksMysqlLayer#number_of_disks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#number_of_disks OpsworksMysqlLayer#number_of_disks}.
 
 ---
 
@@ -2215,7 +2215,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#size OpsworksMysqlLayer#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#size OpsworksMysqlLayer#size}.
 
 ---
 
@@ -2227,7 +2227,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#encrypted OpsworksMysqlLayer#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#encrypted OpsworksMysqlLayer#encrypted}.
 
 ---
 
@@ -2239,7 +2239,7 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#iops OpsworksMysqlLayer#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#iops OpsworksMysqlLayer#iops}.
 
 ---
 
@@ -2251,7 +2251,7 @@ RaidLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#raid_level OpsworksMysqlLayer#raid_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#raid_level OpsworksMysqlLayer#raid_level}.
 
 ---
 
@@ -2263,7 +2263,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#type OpsworksMysqlLayer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#type OpsworksMysqlLayer#type}.
 
 ---
 
@@ -2272,12 +2272,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScaling {
-	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling,
+	Downscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling,
 	Enable: interface{},
-	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws/v18.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling,
+	Upscaling: github.com/cdktf/cdktf-provider-aws-go/aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling,
 }
 ```
 
@@ -2286,7 +2286,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.property.downscaling">Downscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling">OpsworksMysqlLayerLoadBasedAutoScalingDownscaling</a></code> | downscaling block. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#enable OpsworksMysqlLayer#enable}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#enable OpsworksMysqlLayer#enable}. |
 | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScaling.property.upscaling">Upscaling</a></code> | <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling">OpsworksMysqlLayerLoadBasedAutoScalingUpscaling</a></code> | upscaling block. |
 
 ---
@@ -2301,7 +2301,7 @@ Downscaling OpsworksMysqlLayerLoadBasedAutoScalingDownscaling
 
 downscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#downscaling OpsworksMysqlLayer#downscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#downscaling OpsworksMysqlLayer#downscaling}
 
 ---
 
@@ -2313,7 +2313,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#enable OpsworksMysqlLayer#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#enable OpsworksMysqlLayer#enable}.
 
 ---
 
@@ -2327,7 +2327,7 @@ Upscaling OpsworksMysqlLayerLoadBasedAutoScalingUpscaling
 
 upscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#upscaling OpsworksMysqlLayer#upscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#upscaling OpsworksMysqlLayer#upscaling}
 
 ---
 
@@ -2336,7 +2336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling {
 	Alarms: *[]*string,
@@ -2353,13 +2353,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2371,7 +2371,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}.
 
 ---
 
@@ -2383,7 +2383,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}.
 
 ---
 
@@ -2395,7 +2395,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}.
 
 ---
 
@@ -2407,7 +2407,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}.
 
 ---
 
@@ -2419,7 +2419,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}.
 
 ---
 
@@ -2431,7 +2431,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}.
 
 ---
 
@@ -2443,7 +2443,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}.
 
 ---
 
@@ -2452,7 +2452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 &opsworksmysqllayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling {
 	Alarms: *[]*string,
@@ -2469,13 +2469,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}. |
-| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.alarms">Alarms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.cpuThreshold">CpuThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.ignoreMetricsTime">IgnoreMetricsTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.loadThreshold">LoadThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.memoryThreshold">MemoryThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}. |
+| <code><a href="#@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscaling.property.thresholdsWaitTime">ThresholdsWaitTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}. |
 
 ---
 
@@ -2487,7 +2487,7 @@ Alarms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#alarms OpsworksMysqlLayer#alarms}.
 
 ---
 
@@ -2499,7 +2499,7 @@ CpuThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#cpu_threshold OpsworksMysqlLayer#cpu_threshold}.
 
 ---
 
@@ -2511,7 +2511,7 @@ IgnoreMetricsTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#ignore_metrics_time OpsworksMysqlLayer#ignore_metrics_time}.
 
 ---
 
@@ -2523,7 +2523,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#instance_count OpsworksMysqlLayer#instance_count}.
 
 ---
 
@@ -2535,7 +2535,7 @@ LoadThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#load_threshold OpsworksMysqlLayer#load_threshold}.
 
 ---
 
@@ -2547,7 +2547,7 @@ MemoryThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#memory_threshold OpsworksMysqlLayer#memory_threshold}.
 
 ---
 
@@ -2559,7 +2559,7 @@ ThresholdsWaitTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_mysql_layer#thresholds_wait_time OpsworksMysqlLayer#thresholds_wait_time}.
 
 ---
 
@@ -2570,7 +2570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList
 ```
@@ -2713,7 +2713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMysqlLayerCloudwatchConfigurationLogStreamsOutputReference
 ```
@@ -3285,7 +3285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerCloudwatchConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerCloudwatchConfigurationOutputReference
 ```
@@ -3605,7 +3605,7 @@ func InternalValue() OpsworksMysqlLayerCloudwatchConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerEbsVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksMysqlLayerEbsVolumeList
 ```
@@ -3748,7 +3748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerEbsVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpsworksMysqlLayerEbsVolumeOutputReference
 ```
@@ -4197,7 +4197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingDownscalingOutputReference
 ```
@@ -4649,7 +4649,7 @@ func InternalValue() OpsworksMysqlLayerLoadBasedAutoScalingDownscaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingOutputReference
 ```
@@ -5011,7 +5011,7 @@ func InternalValue() OpsworksMysqlLayerLoadBasedAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/opsworksmysqllayer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/opsworksmysqllayer"
 
 opsworksmysqllayer.NewOpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpsworksMysqlLayerLoadBasedAutoScalingUpscalingOutputReference
 ```

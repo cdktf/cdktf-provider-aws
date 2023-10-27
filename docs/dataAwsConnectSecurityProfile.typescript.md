@@ -1,6 +1,6 @@
 # `data_aws_connect_security_profile`
 
-Refer to the Terraform Registory for docs: [`data_aws_connect_security_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile).
+Refer to the Terraform Registory for docs: [`data_aws_connect_security_profile`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile).
 
 # `dataAwsConnectSecurityProfile` Submodule <a name="`dataAwsConnectSecurityProfile` Submodule" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_connect_security_profile`]
 
 ### DataAwsConnectSecurityProfile <a name="DataAwsConnectSecurityProfile" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile aws_connect_security_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile aws_connect_security_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile.Initializer"></a>
 
@@ -388,7 +388,7 @@ The construct id used in the generated config for the DataAwsConnectSecurityProf
 
 The id of the existing DataAwsConnectSecurityProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,11 +736,11 @@ const dataAwsConnectSecurityProfileConfig: dataAwsConnectSecurityProfile.DataAws
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#instance_id DataAwsConnectSecurityProfile#instance_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#id DataAwsConnectSecurityProfile#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#name DataAwsConnectSecurityProfile#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.securityProfileId">securityProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#security_profile_id DataAwsConnectSecurityProfile#security_profile_id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#tags DataAwsConnectSecurityProfile#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#instance_id DataAwsConnectSecurityProfile#instance_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#id DataAwsConnectSecurityProfile#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#name DataAwsConnectSecurityProfile#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.securityProfileId">securityProfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#security_profile_id DataAwsConnectSecurityProfile#security_profile_id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfileConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#tags DataAwsConnectSecurityProfile#tags}. |
 
 ---
 
@@ -822,7 +822,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#instance_id DataAwsConnectSecurityProfile#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#instance_id DataAwsConnectSecurityProfile#instance_id}.
 
 ---
 
@@ -834,7 +834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#id DataAwsConnectSecurityProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#id DataAwsConnectSecurityProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#name DataAwsConnectSecurityProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#name DataAwsConnectSecurityProfile#name}.
 
 ---
 
@@ -861,7 +861,7 @@ public readonly securityProfileId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#security_profile_id DataAwsConnectSecurityProfile#security_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#security_profile_id DataAwsConnectSecurityProfile#security_profile_id}.
 
 ---
 
@@ -873,7 +873,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/connect_security_profile#tags DataAwsConnectSecurityProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/connect_security_profile#tags DataAwsConnectSecurityProfile#tags}.
 
 ---
 

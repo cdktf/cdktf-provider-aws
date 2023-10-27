@@ -1,6 +1,6 @@
 # `aws_api_gateway_request_validator`
 
-Refer to the Terraform Registory for docs: [`aws_api_gateway_request_validator`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator).
+Refer to the Terraform Registory for docs: [`aws_api_gateway_request_validator`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator).
 
 # `apiGatewayRequestValidator` Submodule <a name="`apiGatewayRequestValidator` Submodule" id="@cdktf/provider-aws.apiGatewayRequestValidator"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_api_gateway_request_validator`]
 
 ### ApiGatewayRequestValidator <a name="ApiGatewayRequestValidator" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator aws_api_gateway_request_validator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.NewApiGatewayRequestValidator(scope Construct, id *string, config ApiGatewayRequestValidatorConfig) ApiGatewayRequestValidator
 ```
@@ -353,7 +353,7 @@ func ResetValidateRequestParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ apigatewayrequestvalidator.ApiGatewayRequestValidator_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 apigatewayrequestvalidator.ApiGatewayRequestValidator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the ApiGatewayRequestValidator
 
 The id of the existing ApiGatewayRequestValidator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidator"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayrequestvalidator"
 
 &apigatewayrequestvalidator.ApiGatewayRequestValidatorConfig {
 	Connection: interface{},
@@ -781,11 +781,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayrequestvalidato
 | <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.validateRequestBody">ValidateRequestBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}. |
-| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.validateRequestParameters">ValidateRequestParameters</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.restApiId">RestApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.validateRequestBody">ValidateRequestBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}. |
+| <code><a href="#@cdktf/provider-aws.apiGatewayRequestValidator.ApiGatewayRequestValidatorConfig.property.validateRequestParameters">ValidateRequestParameters</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}. |
 
 ---
 
@@ -867,7 +867,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#name ApiGatewayRequestValidator#name}.
 
 ---
 
@@ -879,7 +879,7 @@ RestApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#rest_api_id ApiGatewayRequestValidator#rest_api_id}.
 
 ---
 
@@ -891,7 +891,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#id ApiGatewayRequestValidator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -906,7 +906,7 @@ ValidateRequestBody interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#validate_request_body ApiGatewayRequestValidator#validate_request_body}.
 
 ---
 
@@ -918,7 +918,7 @@ ValidateRequestParameters interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/api_gateway_request_validator#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}.
 
 ---
 

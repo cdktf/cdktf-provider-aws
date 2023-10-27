@@ -1,6 +1,6 @@
 # `aws_apigatewayv2_model`
 
-Refer to the Terraform Registory for docs: [`aws_apigatewayv2_model`](https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model).
+Refer to the Terraform Registory for docs: [`aws_apigatewayv2_model`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model).
 
 # `apigatewayv2Model` Submodule <a name="`apigatewayv2Model` Submodule" id="@cdktf/provider-aws.apigatewayv2Model"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_apigatewayv2_model`](https://re
 
 ### Apigatewayv2Model <a name="Apigatewayv2Model" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model aws_apigatewayv2_model}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.NewApigatewayv2Model(scope Construct, id *string, config Apigatewayv2ModelConfig) Apigatewayv2Model
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ apigatewayv2model.Apigatewayv2Model_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ apigatewayv2model.Apigatewayv2Model_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 apigatewayv2model.Apigatewayv2Model_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the Apigatewayv2Model to impor
 
 The id of the existing Apigatewayv2Model that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/apigatewayv2model"
 
 &apigatewayv2model.Apigatewayv2ModelConfig {
 	Connection: interface{},
@@ -797,12 +797,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/apigatewayv2model"
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}. |
+| <code><a href="#@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2ModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ ApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#api_id Apigatewayv2Model#api_id}.
 
 ---
 
@@ -896,7 +896,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#content_type Apigatewayv2Model#content_type}.
 
 ---
 
@@ -908,7 +908,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#name Apigatewayv2Model#name}.
 
 ---
 
@@ -920,7 +920,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#schema Apigatewayv2Model#schema}.
 
 ---
 
@@ -932,7 +932,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#description Apigatewayv2Model#description}.
 
 ---
 
@@ -944,7 +944,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/apigatewayv2_model#id Apigatewayv2Model#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
