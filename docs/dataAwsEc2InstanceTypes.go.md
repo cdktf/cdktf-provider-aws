@@ -1,6 +1,6 @@
 # `data_aws_ec2_instance_types`
 
-Refer to the Terraform Registory for docs: [`data_aws_ec2_instance_types`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types).
+Refer to the Terraform Registory for docs: [`data_aws_ec2_instance_types`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types).
 
 # `dataAwsEc2InstanceTypes` Submodule <a name="`dataAwsEc2InstanceTypes` Submodule" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_ec2_instance_types`](https
 
 ### DataAwsEc2InstanceTypes <a name="DataAwsEc2InstanceTypes" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types aws_ec2_instance_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types aws_ec2_instance_types}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.NewDataAwsEc2InstanceTypes(scope Construct, id *string, config DataAwsEc2InstanceTypesConfig) DataAwsEc2InstanceTypes
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.DataAwsEc2InstanceTypes_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.DataAwsEc2InstanceTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsec2instancetypes.DataAwsEc2InstanceTypes_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.DataAwsEc2InstanceTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsec2instancetypes.DataAwsEc2InstanceTypes_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.DataAwsEc2InstanceTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataAwsEc2InstanceTypes to
 
 The id of the existing DataAwsEc2InstanceTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 &dataawsec2instancetypes.DataAwsEc2InstanceTypesConfig {
 	Connection: interface{},
@@ -674,7 +674,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
 	Provisioners: *[]interface{},
 	Filter: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts,
 }
 ```
 
@@ -690,7 +690,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}. |
 | <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts">DataAwsEc2InstanceTypesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -775,7 +775,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#filter DataAwsEc2InstanceTypes#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#filter DataAwsEc2InstanceTypes#filter}
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#id DataAwsEc2InstanceTypes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -804,7 +804,7 @@ Timeouts DataAwsEc2InstanceTypesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#timeouts DataAwsEc2InstanceTypes#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#timeouts DataAwsEc2InstanceTypes#timeouts}
 
 ---
 
@@ -813,7 +813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 &dataawsec2instancetypes.DataAwsEc2InstanceTypesFilter {
 	Name: *string,
@@ -825,8 +825,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}. |
 
 ---
 
@@ -838,7 +838,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#name DataAwsEc2InstanceTypes#name}.
 
 ---
 
@@ -850,7 +850,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#values DataAwsEc2InstanceTypes#values}.
 
 ---
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 &dataawsec2instancetypes.DataAwsEc2InstanceTypesTimeouts {
 	Read: *string,
@@ -870,7 +870,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}. |
 
 ---
 
@@ -882,7 +882,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/ec2_instance_types#read DataAwsEc2InstanceTypes#read}.
 
 ---
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.NewDataAwsEc2InstanceTypesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypesFilterList
 ```
@@ -1036,7 +1036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.NewDataAwsEc2InstanceTypesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypesFilterOutputReference
 ```
@@ -1347,7 +1347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypes"
 
 dataawsec2instancetypes.NewDataAwsEc2InstanceTypesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2InstanceTypesTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `aws_location_map`
 
-Refer to the Terraform Registory for docs: [`aws_location_map`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map).
+Refer to the Terraform Registory for docs: [`aws_location_map`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map).
 
 # `locationMap` Submodule <a name="`locationMap` Submodule" id="@cdktf/provider-aws.locationMap"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`aws_location_map`](https://registry
 
 ### LocationMap <a name="LocationMap" id="@cdktf/provider-aws.locationMap.LocationMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map aws_location_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map aws_location_map}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.locationMap.LocationMap.Initializer"></a>
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the LocationMap to import.
 
 The id of the existing LocationMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,11 +858,11 @@ new LocationMapConfig {
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration">LocationMapConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.mapName">MapName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#map_name LocationMap#map_name}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#description LocationMap#description}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#id LocationMap#id}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#tags LocationMap#tags}. |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#tags_all LocationMap#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.mapName">MapName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#map_name LocationMap#map_name}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#description LocationMap#description}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#id LocationMap#id}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#tags LocationMap#tags}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfig.property.tagsAll">TagsAll</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#tags_all LocationMap#tags_all}. |
 
 ---
 
@@ -946,7 +946,7 @@ public LocationMapConfiguration Configuration { get; set; }
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#configuration LocationMap#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#configuration LocationMap#configuration}
 
 ---
 
@@ -958,7 +958,7 @@ public string MapName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#map_name LocationMap#map_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#map_name LocationMap#map_name}.
 
 ---
 
@@ -970,7 +970,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#description LocationMap#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#description LocationMap#description}.
 
 ---
 
@@ -982,7 +982,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#id LocationMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#id LocationMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -997,7 +997,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#tags LocationMap#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#tags LocationMap#tags}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public System.Collections.Generic.IDictionary<string, string> TagsAll { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#tags_all LocationMap#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#tags_all LocationMap#tags_all}.
 
 ---
 
@@ -1029,7 +1029,7 @@ new LocationMapConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration.property.style">Style</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#style LocationMap#style}. |
+| <code><a href="#@cdktf/provider-aws.locationMap.LocationMapConfiguration.property.style">Style</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#style LocationMap#style}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ public string Style { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/location_map#style LocationMap#style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/location_map#style LocationMap#style}.
 
 ---
 

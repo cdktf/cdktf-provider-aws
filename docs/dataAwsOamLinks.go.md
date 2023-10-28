@@ -1,6 +1,6 @@
 # `data_aws_oam_links`
 
-Refer to the Terraform Registory for docs: [`data_aws_oam_links`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/oam_links).
+Refer to the Terraform Registory for docs: [`data_aws_oam_links`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/oam_links).
 
 # `dataAwsOamLinks` Submodule <a name="`dataAwsOamLinks` Submodule" id="@cdktf/provider-aws.dataAwsOamLinks"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_oam_links`](https://regist
 
 ### DataAwsOamLinks <a name="DataAwsOamLinks" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/oam_links aws_oam_links}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/oam_links aws_oam_links}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 dataawsoamlinks.NewDataAwsOamLinks(scope Construct, id *string, config DataAwsOamLinksConfig) DataAwsOamLinks
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 dataawsoamlinks.DataAwsOamLinks_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 dataawsoamlinks.DataAwsOamLinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsoamlinks.DataAwsOamLinks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 dataawsoamlinks.DataAwsOamLinks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsoamlinks.DataAwsOamLinks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 dataawsoamlinks.DataAwsOamLinks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsOamLinks to import.
 
 The id of the existing DataAwsOamLinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/oam_links#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/oam_links#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsoamlinks"
 
 &dataawsoamlinks.DataAwsOamLinksConfig {
 	Connection: interface{},
@@ -603,7 +603,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoamlinks"
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsOamLinks.DataAwsOamLinksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/oam_links#id DataAwsOamLinks#id}. |
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/oam_links#id DataAwsOamLinks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/oam_links#id DataAwsOamLinks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission
+// https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#action CloudwatchEventPermission#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#event_bus_name CloudwatchEventPermission#event_bus_name}
   */
   readonly eventBusName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#id CloudwatchEventPermission#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#principal CloudwatchEventPermission#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#statement_id CloudwatchEventPermission#statement_id}
   */
   readonly statementId: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#condition CloudwatchEventPermission#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#condition CloudwatchEventPermission#condition}
   */
   readonly condition?: CloudwatchEventPermissionCondition;
 }
 export interface CloudwatchEventPermissionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#key CloudwatchEventPermission#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#type CloudwatchEventPermission#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#value CloudwatchEventPermission#value}
   */
   readonly value: string;
 }
@@ -154,7 +149,7 @@ export class CloudwatchEventPermissionConditionOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission}
 */
 export class CloudwatchEventPermission extends cdktf.TerraformResource {
 
@@ -170,7 +165,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchEventPermission resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchEventPermission to import
-  * @param importFromId The id of the existing CloudwatchEventPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchEventPermission that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchEventPermission to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -182,7 +177,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/cloudwatch_event_permission aws_cloudwatch_event_permission} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +188,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_event_permission',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '5.23.0',
+        providerVersion: '5.23.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

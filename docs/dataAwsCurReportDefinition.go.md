@@ -1,6 +1,6 @@
 # `data_aws_cur_report_definition`
 
-Refer to the Terraform Registory for docs: [`data_aws_cur_report_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition).
+Refer to the Terraform Registory for docs: [`data_aws_cur_report_definition`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition).
 
 # `dataAwsCurReportDefinition` Submodule <a name="`dataAwsCurReportDefinition` Submodule" id="@cdktf/provider-aws.dataAwsCurReportDefinition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_cur_report_definition`](ht
 
 ### DataAwsCurReportDefinition <a name="DataAwsCurReportDefinition" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition aws_cur_report_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 dataawscurreportdefinition.NewDataAwsCurReportDefinition(scope Construct, id *string, config DataAwsCurReportDefinitionConfig) DataAwsCurReportDefinition
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsCurReportDefinition
 
 The id of the existing DataAwsCurReportDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinition"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscurreportdefinition"
 
 &dataawscurreportdefinition.DataAwsCurReportDefinitionConfig {
 	Connection: interface{},
@@ -725,8 +725,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawscurreportdefinitio
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">ReportName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.reportName">ReportName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}. |
 
 ---
 
@@ -808,7 +808,7 @@ ReportName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition#report_name DataAwsCurReportDefinition#report_name}.
 
 ---
 
@@ -820,7 +820,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cur_report_definition#id DataAwsCurReportDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

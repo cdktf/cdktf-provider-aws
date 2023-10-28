@@ -1,6 +1,6 @@
 # `aws_glue_registry`
 
-Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry).
+Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry).
 
 # `glueRegistry` Submodule <a name="`glueRegistry` Submodule" id="@cdktf/provider-aws.glueRegistry"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_glue_registry`](https://registr
 
 ### GlueRegistry <a name="GlueRegistry" id="@cdktf/provider-aws.glueRegistry.GlueRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry aws_glue_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry aws_glue_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 glueregistry.NewGlueRegistry(scope Construct, id *string, config GlueRegistryConfig) GlueRegistry
 ```
@@ -360,7 +360,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 glueregistry.GlueRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 glueregistry.GlueRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ glueregistry.GlueRegistry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 glueregistry.GlueRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ glueregistry.GlueRegistry_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.glueRegistry.GlueRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 glueregistry.GlueRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the GlueRegistry to import.
 
 The id of the existing GlueRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/glueregistry"
 
 &glueregistry.GlueRegistryConfig {
 	Connection: interface{},
@@ -799,11 +799,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/glueregistry"
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.registryName">RegistryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#description GlueRegistry#description}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#id GlueRegistry#id}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#tags GlueRegistry#tags}. |
-| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.registryName">RegistryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#description GlueRegistry#description}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#id GlueRegistry#id}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#tags GlueRegistry#tags}. |
+| <code><a href="#@cdktf/provider-aws.glueRegistry.GlueRegistryConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}. |
 
 ---
 
@@ -885,7 +885,7 @@ RegistryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#registry_name GlueRegistry#registry_name}.
 
 ---
 
@@ -897,7 +897,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#description GlueRegistry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#description GlueRegistry#description}.
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#id GlueRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#id GlueRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#tags GlueRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#tags GlueRegistry#tags}.
 
 ---
 
@@ -936,7 +936,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/glue_registry#tags_all GlueRegistry#tags_all}.
 
 ---
 
