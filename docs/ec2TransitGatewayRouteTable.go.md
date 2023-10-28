@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 ec2transitgatewayroutetable.NewEc2TransitGatewayRouteTable(scope Construct, id *string, config Ec2TransitGatewayRouteTableConfig) Ec2TransitGatewayRouteTable
 ```
@@ -353,7 +353,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 ec2transitgatewayroutetable.Ec2TransitGatewayRouteTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ec2transitgatewayroutetable"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2transitgatewayroutetable"
 
 &ec2transitgatewayroutetable.Ec2TransitGatewayRouteTableConfig {
 	Connection: interface{},

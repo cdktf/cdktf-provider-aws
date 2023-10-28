@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.NewMediaPackageChannel(scope Construct, id *string, config MediaPackageChannelConfig) MediaPackageChannel
 ```
@@ -360,7 +360,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.MediaPackageChannel_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.MediaPackageChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ mediapackagechannel.MediaPackageChannel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.MediaPackageChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ mediapackagechannel.MediaPackageChannel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.MediaPackageChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 &mediapackagechannel.MediaPackageChannelConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 &mediapackagechannel.MediaPackageChannelHlsIngest {
 
@@ -969,7 +969,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 &mediapackagechannel.MediaPackageChannelHlsIngestIngestEndpoints {
 
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.NewMediaPackageChannelHlsIngestIngestEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MediaPackageChannelHlsIngestIngestEndpointsList
 ```
@@ -1116,7 +1116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.NewMediaPackageChannelHlsIngestIngestEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MediaPackageChannelHlsIngestIngestEndpointsOutputReference
 ```
@@ -1416,7 +1416,7 @@ func InternalValue() MediaPackageChannelHlsIngestIngestEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.NewMediaPackageChannelHlsIngestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MediaPackageChannelHlsIngestList
 ```
@@ -1548,7 +1548,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/mediapackagechannel"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/mediapackagechannel"
 
 mediapackagechannel.NewMediaPackageChannelHlsIngestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MediaPackageChannelHlsIngestOutputReference
 ```

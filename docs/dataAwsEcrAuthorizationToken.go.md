@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 dataawsecrauthorizationtoken.NewDataAwsEcrAuthorizationToken(scope Construct, id *string, config DataAwsEcrAuthorizationTokenConfig) DataAwsEcrAuthorizationToken
 ```
@@ -285,7 +285,7 @@ func ResetRegistryId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 dataawsecrauthorizationtoken.DataAwsEcrAuthorizationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcrAuthorizationToken.DataAwsEcrAuthorizationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrauthorizationtoken"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsecrauthorizationtoken"
 
 &dataawsecrauthorizationtoken.DataAwsEcrAuthorizationTokenConfig {
 	Connection: interface{},

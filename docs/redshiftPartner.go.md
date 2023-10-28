@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 redshiftpartner.NewRedshiftPartner(scope Construct, id *string, config RedshiftPartnerConfig) RedshiftPartner
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 redshiftpartner.RedshiftPartner_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 redshiftpartner.RedshiftPartner_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ redshiftpartner.RedshiftPartner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 redshiftpartner.RedshiftPartner_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ redshiftpartner.RedshiftPartner_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 redshiftpartner.RedshiftPartner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftPartner.RedshiftPartnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftpartner"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftpartner"
 
 &redshiftpartner.RedshiftPartnerConfig {
 	Connection: interface{},

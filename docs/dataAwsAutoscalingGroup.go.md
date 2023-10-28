@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroup(scope Construct, id *string, config DataAwsAutoscalingGroupConfig) DataAwsAutoscalingGroup
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.DataAwsAutoscalingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.DataAwsAutoscalingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsautoscalinggroup.DataAwsAutoscalingGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.DataAwsAutoscalingGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsautoscalinggroup.DataAwsAutoscalingGroup_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.DataAwsAutoscalingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupLaunchTemplate {
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicy {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistribution {
 
@@ -1069,7 +1069,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplate {
 
@@ -1082,7 +1082,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification {
 
@@ -1095,7 +1095,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
 
@@ -1108,7 +1108,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements {
 
@@ -1121,7 +1121,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount {
 
@@ -1134,7 +1134,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps {
 
@@ -1160,7 +1160,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu {
 
@@ -1173,7 +1173,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib {
 
@@ -1186,7 +1186,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps {
 
@@ -1199,7 +1199,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount {
 
@@ -1212,7 +1212,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount {
 
@@ -1238,7 +1238,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification {
 
@@ -1251,7 +1251,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupTag {
 
@@ -1264,7 +1264,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTrafficSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupTrafficSource {
 
@@ -1277,7 +1277,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupWarmPool {
 
@@ -1290,7 +1290,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPoolInstanceReusePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 &dataawsautoscalinggroup.DataAwsAutoscalingGroupWarmPoolInstanceReusePolicy {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupLaunchTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupLaunchTemplateList
 ```
@@ -1437,7 +1437,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupLaunchTemplateOutputReference
 ```
@@ -1737,7 +1737,7 @@ func InternalValue() DataAwsAutoscalingGroupLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionList
 ```
@@ -1869,7 +1869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyInstancesDistrib
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationList
 ```
@@ -2334,7 +2334,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationOutputReference
 ```
@@ -2634,7 +2634,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateLa
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateList
 ```
@@ -2766,7 +2766,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOutputReference
 ```
@@ -3055,7 +3055,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountList
 ```
@@ -3187,7 +3187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference
 ```
@@ -3476,7 +3476,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibList
 ```
@@ -3608,7 +3608,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMibOutputReference
 ```
@@ -3897,7 +3897,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsList
 ```
@@ -4029,7 +4029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference
 ```
@@ -4318,7 +4318,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsList
 ```
@@ -4450,7 +4450,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuList
 ```
@@ -4582,7 +4582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference
 ```
@@ -4871,7 +4871,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibList
 ```
@@ -5003,7 +5003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference
 ```
@@ -5292,7 +5292,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsList
 ```
@@ -5424,7 +5424,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
 ```
@@ -5713,7 +5713,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountList
 ```
@@ -5845,7 +5845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 ```
@@ -6134,7 +6134,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference
 ```
@@ -6654,7 +6654,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbList
 ```
@@ -6786,7 +6786,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGbOutputReference
 ```
@@ -7075,7 +7075,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountList
 ```
@@ -7207,7 +7207,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCountOutputReference
 ```
@@ -7496,7 +7496,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationList
 ```
@@ -7628,7 +7628,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationOutputReference
 ```
@@ -7928,7 +7928,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideList
 ```
@@ -8060,7 +8060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideOutputReference
 ```
@@ -8371,7 +8371,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOv
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyList
 ```
@@ -8503,7 +8503,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupMixedInstancesPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupMixedInstancesPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupMixedInstancesPolicyOutputReference
 ```
@@ -8792,7 +8792,7 @@ func InternalValue() DataAwsAutoscalingGroupMixedInstancesPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupTagList
 ```
@@ -8924,7 +8924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupTagOutputReference
 ```
@@ -9224,7 +9224,7 @@ func InternalValue() DataAwsAutoscalingGroupTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTrafficSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupTrafficSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupTrafficSourceList
 ```
@@ -9356,7 +9356,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupTrafficSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupTrafficSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupTrafficSourceOutputReference
 ```
@@ -9645,7 +9645,7 @@ func InternalValue() DataAwsAutoscalingGroupTrafficSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyList
 ```
@@ -9777,7 +9777,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference
 ```
@@ -10055,7 +10055,7 @@ func InternalValue() DataAwsAutoscalingGroupWarmPoolInstanceReusePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupWarmPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAutoscalingGroupWarmPoolList
 ```
@@ -10187,7 +10187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupWarmPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsautoscalinggroup"
 
 dataawsautoscalinggroup.NewDataAwsAutoscalingGroupWarmPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAutoscalingGroupWarmPoolOutputReference
 ```
