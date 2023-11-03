@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 redshiftserverlessnamespace.NewRedshiftserverlessNamespace(scope Construct, id *string, config RedshiftserverlessNamespaceConfig) RedshiftserverlessNamespace
 ```
@@ -402,7 +402,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 redshiftserverlessnamespace.RedshiftserverlessNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 redshiftserverlessnamespace.RedshiftserverlessNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ redshiftserverlessnamespace.RedshiftserverlessNamespace_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 redshiftserverlessnamespace.RedshiftserverlessNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ redshiftserverlessnamespace.RedshiftserverlessNamespace_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 redshiftserverlessnamespace.RedshiftserverlessNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/redshiftserverlessnamespace"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshiftserverlessnamespace"
 
 &redshiftserverlessnamespace.RedshiftserverlessNamespaceConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 ramsharingwithorganization.NewRamSharingWithOrganization(scope Construct, id *string, config RamSharingWithOrganizationConfig) RamSharingWithOrganization
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ ramsharingwithorganization.RamSharingWithOrganization_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ ramsharingwithorganization.RamSharingWithOrganization_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 ramsharingwithorganization.RamSharingWithOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ramSharingWithOrganization.RamSharingWithOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/ramsharingwithorganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/ramsharingwithorganization"
 
 &ramsharingwithorganization.RamSharingWithOrganizationConfig {
 	Connection: interface{},

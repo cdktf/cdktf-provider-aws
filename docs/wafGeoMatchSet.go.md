@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.NewWafGeoMatchSet(scope Construct, id *string, config WafGeoMatchSetConfig) WafGeoMatchSet
 ```
@@ -359,7 +359,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.WafGeoMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.WafGeoMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ wafgeomatchset.WafGeoMatchSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.WafGeoMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ wafgeomatchset.WafGeoMatchSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.WafGeoMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 &wafgeomatchset.WafGeoMatchSetConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 &wafgeomatchset.WafGeoMatchSetGeoMatchConstraint {
 	Type: *string,
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.NewWafGeoMatchSetGeoMatchConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafGeoMatchSetGeoMatchConstraintList
 ```
@@ -1065,7 +1065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.wafGeoMatchSet.WafGeoMatchSetGeoMatchConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/wafgeomatchset"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset"
 
 wafgeomatchset.NewWafGeoMatchSetGeoMatchConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafGeoMatchSetGeoMatchConstraintOutputReference
 ```
