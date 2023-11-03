@@ -1,6 +1,6 @@
 # `data_aws_iam_openid_connect_provider`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_openid_connect_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider).
+Refer to the Terraform Registory for docs: [`data_aws_iam_openid_connect_provider`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider).
 
 # `dataAwsIamOpenidConnectProvider` Submodule <a name="`dataAwsIamOpenidConnectProvider` Submodule" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_openid_connect_provide
 
 ### DataAwsIamOpenidConnectProvider <a name="DataAwsIamOpenidConnectProvider" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.NewDataAwsIamOpenidConnectProvider(scope Construct, id *string, config DataAwsIamOpenidConnectProviderConfig) DataAwsIamOpenidConnectProvider
 ```
@@ -299,7 +299,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -388,7 +388,7 @@ The construct id used in the generated config for the DataAwsIamOpenidConnectPro
 
 The id of the existing DataAwsIamOpenidConnectProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamopenidconnectprovider"
 
 &dataawsiamopenidconnectprovider.DataAwsIamOpenidConnectProviderConfig {
 	Connection: interface{},
@@ -704,10 +704,10 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamopenidconnectpr
 | <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#arn DataAwsIamOpenidConnectProvider#arn}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#id DataAwsIamOpenidConnectProvider#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#tags DataAwsIamOpenidConnectProvider#tags}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#url DataAwsIamOpenidConnectProvider#url}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#arn DataAwsIamOpenidConnectProvider#arn}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#id DataAwsIamOpenidConnectProvider#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#tags DataAwsIamOpenidConnectProvider#tags}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProviderConfig.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#url DataAwsIamOpenidConnectProvider#url}. |
 
 ---
 
@@ -789,7 +789,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#arn DataAwsIamOpenidConnectProvider#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#arn DataAwsIamOpenidConnectProvider#arn}.
 
 ---
 
@@ -801,7 +801,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#id DataAwsIamOpenidConnectProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#id DataAwsIamOpenidConnectProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#tags DataAwsIamOpenidConnectProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#tags DataAwsIamOpenidConnectProvider#tags}.
 
 ---
 
@@ -828,7 +828,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/iam_openid_connect_provider#url DataAwsIamOpenidConnectProvider#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_openid_connect_provider#url DataAwsIamOpenidConnectProvider#url}.
 
 ---
 
