@@ -1,3 +1,3 @@
 # `aws_instance`
 
-Refer to the Terraform Registory for docs: [`aws_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/instance).
+Refer to the Terraform Registory for docs: [`aws_instance`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/instance).

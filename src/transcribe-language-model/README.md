@@ -1,3 +1,3 @@
 # `aws_transcribe_language_model`
 
-Refer to the Terraform Registory for docs: [`aws_transcribe_language_model`](https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/transcribe_language_model).
+Refer to the Terraform Registory for docs: [`aws_transcribe_language_model`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/transcribe_language_model).
