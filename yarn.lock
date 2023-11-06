@@ -4484,15 +4484,16 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.75.4:
-  version "0.75.4"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.75.4.tgz#0ae0fdc929142f308f17d680b4ad3d7dd5d01e20"
-  integrity sha512-1B5U77bn4ydO6mmGvM+ZsC6goyY2rYPFbOX9xP0HOnh5/634Tu/YRFESvmvM4rXTGBTtQL701tx4eRo2LLWOUA==
+projen@^0.76.21:
+  version "0.76.21"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.76.21.tgz#90c47a7d161db9a4ba7e9183b409d616ce24b05f"
+  integrity sha512-FAQ2Y3A3Sn5VJ0Rns9vWiA+c/V32VKJYsnm9lMrumuLTOnWy4rkOj/OQdPXHgMDd94EJ2dEyCYgvqFfBJTjjdQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
     chalk "^4.1.2"
     comment-json "4.2.2"
+    constructs "^10.0.0"
     conventional-changelog-config-spec "^2.1.0"
     fast-json-patch "^3.1.1"
     glob "^8"
