@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.NewDataAwsRegions(scope Construct, id *string, config DataAwsRegionsConfig) DataAwsRegions
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.DataAwsRegions_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.DataAwsRegions_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsregions.DataAwsRegions_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.DataAwsRegions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsregions.DataAwsRegions_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.DataAwsRegions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 &dataawsregions.DataAwsRegionsConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 &dataawsregions.DataAwsRegionsFilter {
 	Name: *string,
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.NewDataAwsRegionsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRegionsFilterList
 ```
@@ -989,7 +989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsregions"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsregions"
 
 dataawsregions.NewDataAwsRegionsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRegionsFilterOutputReference
 ```

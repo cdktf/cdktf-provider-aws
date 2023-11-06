@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 sesv2emailidentityfeedbackattributes.NewSesv2EmailIdentityFeedbackAttributes(scope Construct, id *string, config Sesv2EmailIdentityFeedbackAttributesConfig) Sesv2EmailIdentityFeedbackAttributes
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesv2emailidentityfeedbackattributes"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sesv2emailidentityfeedbackattributes"
 
 &sesv2emailidentityfeedbackattributes.Sesv2EmailIdentityFeedbackAttributesConfig {
 	Connection: interface{},

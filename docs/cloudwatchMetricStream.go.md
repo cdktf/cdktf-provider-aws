@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStream(scope Construct, id *string, config CloudwatchMetricStreamConfig) CloudwatchMetricStream
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cloudwatchmetricstream.CloudwatchMetricStream_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.CloudwatchMetricStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1073,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamConfig {
 	Connection: interface{},
@@ -1095,7 +1095,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
 	StatisticsConfiguration: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts,
 }
 ```
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamExcludeFilter {
 	Namespace: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamIncludeFilter {
 	Namespace: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamStatisticsConfiguration {
 	AdditionalStatistics: *[]*string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetric {
 	MetricName: *string,
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 &cloudwatchmetricstream.CloudwatchMetricStreamTimeouts {
 	Create: *string,
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamExcludeFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamExcludeFilterList
 ```
@@ -1759,7 +1759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamExcludeFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamExcludeFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamExcludeFilterOutputReference
 ```
@@ -2077,7 +2077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamIncludeFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamIncludeFilterList
 ```
@@ -2220,7 +2220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamIncludeFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamIncludeFilterOutputReference
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList
 ```
@@ -2681,7 +2681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference
 ```
@@ -2992,7 +2992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchMetricStreamStatisticsConfigurationList
 ```
@@ -3135,7 +3135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamStatisticsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchMetricStreamStatisticsConfigurationOutputReference
 ```
@@ -3459,7 +3459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/cloudwatchmetricstream"
 
 cloudwatchmetricstream.NewCloudwatchMetricStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchMetricStreamTimeoutsOutputReference
 ```

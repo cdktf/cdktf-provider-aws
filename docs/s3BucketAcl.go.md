@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAcl(scope Construct, id *string, config S3BucketAclConfig) S3BucketAcl
 ```
@@ -373,7 +373,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ s3bucketacl.S3BucketAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ s3bucketacl.S3BucketAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.S3BucketAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -772,10 +772,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicy {
-	Owner: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicyOwner,
+	Owner: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner,
 	Grant: interface{},
 }
 ```
@@ -822,11 +822,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyGrant {
 	Permission: *string,
-	Grantee: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee,
+	Grantee: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee,
 }
 ```
 
@@ -870,7 +870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGrantee.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyGrantGrantee {
 	Type: *string,
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclAccessControlPolicyOwner {
 	Id: *string,
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 &s3bucketacl.S3BucketAclConfig {
 	Connection: interface{},
@@ -1007,7 +1007,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	AccessControlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws/v18.s3BucketAcl.S3BucketAclAccessControlPolicy,
+	AccessControlPolicy: github.com/cdktf/cdktf-provider-aws-go/aws.s3BucketAcl.S3BucketAclAccessControlPolicy,
 	Acl: *string,
 	ExpectedBucketOwner: *string,
 	Id: *string,
@@ -1175,7 +1175,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantGranteeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantGranteeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyGrantGranteeOutputReference
 ```
@@ -1544,7 +1544,7 @@ func InternalValue() S3BucketAclAccessControlPolicyGrantGrantee
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketAclAccessControlPolicyGrantList
 ```
@@ -1687,7 +1687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketAclAccessControlPolicyGrantOutputReference
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyOutputReference
 ```
@@ -2344,7 +2344,7 @@ func InternalValue() S3BucketAclAccessControlPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOwnerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketacl"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketacl"
 
 s3bucketacl.NewS3BucketAclAccessControlPolicyOwnerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketAclAccessControlPolicyOwnerOutputReference
 ```

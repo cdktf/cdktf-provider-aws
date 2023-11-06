@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.NewDataAwsRoute53ResolverEndpoint(scope Construct, id *string, config DataAwsRoute53ResolverEndpointConfig) DataAwsRoute53ResolverEndpoint
 ```
@@ -305,7 +305,7 @@ func ResetResolverEndpointId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 &dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpointConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 &dataawsroute53resolverendpoint.DataAwsRoute53ResolverEndpointFilter {
 	Name: *string,
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.NewDataAwsRoute53ResolverEndpointFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRoute53ResolverEndpointFilterList
 ```
@@ -1044,7 +1044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53resolverendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute53resolverendpoint"
 
 dataawsroute53resolverendpoint.NewDataAwsRoute53ResolverEndpointFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRoute53ResolverEndpointFilterOutputReference
 ```

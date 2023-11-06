@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 s3bucketpublicaccessblock.NewS3BucketPublicAccessBlock(scope Construct, id *string, config S3BucketPublicAccessBlockConfig) S3BucketPublicAccessBlock
 ```
@@ -367,7 +367,7 @@ func ResetRestrictPublicBuckets()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 s3bucketpublicaccessblock.S3BucketPublicAccessBlock_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 s3bucketpublicaccessblock.S3BucketPublicAccessBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ s3bucketpublicaccessblock.S3BucketPublicAccessBlock_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 s3bucketpublicaccessblock.S3BucketPublicAccessBlock_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ s3bucketpublicaccessblock.S3BucketPublicAccessBlock_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 s3bucketpublicaccessblock.S3BucketPublicAccessBlock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/s3bucketpublicaccessblock"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3bucketpublicaccessblock"
 
 &s3bucketpublicaccessblock.S3BucketPublicAccessBlockConfig {
 	Connection: interface{},
