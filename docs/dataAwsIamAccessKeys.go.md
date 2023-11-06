@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeys(scope Construct, id *string, config DataAwsIamAccessKeysConfig) DataAwsIamAccessKeys
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataawsiamaccesskeys.DataAwsIamAccessKeys_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.DataAwsIamAccessKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 &dataawsiamaccesskeys.DataAwsIamAccessKeysAccessKeys {
 
@@ -613,7 +613,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 &dataawsiamaccesskeys.DataAwsIamAccessKeysConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeysAccessKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsIamAccessKeysAccessKeysList
 ```
@@ -880,7 +880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccessKeys.DataAwsIamAccessKeysAccessKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsiamaccesskeys"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsiamaccesskeys"
 
 dataawsiamaccesskeys.NewDataAwsIamAccessKeysAccessKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsIamAccessKeysAccessKeysOutputReference
 ```

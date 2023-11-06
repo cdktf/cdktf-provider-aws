@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 detectiveorganizationadminaccount.NewDetectiveOrganizationAdminAccount(scope Construct, id *string, config DetectiveOrganizationAdminAccountConfig) DetectiveOrganizationAdminAccount
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 detectiveorganizationadminaccount.DetectiveOrganizationAdminAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.detectiveOrganizationAdminAccount.DetectiveOrganizationAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/detectiveorganizationadminaccount"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/detectiveorganizationadminaccount"
 
 &detectiveorganizationadminaccount.DetectiveOrganizationAdminAccountConfig {
 	Connection: interface{},
