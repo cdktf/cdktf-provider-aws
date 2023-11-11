@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 licensemanagerassociation.NewLicensemanagerAssociation(scope Construct, id *string, config LicensemanagerAssociationConfig) LicensemanagerAssociation
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ licensemanagerassociation.LicensemanagerAssociation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ licensemanagerassociation.LicensemanagerAssociation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 licensemanagerassociation.LicensemanagerAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.licensemanagerAssociation.LicensemanagerAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagerassociation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagerassociation"
 
 &licensemanagerassociation.LicensemanagerAssociationConfig {
 	Connection: interface{},

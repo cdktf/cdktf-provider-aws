@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.NewDataAwsEc2InstanceTypeOfferings(scope Construct, id *string, config DataAwsEc2InstanceTypeOfferingsConfig) DataAwsEc2InstanceTypeOfferings
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 &dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferingsConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferin
 	Filter: interface{},
 	Id: *string,
 	LocationType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v18.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsTimeouts,
 }
 ```
 
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 &dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferingsFilter {
 	Name: *string,
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 &dataawsec2instancetypeofferings.DataAwsEc2InstanceTypeOfferingsTimeouts {
 	Read: *string,
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.NewDataAwsEc2InstanceTypeOfferingsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeOfferingsFilterList
 ```
@@ -1101,7 +1101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.NewDataAwsEc2InstanceTypeOfferingsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeOfferingsFilterOutputReference
 ```
@@ -1412,7 +1412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsec2instancetypeofferings"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsec2instancetypeofferings"
 
 dataawsec2instancetypeofferings.NewDataAwsEc2InstanceTypeOfferingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2InstanceTypeOfferingsTimeoutsOutputReference
 ```

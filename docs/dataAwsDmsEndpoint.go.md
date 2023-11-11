@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpoint(scope Construct, id *string, config DataAwsDmsEndpointConfig) DataAwsDmsEndpoint
 ```
@@ -285,7 +285,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.DataAwsDmsEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.DataAwsDmsEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataawsdmsendpoint.DataAwsDmsEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.DataAwsDmsEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataawsdmsendpoint.DataAwsDmsEndpoint_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.DataAwsDmsEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointConfig {
 	Connection: interface{},
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointElasticsearchSettings {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointKafkaSettings {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKinesisSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointKinesisSettings {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointMongodbSettings {
 
@@ -1059,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedisSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointRedisSettings {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedshiftSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointRedshiftSettings {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointS3Settings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 &dataawsdmsendpoint.DataAwsDmsEndpointS3Settings {
 
@@ -1100,7 +1100,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointElasticsearchSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointElasticsearchSettingsList
 ```
@@ -1232,7 +1232,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointElasticsearchSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointElasticsearchSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointElasticsearchSettingsOutputReference
 ```
@@ -1543,7 +1543,7 @@ func InternalValue() DataAwsDmsEndpointElasticsearchSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointKafkaSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointKafkaSettingsList
 ```
@@ -1675,7 +1675,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKafkaSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointKafkaSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointKafkaSettingsOutputReference
 ```
@@ -2140,7 +2140,7 @@ func InternalValue() DataAwsDmsEndpointKafkaSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKinesisSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointKinesisSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointKinesisSettingsList
 ```
@@ -2272,7 +2272,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointKinesisSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointKinesisSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointKinesisSettingsOutputReference
 ```
@@ -2638,7 +2638,7 @@ func InternalValue() DataAwsDmsEndpointKinesisSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointMongodbSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointMongodbSettingsList
 ```
@@ -2770,7 +2770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointMongodbSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointMongodbSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointMongodbSettingsOutputReference
 ```
@@ -3103,7 +3103,7 @@ func InternalValue() DataAwsDmsEndpointMongodbSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedisSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointRedisSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointRedisSettingsList
 ```
@@ -3235,7 +3235,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedisSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointRedisSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointRedisSettingsOutputReference
 ```
@@ -3579,7 +3579,7 @@ func InternalValue() DataAwsDmsEndpointRedisSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedshiftSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointRedshiftSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointRedshiftSettingsList
 ```
@@ -3711,7 +3711,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointRedshiftSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointRedshiftSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointRedshiftSettingsOutputReference
 ```
@@ -4033,7 +4033,7 @@ func InternalValue() DataAwsDmsEndpointRedshiftSettings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointS3SettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointS3SettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDmsEndpointS3SettingsList
 ```
@@ -4165,7 +4165,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsDmsEndpoint.DataAwsDmsEndpointS3SettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsdmsendpoint"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdmsendpoint"
 
 dataawsdmsendpoint.NewDataAwsDmsEndpointS3SettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDmsEndpointS3SettingsOutputReference
 ```
