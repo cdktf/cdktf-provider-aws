@@ -1,6 +1,6 @@
 # `aws_lightsail_disk`
 
-Refer to the Terraform Registory for docs: [`aws_lightsail_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk).
+Refer to the Terraform Registory for docs: [`aws_lightsail_disk`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk).
 
 # `lightsailDisk` Submodule <a name="`lightsailDisk` Submodule" id="@cdktf/provider-aws.lightsailDisk"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_lightsail_disk`](https://regist
 
 ### LightsailDisk <a name="LightsailDisk" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk aws_lightsail_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk aws_lightsail_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 lightsaildisk.NewLightsailDisk(scope Construct, id *string, config LightsailDiskConfig) LightsailDisk
 ```
@@ -353,7 +353,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 lightsaildisk.LightsailDisk_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 lightsaildisk.LightsailDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ lightsaildisk.LightsailDisk_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 lightsaildisk.LightsailDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ lightsaildisk.LightsailDisk_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lightsailDisk.LightsailDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 lightsaildisk.LightsailDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the LightsailDisk to import.
 
 The id of the existing LightsailDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/lightsaildisk"
 
 &lightsaildisk.LightsailDiskConfig {
 	Connection: interface{},
@@ -837,12 +837,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaildisk"
 | <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#availability_zone LightsailDisk#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#name LightsailDisk#name}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.sizeInGb">SizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#size_in_gb LightsailDisk#size_in_gb}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#id LightsailDisk#id}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#tags LightsailDisk#tags}. |
-| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#tags_all LightsailDisk#tags_all}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#availability_zone LightsailDisk#availability_zone}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#name LightsailDisk#name}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.sizeInGb">SizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#size_in_gb LightsailDisk#size_in_gb}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#id LightsailDisk#id}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#tags LightsailDisk#tags}. |
+| <code><a href="#@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#tags_all LightsailDisk#tags_all}. |
 
 ---
 
@@ -924,7 +924,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#availability_zone LightsailDisk#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#availability_zone LightsailDisk#availability_zone}.
 
 ---
 
@@ -936,7 +936,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#name LightsailDisk#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#name LightsailDisk#name}.
 
 ---
 
@@ -948,7 +948,7 @@ SizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#size_in_gb LightsailDisk#size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#size_in_gb LightsailDisk#size_in_gb}.
 
 ---
 
@@ -960,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#id LightsailDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#id LightsailDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#tags LightsailDisk#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#tags LightsailDisk#tags}.
 
 ---
 
@@ -987,7 +987,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/lightsail_disk#tags_all LightsailDisk#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/lightsail_disk#tags_all LightsailDisk#tags_all}.
 
 ---
 

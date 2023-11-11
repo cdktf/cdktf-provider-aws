@@ -1,6 +1,6 @@
 # `data_aws_iam_account_alias`
 
-Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_account_alias).
+Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_account_alias).
 
 # `dataAwsIamAccountAlias` Submodule <a name="`dataAwsIamAccountAlias` Submodule" id="@cdktf/provider-aws.dataAwsIamAccountAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_aws_iam_account_alias`](https:
 
 ### DataAwsIamAccountAlias <a name="DataAwsIamAccountAlias" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_account_alias aws_iam_account_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_account_alias aws_iam_account_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAlias.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataAwsIamAccountAlias to 
 
 The id of the existing DataAwsIamAccountAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_account_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_account_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -594,7 +594,7 @@ const dataAwsIamAccountAliasConfig: dataAwsIamAccountAlias.DataAwsIamAccountAlia
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}. |
+| <code><a href="#@cdktf/provider-aws.dataAwsIamAccountAlias.DataAwsIamAccountAliasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}. |
 
 ---
 
@@ -676,7 +676,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/iam_account_alias#id DataAwsIamAccountAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

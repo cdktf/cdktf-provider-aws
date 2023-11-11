@@ -1,6 +1,6 @@
 # `aws_licensemanager_grant_accepter`
 
-Refer to the Terraform Registory for docs: [`aws_licensemanager_grant_accepter`](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter).
+Refer to the Terraform Registory for docs: [`aws_licensemanager_grant_accepter`](https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter).
 
 # `licensemanagerGrantAccepter` Submodule <a name="`licensemanagerGrantAccepter` Submodule" id="@cdktf/provider-aws.licensemanagerGrantAccepter"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`aws_licensemanager_grant_accepter`]
 
 ### LicensemanagerGrantAccepter <a name="LicensemanagerGrantAccepter" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.NewLicensemanagerGrantAccepter(scope Construct, id *string, config LicensemanagerGrantAccepterConfig) LicensemanagerGrantAccepter
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ licensemanagergrantaccepter.LicensemanagerGrantAccepter_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 licensemanagergrantaccepter.LicensemanagerGrantAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the LicensemanagerGrantAccepte
 
 The id of the existing LicensemanagerGrantAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccepter"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/licensemanagergrantaccepter"
 
 &licensemanagergrantaccepter.LicensemanagerGrantAccepterConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v18/licensemanagergrantaccept
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.property.grantArn">GrantArn</a></code> | <code>*string</code> | Amazon Resource Name (ARN) of the grant. |
-| <code><a href="#@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}. |
+| <code><a href="#@cdktf/provider-aws.licensemanagerGrantAccepter.LicensemanagerGrantAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}. |
 
 ---
 
@@ -871,7 +871,7 @@ GrantArn *string
 
 Amazon Resource Name (ARN) of the grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter#grant_arn LicensemanagerGrantAccepter#grant_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter#grant_arn LicensemanagerGrantAccepter#grant_arn}
 
 ---
 
@@ -883,7 +883,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/licensemanager_grant_accepter#id LicensemanagerGrantAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
